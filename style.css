@@ -72,7 +72,7 @@ code {
 html {
   scroll-behavior: smooth;
 }
-/* /* MOBILE ONLY ARROW - MY JEEVANDHARA */
+/* MOBILE ONLY ARROW - MY JEEVANDHARA */
 @media (max-width: 768px) {
   .chapter-arrow.mobile-only {
     text-align: center;
