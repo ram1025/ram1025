@@ -88,3 +88,26 @@ html {
    50% { transform: translateY(10px); }
   }
 }
+/* BACK BUTTON STYLE - MY JEEVANDHARA */
+.back-btn {
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+  padding: 8px 15px;
+  margin: 10px 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+  transform: translateX(-5px);
+}
+
+@media (max-width: 768px) {
+  .back-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
