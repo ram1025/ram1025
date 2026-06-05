@@ -20,6 +20,34 @@ pre { color: #00ff88; font-weight: bold; text-align: center; font-size: 16px; ba
 p { margin: 12px 0; }
 b { color: #00d4ff; }
 code { color: #00ff88; background: #1a1a1a; padding: 2px 6px; border-radius: 4px; }
+  /* MOBILE ONLY - Desktop lo hide */
+.chapter-arrow.mobile-only {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .chapter-arrow.mobile-only {
+    display: block !important;
+    text-align: center;
+    font-size: 40px;
+    color: #00ff88;
+    margin: 40px 0;
+    animation: bounce 2s infinite;
+    text-shadow: 0 0 20px #00ff88;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@keyframes bounce {
+ 0%, 100% { transform: translateY(0); }
+ 50% { transform: translateY(10px); }
+}
 </style>
 </head>
 <body>
