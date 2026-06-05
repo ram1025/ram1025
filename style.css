@@ -68,3 +68,7 @@ code {
     padding: 8px 12px;
   }
 }
+/* SMOOTH SCROLL - MY JEEVANDHARA */
+html {
+  scroll-behavior: smooth;
+}
