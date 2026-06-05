@@ -72,17 +72,19 @@ code {
 html {
   scroll-behavior: smooth;
 }
-/* CHAPTER ARROW ANIMATION - MY JEEVANDHARA */
-.chapter-arrow {
-  text-align: center;
-  font-size: 45px;
-  color: #00ff88;
-  margin: 60px 0;
-  animation: bounce 2s infinite;
-  text-shadow: 0 0 20px #00ff88;
-  font-weight: bold;
-}
-@keyframes bounce {
- 0%, 100% { transform: translateY(0); }
- 50% { transform: translateY(12px); }
+/* /* MOBILE ONLY ARROW - MY JEEVANDHARA */
+@media (max-width: 768px) {
+  .chapter-arrow.mobile-only {
+    text-align: center;
+    font-size: 40px;
+    color: #00ff88;
+    margin: 40px 0;
+    animation: bounce 2s infinite;
+    text-shadow: 0 0 20px #00ff88;
+    font-weight: bold;
+  }
+  @keyframes bounce {
+   0%, 100% { transform: translateY(0); }
+   50% { transform: translateY(10px); }
+  }
 }
