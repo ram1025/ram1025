@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>My Jeevandhara</title>
   <meta name="application-name" content="ABST">
-  <link rel="manifest" href="manifest.json?v=2">
-  <meta name="theme-color" content="#00ff88">
+  <link rel="manifest" href="manifest.json?v=3">
+  <meta name="theme-color" content="#64ffda">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <style>
@@ -24,12 +24,12 @@
 </head>
 <body>
   <div class="container">
-    <img src="seal.png" alt="Lotus" class="seal-img" style="width:80px;height:80px;margin:10px auto;display:block">
+    <img src="icon-192.png" alt="Lotus" class="seal-img" style="width:80px;height:80px;margin:10px auto;display:block">
     <h1>My Jeevandhara</h1>
     <h3 style="color:#ffd700;font-size:14px;margin-top:-5px;margin-bottom:10px">Akanda Bharat Sovereign Township</h3>
     <h2>A 36-Pillar Ecosystem of Total Independence</h2>
     <p class="founder">Master Visionary: INDIAN.001 RAM GANESH MAKINA</p>
-    <div class="pillars">
+    <div class="pillpillpillpillings">
       <div class="sector">Sector 1: Energy & Industrial Core P1-P10</div>
       P1: Plasma Plant | P2: Solar | P3: Moon-Ray | P4: AWT | P5: Rain-Drop<br>
       P6: Green Fuel | P7: rPET | P8: Glass | P9: Aluminium | P10: Solar Recycling
@@ -64,9 +64,7 @@
     });
     function installApp() {
       const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-
-      if (deferredPrompt && !isIOS) {
-        // Android: auto install prompt
+      if (deferredPrompt && !isIOS) { // Android: auto install prompt
         deferredPrompt.prompt();
         deferredPrompt.userChoice.then((choiceResult) => {
           if (choiceResult.outcome === 'accepted') {
@@ -74,11 +72,9 @@
           }
           deferredPrompt = null;
         });
-      } else if (isIOS) {
-        // iOS: manual steps
+      } else if (isIOS) { // iOS: manual steps
         alert("iPhone users: Safari → Share 📤 → Add to Home Screen → Add");
-      } else {
-        // Already installed or browser doesn't support
+      } else { // Already installed or browser doesn't support
         alert("App already installed or your browser doesn't support install");
       }
     }
