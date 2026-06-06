@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>My Jeevandhara</title>
   <meta name="application-name" content="ABST">
-  <link rel="manifest" href="manifest.json?v=4">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.json?v=5">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <meta name="theme-color" content="#64ffda">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
@@ -25,7 +25,7 @@
 </head>
 <body>
   <div class="container">
-    <img src="icon-192.png" alt="Lotus" class="seal-img" style="width:80px;height:80px;margin:10px auto;display:block">
+    <img src="./icon-192.png" alt="Lotus" class="seal-img" style="width:80px;height:80px;margin:10px auto;display:block">
     <h1>My Jeevandhara</h1>
     <h3 style="color:#ffd700;font-size:14px;margin-top:-5px;margin-bottom:10px">Akanda Bharat Sovereign Township</h3>
     <h2>A 36-Pillar Ecosystem of Total Independence</h2>
@@ -65,7 +65,7 @@
     });
     function installApp() {
       const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-      if (deferredPrompt && !isIOS) { // Android: auto install prompt
+      if (deferredPrompt && !isIOS) { // Android
         deferredPrompt.prompt();
         deferredPrompt.userChoice.then((choiceResult) => {
           if (choiceResult.outcome === 'accepted') {
@@ -73,9 +73,9 @@
           }
           deferredPrompt = null;
         });
-      } else if (isIOS) { // iOS: manual steps
+      } else if (isIOS) { // iOS
         alert("iPhone users: Safari → Share 📤 → Add to Home Screen → Add");
-      } else { // Already installed or browser doesn't support
+      } else {
         alert("App already installed or your browser doesn't support install");
       }
     }
