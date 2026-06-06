@@ -1,13 +1,11 @@
 {
-  "name": "Akanda Bharat Sovereign Township",
+  "name": "ABST - Akanda Bharat Sovereign Township",
   "short_name": "ABST",
-  "description": "My Jeevandhara - 36 Pillars Ecosystem",
-  "start_url": "./index.html",
+  "start_url": "./?source=pwa",
   "scope": "./",
   "display": "standalone",
   "background_color": "#0a192f",
   "theme_color": "#64ffda",
-  "orientation": "portrait",
   "icons": [
     {
       "src": "icon-192.png",
@@ -15,10 +13,9 @@
       "type": "image/png"
     },
     {
-      "src": "icon-512.png",
+      "src": "icon-512.png", 
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
   ]
 }
