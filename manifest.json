@@ -1,7 +1,7 @@
 {
   "name": "Akhanda Bharat Sovereign Township (ABST)",
   "short_name": "ABST",
-  "description": "Akhanda Bharat 36 Pillars - Sovereignty System for ABST"
+  "description": "Akhanda Bharat 36 Pillars - Sovereignty System for ABST",
   "start_url": "./seal.html",
   "display": "standalone",
   "background_color": "#0a0a0a",
