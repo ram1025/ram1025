@@ -1,8 +1,9 @@
 {
   "name": "Akanda Bharat Sovereign Township",
-"short_name": "ABST",
+  "short_name": "ABST",
   "description": "My Jeevandhara - 36 Pillars Ecosystem",
-  "start_url": "./seal.html",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0a0a0a",
   "theme_color": "#00ff88",
