@@ -63,15 +63,23 @@
       deferredPrompt = e;
     });
     function installApp() {
-      if (deferredPrompt) {
-        // Android: auto install
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+      if (deferredPrompt && !isIOS) {
+        // Android: auto install prompt
         deferredPrompt.prompt();
         deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted install');
+          }
           deferredPrompt = null;
         });
-      } else {
+      } else if (isIOS) {
         // iOS: manual steps
         alert("iPhone users: Safari → Share 📤 → Add to Home Screen → Add");
+      } else {
+        // Already installed or browser doesn't support
+        alert("App already installed or your browser doesn't support install");
       }
     }
   </script>
