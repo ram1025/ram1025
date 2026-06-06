@@ -1,30 +1,30 @@
 /* MY JEEVANDHARA BASE STYLE */
 body {
-  background: #0a192f; /* changed from #0a0a0a to #0a192f */
+  background: #0a192f;
   color: #ffffff;
-  font-family: 'Arial', sans-serif; /* changed from Georgia to Arial */
+  font-family: 'Arial', sans-serif;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 40px 20px env(safe-area-inset-bottom) 20px;
+  min-height: 100vh;
 }
 
 .container {
   max-width: 600px;
   margin: auto;
   padding: 20px;
-  min-height: 100vh;
   box-sizing: border-box;
 }
 
 h1 {
-  color: #64ffda; /* changed from #00ff88 */
-  font-size: 24px; /* changed from 36px */
+  color: #64ffda;
+  font-size: 24px;
   margin-bottom: 5px;
 }
 
 h2 {
-  color: #8892b0; /* changed from #00d4ff */
-  font-size: 16px; /* changed from 24px */
+  color: #8892b0;
+  font-size: 16px;
   font-weight: 400;
   margin-top: 0;
 }
@@ -52,13 +52,19 @@ h2 {
   display: block;
   width: 100%;
   box-sizing: border-box;
-  background: #64ffda; /* changed from linear-gradient */
+  background: #64ffda;
   color: #0a192f;
   padding: 12px;
   border-radius: 5px;
   text-decoration: none;
   margin: 10px 0;
   font-weight: bold;
+}
+
+.seal img {
+  background: transparent;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
 }
 
 .seal {
@@ -71,3 +77,10 @@ h2 {
 @media (max-width: 600px) {
   /* mobile styles same */
 }
+
+/* SMOOTH SCROLL - MY JEEVANDHARA */
+html {
+  scroll-behavior: smooth;
+}
+
+/* rest of CSS same */
