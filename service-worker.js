@@ -1,18 +1,21 @@
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open('myjeevandhara-v1').then(cache => {
+    caches.open('myjeevandhara-v2').then(cache => {
       return cache.addAll([
         './index.html',
         './dpr.html',
         './constitution.html',
         './style.css',
         './manifest.json',
-        './seal.png'
+        './icon-192.png',
+        './apple-touch-icon.png'
       ]);
     })
   );
 });
 
 self.addEventListener('fetch', e => {
-  e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
+  e.respondWith(
+    caches.match(e.request).then(r => r || fetch(e.request))
+  );
 });
