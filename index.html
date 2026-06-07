@@ -20,7 +20,6 @@
     .sector{color:#64ffda;font-weight:bold;margin-top:15px;font-size:18px}
     .btn{display:block;background:#64ffda;color:#0a192f;padding:12px;border-radius:5px;text-decoration:none;margin:10px 0;font-weight:bold;width:100%;box-sizing:border-box}
     .seal{margin-top:20px;font-size:12px;color:#8892b0}
-    
     .index-list { background: #112240; padding: 20px; border-radius: 10px; margin: 30px 0; text-align: left; }
     .index-list a { display: block; padding: 12px 0; color: #64ffda; text-decoration: none; font-size: 18px; border-bottom: 1px solid #1a1a2e; }
     .index-list a:hover { color: #ffd700; background: #1a1a2e; padding-left: 10px; }
@@ -34,6 +33,31 @@
     th { background-color: #004aad; color: white; }
     tr:nth-child(even) { background-color: #1a1a2e; }
     ul { line-height: 2; margin-left: 20px; }
+
+    /* Accordion CSS */
+    .dpr-toggle { 
+      background: #004aad; 
+      color: #fff; 
+      padding: 15px; 
+      border: none; 
+      width: 100%; 
+      text-align: left; 
+      font-size: 16px; 
+      cursor: pointer; 
+      margin-top: 20px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .dpr-toggle:hover { background: #0056b3; }
+    .dpr-content { 
+      display: none; 
+      padding: 20px; 
+      background: #0a192f; 
+      border: 1px solid #64ffda;
+      border-radius: 0 0 5px 5px;
+      margin-top: -5px;
+    }
+    .dpr-content.active { display: block; }
   </style>
 </head>
 <body>
@@ -43,35 +67,28 @@
     <h3 style="color:#ffd700;font-size:14px;margin-top:-5px;margin-bottom:10px">Akanda Bharat Sovereign Township</h3>
     <h2>A 36-Pillar Ecosystem of Total Independence</h2>
     <p class="founder">Master Visionary: INDIAN.001 RAM GANESH MAKINA</p>
-
     <div class="pillars">
       <div class="sector">Sector 1: Energy & Industrial Core P1-P10</div>
       P1: Plasma Plant | P2: Solar | P3: Moon-Ray | P4: AWT | P5: Rain-Drop<br>
       P6: Green Fuel | P7: rPET | P8: Glass | P9: Aluminium | P10: Solar Recycling
-      
       <div class="sector">Sector 2: Water & Earth P11-P19</div>
       P11: Amrutavarsha AWG | P12: Dual-Ion Shield | P13: Plastic Center<br>
       P14: Waste Command | P15: Waste-to-Farming | P16: Vayu-Shuddhi<br>
       P17: Slag-Brick | P18: Chain Mesh | P19: Bio-Gas Station
-      
       <div class="sector">Sector 3: Infrastructure P20-P24</div>
       P20: Utility Tunnel | P21: HDD Pipeline | P22: Footstep Walkways<br>
       P23: Bio-Vault | P24: Matru-Shakti Housing
-      
       <div class="sector">Sector 4: Social Capital P25-P30</div>
       P25: KG to PhD | P26: Hospital | P27: Project Bank<br>
       P28: Food/Clothing Malls | P29: Simulation Game | P30: Walls of Fame
-      
       <div class="sector">Sector 5: Digital Nervous System P31-P36</div>
       P31: RVM Network | P32: Indian.00X ID | P33: Vendor Network<br>
       P34: Transparency Hub | P35: Sentinel-Eye | P36: Jarvis AI Core
     </div>
-
     <a href="./dpr.html" class="btn">VIEW FULL 36-PILLAR DPR</a>
     <a href="https://jarvis-live.com" class="btn">LIVE JARVIS TRANSPARENCY FEED</a>
     <a href="constitution.html" class="btn">📜 VIEW SOVEREIGN CONSTITUTION</a>
     <button onclick="installApp()" class="btn">📲 INSTALL ABST APP</button>
-
     <h1 style="margin-top:60px">Water Plant Designs</h1>
     <div class="index-list">
       <h2>All Designs - Click to View</h2>
@@ -79,164 +96,194 @@
       <a href="#img2">02. Water Drop Tower Concept</a>
     </div>
 
-    <!-- 01. HQ Hub Image + Full English DPR -->
+    <!-- 01. HQ Hub -->
     <div class="gallery-item" id="img1">
       <h3>01. Our Amrutavarsha HQ Hub</h3>
-      <img src="images/01-ouramrutavarsha-hq-hub.png" alt="Our Amrutavarsha HQ Hub">
-      <div class="details">
+      <img src="01-ouramrutavarsha-hq-hub.png" alt="Our Amrutavarsha HQ Hub">
+
+      <button class="dpr-toggle" onclick="toggleDPR('dpr1')">📋 Click to View Full DPR ▼</button>
+      <div class="dpr-content" id="dpr1">
         <h4>Detailed Project Report (DPR): Our Amrutavarsha Water Plant</h4>
         <p><b>Location Alignment:</b> Visakhapatnam, Andhra Pradesh</p>
         <p><b>Operational Structure:</b> 100% Green Powered (Solar + Wind + Rain TENG Tracking) with Fast-Track Modular Nut-and-Bolt Lego Steel Frame Construction.</p>
-
         <h4>1. Land & Building Infrastructure</h4>
         <p>To establish an integrated system handling 3 deep lines (Borewell, Ground surface water management, Atmospheric Water Generator/Air Humidity Extraction), explicit workspace zoning rules are mandatory.</p>
         <ul>
           <li><b>Land Requirement:</b> 2 Acres (approx. 87,120 sq. ft.)</li>
           <li>Core Processing Hub: 25,000 sq. ft.</li>
-          <li>Solar Tracker Farms + Wind setup: 45,000 sq. ft.</li>
-          <li>Loading Docks, Multi-source Buffer Storage tanks & Vayu-Shuddhi Green Belt: Remaining area</li>
-          <li><b>Construction Style:</b> High-Strength Nut-and-Bolt Modular Pre-Engineered Building (PEB) Structural Steel Framework</li>
-          <li><b>How it works:</b> Pre-fabricated concrete foundation block placement followed by high-tensile heavy industrial steel pillars assembled with torque-controlled high-grade structural bolts. Exterior panels utilize insulated clean-room sandwich boards for standard thermal isolation.</li>
-          <li><b>Time Required:</b> 45 to 60 Days max (Complete structure erection from groundbreaking to cleanroom readiness)</li>
-          <li><b>Best Tier-1 Construction Giants for Execution:</b> 1. Tata BlueScope Steel / Tata Projects (Leaders in high-precision structural pre-fab infrastructure), 2. Kirby Building Systems (Global benchmark for rapid modular mega-scale industrial PEB structures), 3. L&T Construction (Pre-engineered division)</li>
-        </ul>
+          <li>Solar Tracker Farms + Wind setup:
+            <!-- 01. HQ Hub -->
+<div class="gallery-item" id="img1">
+  <h3>01. Our Amrutavarsha HQ Hub</h3>
+  <img src="01-ouramrutavarsha-hq-hub.png" alt="Our Amrutavarsha HQ Hub">
 
-        <h4>2. Capital Expenditure (CapEx Breakdown)</h4>
-        <table>
-          <tr><th>Component Description</th><th>Estimated Cost (INR)</th></tr>
-          <tr><td>Land Acquisition / Lease Premium (Vizag outskirts industrial cluster)</td><td>₹45,00,000</td></tr>
-          <tr><td>Modular Lego-Style Structural PEB Steel Building (Ready in 60 days)</td><td>₹1,20,00,000</td></tr>
-          <tr><td>12-Stage Advanced RO Purification Engine (10,000 Litres Per Hour Capacity)</td><td>₹35,00,000</td></tr>
-          <tr><td>Atmospheric Water Generation (AWG) Industrial Array (Air Humidity Extraction)</td><td>₹65,00,000</td></tr>
-          <tr><td>Dual-Ion Shield Integration Setup (High-precision Copper Cu2+ & Silver Ag+ Ionization Reactor Chambers)</td><td>₹22,00,000</td></tr>
-          <tr><td>Fully Automated Bottling Line (Rinsing, Filling, Capping, Laser Batch Coding for Cups & Bottles)</td><td>₹48,00,000</td></tr>
-          <tr><td>In-house PET Blow Moulding Machine (To manufacture custom premium bottles directly)</td><td>₹18,00,000</td></tr>
-          <tr><td>On-site NABL Certified Quality Testing Lab Setup (Mandatory for BIS regulatory standards)</td><td>₹15,00,000</td></tr>
-          <tr><td>Solar PV Plant + Airborne Turbine Power System (Microgrid setup for 100% uptime)</td><td>₹75,00,000</td></tr>
-          <tr><td>Initial Regulatory Licensing, Approvals & Legal Deposits</td><td>₹12,00,000</td></tr>
-          <tr><th>Total Estimated CapEx</th><th>₹4,55,00,000 (~₹4.55 Crores)</th></tr>
-        </table>
-
-        <h4>3. Government Licenses & Registrations (Estimated Costs Included)</h4>
-        <p>Packaged drinking water distribution requires explicit statutory certifications before starting mass-scale commercial roll-outs:</p>
-        <ul>
-          <li><b>BIS Certification (Bureau of Indian Standards):</b> Mandatory under IS 14543. Includes complete independent source water chemical matrix checks and plant audit validation. (Cost: ~₹2.5 Lakhs to ₹4 Lakhs including initial laboratory sampling fee)</li>
-          <li><b>FSSAI Central License:</b> Food Safety and Standards Authority of India authorization for commercial beverage distribution. (Cost: ~₹7,500/year)</li>
-          <li><b>APPCB NOC:</b> State Pollution Control Board Consent to Establish (CTE) and Consent to Operate (CTO). (Cost: ~₹1.5 Lakhs based on capital investment tier)</li>
-          <li><b>Central Ground Water Authority (CGWA) NOC:</b> Mandatory permission clearance to extract sub-surface water via borewells. (Cost: ~₹1 Lakh)</li>
-          <li><b>Factories License & Fire Department NOC:</b> Basic industrial safety conformance clearings. (Cost: ~₹2 Lakhs)</li>
-          <li><b>GST Registration & MSME Udyam Certification:</b> Zero direct processing cost / Minimal filing administrative charges</li>
-        </ul>
-
-        <h4>4. Human Capital Requirements (6-Staff Core Structure + Essential Operators)</h4>
-        <p>To manage operations seamlessly under a balanced corporate-technician layout:</p>
-        <ul>
-          <li>Plant Operations Manager / Senior Quality Head (1): Oversees complete processing flow, NABL lab quality tests, and regulatory adherence. (₹45,000/month)</li>
-          <li>Procurement, Ad-Sales Pitch & Distribution Lead (1): Handles wholesale vendor accounts and retail logistics pipeline. (₹35,000/month)</li>
-          <li>Fully Automatic Line Technicians (2): Dedicated operators handling continuous automation monitoring, electro-mechanical adjustments, and solar microgrid status checks. (₹25,000/month each)</li>
-          <li>Inventory & On-Site Warehouse Helpers (4): Assist in fast physical sorting, automated vehicle loading docks operation. (₹15,000/month each)</li>
-          <li><b>Total Monthly Operational Human Capital Cost:</b> ₹1,65,000 per month (~₹1.65 Lakhs per month)</li>
-        </ul>
-
-        <h4>5. Water Sourcing Cost Analysis & Ionization Workflow Matrix</h4>
-        <p><b>Source Processing Unit Cost:</b></p>
-        <ul>
-          <li><b>Borewell / Ground Extraction:</b> Lowest extraction profile. Basic power delivery overhead. Cost matrix maps out to ₹0.15 to ₹0.20 per Litre.</li>
-          <li><b>Atmospheric Water Generation (AWG) / Air Humidity:</b> Requires substantial electrical pull per condensate cycle. When powered entirely by our zero-grid solar-wind hybrid unit, direct external operational fuel metrics stay low, but asset depreciation assigns an internal valuation cost of ₹1.80 to ₹2.50 per Litre.</li>
-          <li><b>Blended Formula Core Target:</b> By dynamically balancing structural delivery across a targeted triple blend ratio (e.g., 60% Pure Surface/Ground + 40% Deep Moisture Air Capture), the aggregate raw input treatment valuation locks in firmly at an optimal average of ₹0.85 per Litre.</li>
-        </ul>
-        
-        <p><b>Ionization Retention Rules:</b></p>
-        <p>Critical Operational Process Rule: Water should not be stored statically in raw tanks for extended hours after the ionization phase. Once copper (Cu2+) and silver (Ag+) particles are introduced via electrolysis inside the Dual-Ion Shield reactor, the water must proceed immediately to the automated inline filling track. The transformation cycle locks inside the airtight finalized bottle or cup packaging. This preserves optimal alkaline tracking (pH 8.5+) and prevents structural oxidation or potency drop before consumer intake. Raw source storage is limited to raw/filtered buffer tanks prior to ionization.</p>
-
-        <h4>6. The Wellness Cycle: Structured 250ml Time-Slot Guide</h4>
-        <p>As displayed beautifully on the visual assets, the product implements a structured 24-Hour chronological daily health consumption routine:</p>
-        <ul>
-          <li><b>Slot 1: Morning Wake-Up (07:00 AM)</b> - Volume: 250ml - Focuses on active metabolism kickstart, cellular rehydration, and systemic interior cleansing.</li>
-          <li><b>Slot 2: Pre-Meal Prep (12:30 PM)</b> - Volume: 250ml - Readies the digestive enzymes, balancing interior gut alkalization.</li>
-          <li><b>Slot 3: Afternoon Recharge (04:00 PM)</b> - Volume: 250ml - Restores vital trace mineral counts to counter work-day fatigue.</li>
-          <li><b>Slot 4: The Night Shield (09:00 PM)</b> - Volume: 250ml - Supports overnight tissue restoration, immune cellular cell wall guarding, and sound sleep tracking.</li>
-        </ul>
-
-        <h4>7. Product Packaging, Pricing & Nirman Jyoti Foundation (NJF) Breakdown</h4>
-        <p>The unit revenue model relies on an exact pricing structure designed for rapid market penetration, while dedicating a consistent percentage to philanthropic development via the Nirman Jyoti Foundation (NJF).</p>
-        <table>
-          <tr><th>Product Variant</th><th>Retail Unit Price (INR)</th><th>Dedicated NJF Contribution (INR)</th><th>Corporate Gross Operational Share (INR)</th><th>Packaging Format Specs</th></tr>
-          <tr><td>250ml Wellness Cup (Single)</td><td>₹5</td><td>₹1.50</td><td>₹3.50</td><td>Premium eco-safe structural glass-shape cup</td></tr>
-          <tr><td>250ml Wellness Pack (Pack of 10)</td><td>₹50</td><td>₹15.00</td><td>₹35.00</td><td>Corrugated outer crate bundle holding 10 cups</td></tr>
-          <tr><td>1 Litre Standard Bottle</td><td>₹20</td><td>₹5.00</td><td>₹15.00</td><td>Premium ergonomic bottle with metal-finish cap</td></tr>
-          <tr><td>2 Litre Family Eco-Pack</td><td>₹35</td><td>₹10.00</td><td>₹25.00</td><td>Heavy-duty ergonomic structural bottle design</td></tr>
-        </table>
-
-        <h4>8. Profit & Loss (P&L) Simulation Metrics (Monthly Model Basis)</h4>
-        <p>Assuming an average medium-scale baseline operation processing and selling roughly 30,000 Litres total volume daily across diverse variant SKUs.</p>
-        <p><b>Monthly Gross Revenue Estimates:</b> Total combined unit monthly retail collection value grossing: ~₹18,00,000</p>
-        <p><b>Monthly Outflow Streams:</b></p>
-        <ul>
-          <li>Direct Raw Materials & Production Overheads (PET resins, cup lidding films, raw mineral additives, delivery shipping crates): ₹5,40,000</li>
-          <li>Direct Philanthropy Outflow: Direct electronic real-time automated transfer matching exact packaging definitions straight to the Nirman Jyoti Foundation (NJF Account): ₹4,50,000</li>
-          <li>Human Capital Salaries Matrix: ₹1,65,000</li>
-          <li>Logistics, Fleet Fuel & Distribution Maintenance: ₹2,10,000</li>
-          <li>Plant Maintenance, Equipment Calibration & Residual Administrative Expenses: ₹95,000</li>
-          <li><b>Total Monthly Operational Expenses (Excluding Depreciation):</b> ₹14,60,000</li>
-        </ul>
-        <p><b>Net Corporate Profitability Matrix:</b> Net Profit Margin Retained (Per Month): ₹3,40,000</p>
-        <p><i>Note on Energy Efficiency: Because the plant runs on an integrated custom Solar + Wind microgrid network, standard industrial electricity grid bills are practically zero, saving nearly ₹1.2 Lakhs monthly compared to traditional old-school manufacturing installations.</i></p>
-
-        <h4>9. Digital Nervous System Integration</h4>
-        <p>Every single unit shipped features a secure, high-density customized unique identity marker trackable via smart devices. When consumers scan the physical validation code on their bottle or cup, they don't just see generic data—it opens a live gateway to the operational tracking dashboard.</p>
-      </div>
-    </div>
-
-    <!-- 02. Water Drop Tower Concept -->
-    <div class="gallery-item" id="img2">
-      <h3>02. Water Drop Tower Concept - Corporate HQ</h3>
-      <img src="images/02-water-drop-tower-concept.png" alt="Water Drop Tower Concept">
-      <div class="details">
-        <h4>Detailed Project Report (DPR): Our Amrutavarsha Water Plant</h4>
-        <p><b>Location Alignment:</b> Visakhapatnam, Andhra Pradesh</p>
-        <p><b>Operational Structure:</b> 100% Green Powered (Solar + Wind + Rain TENG Tracking) with Fast-Track Modular Nut-and-Bolt Lego Steel Frame Construction.</p>
-        <p><b>Design Note:</b> 2nd design drop shape building dynamic vertical architecture matrix (Corporate HQ standard or Mother Hub iconic symbol) creates matching block format structure for core physical packaging plant execution.</p>
-        
-        <!-- Same DPR data as img1 -->
-        <h4>1. Land & Building Infrastructure</h4>
-        <ul>
-          <li><b>Land Requirement:</b> 2 Acres (approx. 87,120 sq. ft.)</li>
-          <li>Core Processing Hub: 25,000 sq. ft.</li>
-          <li>Solar Tracker Farms + Wind setup: 45,000 sq. ft.</li>
-          <li>Time Required: 45 to 60 Days max</li>
-        </ul>
-        
-        <h4>2. Capital Expenditure (CapEx Breakdown)</h4>
-        <table>
-          <tr><th>Component Description</th><th>Estimated Cost (INR)</th></tr>
-          <tr><td>Total Estimated CapEx</td><td>₹4,55,00,000 (~₹4.55 Crores)</td></tr>
-        </table>
-        
-        <p><i>Complete DPR data same as 01. Our Amrutavarsha HQ Hub above.</i></p>
-      </div>
-    </div>
-
-    <div class="seal"> Status: Mother Hub (Vizag) - Operational<br> Verification: Jarvis AI Core Security Layer 7 </div>
+  <button class="dpr-toggle" onclick="toggleDPR('dpr1')">📋 Click to View Full DPR ▼</button>
+  <div class="dpr-content" id="dpr1">
+    <h4>Detailed Project Report (DPR): Our Amrutavarsha Water Plant</h4>
+    <p><b>Location Alignment:</b> Visakhapatnam, Andhra Pradesh</p>
+    <p><b>Operational Structure:</b> 100% Green Powered (Solar + Wind + Rain TENG Tracking) with Fast-Track Modular Nut-and-Bolt Lego Steel Frame Construction.</p>
+    <h4>1. Land & Building Infrastructure</h4>
+    <p>To establish an integrated system handling 3 deep lines (Borewell, Ground surface water management, Atmospheric Water Generator/Air Humidity Extraction), explicit workspace zoning rules are mandatory.</p>
+    <ul>
+      <li><b>Land Requirement:</b> 2 Acres (approx. 87,120 sq. ft.)</li>
+      <li>Core Processing Hub: 25,000 sq. ft.</li>
+      <li>Solar Tracker Farms + Wind setup: 45,000 sq. ft.</li>
+      <li>Loading Docks, Multi-source Buffer Storage tanks & Vayu-Shuddhi Green Belt: Remaining area</li>
+      <li><b>Construction Style:</b> High-Strength Nut-and-Bolt Modular Pre-Engineered Building (PEB) Structural Steel Framework</li>
+      <li><b>How it works:</b> Pre-fabricated concrete foundation block placement followed by high-tensile heavy industrial steel pillars assembled with torque-controlled high-grade structural bolts. Exterior panels utilize insulated clean-room sandwich boards for standard thermal isolation.</li>
+      <li><b>Time Required:</b> 45 to 60 Days max (Complete structure erection from groundbreaking to cleanroom readiness)</li>
+      <li><b>Best Tier-1 Construction Giants for Execution:</b> 1. Tata BlueScope Steel / Tata Projects (Leaders in high-precision structural pre-fab infrastructure), 2. Kirby Building Systems (Global benchmark for rapid modular mega-scale industrial PEB structures), 3. L&T Construction (Pre-engineered division)</li>
+    </ul>
+    <h4>2. Capital Expenditure (CapEx Breakdown)</h4>
+    <table>
+      <tr><th>Component Description</th><th>Estimated Cost (INR)</th></tr>
+      <tr><td>Land Acquisition / Lease Premium (Vizag outskirts industrial cluster)</td><td>₹45,00,000</td></tr>
+      <tr><td>Modular Lego-Style Structural PEB Steel Building (Ready in 60 days)</td><td>₹1,20,00,000</td></tr>
+      <tr><td>12-Stage Advanced RO Purification Engine (10,000 Litres Per Hour Capacity)</td><td>₹35,00,000</td></tr>
+      <tr><td>Atmospheric Water Generation (AWG) Industrial Array (Air Humidity Extraction)</td><td>₹65,00,000</td></tr>
+      <tr><td>Dual-Ion Shield Integration Setup (High-precision Copper Cu2+ & Silver Ag+ Ionization Reactor Chambers)</td><td>₹22,00,000</td></tr>
+      <tr><td>Fully Automated Bottling Line (Rinsing, Filling, Capping, Laser Batch Coding for Cups & Bottles)</td><td>₹48,00,000</td></tr>
+      <tr><td>In-house PET Blow Moulding Machine (To manufacture custom premium bottles directly)</td><td>₹18,00,000</td></tr>
+      <tr><td>On-site NABL Certified Quality Testing Lab Setup (Mandatory for BIS regulatory standards)</td><td>₹15,00,000</td></tr>
+      <tr><td>Solar PV Plant + Airborne Turbine Power System (Microgrid setup for 100% uptime)</td><td>₹75,00,000</td></tr>
+      <tr><td>Initial Regulatory Licensing, Approvals & Legal Deposits</td><td>₹12,00,000</td></tr>
+      <tr><th>Total Estimated CapEx</th><th>₹4,55,00,000 (~₹4.55 Crores)</th></tr>
+    </table>
+    <!-- Nuv pampina motham DPR data ikhada paste chey -->
   </div>
+</div>
+<h4>3. Government Licenses & Registrations (Estimated Costs Included)</h4>
+<p>Packaged drinking water distribution requires explicit statutory certifications before starting mass-scale commercial roll-outs:</p>
+<ul>
+  <li><b>BIS Certification (Bureau of Indian Standards):</b> Mandatory under IS 14543. Includes complete independent source water chemical matrix checks and plant audit validation. (Cost: ~₹2.5 Lakhs to ₹4 Lakhs including initial laboratory sampling fee)</li>
+  <li><b>FSSAI Central License:</b> Food Safety and Standards Authority of India authorization for commercial beverage distribution. (Cost: ~₹7,500/year)</li>
+  <li><b>APPCB NOC:</b> State Pollution Control Board Consent to Establish (CTE) and Consent to Operate (CTO). (Cost: ~₹1.5 Lakhs based on capital investment tier)</li>
+  <li><b>Central Ground Water Authority (CGWA) NOC:</b> Mandatory permission clearance to extract sub-surface water via borewells. (Cost: ~₹1 Lakh)</li>
+  <li><b>Factories License & Fire Department NOC:</b> Basic industrial safety conformance clearings. (Cost: ~₹2 Lakhs)</li>
+  <li><b>GST Registration & MSME Udyam Certification:</b> Zero direct processing cost / Minimal filing administrative charges</li>
+</ul>
 
-  <script>
-    let deferredPrompt;
-    window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; });
-    function installApp() {
-      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-      if (deferredPrompt && !isIOS) {
-        deferredPrompt.prompt();
-        deferredPrompt.userChoice.then((choiceResult) => {
-          if (choiceResult.outcome === 'accepted') { console.log('User accepted install'); }
-          deferredPrompt = null;
-        });
-      } else if (isIOS) {
-        alert("iPhone users: Safari → Share 📤 → Add to Home Screen → Add");
-      } else {
-        alert("App already installed or your browser doesn't support install");
-      }
+<h4>4. Human Capital Requirements (6-Staff Core Structure + Essential Operators)</h4>
+<p>To manage operations seamlessly under a balanced corporate-technician layout:</p>
+<ul>
+  <li>Plant Operations Manager / Senior Quality Head (1): Oversees complete processing flow, NABL lab quality tests, and regulatory adherence. (₹45,000/month)</li>
+  <li>Procurement, Ad-Sales Pitch & Distribution Lead (1): Handles wholesale vendor accounts and retail logistics pipeline. (₹35,000/month)</li>
+  <li>Fully Automatic Line Technicians (2): Dedicated operators handling continuous automation monitoring, electro-mechanical adjustments, and solar microgrid status checks. (₹25,000/month each)</li>
+  <li>Inventory & On-Site Warehouse Helpers (4): Assist in fast physical sorting, automated vehicle loading docks operation. (₹15,000/month each)</li>
+  <li><b>Total Monthly Operational Human Capital Cost:</b> ₹1,65,000 per month (~₹1.65 Lakhs per month)</li>
+</ul>
+
+<h4>5. Water Sourcing Cost Analysis & Ionization Workflow Matrix</h4>
+<p><b>Source Processing Unit Cost:</b></p>
+<ul>
+  <li><b>Borewell / Ground Extraction:</b> Lowest extraction profile. Basic power delivery overhead. Cost matrix maps out to ₹0.15 to ₹0.20 per Litre.</li>
+  <li><b>Atmospheric Water Generation (AWG) / Air Humidity:</b> Requires substantial electrical pull per condensate cycle. When powered entirely by our zero-grid solar-wind hybrid unit, direct external operational fuel metrics stay low, but asset depreciation assigns an internal valuation cost of ₹1.80 to ₹2.50 per Litre.</li>
+  <li><b>Blended Formula Core Target:</b> By dynamically balancing structural delivery across a targeted triple blend ratio (e.g., 60% Pure Surface/Ground + 40% Deep Moisture Air Capture), the aggregate raw input treatment valuation locks in firmly at an optimal average of ₹0.85 per Litre.</li>
+</ul>
+<p><b>Ionization Retention Rules:</b></p>
+<p>Critical Operational Process Rule: Water should not be stored statically in raw tanks for extended hours after the ionization phase. Once copper (Cu2+) and silver (Ag+) particles are introduced via electrolysis inside the Dual-Ion Shield reactor, the water must proceed immediately to the automated inline filling track. The transformation cycle locks inside the airtight finalized bottle or cup packaging. This preserves optimal alkaline tracking (pH 8.5+) and prevents structural oxidation or potency drop before consumer intake. Raw source storage is limited to raw/filtered buffer tanks prior to ionization.</p>
+
+<h4>6. The Wellness Cycle: Structured 250ml Time-Slot Guide</h4>
+<p>As displayed beautifully on the visual assets, the product implements a structured 24-Hour chronological daily health consumption routine:</p>
+<ul>
+  <li><b>Slot 1: Morning Wake-Up (07:00 AM)</b> - Volume: 250ml - Focuses on active metabolism kickstart, cellular rehydration, and systemic interior cleansing.</li>
+  <li><b>Slot 2: Pre-Meal Prep (12:30 PM)</b> - Volume: 250ml - Readies the digestive enzymes, balancing interior gut alkalization.</li>
+  <li><b>Slot 3: Afternoon Recharge (04:00 PM)</b> - Volume: 250ml - Restores vital trace mineral counts to counter work-day fatigue.</li>
+  <li><b>Slot 4: The Night Shield (09:00 PM)</b> - Volume: 250ml - Supports overnight tissue restoration, immune cellular cell wall guarding, and sound sleep tracking.</li>
+</ul>
+
+<h4>7. Product Packaging, Pricing & Nirman Jyoti Foundation (NJF) Breakdown</h4>
+<p>The unit revenue model relies on an exact pricing structure designed for rapid market penetration, while dedicating a consistent percentage to philanthropic development via the Nirman Jyoti Foundation (NJF).</p>
+<table>
+  <tr><th>Product Variant</th><th>Retail Unit Price (INR)</th><th>Dedicated NJF Contribution (INR)</th><th>Corporate Gross Operational Share (INR)</th><th>Packaging Format Specs</th></tr>
+  <tr><td>250ml Wellness Cup (Single)</td><td>₹5</td><td>₹1.50</td><td>₹3.50</td><td>Premium eco-safe structural glass-shape cup</td></tr>
+  <tr><td>250ml Wellness Pack (Pack of 10)</td><td>₹50</td><td>₹15.00</td><td>₹35.00</td><td>Corrugated outer crate bundle holding 10 cups</td></tr>
+  <tr><td>1 Litre Standard Bottle</td><td>₹20</td><td>₹5.00</td><td>₹15.00</td><td>Premium ergonomic bottle with metal-finish cap</td></tr>
+  <tr><td>2 Litre Family Eco-Pack</td><td>₹35</td><td>₹10.00</td><td>₹25.00</td><td>Heavy-duty ergonomic structural bottle design</td></tr>
+</table>
+
+<h4>8. Profit & Loss (P&L) Simulation Metrics (Monthly Model Basis)</h4>
+<p>Assuming an average medium-scale baseline operation processing and selling roughly 30,000 Litres total volume daily across diverse variant SKUs.</p>
+<p><b>Monthly Gross Revenue Estimates:</b> Total combined unit monthly retail collection value grossing: ~₹18,00,000</p>
+<p><b>Monthly Outflow Streams:</b></p>
+<ul>
+  <li>Direct Raw Materials & Production Overheads (PET resins, cup lidding films, raw mineral additives, delivery shipping crates): ₹5,40,000</li>
+  <li>Direct Philanthropy Outflow: Direct electronic real-time automated transfer matching exact packaging definitions straight to the Nirman Jyoti Foundation (NJF Account): ₹4,50,000</li>
+  <li>Human Capital Salaries Matrix: ₹1,65,000</li>
+  <li>Logistics, Fleet Fuel & Distribution Maintenance: ₹2,10,000</li>
+  <li>Plant Maintenance, Equipment Calibration & Residual Administrative Expenses: ₹95,000</li>
+  <li><b>Total Monthly Operational Expenses (Excluding Depreciation):</b> ₹14,60,000</li>
+</ul>
+<p><b>Net Corporate Profitability Matrix:</b> Net Profit Margin Retained (Per Month): ₹3,40,000</p>
+<p><i>Note on Energy Efficiency: Because the plant runs on an integrated custom Solar + Wind microgrid network, standard industrial electricity grid bills are practically zero, saving nearly ₹1.2 Lakhs monthly compared to traditional old-school manufacturing installations.</i></p>
+
+<h4>9. Digital Nervous System Integration</h4>
+<p>Every single unit shipped features a secure, high-density customized unique identity marker trackable via smart devices. When consumers scan the physical validation code on their bottle or cup, they don't just see generic data—it opens a live gateway to the operational tracking dashboard.</p>
+
+<h4>10. Sustainability & Environmental Impact</h4>
+<ul>
+  <li><b>Zero Liquid Discharge (ZLD):</b> Advanced recycling mechanisms ensure no wastewater is discharged into municipal drains.</li>
+  <li><b>100% Renewable Energy:</b> Entire plant powered by solar, wind, and rain energy harvesting.</li>
+  <li><b>Bio-Degradable Packaging:</b> All packaging materials are eco-friendly and fully compostable.</li>
+</ul>
+
+<h4>11. Regulatory Compliance & Certifications</h4>
+<ul>
+  <li>BIS Certification (IS 14543)</li>
+  <li>FSSAI License</li>
+  <li>APPCB NOC</li>
+  <li>CGWA NOC</li>
+  <li>ISO 22000 (Food Safety Management System)</li>
+</ul>
+
+<h4>12. Risk Management & Mitigation Strategies</h4>
+<ul>
+  <li><b>Water Sourcing Risk:</b> Diversified water sourcing (borewell, surface water, AWG) to mitigate supply chain disruptions.</li>
+  <li><b>Energy Risk:</b> Hybrid renewable energy setup ensures uninterrupted power supply.</li>
+  <li><b>Market Risk:</b> Robust marketing strategy with focus on local communities and digital outreach.</li>
+</ul>
+</div>
+</div>
+
+<!-- 02. Water Drop Tower Concept -->
+<div class="gallery-item" id="img2">
+  <h3>02. Water Drop Tower Concept - Corporate HQ</h3>
+  <img src="02-water-drop-tower-concept.png" alt="Water Drop Tower Concept">
+  <button class="dpr-toggle" onclick="toggleDPR('dpr2')">📋 Click to View Full DPR ▼</button>
+  <div class="dpr-content" id="dpr2">
+    <!-- Same DPR data as img1 -->
+  </div>
+</div>
+<script>
+  let deferredPrompt;
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+  });
+
+  function installApp() {
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (deferredPrompt && !isIOS) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted install');
+        }
+        deferredPrompt = null;
+      });
+    } else if (isIOS) {
+      alert("iPhone users: Safari → Share 📤 → Add to Home Screen → Add");
+    } else {
+      alert("App already installed or your browser doesn't support install");
     }
-  </script>
+  }
+
+  function toggleDPR(id) {
+    var content = document.getElementById(id);
+    content.classList.toggle('active');
+    var btn = content.previousElementSibling;
+    btn.textContent = content.classList.contains('active') ? '📋 Click to Hide DPR ▲' : '📋 Click to View Full DPR ▼';
+  }
+</script>
 </body>
 </html>
