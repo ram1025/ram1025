@@ -6,7 +6,7 @@
   "display": "standalone",
   "background_color": "#0a192f",
   "theme_color": "#d4af37",
-  "scope": "./",
+  "scope": "/ram1025/",
   "orientation": "portrait",
   "icons": [
     {
