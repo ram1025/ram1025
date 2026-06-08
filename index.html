@@ -7,8 +7,17 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title>My Jeevandhara</title>
-<meta name="theme-color" content="#64ffda">
+
+<!-- PWA + iOS Meta Tags -->
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ABST">
+<meta name="theme-color" content="#0a192f">
+<meta name="description" content="Akanda Bharat Sovereign Township - 36 Pillar Ecosystem">
 </head>
+
 <body style="background:#0a192f;color:#ffffff;margin:0;padding:30px 20px;font-family:Arial,sans-serif;text-align:center">
 <div style="max-width:600px;margin:0 auto">
 
@@ -35,6 +44,71 @@ P17: Slag-Brick | P18: Chain Mesh | P19: Bio-Gas Station
 <div style="color:#64ffda;font-weight:bold;font-size:15px;margin-top:15px;margin-bottom:5px">Sector 3: Infrastructure P20-P24</div>
 P20: Utility Tunnel | P21: HDD Pipeline | P22: Footstep Walkways<br>
 P23: Bio-Vault | P24: Matru-Shakti Housing
+
+<div style="color:#64ffda;font-weight:bold;font-size:15px;margin-top:15px;margin-bottom:5px">Sector 4: Social Capital P25-P30</div>
+P25: KG to PhD | P26: Hospital | P27: Project Bank<br>
+P28: Food/Clothing Malls | P29: Simulation Game | P30: Walls of Fame
+
+<div style="color:#64ffda;font-weight:bold;font-size:15px;margin-top:15px;margin-bottom:5px">Sector 5: Digital Nervous System P31-P36</div>
+P31: RVM Network | P32: Indian.00X ID | P33: Vendor Network<br>
+P34: Transparency Hub | P35: Sentinel-Eye | P36: Jarvis AI Core
+</div>
+
+<!-- 4 Aqua Buttons -->
+<button onclick="window.location.href='dpr.html'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">VIEW FULL 36-PILLAR DPR</button>
+<button onclick="window.location.href='https://jarvis-live.com'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">LIVE JARVIS TRANSPARENCY FEED</button>
+<button onclick="window.location.href='constitution.html?v=20261007'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">📜 VIEW SOVEREIGN CONSTITUTION</button>
+
+<!-- Install Button - PWA logic tho -->
+<button id="installBtn" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer;display:none">📲 INSTALL ABST APP</button>
+
+<!-- Status -->
+<p style="color:#8892b0;font-size:11px;margin-top:30px;line-height:1.6">
+Status: Mother Hub (Vizag) - Operational<br>
+Verification: Jarvis AI Core Security Layer 7
+</p>
+
+</div>
+
+<script>
+// Register Service Worker
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+
+// PWA Install - Android + Desktop + iOS
+let deferredPrompt;
+const installBtn = document.getElementById('installBtn');
+
+// iOS detection
+const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+
+if(isIOS && !isStandalone) {
+  installBtn.style.display = 'block';
+  installBtn.innerText = '📲 Add to Home Screen';
+}
+
+// Android + Desktop install prompt
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  installBtn.style.display = 'block';
+});
+
+installBtn.addEventListener('click', async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt = null;
+    installBtn.style.display = 'none';
+  } else if (isIOS) {
+    alert('iPhone lo: Safari bottom Share button 👆 > "Add to Home Screen" select chey');
+  }
+});
+</script>
+</body>
+</html>P23: Bio-Vault | P24: Matru-Shakti Housing
 
 <div style="color:#64ffda;font-weight:bold;font-size:15px;margin-top:15px;margin-bottom:5px">Sector 4: Social Capital P25-P30</div>
 P25: KG to PhD | P26: Hospital | P27: Project Bank<br>
