@@ -1,4 +1,4 @@
-const CACHE_NAME = 'myjeevandhara-v4';
+const CACHE_NAME = 'myjeevandhara-v5';
 const urlsToCache = [
   './index.html?v=20261008',
   './dpr.html',
