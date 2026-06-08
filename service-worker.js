@@ -1,13 +1,15 @@
-const CACHE_NAME = 'ram1025-v1';
+const CACHE_NAME = 'ram1025-v2';
+const BASE_PATH = '/ram1025/';
+
 const urlsToCache = [
-  './index.html',
-  './dpr.html',
-  './constitution.html',
-  './manifest.json',
-  './icon-192.png',
-  './icon-512.png',
-  './apple-touch-icon.png',
-  './style.css'
+  BASE_PATH + 'index.html',
+  BASE_PATH + 'dpr.html',
+  BASE_PATH + 'constitution.html',
+  BASE_PATH + 'manifest.json',
+  BASE_PATH + 'icon-192.png',
+  BASE_PATH + 'icon-512.png',
+  BASE_PATH + 'apple-touch-icon.png',
+  BASE_PATH + 'style.css'
 ];
 
 // Install - cache all files
