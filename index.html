@@ -8,9 +8,9 @@
 <meta http-equiv="Expires" content="0">
 <title>My Jeevandhara</title>
 
-<!-- PWA + iOS Meta Tags -->
-<link rel="manifest" href="./manifest.json">
-<link rel="apple-touch-icon" href="./icon-192.png">
+<!-- PWA - Absolute paths for GitHub Pages -->
+<link rel="manifest" href="/ram1025/manifest.json">
+<link rel="apple-touch-icon" href="/ram1025/icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="ABST">
@@ -21,10 +21,8 @@
 <body style="background:#0a192f;color:#ffffff;margin:0;padding:30px 20px;font-family:Arial,sans-serif;text-align:center">
 <div style="max-width:600px;margin:0 auto">
 
-<!-- Logo -->
-<img src="./icon-192.png" alt="Seal" style="width:90px;height:90px;border-radius:50%;margin:15px auto 20px;display:block">
+<img src="/ram1025/icon-192.png" alt="Seal" style="width:90px;height:90px;border-radius:50%;margin:15px auto 20px;display:block">
 
-<!-- Title -->
 <h1 style="color:#64ffda;font-size:28px;margin:0 0 5px 0;font-weight:bold">My Jeevandhara</h1>
 <h3 style="color:#ffd700;font-size:14px;margin:0 0 10px 0">Akanda Bharat Sovereign Township</h3>
 <p style="color:#8892b0;font-size:15px;margin:0 0 15px 0">A 36-Pillar Ecosystem of Total Independence</p>
@@ -54,17 +52,14 @@ P31: RVM Network | P32: Indian.00X ID | P33: Vendor Network<br>
 P34: Transparency Hub | P35: Sentinel-Eye | P36: Jarvis AI Core
 </div>
 
-<!-- 4 Buttons - Only 1 set -->
-<button onclick="window.location.href='dpr.html'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">VIEW FULL 36-PILLAR DPR</button>
+<button onclick="window.location.href='/ram1025/dpr.html'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">VIEW FULL 36-PILLAR DPR</button>
 
 <button onclick="window.location.href='https://jarvis-live.com'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">LIVE JARVIS TRANSPARENCY FEED</button>
 
-<button onclick="window.location.href='constitution.html'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">📜 VIEW SOVEREIGN CONSTITUTION</button>
+<button onclick="window.location.href='/ram1025/constitution.html'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">📜 VIEW SOVEREIGN CONSTITUTION</button>
 
-<!-- Install Button - PWA logic tho. Default hide -->
 <button id="installBtn" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer;display:none">📲 INSTALL ABST APP</button>
 
-<!-- Status -->
 <p style="color:#8892b0;font-size:11px;margin-top:30px;line-height:1.6">
 Status: Mother Hub (Vizag) - Operational<br>
 Verification: Jarvis AI Core Security Layer 7
@@ -73,16 +68,17 @@ Verification: Jarvis AI Core Security Layer 7
 </div>
 
 <script>
-// Register Service Worker
+// SW Register - Absolute path nuv ichinattu
 if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js');
+  navigator.serviceWorker.register('/ram1025/sw.js').then(reg => {
+    console.log('✅ SW Registered:', reg.scope);
+  }).catch(err => console.log('❌ SW Error:', err));
 }
 
-// PWA Install - Android + Desktop + iOS
+// PWA Install
 let deferredPrompt;
 const installBtn = document.getElementById('installBtn');
 
-// iOS detection
 const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
 const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
 
@@ -91,7 +87,6 @@ if(isIOS && !isStandalone) {
   installBtn.innerText = '📲 Add to Home Screen';
 }
 
-// Android + Desktop install prompt
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
@@ -109,6 +104,14 @@ installBtn.addEventListener('click', async () => {
     alert('iPhone lo: Safari bottom Share button 👆 > "Add to Home Screen" select chey');
   }
 });
+
+// Test kosam 5 sec tarvatha force show
+setTimeout(() => {
+  if(installBtn.style.display === 'none') {
+    console.log('Force button for testing');
+    installBtn.style.display = 'block';
+  }
+}, 5000);
 </script>
 </body>
 </html>
