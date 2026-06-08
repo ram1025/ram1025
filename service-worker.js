@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ram1025-v2';
+const CACHE_NAME = 'ram1025-v3';
 const BASE_PATH = '/ram1025/';
 
 const urlsToCache = [
@@ -12,7 +12,6 @@ const urlsToCache = [
   BASE_PATH + 'style.css'
 ];
 
-// Install - cache all files
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
@@ -20,7 +19,6 @@ self.addEventListener('install', event => {
   self.skipWaiting();
 });
 
-// Activate - delete old cache
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys => 
@@ -30,7 +28,6 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
-// Fetch - cache first, lekapothe network
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
   event.respondWith(
