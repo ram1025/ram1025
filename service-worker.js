@@ -1,8 +1,8 @@
-const CACHE_NAME = 'myjeevandhara-v3';
+const CACHE_NAME = 'myjeevandhara-v4';
 const urlsToCache = [
-  './index.html?v=20261007',
+  './index.html?v=20261008',
   './dpr.html',
-  './constitution.html?v=20261007',
+  './constitution.html?v=20261008',
   './manifest.json',
   './icon-192.png',
   './icon-512.png',
@@ -28,26 +28,12 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
-// Fetch - cache first strategy
+// Fetch - cache first, lekapothe network
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
   event.respondWith(
-    caches.match(event.request).then(resp => resp || fetch(event.request))
-  );
-});  );
-  self.clients.claim();
-});
-
-// Fetch - cache first, lekapothe network
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      }
-    )
+    caches.match(event.request).then(response => {
+      return response || fetch(event.request);
+    })
   );
 });
