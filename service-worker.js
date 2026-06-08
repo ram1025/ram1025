@@ -1,8 +1,8 @@
-const CACHE_NAME = 'myjeevandhara-v5';
+const CACHE_NAME = 'ram1025-v1';
 const urlsToCache = [
-  './index.html?v=20261008',
+  './index.html',
   './dpr.html',
-  './constitution.html?v=20261008',
+  './constitution.html',
   './manifest.json',
   './icon-192.png',
   './icon-512.png',
