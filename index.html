@@ -9,12 +9,12 @@
 <title>My Jeevandhara</title>
 
 <!-- PWA + iOS Meta Tags -->
-<link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="./manifest.json">
+<link rel="apple-touch-icon" href="./icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="ABST">
-<meta name="theme-color" content="#0a192f">
+<meta name="theme-color" content="#d4af37">
 <meta name="description" content="Akanda Bharat Sovereign Township - 36 Pillar Ecosystem">
 </head>
 
@@ -59,7 +59,7 @@ P34: Transparency Hub | P35: Sentinel-Eye | P36: Jarvis AI Core
 
 <button onclick="window.location.href='https://jarvis-live.com'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">LIVE JARVIS TRANSPARENCY FEED</button>
 
-<button onclick="window.location.href='constitution.html?v=20261008'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">📜 VIEW SOVEREIGN CONSTITUTION</button>
+<button onclick="window.location.href='constitution.html'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">📜 VIEW SOVEREIGN CONSTITUTION</button>
 
 <!-- Install Button - PWA logic tho. Default hide -->
 <button id="installBtn" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer;display:none">📲 INSTALL ABST APP</button>
@@ -75,7 +75,7 @@ Verification: Jarvis AI Core Security Layer 7
 <script>
 // Register Service Worker
 if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js');
+  navigator.serviceWorker.register('./sw.js');
 }
 
 // PWA Install - Android + Desktop + iOS
@@ -95,6 +95,7 @@ if(isIOS && !isStandalone) {
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
+  console.log('✅ PWA installable');
   installBtn.style.display = 'block';
 });
 
