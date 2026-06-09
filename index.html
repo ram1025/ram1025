@@ -8,7 +8,6 @@
 <meta http-equiv="Expires" content="0">
 <title>My Jeevandhara</title>
 
-<!-- PWA - Absolute paths for GitHub Pages -->
 <link rel="manifest" href="/ram1025/manifest.json">
 <link rel="apple-touch-icon" href="/ram1025/icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,7 +27,6 @@
 <p style="color:#8892b0;font-size:15px;margin:0 0 15px 0">A 36-Pillar Ecosystem of Total Independence</p>
 <p style="color:#ffd700;margin:0 0 25px 0;font-size:13px;font-weight:bold">Master Visionary: INDIAN.001 RAM GANESH MAKINA</p>
 
-<!-- 36 Pillars Box -->
 <div style="background:#112240;padding:20px;border-radius:12px;text-align:left;margin-bottom:25px;border:1px solid #1a2a4a;line-height:1.9;font-size:13px">
 <div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:5px">Sector 1: Energy & Industrial Core P1-P10</div>
 P1: Plasma Plant | P2: Solar | P3: Moon-Ray | P4: AWT | P5: Rain-Drop<br>
@@ -58,15 +56,10 @@ P34: Transparency Hub | P35: Sentinel-Eye | P36: Jarvis AI Core
 
 <button onclick="window.location.href='/ram1025/constitution.html'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">📜 VIEW SOVEREIGN CONSTITUTION</button>
 
-<!-- APK + PWA Install Section -->
+<!-- Single Install Button for All Devices -->
 <div id="installSection" style="margin:12px 0;">
-  <!-- Android APK Download -->
-  <a href="/ram1025/ABST-App.apk" download style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:0;display:block;text-decoration:none;box-sizing:border-box">📲 DOWNLOAD APK FOR ANDROID</a>
-  
-  <!-- iOS PWA Instructions -->
-  <p id="iosText" style="color:#8892b0;font-size:12px;margin-top:8px;display:none;line-height:1.5">
-    iPhone Users: Safari → Share button □↑ → <b>Add to Home Screen</b>
-  </p>
+  <a id="installBtn" href="#" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:0;display:block;text-decoration:none;box-sizing:border-box">📲 INSTALL APP</a>
+  <p id="helpText" style="color:#8892b0;font-size:12px;margin-top:8px;display:none;line-height:1.5"></p>
 </div>
 
 <p style="color:#8892b0;font-size:11px;margin-top:30px;line-height:1.6">
@@ -77,17 +70,46 @@ Verification: Jarvis AI Core Security Layer 7
 </div>
 
 <script>
-// SW Register
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/ram1025/sw.js').then(reg => {
-    console.log('✅ SW Registered:', reg.scope);
-  }).catch(err => console.log('❌ SW Error:', err));
+// Device detect
+const isAndroid = /Android/.test(navigator.userAgent);
+const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+const isDesktop = !isAndroid && !isIOS;
+const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+
+const installBtn = document.getElementById('installBtn');
+const helpText = document.getElementById('helpText');
+
+// Android: Direct APK download
+if(isAndroid) {
+  installBtn.href = '/ram1025/ABST-App.apk';
+  installBtn.setAttribute('download', 'ABST-App.apk');
+  helpText.innerText = 'Download chesaka Settings → Security → Install unknown apps ON chey';
+  helpText.style.display = 'block';
 }
 
-// iOS detect chesi text chupinchu
-const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
-if(isIOS) {
-  document.getElementById('iosText').style.display = 'block';
+// iOS: PWA instructions
+else if(isIOS && !isStandalone) {
+  installBtn.onclick = (e) => {
+    e.preventDefault();
+    alert('iPhone lo Install cheyadam:\n1. Bottom Share button □↑ click chey\n2. "Add to Home Screen" select chey\n3. Add kottu');
+  };
+  helpText.innerText = 'Safari → Share □↑ → Add to Home Screen';
+  helpText.style.display = 'block';
+}
+
+// Desktop: PWA instructions
+else if(isDesktop) {
+  installBtn.onclick = (e) => {
+    e.preventDefault();
+    alert('Desktop lo Install cheyadam:\nChrome top right 3 dots ⋮ → Install ABST App');
+  };
+  helpText.innerText = 'Chrome → 3 dots ⋮ → Install App';
+  helpText.style.display = 'block';
+}
+
+// Already installed aithe button hide chey
+if(isStandalone) {
+  document.getElementById('installSection').style.display = 'none';
 }
 </script>
 </body>
