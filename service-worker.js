@@ -2,6 +2,7 @@ const CACHE_NAME = 'ram1025-v3';
 const BASE_PATH = '/ram1025/';
 
 const urlsToCache = [
+  BASE_PATH,
   BASE_PATH + 'index.html',
   BASE_PATH + 'dpr.html',
   BASE_PATH + 'constitution.html',
@@ -12,7 +13,7 @@ const urlsToCache = [
   BASE_PATH + 'style.css'
 ];
 
-// Install - cache all files
+// Install - files cache chey
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
@@ -20,7 +21,7 @@ self.addEventListener('install', event => {
   self.skipWaiting();
 });
 
-// Activate - delete old cache
+// Activate - old cache delete
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys => 
@@ -30,14 +31,14 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
-// Fetch - cache first, network fallback, offline page
+// Fetch - cache first, network fallback, offline
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
   
   event.respondWith(
     caches.match(event.request).then(response => {
       return response || fetch(event.request).catch(() => {
-        // Offline ayithe index.html return chey
+        // Net lekapothe index.html ivvu
         if(event.request.destination === 'document') {
           return caches.match(BASE_PATH + 'index.html');
         }
