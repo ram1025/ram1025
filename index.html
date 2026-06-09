@@ -58,7 +58,16 @@ P34: Transparency Hub | P35: Sentinel-Eye | P36: Jarvis AI Core
 
 <button onclick="window.location.href='/ram1025/constitution.html'" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer">📜 VIEW SOVEREIGN CONSTITUTION</button>
 
-<button id="installBtn" style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:12px 0;cursor:pointer;display:none">📲 INSTALL ABST APP</button>
+<!-- APK + PWA Install Section -->
+<div id="installSection" style="margin:12px 0;">
+  <!-- Android APK Download -->
+  <a href="/ram1025/ABST-App.apk" download style="background:#64ffda;color:#0a192f;padding:16px;border-radius:8px;font-weight:bold;font-size:15px;border:none;width:100%;margin:0;display:block;text-decoration:none;box-sizing:border-box">📲 DOWNLOAD APK FOR ANDROID</a>
+  
+  <!-- iOS PWA Instructions -->
+  <p id="iosText" style="color:#8892b0;font-size:12px;margin-top:8px;display:none;line-height:1.5">
+    iPhone Users: Safari → Share button □↑ → <b>Add to Home Screen</b>
+  </p>
+</div>
 
 <p style="color:#8892b0;font-size:11px;margin-top:30px;line-height:1.6">
 Status: Mother Hub (Vizag) - Operational<br>
@@ -68,50 +77,18 @@ Verification: Jarvis AI Core Security Layer 7
 </div>
 
 <script>
-// SW Register - Absolute path nuv ichinattu
+// SW Register
 if('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/ram1025/sw.js').then(reg => {
     console.log('✅ SW Registered:', reg.scope);
   }).catch(err => console.log('❌ SW Error:', err));
 }
 
-// PWA Install
-let deferredPrompt;
-const installBtn = document.getElementById('installBtn');
-
+// iOS detect chesi text chupinchu
 const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
-const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
-
-if(isIOS && !isStandalone) {
-  installBtn.style.display = 'block';
-  installBtn.innerText = '📲 Add to Home Screen';
+if(isIOS) {
+  document.getElementById('iosText').style.display = 'block';
 }
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  console.log('✅ PWA installable');
-  installBtn.style.display = 'block';
-});
-
-installBtn.addEventListener('click', async () => {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    await deferredPrompt.userChoice;
-    deferredPrompt = null;
-    installBtn.style.display = 'none';
-  } else if (isIOS) {
-    alert('iPhone lo: Safari bottom Share button 👆 > "Add to Home Screen" select chey');
-  }
-});
-
-// Test kosam 5 sec tarvatha force show
-setTimeout(() => {
-  if(installBtn.style.display === 'none') {
-    console.log('Force button for testing');
-    installBtn.style.display = 'block';
-  }
-}, 5000);
 </script>
 </body>
 </html>
