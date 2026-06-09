@@ -2,7 +2,7 @@
   "name": "ABST - My Jeevandhara",
   "short_name": "ABST",
   "description": "Akanda Bharat Sovereign Township - 36 Pillar Ecosystem",
-  "start_url": "/ram1025/index.html",
+  "start_url": "/ram1025/",
   "scope": "/ram1025/",
   "display": "standalone",
   "orientation": "portrait",
