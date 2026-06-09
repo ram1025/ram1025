@@ -12,6 +12,7 @@ const urlsToCache = [
   BASE_PATH + 'style.css'
 ];
 
+// Install - cache all files
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
@@ -19,6 +20,7 @@ self.addEventListener('install', event => {
   self.skipWaiting();
 });
 
+// Activate - delete old cache
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys => 
@@ -28,11 +30,18 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
+// Fetch - cache first, network fallback, offline page
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
+  
   event.respondWith(
     caches.match(event.request).then(response => {
-      return response || fetch(event.request);
+      return response || fetch(event.request).catch(() => {
+        // Offline ayithe index.html return chey
+        if(event.request.destination === 'document') {
+          return caches.match(BASE_PATH + 'index.html');
+        }
+      });
     })
   );
 });
