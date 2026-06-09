@@ -3,9 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
 <title>My Jeevandhara</title>
 
 <link rel="manifest" href="/ram1025/manifest.json">
@@ -70,12 +67,6 @@ Verification: Jarvis AI Core Security Layer 7
 </div>
 
 <script>
-if('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/ram1025/sw.js').then(reg => {
-    console.log('✅ SW Registered:', reg.scope);
-  }).catch(err => console.log('❌ SW Error:', err));
-}
-
 let deferredPrompt;
 const installBtn = document.getElementById('installBtn');
 const helpText = document.getElementById('helpText');
@@ -83,6 +74,15 @@ const helpText = document.getElementById('helpText');
 const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
 const isAndroid = /Android/.test(navigator.userAgent);
 const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+
+// SW Register after load
+window.addEventListener('load', () => {
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/ram1025/sw.js').then(reg => {
+      console.log('✅ SW Registered:', reg.scope);
+    }).catch(err => console.log('❌ SW Error:', err));
+  }
+});
 
 // Already installed aithe button hide
 if(!isStandalone) {
@@ -101,9 +101,7 @@ if(isAndroid) {
     if(deferredPrompt) {
       deferredPrompt.prompt();
       const choice = await deferredPrompt.userChoice;
-      if(choice.outcome === 'accepted') {
-        installBtn.style.display = 'none';
-      }
+      if(choice.outcome === 'accepted') installBtn.style.display = 'none';
       deferredPrompt = null;
     } else {
       alert('Chrome 3 dots ⋮ → Install app select chey');
@@ -131,7 +129,7 @@ else {
   helpText.style.display = 'block';
 }
 
-// Test kosam force show
+// Test kosam 3 sec tarvatha force show
 setTimeout(() => {
   if(installBtn.style.display === 'none' && !isStandalone) {
     installBtn.style.display = 'block';
