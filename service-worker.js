@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ram1025-v5-20251004'; // Code marchina prati sari date/number marchu
+const CACHE_NAME = 'ram1025-v9-20251004'; // v5 → v9 ki marchu - code marchina prati sari date/number marchu
 const BASE_PATH = '/ram1025/';
 
 const urlsToCache = [
