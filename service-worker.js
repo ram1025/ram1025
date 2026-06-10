@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ram1025-v9-20251004'; // v5 → v9 ki marchu - code marchina prati sari date/number marchu
+const CACHE_NAME = 'ram1025-v10-20251004'; // v9 → v10 ki marchu - constitution.html 'a' fix kosam
 const BASE_PATH = '/ram1025/';
 
 const urlsToCache = [
@@ -21,7 +21,7 @@ self.addEventListener('install', event => {
   self.skipWaiting(); // ventane activate
 });
 
-// Activate - old cache anni delete
+// Activate - old cache v9, v8 anni delete
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys => 
