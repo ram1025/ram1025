@@ -15,7 +15,9 @@
 body{margin:0;padding:0;background:#0a192f;color:#ffffff;font-family:Arial,sans-serif}
 .container{max-width:600px;margin:0 auto;padding:30px 20px}
 h1{color:#64ffda;font-size:28px;margin:0 0 5px 0;font-weight:bold;text-align:center}
-h3{color:#ffd700;font-size:14px;margin:0 0 20px 0;text-align:center}
+h3{color:#ffd700;font-size:14px;margin:0 0 8px 0;text-align:center}
+.tagline{color:#8892b0;font-size:13px;margin:0 0 5px 0;text-align:center}
+.visionary{color:#ffd700;font-size:12px;margin:0 0 20px 0;text-align:center;font-weight:bold}
 .sector-box{background:#112240;border:1px solid #1a2a4a;border-radius:12px;padding:20px;margin:15px 0;text-align:left;line-height:1.9;font-size:13px}
 .sector-title{color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px}
 .btn{background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:16px;width:100%;margin:12px 0;font-weight:bold;font-size:15px;cursor:pointer}
@@ -31,14 +33,18 @@ img{display:block;margin:0 auto 20px}
 <h1>My Jeevandhara</h1>
 <h3>Akanda Bharat Sovereign Township</h3>
 
+<!-- MISSING 2 LINES ADDED HERE -->
+<p class="tagline">A 36-Pillar Ecosystem of Total Independence</p>
+<p class="visionary">Master Visionary: INDIAN.001 RAM GANESH MAKINA</p>
+
 <div class="sector-box">
 <div class="sector-title">Sector 1: Energy & Industrial Core P1-P10</div>
-P1: Plasma | P2: Solar | P3: Moon-Ray | P4: AWT | P5: Rain-Drop | P6: Green Fuel | P7: rPET | P8: Glass | P9: Aluminium | P10: Recycling
+P1: Plasma Plant | P2: Solar | P3: Moon-Ray | P4: AWT | P5: Rain-Drop | P6: Green Fuel | P7: rPET | P8: Glass | P9: Aluminium | P10: Solar Recycling
 </div>
 
 <div class="sector-box">
 <div class="sector-title">Sector 2: Water & Earth P11-P19</div>
-P11: Amrutavarsha | P12: Dual-Ion Shield | P13: Plastic Center | P14: Waste Command | P15: Waste-to-Farming | P16: Vayu-Shuddhi | P17: Slag-Brick | P18: Chain Mesh | P19: Bio-Gas
+P11: Amrutavarsha AWG | P12: Dual-Ion Shield | P13: Plastic Center | P14: Waste Command | P15: Waste-to-Farming | P16: Vayu-Shuddhi | P17: Slag-Brick | P18: Chain Mesh | P19: Bio-Gas
 </div>
 
 <div class="sector-box">
@@ -62,6 +68,9 @@ P31: RVM Network | P32: Indian.00X ID | P33: Vendor Network | P34: Transparency 
 <button class="btn" onclick="window.location.href='/ram1025/constitution.html'">📜 VIEW SOVEREIGN CONSTITUTION</button>
 <button class="btn" onclick="showLicense()">📜 LICENSE.md</button>
 <button class="btn" onclick="showReadme()">📖 README.md</button>
+
+<!-- INSTALL APP BUTTON ADDED -->
+<button class="btn" id="installBtn" style="display:none;background:#2e7d32;color:#fff">📱 INSTALL APP</button>
 
 <p class="status">Status: Operational | Jarvis AI Core Layer 7<br>Master: INDIAN.001 RAM GANESH MAKINA</p>
 
@@ -118,6 +127,20 @@ function closeReadme(){document.getElementById('readmeModal').style.display='non
 
 // ESC key close
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeLicense();closeReadme()}});
+
+// PWA Install Button Logic
+let deferredPrompt;
+const installBtn = document.getElementById('installBtn');
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  installBtn.style.display = 'block';
+});
+installBtn.addEventListener('click', () => {
+  installBtn.style.display = 'none';
+  deferredPrompt.prompt();
+  deferredPrompt.userChoice.then(() => deferredPrompt = null);
+});
 
 // SW Register - clean link, no v= param
 if('serviceWorker' in navigator){
