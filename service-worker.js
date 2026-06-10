@@ -1,48 +1,31 @@
-const CACHE_NAME = 'ram1025-v3';
-const BASE_PATH = '/ram1025/';
-
-const urlsToCache = [
-  BASE_PATH,
-  BASE_PATH + 'index.html',
-  BASE_PATH + 'dpr.html',
-  BASE_PATH + 'constitution.html',
-  BASE_PATH + 'manifest.json',
-  BASE_PATH + 'icon-192.png',
-  BASE_PATH + 'icon-512.png',
-  BASE_PATH + 'apple-touch-icon.png',
-  BASE_PATH + 'style.css'
+const CACHE_NAME = 'abst-v3-20251004'; // <- change this version number every time you update code
+const FILES_TO_CACHE = [
+  '/',
+  '/index.html',
+  '/LICENSE'
 ];
 
-// Install - files cache chey
+// Install: cache new files
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
+    caches.open(CACHE_NAME).then(cache => cache.addAll(FILES_TO_CACHE))
   );
-  self.skipWaiting();
+  self.skipWaiting(); // activate immediately
 });
 
-// Activate - old cache delete
+// Activate: delete old caches
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(keys => 
-      Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
+    caches.keys().then(keys =>
+      Promise.all(keys.map(k => k !== CACHE_NAME ? caches.delete(k) : null))
     )
   );
-  self.clients.claim();
+  self.clients.claim(); // take control of open tabs
 });
 
-// Fetch - cache first, network fallback, offline
+// Fetch: network first, then cache
 self.addEventListener('fetch', event => {
-  if (event.request.method !== 'GET') return;
-  
   event.respondWith(
-    caches.match(event.request).then(response => {
-      return response || fetch(event.request).catch(() => {
-        // Net lekapothe index.html ivvu
-        if(event.request.destination === 'document') {
-          return caches.match(BASE_PATH + 'index.html');
-        }
-      });
-    })
+    fetch(event.request).catch(() => caches.match(event.request))
   );
 });
