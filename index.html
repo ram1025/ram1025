@@ -64,19 +64,77 @@ Status: Mother Hub (Vizag) - Operational<br>
 Verification: Jarvis AI Core Security Layer 7
 </p>
 
-<!-- ABST Legal Buttons - Master Visionary Lock -->
+<!-- ABST Legal Buttons - Read Only Popup Lock -->
 <div style="display: flex; gap: 12px; margin-top: 40px; margin-bottom: 30px; justify-content: center; padding: 20px; flex-wrap: wrap; border-top: 2px solid #64ffda;">
   
-  <button onclick="openLicense()" 
+  <button onclick="showLicense()" 
     style="padding: 14px 28px; background: linear-gradient(135deg, #0d47a1, #1976d2); color: white; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
     📜 LICENSE.md
   </button>
 
-  <button onclick="openReadme()" 
+  <button onclick="showReadme()" 
     style="padding: 14px 28px; background: linear-gradient(135deg, #1b5e20, #2e7d32); color: white; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
     📖 README.md
   </button>
 
+</div>
+
+<!-- License Popup - Read Only -->
+<div id="licenseModal" onclick="closeLicense()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:9999; padding:20px; overflow:auto;">
+  <div onclick="event.stopPropagation()" style="max-width:700px; margin:40px auto; background:#0a192f; padding:25px; border-radius:12px; border:2px solid #64ffda;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+      <h2 style="color:#64ffda; margin:0;">📜 ABST SOVEREIGN LICENSE</h2>
+      <span onclick="closeLicense()" style="font-size:28px; color:#64ffda; cursor:pointer; line-height:1;">&times;</span>
+    </div>
+    <div style="color:#fff; background:#112240; padding:20px; border-radius:8px; font-size:13px; line-height:1.8; text-align:left; max-height:400px; overflow-y:auto;">
+      <b>Master Visionary Lock - INDIAN.001 RAM GANESH MAKINA</b><br><br>
+      
+      Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
+      
+      1. ALL RIGHTS RESERVED BY MASTER VISIONARY<br>
+      2. No fork, modification, or redistribution without written permission<br>
+      3. This code cannot be used for competing sovereign projects<br>
+      4. Attribution to Master Visionary mandatory in all copies<br>
+      5. Violation will result in legal action under Digital Sovereignty Act<br><br>
+      
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT ANY WARRANTY.<br>
+      MASTER VISIONARY IS NOT LIABLE FOR ANY DAMAGES.<br><br>
+      
+      Status: Mother Hub (Vizag) - Operational<br>
+      Verification: Jarvis AI Core Security Layer 7
+    </div>
+    <p style="color:#8892b0; font-size:11px; margin-top:10px; text-align:center;">*Read-only view - Cannot be edited</p>
+  </div>
+</div>
+
+<!-- README Popup - Read Only -->
+<div id="readmeModal" onclick="closeReadme()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:9999; padding:20px; overflow:auto;">
+  <div onclick="event.stopPropagation()" style="max-width:700px; margin:40px auto; background:#0a192f; padding:25px; border-radius:12px; border:2px solid #2e7d32;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+      <h2 style="color:#2e7d32; margin:0;">📖 ABST README</h2>
+      <span onclick="closeReadme()" style="font-size:28px; color:#2e7d32; cursor:pointer; line-height:1;">&times;</span>
+    </div>
+    <div style="color:#fff; background:#112240; padding:20px; border-radius:8px; font-size:13px; line-height:1.8; text-align:left; max-height:400px; overflow-y:auto;">
+      <b>ABST - Akanda Bharat Sovereign Township</b><br><br>
+      
+      <b>Master Visionary:</b> INDIAN.001 RAM GANESH MAKINA<br><br>
+      
+      <b>36-Pillar Ecosystem:</b><br>
+      Sector 1: Energy & Industrial Core P1-P10<br>
+      Sector 2: Water & Earth P11-P19<br>
+      Sector 3: Infrastructure P20-P24<br>
+      Sector 4: Social Capital P25-P30<br>
+      Sector 5: Digital Nervous System P31-P36<br><br>
+      
+      <b>Mission:</b> Total Independence through 36 Pillars<br>
+      <b>Status:</b> Mother Hub (Vizag) - Operational<br>
+      <b>Security:</b> Jarvis AI Core Layer 7<br><br>
+      
+      This project is protected under Master Visionary Lock.<br>
+      See LICENSE for terms.
+    </div>
+    <p style="color:#8892b0; font-size:11px; margin-top:10px; text-align:center;">*Read-only view - Cannot be edited</p>
+  </div>
 </div>
 
 </div>
@@ -151,13 +209,31 @@ setTimeout(() => {
   }
 }, 3000);
 
-// ABST Legal Buttons Functions - Single Script Only
-function openLicense() { 
-  window.open('https://github.com/ram1025/ram1025/blob/main/LICENSE.md', '_blank'); 
+// Popup control - No GitHub access
+function showLicense() {
+  document.getElementById('licenseModal').style.display = 'block';
+  document.body.style.overflow = 'hidden';
 }
-function openReadme() { 
-  window.open('https://github.com/ram1025/ram1025/blob/main/README.md', '_blank'); 
+function closeLicense() {
+  document.getElementById('licenseModal').style.display = 'none';
+  document.body.style.overflow = 'auto';
 }
+function showReadme() {
+  document.getElementById('readmeModal').style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+function closeReadme() {
+  document.getElementById('readmeModal').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// ESC key close
+document.addEventListener('keydown', function(e) {
+  if(e.key === 'Escape') {
+    closeLicense();
+    closeReadme();
+  }
+});
 </script>
 </body>
 </html>
