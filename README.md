@@ -1,3 +1,14 @@
+### 🎥 Master Vision Video - 3 Min Investor Pitch
+<video width="100%" controls>
+  <source src="video/ABST-Master-Vision-2026.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+**Tagline: డ్రైవ్ చేస్తూనే చార్జ్ – పార్క్ చేస్తూనే పవర్**  
+**Drive Chesthune Charge – Park Chesthune Power**
+
+---
+
 # ABST - 36 PILLARS OF AKANDA BHARAT SOVEREIGN TRUST
 ## Mother Hub: Vizag 1000 Acres | Target: 2047
 
