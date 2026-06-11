@@ -1,11 +1,10 @@
 ### 🎥 Master Vision Video - 3 Min Investor Pitch
-<video width="100%" controls>
-  <source src="video/ABST-Master-Vision-2026.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Click to Play Video ▶️](day-mode.jpg)](video/ABST-Master-Vision-2026.mp4)
 
 **Tagline: డ్రైవ్ చేస్తూనే చార్జ్ – పార్క్ చేస్తూనే పవర్**  
 **Drive Chesthune Charge – Park Chesthune Power**
+
+*Click thumbnail to play 24.69MB Master Vision*
 
 ---
 
@@ -13,7 +12,7 @@
 ## Mother Hub: Vizag 1000 Acres | Target: 2047
 
 **Master Visionary: INDIAN.001 RAM GANESH MAKINA**  
-**Timestamp: 2026-04-10 | GitHub Proof of Concept**
+**Timestamp: 2026-04-10 | GitHub Proof of Concept | Lock: ABST-MVL-v1.0**
 
 ### The Problem - "AI Thirst & Nation Debt"
 Future data centers need billions of liters water. India faces water + unemployment + plastic crisis.
@@ -29,15 +28,13 @@ Complete blueprint for Sovereign Bharat. Not just an app. Not just a policy. A S
 5. **P36: Jarvis AI** - Nation brain
 
 ### Proof Files:
-- `/app/ABST-APK-v1.0.apk` - Working prototype
+- `/app/ABST-APK-v1.0.apk` - Working prototype with MVL Lock
+- `/video/ABST-Master-Vision-2026.mp4` - 3 Min Master Vision Pitch
 - `/blueprint/` - Mother Hub Day/Night images, 36 Sectors map
 - `/constitution.md` - ABST Constitution draft
 
 ### License & Credit
 Open Source for Nation Building. See LICENSE.md.  
-**Attribution Mandatory: INDIAN.001 Ram Ganesh Makina**
+**Attribution Mandatory: INDIAN.001 Ram Ganesh Makina | Master Visionary Lock Protected**
 
-"Vallu 1 Pillar theesi chesthe Bharat gelustundi.  
-Nenu 36 Pillars connect chesi system isthunna. System break avvadhu."
-
-Contact: Via GitHub Issues only
+"V
