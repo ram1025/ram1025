@@ -3,166 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LIVE JARVIS TRANSPARENCY FEED - ABST</title>
+<title>My Jeevandhara - ABST</title>
 <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    background: #0a0a0a;
-    color: #00ff88;
-    font-family: 'Courier New', monospace;
+    background: #0a0f1a;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Arial, sans-serif;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
+  }
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .logo {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
   }
   .header {
     text-align: center;
-    border-bottom: 2px solid #00ff88;
-    padding: 20px 10px;
-    background: #111;
+    margin-bottom: 30px;
   }
   .header h1 {
-    color: #ff6600;
-    font-size: 22px;
+    color: #00ffcc;
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+  .header h2 {
+    color: #ffcc00;
+    font-size: 16px;
     margin-bottom: 5px;
   }
   .header p {
-    color: #00ccff;
-    font-size: 12px;
-    margin: 3px 0;
-  }
-  .status {
-    color: #00ff88;
-    font-size: 11px;
-    margin-top: 8px;
-  }
-  .status .dot {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    background: #00ff88;
-    border-radius: 50%;
-    animation: blink 1s infinite;
-  }
-  @keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
-  }
-  .feed-container {
-    flex: 1;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-  }
-  .feed {
-    width: 100%;
-    max-width: 900px;
-    height: calc(100vh - 220px);
-    overflow-y: auto;
-    border: 1px solid #333;
-    padding: 15px;
-    background: #0d0d0d;
-    border-radius: 8px;
-  }
-  .log {
-    margin: 10px 0;
-    padding: 8px 10px;
-    border-left: 2px solid #00ff88;
-    background: #151515;
+    color: #aaa;
     font-size: 13px;
-    animation: slideIn 0.4s;
-    word-wrap: break-word;
+    margin-bottom: 5px;
   }
-  .timestamp {
-    color: #888;
-    margin-right: 8px;
+  .header .master {
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .sector {
+    background: #1a2332;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .sector h3 {
+    color: #00ffcc;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .sector p {
+    color: #ccc;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+  }
+  .btn {
+    background: #00ffcc;
+    color: #000;
+    border: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+  }
+  .btn:hover {
+    background: #00ccaa;
+    transform: translateY(-2px);
+  }
+  .btn.install {
+    background: #2d5016;
+    color: #fff;
+  }
+  .btn.install:hover {
+    background: #3d6026;
   }
   .footer {
     text-align: center;
-    padding: 15px 10px;
-    border-top: 1px solid #333;
-    background: #111;
-  }
-  .back-btn a {
-    color: #ff6600;
-    text-decoration: none;
-    border: 1px solid #ff6600;
-    padding: 12px 30px;
-    border-radius: 6px;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  .back-btn a:active {
-    background: #ff6600;
-    color: #000;
-  }
-  .founder {
+    margin-top: 30px;
     color: #666;
-    font-size: 10px;
-    margin-top: 8px;
-  }
-  @keyframes slideIn {
-    from { opacity: 0; transform: translateX(-10px); }
-    to { opacity: 1; transform: translateX(0); }
+    font-size: 11px;
   }
 </style>
 </head>
 <body>
-  <div class="header">
-    <h1>🔴 LIVE JARVIS TRANSPARENCY FEED</h1>
-    <p>ABST - Absolute Bharat Sovereign Technology</p>
-    <p>Open • Honest • Transparent</p>
-    <div class="status"><span class="dot"></span> LIVE STREAM ACTIVE</div>
-  </div>
-  
-  <div class="feed-container">
-    <div class="feed" id="feed"></div>
-  </div>
-  
-  <div class="footer">
-    <div class="back-btn">
-      <a href="/ram1025/">← BACK TO ABST HOME</a>
+  <div class="container">
+    <div class="logo">
+      <img src="logo.png" alt="ABST Logo">
     </div>
-    <div class="founder">Founder: INDIAN.001 RAM GANESH MAKINA</div>
+    
+    <div class="header">
+      <h1>My Jeevandhara</h1>
+      <h2>Akanda Bharat Sovereign Township</h2>
+      <p>A 36-Pillar Ecosystem of Total Independence</p>
+      <div class="master">Master Visionary: INDIAN.001 RAM GANESH MAKINA</div>
+    </div>
+
+    <div class="sector">
+      <h3>Sector 1: Energy & Industrial Core P1-P10</h3>
+      <p>P1: Plasma Plant | P2: Solar | P3: Moon-Ray | P4: AWT | P5: Rain-Drop<br>
+      P6: Green Fuel | P7: rPET | P8: Glass | P9: Aluminium | P10: Solar Recycling</p>
+    </div>
+
+    <div class="sector">
+      <h3>Sector 2: Water & Earth P11-P19</h3>
+      <p>P11: Amrutavarsha AWG | P12: Dual-Ion Shield | P13: Plastic Center<br>
+      P14: Waste Command | P15: Waste-to-Farming | P16: Vayu-Shuddhi<br>
+      P17: Slag-Brick | P18: Chain Mesh | P19: Bio-Gas Station</p>
+    </div>
+
+    <div class="sector">
+      <h3>Sector 3: Infrastructure P20-P24</h3>
+      <p>P20: Utility Tunnel | P21: HDD Pipeline | P22: Footstep Walkways<br>
+      P23: Bio-Vault | P24: Matru-Shakti Housing</p>
+    </div>
+
+    <div class="sector">
+      <h3>Sector 4: Social Capital P25-P30</h3>
+      <p>P25: KG to PhD | P26: Hospital | P27: Project Bank<br>
+      P28: Food/Clothing Malls | P29: Simulation Game | P30: Hall of Fame</p>
+    </div>
+
+    <div class="sector">
+      <h3>Sector 5: Digital Nervous System P31-P36</h3>
+      <p>P31: RVM Network | P32: Indian.00X ID | P33: Vendor Network<br>
+      P34: Transparency Hub | P35: Sentinel-Eye | P36: Jarvis AI Core</p>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn" onclick="window.location.href='dpr.html'">VIEW FULL 36-PILLAR DPR</button>
+      <button class="btn" onclick="window.location.href='constitution.html'">📜 VIEW SOVEREIGN CONSTITUTION</button>
+      <button class="btn" onclick="window.location.href='LICENSE.md'">📜 LICENSE.md</button>
+      <button class="btn" onclick="window.location.href='README.md'">📖 README.md</button>
+      <button class="btn install" onclick="installApp()">📱 INSTALL APP</button>
+    </div>
+
+    <div class="footer">
+      Status: Operational | Jarvis AI Core Layer 7<br>
+      Master: INDIAN.001 RAM GANESH MAKINA
+    </div>
   </div>
 
 <script>
-const logTypes = [
-  "System: Jarvis AI core initialized",
-  "Security: ABST Constitution compliance verified",
-  "Success: DPR proposal #247 scanned transparently",
-  "System: New citizen query from Telangana received",
-  "Security: Blockchain transparency log updated",
-  "Success: All ABST modules running at 99.9% uptime",
-  "System: Sovereign Constitution Article 3 verified",
-  "Security: Live feed encryption active - Public access"
-];
-
-const feed = document.getElementById('feed');
-
-function addLog() {
-  const time = new Date().toLocaleTimeString('en-IN', { hour12: false });
-  const msg = logTypes[Math.floor(Math.random() * logTypes.length)];
-  
-  const div = document.createElement('div');
-  div.className = 'log';
-  div.innerHTML = `<span class="timestamp">[${time}]</span> ${msg}`;
-  
-  feed.appendChild(div);
-  feed.scrollTop = feed.scrollHeight;
-  
-  if (feed.children.length > 100) {
-    feed.removeChild(feed.firstChild);
-  }
+function installApp() {
+  alert('PWA Install prompt will show here');
 }
-
-// Initial logs
-for(let i = 0; i < 8; i++) {
-  setTimeout(() => addLog(), i * 200);
-}
-
-// Add new log every 3 seconds
-setInterval(addLog, 3000);
 </script>
 </body>
 </html>
