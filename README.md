@@ -1,5 +1,5 @@
 ### 🎬 Master Vision Video - 3 Min Investor Pitch
-[▶️ Click Here to Play Video - 24.69MB](video/ABST-Master-Vision-2026.mp4)
+[▶️ Click to Play Video - 24.7MB](ABST-Master-Vision-2026.mp4)
 
 **Tagline: డ్రైవ్ చేస్తూనే చార్జ్ – పార్క్ చేస్తూనే పవర్**  
 **Drive Chesthune Charge – Park Chesthune Power**
