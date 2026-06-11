@@ -1,5 +1,5 @@
 ### 🎬 Master Vision Video - 3 Min Investor Pitch
-[▶️ Click to Play Video - 24.7MB](ABST-Master-Vision-2026.mp4)
+<button class="btn" onclick="window.open('https://drive.google.com/file/d/1u8xVrk7SHwpQIcROzPuRPsL1qajs_j0h/preview','_blank')">▶️ WATCH VIDEO - 3 MIN</button>
 
 **Tagline: డ్రైవ్ చేస్తూనే చార్జ్ – పార్క్ చేస్తూనే పవర్**  
 **Drive Chesthune Charge – Park Chesthune Power**
@@ -20,7 +20,7 @@ AI data centers need billions of liters water. India has water + job crisis.
 
 ### Proof Files:
 - `/app/ABST-APK-v1.0.apk` - Working APK with MVL Lock
-- `/video/ABST-Master-Vision-2026.mp4` - 3 Min Pitch Video
+- `🎬 WATCH VIDEO` button paiki - 3 Min Pitch Video via Google Drive
 - `/blueprint/` - Mother Hub maps coming soon
 
 ### License
