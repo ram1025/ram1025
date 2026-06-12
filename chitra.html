@@ -74,7 +74,7 @@
     <div id="result" class="mt-6">
       <div class="bg-slate-900 border border-slate-800 rounded-lg p-8 text-center">
         <p class="text-slate-500 text-sm">P38 click chesi Generate press chey</p>
-        <p class="text-slate-600 text-xs mt-2">Pollinations Free API v2.0 ✅</p>
+        <p class="text-slate-600 text-xs mt-2">Pollinations Free API v3.0 - Queue Protected ✅</p>
       </div>
     </div>
 
@@ -103,20 +103,36 @@ function setPrompt(pillar) {
   document.getElementById('prompt').value = ABST_PROMPTS[pillar] || '';
 }
 
-// Pollinations API v2.0 - Timer + Fast Load
+// Global flag - Queue Protection
+let isGenerating = false;
+
 async function generateDemo() {
+  if(isGenerating) {
+    alert('Already generating Ram! Oka image complete ayye varaku wait chey');
+    return;
+  }
+
   const prompt = document.getElementById('prompt').value;
   const style = document.getElementById('style').value;
   const ratio = document.getElementById('ratio').value;
   const watermark = document.getElementById('watermark').checked;
   const sriYantra = document.getElementById('sriYantra').checked;
   const resultDiv = document.getElementById('result');
+  const genBtn = document.querySelector('button[onclick="generateDemo()"]');
 
   if(!prompt) return alert('Prompt enter chey Ram - leka P1-P38 button click chey');
 
-  let finalPrompt = prompt + ", " + style;
-  if(sriYantra) finalPrompt += ", Sri Yantra sacred geometry overlay";
-  if(watermark) finalPrompt += ", INDIAN.001 RAM GANESH MAKINA";
+  // Lock UI
+  isGenerating = true;
+  genBtn.disabled = true;
+  genBtn.innerText = 'Generating... Wait Chey';
+  genBtn.classList.add('opacity-50','cursor-not-allowed');
+
+  // Short prompt - Pollinations ki pedda prompt reject chestadi
+  let shortPrompt = prompt.split(',').slice(0,2).join(',');
+  let finalPrompt = shortPrompt + ", " + style;
+  if(sriYantra) finalPrompt += ", Sri Yantra sacred geometry";
+  if(watermark) finalPrompt += ", INDIAN.001";
 
   // Size based on ratio - smaller = faster
   const sizeMap = {
@@ -125,7 +141,7 @@ async function generateDemo() {
     "9:16": {w: 432, h: 768}
   };
   const size = sizeMap[ratio];
-  finalPrompt += ", 8k, masterpiece, ultra detailed";
+  finalPrompt += ", 8k, masterpiece";
 
   // Loading State with Timer
   let seconds = 0;
@@ -133,7 +149,7 @@ async function generateDemo() {
     <div class="bg-slate-900 border border-cyan-800 rounded-lg p-8 text-center">
       <p class="text-cyan-400 animate-pulse">🎨 Generating ABST Vision...</p>
       <p class="text-slate-500 text-xs mt-2" id="timer">Time: 0 sec</p>
-      <p class="text-slate-600 text-xs mt-4">Pollinations Free - 10-25 sec padutadi</p>
+      <p class="text-yellow-500 text-xs mt-3">⚠️ Malli click cheyaku. Queue full avuthadi</p>
       <p class="text-slate-700 text-xs mt-2 font-mono">${finalPrompt.substring(0,60)}...</p>
     </div>
   `;
@@ -141,13 +157,16 @@ async function generateDemo() {
   const timerInterval = setInterval(() => {
     seconds++;
     document.getElementById('timer').innerText = `Time: ${seconds} sec`;
-    if(seconds > 45) {
+    if(seconds > 50) {
       clearInterval(timerInterval);
+      isGenerating = false;
+      genBtn.disabled = false;
+      genBtn.innerText = 'Generate Image';
+      genBtn.classList.remove('opacity-50','cursor-not-allowed');
       resultDiv.innerHTML = `
         <div class="bg-slate-900 border border-red-800 rounded-lg p-6 text-center">
-          <p class="text-red-400">⚠️ Timeout: 45 sec dhatindi</p>
-          <p class="text-slate-500 text-xs mt-2">Server busy. Prompt short chesi malli try chey</p>
-          <p class="text-slate-600 text-xs mt-2">Tip: "P38 Hyperloop sunset" ani matrame pettu</p>
+          <p class="text-red-400">⚠️ Timeout: 50 sec dhatindi</p>
+          <p class="text-slate-500 text-xs mt-2">Server busy. 1 min wait chesi malli try chey</p>
         </div>
       `;
     }
@@ -160,9 +179,14 @@ async function generateDemo() {
     const img = new Image();
     img.onload = function() {
       clearInterval(timerInterval);
+      isGenerating = false;
+      genBtn.disabled = false;
+      genBtn.innerText = 'Generate Image';
+      genBtn.classList.remove('opacity-50','cursor-not-allowed');
+
       resultDiv.innerHTML = `
-        <div class="bg-slate-900 border border-cyan-800 rounded-lg p-4">
-          <p class="text-cyan-400 text-sm mb-3">✓ Generated in ${seconds} sec by INDIAN.001:</p>
+        <div class="bg-slate-900 border border-green-800 rounded-lg p-4">
+          <p class="text-green-400 text-sm mb-3">✓ Generated in ${seconds} sec by INDIAN.001:</p>
           <img src="${imageUrl}" class="rounded-lg w-full mb-3 border border-slate-700">
           <a href="${imageUrl}" download="ABST_${Date.now()}.png"
              class="block text-center bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded text-sm font-bold">
@@ -176,19 +200,28 @@ async function generateDemo() {
 
     img.onerror = function() {
       clearInterval(timerInterval);
-      throw new Error('Image load avvaledu');
+      isGenerating = false;
+      genBtn.disabled = false;
+      genBtn.innerText = 'Generate Image';
+      genBtn.classList.remove('opacity-50','cursor-not-allowed');
+
+      resultDiv.innerHTML = `
+        <div class="bg-slate-900 border border-red-800 rounded-lg p-6 text-center">
+          <p class="text-red-400">⚠️ Queue Full or Image Blocked</p>
+          <p class="text-slate-500 text-xs mt-2">1 min wait chesi malli try chey. Okate request allowed.</p>
+          <p class="text-slate-600 text-xs mt-2">Tip: Night 11 PM - 7 AM IST lo fast ga untadi</p>
+        </div>
+      `;
     };
 
     img.src = imageUrl;
 
   } catch (error) {
     clearInterval(timerInterval);
-    resultDiv.innerHTML = `
-      <div class="bg-slate-900 border border-red-800 rounded-lg p-6 text-center">
-        <p class="text-red-400 text-sm">⚠️ Error: ${error.message}</p>
-        <p class="text-slate-500 text-xs mt-2">Prompt chinnaga chesi try chey: "P38 Hyperloop sunset"</p>
-      </div>
-    `;
+    isGenerating = false;
+    genBtn.disabled = false;
+    genBtn.innerText = 'Generate Image';
+    genBtn.classList.remove('opacity-50','cursor-not-allowed');
   }
 }
 </script>
