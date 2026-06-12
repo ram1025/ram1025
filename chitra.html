@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akanda Chitra - ABST Image Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-950 text-white">
+  <div class="max-w-5xl mx-auto p-4 md:p-6">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-bold text-cyan-400">Akanda Chitra</h1>
+        <p class="text-slate-400 text-sm">P1-P38 ABST Visualization Engine | INDIAN.001</p>
+      </div>
+      <a href="/ram1025/" class="text-cyan-400 hover:text-cyan-300 text-sm">← ABST Home</a>
+    </div>
+
+    <!-- Pillar Presets -->
+    <div class="mb-6">
+      <p class="text-slate-300 text-sm mb-2">Quick Presets - Pillar Select Chey:</p>
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 gap-2">
+        <button onclick="setPrompt('P1')" class="bg-slate-800 hover:bg-cyan-700 p-2 rounded text-xs">P1 Plasma</button>
+        <button onclick="setPrompt('P3')" class="bg-slate-800 hover:bg-cyan-700 p-2 rounded text-xs">P3 Water</button>
+        <button onclick="setPrompt('P20')" class="bg-slate-800 hover:bg-cyan-700 p-2 rounded text-xs">P20 Tunnel</button>
+        <button onclick="setPrompt('P22')" class="bg-slate-800 hover:bg-cyan-700 p-2 rounded text-xs">P22 Kinetic</button>
+        <button onclick="setPrompt('P32')" class="bg-slate-800 hover:bg-cyan-700 p-2 rounded text-xs">P32 Sentinel</button>
+        <button onclick="setPrompt('P36')" class="bg-slate-800 hover:bg-cyan-700 p-2 rounded text-xs">P36 Jarvis</button>
+        <button onclick="setPrompt('P37')" class="bg-slate-800 hover:bg-cyan-700 p-2 rounded text-xs">P37 Metro</button>
+        <button onclick="setPrompt('P38')" class="bg-slate-800 hover:bg-cyan-700 p-2 rounded text-xs">P38 Hyperloop</button>
+      </div>
+    </div>
+
+    <!-- Prompt Box -->
+    <div class="mb-4">
+      <label class="text-slate-300 text-sm mb-2 block">Prompt:</label>
+      <textarea id="prompt" class="w-full p-3 bg-slate-800 rounded border border-slate-700 focus:border-cyan-500 outline-none" rows="4"
+        placeholder="Pillar select chey leka ne own ABST vision type chey..."></textarea>
+    </div>
+
+    <!-- Style Options -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+      <select id="style" class="bg-slate-800 p-2 rounded border border-slate-700 text-sm">
+        <option value="photorealistic 8k">Photorealistic</option>
+        <option value="cinematic lighting">Cinematic</option>
+        <option value="technical blueprint">Blueprint</option>
+        <option value="aerial drone shot">Aerial View</option>
+      </select>
+      <select id="ratio" class="bg-slate-800 p-2 rounded border border-slate-700 text-sm">
+        <option value="16:9">16:9 Landscape</option>
+        <option value="1:1">1:1 Square</option>
+        <option value="9:16">9:16 Portrait</option>
+      </select>
+      <label class="flex items-center gap-2 bg-slate-800 p-2 rounded text-sm">
+        <input type="checkbox" id="watermark" checked class="accent-cyan-500">
+        INDIAN.001 ID
+      </label>
+      <label class="flex items-center gap-2 bg-slate-800 p-2 rounded text-sm">
+        <input type="checkbox" id="sriYantra" class="accent-cyan-500">
+        Sri Yantra Mode
+      </label>
+    </div>
+
+    <!-- Generate Button -->
+    <button onclick="generateDemo()" class="w-full bg-cyan-600 hover:bg-cyan-700 px-6 py-3 rounded font-bold text-lg transition">
+      Generate Image
+    </button>
+
+    <!-- Result Area -->
+    <div id="result" class="mt-6">
+      <div class="bg-slate-900 border border-slate-800 rounded-lg p-8 text-center">
+        <p class="text-slate-500 text-sm">API Key connect chesaka images ikkada kanipistayi</p>
+        <p class="text-slate-600 text-xs mt-2">Demo Mode: Replicate/Hugging Face API kavali</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-8 pt-6 border-t border-slate-800">
+      <p class="text-xs text-slate-600 text-center">
+        Dig Once, Serve Forever | P36 Jarvis AI Core | © INDIAN.001 RAM GANESH MAKINA
+      </p>
+    </div>
+  </div>
+
+<script>
+// ABST P1-P38 Preset Prompts
+const ABST_PROMPTS = {
+  P1: "Futuristic plasma waste-to-energy plant in Akanda Bharat Sovereign Township, clean white facility with Sri Yantra geometry, zero emission stacks, hydrogen storage tanks, Indian engineers monitoring",
+  P3: "Amrutavarsha modular water plant ABST, atmospheric water generators, 10000 liter tanks, solar powered, village distribution hub, green landscape",
+  P20: "Walkthrough utility tunnel P20 under ABST roads, organized power cables data fiber water pipes on racks, concrete chamber 8x8ft, no-dig infrastructure, worker with tablet inspecting, LED lighting",
+  P22: "Kinetic footstep energy walkway in ABST public plaza, glowing tiles generating power, people walking, metro station entrance visible, evening lights",
+  P32: "Sentinel-Eye AI surveillance grid ABST, smart cameras on poles, drone monitoring, holographic crime prediction display, control room P36 Jarvis Core",
+  P36: "Jarvis AI Core central command ABST, massive holographic displays, P1-P35 data streams, Sri Yantra interface, INDIAN.001 quantum server room",
+  P37: "Underground electric metro Bharat Dhara Metro 25m below ABST, driverless glass pods, kinetic footstep tiles P22, bio-vault entry gates, transparent ceiling showing EV lane above, Telugu signage",
+  P38: "Aerial view Akanda Hyperloop Sri Yantra grid 50m above Vizag Mother Hub, 9 golden interlocking triangles, central Bindu station, 8 vacuum tube corridors to cities, solar skin tubes, ABST township below, sunset golden hour"
+};
+
+function setPrompt(pillar) {
+  document.getElementById('prompt').value = ABST_PROMPTS[pillar] || '';
+}
+
+// Demo function - API integrate chesaka replace chey
+function generateDemo() {
+  const prompt = document.getElementById('prompt').value;
+  const style = document.getElementById('style').value;
+  const ratio = document.getElementById('ratio').value;
+  const watermark = document.getElementById('watermark').checked;
+  const sriYantra = document.getElementById('sriYantra').checked;
+
+  if(!prompt) {
+    alert('Prompt enter chey Ram - leka P1-P38 button click chey');
+    return;
+  }
+
+  let finalPrompt = prompt + ", " + style + ", --ar " + ratio;
+  if(sriYantra) finalPrompt += ", Sri Yantra sacred geometry overlay";
+  if(watermark) finalPrompt += ", INDIAN.001 RAM GANESH MAKINA watermark small bottom right";
+
+  document.getElementById('result').innerHTML = `
+    <div class="bg-slate-900 border border-cyan-800 rounded-lg p-4">
+      <p class="text-cyan-400 text-sm mb-3">✓ Prompt Ready:</p>
+      <p class="text-slate-300 text-xs bg-slate-800 p-3 rounded mb-4 font-mono">${finalPrompt}</p>
+      <div class="bg-slate-800 rounded-lg p-8 text-center">
+        <p class="text-yellow-400 text-sm">⚠️ API Key Kavali</p>
+        <p class="text-slate-500 text-xs mt-2">Replicate.com → API Token teesukoni Vercel lo setup chey</p>
+        <p class="text-slate-600 text-xs mt-4">Demo Preview:</p>
+        <img src="https://via.placeholder.com/1024x576/0ea5e9/ffffff?text=ABST+${prompt.substring(0,20)}..." class="rounded-lg w-full mt-2">
+      </div>
+    </div>
+  `;
+
+  // Scroll to result
+  document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
