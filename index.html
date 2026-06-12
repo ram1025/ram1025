@@ -33,28 +33,32 @@ img{display:block;margin:0 auto 20px}
 <h1>My Jeevandhara</h1>
 <h3>Akanda Bharat Sovereign Township</h3>
 
-<!-- MISSING 2 LINES ADDED HERE -->
 <p class="tagline">A 36-Pillar Ecosystem of Total Independence</p>
 <p class="visionary">Master Visionary: INDIAN.001 RAM GANESH MAKINA</p>
 
 <div class="sector-box">
 <div class="sector-title">Sector 1: Energy & Industrial Core P1-P10</div>
-P1: Plasma Plant | P2: Solar | P3: Moon-Ray | P4: AWT | P5: Rain-Drop | P6: Green Fuel | P7: rPET | P8: Glass | P9: Aluminium | P10: Solar Recycling
+P1: Plasma Plant | P2: Solar | P3: Moon-Ray | P4: AWT | P5: Rain-Drop<br>
+P6: Green Fuel | P7: rPET | P8: Glass | P9: Aluminium | P10: Solar Recycling
 </div>
 
 <div class="sector-box">
 <div class="sector-title">Sector 2: Water & Earth P11-P19</div>
-P11: Amrutavarsha AWG | P12: Dual-Ion Shield | P13: Plastic Center | P14: Waste Command | P15: Waste-to-Farming | P16: Vayu-Shuddhi | P17: Slag-Brick | P18: Chain Mesh | P19: Bio-Gas
+P11: Amrutavarsha AWG | P12: Dual-Ion Shield | P13: Plastic Center<br>
+P14: Waste Command | P15: Waste-to-Farming | P16: Vayu-Shuddhi<br>
+P17: Slag-Brick | P18: Chain Mesh | P19: Bio-Gas Station
 </div>
 
 <div class="sector-box">
 <div class="sector-title">Sector 3: Infrastructure P20-P24</div>
-P20: Utility Tunnel | P21: HDD Pipeline | P22: Footstep Walkways | P23: Bio-Vault | P24: Matru-Shakti Housing
+P20: Utility Tunnel | P21: HDD Pipeline | P22: Footstep Walkways<br>
+P23: Bio-Vault | P24: Matru-Shakti Housing
 </div>
 
 <div class="sector-box">
 <div class="sector-title">Sector 4: Social Capital P25-P30</div>
-P25: KG to PhD | P26: Hospital | P27: Project Bank | P28: Food/Clothing Malls | P29: Simulation Game | P30: Walls of Fame
+P25: KG to PhD | P26: Hospital | P27: Project Bank<br>
+P28: Food/Clothing Malls | P29: Simulation Game | P30: Walls of Fame
 </div>
 
 <div class="sector-box">
@@ -62,14 +66,17 @@ P25: KG to PhD | P26: Hospital | P27: Project Bank | P28: Food/Clothing Malls | 
 P31: RVM Network | P32: Indian.00X ID | P33: Vendor Network | P34: Transparency Hub | P35: Sentinel-Eye | P36: Jarvis AI Core
 </div>
 
-<!-- 5 Buttons -->
+<!-- 8 Buttons Total -->
 <button class="btn" onclick="window.location.href='/ram1025/dpr.html'">VIEW FULL 36-PILLAR DPR</button>
 <button class="btn" onclick="window.location.href='https://jarvis-live.com'">LIVE JARVIS TRANSPARENCY FEED</button>
 <button class="btn" onclick="window.location.href='/ram1025/constitution.html'">📜 VIEW SOVEREIGN CONSTITUTION</button>
+<button class="btn" onclick="window.location.href='chitra.html'">🎨 Open Akanda Chitra</button>
 <button class="btn" onclick="showLicense()">📜 LICENSE.md</button>
 <button class="btn" onclick="showReadme()">📖 README.md</button>
+<button class="btn" onclick="window.location.href='/ram1025/vision.html'">🎬 WATCH MASTER VISION - 3 MIN</button>
+<button class="btn" onclick="window.location.href='/ram1025/framework.html'">📊 DPR FRAMEWORK - 10 STEP BLUEPRINT</button>
 
-<!-- INSTALL APP BUTTON ADDED -->
+<!-- INSTALL APP BUTTON -->
 <button class="btn" id="installBtn" style="display:none;background:#2e7d32;color:#fff">📱 INSTALL APP</button>
 
 <p class="status">Status: Operational | Jarvis AI Core Layer 7<br>Master: INDIAN.001 RAM GANESH MAKINA</p>
@@ -142,7 +149,7 @@ deferredPrompt.prompt();
 deferredPrompt.userChoice.then(() => deferredPrompt = null);
 });
 
-// SW Register - clean link, no v= param
+// SW Register
 if('serviceWorker' in navigator){
 navigator.serviceWorker.register('/ram1025/sw.js').then(reg=>console.log('SW Registered:',reg.scope)).catch(err=>console.log('SW Error:',err))
 }
