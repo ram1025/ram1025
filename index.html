@@ -6,8 +6,8 @@
 <title>My Jeevandhara - ABST</title>
 <meta name="description" content="Akanda Bharat Sovereign Township - 36 Pillar Ecosystem">
 <meta name="theme-color" content="#0a192f">
-<link rel="manifest" href="/ram1025/manifest.json">
-<link rel="apple-touch-icon" href="/ram1025/icon-192.png">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="ABST">
@@ -28,7 +28,7 @@ img{display:block;margin:0 auto 20px}
 </head>
 <body>
 <div class="container">
-<img src="/ram1025/icon-192.png" alt="Seal" width="90" height="90" style="border-radius:50%">
+<img src="icon-192.png" alt="Seal" width="90" height="90" style="border-radius:50%">
 
 <h1>My Jeevandhara</h1>
 <h3>Akanda Bharat Sovereign Township</h3>
@@ -66,10 +66,14 @@ P30: RVM Network | P31: Indian.00X ID System | P32: Our Amrutavarsha Vendor Netw
 P36: MD Agni-Pariksha Leadership Mandate
 </div>
 
-<!-- 5 Buttons -->
-<button class="btn" onclick="window.location.href='/ram1025/dpr.html'">VIEW FULL 36-PILLAR DPR</button>
+<!-- 8 Buttons -->
+<button class="btn" onclick="window.location.href='dpr.html'">VIEW FULL 36-PILLAR DPR</button>
 <button class="btn" onclick="window.location.href='https://jarvis-live.com'">LIVE JARVIS TRANSPARENCY FEED</button>
-<button class="btn" onclick="window.location.href='/ram1025/constitution.html'">📜 VIEW SOVEREIGN CONSTITUTION</button>
+
+<!-- NEW BOOK BUTTON ADDED HERE -->
+<button class="btn" style="background:linear-gradient(135deg,#00ff88,#00d4ff);box-shadow:0 0 15px rgba(0,255,136,0.4);" onclick="window.location.href='36-Pillars-Book.html'">📖 36 PILLARS BOOK - COMPLETE 1-36</button>
+
+<button class="btn" onclick="window.location.href='constitution.html'">📜 VIEW SOVEREIGN CONSTITUTION</button>
 <button class="btn" onclick="showLicense()">📜 LICENSE.md</button>
 <button class="btn" onclick="showReadme()">📖 README.md</button>
 
@@ -124,8 +128,6 @@ This project is protected under Master Visionary Lock. See LICENSE for terms.
 </div>
 <p style="color:#8892b0;font-size:11px;margin-top:10px;text-align:center">*Read-only view - Cannot be edited</p>
 </div>
-</div>
-
 </div>
 
 <!-- DPR FRAMEWORK Modal -->
@@ -269,9 +271,9 @@ installBtn.addEventListener('click', () => {
 
 // SW Register - clean link, no v= param
 if('serviceWorker' in navigator){
-navigator.serviceWorker.register('/ram1025/sw.js').then(reg=>console.log('SW Registered:',reg.scope)).catch(err=>console.log('SW Error:',err))
+navigator.serviceWorker.register('sw.js').then(reg=>console.log('SW Registered:',reg.scope)).catch(err=>console.log('SW Error:',err))
 }
 // ABST-MVL-v1.0 - INDIAN.001 RAM GANESH MAKINA - 2026-04-10
 </script>
 </body>
-  </html>
+</html>
