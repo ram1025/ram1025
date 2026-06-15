@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JARVIS-AI | INDIAN.001 Live Control</title>
+    <title>JARVIS-AI | INDIAN.001 Control</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { 
@@ -57,67 +57,30 @@
             line-height: 1.5;
         }
         
-        /* PILLAR CARDS - BIGGER & CLEARER */
-        .status-grid { 
-            display: grid; 
-            gap: 14px; 
-        }
-        @media (min-width: 600px) {
-            .status-grid { grid-template-columns: repeat(3, 1fr); }
-        }
-        
-        .pillar-card { 
-            border: 2px solid #1F6FEB; 
-            padding: 16px; 
+        /* MATER TEXT BOX */
+        .mater-box {
             background: #161B22;
+            border: 2px solid #1F6FEB;
+            padding: 20px;
             border-radius: 10px;
-        }
-        .pillar-card-title { 
-            color: #58A6FF; 
-            font-size: 15px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        .pillar-stat {
             font-size: 14px;
-            margin: 6px 0;
-            color: #E6EDF3;
         }
-        .pillar-stat-label {
-            color: #8B949E;
-            font-size: 12px;
-        }
-        .pillar-stat-value {
-            color: #E6EDF3;
-            font-weight: 600;
-        }
-        .response-time { 
-            color: #FFD700; 
-            font-weight: 700;
-            font-size: 16px;
-        }
-        
-        /* ALERT BOX - CLEAR TEXT */
-        .alert-box { 
-            background: #161B22; 
-            border: 2px solid #F85149; 
-            border-left: 6px solid #F85149; 
-            padding: 14px; 
+        .mater-list {
             margin: 12px 0;
-            border-radius: 8px;
-            font-size: 13px;
-            line-height: 1.7;
-            font-family: 'Courier New', monospace;
+            padding-left: 20px;
         }
-        .alert-time { color: #8B949E; }
-        .alert-action { color: #FFA657; font-weight: 600; }
-        .alert-highlight { 
-            color: #00FF88; 
+        .mater-list li {
+            margin: 12px 0;
+            color: #C9D1D9;
+            line-height: 1.8;
+        }
+        .mater-key {
+            color: #58A6FF;
             font-weight: 700;
-            display: block;
-            margin-top: 8px;
-            padding-top: 8px;
-            border-top: 1px solid #30363D;
+        }
+        .mater-highlight {
+            color: #00FF88;
+            font-weight: 700;
         }
         
         /* CONTROL LIST */
@@ -180,72 +143,24 @@
     <div class="section">
         <div class="section-title">> WHAT JARVIS DOES: 24/7 SOVEREIGN CONTROL</div>
         <p class="section-desc">
-        Jarvis.AI is the Autonomous Nervous System of 1000-acre ABST.<br>
-        <b>36 Pillars</b> | <b>5000+ IoT Sensors</b> | <b>Zero Human Delay</b>
+        Jarvis.AI is the Autonomous Nervous System of 1000-acre ABST Township. 
+        It operates as the central brain managing all 36 Pillars without human intervention.
         </p>
     </div>
 
-    <div class="status-grid">
-        <div class="pillar-card">
-            <div class="pillar-card-title">P38: SOMA NUTRIENT LOOP</div>
-            <div class="pillar-stat">
-                <span class="pillar-stat-label">Status:</span>
-                <span class="pillar-stat-value"> OPTIMAL</span>
-            </div>
-            <div class="pillar-stat">
-                <span class="pillar-stat-label">Urine Processed:</span>
-                <span class="pillar-stat-value"> <span id="soma-data">24,823</span> L/day</span>
-            </div>
-            <div class="pillar-stat">
-                <span class="pillar-stat-label">Response Time:</span>
-                <span class="response-time" id="rt1">0.12s</span>
-            </div>
-        </div>
-
-        <div class="pillar-card">
-            <div class="pillar-card-title">P12: ENERGY TRINITY</div>
-            <div class="pillar-stat">
-                <span class="pillar-stat-label">Status:</span>
-                <span class="pillar-stat-value"> 102% SURPLUS</span>
-            </div>
-            <div class="pillar-stat">
-                <span class="pillar-stat-label">Bio-Gas:</span>
-                <span class="pillar-stat-value"> <span id="biogas">84</span>%</span>
-                <span class="pillar-stat-label"> | Solar:</span>
-                <span class="pillar-stat-value"> <span id="solar">93</span>%</span>
-            </div>
-            <div class="pillar-stat">
-                <span class="pillar-stat-label">Response Time:</span>
-                <span class="response-time" id="rt2">0.08s</span>
-            </div>
-        </div>
-
-        <div class="pillar-card">
-            <div class="pillar-card-title">P37: KISAN SOVEREIGN</div>
-            <div class="pillar-stat">
-                <span class="pillar-stat-label">Status:</span>
-                <span class="pillar-stat-value"> ALL SAFE</span>
-            </div>
-            <div class="pillar-stat">
-                <span class="pillar-stat-label">Auto-Payouts:</span>
-                <span class="pillar-stat-value"> ₹<span id="payout">19.7</span>L today</span>
-            </div>
-            <div class="pillar-stat">
-                <span class="pillar-stat-label">Response Time:</span>
-                <span class="response-time" id="rt3">0.11s</span>
-            </div>
-        </div>
-    </div>
-
     <div class="section">
-        <div class="section-title">> HOW JARVIS REACTS TO PROBLEMS</div>
-        <div class="alert-box" id="alert-log">
-            <span class="alert-time">[14:23:01.082]</span> <span class="alert-action">ALERT:</span> Water leak detected Sector-7, Pipe-A42<br>
-            <span class="alert-time">[14:23:01.156]</span> <span class="alert-action">ACTION:</span> Auto-isolate valve triggered. <span class="response-time">74ms</span><br>
-            <span class="alert-time">[14:23:01.203]</span> <span class="alert-action">ACTION:</span> Drone-7 dispatched for visual confirm<br>
-            <span class="alert-time">[14:23:01.289]</span> <span class="alert-action">ACTION:</span> Kisan water supply re-routed via Line-B<br>
-            <span class="alert-time">[14:23:01.301]</span> <span class="alert-action">RESOLVED:</span> Zero downtime. Indian.001 notified: FYI only
-            <span class="alert-highlight">RAM KANTE MUNDHE: Human reaction 2-3 sec. Jarvis: 0.074 sec. 40x faster.</span>
+        <div class="section-title">> CORE FUNCTIONS & CAPABILITIES</div>
+        <div class="mater-box">
+            <ul class="mater-list">
+                <li><span class="mater-key">5000+ IoT Sensors:</span> Real-time monitoring of water, energy, air quality, waste management, and security across entire township</li>
+                <li><span class="mater-key">Zero Human Delay:</span> Automated decision making in milliseconds for critical infrastructure. Human reaction 2-3 sec. <span class="mater-highlight">Jarvis: 0.074 sec. 40x faster.</span></li>
+                <li><span class="mater-key">Energy Trinity Management:</span> Balances Solar, Bio-Gas, and Plasma power plants to maintain 102% surplus generation for complete energy sovereignty</li>
+                <li><span class="mater-key">SOMA Nutrient Loop:</span> Converts human waste to farming nutrients via closed-loop bioprocessing. Zero discharge, 100% circular economy</li>
+                <li><span class="mater-key">Kisan Sovereign Network:</span> Auto-payouts to farmers, supply chain tracking, crop yield optimization, and direct market linkage</li>
+                <li><span class="mater-key">Sentinel-Eye CCTV:</span> AI-powered surveillance with facial recognition, threat detection, and automated response protocols</li>
+                <li><span class="mater-key">Indian.00X ID System:</span> Blockchain-based citizen identity, transaction ledger, and digital governance platform</li>
+                <li><span class="mater-key">Transparency Hub:</span> Public dashboard for all township finances, resource allocation, and decision logs</li>
+            </ul>
         </div>
     </div>
 
@@ -253,62 +168,25 @@
         <div class="section-title">> HOW JARVIS CONTROLS ABST</div>
         <div class="control-list">
             <div class="control-item">
-                1. <span class="control-key">PREDICT:</span> 2.1B data points/day → ML models predict failure 6 days early
+                1. <span class="control-key">PREDICT:</span> Analyzes 2.1B data points/day → ML models predict infrastructure failure 6 days early
             </div>
             <div class="control-item">
-                2. <span class="control-key">PREVENT:</span> Auto-adjust 5000 valves, 200 drones, 38 modules without asking
+                2. <span class="control-key">PREVENT:</span> Auto-adjusts 5000 valves, 200 drones, 38 modules without human approval
             </div>
             <div class="control-item">
-                3. <span class="control-key">PROTECT:</span> Dharma Protocol v1.0 - Bharat First, Kisan Safe, Human Override
+                3. <span class="control-key">PROTECT:</span> Dharma Protocol v1.0 - Bharat First, Kisan Safe, Human Override always available
             </div>
             <div class="control-item">
-                4. <span class="control-key">PROFIT:</span> Optimize SOMA + Energy = OPEX 80% down vs normal township
+                4. <span class="control-key">PROFIT:</span> Optimizes SOMA + Energy systems = OPEX 80% down vs normal township
             </div>
         </div>
     </div>
 
     <div class="footer">
         One Nation One India One Bharat | One AI One City<br>
-        Latency: <span class="footer-highlight" id="latency">0.20s</span> | 
-        Data Points: <span class="footer-highlight" id="datapoints">2.1B</span>/day
+        Operating under <span class="footer-highlight">MD Agni-Pariksha Leadership Mandate</span> - Dharma Protocol v1.0
     </div>
 
     <button class="back-btn" onclick="window.location.href='index.html'">← BACK TO ABST HOME</button>
-
-    <script>
-        // Live data simulation - smooth updates
-        const times = ['0.08s', '0.11s', '0.09s', '0.15s', '0.07s', '0.12s'];
-        setInterval(() => {
-            document.getElementById('rt1').textContent = times[Math.floor(Math.random() * times.length)];
-            document.getElementById('rt2').textContent = times[Math.floor(Math.random() * times.length)];
-            document.getElementById('rt3').textContent = times[Math.floor(Math.random() * times.length)];
-            document.getElementById('latency').textContent = (Math.random() * 0.15 + 0.05).toFixed(3) + 's';
-            
-            // Simulate changing data
-            document.getElementById('soma-data').textContent = (24800 + Math.floor(Math.random() * 100)).toLocaleString('en-IN');
-            document.getElementById('biogas').textContent = 80 + Math.floor(Math.random() * 5);
-            document.getElementById('solar').textContent = 92 + Math.floor(Math.random() * 5);
-            document.getElementById('payout').textContent = (18 + Math.random() * 2).toFixed(1);
-            document.getElementById('datapoints').textContent = (2.1 + Math.random() * 0.2).toFixed(1) + 'B';
-        }, 2000);
-
-        // Simulate new alerts every 8 seconds
-        const alerts = [
-            'Solar panel cleaning drone dispatched to Zone-3',
-            'Bio-gas pressure optimized - 3% efficiency gain',
-            'Kisan payment batch processed - ₹45,200 credited',
-            'Rainwater harvest tank 94% full - Overflow route ready',
-            'EV charging load balanced - Peak demand handled'
-        ];
-        let alertIndex = 0;
-        setInterval(() => {
-            const time = new Date().toLocaleTimeString('en-GB', {hour12: false});
-            document.getElementById('alert-log').innerHTML = 
-                `<span class="alert-time">[${time}]</span> <span class="alert-action">INFO:</span> ${alerts[alertIndex % alerts.length]}<br>` +
-                `<span class="alert-time">[${time}]</span> <span class="alert-action">STATUS:</span> All systems nominal | Indian.001 notified: FYI only` +
-                `<span class="alert-highlight">RAM KANTE MUNDHE: Human reaction 2-3 sec. Jarvis: 0.074 sec. 40x faster.</span>`;
-            alertIndex++;
-        }, 8000);
-    </script>
 </body>
 </html>
