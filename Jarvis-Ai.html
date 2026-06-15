@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JARVIS-AI | INDIAN.001 Live Control</title>
+    <style>
+        body { 
+            background: #0A0E27; 
+            color: #00FF88; 
+            font-family: 'Courier New', monospace; 
+            margin: 0; padding: 20px;
+        }
+        .header { 
+            border-bottom: 2px solid #00FF88; 
+            padding-bottom: 10px;
+            display: flex; justify-content: space-between;
+        }
+        .status-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 15px; 
+            margin: 20px 0;
+        }
+        .pillar-card { 
+            border: 1px solid #004E89; 
+            padding: 15px; 
+            background: rgba(0,78,137,0.1);
+        }
+        .alert-box { 
+            background: rgba(255,0,0,0.1); 
+            border-left: 4px solid #FF0000; 
+            padding: 10px; 
+            margin: 10px 0;
+            animation: alertPulse 1s;
+        }
+        .response-time { color: #FFD700; font-weight: bold; }
+        @keyframes alertPulse {
+            0% { background: rgba(255,0,0,0.3); }
+            100% { background: rgba(255,0,0,0.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BHARAT-OS "JARVIS" v1.0</h1>
+        <div>STATUS: <span style="color:#00FF88">● ONLINE</span> | INDIAN.001 OVERRIDE: ACTIVE</div>
+    </div>
+
+    <h3>> WHAT JARVIS DOES: 24/7 SOVEREIGN CONTROL</h3>
+    <p>Jarvis.AI is the Autonomous Nervous System of 1000-acre ABST. 36 Pillars, 5000+ IoT sensors, Zero human delay.</p>
+
+    <div class="status-grid">
+        <div class="pillar-card">
+            <b>P38: SOMA NUTRIENT LOOP</b><br>
+            Status: OPTIMAL<br>
+            Urine Processed: 24,823L/day<br>
+            Response Time: <span class="response-time">0.12s</span>
+        </div>
+        <div class="pillar-card">
+            <b>P12: ENERGY TRINITY</b><br>
+            Status: 102% SURPLUS<br>
+            Bio-Gas: 82% | Solar: 94%<br>
+            Response Time: <span class="response-time">0.08s</span>
+        </div>
+        <div class="pillar-card">
+            <b>P37: KISAN SOVEREIGN</b><br>
+            Status: ALL SAFE<br>
+            Auto-Payouts: ₹18.2L today<br>
+            Response Time: <span class="response-time">0.15s</span>
+        </div>
+    </div>
+
+    <h3>> HOW JARVIS REACTS TO PROBLEMS</h3>
+    <div id="live-demo">
+        <div class="alert-box">
+            [14:23:01.082] ALERT: Water leak detected Sector-7, Pipe-A42<br>
+            [14:23:01.156] ACTION: Auto-isolate valve triggered. <span class="response-time">74ms</span><br>
+            [14:23:01.203] ACTION: Drone-7 dispatched for visual confirm<br>
+            [14:23:01.289] ACTION: Kisan water supply re-routed via Line-B<br>
+            [14:23:01.301] RESOLVED: Zero downtime. Indian.001 notified: FYI only<br>
+            <b>RAM KANTE MUNDHE: Human reaction 2-3 sec. Jarvis: 0.074 sec. 40x faster.</b>
+        </div>
+    </div>
+
+    <h3>> HOW JARVIS CONTROLS ABST</h3>
+    <pre>
+1. PREDICT: 2.1B data points/day → ML models predict failure 6 days early
+2. PREVENT: Auto-adjust 5000 valves, 200 drones, 38 modules without asking
+3. PROTECT: Dharma Protocol v1.0 - Bharat First, Kisan Safe, Human Override
+4. PROFIT: Optimize SOMA + Energy = OPEX 80% down vs normal township
+    </pre>
+
+    <p style="margin-top:30px; border-top:1px solid #004E89; padding-top:10px;">
+    One Nation One India One Bharat | One AI One City | Latency: 0.2s | Uptime: 99.99%
+    </p>
+
+    <script>
+        // Live simulation - updates every 3 seconds
+        setInterval(() => {
+            const times = ['0.08s', '0.11s', '0.09s', '0.15s', '0.07s'];
+            document.querySelectorAll('.response-time').forEach(el => {
+                el.textContent = times[Math.floor(Math.random() * times.length)];
+            });
+        }, 3000);
+    </script>
+</body>
+</html>
