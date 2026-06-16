@@ -29,21 +29,6 @@ img{display:block;margin:0 auto 20px}
 .subtext{display:block;font-size:11px;opacity:0.9;margin-top:4px;font-weight:400}
 @keyframes pulse{0%{box-shadow:0 0 0 rgba(0,255,136,0.7)}70%{box-shadow:0 0 0 10px rgba(0,255,136,0)}100%{box-shadow:0 0 0 0 rgba(0,255,136,0)}}
 @keyframes glow{0%,100%{box-shadow:0 0 30px rgba(0,255,136,0.4)}50%{box-shadow:0 0 50px rgba(0,255,136,0.8)}}
-
-/* FAST MODAL CSS */
-.modal { 
-visibility:hidden; opacity:0; position:fixed; top:0; left:0; width:100%; height:100%; 
-background:rgba(0,0,0,0.95); z-index:9999; overflow-y:auto; transition:opacity 0.25s; padding:20px 10px;
-}
-.modal.active { visibility:visible; opacity:1; }
-.modal-content { animation:slideUp 0.3s ease-out; max-width:750px; margin:40px auto; background:#112240; border-radius:16px; padding:35px; position:relative; border:2px solid #00d4ff; box-shadow:0 10px 40px rgba(0,212,255,0.3); }
-@keyframes slideUp {
-from { transform:translateY(30px); opacity:0; }
-to { transform:translateY(0); opacity:1; }
-}
-@media (max-width:768px) {
-.modal-content { margin:20px auto !important; padding:25px !important; }
-}
 </style>
 </head>
 <body>
@@ -86,8 +71,8 @@ P30: RVM Network | P31: Indian.00X ID System | P32: Our Amrutavarsha Vendor Netw
 P36: MD Agni-Pariksha Leadership Mandate
 </div>
 
-<!-- BUTTONS SECTION - UPDATED -->
-<button class="btn" onclick="openMasterPlan()">🏛️ ABST-MASTERPLAN</button>
+<!-- BUTTONS SECTION - NAME CHANGED -->
+<button class="btn" onclick="document.getElementById('dpr36Modal').style.display='block'">🏛️ ABST-MASTERPLAN</button>
 
 <button class="btn-live-jarvis" onclick="window.location.href='Jarvis-Ai.html'">
 <span class="pulse-dot"></span>
@@ -104,33 +89,23 @@ JARVIS AI
 <button class="btn" style="background:linear-gradient(135deg,#00ff88,#00d4ff);box-shadow:0 0 15px rgba(0,255,136,0.4);" onclick="window.location.href='36-Pillars-Book.html'">📖 36 PILLARS BOOK - COMPLETE 1-36</button>
 
 <button class="btn" onclick="window.location.href='constitution.html'">📜 VIEW SOVEREIGN CONSTITUTION</button>
-<button class="btn" onclick="openLicense()">📜 LICENSE.md</button>
-<button class="btn" onclick="openReadme()">📖 README.md</button>
+<button class="btn" onclick="showLicense()">📜 LICENSE.md</button>
+<button class="btn" onclick="showReadme()">📖 README.md</button>
 
 <button class="btn" onclick="window.open('https://drive.google.com/file/d/1u8xVrk7SHwpQIcROzPuRPsL1qajs_j0h/preview','_blank')">🎬 WATCH MASTER VISION - 3 MIN</button>
 
-<button class="btn" onclick="openBlueprint()">📊 DPR FRAMEWORK - 10 STEP BLUEPRINT</button>
+<button class="btn" onclick="document.getElementById('blueprintModal').style.display='block'">📊 DPR FRAMEWORK - 10 STEP BLUEPRINT</button>
 
 <button class="btn" id="installBtn" style="display:none;background:#2e7d32;color:#fff">📱 INSTALL APP</button>
 
 <p class="status">Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: INDIAN.001 RAM GANESH MAKINA | P36 Active</p>
-</div>
 
-<!-- EMPTY MODAL CONTAINERS - FAST LOAD -->
-<div id="licenseModal" class="modal"></div>
-<div id="readmeModal" class="modal"></div>
-<div id="masterPlanModal" class="modal"></div>
-<div id="blueprintModal" class="modal"></div>
-
-<script>
-// ============================================
-// LICENSE MODAL CONTENT
-// ============================================
-const licenseHTML = `
-<div class="modal-content" style="border-color:#64ffda;">
+<!-- LICENSE Popup -->
+<div id="licenseModal" onclick="closeLicense()" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:9999;overflow:auto;padding:20px">
+<div onclick="event.stopPropagation()" style="max-width:700px;margin:40px auto;background:#112240;border:2px solid #64ffda;border-radius:12px;padding:25px">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px">
 <h2 style="color:#64ffda;margin:0">📜 ABST SOVEREIGN LICENSE</h2>
-<span onclick="closeModal('licenseModal')" style="color:#64ffda;font-size:28px;cursor:pointer;line-height:1">&times;</span>
+<span onclick="closeLicense()" style="color:#64ffda;font-size:28px;cursor:pointer;line-height:1">&times;</span>
 </div>
 <div style="color:#fff;background:#0a192f;border-radius:8px;padding:20px;font-size:13px;line-height:1.8;text-align:left;max-height:400px;overflow-y:auto">
 <b>Master Visionary Lock v1.0 - ABST</b><br><br>
@@ -143,108 +118,46 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT ANY WARRANTY.
 </div>
 <p style="color:#8892b0;font-size:11px;margin-top:10px;text-align:center">*Read-only view - Cannot be edited</p>
-<button onclick="closeModal('licenseModal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
 </div>
-`;
 
-// ============================================
-// README MODAL CONTENT - GITHUB LOOK
-// ============================================
-const readmeHTML = `
-<div class="modal-content" style="border-color:#2e7d32;">
+<!-- README Popup - UPDATED ONLY THIS -->
+<div id="readmeModal" onclick="closeReadme()" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:9999;overflow:auto;padding:20px">
+<div onclick="event.stopPropagation()" style="max-width:700px;margin:40px auto;background:#112240;border:2px solid #2e7d32;border-radius:12px;padding:25px">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px">
 <h2 style="color:#2e7d32;margin:0">📖 ABST README</h2>
-<span onclick="closeModal('readmeModal')" style="color:#2e7d32;font-size:28px;cursor:pointer;line-height:1">&times;</span>
+<span onclick="closeReadme()" style="color:#2e7d32;font-size:28px;cursor:pointer;line-height:1">&times;</span>
 </div>
-<div style="color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:14px;line-height:1.8;text-align:left;max-height:70vh;overflow-y:auto">
+<div style="color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:14px;line-height:1.9;text-align:left;max-height:400px;overflow-y:auto">
 
-<div style="text-align:center; margin-bottom:25px;">
-<h2 style="color:#64ffda; font-size:24px; margin:0 0 8px 0; font-weight:700;">🎬 Master Vision Video</h2>
-<p style="color:#8892b0; font-size:14px; margin:0;">3 Min Investor Pitch</p>
-</div>
+<b>ABST - Akanda Bharat Sovereign Township</b><br><br>
 
-<div style="text-align:center; margin:20px 0;">
-<button onclick="window.open('https://drive.google.com/file/d/1u8xVrk7SHwpQIcROzPuRPsL1qajs_j0h/preview','_blank')" style="background:linear-gradient(135deg,#FF0000,#CC0000); color:#fff; border:none; border-radius:10px; padding:14px 30px; font-weight:700; cursor:pointer; font-size:15px; box-shadow:0 4px 15px rgba(255,0,0,0.4);">
-▶️ WATCH VIDEO - 3 MIN
-</button>
-</div>
+<b>Master Visionary:</b> INDIAN.001 RAM GANESH MAKINA<br>
+<b>36-Pillar Ecosystem:</b> Total Independence Model<br>
+<b>Mission:</b> Sector 1 to 5 - Complete Sovereign System<br>
+<b>Status:</b> Operational | Mother Hub: Vizag<br>
+<b>Security:</b> Jarvis AI Core Layer 7<br>
+<b>Lock:</b> ABST-MVL-v1.0 | 2026-04-10<br><br>
 
-<div style="background:rgba(255,215,0,0.1); border-left:4px solid #FFD700; padding:15px 20px; margin:25px 0; border-radius:8px;">
-<p style="color:#FFD700; font-weight:700; margin:0 0 5px 0; font-size:16px;">
-డ్రైవ్ చేస్తూనే చార్జ్ – పార్క్ చేస్తూనే పవర్
-</p>
-<p style="color:#ccd6f6; margin:0; font-size:14px;">
-Drive Chesthune Charge – Park Chesthune Power
-</p>
-</div>
-
-<hr style="border:1px solid #1a2a4a; margin:30px 0;">
-
-<div style="text-align:center; margin:25px 0;">
-<h1 style="color:#64ffda; font-size:22px; margin:0 0 8px 0; line-height:1.3; font-weight:700;">
-ABST - 36 PILLARS OF<br>AKANDA BHARAT SOVEREIGN TRUST
-</h1>
-<h3 style="color:#FFD700; font-size:15px; margin:10px 0; font-weight:600;">
-Mother Hub: Vizag 1000 Acres | Target: 2047
-</h3>
-</div>
-
-<div style="background:#0a192f; padding:15px; border-radius:8px; margin:20px 0;">
-<p style="color:#ccd6f6; line-height:1.9; font-size:14px; margin:0;">
-<b style="color:#00d4ff;">Master Visionary:</b> INDIAN.001 RAM GANESH MAKINA<br>
-<b style="color:#00d4ff;">Timestamp:</b> 2026-04-10 | <b style="color:#00d4ff;">Lock:</b> ABST-MVL-v1.0
-</p>
-</div>
-
-<h3 style="color:#00d4ff; margin:25px 0 12px 0; font-size:18px; border-bottom:2px solid #1a2a4a; padding-bottom:8px;">
-The Problem
-</h3>
-<p style="color:#ccd6f6; line-height:1.8; font-size:15px;">
-AI data centers need billions of liters water. India has water + job crisis.
-</p>
-
-<h3 style="color:#00d4ff; margin:25px 0 12px 0; font-size:18px; border-bottom:2px solid #1a2a4a; padding-bottom:8px;">
-The Solution
-</h3>
-<p style="color:#ccd6f6; line-height:1.8; font-size:15px;">
-36 Pillars, 12 Sectors. Complete Sovereign System. Not just an app.
-</p>
-
-<h3 style="color:#00d4ff; margin:25px 0 12px 0; font-size:18px; border-bottom:2px solid #1a2a4a; padding-bottom:8px;">
-Proof Files
-</h3>
-<ul style="color:#ccd6f6; padding-left:20px; line-height:2; font-size:14px; margin:0;">
-<li><code style="background:#0a192f; padding:2px 6px; border-radius:4px; color:#64ffda;">/app/ABST-APK-v1.0.apk</code> - Working APK with MVL Lock</li>
-<li><code style="background:#0a192f; padding:2px 6px; border-radius:4px; color:#64ffda;">🎬 WATCH VIDEO</code> button paiki - 3 Min Pitch Video via Google Drive</li>
-<li><code style="background:#0a192f; padding:2px 6px; border-radius:4px; color:#64ffda;">/blueprint/</code> - Mother Hub maps coming soon</li>
-</ul>
-
-<h3 style="color:#00d4ff; margin:25px 0 12px 0; font-size:18px; border-bottom:2px solid #1a2a4a; padding-bottom:8px;">
-License
-</h3>
-<p style="color:#ccd6f6; line-height:1.8; font-size:15px;">
-Open Source for Nation Building.<br>
-<b style="color:#FFD700; font-size:15px;">Attribution Mandatory: INDIAN.001 Ram Ganesh Makina</b>
-</p>
+This project is protected under Master Visionary Lock.<br>
+See LICENSE for terms.
 
 </div>
-<button onclick="closeModal('readmeModal')" style="width:100%;margin-top:15px;background:linear-gradient(135deg,#64ffda,#00d4ff);color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
+<p style="color:#8892b0;font-size:11px;margin-top:10px;text-align:center">*Read-only view - Cannot be edited</p>
 </div>
-`;
+</div>
 
-// ============================================
-// MASTERPLAN MODAL - WITH IMAGES
-// ============================================
-const masterPlanHTML = `
-<div class="modal-content" style="border-color:#64ffda;max-width:900px;">
+<!-- MODAL 1: ABST-MASTERPLAN - NAME CHANGED + DAY/NIGHT IMAGES -->
+<div id="dpr36Modal" onclick="document.getElementById('dpr36Modal').style.display='none'" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:9999;overflow:auto;padding:20px">
+<div onclick="event.stopPropagation()" style="max-width:900px;margin:40px auto;background:#112240;border:2px solid #64ffda;border-radius:12px;padding:25px">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px">
 <h2 style="color:#64ffda;margin:0">🏛️ ABST-MASTERPLAN - INDIAN.001</h2>
-<span onclick="closeModal('masterPlanModal')" style="color:#64ffda;font-size:28px;cursor:pointer;line-height:1">&times;</span>
+<span onclick="document.getElementById('dpr36Modal').style.display='none'" style="color:#64ffda;font-size:28px;cursor:pointer;line-height:1">&times;</span>
 </div>
 <div style="color:#fff;background:#0a192f;border-radius:8px;padding:20px;font-size:13px;line-height:1.8;text-align:left;max-height:70vh;overflow-y:auto">
 <h1 style="color:#64ffda;text-align:left;font-size:22px">ABST 36-PILLAR SOVEREIGN DPR</h1>
 <h2 style="color:#ffd700;text-align:left;font-size:16px">Master Visionary: INDIAN.001 RAM GANESH MAKINA</h2>
 
+<!-- DAY/NIGHT MASTERPLAN IMAGES ADDED -->
 <div style="margin:20px 0;text-align:center">
 <h3 style="color:#FFD700;margin-bottom:10px">🌞 MASTER PLAN - DAY VIEW</h3>
 <img src="day-mode.jpg" alt="ABST Master Plan Day Mode" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #64ffda;margin-bottom:20px">
@@ -255,19 +168,19 @@ const masterPlanHTML = `
 
 <p><strong>Core Philosophy:</strong> <em>“One Nation One India One Bharat”</em></p>
 <p><strong>Development Vision:</strong> A self-sustaining, zero-emission, decentralized smart township powered by 36 integrated pillars.</p>
-</div>
-<button onclick="closeModal('masterPlanModal');window.scrollTo({top:0,behavior:'smooth'})" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
-</div>
-`;
 
-// ============================================
-// BLUEPRINT MODAL
-// ============================================
-const blueprintHTML = `
-<div class="modal-content" style="border-color:#FFD700;max-width:900px;">
+</div>
+<button onclick="document.getElementById('dpr36Modal').style.display='none';window.scrollTo({top:0,behavior:'smooth'})" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
+<p style="color:#8892b0;font-size:11px;margin-top:10px;text-align:center">*Click outside or × to close</p>
+</div>
+</div>
+
+<!-- MODAL 2: 10 STEP BLUEPRINT -->
+<div id="blueprintModal" onclick="document.getElementById('blueprintModal').style.display='none'" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:9999;overflow:auto;padding:20px">
+<div onclick="event.stopPropagation()" style="max-width:900px;margin:40px auto;background:#112240;border:2px solid #FFD700;border-radius:12px;padding:25px">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px">
 <h2 style="color:#FFD700;margin:0">🌐 DPR FRAMEWORK - 10 STEP BLUEPRINT</h2>
-<span onclick="closeModal('blueprintModal')" style="color:#FFD700;font-size:28px;cursor:pointer;line-height:1">&times;</span>
+<span onclick="document.getElementById('blueprintModal').style.display='none'" style="color:#FFD700;font-size:28px;cursor:pointer;line-height:1">&times;</span>
 </div>
 <div style="color:#fff;background:#0a192f;border-radius:8px;padding:20px;font-size:13px;line-height:1.8;text-align:left;max-height:70vh;overflow-y:auto">
 <h1 style="color:#64ffda;text-align:left;font-size:22px">AKANDA BHARAT SMART ENERGY & EV ECOSYSTEM</h1>
@@ -346,49 +259,26 @@ const blueprintHTML = `
 <li><strong>100% Closed-Loop Independence:</strong> Energy, water, and mobility networks function in a perfect, harmonious cyclical loop where every output becomes a useful input for another sector.</li>
 </ul>
 </div>
-<button onclick="closeModal('blueprintModal');window.scrollTo({top:0,behavior:'smooth'})" style="width:100%;margin-top:15px;background:#FFD700;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
+<button onclick="document.getElementById('blueprintModal').style.display='none';window.scrollTo({top:0,behavior:'smooth'})" style="width:100%;margin-top:15px;background:#FFD700;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
+<p style="color:#8892b0;font-size:11px;margin-top:10px;text-align:center">*Click outside or × to close</p>
 </div>
-`;
+</div>
 
-// ============================================
-// MODAL FUNCTIONS - FAST LAZY LOAD
-// ============================================
-function openModal(id, content) {
-const modal = document.getElementById(id);
-if(!modal.innerHTML) modal.innerHTML = content;
-modal.classList.add('active');
-document.body.style.overflow = 'hidden';
-}
+<script>
+function showLicense(){document.getElementById('licenseModal').style.display='block';document.body.style.overflow='hidden'}
+function closeLicense(){document.getElementById('licenseModal').style.display='none';document.body.style.overflow='auto'}
+function showReadme(){document.getElementById('readmeModal').style.display='block';document.body.style.overflow='hidden'}
+function closeReadme(){document.getElementById('readmeModal').style.display='none';document.body.style.overflow='auto'}
 
-function closeModal(id) {
-document.getElementById(id).classList.remove('active');
-document.body.style.overflow = 'auto';
-}
-
-function openLicense() { openModal('licenseModal', licenseHTML); }
-function openReadme() { openModal('readmeModal', readmeHTML); }
-function openMasterPlan() { openModal('masterPlanModal', masterPlanHTML); }
-function openBlueprint() { openModal('blueprintModal', blueprintHTML); }
-
-// Close on outside click
-document.addEventListener('click', function(e) {
-if(e.target.classList.contains('modal')) {
-e.target.classList.remove('active');
-document.body.style.overflow = 'auto';
+document.addEventListener('keydown',function(e){
+if(e.key==='Escape'){
+closeLicense();
+closeReadme();
+document.getElementById('dpr36Modal').style.display='none';
+document.getElementById('blueprintModal').style.display='none';
 }
 });
 
-// ESC key close
-document.addEventListener('keydown', function(e) {
-if(e.key === 'Escape') {
-document.querySelectorAll('.modal.active').forEach(m => {
-m.classList.remove('active');
-document.body.style.overflow = 'auto';
-});
-}
-});
-
-// PWA Install
 let deferredPrompt;
 const installBtn = document.getElementById('installBtn');
 window.addEventListener('beforeinstallprompt', (e) => {
@@ -402,10 +292,9 @@ deferredPrompt.prompt();
 deferredPrompt.userChoice.then(() => deferredPrompt = null);
 });
 
-// Service Worker
 if('serviceWorker' in navigator){
 navigator.serviceWorker.register('sw.js').then(reg=>console.log('SW Registered:',reg.scope)).catch(err=>console.log('SW Error:',err))
 }
 </script>
 </body>
-</html>
+                                   </html>
