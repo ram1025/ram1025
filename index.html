@@ -6,6 +6,7 @@
 <title>My Jeevandhara - ABST</title>
 <meta name="description" content="Akanda Bharat Sovereign Township - 36 Pillar Ecosystem">
 <meta name="theme-color" content="#0a192f">
+<link rel="manifest" href="manifest.json">
 <style>
 *{box-sizing:border-box}
 body{margin:0;padding:0;background:#0a192f;color:#fff;font-family:Arial,sans-serif}
@@ -270,6 +271,13 @@ document.querySelectorAll('.modal').forEach(m=>m.style.display='none');
 document.body.style.overflow='auto';
 }
 });
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/ram1025/service-worker.js', {scope: '/ram1025/'})
+      .then(reg => console.log('ABST SW v10 registered'))
+      .catch(err => console.log('SW failed: ', err));
+  });
+}
 </script>
 </body>
 </html>
