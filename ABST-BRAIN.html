@@ -473,14 +473,6 @@ function loadCards() {
     }
     filterDueCards();
 }
-function filterDueCards() {
-    const now = Date.now();
-    if (currentSubject === 'edu' && userClass) {
-        dueCards = allCards.filter(c => c.subject === userClass || c.tag === 'GK' || c.subject === 'GK');
-    } else {
-        dueCards = allCards.filter(c => c.due <= now);
-    }
-
     if (carryForwardCard) {
         dueCards.unshift(carryForwardCard);
         carryForwardCard = null;
