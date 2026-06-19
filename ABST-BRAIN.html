@@ -467,19 +467,26 @@ c.reps = 0; c.ease = 2.5; c.interval = 0; c.due = Date.now();
 filterDueCards();
 }
 function filterDueCards() {
-const now = Date.now();
-dueCards = allCards.filter(c => c.due <= now);
-if (carryForwardCard) {
-dueCards.unshift(carryForwardCard);
-carryForwardCard = null;
-}
-if (dueCards.length === 0) {
-dueCards = allCards.slice(0, 10);
-}
-current = 0;
-updateStats();
-showCard();
-}
+    const now = Date.now();
+    if (currentSubject === 'edu' && userClass) {
+        dueCards = allCards.filter(c => 
+            c.subject === userClass || 
+            c.tag === 'GK' ||
+            c.subject === 'GK'
+        );
+    } else {
+        dueCards = allCards.filter(c => c.due <= now);
+    }
+    if (carryForwardCard) {
+        dueCards.unshift(carryForwardCard);
+        carryForwardCard = null;
+    }
+    if (dueCards.length === 0) {
+        dueCards = allCards.slice(0, 10);
+    }
+    current = 0;
+    updateStats();
+    showCard();
 function switchSubject(mode) {
 currentSubject = mode;
 document.getElementById('abstMode').classList.toggle('active', mode === 'abst');
