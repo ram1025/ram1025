@@ -187,7 +187,7 @@
 </head>
 <body>
   <div class="header">
-    <button class="back-btn" onclick="window.location.href='./index.html'">← HOME</button>
+    <button class="back-btn" id="homeBtn">← HOME</button>
     <h1>ABST BRAIN</h1>
     <p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
   </div>
@@ -275,7 +275,7 @@
   </div>
 <script>
 // ============================================
-// SM-2 ALGORITHM - INLINED (No external file needed)
+// SM-2 ALGORITHM - INLINED (No external file)
 // ============================================
 const ABST_SM2 = {
   calc: function(card, ease) {
@@ -399,8 +399,7 @@ const abstCards = [
   {pillar:32,tag:"Vendor Network",front:"P32 vendors?",back:"100% Local",options:["Foreign","100% Local","Mixed","Online"],type:"abst"},
   {pillar:32,tag:"Vendor Network",front:"P32 payment?",back:"ABST Token",options:["Cash","ABST Token","Card","UPI"],type:"abst"},
   {pillar:32,tag:"Vendor Network",front:"P32 delivery?",back:"Drone + EV",options:["Manual","Drone + EV","Train","Ship"],type:"abst"},
-  {pillar:33,tag:"Transparency Hub",front:"P33 purpose?",back:"Live data public",options:["Secret","Live data public","Office","Store"],type:"abst"},
-  {pillar:33,tag:"
+  {pillar:33,tag:"Transparency Hub",front:"P33 purpose?",back:"Live data public",options:["Secret","Live data public","Office
   {pillar:33,tag:"Transparency Hub",front:"P33 data?",back:"Energy + Water + Money",options:["Personal","Energy + Water + Money","Private","Secret"],type:"abst"},
   {pillar:33,tag:"Transparency Hub",front:"P33 update?",back:"Real-time 24/7",options:["Daily","Real-time 24/7","Weekly","Monthly"],type:"abst"},
   {pillar:34,tag:"Sentinel-Eye",front:"P34 tech?",back:"AI CCTV + Drones",options:["Manual","AI CCTV + Drones","Dogs","Walls"],type:"abst"},
@@ -415,7 +414,7 @@ const abstCards = [
 ];
 
 // ============================================
-// EDUCATION CARDS - LKG TO PhD + GK
+// EDUCATION CARDS - LKG TO PhD + GK (Sample 30)
 // ============================================
 const eduCards = [
   {subject:"LKG",tag:"Alphabets",front:"A for?",back:"Apple",options:["Ant","Apple","Aeroplane","Arrow"],type:"edu"},
@@ -447,8 +446,7 @@ const eduCards = [
   {subject:"GK",tag:"India",front:"National Animal of India?",back:"Tiger",options:["Lion","Tiger","Elephant","Peacock"],type:"edu"},
   {subject:"GK",tag:"World",front:"Largest Country by area?",back:"Russia",options:["China","USA","Russia","Canada"],type:"edu"},
   {subject:"GK",tag:"Space",front:"First person on Moon?",back:"Neil Armstrong",options:["Yuri Gagarin","Neil Armstrong","Rakesh Sharma","Kalpana Chawla"],type:"edu"},
-  {subject:"GK",tag:"Invention",front:"Who invented Light Bulb?",back:"Thomas Edison",options:["Newton","Thomas Edison","Einstein","Tesla"],type:"edu"},
-  {subject:"GK",tag:"Invention",front:"Who invented Telephone?",back:"Alexander Graham Bell",options:["Edison","Alexander Graham Bell","Marconi","Tesla"],type:"edu"}
+  {subject:"GK",tag:"Invention",front:"Who invented Light Bulb?",back:"Thomas Edison",options:["Newton","Thomas Edison","Einstein","Tesla"],type:"edu"}
 ];
 
 let currentSubject = 'abst';
@@ -509,6 +507,7 @@ function switchSubject(mode) {
 
   if (mode === 'edu' &&!userClass) {
     document.getElementById('ageModal').style.display = 'flex';
+    document.documentElement.classList.add('modal-open');
     return;
   }
 
@@ -538,6 +537,7 @@ function saveAgeClass() {
   localStorage.setItem('abstUserAge', userAge);
   localStorage.setItem('abstUserClass', userClass);
   document.getElementById('ageModal').style.display = 'none';
+  document.documentElement.classList.remove('modal-open');
 
   loadCards();
 }
@@ -678,7 +678,7 @@ function rate(ease) {
   if (ease === 1) updated.due = Date.now() + 60 * 1000;
   else if (ease === 2) updated.due = Date.now() + 10 * 60 * 1000;
   else if (ease === 3) updated.due = Date.now() + 24 * 60 * 1000;
-  else updated.due = Date.now() + 4 * 24 * 60 * 60 * 1000;
+  else updated.due = Date.now() + 4 * 24 * 60 * 1000;
 
   const idx = allCards.findIndex(c => c.front === card.front);
   allCards[idx] = updated;
@@ -725,8 +725,9 @@ function saveStats() {
   localStorage.setItem('abstBrainStats', JSON.stringify(stats));
 }
 
-// Event Listeners
+// Event Listeners - BULLETPROOF
 document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('homeBtn').onclick = () => window.location.href = './index.html';
   document.getElementById('abstMode').onclick = () => switchSubject('abst');
   document.getElementById('eduMode').onclick = () => switchSubject('edu');
   document.getElementById('typeMode').onclick = () => switchAnswerMode('type');
@@ -747,15 +748,14 @@ document.addEventListener('DOMContentLoaded', function() {
       checkTypedAnswer();
     }
     if (e.key === 'Escape') {
-      document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
+      document.querySelectorAll('.age-modal').forEach(m => m.style.display = 'none');
       document.documentElement.classList.remove('modal-open');
     }
   });
-});
-
-window.onload = () => {
-  console.log('ABST BRAIN P24 v4.2 | 108 Mantra + 1000 Sahasra | INDIAN.001');
-
+  
+  // Initialize
+  console.log('ABST BRAIN P24 v4.3 | 108 Mantra + 1000 Sahasra | INDIAN.001');
+  
   const savedAge = localStorage.getItem('abstUserAge');
   const savedClass = localStorage.getItem('abstUserClass');
   if (savedAge) userAge = parseInt(savedAge);
@@ -763,7 +763,9 @@ window.onload = () => {
 
   loadCards();
   updateStats();
-};
+});
 </script>
 </body>
 </html>
+
+
