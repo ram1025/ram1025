@@ -525,18 +525,6 @@ document.getElementById('ageModal').style.display = 'none';
 document.documentElement.classList.remove('modal-open');
 loadCards();
 }
-function filterDueCards() {
-    try {
-        const now = Date.now();
-        if (currentSubject === 'edu' && userClass) {
-            dueCards = allCards.filter(c => 
-                c.subject === userClass || 
-                c.tag === 'GK' || 
-                c.subject === 'GK'
-            );
-        } else {
-            dueCards = allCards.filter(c => c.due <= now);
-        }
         
         if (carryForwardCard) {
             dueCards.unshift(carryForwardCard);
