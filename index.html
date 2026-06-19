@@ -48,9 +48,52 @@ img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 au
 .modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:13px;line-height:1.8;text-align:left;max-height:70vh;overflow-y:auto}
 .modal-body h4{color:#ffd700;margin-top:15px}
 .modal-body ul{padding-left:20px}
+
+/* ABST SOVEREIGN WELCOME - FOUNDER ONLY */
+#abst-welcome-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a192f;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 1s ease-in-out 5s forwards;
+}
+#abst-welcome-text {
+  color: #64ffda;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  animation: glowText 2s infinite;
+}
+#abst-welcome-sub {
+  color: #FFD700;
+  font-size: 16px;
+  margin-top: 12px;
+  letter-spacing: 2px;
+}
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+@keyframes glowText {
+  0%,100% { text-shadow: 0 0 15px rgba(100,255,218,0.6); }
+  50% { text-shadow: 0 0 30px rgba(100,255,218,1); }
+}
 </style>
 </head>
 <body>
+<!-- WELCOME OVERLAY - FOUNDER ONLY -->
+<div id="abst-welcome-overlay">
+  <div id="abst-welcome-text">WELCOME TO ABST</div>
+  <div id="abst-welcome-sub">SOVEREIGN ID: INDIAN.001</div>
+  <div style="color:#8892b0;font-size:12px;margin-top:25px">Master Visionary: RAM GANESH MAKINA</div>
+</div>
+
 <div class="container">
 <img src="icon-192.png" alt="Seal" width="90" height="90" style="border-radius:50%">
 
@@ -290,10 +333,15 @@ document.body.style.overflow='auto';
 }
 });
 
+// ABST SOVEREIGN WELCOME - 6 SECONDS
+setTimeout(() => {
+  document.getElementById('abst-welcome-overlay').style.display = 'none';
+}, 6000);
+
 // ABST OFFLINE ONLY - NO ZOOM BUTTONS
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/ram1025/service-worker.js', {scope: '/ram1025/'});
 }
 </script>
 </body>
-</html>
+  </html>
