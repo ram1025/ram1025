@@ -446,47 +446,54 @@ let userAge = null;
 let userClass = null;
 let carryForwardCard = null;
 function loadCards() {
-const saved = localStorage.getItem('abstBrainCards_' + currentSubject);
-if (saved) {
-allCards = JSON.parse(saved);
-} else {
-if (currentSubject === 'abst') {
-allCards = [...abstCards];
-} else {
-if (userClass) {
-allCards = eduCards.filter(c => c.subject === userClass || c.subject === 'GK');
-if (allCards.length === 0) allCards = [...eduCards];
-} else {
-allCards = [...eduCards];
-}
-}
-allCards.forEach(c => {
-c.reps = 0; c.ease = 2.5; c.interval = 0; c.due = Date.now();
-});
-}
-filterDueCards();
+    const saved = localStorage.getItem('abstBrainCards_' + currentSubject);
+    if (saved) {
+        allCards = JSON.parse(saved);
+    } else {
+        if (currentSubject === 'abst') {
+            allCards = [...abstCards];
+        } else {
+            if (userClass) {
+                allCards = eduCards.filter(c => 
+                    c.subject === userClass || 
+                    c.subject === 'GK' || 
+                    c.tag === 'GK'
+                );
+                if (allCards.length === 0) allCards = [...eduCards];
+            } else {
+                allCards = [...eduCards];
+            }
+        }
+        allCards.forEach(c => {
+            c.reps = 0;
+            c.ease = 2.5;
+            c.interval = 0;
+            c.due = Date.now();
+        });
+    }
+    filterDueCards();
 }
 function filterDueCards() {
- const now = Date.now();
- if (currentSubject === 'edu' && userClass) {
-     dueCards = allCards.filter(c => 
-         c.subject === userClass || 
-         c.tag === 'GK' ||
-         c.subject === 'GK'
-     );
- } else {
-     dueCards = allCards.filter(c => c.due <= now);
- }
- if (carryForwardCard) {
-     dueCards.unshift(carryForwardCard);
-     carryForwardCard = null;
- }
- if (dueCards.length === 0) {
-     dueCards = allCards.slice(0, 10);
- }
- current = 0;
- updateStats();
- showCard();
+    const now = Date.now();
+    if (currentSubject === 'edu' && userClass) {
+        dueCards = allCards.filter(c => 
+            c.subject === userClass || 
+            c.tag === 'GK' ||
+            c.subject === 'GK'
+        );
+    } else {
+        dueCards = allCards.filter(c => c.due <= now);
+    }
+    if (carryForwardCard) {
+        dueCards.unshift(carryForwardCard);
+        carryForwardCard = null;
+    }
+    if (dueCards.length === 0) {
+        dueCards = allCards.slice(0, 10);
+    }
+    current = 0;
+    updateStats();
+    showCard();
 }
 function switchSubject(mode) {
 currentSubject = mode;
