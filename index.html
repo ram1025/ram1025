@@ -133,14 +133,14 @@ P30: RVM Network | P31: Indian.00X ID System | P32: Our Amrutavarsha Vendor Netw
 P36: MD Agni-Pariksha Leadership Mandate
 </div>
 
-<button class="btn" onclick="show('dpr36Modal')">🏛️ ABST-MASTERPLAN</button>
+<button class="btn" onclick="showMasterplan(event)">🏛️ ABST-MASTERPLAN</button>
 <button class="btn-live-jarvis" onclick="window.location.href='Jarvis-Ai.html'">
 <span class="pulse-dot"></span>JARVIS AI<span class="subtext">36 Pillars | 24/7 Control | 0.2s Response</span>
 </button>
 <button class="btn" style="background:linear-gradient(135deg,#FFD700,#FFA500);box-shadow:0 0 15px rgba(255,215,0,0.5);font-weight:bold;color:#0a192f;border:2px solid #FFD700;" onclick="window.open('./MyJeevandhara_Investor_Note.pdf','_blank')">
 📊 VIEW INVESTOR NOTE - PDF
 </button>
-<button class="btn" style="background:linear-gradient(135deg,#FFD700,#FFA500);box-shadow:0 0 15px rgba(255,215,0.5);font-weight:bold;color:#0a192f;border:2px solid #FFD700;" onclick="window.location.href='dpr-complete.html'">📜 COMPLETE DPR COMPENDIUM - FULL TEXT</button>
+<button class="btn" style="background:linear-gradient(135deg,#FFD700,#FFA500);box-shadow:0 0 15px rgba(255,215,0,0.5);font-weight:bold;color:#0a192f;border:2px solid #FFD700;" onclick="window.location.href='dpr-complete.html'">📜 COMPLETE DPR COMPENDIUM - FULL TEXT</button>
 <button class="btn" onclick="window.location.href='https://jarvis-live.com'">LIVE JARVIS TRANSPARENCY FEED</button>
 <button class="btn" style="background:linear-gradient(135deg,#1E40AF,#3B82F6);box-shadow:0 0 15px rgba(30,64,175,0.4);font-weight:bold;color:#fff;" onclick="window.open('./Project_MJ_Detailed_Blueprint.pdf','_blank')">📄 VIEW / DOWNLOAD DPR PDF</button>
 <button class="btn" style="background:linear-gradient(135deg,#00ff88,#00d4ff);box-shadow:0 0 15px rgba(0,255,136,0.4);" onclick="window.location.href='36-Pillars-Book.html'">📖 36 PILLARS BOOK - COMPLETE 1-36</button>
@@ -149,7 +149,7 @@ P36: MD Agni-Pariksha Leadership Mandate
 <button class="btn" onclick="show('licenseModal')">📜 LICENSE.md</button>
 <button class="btn" onclick="show('readmeModal')">📖 README.md</button>
 <button class="btn" onclick="window.open('https://drive.google.com/file/d/1u8xVrk7SHwpQIcROzPuRPsL1qajs_j0h/preview','_blank')">🎬 WATCH MASTER VISION - 3 MIN</button>
-<button class="btn" onclick="show('blueprintModal')">📊 DPR FRAMEWORK - 10 STEP BLUEPRINT</button>
+<button class="btn" onclick="showBlueprint(event)">📊 DPR FRAMEWORK - 10 STEP BLUEPRINT</button>
 
 <p class="status">Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: INDIAN.001 RAM GANESH MAKINA | P36 Active</p>
 </div>
@@ -173,7 +173,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT ANY WARRANTY.
 </div>
 <button onclick="hide('licenseModal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
 </div>
-</div>
 
 <!-- README Modal -->
 <div id="readmeModal" class="modal" onclick="hide('readmeModal')">
@@ -196,12 +195,12 @@ See LICENSE for terms.
 <button onclick="hide('readmeModal')" style="width:100%;margin-top:15px;background:#2e7d32;color:#fff;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
 </div>
 
-<!-- MASTERPLAN Modal -->
-<div id="dpr36Modal" class="modal" onclick="hide('dpr36Modal')">
+<!-- MASTERPLAN Modal - NEW -->
+<div id="masterplanModal" class="modal" onclick="hide('masterplanModal')">
 <div class="modal-inner" onclick="event.stopPropagation()" style="border:2px solid #64ffda">
 <div class="modal-head">
 <h2 style="color:#64ffda;margin:0">🏛️ ABST-MASTERPLAN - INDIAN.001</h2>
-<span onclick="hide('dpr36Modal')" class="modal-close">&times;</span>
+<span onclick="hide('masterplanModal')" class="modal-close">&times;</span>
 </div>
 <div class="modal-body">
 <h1 style="color:#64ffda;text-align:left;font-size:22px">ABST 36-PILLAR SOVEREIGN DPR</h1>
@@ -217,7 +216,7 @@ See LICENSE for terms.
 <p><strong>Total Questions:</strong> 36 Pillars × 3 = 108 Mantra + 1000 Education Sahasra</p>
 <p><strong>Algorithm:</strong> SM-2 Spaced Repetition + Active Recall</p>
 </div>
-<button onclick="hide('dpr36Modal');window.scrollTo({top:0,behavior:'smooth'})" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
+<button onclick="hide('masterplanModal');window.scrollTo({top:0,behavior:'smooth'})" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
 </div>
 </div>
 
@@ -319,14 +318,17 @@ See LICENSE for terms.
 </div>
 
 <script>
-// FIX 1: Show/Hide Functions - Proper Scroll Reset
+// ============================================
+// FIX: NO JUMP + NO HANG - SCROLL POSITION SAVE
+// ============================================
+let scrollPos = 0;
+
 function show(id){
+  scrollPos = window.scrollY; // Save current scroll position
   const modal = document.getElementById(id);
   if(modal){
     modal.style.display='block';
     document.body.style.overflow='hidden';
-    document.body.style.position='fixed';
-    document.body.style.width='100%';
   }
 }
 
@@ -335,8 +337,33 @@ function hide(id){
   if(modal){
     modal.style.display='none';
     document.body.style.overflow='auto';
-    document.body.style.position='';
-    document.body.style.width='';
+    window.scrollTo(0, scrollPos); // Restore scroll position - NO JUMP
+  }
+}
+
+// ============================================
+// MASTERPLAN BUTTON - CUSTOM FUNCTION
+// ============================================
+function showMasterplan(e) {
+  if(e) e.preventDefault(); // Prevent default jump
+  scrollPos = window.scrollY; // Save scroll
+  const modal = document.getElementById('masterplanModal');
+  if(modal){
+    modal.style.display='block';
+    document.body.style.overflow='hidden';
+  }
+}
+
+// ============================================
+// BLUEPRINT BUTTON - CUSTOM FUNCTION  
+// ============================================
+function showBlueprint(e) {
+  if(e) e.preventDefault(); // Prevent default jump
+  scrollPos = window.scrollY; // Save scroll
+  const modal = document.getElementById('blueprintModal');
+  if(modal){
+    modal.style.display='block';
+    document.body.style.overflow='hidden';
   }
 }
 
@@ -347,8 +374,7 @@ document.addEventListener('keydown',function(e){
       m.style.display='none';
     });
     document.body.style.overflow='auto';
-    document.body.style.position='';
-    document.body.style.width='';
+    window.scrollTo(0, scrollPos);
   }
 });
 
@@ -371,4 +397,4 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 </body>
-  </html>
+</html>
