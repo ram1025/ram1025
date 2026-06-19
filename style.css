@@ -1,4 +1,9 @@
 /* MY JEEVANDHARA BASE STYLE */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px; /* FIX 1: Base font-size for zoom */
+}
+
 body {
   background: #0a192f;
   color: #ffffff;
@@ -78,15 +83,8 @@ h2 {
   /* mobile styles same */
 }
 
-/* SMOOTH SCROLL - MY JEEVANDHARA */
-html {
-  scroll-behavior: smooth;
-}
-
-/* rest of CSS same */
-
 /* ============================================ */
-/* ABST ZOOM & OFFLINE PATCH - ADDED 2026-06-19 */
+/* ABST ZOOM & OFFLINE PATCH - FIXED 2026-06-19 */
 /* DO NOT CHANGE ABOVE CODE - ADD ONLY BELOW   */
 /* ============================================ */
 
@@ -128,6 +126,8 @@ img, video, iframe, table {
   min-width: 44px;
   min-height: 44px;
   cursor: pointer;
+  touch-action: manipulation; /* FIX 2: Mobile click fix */
+  -webkit-tap-highlight-color: transparent;
 }
 
 #zoom-controls button:active {
