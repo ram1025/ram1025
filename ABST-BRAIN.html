@@ -660,12 +660,23 @@ saveStats();
 nextCard();
 }
 function nextCard() {
-current++;
-if (current >= dueCards.length) {
-alert('🎯 Session Complete!\n\nReviewed: ' + dueCards.length + '\nStreak: ' + stats.streak + ' days\n\nJai ABST!');
-filterDueCards();
-} else {
-showCard();
+ current++;
+ if (current >= dueCards.length) {
+     // 7 questions complete aite
+     if (stats.reviewed % 7 === 0) {
+         // Carry forward wrong answers
+         if (carryForwardCard) {
+             dueCards.push(carryForwardCard);
+             carryForwardCard = null;
+         }
+         // Load new questions
+         loadNewQuestions();
+     } else {
+         alert('🎯 Session Complete!\n\nReviewed: ' + stats.reviewed + '\nStreak: ' + stats.streak + ' days\n\nJai ABST!');
+     }
+ } else {
+     showCard();
+ }
 }
 }
 function updateStreak() {
