@@ -495,7 +495,8 @@ function filterDueCards() {
         current = 0;
         updateStats();
         showCard();
-    } catch (e) {
+    }
+    catch (e) {
         console.error('Error in filterDueCards:', e);
         alert('Error: ' + e.message);
     }
