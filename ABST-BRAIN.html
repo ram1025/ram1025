@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
   <title>ABST BRAIN | P24 | INDIAN.001</title>
   <meta name="theme-color" content="#00ffaa">
+  <meta name="description" content="ABST BRAIN - Sovereign Memory Engine. 25K concepts in 84 days. P24 KG to PhD.">
   <script src="sm2.js"></script>
   
   <style>
@@ -17,13 +18,13 @@
       text-align:center;
       min-height:100vh
     }
-.header { margin-bottom:20px; position:relative }
-.header h1 { font-size:36px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px }
-.header p { color:#ffaa00; font-size:14px; font-weight:700 }
+.header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
+.header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
+.header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
 .back-btn {
       position:absolute; 
-      top:0; 
       left:0; 
+      top:5px;
       background:#1a2332; 
       color:#00ffaa; 
       border:1px solid #00ffaa; 
@@ -31,8 +32,10 @@
       border-radius:8px; 
       font-weight:700;
       cursor:pointer;
-      font-size:14px
+      font-size:14px;
+      z-index:10
     }
+.back-btn:hover { background:#00ffaa; color:#0a192f }
 .mode-toggle,.answer-mode-toggle { 
       background:#112240; 
       border:1px solid #ffaa00; 
@@ -64,8 +67,11 @@
       margin:20px auto; 
       max-width:550px; 
       box-shadow:0 0 40px #00ffaa20;
-      position:relative
+      position:relative;
+      transition:border-color 0.3s
     }
+.card.correct { border-color:#44ff88; box-shadow:0 0 40px #44ff8820 }
+.card.wrong { border-color:#ff4444; box-shadow:0 0 40px #ff444420 }
 .pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
 .question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
 .answer-input {
@@ -77,8 +83,11 @@
       color:#fff;
       font-size:18px;
       text-align:center;
-      margin:20px 0
+      margin:20px 0;
+      transition:border-color 0.3s
     }
+.answer-input.correct { border-color:#44ff88; background:#44ff8810 }
+.answer-input.wrong { border-color:#ff4444; background:#ff444410 }
 .mcq-grid {
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -92,7 +101,8 @@
       padding:15px;
       border-radius:10px;
       cursor:pointer;
-      font-size:15px
+      font-size:15px;
+      transition:all 0.2s
     }
 .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
 .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
@@ -111,6 +121,7 @@
     }
 .btn:hover { transform:scale(1.05); box-shadow:0 0 20px #00ffaa80 }
 .btn-check { background:#ffaa00; color:#0a192f }
+.btn-next { background:#44ff88; color:#0a192f; display:none }
 .btn-again { background:#ff4444; color:#fff }
 .btn-hard { background:#ffaa00; color:#0a192f }
 .btn-good { background:#00ffaa; color:#0a192f }
@@ -139,8 +150,8 @@
       font-size:11px; 
       font-weight:900 
     }
-.answer-blur { filter:blur(8px); user-select:none }
 .timer { color:#ffaa00; font-size:14px; margin-top:15px; font-weight:700 }
+.feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
   </style>
 </head>
 <body>
@@ -150,13 +161,11 @@
     <p>SOVEREIGN ID: INDIAN.001 | P24: KG to PhD Memory Engine</p>
   </div>
 
-  <!-- SUBJECT MODE: ABST vs EDUCATION -->
   <div class="mode-toggle">
     <button class="mode-btn active" id="abstMode" onclick="switchSubject('abst')">🏛️ 36 PILLARS</button>
     <button class="mode-btn" id="eduMode" onclick="switchSubject('edu')">📚 EDUCATION</button>
   </div>
 
-  <!-- ANSWER MODE: Type vs MCQ vs Flip -->
   <div class="answer-mode-toggle">
     <button class="mode-btn active" id="typeMode" onclick="switchAnswerMode('type')">✍️ TYPE</button>
     <button class="mode-btn" id="mcqMode" onclick="switchAnswerMode('mcq')">🔘 MCQ</button>
@@ -168,24 +177,23 @@
     <div class="pillar" id="pillarTag">P24: Loading...</div>
     <h2 class="question" id="question">Initializing...</h2>
     
-    <!-- TYPE MODE -->
     <div id="typeAnswerBox" style="display:none">
       <input type="text" class="answer-input" id="userAnswer" placeholder="Type your answer here..." autocomplete="off">
-      <button class="btn btn-check" onclick="checkTypedAnswer()">CHECK ANSWER</button>
+      <button class="btn btn-check" id="checkBtn" onclick="checkTypedAnswer()">CHECK ANSWER</button>
     </div>
 
-    <!-- MCQ MODE -->
     <div id="mcqAnswerBox" style="display:none">
       <div class="mcq-grid" id="mcqGrid"></div>
     </div>
 
-    <!-- FLIP MODE -->
     <button class="btn" id="showBtn" onclick="showAnswer()">SHOW ANSWER</button>
 
-    <!-- ANSWER DISPLAY -->
+    <div class="feedback-msg" id="feedbackMsg"></div>
+
     <div id="answerBox" style="display:none">
       <hr style="border-color:#00ffaa; margin:30px 0; opacity:0.2">
       <h3 id="answer" style="color:#fff; font-size:20px; line-height:1.5"></h3>
+      <button class="btn btn-next" id="nextBtn" onclick="rateAndNext()">NEXT QUESTION →</button>
       <div class="timer" id="timerBox" style="display:none">Next review in: <span id="timerCount">60</span>s</div>
       <div style="margin-top:40px" id="ratingBox">
         <button class="btn btn-again" onclick="rate(1)">AGAIN<br><small>1 min</small></button>
@@ -221,20 +229,46 @@ const abstCards = [
 ];
 
 const eduCards = [
-  {subject:"Math",tag:"Algebra",front:"(a+b)² =?",back:"a²+2ab+b²",options:["a²+b²","a²+2ab+b²","a²-2ab+b²","2ab"],type:"edu"},
-  {subject:"Science",tag:"Physics",front:"Speed of light?",back:"3×10⁸ m/s",options:["3×10⁶ m/s","3×10⁸ m/s","3×10¹⁰ m/s","3×10⁵ m/s"],type:"edu"},
-  {subject:"Geography",tag:"India",front:"Bharat lo enni states?",back:"28",options:["25","28","30","35"],type:"edu"},
-  {subject:"History",tag:"Freedom",front:"India Independence year?",back:"1947",options:["1945","1947","1950","1942"],type:"edu"},
-  {subject:"English",tag:"Grammar",front:"Verb ante enti?",back:"Action word",options:["Naming word","Action word","Describing word","Joining word"],type:"edu"}
+  {subject:"KG",tag:"Alphabets",front:"A for?",back:"Apple",options:["Ant","Apple","Aeroplane","Arrow"],type:"edu"},
+  {subject:"KG",tag:"Numbers",front:"1 + 1 =?",back:"2",options:["1","2","3","11"],type:"edu"},
+  {subject:"KG",tag:"Colors",front:"Sky color?",back:"Blue",options:["Red","Green","Blue","Yellow"],type:"edu"},
+  {subject:"KG",tag:"Shapes",front:"How many sides in triangle?",back:"3",options:["2","3","4","5"],type:"edu"},
+  {subject:"KG",tag:"Animals",front:"Dog sound?",back:"Bow Bow",options:["Meow","Bow Bow","Moo","Chirp"],type:"edu"},
+  {subject:"Math",tag:"1st Class",front:"5 - 3 =?",back:"2",options:["1","2","3","8"],type:"edu"},
+  {subject:"EVS",tag:"2nd Class",front:"We drink?",back:"Water",options:["Sand","Water","Stone","Fire"],type:"edu"},
+  {subject:"Math",tag:"3rd Class",front:"10 × 10 =?",back:"100",options:["10","20","100","1000"],type:"edu"},
+  {subject:"Science",tag:"4th Class",front:"Plant ki food elaga vastundi?",back:"Photosynthesis",options:["Eating","Photosynthesis","Drinking","Sleeping"],type:"edu"},
+  {subject:"Social",tag:"5th Class",front:"India capital?",back:"New Delhi",options:["Mumbai","New Delhi","Kolkata","Chennai"],type:"edu"},
+  {subject:"Math",tag:"6th Class",front:"Area of Square formula?",back:"side × side",options:["l×b","side×side","πr²","½bh"],type:"edu"},
+  {subject:"Science",tag:"7th Class",front:"Water formula?",back:"H₂O",options:["CO₂","H₂O","O₂","NaCl"],type:"edu"},
+  {subject:"Geography",tag:"8th Class",front:"Largest ocean?",back:"Pacific Ocean",options:["Atlantic","Indian","Pacific Ocean","Arctic"],type:"edu"},
+  {subject:"History",tag:"9th Class",front:"Gandhiji birth year?",back:"1869",options:["1947","1869","1919","1857"],type:"edu"},
+  {subject:"Math",tag:"10th Class",front:"Pythagoras theorem?",back:"a²+b²=c²",options:["a+b=c","a²+b²=c²","a²-b²=c²","2ab=c"],type:"edu"},
+  {subject:"Physics",tag:"11th Class",front:"Unit of Force?",back:"Newton",options:["Joule","Newton","Watt","Pascal"],type:"edu"},
+  {subject:"Chemistry",tag:"12th Class",front:"Atomic number of Carbon?",back:"6",options:["4","6","8","12"],type:"edu"},
+  {subject:"Biology",tag:"12th Class",front:"Powerhouse of cell?",back:"Mitochondria",options:["Nucleus","Mitochondria","Ribosome","Chloroplast"],type:"edu"},
+  {subject:"GK",tag:"UPSC",front:"Who wrote Indian Constitution?",back:"Dr. B.R. Ambedkar",options:["Nehru","Dr. B.R. Ambedkar","Gandhi","Patel"],type:"edu"},
+  {subject:"Economics",tag:"Degree",front:"GDP full form?",back:"Gross Domestic Product",options:["General Data Point","Gross Domestic Product","Global Development Plan","Goods Daily Price"],type:"edu"},
+  {subject:"Computer",tag:"BTech",front:"HTML full form?",back:"HyperText Markup Language",options:["HighTech Modern Language","HyperText Markup Language","Home Tool Markup Language","Hyper Transfer Main Link"],type:"edu"},
+  {subject:"Physics",tag:"PhD",front:"Heisenberg Uncertainty Principle?",back:"Δx·Δp ≥ ħ/2",options:["E=mc²","Δx·Δp ≥ ħ/2","F=ma","V=IR"],type:"edu"},
+  {subject:"Math",tag:"PhD",front:"Euler's Identity?",back:"e^(iπ)+1=0",options:["a²+b²=c²","e^(iπ)+1=0","F=ma","∫eˣ=1"],type:"edu"},
+  {subject:"GK",tag:"India",front:"National Animal of India?",back:"Tiger",options:["Lion","Tiger","Elephant","Peacock"],type:"edu"},
+  {subject:"GK",tag:"World",front:"Largest Country by area?",back:"Russia",options:["China","USA","Russia","Canada"],type:"edu"},
+  {subject:"GK",tag:"Space",front:"First person on Moon?",back:"Neil Armstrong",options:["Yuri Gagarin","Neil Armstrong","Rakesh Sharma","Kalpana Chawla"],type:"edu"},
+  {subject:"GK",tag:"Sports",front:"Cricket World Cup 2023 winner?",back:"Australia",options:["India","Australia","England","Pakistan"],type:"edu"},
+  {subject:"GK",tag:"Tech",front:"CEO of Tesla?",back:"Elon Musk",options:["Bill Gates","Elon Musk","Sundar Pichai","Mark Zuckerberg"],type:"edu"},
+  {subject:"Science",tag:"6th Class",front:"Sun rises in?",back:"East",options:["West","East","North","South"],type:"edu"},
+  {subject:"Math",tag:"7th Class",front:"Square root of 144?",back:"12",options:["10","12","14","16"],type:"edu"}
 ];
 
 let currentSubject = 'abst';
-let answerMode = 'type'; // type, mcq, flip
+let answerMode = 'type';
 let allCards = [...abstCards];
 let dueCards = [];
 let current = 0;
 let stats = JSON.parse(localStorage.getItem('abstBrainStats')) || { reviewed: 0, streak: 0, lastDate: null };
-let againTimer = null;
+let currentEase = 0;
+let isAnswered = false;
 
 function loadCards() {
   const saved = localStorage.getItem('abstBrainCards_' + currentSubject);
@@ -253,7 +287,7 @@ function filterDueCards() {
   const now = Date.now();
   dueCards = allCards.filter(c => c.due <= now);
   if (dueCards.length === 0) {
-    dueCards = allCards.slice(0, 1); // Show at least 1
+    dueCards = allCards.slice(0, 1);
   }
   current = 0;
   updateStats();
@@ -278,6 +312,7 @@ function switchAnswerMode(mode) {
 
 function showCard() {
   if (current >= dueCards.length) current = 0;
+  isAnswered = false;
   
   const c = dueCards[current];
   const tagText = c.type === 'abst'? `P${c.pillar}: ${c.tag}` : `${c.subject}: ${c.tag}`;
@@ -287,17 +322,21 @@ function showCard() {
   document.getElementById('answer').innerText = c.back;
   document.getElementById('answerBox').style.display = 'none';
   document.getElementById('cardCount').innerText = `${current + 1}/${dueCards.length}`;
+  document.getElementById('feedbackMsg').innerText = '';
+  document.getElementById('cardBox').className = 'card';
   
-  // Hide all answer modes first
   document.getElementById('typeAnswerBox').style.display = 'none';
   document.getElementById('mcqAnswerBox').style.display = 'none';
   document.getElementById('showBtn').style.display = 'none';
   document.getElementById('timerBox').style.display = 'none';
+  document.getElementById('nextBtn').style.display = 'none';
   
-  // Show selected mode
   if (answerMode === 'type') {
     document.getElementById('typeAnswerBox').style.display = 'block';
     document.getElementById('userAnswer').value = '';
+    document.getElementById('userAnswer').className = 'answer-input';
+    document.getElementById('userAnswer').disabled = false;
+    document.getElementById('checkBtn').style.display = 'inline-block';
     document.getElementById('userAnswer').focus();
   } else if (answerMode === 'mcq') {
     document.getElementById('mcqAnswerBox').style.display = 'block';
@@ -322,30 +361,57 @@ function renderMCQ(card) {
 }
 
 function checkMCQ(selected, correct, btn) {
+  if (isAnswered) return;
+  isAnswered = true;
+  
   const buttons = document.querySelectorAll('.mcq-btn');
   buttons.forEach(b => b.disabled = true);
   
   if (selected === correct) {
     btn.classList.add('correct');
-    setTimeout(() => showAnswerAfterCheck(4), 800); // Auto EASY
+    document.getElementById('cardBox').classList.add('correct');
+    document.getElementById('feedbackMsg').innerText = '✅ Correct!';
+    document.getElementById('feedbackMsg').style.color = '#44ff88';
+    currentEase = 4;
+    setTimeout(() => rateAndNext(), 2000);
   } else {
     btn.classList.add('wrong');
+    document.getElementById('cardBox').classList.add('wrong');
+    document.getElementById('feedbackMsg').innerText = '❌ Wrong! Correct: ' + correct;
+    document.getElementById('feedbackMsg').style.color = '#ff4444';
     buttons.forEach(b => {
       if (b.innerText === correct) b.classList.add('correct');
     });
-    setTimeout(() => showAnswerAfterCheck(1), 1500); // Auto AGAIN
+    currentEase = 1;
+    showAnswerAfterWrong();
   }
 }
 
 function checkTypedAnswer() {
+  if (isAnswered) return;
+  isAnswered = true;
+  
   const userAns = document.getElementById('userAnswer').value.trim().toLowerCase();
   const correctAns = dueCards[current].back.toLowerCase();
+  const input = document.getElementById('userAnswer');
   
-  // Fuzzy match - allow partial
+  input.disabled = true;
+  document.getElementById('checkBtn').style.display = 'none';
+  
   if (userAns.includes(correctAns) || correctAns.includes(userAns) || userAns === correctAns) {
-    showAnswerAfterCheck(4); // EASY
+    input.classList.add('correct');
+    document.getElementById('cardBox').classList.add('correct');
+    document.getElementById('feedbackMsg').innerText = '✅ Correct!';
+    document.getElementById('feedbackMsg').style.color = '#44ff88';
+    currentEase = 4;
+    setTimeout(() => rateAndNext(), 2000);
   } else {
-    showAnswerAfterCheck(1); // AGAIN
+    input.classList.add('wrong');
+    document.getElementById('cardBox').classList.add('wrong');
+    document.getElementById('feedbackMsg').innerText = '❌ Wrong! Correct: ' + dueCards[current].back;
+    document.getElementById('feedbackMsg').style.color = '#ff4444';
+    currentEase = 1;
+    showAnswerAfterWrong();
   }
 }
 
@@ -356,21 +422,24 @@ function showAnswer() {
   document.getElementById('mcqAnswerBox').style.display = 'none';
 }
 
-function showAnswerAfterCheck(ease) {
-  showAnswer();
-  // Auto rate after 1 sec
-  setTimeout(() => rate(ease), 1000);
+function showAnswerAfterWrong() {
+  document.getElementById('answerBox').style.display = 'block';
+  document.getElementById('nextBtn').style.display = 'inline-block';
+  document.getElementById('ratingBox').style.display = 'none';
+}
+
+function rateAndNext() {
+  rate(currentEase);
 }
 
 function rate(ease) {
   const card = dueCards[current];
   const updated = ABST_SM2.calc(card, ease);
   
-  // SM2 Intervals: AGAIN=1min, HARD=10min, GOOD=1day, EASY=4days
-  if (ease === 1) updated.due = Date.now() + 60 * 1000; // 1 min
-  else if (ease === 2) updated.due = Date.now() + 10 * 60 * 1000; // 10 min
-  else if (ease === 3) updated.due = Date.now() + 24 * 60 * 60 * 1000; // 1 day
-  else updated.due = Date.now() + 4 * 24 * 60 * 60 * 1000; // 4 days
+  if (ease === 1) updated.due = Date.now() + 60 * 1000;
+  else if (ease === 2) updated.due = Date.now() + 10 * 60 * 1000;
+  else if (ease === 3) updated.due = Date.now() + 24 * 60 * 60 * 1000;
+  else updated.due = Date.now() + 4 * 24 * 60 * 60 * 1000;
   
   const idx = allCards.findIndex(c => c.front === card.front);
   allCards[idx] = updated;
@@ -379,31 +448,7 @@ function rate(ease) {
   updateStreak();
   saveCards();
   saveStats();
-  
-  // If AGAIN - show timer
-  if (ease === 1) {
-    startAgainTimer();
-  } else {
-    nextCard();
-  }
-}
-
-function startAgainTimer() {
-  document.getElementById('ratingBox').style.display = 'none';
-  document.getElementById('timerBox').style.display = 'block';
-  let count = 60;
-  document.getElementById('timerCount').innerText = count;
-  
-  againTimer = setInterval(() => {
-    count--;
-    document.getElementById('timerCount').innerText = count;
-    if (count <= 0) {
-      clearInterval(againTimer);
-      document.getElementById('ratingBox').style.display = 'block';
-      document.getElementById('timerBox').style.display = 'none';
-      nextCard();
-    }
-  }, 1000);
+  nextCard();
 }
 
 function nextCard() {
@@ -441,18 +486,17 @@ function saveStats() {
   localStorage.setItem('abstBrainStats', JSON.stringify(stats));
 }
 
-// Enter key for type mode
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter' && answerMode === 'type' && document.getElementById('typeAnswerBox').style.display === 'block') {
+  if (e.key === 'Enter' && answerMode === 'type' &&!isAnswered && document.getElementById('typeAnswerBox').style.display === 'block') {
     checkTypedAnswer();
   }
 });
 
 window.onload = () => {
-  console.log('ABST BRAIN P24 v3.0 | Active Recall Mode | INDIAN.001');
+  console.log('ABST BRAIN P24 v3.2 | KG to PhD + GK | Active Recall | INDIAN.001');
   loadCards();
   updateStats();
 };
 </script>
 </body>
-</html>
+  </html>
