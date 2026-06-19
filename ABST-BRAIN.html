@@ -496,16 +496,16 @@ function filterDueCards() {
     showCard();
 }
 function switchSubject(mode) {
-currentSubject = mode;
-document.getElementById('abstMode').classList.toggle('active', mode === 'abst');
-document.getElementById('eduMode').classList.toggle('active', mode === 'edu');
-if (mode === 'edu' &&!userClass) {
-document.getElementById('ageModal').style.display = 'flex';
-document.documentElement.classList.add('modal-open');
-return;
-}
-saveCards();
-loadCards();
+    currentSubject = mode;
+    document.getElementById('abstMode').classList.toggle('active', mode === 'abst');
+    document.getElementById('eduMode').classList.toggle('active', mode === 'edu');
+    if (mode === 'edu') {
+        document.getElementById('ageModal').style.display = 'flex';
+        document.documentElement.classList.add('modal-open');
+        return;
+    }
+    saveCards();
+    loadCards();
 }
 function switchAnswerMode(mode) {
 answerMode = mode;
