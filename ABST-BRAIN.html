@@ -474,28 +474,26 @@ function loadCards() {
     filterDueCards();
 }
 function filterDueCards() {
-    try {
-        const now = Date.now();
-        if (currentSubject === 'edu' && userClass) {
-            dueCards = allCards.filter(c => 
-                c.subject === userClass || 
-                c.tag === 'GK' ||
-                c.subject === 'GK'
-            );
-        } else {
-            dueCards = allCards.filter(c => c.due <= now);
-        }
-        if (carryForwardCard) {
-            dueCards.unshift(carryForwardCard);
-            carryForwardCard = null;
-        }
-        if (dueCards.length === 0) {
-            dueCards = allCards.slice(0, 7);
-        }
-        current = 0;
-        updateStats();
-        showCard();
+    const now = Date.now();
+    if (currentSubject === 'edu' && userClass) {
+        dueCards = allCards.filter(c => c.subject === userClass || c.tag === 'GK' || c.subject === 'GK');
+    } else {
+        dueCards = allCards.filter(c => c.due <= now);
     }
+
+    if (carryForwardCard) {
+        dueCards.unshift(carryForwardCard);
+        carryForwardCard = null;
+    }
+
+    if (!dueCards || dueCards.length === 0) {
+        dueCards = allCards.slice(0, 7);
+    }
+
+    current = 0;
+    updateStats();
+    showCard();
+}
     catch (e) {
         console.error('Error in filterDueCards:', e);
         alert('Error: ' + e.message);
