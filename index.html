@@ -153,7 +153,6 @@ P36: MD Agni-Pariksha Leadership Mandate
 
 <p class="status">Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: INDIAN.001 RAM GANESH MAKINA | P36 Active</p>
 </div>
-
 <!-- LICENSE Modal -->
 <div id="licenseModal" class="modal" onclick="hide('licenseModal')">
 <div class="modal-inner" onclick="event.stopPropagation()" style="border:2px solid #64ffda;max-width:700px">
@@ -172,6 +171,7 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT ANY WARRANTY.
 </div>
 <button onclick="hide('licenseModal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
+</div>
 </div>
 
 <!-- README Modal -->
@@ -194,13 +194,14 @@ See LICENSE for terms.
 </div>
 <button onclick="hide('readmeModal')" style="width:100%;margin-top:15px;background:#2e7d32;color:#fff;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
 </div>
+</div>
 
-<!-- MASTERPLAN Modal - NEW -->
-<div id="masterplanModal" class="modal" onclick="hide('masterplanModal')">
+<!-- MASTERPLAN Modal -->
+<div id="dpr36Modal" class="modal" onclick="hide('dpr36Modal')">
 <div class="modal-inner" onclick="event.stopPropagation()" style="border:2px solid #64ffda">
 <div class="modal-head">
 <h2 style="color:#64ffda;margin:0">🏛️ ABST-MASTERPLAN - INDIAN.001</h2>
-<span onclick="hide('masterplanModal')" class="modal-close">&times;</span>
+<span onclick="hide('dpr36Modal')" class="modal-close">&times;</span>
 </div>
 <div class="modal-body">
 <h1 style="color:#64ffda;text-align:left;font-size:22px">ABST 36-PILLAR SOVEREIGN DPR</h1>
@@ -216,8 +217,7 @@ See LICENSE for terms.
 <p><strong>Total Questions:</strong> 36 Pillars × 3 = 108 Mantra + 1000 Education Sahasra</p>
 <p><strong>Algorithm:</strong> SM-2 Spaced Repetition + Active Recall</p>
 </div>
-<button onclick="hide('masterplanModal');window.scrollTo({top:0,behavior:'smooth'})" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
-</div>
+<button onclick="hide('dpr36Modal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
 </div>
 
 <!-- BLUEPRINT Modal - FULL 10 STEPS -->
@@ -314,21 +314,20 @@ See LICENSE for terms.
 <li><strong>100% Closed-Loop Independence:</strong> Energy, water, and mobility networks function in a perfect, harmonious cyclical loop where every output becomes a useful input for another sector.</li>
 </ul>
 </div>
-<button onclick="hide('blueprintModal');window.scrollTo({top:0,behavior:'smooth'})" style="width:100%;margin-top:15px;background:#FFD700;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
+<button onclick="hide('blueprintModal')" style="width:100%;margin-top:15px;background:#FFD700;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
+</div>
 </div>
 
 <script>
 // ============================================
-// FIX: NO JUMP + NO HANG - SCROLL POSITION SAVE
+// MODAL FIX - NO JUMP NO HANG - MOBILE SAFE
 // ============================================
-let scrollPos = 0;
 
 function show(id){
-  scrollPos = window.scrollY; // Save current scroll position
   const modal = document.getElementById(id);
   if(modal){
     modal.style.display='block';
-    document.body.style.overflow='hidden';
+    document.documentElement.style.overflow = 'hidden';
   }
 }
 
@@ -336,49 +335,35 @@ function hide(id){
   const modal = document.getElementById(id);
   if(modal){
     modal.style.display='none';
-    document.body.style.overflow='auto';
-    window.scrollTo(0, scrollPos); // Restore scroll position - NO JUMP
+    document.documentElement.style.overflow = '';
   }
 }
 
-// ============================================
-// MASTERPLAN BUTTON - CUSTOM FUNCTION
-// ============================================
-function showMasterplan(e) {
-  if(e) e.preventDefault(); // Prevent default jump
-  scrollPos = window.scrollY; // Save scroll
-  const modal = document.getElementById('masterplanModal');
-  if(modal){
-    modal.style.display='block';
-    document.body.style.overflow='hidden';
+function showMasterplan(evt) {
+  if(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
   }
+  show('dpr36Modal');
 }
 
-// ============================================
-// BLUEPRINT BUTTON - CUSTOM FUNCTION  
-// ============================================
-function showBlueprint(e) {
-  if(e) e.preventDefault(); // Prevent default jump
-  scrollPos = window.scrollY; // Save scroll
-  const modal = document.getElementById('blueprintModal');
-  if(modal){
-    modal.style.display='block';
-    document.body.style.overflow='hidden';
+function showBlueprint(evt) {
+  if(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
   }
+  show('blueprintModal');
 }
 
-// FIX 2: ESC Key Close All Modals
 document.addEventListener('keydown',function(e){
   if(e.key==='Escape'){
     document.querySelectorAll('.modal').forEach(m=>{
       m.style.display='none';
     });
-    document.body.style.overflow='auto';
-    window.scrollTo(0, scrollPos);
+    document.documentElement.style.overflow = '';
   }
 });
 
-// FIX 3: Welcome Overlay - Show Only Once Per Session
 window.addEventListener('load', function() {
   const overlay = document.getElementById('abst-welcome-overlay');
   if(sessionStorage.getItem('abst_welcome_shown')){
@@ -391,7 +376,6 @@ window.addEventListener('load', function() {
   }
 });
 
-// FIX 4: Service Worker
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/ram1025/service-worker.js', {scope: '/ram1025/'});
 }
