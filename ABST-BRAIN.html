@@ -11,44 +11,44 @@
         html { scroll-behavior: smooth; font-size: 16px; }
         html.modal-open { overflow: hidden!important; }
         body { background:#0a192f; color:#00ffaa; font-family:system-ui,-apple-system,sans-serif; padding:20px; text-align:center; min-height:100vh }
-      .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
-      .header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
-      .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
-      .back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
-      .back-btn:hover { background:#00ffaa; color:#0a192f }
-      .mode-toggle,.answer-mode-toggle { background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:10px }
-      .mode-btn { background:#1a2332; color:#8892b0; border:none; padding:8px 20px; border-radius:8px; cursor:pointer; font-weight:700; font-size:13px }
-      .mode-btn.active { background:#ffaa00; color:#0a192f }
-      .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative; transition:border-color 0.3s }
-      .card.correct { border-color:#44ff88; box-shadow:0 0 40px #44ff8820 }
-      .card.wrong { border-color:#ff4444; box-shadow:0 0 40px #ff444420 }
-      .pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
-      .question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
-      .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0; transition:border-color 0.3s }
-      .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
-      .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
-      .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
-      .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px; transition:all 0.2s }
-      .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
-      .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
-      .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
-      .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer; transition:all 0.2s }
-      .btn:hover { transform:scale(1.05); box-shadow:0 0 20px #00ffaa80 }
-      .btn-check { background:#ffaa00; color:#0a192f }
-      .btn-next { background:#44ff88; color:#0a192f; display:none }
-      .btn-again { background:#ff4444; color:#fff }
-      .btn-hard { background:#ffaa00; color:#0a192f }
-      .btn-good { background:#00ffaa; color:#0a192f }
-      .btn-easy { background:#44ff88; color:#0a192f }
-      .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
-      .stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
-      .footer { margin-top:50px; font-size:12px; opacity:0.6 }
-      .badge { position:absolute; top:-12px; right:20px; background:#ffaa00; color:#0a192f; padding:6px 12px; border-radius:20px; font-size:11px; font-weight:900 }
-      .feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
-      .age-modal { position:fixed; top:0; left:0; width:100%; height:100%; background:#0a192fdd; display:none; align-items:center; justify-content:center; z-index:100 }
-      .age-box { background:#1a2332; padding:30px; border-radius:20px; border:2px solid #00ffaa; max-width:400px; width:90% }
-      .age-box h2 { color:#ffaa00; margin-bottom:20px }
-      .age-box input,.age-box select { width:100%; padding:12px; margin:10px 0; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:16px }
+     .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
+     .header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
+     .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
+     .back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
+     .back-btn:hover { background:#00ffaa; color:#0a192f }
+     .mode-toggle,.answer-mode-toggle { background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:10px }
+     .mode-btn { background:#1a2332; color:#8892b0; border:none; padding:8px 20px; border-radius:8px; cursor:pointer; font-weight:700; font-size:13px }
+     .mode-btn.active { background:#ffaa00; color:#0a192f }
+     .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative; transition:border-color 0.3s }
+     .card.correct { border-color:#44ff88; box-shadow:0 0 40px #44ff8820 }
+     .card.wrong { border-color:#ff4444; box-shadow:0 0 40px #ff444420 }
+     .pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
+     .question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
+     .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0; transition:border-color 0.3s }
+     .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
+     .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
+     .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
+     .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px; transition:all 0.2s }
+     .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
+     .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
+     .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
+     .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer; transition:all 0.2s }
+     .btn:hover { transform:scale(1.05); box-shadow:0 0 20px #00ffaa80 }
+     .btn-check { background:#ffaa00; color:#0a192f }
+     .btn-next { background:#44ff88; color:#0a192f; display:none }
+     .btn-again { background:#ff4444; color:#fff }
+     .btn-hard { background:#ffaa00; color:#0a192f }
+     .btn-good { background:#00ffaa; color:#0a192f }
+     .btn-easy { background:#44ff88; color:#0a192f }
+     .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
+     .stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
+     .footer { margin-top:50px; font-size:12px; opacity:0.6 }
+     .badge { position:absolute; top:-12px; right:20px; background:#ffaa00; color:#0a192f; padding:6px 12px; border-radius:20px; font-size:11px; font-weight:900 }
+     .feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
+     .age-modal { position:fixed; top:0; left:0; width:100%; height:100%; background:#0a192fdd; display:none; align-items:center; justify-content:center; z-index:100 }
+     .age-box { background:#1a2332; padding:30px; border-radius:20px; border:2px solid #00ffaa; max-width:400px; width:90% }
+     .age-box h2 { color:#ffaa00; margin-bottom:20px }
+     .age-box input,.age-box select { width:100%; padding:12px; margin:10px 0; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:16px }
     </style>
 </head>
 <body>
@@ -106,6 +106,7 @@
     </div>
 
     <div class="footer">ABST P24 Civilization OS | SM-2 Algorithm | 108 Mantra + 1000 Sahasra</div>
+<script src="abst-questions-db.js"></script>
 <script>
 const allCards = [
     { pillar: 'P1: CONSCIOUSNESS', question: 'What is the first pillar of ABST?', answer: 'Consciousness', subject: 'abst', reps: 0 },
@@ -143,7 +144,7 @@ function setupEventListeners() {
     document.getElementById('checkBtn').onclick = checkAnswer;
     document.getElementById('nextBtn').onclick = nextCard;
     document.getElementById('showBtn').onclick = showAnswer;
-    document.getElementById('homeBtn').onclick = () => location.reload();
+    document.getElementById('homeBtn').onclick = () => window.location.href = 'index.html';
     document.getElementById('userAnswer').addEventListener('keypress', (e) => {
         if (e.key === 'Enter') checkAnswer();
     });
@@ -165,16 +166,21 @@ function switchMode(mode) {
 }
 
 function initCards() {
+    let filteredCards = [];
     if (currentSubject === 'abst') {
-        dueCards = allCards.filter(c => c.subject === 'abst').sort(() => Math.random() - 0.5);
+        filteredCards = allCards.filter(c => c.subject === 'abst');
     } else {
-        dueCards = allCards.filter(c => c.subject === userClass || c.subject === 'GK').sort(() => Math.random() - 0.5);
+        // For EDUCATION: show selected class + GK
+        filteredCards = allCards.filter(c => c.subject === userClass || c.subject === 'GK');
     }
+
+    // Shuffle and take 7 cards
+    dueCards = filteredCards.sort(() => Math.random() - 0.5).slice(0, 7);
+
     if (dueCards.length === 0) {
-        dueCards = allCards.slice(0, 7);
-    } else {
-        dueCards = dueCards.slice(0, 7);
+        dueCards = allCards.slice(0, 3); // Fallback
     }
+    current = 0;
     updateStats();
     showCard();
 }
@@ -191,12 +197,12 @@ function showCard() {
     document.getElementById('nextBtn').style.display = 'none';
     document.getElementById('userAnswer').value = '';
     document.getElementById('userAnswer').className = 'answer-input';
-    
+
     if (currentMode === 'type') {
         document.getElementById('typeAnswerBox').style.display = 'block';
         document.getElementById('mcqAnswerBox').style.display = 'none';
         document.getElementById('showBtn').style.display = 'none';
-        document.getElementById('userAnswer').focus();
+        setTimeout(() => document.getElementById('userAnswer').focus(), 100);
     } else if (currentMode === 'mcq') {
         document.getElementById('typeAnswerBox').style.display = 'none';
         document.getElementById('mcqAnswerBox').style.display = 'block';
@@ -212,14 +218,14 @@ function showCard() {
 function generateMCQOptions(card) {
     const options = [card.answer];
     const wrongOptions = allCards
-      .filter(c => c.answer!== card.answer)
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 3)
-      .map(c => c.answer);
-    
+     .filter(c => c.answer!== card.answer)
+     .sort(() => Math.random() - 0.5)
+     .slice(0, 3)
+     .map(c => c.answer);
+
     options.push(...wrongOptions);
     options.sort(() => Math.random() - 0.5);
-    
+
     const mcqGrid = document.getElementById('mcqGrid');
     mcqGrid.innerHTML = '';
     options.forEach(option => {
@@ -239,7 +245,7 @@ function checkMCQAnswer(selected, correct) {
             btn.classList.add('correct');
         }
     });
-    
+
     if (selected === correct) {
         document.getElementById('feedbackMsg').textContent = '✓ Correct!';
         document.getElementById('cardBox').classList.add('correct');
@@ -251,7 +257,7 @@ function checkMCQAnswer(selected, correct) {
             if (btn.textContent === selected) btn.classList.add('wrong');
         });
     }
-    
+
     document.getElementById('answerBox').style.display = 'block';
     document.getElementById('answer').textContent = correct;
     document.getElementById('nextBtn').style.display = 'inline-block';
@@ -260,7 +266,7 @@ function checkMCQAnswer(selected, correct) {
 function checkAnswer() {
     const userAnswer = document.getElementById('userAnswer').value.trim();
     const correctAnswer = dueCards[current].answer;
-    
+
     if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
         document.getElementById('feedbackMsg').textContent = '✓ Correct!';
         document.getElementById('cardBox').classList.add('correct');
@@ -271,7 +277,7 @@ function checkAnswer() {
         document.getElementById('cardBox').classList.add('wrong');
         document.getElementById('userAnswer').classList.add('wrong');
     }
-    
+
     document.getElementById('answerBox').style.display = 'block';
     document.getElementById('answer').textContent = correctAnswer;
     document.getElementById('nextBtn').style.display = 'inline-block';
@@ -287,32 +293,21 @@ function showAnswer() {
 function nextCard() {
     current++;
     if (current >= dueCards.length) {
-        loadNewQuestions();
+        // Reload with new questions
+        current = 0;
+        initCards();
+        alert('🎯 Set Complete! Loading new questions...');
     } else {
         showCard();
     }
     updateStats();
 }
 
-function loadNewQuestions() {
-    if (currentSubject === 'abst') {
-        dueCards = allCards.filter(c => c.subject === 'abst' && c.reps < 3).sort(() => Math.random() - 0.5);
-    } else {
-        dueCards = allCards.filter(c => (c.subject === userClass || c.subject === 'GK') && c.reps < 3).sort(() => Math.random() - 0.5);
-    }
-    if (dueCards.length === 0) {
-        alert('🎯 All questions mastered! Starting over...');
-        dueCards = allCards.filter(c => currentSubject === 'abst'? c.subject === 'abst' : (c.subject === userClass || c.subject === 'GK'));
-        dueCards.forEach(c => c.reps = 0);
-    }
-    dueCards = dueCards.slice(0, 7);
-    current = 0;
-    showCard();
-}
-
 function updateStats() {
-    document.getElementById('dueCount').textContent = dueCards.filter(c => c.reps < 3).length;
-    document.getElementById('totalCount').innerHTML = `${dueCards.filter(c => c.reps >= 3).length}<br>/${allCards.length}`;
+    const due = dueCards.filter(c => c.reps < 1).length;
+    const mastered = allCards.filter(c => c.reps >= 3).length;
+    document.getElementById('dueCount').textContent = due;
+    document.getElementById('totalCount').innerHTML = `${mastered}<br>/${allCards.length}`;
 }
 </script>
 </body>
