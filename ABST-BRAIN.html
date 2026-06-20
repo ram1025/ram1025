@@ -142,12 +142,12 @@
 <script src="sm2.js"></script>
 
 <script>
-// ⚠️ STEP 2: MERGE CARDS
+// ⚠️ STEP 2: MERGE CARDS - FIXED
 const pillarCards = window.allCards || [];
 const eduCards = window.allEducationCards || [];
 let allCards = [...pillarCards,...eduCards];
 
-console.log('✅ Total cards loaded:', allCards.length); // 1108 ravali
+console.log('✅ Pillar:', pillarCards.length, '| Education:', eduCards.length, '| Total:', allCards.length);
 
 allCards = allCards.map(card => {
     if (!card.hasOwnProperty('reps')) card.reps = 0;
@@ -165,12 +165,17 @@ allCards = allCards.map(card => {
     return card;
 });
 
+// ✅ FIX 1: localStorage override ayina, merge chey
 const savedCards = localStorage.getItem('abst_cards');
 if (savedCards) {
     const parsed = JSON.parse(savedCards);
-    if (parsed.length >= allCards.length) {
-        allCards = parsed;
-    }
+    // Old data ki new cards add chey
+    parsed.forEach(savedCard => {
+        const idx = allCards.findIndex(c => c.question === savedCard.question);
+        if (idx!== -1) {
+            allCards[idx] = savedCard; // Progress retain chey
+        }
+    });
 }
 
 let currentSubject = 'abst';
@@ -248,6 +253,7 @@ function stopTimer() {
 
 function switchSubject(subj) {
     currentSubject = subj;
+    // ✅ FIX 2: Correct selector
     document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
     document.getElementById(subj + 'Mode').classList.add('active');
     current = 0;
@@ -256,6 +262,7 @@ function switchSubject(subj) {
 
 function switchMode(mode) {
     currentMode = mode;
+    // ✅ FIX 2: Correct selector
     document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
     document.getElementById(mode + 'Mode').classList.add('active');
     showCard();
@@ -266,10 +273,11 @@ function initCards() {
     if (currentSubject === 'abst') {
         filteredCards = allCards.filter(c => c.subject === 'abst');
     } else {
+        // ✅ Education lo user class + GK kalupu
         filteredCards = allCards.filter(c => c.subject === userClass || c.subject === 'gk');
     }
 
-    console.log('Filtered for', userClass, ':', filteredCards.length);
+    console.log('Filtered for', currentSubject, userClass, ':', filteredCards.length);
 
     const now = Date.now();
     dueCards = filteredCards.filter(c =>!c.due || c.due <= now);
