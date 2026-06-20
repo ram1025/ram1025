@@ -139,28 +139,23 @@
 <script src="abst-questions-db.js"></script>
 <script src="sm2.js"></script>
 <script>
-// FIX 1: allCards ni abst-questions-db.js nunchi teesukuntam. LocalStorage lo unte adi vadtham
 let allCards = window.allCards || [];
 
-// FIX 2: SM-2 fields lekapothe add chey
 allCards = allCards.map(card => {
     if (!card.hasOwnProperty('reps')) card.reps = 0;
     if (!card.hasOwnProperty('ease')) card.ease = 2.5;
     if (!card.hasOwnProperty('interval')) card.interval = 0;
     if (!card.hasOwnProperty('due')) card.due = null;
     if (!card.hasOwnProperty('pillarNum')) {
-        // P1, P2, etc nunchi number extract chey
         const match = card.pillar?.match(/P(\d+)/);
         card.pillarNum = match? parseInt(match[1]) : 0;
     }
     return card;
 });
 
-// LocalStorage lo unte adi prefer chey
 const savedCards = localStorage.getItem('abst_cards');
 if (savedCards) {
     const parsed = JSON.parse(savedCards);
-    // Merge: saved progress + new questions from DB
     if (parsed.length >= allCards.length) {
         allCards = parsed;
     }
@@ -205,6 +200,7 @@ function setupEventListeners() {
         if (e.key === 'Enter') checkAnswer();
     });
 
+    // FIX: Space add chesa - '.quality-btns.btn'
     document.querySelectorAll('.quality-btns.btn').forEach(btn => {
         btn.onclick = () => rateCard(parseInt(btn.dataset.quality));
     });
