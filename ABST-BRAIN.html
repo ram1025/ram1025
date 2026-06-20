@@ -80,7 +80,7 @@
                     <option value="banking">Banking</option>
                 </optgroup>
                 <optgroup label="Other">
-                    <option value="GK">General Knowledge</option>
+                    <option value="gk">General Knowledge</option>
                     <option value="phd">PhD Level</option>
                 </optgroup>
             </select>
@@ -135,13 +135,19 @@
     </div>
 
     <div class="footer">ABST P24 Civilization OS | SM-2 Algorithm | 108 Mantra + 1000 Sahasra</div>
-<script src="abst-questions-db.js"></script>
-<script src="sm2.js"></script>
-<script>
-// FIX: window.allCards nunchi teesukuntam
-let allCards = window.allCards || [];
 
-console.log('Total cards loaded:', allCards.length); // 1108 ravali
+<!-- ⚠️ STEP 1: LOAD FILES -->
+<script src="abst-questions-db.js"></script>
+<script src="abst-education-db.js"></script>
+<script src="sm2.js"></script>
+
+<script>
+// ⚠️ STEP 2: MERGE CARDS
+const pillarCards = window.allCards || [];
+const eduCards = window.allEducationCards || [];
+let allCards = [...pillarCards,...eduCards];
+
+console.log('✅ Total cards loaded:', allCards.length); // 1108 ravali
 
 allCards = allCards.map(card => {
     if (!card.hasOwnProperty('reps')) card.reps = 0;
@@ -154,7 +160,7 @@ allCards = allCards.map(card => {
     }
     if (!card.hasOwnProperty('subject')) {
         if (card.pillar?.startsWith('P')) card.subject = 'abst';
-        else card.subject = 'GK';
+        else card.subject = 'gk';
     }
     return card;
 });
@@ -260,7 +266,7 @@ function initCards() {
     if (currentSubject === 'abst') {
         filteredCards = allCards.filter(c => c.subject === 'abst');
     } else {
-        filteredCards = allCards.filter(c => c.subject === userClass || c.subject === 'GK');
+        filteredCards = allCards.filter(c => c.subject === userClass || c.subject === 'gk');
     }
 
     console.log('Filtered for', userClass, ':', filteredCards.length);
