@@ -1,4 +1,6 @@
-const allCards = [
+window.allCards = [
+    // P1-P12: 36Q
+    { pillar: 'P1: CONSCIOUSNESS', question: '...',
   // P1-P12: 36Q
   { pillar: 'P1: CONSCIOUSNESS', question: 'What is the first pillar of ABST?', answer: 'Consciousness', subject: 'abst', reps: 0 },
   { pillar: 'P1: CONSCIOUSNESS', question: 'Consciousness means awareness of?', answer: 'Self and environment', subject: 'abst', reps: 0 },
