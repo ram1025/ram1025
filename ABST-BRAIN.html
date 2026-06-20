@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
     <title>ABST BRAIN | P24 | INDIAN.001</title>
     <meta name="theme-color" content="#00ffaa">
-    <meta name="description" content="ABST BRAIN - 108 Pillar Mantra + 1000 Education Sahasra">
     <style>
         * { margin:0; padding:0; box-sizing:border-box }
         html { scroll-behavior: smooth; font-size: 16px; }
-        html.modal-open { overflow: hidden!important; }
         body { background:#0a192f; color:#00ffaa; font-family:system-ui,-apple-system,sans-serif; padding:20px; text-align:center; min-height:100vh }
 .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
 .header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
 .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
 .back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
-.back-btn:hover { background:#00ffaa; color:#0a192f }
 .mode-toggle,.answer-mode-toggle { background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:10px }
 .mode-btn { background:#1a2332; color:#8892b0; border:none; padding:8px 20px; border-radius:8px; cursor:pointer; font-weight:700; font-size:13px }
 .mode-btn.active { background:#ffaa00; color:#0a192f }
@@ -32,10 +29,10 @@
 .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
 .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
 .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
+.mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
 .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer; transition:all 0.2s }
 .btn:hover { transform:scale(1.05); box-shadow:0 0 20px #00ffaa80 }
 .btn-check { background:#ffaa00; color:#0a192f }
-.btn-next { background:#44ff88; color:#0a192f; display:none }
 .quality-btns { display:none; gap:8px; justify-content:center; margin:20px 0; flex-wrap:wrap }
 .btn-again { background:#ff4444; color:#fff; padding:12px 20px }
 .btn-hard { background:#ffaa00; color:#0a192f; padding:12px 20px }
@@ -48,10 +45,10 @@
 .feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
 .timer { position:absolute; top:10px; left:20px; background:#ff4444; color:#fff; padding:6px 12px; border-radius:20px; font-size:12px; font-weight:900; display:none }
 .timer.warning { background:#ffaa00; color:#0a192f }
-.age-modal { position:fixed; top:0; left:0; width:100%; height:100%; background:#0a192fdd; display:none; align-items:center; justify-content:center; z-index:100 }
+.age-modal { position:fixed; top:0; left:0; width:100%; height:100%; background:#0a192fdd; display:flex; align-items:center; justify-content:center; z-index:100 }
 .age-box { background:#1a2332; padding:30px; border-radius:20px; border:2px solid #00ffaa; max-width:400px; width:90% }
 .age-box h2 { color:#ffaa00; margin-bottom:20px }
-.age-box input,.age-box select { width:100%; padding:12px; margin:10px 0; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:16px }
+.age-box select { width:100%; padding:12px; margin:10px 0; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:16px }
     </style>
 </head>
 <body>
@@ -60,7 +57,8 @@
             <h2>Select Your Level</h2>
             <select id="userClass">
                 <optgroup label="School">
-                    <option value="kg">KG</option>
+                    <option value="lkg">LKG</option>
+                    <option value="ukg">UKG</option>
                     <option value="class1">Class 1</option>
                     <option value="class2">Class 2</option>
                     <option value="class3">Class 3</option>
@@ -78,6 +76,8 @@
                     <option value="upsc">UPSC</option>
                     <option value="neet">NEET</option>
                     <option value="jee">JEE</option>
+                    <option value="ssc">SSC</option>
+                    <option value="banking">Banking</option>
                 </optgroup>
                 <optgroup label="Other">
                     <option value="GK">General Knowledge</option>
@@ -104,9 +104,9 @@
     </div>
     <div class="card" id="cardBox">
         <div class="timer" id="timer">10s</div>
-        <div class="badge" id="cardCount">1/1108</div>
-        <div class="pillar" id="pillarTag">P24: Loading...</div>
-        <h2 class="question" id="question">Loading 1108 questions...</h2>
+        <div class="badge" id="cardCount">0/0</div>
+        <div class="pillar" id="pillarTag">Loading...</div>
+        <h2 class="question" id="question">Loading questions...</h2>
         <div id="typeAnswerBox" style="display:none">
             <input type="text" class="answer-input" id="userAnswer" placeholder="Type your answer here..." autocomplete="off">
             <button class="btn btn-check" id="checkBtn">CHECK ANSWER</button>
@@ -125,21 +125,23 @@
                 <button class="btn btn-good" data-quality="3">GOOD<br><small>6d</small></button>
                 <button class="btn btn-easy" data-quality="4">EASY<br><small>15d</small></button>
             </div>
-            <button class="btn btn-next" id="nextBtn">NEXT</button>
         </div>
     </div>
 
     <div class="stats">
         <div>Due Now<b id="dueCount">0</b></div>
         <div>Streak<b id="streakCount">0<br>days</b></div>
-        <div>Total<b id="totalCount">0<br>/1108</b></div>
+        <div>Total<b id="totalCount">0<br>/0</b></div>
     </div>
 
     <div class="footer">ABST P24 Civilization OS | SM-2 Algorithm | 108 Mantra + 1000 Sahasra</div>
 <script src="abst-questions-db.js"></script>
 <script src="sm2.js"></script>
 <script>
+// FIX: window.allCards nunchi teesukuntam
 let allCards = window.allCards || [];
+
+console.log('Total cards loaded:', allCards.length); // 1108 ravali
 
 allCards = allCards.map(card => {
     if (!card.hasOwnProperty('reps')) card.reps = 0;
@@ -149,6 +151,10 @@ allCards = allCards.map(card => {
     if (!card.hasOwnProperty('pillarNum')) {
         const match = card.pillar?.match(/P(\d+)/);
         card.pillarNum = match? parseInt(match[1]) : 0;
+    }
+    if (!card.hasOwnProperty('subject')) {
+        if (card.pillar?.startsWith('P')) card.subject = 'abst';
+        else card.subject = 'GK';
     }
     return card;
 });
@@ -177,6 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
         initCards();
     }
     setupEventListeners();
+    updateStats();
 });
 
 document.getElementById('saveAgeBtn').addEventListener('click', () => {
@@ -193,16 +200,16 @@ function setupEventListeners() {
     document.getElementById('mcqMode').onclick = () => switchMode('mcq');
     document.getElementById('flipMode').onclick = () => switchMode('flip');
     document.getElementById('checkBtn').onclick = checkAnswer;
-    document.getElementById('nextBtn').onclick = nextCard;
     document.getElementById('showBtn').onclick = showAnswer;
     document.getElementById('homeBtn').onclick = () => window.location.href = 'index.html';
     document.getElementById('userAnswer').addEventListener('keypress', (e) => {
         if (e.key === 'Enter') checkAnswer();
     });
 
-    // FIX: Space add chesa - '.quality-btns.btn'
-    document.querySelectorAll('.quality-btns.btn').forEach(btn => {
-        btn.onclick = () => rateCard(parseInt(btn.dataset.quality));
+    document.getElementById('qualityBtns').addEventListener('click', (e) => {
+        if (e.target.classList.contains('btn')) {
+            rateCard(parseInt(e.target.dataset.quality));
+        }
     });
 }
 
@@ -214,7 +221,6 @@ function startTimer() {
     timerEl.style.display = 'block';
     timerEl.textContent = timeLeft + 's';
     timerEl.classList.remove('warning');
-
     timerInterval = setInterval(() => {
         timeLeft--;
         timerEl.textContent = timeLeft + 's';
@@ -257,6 +263,8 @@ function initCards() {
         filteredCards = allCards.filter(c => c.subject === userClass || c.subject === 'GK');
     }
 
+    console.log('Filtered for', userClass, ':', filteredCards.length);
+
     const now = Date.now();
     dueCards = filteredCards.filter(c =>!c.due || c.due <= now);
 
@@ -290,7 +298,6 @@ function showCard() {
     document.getElementById('answerBox').style.display = 'none';
     document.getElementById('feedbackMsg').textContent = '';
     document.getElementById('cardBox').className = 'card';
-    document.getElementById('nextBtn').style.display = 'none';
     document.getElementById('qualityBtns').style.display = 'none';
     document.getElementById('userAnswer').value = '';
     document.getElementById('userAnswer').className = 'answer-input';
@@ -317,12 +324,7 @@ function showCard() {
 
 function generateMCQOptions(card) {
     const options = [card.answer];
-    const wrongOptions = allCards
-.filter(c => c.answer!== card.answer)
-.sort(() => Math.random() - 0.5)
-.slice(0, 3)
-.map(c => c.answer);
-
+    const wrongOptions = allCards.filter(c => c.answer!== card.answer).sort(() => Math.random() - 0.5).slice(0, 3).map(c => c.answer);
     options.push(...wrongOptions);
     options.sort(() => Math.random() - 0.5);
 
@@ -343,9 +345,8 @@ function checkMCQAnswer(selected, correct) {
     const buttons = document.querySelectorAll('.mcq-btn');
     buttons.forEach(btn => {
         btn.disabled = true;
-        if (btn.textContent === correct) {
-            btn.classList.add('correct');
-        }
+        if (btn.textContent === correct) btn.classList.add('correct');
+        if (btn.textContent === selected && selected!== correct) btn.classList.add('wrong');
     });
 
     if (selected === correct) {
@@ -354,16 +355,12 @@ function checkMCQAnswer(selected, correct) {
     } else {
         document.getElementById('feedbackMsg').textContent = '✗ Wrong!';
         document.getElementById('cardBox').classList.add('wrong');
-        buttons.forEach(btn => {
-            if (btn.textContent === selected) btn.classList.add('wrong');
-        });
     }
 
     document.getElementById('answerBox').style.display = 'block';
     document.getElementById('answer').textContent = correct;
     document.getElementById('qualityBtns').style.display = 'flex';
     updateQualityButtonLabels();
-    document.getElementById('nextBtn').style.display = 'none';
 }
 
 function checkAnswer() {
@@ -386,7 +383,6 @@ function checkAnswer() {
     document.getElementById('answer').textContent = correctAnswer;
     document.getElementById('qualityBtns').style.display = 'flex';
     updateQualityButtonLabels();
-    document.getElementById('nextBtn').style.display = 'none';
 }
 
 function showAnswer() {
@@ -396,7 +392,6 @@ function showAnswer() {
     document.getElementById('qualityBtns').style.display = 'flex';
     updateQualityButtonLabels();
     document.getElementById('showBtn').style.display = 'none';
-    document.getElementById('nextBtn').style.display = 'none';
 }
 
 function updateQualityButtonLabels() {
@@ -406,7 +401,6 @@ function updateQualityButtonLabels() {
     const hard = ABST_SM2.calc(temp2, 2).interval;
     const good = ABST_SM2.calc(temp3, 3).interval;
     const easy = ABST_SM2.calc(temp4, 4).interval;
-
     document.querySelector('.btn-again small').textContent = again + 'd';
     document.querySelector('.btn-hard small').textContent = hard + 'd';
     document.querySelector('.btn-good small').textContent = good + 'd';
@@ -416,9 +410,7 @@ function updateQualityButtonLabels() {
 function rateCard(quality) {
     let card = dueCards[current];
     card = ABST_SM2.calc(card, quality);
-    if (card.pillarNum) {
-        card = ABST_SM2.pillarBoost(card, card.pillarNum);
-    }
+    if (card.pillarNum) card = ABST_SM2.pillarBoost(card, card.pillarNum);
 
     const cardIndex = allCards.findIndex(c => c.question === card.question);
     if (cardIndex!== -1) {
@@ -427,8 +419,11 @@ function rateCard(quality) {
     }
 
     document.getElementById('qualityBtns').style.display = 'none';
-    document.getElementById('nextBtn').style.display = 'inline-block';
     document.getElementById('feedbackMsg').textContent = `Next review in ${card.interval} day(s)`;
+
+    setTimeout(() => {
+        nextCard();
+    }, 1000);
 }
 
 function nextCard() {
