@@ -32,8 +32,8 @@ h3{color:#ffd700;font-size:14px;margin:0 8px 0;text-align:center}
 .visionary{color:#ffd700;font-size:12px;margin:0 0 20px 0;text-align:center;font-weight:bold}
 .status{color:#8892b0;font-size:11px;margin-top:30px;line-height:1.6;text-align:center}
 img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 auto 20px}
-.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;overflow:auto;padding:20px;will-change:opacity}
-.modal-inner{max-width:900px;margin:40px auto;background:#112240;border-radius:12px;padding:25px;position:relative;will-change:transform}
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;overflow:auto;padding:20px}
+.modal-inner{max-width:900px;margin:40px auto;background:#112240;border-radius:12px;padding:25px;position:relative}
 .modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
 .modal-close{font-size:28px;cursor:pointer;line-height:1;color:#64ffda}
 .modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:13px;line-height:1.8;text-align:left;max-height:70vh;overflow-y:auto}
@@ -84,8 +84,7 @@ img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 au
   padding: 14px 6px;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.2s, border-color 0.2s;
-  will-change: transform;
+  transition: transform 0.1s;
 }
 .icon-card:active { 
   transform: scale(0.95); 
@@ -172,37 +171,30 @@ img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 au
 <span onclick="hideModal('pillars36Modal')" class="modal-close">&times;</span>
 </div>
 <div class="modal-body">
-
 <div style="background:#112240;border:1px solid #1a2a4a;border-radius:12px;padding:20px;margin:15px 0">
 <div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector I: Energy & Industrial Core P1-P9</div>
 P1: Plasma Plant | P2: Solar Power | P3: Moon-Ray Energy | P4: AWT | P5: Rain-Drop Energy | P6: Sovereign Green Fuel Plant | P7: rPET Factory | P8: Glass Recycling Unit | P9: Aluminium Recycling Unit
 </div>
-
 <div style="background:#112240;border:1px solid #1a2a4a;border-radius:12px;padding:20px;margin:15px 0">
 <div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector II: Water & Earth Sovereignty P10-P18</div>
 P10: Our Amrutavarsha AWG Plant & Central Reservoir | P11: Dual-Ion Shield | P12: General Plastic Processing Center | P13: Waste-to-Trash Command | P14: Human Waste-to-Farming | P15: Vayu-Shuddhi Forest | P16: Chain Mesh & AMG | P17: Slag-Brick Factory | P18: Bio-Gas Compression Station
 </div>
-
 <div style="background:#112240;border:1px solid #1a2a4a;border-radius:12px;padding:20px;margin:15px 0">
 <div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector III: Infrastructure Skeleton P19-P23</div>
 P19: Walkthrough Utility Tunnel | P20: HDD Pipeline Network | P21: Footstep Energy Walkways | P22: The Bio-Vault | P23: Matru-Shakti Residential
 </div>
-
 <div style="background:#112240;border:1px solid #1a2a4a;border-radius:12px;padding:20px;margin:15px 0">
 <div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector IV: Social & Intellectual Capital P24-P29</div>
 P24: KG to PhD Building | P25: Project Hospital | P26: Project Bank | P27: Food & Clothing Malls | P28: Sovereign Simulation Game | P29: Global Innovators & Walls of Fame
 </div>
-
 <div style="background:#112240;border:1px solid #1a2a4a;border-radius:12px;padding:20px;margin:15px 0">
 <div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector V: Digital & Security Nervous System P30-P35</div>
 P30: RVM Network | P31: Indian.00X ID System | P32: Our Amrutavarsha Vendor Network | P33: Transparency Hub | P34: Sentinel-Eye CCTV Network | P35: Jarvis AI Core
 </div>
-
 <div style="background:#112240;border:2px solid #FFD700;border-radius:12px;padding:20px;margin:15px 0">
 <div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector VI: Governance & Legacy P36</div>
 P36: MD Agni-Pariksha Leadership Mandate
 </div>
-
 </div>
 <button onclick="hideModal('pillars36Modal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
 </div>
@@ -248,7 +240,7 @@ See LICENSE for terms.
 <button onclick="hideModal('readmeModal')" style="width:100%;margin-top:15px;background:#2e7d32;color:#fff;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
 </div>
 
-<!-- MASTERPLAN Modal -->
+<!-- MASTERPLAN Modal - UPDATED WITH MINIATURE MODEL -->
 <div id="dpr36Modal" class="modal">
 <div class="modal-inner" onclick="event.stopPropagation()">
 <div class="modal-head">
@@ -259,8 +251,12 @@ See LICENSE for terms.
 <h1 style="color:#64ffda;text-align:left;font-size:22px">ABST 36-PILLAR SOVEREIGN DPR</h1>
 <h2 style="color:#ffd700;text-align:left;font-size:16px">Master Visionary: INDIAN.001 RAM GANESH MAKINA</h2>
 <div style="margin:20px 0;text-align:center">
+<h3 style="color:#FFD700;margin-bottom:10px">🏗️ PHYSICAL MINIATURE MODEL</h3>
+<img id="modelImg" alt="ABST Miniature Model" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #FFD700;margin-bottom:20px;background:#112240;min-height:200px">
+
 <h3 style="color:#FFD700;margin-bottom:10px">🌞 MASTER PLAN - DAY VIEW</h3>
 <img id="dayImg" alt="ABST Master Plan Day Mode" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #64ffda;margin-bottom:20px;background:#112240;min-height:200px">
+
 <h3 style="color:#64ffda;margin-bottom:10px">🌙 MASTER PLAN - NIGHT VIEW</h3>
 <img id="nightImg" alt="ABST Master Plan Night Mode" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #FFD700;background:#112240;min-height:200px">
 </div>
@@ -269,7 +265,6 @@ See LICENSE for terms.
 <p><strong>Total Questions:</strong> 36 Pillars × 3 = 108 Mantra + 1000 Education Sahasra</p>
 </div>
 <button onclick="hideModal('dpr36Modal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
-</div>
 </div>
 
 <!-- BLUEPRINT Modal - FULL 10 STEPS -->
@@ -368,29 +363,26 @@ See LICENSE for terms.
 </div>
 <button onclick="hideModal('blueprintModal')" style="width:100%;margin-top:15px;background:#FFD700;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
 </div>
+</div>
 
 <script>
 // ============================================
-// OPTIMIZED MODAL - NO LAG
+// INSTANT MODAL - ZERO LAG
 // ============================================
 
-let modalOpen = false;
-
 function showModal(id){
-  if(modalOpen) return;
-  modalOpen = true;
   const modal = document.getElementById(id);
-  if(modal){
-    modal.style.display='block';
-    document.documentElement.classList.add('modal-open');
-    
-    // Lazy load masterplan images only when opened
-    if(id === 'dpr36Modal'){
-      document.getElementById('dayImg').src = 'day-mode.jpg';
-      document.getElementById('nightImg').src = 'night-mode.jpg';
-    }
+  if(!modal) return;
+  
+  modal.style.display='block';
+  document.documentElement.classList.add('modal-open');
+  
+  // Load images only for masterplan
+  if(id === 'dpr36Modal'){
+    document.getElementById('modelImg').src = 'miniature-model.jpg';
+    document.getElementById('dayImg').src = 'day-mode.jpg';
+    document.getElementById('nightImg').src = 'night-mode.jpg';
   }
-  setTimeout(()=>{modalOpen = false}, 300);
 }
 
 function hideModal(id){
@@ -411,7 +403,7 @@ document.addEventListener('keydown',function(e){
   }
 });
 
-// Welcome Overlay - No animation after first load
+// Welcome Overlay
 window.addEventListener('load', function() {
   const overlay = document.getElementById('abst-welcome-overlay');
   if(sessionStorage.getItem('abst_welcome_shown')){
@@ -429,5 +421,5 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 </body>
-  </html>
+</html>
   
