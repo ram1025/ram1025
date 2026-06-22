@@ -85,6 +85,43 @@ img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 au
   0%,100% { text-shadow: 0 0 15px rgba(100,255,218,0.6); }
   50% { text-shadow: 0 0 30px rgba(100,255,218,1); }
 }
+
+/* COIN ICON DASHBOARD CSS */
+.icon-dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 0 0 20px;
+  max-width: 100%;
+  margin: 20px auto 0;
+}
+.icon-card {
+  background: rgba(17, 34, 64, 0.9);
+  border: 2px solid #233554;
+  border-radius: 16px;
+  padding: 14px 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+.icon-card:hover { 
+  border-color: #64ffda; 
+  transform: scale(1.05); 
+  background: rgba(17, 34, 64, 1);
+}
+.icon-card.jarvis { 
+  border-color: #64ffda; 
+  box-shadow: 0 0 25px rgba(100,255,218,0.4); 
+  animation: pulse 2s infinite;
+}
+.icon-card .icon { font-size: 1.8rem; margin-bottom: 5px; }
+.icon-card span { color: #64ffda; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.5px; display: block; }
+.icon-card.full-width {
+  grid-column: span 3;
+  background: linear-gradient(135deg, #112240, #0a192f);
+  padding: 12px;
+}
 </style>
 </head>
 <body>
@@ -134,23 +171,48 @@ P30: RVM Network | P31: Indian.00X ID System | P32: Our Amrutavarsha Vendor Netw
 P36: MD Agni-Pariksha Leadership Mandate
 </div>
 
-<button class="btn" id="masterplanBtn">🏛️ ABST-MASTERPLAN</button>
-<button class="btn-live-jarvis" onclick="window.location.href='Jarvis-Ai.html'">
-<span class="pulse-dot"></span>JARVIS AI<span class="subtext">36 Pillars | 24/7 Control | 0.2s Response</span>
-</button>
-<button class="btn" style="background:linear-gradient(135deg,#FFD700,#FFA500);box-shadow:0 0 15px rgba(255,215,0,0.5);font-weight:bold;color:#0a192f;border:2px solid #FFD700;" onclick="window.open('./MyJeevandhara_Investor_Note.pdf','_blank')">
-📊 VIEW INVESTOR NOTE - PDF
-</button>
-<button class="btn" style="background:linear-gradient(135deg,#FFD700,#FFA500);box-shadow:0 0 15px rgba(255,215,0,0.5);font-weight:bold;color:#0a192f;border:2px solid #FFD700;" onclick="window.location.href='dpr-complete.html'">📜 COMPLETE DPR COMPENDIUM - FULL TEXT</button>
-<button class="btn" onclick="window.location.href='https://jarvis-live.com'">LIVE JARVIS TRANSPARENCY FEED</button>
-<button class="btn" style="background:linear-gradient(135deg,#1E40AF,#3B82F6);box-shadow:0 0 15px rgba(30,64,175,0.4);font-weight:bold;color:#fff;" onclick="window.open('./Project_MJ_Detailed_Blueprint.pdf','_blank')">📄 VIEW / DOWNLOAD DPR PDF</button>
-<button class="btn" style="background:linear-gradient(135deg,#00ff88,#00d4ff);box-shadow:0 0 15px rgba(0,255,136,0.4);" onclick="window.location.href='36-Pillars-Book.html'">📖 36 PILLARS BOOK - COMPLETE 1-36</button>
-<button class="btn" style="background:linear-gradient(90deg,#00ffaa,#00cc88);color:#0a192f;font-weight:900;border:2px solid #00ffaa;box-shadow:0 0 20px #00ffaa50;" onclick="window.location.href='./ABST-BRAIN.html'">🧠 ABST BRAIN - P24</button>
-<button class="btn" onclick="window.location.href='constitution.html'">📜 VIEW SOVEREIGN CONSTITUTION</button>
-<button class="btn" onclick="show('licenseModal')">📜 LICENSE.md</button>
-<button class="btn" onclick="show('readmeModal')">📖 README.md</button>
-<button class="btn" onclick="window.open('https://drive.google.com/file/d/1u8xVrk7SHwpQIcROzPuRPsL1qajs_j0h/preview','_blank')">🎬 WATCH MASTER VISION - 3 MIN</button>
-<button class="btn" id="blueprintBtn">📊 DPR FRAMEWORK - 10 STEP BLUEPRINT</button>
+<!-- COIN ICON DASHBOARD - REPLACES ALL 13 BUTTONS -->
+<div class="icon-dashboard">
+  <div class="icon-card" onclick="show('dpr36Modal')">
+    <div class="icon">🏛️</div><span>MASTERPLAN</span>
+  </div>
+  <div class="icon-card jarvis" onclick="window.location.href='Jarvis-Ai.html'">
+    <div class="icon">🟢</div><span>JARVIS AI</span>
+  </div>
+  <div class="icon-card" onclick="window.open('./MyJeevandhara_Investor_Note.pdf','_blank')">
+    <div class="icon">📊</div><span>INVESTOR NOTE</span>
+  </div>
+  <div class="icon-card" onclick="window.location.href='dpr-complete.html'">
+    <div class="icon">📜</div><span>DPR FULL TEXT</span>
+  </div>
+  <div class="icon-card" onclick="window.location.href='https://jarvis-live.com'">
+    <div class="icon">📡</div><span>LIVE FEED</span>
+  </div>
+  <div class="icon-card" onclick="window.open('./Project_MJ_Detailed_Blueprint.pdf','_blank')">
+    <div class="icon">📄</div><span>DPR PDF</span>
+  </div>
+  <div class="icon-card" onclick="window.location.href='36-Pillars-Book.html'">
+    <div class="icon">📚</div><span>36 PILLARS</span>
+  </div>
+  <div class="icon-card" onclick="window.location.href='./ABST-BRAIN.html'">
+    <div class="icon">🧠</div><span>ABST BRAIN</span>
+  </div>
+  <div class="icon-card" onclick="window.location.href='constitution.html'">
+    <div class="icon">📜</div><span>CONSTITUTION</span>
+  </div>
+  <div class="icon-card" onclick="show('licenseModal')">
+    <div class="icon">⚖️</div><span>LICENSE.md</span>
+  </div>
+  <div class="icon-card" onclick="show('readmeModal')">
+    <div class="icon">📖</div><span>README.md</span>
+  </div>
+  <div class="icon-card" onclick="window.open('https://drive.google.com/file/d/1u8xVrk7SHwpQIcROzPuRPsL1qajs_j0h/preview','_blank')">
+    <div class="icon">🎬</div><span>MASTER VISION</span>
+  </div>
+  <div class="icon-card full-width" onclick="show('blueprintModal')">
+    <div class="icon">📐</div><span>DPR FRAMEWORK - 10 STEP BLUEPRINT</span>
+  </div>
+</div>
 
 <p class="status">Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: INDIAN.001 RAM GANESH MAKINA | P36 Active</p>
 </div>
@@ -343,24 +405,6 @@ function hide(id){
 // DOM Ready - Attach buttons safely
 document.addEventListener('DOMContentLoaded', function() {
 
-  const masterBtn = document.getElementById('masterplanBtn');
-  if(masterBtn){
-    masterBtn.addEventListener('click', function(e){
-      e.preventDefault();
-      e.stopPropagation();
-      show('dpr36Modal');
-    });
-  }
-
-  const blueBtn = document.getElementById('blueprintBtn');
-  if(blueBtn){
-    blueBtn.addEventListener('click', function(e){
-      e.preventDefault();
-      e.stopPropagation();
-      show('blueprintModal');
-    });
-  }
-
   // ESC Close
   document.addEventListener('keydown',function(e){
     if(e.key==='Escape'){
@@ -390,4 +434,5 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 </body>
-</html>
+  </html>
+  
