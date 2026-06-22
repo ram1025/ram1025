@@ -32,16 +32,15 @@ h3{color:#ffd700;font-size:14px;margin:0 8px 0;text-align:center}
 .visionary{color:#ffd700;font-size:12px;margin:0 0 20px 0;text-align:center;font-weight:bold}
 .status{color:#8892b0;font-size:11px;margin-top:30px;line-height:1.6;text-align:center}
 img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 auto 20px}
-@keyframes pulse{0%{box-shadow:0 0 rgba(0,255,136,0.7)}70%{box-shadow:0 0 0 10px rgba(0,255,136,0)}100%{box-shadow:0 0 0 rgba(0,255,136,0)}}
-.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;overflow:auto;padding:20px}
-.modal-inner{max-width:900px;margin:40px auto;background:#112240;border-radius:12px;padding:25px;position:relative}
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;overflow:auto;padding:20px;will-change:opacity}
+.modal-inner{max-width:900px;margin:40px auto;background:#112240;border-radius:12px;padding:25px;position:relative;will-change:transform}
 .modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
 .modal-close{font-size:28px;cursor:pointer;line-height:1;color:#64ffda}
 .modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:13px;line-height:1.8;text-align:left;max-height:70vh;overflow-y:auto}
 .modal-body h4{color:#ffd700;margin-top:15px}
 .modal-body ul{padding-left:20px}
 
-/* ABST SOVEREIGN WELCOME - FOUNDER ONLY - SESSION ONCE */
+/* ABST SOVEREIGN WELCOME - OPTIMIZED */
 #abst-welcome-overlay {
   position: fixed;
   top: 0;
@@ -54,7 +53,6 @@ img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 au
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: fadeOut 1s ease-in-out 5s forwards;
 }
 #abst-welcome-overlay.hidden { display:none }
 #abst-welcome-text {
@@ -62,7 +60,6 @@ img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 au
   font-size: 28px;
   font-weight: bold;
   text-align: center;
-  animation: glowText 2s infinite;
 }
 #abst-welcome-sub {
   color: #FFD700;
@@ -70,15 +67,8 @@ img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 au
   margin-top: 12px;
   letter-spacing: 2px;
 }
-@keyframes fadeOut {
-  to { opacity: 0; visibility: hidden; }
-}
-@keyframes glowText {
-  0%,100% { text-shadow: 0 0 15px rgba(100,255,218,0.6); }
-  50% { text-shadow: 0 0 30px rgba(100,255,218,1); }
-}
 
-/* COIN ICON DASHBOARD CSS */
+/* COIN ICON DASHBOARD - OPTIMIZED */
 .icon-dashboard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -88,24 +78,21 @@ img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 au
   margin: 20px auto 0;
 }
 .icon-card {
-  background: rgba(17, 34, 64, 0.9);
+  background: #112240;
   border: 2px solid #233554;
   border-radius: 16px;
   padding: 14px 6px;
   text-align: center;
   cursor: pointer;
-  transition: 0.3s;
-  backdrop-filter: blur(5px);
+  transition: transform 0.2s, border-color 0.2s;
+  will-change: transform;
 }
-.icon-card:hover { 
-  border-color: #64ffda; 
-  transform: scale(1.05); 
-  background: rgba(17, 34, 64, 1);
+.icon-card:active { 
+  transform: scale(0.95); 
 }
 .icon-card.jarvis { 
   border-color: #64ffda; 
-  box-shadow: 0 0 25px rgba(100,255,218,0.4); 
-  animation: pulse 2s infinite;
+  box-shadow: 0 0 20px rgba(100,255,218,0.3); 
 }
 .icon-card .icon { font-size: 1.8rem; margin-bottom: 5px; }
 .icon-card span { color: #64ffda; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.5px; display: block; }
@@ -130,7 +117,7 @@ img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 au
 
 <!-- COIN ICON DASHBOARD - 14 ICONS ALL SAME SIZE -->
 <div class="icon-dashboard">
-  <div class="icon-card" onclick="show('dpr36Modal')">
+  <div class="icon-card" onclick="showModal('dpr36Modal')">
     <div class="icon">🏛️</div><span>MASTERPLAN</span>
   </div>
   <div class="icon-card jarvis" onclick="window.location.href='Jarvis-Ai.html'">
@@ -151,7 +138,7 @@ img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 au
   <div class="icon-card" onclick="window.location.href='36-Pillars-Book.html'">
     <div class="icon">📚</div><span>36 PILLARS BOOK</span>
   </div>
-  <div class="icon-card" onclick="show('pillars36Modal')">
+  <div class="icon-card" onclick="showModal('pillars36Modal')">
     <div class="icon">📋</div><span>36 PILLARS LIST</span>
   </div>
   <div class="icon-card" onclick="window.location.href='./ABST-BRAIN.html'">
@@ -160,16 +147,16 @@ img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 au
   <div class="icon-card" onclick="window.location.href='constitution.html'">
     <div class="icon">📜</div><span>CONSTITUTION</span>
   </div>
-  <div class="icon-card" onclick="show('licenseModal')">
+  <div class="icon-card" onclick="showModal('licenseModal')">
     <div class="icon">⚖️</div><span>LICENSE.md</span>
   </div>
-  <div class="icon-card" onclick="show('readmeModal')">
+  <div class="icon-card" onclick="showModal('readmeModal')">
     <div class="icon">📖</div><span>README.md</span>
   </div>
   <div class="icon-card" onclick="window.open('https://drive.google.com/file/d/1u8xVrk7SHwpQIcROzPuRPsL1qajs_j0h/preview','_blank')">
     <div class="icon">🎬</div><span>MASTER VISION</span>
   </div>
-  <div class="icon-card" onclick="show('blueprintModal')">
+  <div class="icon-card" onclick="showModal('blueprintModal')">
     <div class="icon">📐</div><span>10 STEP BLUEPRINT</span>
   </div>
 </div>
@@ -178,11 +165,11 @@ img, video, iframe, table{max-width: 100%;height: auto;display:block;margin:0 au
 </div>
 
 <!-- 36 PILLARS COMPLETE LIST MODAL -->
-<div id="pillars36Modal" class="modal" onclick="hide('pillars36Modal')">
-<div class="modal-inner" onclick="event.stopPropagation()" style="border:2px solid #64ffda">
+<div id="pillars36Modal" class="modal">
+<div class="modal-inner" onclick="event.stopPropagation()">
 <div class="modal-head">
 <h2 style="color:#64ffda;margin:0">📋 ABST 36 PILLARS - COMPLETE LIST</h2>
-<span onclick="hide('pillars36Modal')" class="modal-close">&times;</span>
+<span onclick="hideModal('pillars36Modal')" class="modal-close">&times;</span>
 </div>
 <div class="modal-body">
 
@@ -217,16 +204,15 @@ P36: MD Agni-Pariksha Leadership Mandate
 </div>
 
 </div>
-<button onclick="hide('pillars36Modal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
-</div>
+<button onclick="hideModal('pillars36Modal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
 </div>
 
 <!-- LICENSE Modal -->
-<div id="licenseModal" class="modal" onclick="hide('licenseModal')">
-<div class="modal-inner" onclick="event.stopPropagation()" style="border:2px solid #64ffda;max-width:700px">
+<div id="licenseModal" class="modal">
+<div class="modal-inner" onclick="event.stopPropagation()">
 <div class="modal-head">
 <h2 style="color:#64ffda;margin:0">📜 ABST SOVEREIGN LICENSE</h2>
-<span onclick="hide('licenseModal')" class="modal-close">&times;</span>
+<span onclick="hideModal('licenseModal')" class="modal-close">&times;</span>
 </div>
 <div class="modal-body">
 <b>Master Visionary Lock v1.0 - ABST</b><br><br>
@@ -238,15 +224,15 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 5. ABST-MVL-v1.0 | 2026-04-10<br><br>
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT ANY WARRANTY.
 </div>
-<button onclick="hide('licenseModal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
+<button onclick="hideModal('licenseModal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
 </div>
 
 <!-- README Modal -->
-<div id="readmeModal" class="modal" onclick="hide('readmeModal')">
-<div class="modal-inner" onclick="event.stopPropagation()" style="border:2px solid #2e7d32;max-width:700px">
+<div id="readmeModal" class="modal">
+<div class="modal-inner" onclick="event.stopPropagation()">
 <div class="modal-head">
 <h2 style="color:#2e7d32;margin:0">📖 ABST README</h2>
-<span onclick="hide('readmeModal')" class="modal-close">&times;</span>
+<span onclick="hideModal('readmeModal')" class="modal-close">&times;</span>
 </div>
 <div class="modal-body">
 <b>ABST - Akanda Bharat Sovereign Township</b><br><br>
@@ -259,38 +245,39 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT ANY WARRANTY.
 This project is protected under Master Visionary Lock.<br>
 See LICENSE for terms.
 </div>
-<button onclick="hide('readmeModal')" style="width:100%;margin-top:15px;background:#2e7d32;color:#fff;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
+<button onclick="hideModal('readmeModal')" style="width:100%;margin-top:15px;background:#2e7d32;color:#fff;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
 </div>
 
 <!-- MASTERPLAN Modal -->
-<div id="dpr36Modal" class="modal" onclick="hide('dpr36Modal')">
-<div class="modal-inner" onclick="event.stopPropagation()" style="border:2px solid #64ffda">
+<div id="dpr36Modal" class="modal">
+<div class="modal-inner" onclick="event.stopPropagation()">
 <div class="modal-head">
 <h2 style="color:#64ffda;margin:0">🏛️ ABST-MASTERPLAN - INDIAN.001</h2>
-<span onclick="hide('dpr36Modal')" class="modal-close">&times;</span>
+<span onclick="hideModal('dpr36Modal')" class="modal-close">&times;</span>
 </div>
 <div class="modal-body">
 <h1 style="color:#64ffda;text-align:left;font-size:22px">ABST 36-PILLAR SOVEREIGN DPR</h1>
 <h2 style="color:#ffd700;text-align:left;font-size:16px">Master Visionary: INDIAN.001 RAM GANESH MAKINA</h2>
 <div style="margin:20px 0;text-align:center">
 <h3 style="color:#FFD700;margin-bottom:10px">🌞 MASTER PLAN - DAY VIEW</h3>
-<img src="day-mode.jpg" alt="ABST Master Plan Day Mode" loading="lazy" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #64ffda;margin-bottom:20px">
+<img id="dayImg" alt="ABST Master Plan Day Mode" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #64ffda;margin-bottom:20px;background:#112240;min-height:200px">
 <h3 style="color:#64ffda;margin-bottom:10px">🌙 MASTER PLAN - NIGHT VIEW</h3>
-<img src="night-mode.jpg" alt="ABST Master Plan Night Mode" loading="lazy" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #FFD700">
+<img id="nightImg" alt="ABST Master Plan Night Mode" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #FFD700;background:#112240;min-height:200px">
 </div>
 <p><strong>Core Philosophy:</strong> <em>“One Nation One India One Bharat”</em></p>
 <p><strong>Development Vision:</strong> A self-sustaining, zero-emission, decentralized smart township powered by 36 integrated pillars.</p>
 <p><strong>Total Questions:</strong> 36 Pillars × 3 = 108 Mantra + 1000 Education Sahasra</p>
 </div>
-<button onclick="hide('dpr36Modal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
+<button onclick="hideModal('dpr36Modal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
+</div>
 </div>
 
 <!-- BLUEPRINT Modal - FULL 10 STEPS -->
-<div id="blueprintModal" class="modal" onclick="hide('blueprintModal')">
-<div class="modal-inner" onclick="event.stopPropagation()" style="border:2px solid #FFD700">
+<div id="blueprintModal" class="modal">
+<div class="modal-inner" onclick="event.stopPropagation()">
 <div class="modal-head">
 <h2 style="color:#FFD700;margin:0">🌐 DPR FRAMEWORK - 10 STEP BLUEPRINT</h2>
-<span onclick="hide('blueprintModal')" class="modal-close">&times;</span>
+<span onclick="hideModal('blueprintModal')" class="modal-close">&times;</span>
 </div>
 <div class="modal-body">
 <h1 style="color:#64ffda;text-align:left;font-size:22px">AKANDA BHARAT SMART ENERGY & EV ECOSYSTEM</h1>
@@ -379,24 +366,34 @@ See LICENSE for terms.
 <li><strong>100% Closed-Loop Independence:</strong> Energy, water, and mobility networks function in a perfect, harmonious cyclical loop where every output becomes a useful input for another sector.</li>
 </ul>
 </div>
-<button onclick="hide('blueprintModal')" style="width:100%;margin-top:15px;background:#FFD700;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
-</div>
+<button onclick="hideModal('blueprintModal')" style="width:100%;margin-top:15px;background:#FFD700;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
 </div>
 
 <script>
 // ============================================
-// BULLETPROOF MODAL - NO HANG NO JUMP
+// OPTIMIZED MODAL - NO LAG
 // ============================================
 
-function show(id){
+let modalOpen = false;
+
+function showModal(id){
+  if(modalOpen) return;
+  modalOpen = true;
   const modal = document.getElementById(id);
   if(modal){
     modal.style.display='block';
     document.documentElement.classList.add('modal-open');
+    
+    // Lazy load masterplan images only when opened
+    if(id === 'dpr36Modal'){
+      document.getElementById('dayImg').src = 'day-mode.jpg';
+      document.getElementById('nightImg').src = 'night-mode.jpg';
+    }
   }
+  setTimeout(()=>{modalOpen = false}, 300);
 }
 
-function hide(id){
+function hideModal(id){
   const modal = document.getElementById(id);
   if(modal){
     modal.style.display='none';
@@ -404,30 +401,26 @@ function hide(id){
   }
 }
 
-// DOM Ready - Attach buttons safely
-document.addEventListener('DOMContentLoaded', function() {
-
-  // ESC Close
-  document.addEventListener('keydown',function(e){
-    if(e.key==='Escape'){
-      document.querySelectorAll('.modal').forEach(m=>{
-        m.style.display='none';
-      });
-      document.documentElement.classList.remove('modal-open');
-    }
-  });
+// ESC Close
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){
+    document.querySelectorAll('.modal').forEach(m=>{
+      m.style.display='none';
+    });
+    document.documentElement.classList.remove('modal-open');
+  }
 });
 
-// Welcome Overlay
+// Welcome Overlay - No animation after first load
 window.addEventListener('load', function() {
   const overlay = document.getElementById('abst-welcome-overlay');
   if(sessionStorage.getItem('abst_welcome_shown')){
-    overlay.classList.add('hidden');
+    overlay.style.display='none';
   } else {
     sessionStorage.setItem('abst_welcome_shown', 'true');
     setTimeout(() => {
-      overlay.classList.add('hidden');
-    }, 6000);
+      overlay.style.display='none';
+    }, 5000);
   }
 });
 
@@ -436,4 +429,5 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 </body>
-</html>
+  </html>
+  
