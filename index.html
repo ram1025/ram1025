@@ -7,6 +7,9 @@
 <meta name="description" content="Akanda Bharat Sovereign Township - 36 Pillar Ecosystem">
 <meta name="theme-color" content="#0a192f">
 <link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
 *{box-sizing:border-box}
 html{font-size:16px}
@@ -74,16 +77,21 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 }
 .modal-btn-action:active { transform: scale(0.98); background: #4cd4b7; }
 
-/* INTERACTIVE GATEWAY OVERLAY - TOUCH TO OPEN */
+/* WELCOME NOTE OVERLAY - UPDATED */
 #abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s ease;transform:scale(1)}
 .glow-welcome-text{color:#64ffda;font-size:32px;font-weight:bold;text-align:center;letter-spacing:3px;text-shadow:0 0 12px rgba(100,255,218,0.3);margin-bottom:10px}
-#abst-welcome-sub{color:#FFD700;font-size:16px;letter-spacing:4px;font-weight:bold;text-align:center}
+#abst-welcome-sub{color:#FFD700;font-size:16px;letter-spacing:4px;font-weight:bold;text-align:center;margin-bottom:15px}
+.welcome-note-text{
+    color:#8892b0;font-size:13px;text-align:center;max-width:400px;line-height:1.6;
+    margin:0 20px 20px 20px;padding:15px;background:rgba(17,34,64,0.6);
+    border-radius:8px;border:1px solid #233554;
+}
 
 /* INTERACTIVE WATER DROPLET / SEAL ENTRY NODE */
 .droplet-gateway {
     width: 140px;
     height: 140px;
-    margin: 35px auto 25px;
+    margin: 20px auto 25px;
     position: relative;
     cursor: pointer;
     display: flex;
@@ -128,29 +136,51 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 
 /* DYNAMIC SWIRLING INTERACTIVE DASHBOARD SYSTEM */
 .icon-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 0 20px;max-width:100%;margin:20px auto 0}
-.icon-card{background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;transition:transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease}
+.icon-card{
+    background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;
+    opacity:0;transform:scale(0) rotate(0deg);
+    transition:transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, background 0.2s;
+}
+.icon-card.show{
+    opacity:1;transform:scale(1) rotate(0deg);
+}
 .icon-card:active{background:#1a2f4a;transform:scale(0.85) rotate(360deg);border-color:#64ffda}
 .icon-card.jarvis{border-color:#64ffda;box-shadow:0 0 20px rgba(100,255,218,0.1)}
 .icon-card.install-btn-node{border-color:#ffd700;box-shadow:0 0 15px rgba(255,215,0,0.2);display:none} 
 .icon-card .icon{font-size:1.8rem;margin-bottom:5px;transition:transform 0.3s ease}
 .icon-card:active .icon{transform:scale(1.2)}
 .icon-card span{color:#64ffda;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;display:block}
+
+/* SWIRL ANIMATION */
+@keyframes swirlIn {
+  0% {opacity:0; transform:scale(0) rotate(-720deg);}
+  70% {opacity:1; transform:scale(1.1) rotate(20deg);}
+  100% {opacity:1; transform:scale(1) rotate(0deg);}
+}
+.icon-card.swirl{
+  animation:swirlIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
 </style>
 </head>
 <body>
 
-<!-- INTERACTIVE TOUCH TO OPEN WELCOME ENGINE -->
+<!-- WELCOME NOTE + TOUCH TO OPEN -->
 <div id="abst-welcome-overlay">
   <div class="glow-welcome-text">WELCOME TO ABST</div>
-  <div id="welcome-id-display" style="color:#FFD700;font-size:16px;letter-spacing:4px;font-weight:bold;text-align:center;margin-bottom:10px">SOVEREIGN ID: INDIAN.001</div>
+  <div id="welcome-id-display" style="color:#FFD700;font-size:16px;letter-spacing:4px;font-weight:bold;text-align:center">SOVEREIGN ID: INDIAN.001</div>
   
-  <!-- Touch Active Hub Target Layer -->
+  <div class="welcome-note-text">
+    Akanda Bharat Sovereign Township - A 36-Pillar Ecosystem of Total Independence.<br>
+    <b style="color:#64ffda">Master Visionary: RAM GANESH MAKINA</b><br>
+    Jarvis AI Core Layer 7 Security Activated
+  </div>
+  
   <div class="droplet-gateway" onclick="unlockDashboard()">
-    <img src="icon-192.png" onerror="this.src='seal.png'; this.onerror=function(){this.src='https://img.icons8.com/plasma/120/00FF88/water-droplet.png';};" alt="ABST Security Seal Node">
+    <img src="seal.png" onerror="this.src='icon-192.png'; this.onerror=function(){this.src='https://img.icons8.com/plasma/120/00FF88/water-droplet.png';};" alt="ABST Security Seal Node">
   </div>
   
   <div class="touch-prompt" onclick="unlockDashboard()">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
-  <div style="color:#8892b0;font-size:11px;margin-top:40px;letter-spacing:1px;opacity:0.6">Jarvis AI Security Layer 7 Network Secured</div>
+  <div style="color:#8892b0;font-size:11px;margin-top:30px;letter-spacing:1px;opacity:0.6">Jarvis AI Security Layer 7 Network Secured</div>
 </div>
 
 <div class="container">
@@ -164,8 +194,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <p class="visionary" id="dash-visionary-display">Master Visionary: INDIAN.001 RAM GANESH MAKINA</p>
 
 <!-- ALL DASHBOARD ICONS RENDERED INSIDE WITH DYNAMIC SWIRL HOOKS -->
-<div class="icon-dashboard">
-  <!-- INTERACTIVE INSTALL APP BUTTON LAYER -->
+<div class="icon-dashboard" id="iconGrid">
   <div class="icon-card install-btn-node" id="pwaInstallCard" onclick="triggerPwaInstallation()">
     <div class="icon">📲</div><span>INSTALL APP</span>
   </div>
@@ -216,7 +245,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <p class="status" id="dash-status-string">Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: INDIAN.001 RAM GANESH MAKINA | P36 Active</p>
 </div>
 
-<!-- DYNAMIC PROFILE UPDATE MODAL AS PER SCREENSHOT SCHEMA -->
+<!-- DYNAMIC PROFILE UPDATE MODAL -->
 <div id="profileModal" class="modal">
 <div class="modal-inner" style="max-width:550px;">
 <div class="modal-head">
@@ -267,7 +296,6 @@ P36: MD Agni-Pariksha Leadership Mandate
 </div>
 <button onclick="closeM('pillars36Modal')" class="modal-btn-action">🏠 BACK TO HOME</button>
 </div>
-</div>
 
 <!-- LICENSE MODAL -->
 <div id="licenseModal" class="modal">
@@ -284,7 +312,6 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 <button onclick="closeM('licenseModal')" class="modal-btn-action">CLOSE</button>
 </div>
-</div>
 
 <!-- README MODAL -->
 <div id="readmeModal" class="modal">
@@ -299,7 +326,6 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 <b>Security:</b> Jarvis AI Core Layer 7
 </div>
 <button onclick="closeM('readmeModal')" class="modal-btn-action">CLOSE</button>
-</div>
 </div>
 
 <!-- MASTERPLAN MODAL -->
@@ -319,7 +345,6 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 </div>
 <button onclick="closeM('dpr36Modal')" class="modal-btn-action">🏢 BACK TO HOME</button>
-</div>
 </div>
 
 <!-- 10 STEP BLUEPRINT MODAL -->
@@ -348,6 +373,7 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 
 <script>
 let deferredAppInstallPrompt = null;
+let isAppInstalled = false;
 
 function openM(id){
   document.querySelectorAll('.modal').forEach(function(modal) { modal.style.display = 'none'; });
@@ -371,20 +397,30 @@ function closeM(id){
   }
 }
 
-/* HIGH TECH ENTRY ACTION TRIGGERS BACKDOOR UNLOCK */
+/* ENTRY ACTION TRIGGERS + SWIRL ICONS */
 function unlockDashboard() {
   var overlay = document.getElementById('abst-welcome-overlay');
+  var cards = document.querySelectorAll('.icon-card');
+  
   if(overlay) {
     overlay.style.opacity = '0';
     overlay.style.transform = 'scale(1.1)';
     setTimeout(function(){
       overlay.style.display = 'none';
       sessionStorage.setItem('welcomeOpenedThisSession', 'true');
+      
+      // SWIRL ANIMATION TRIGGER
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add('swirl');
+        }, index * 60);
+      });
+      
     }, 600);
   }
 }
 
-/* LOCALSTORAGE PERSISTENT PROFILE IDENTITY DATA LAYERS */
+/* LOCALSTORAGE PROFILE IDENTITY */
 function loadSavedIdentityData() {
   var storedName = localStorage.getItem('abst_visionary_name') || "RAM GANESH MAKINA";
   var storedID = localStorage.getItem('abst_sovereign_id') || "INDIAN.001";
@@ -408,29 +444,41 @@ function saveProfileConfigurationData() {
   closeM('profileModal');
 }
 
-/* UNIVERSAL APP INSTALL ENGINE CROSS PLATFORM DETECTIONS */
+/* PWA INSTALL ENGINE */
 window.addEventListener('beforeinstallprompt', function(e) {
   e.preventDefault();
   deferredAppInstallPrompt = e;
   
   var installCardNode = document.getElementById('pwaInstallCard');
-  if(installCardNode && !window.matchMedia('(display-mode: standalone)').matches) {
+  if(installCardNode && !window.matchMedia('(display-mode: standalone)').matches && !isAppInstalled) {
      installCardNode.style.display = 'grid';
   }
 });
 
 function triggerPwaInstallation() {
   var installCardNode = document.getElementById('pwaInstallCard');
-  if(!deferredAppInstallPrompt) return;
+  if(!deferredAppInstallPrompt) {
+    alert('📲 To install:\n\nAndroid: Chrome menu → Install App\n\niPhone: Safari Share → Add to Home Screen\n\nDesktop: Chrome address bar → Install icon');
+    return;
+  }
   
   deferredAppInstallPrompt.prompt();
   deferredAppInstallPrompt.userChoice.then(function(choiceResult) {
     if (choiceResult.outcome === 'accepted') {
       if(installCardNode) installCardNode.style.display = 'none';
+      isAppInstalled = true;
+      localStorage.setItem('abst_installed', 'true');
     }
     deferredAppInstallPrompt = null;
   });
 }
+
+window.addEventListener('appinstalled', () => {
+  var installCardNode = document.getElementById('pwaInstallCard');
+  if(installCardNode) installCardNode.style.display = 'none';
+  isAppInstalled = true;
+  localStorage.setItem('abst_installed', 'true');
+});
 
 window.addEventListener('DOMContentLoaded', function(){
   loadSavedIdentityData();
@@ -438,11 +486,19 @@ window.addEventListener('DOMContentLoaded', function(){
   var overlay = document.getElementById('abst-welcome-overlay');
   if (sessionStorage.getItem('welcomeOpenedThisSession') === 'true' || window.matchMedia('(display-mode: standalone)').matches) {
      if(overlay) overlay.style.display = 'none';
+     // If welcome skipped, trigger swirl directly
+     var cards = document.querySelectorAll('.icon-card');
+     cards.forEach((card, index) => {
+       setTimeout(() => {
+         card.classList.add('swirl');
+       }, index * 60);
+     });
   }
   
-  if(window.matchMedia('(display-mode: standalone)').matches) {
+  if(window.matchMedia('(display-mode: standalone)').matches || localStorage.getItem('abst_installed') === 'true') {
      var installCardNode = document.getElementById('pwaInstallCard');
      if(installCardNode) installCardNode.style.display = 'none';
+     isAppInstalled = true;
   }
 });
 
@@ -453,12 +509,12 @@ document.addEventListener('keydown',function(e){
   }
 });
 
-/* TOTAL OFFLINE SERVICE WORKER CACHE INTERFACE MATRIX */
+/* OFFLINE SERVICE WORKER - NET/WIFI LEKAPOINA PANICHESTHADI */
 if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
-  .then(function(reg){ console.log("Offline Matrix Active."); })
-  .catch(function(err){ console.log("Offline Layer Sync Interrupted: ", err); });
+  navigator.serviceWorker.register('./service-worker.js',{scope:'./'})
+  .then(function(reg){ console.log("ABST Offline Matrix Active."); })
+  .catch(function(err){ console.log("Offline Layer Error: ", err); });
 }
 </script>
 </body>
-</html>
+    </html>
