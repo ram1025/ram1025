@@ -61,9 +61,7 @@
     "state": "new",
     "passCount": 0,
     "ease": 2.5
-  }
-]
-[
+ },
   {
     "id": 241,
     "category": "Class 11",
@@ -963,9 +961,7 @@
     "options": ["Geology", "Geomorphology", "Meteorology", "Cartography"],
     "a": "Geomorphology",
     "mode": "FLIP"
-  }
-]
-[
+  },
   {
     "id": 341,
     "category": "Degree UG",
@@ -3665,9 +3661,8 @@
     "options": ["Placenta Previa", "Abruptio Placentae", "Placenta Accreta", "Vasa Previa"],
     "a": "Abruptio Placentae",
     "mode": "FLIP"
-  }
-]
-{
+  },
+  {
   "education_database": [
     {
       "id": 641,
@@ -3728,12 +3723,7 @@
       "category": "General Knowledge",
       "question": "Which planet is known as the 'Red Planet'?",
       "answer": "Mars."
-    }
-  ]
-}
-{
-  "education_database_competitive": {
-    "UPSC": [
+  },
       {"id": 641, "question": "What is the primary function of the Article 32 of the Indian Constitution?", "answer": "Right to Constitutional Remedies."},
       {"id": 642, "question": "Which body conducts the elections to the offices of President and Vice President?", "answer": "Election Commission of India."},
       {"id": 643, "question": "What is 'Fiscal Deficit'?", "answer": "The difference between total revenue and total expenditure of the government."},
@@ -3765,9 +3755,7 @@
       {"id": 669, "question": "What is 'Civil Disobedience'?", "answer": "The refusal to comply with certain laws as a peaceful form of protest."},
       {"id": 670, "question": "What is the 'Western Ghats' biodiversity hotspot?", "answer": "A mountain range along the western coast of India known for rich flora and fauna."},
       {"id": 671, "question": "What is 'Public Interest Litigation' (PIL)?", "answer": "Litigation filed in a court of law for the protection of public interest."},
-      {"id": 672, "question": "Define 'Sovereignty'.", "answer": "The supreme authority of a state to govern itself."}
-    ],
-    "NEET": [
+      {"id": 672, "question": "Define 'Sovereignty'.", "answer": "The supreme authority of a state to govern itself."},
       {"id": 673, "question": "What is the powerhouse of the cell?", "answer": "Mitochondria."},
       {"id": 674, "question": "Which hormone regulates blood sugar levels?", "answer": "Insulin."},
       {"id": 675, "question": "What is the unit of inheritance?", "answer": "Gene."},
@@ -3800,8 +3788,6 @@
       {"id": 702, "question": "Which organelle is the 'garbage disposal'?", "answer": "Lysosome."},
       {"id": 703, "question": "What is the respiratory pigment in humans?", "answer": "Hemoglobin."},
       {"id": 704, "question": "What is 'homeostasis'?", "answer": "Maintaining a stable internal environment."}
-    ],
-    "JEE": [
       {"id": 705, "question": "State Newton's Second Law of Motion.", "answer": "Force equals mass times acceleration (F=ma)."},
       {"id": 706, "question": "What is the value of Planck's constant?", "answer": "Approximately 6.626 x 10^-34 J s."},
       {"id": 707, "question": "Define the 'Entropy' of a system.", "answer": "A measure of the disorder or randomness of a system."},
@@ -3833,9 +3819,7 @@
       {"id": 733, "question": "What is an 'Electrolytic Cell'?", "answer": "A cell that uses electrical energy to drive a non-spontaneous chemical reaction."},
       {"id": 734, "question": "Define 'Frequency'.", "answer": "The number of occurrences of a repeating event per unit time."},
       {"id": 735, "question": "What is 'Specific Heat Capacity'?", "answer": "The heat required to raise the temperature of one unit mass by one degree."},
-      {"id": 736, "question": "What is 'Resonance'?", "answer": "When a system is driven by an external force at its natural frequency."}
-    ],
-    "SSC": [
+      {"id": 736, "question": "What is 'Resonance'?", "answer": "When a system is driven by an external force at its natural frequency."},
       {"id": 737, "question": "Who is known as the 'Father of the Indian Constitution'?", "answer": "Dr. B.R. Ambedkar."},
       {"id": 738, "question": "Which is the largest ocean in the world?", "answer": "Pacific Ocean."},
       {"id": 739, "question": "What is the capital of Australia?", "answer": "Canberra."},
@@ -3867,9 +3851,7 @@
       {"id": 765, "question": "Who discovered Penicillin?", "answer": "Alexander Fleming."},
       {"id": 766, "question": "What is the national game of India?", "answer": "Hockey (de facto)."},
       {"id": 767, "question": "In which city is the Golden Temple located?", "answer": "Amritsar."},
-      {"id": 768, "question": "What is the currency of the United Kingdom?", "answer": "Pound Sterling."}
-    ],
-    "Banking": [
+      {"id": 768, "question": "What is the currency of the United Kingdom?", "answer": "Pound Sterling."},
       {"id": 769, "question": "What is the full form of 'RBI'?", "answer": "Reserve Bank of India."},
       {"id": 770, "question": "What is 'Repo Rate'?", "answer": "The rate at which RBI lends money to commercial banks."},
       {"id": 771, "question": "Define 'KYC'.", "answer": "Know Your Customer, a mandatory verification process."},
@@ -3901,12 +3883,7 @@
       {"id": 797, "question": "What is 'Asset-Liability Management'?", "answer": "The practice of managing financial risks in a bank."},
       {"id": 798, "question": "What is 'Compound Interest'?", "answer": "Interest calculated on the initial principal and also on the accumulated interest."},
       {"id": 799, "question": "What is 'Virtual Banking'?", "answer": "Banking without any physical branches."},
-      {"id": 800, "question": "What is the primary function of a Commercial Bank?", "answer": "Accepting deposits and granting loans."}
-    ]
-  }
-}
-{
-  "education_database_gk_random": [
+      {"id": 800, "question": "What is the primary function of a Commercial Bank?", "answer": "Accepting deposits and granting loans."},
     { "id": 801, "category": "Politics", "question": "Which country has the oldest written constitution still in effect?", "answer": "The United States of America." },
     { "id": 802, "category": "Environment", "question": "What is the primary cause of ocean acidification?", "answer": "Increased absorption of atmospheric carbon dioxide." },
     { "id": 803, "category": "Geography", "question": "Which desert is the largest in the world?", "answer": "The Antarctic Desert." },
@@ -4108,4 +4085,3 @@
     { "id": 999, "category": "Science", "question": "What is 'Astronomy'?", "answer": "The study of celestial bodies." },
     { "id": 1000, "category": "History", "question": "Who was the conqueror of the Aztec Empire?", "answer": "Hernán Cortés." }
   ]
-}
