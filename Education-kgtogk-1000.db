@@ -7094,3 +7094,2165 @@ Reformatted questions 😊:javascript{
       "a": "A loan or advance for which the principal or interest is overdue",
       "mode": "FLIP"
     },
+{
+      "id": 781,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is a 'Debit Card'?",
+      "options": ["A card that allows electronic access to the holder's bank account", "A card for credit purchases", "A savings account", "A loan"],
+      "a": "A card that allows electronic access to the holder's bank account",
+      "mode": "FLIP"
+    },
+    {
+      "id": 782,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'Digital Banking'?",
+      "options": ["The digitization of all traditional banking services", "Online shopping", "Mobile payments only", "ATM services"],
+      "a": "The digitization of all traditional banking services",
+      "mode": "FLIP"
+    },
+    {
+      "id": 783,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "Who is the custodian of India's foreign exchange reserves?",
+      "options": ["Reserve Bank of India", "Government of India", "State Bank of India", "ICICI Bank"],
+      "a": "Reserve Bank of India",
+      "mode": "FLIP"
+    },
+    {
+      "id": 784,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is the 'SLR'?",
+      "options": ["Statutory Liquidity Ratio, the minimum percentage of assets a bank must maintain", "Savings Loan Ratio", "Standard Lending Rate", "Secured Loan Requirement"],
+      "a": "Statutory Liquidity Ratio, the minimum percentage of assets a bank must maintain",
+      "mode": "FLIP"
+    },
+    {
+      "id": 785,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is a 'Credit Card'?",
+      "options": ["A card allowing the holder to purchase goods on credit", "A debit card", "A savings account", "A loan"],
+      "a": "A card allowing the holder to purchase goods on credit",
+      "mode": "FLIP"
+    },
+    {
+      "id": 786,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is 'Microfinance'?",
+      "options": ["Providing financial services to low-income individuals or groups", "Large loans for corporations", "International banking", "High-value transactions"],
+      "a": "Providing financial services to low-income individuals or groups",
+      "mode": "FLIP"
+    },
+    {
+      "id": 787,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "Define 'Interest Rate'.",
+      "options": ["The proportion of a loan that is charged as interest to the borrower", "The rate of inflation", "The bank's profit margin", "The savings rate"],
+      "a": "The proportion of a loan that is charged as interest to the borrower",
+      "mode": "FLIP"
+    },
+    {
+      "id": 788,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is an 'Overdraft'?",
+      "options": ["A deficit in a bank account caused by drawing more money than is held", "A type of loan", "A savings account", "A credit card"],
+      "a": "A deficit in a bank account caused by drawing more money than is held",
+      "mode": "FLIP"
+    },
+    {
+      "id": 789,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is 'Financial Inclusion'?",
+      "options": ["Ensuring affordable financial services to all sections of society", "High-end banking", "International finance", "Stock market investments"],
+      "a": "Ensuring affordable financial services to all sections of society",
+      "mode": "FLIP"
+    },
+    {
+      "id": 790,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'Bank Rate'?",
+      "options": ["The rate at which the central bank provides loans to commercial banks", "The savings rate", "The loan interest rate", "The inflation rate"],
+      "a": "The rate at which the central bank provides loans to commercial banks",
+      "mode": "FLIP"
+    },
+    {
+      "id": 791,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'SWIFT'?",
+      "options": ["Society for Worldwide Interbank Financial Telecommunication", "Secure Web International Financial Transactions", "System for Worldwide Interbank Financial Transfers", "Swift Worldwide International Finance"],
+      "a": "Society for Worldwide Interbank Financial Telecommunication",
+      "mode": "FLIP"
+    },
+    {
+      "id": 792,
+      "category": "Investments",
+      "type": "MCQ",
+      "q": "What is 'Mutual Fund'?",
+      "options": ["An investment vehicle made up of a pool of money collected from many investors", "A fixed deposit", "A savings account", "A loan"],
+      "a": "An investment vehicle made up of a pool of money collected from many investors",
+      "mode": "FLIP"
+    },
+    {
+      "id": 793,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'Net Banking'?",
+      "options": ["Banking services performed over the internet", "Banking via mobile", "ATM services", "Branch banking"],
+      "a": "Banking services performed over the internet",
+      "mode": "FLIP"
+    },
+    {
+      "id": 794,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is the 'Base Rate'?",
+      "options": ["The minimum interest rate a bank is allowed to charge for a loan", "The savings rate", "The repo rate", "The inflation rate"],
+      "a": "The minimum interest rate a bank is allowed to charge for a loan",
+      "mode": "FLIP"
+    },
+    {
+      "id": 795,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is an 'Escrow Account'?",
+      "options": ["A temporary account held by a third party during a transaction", "A savings account", "A fixed deposit", "A loan"],
+      "a": "A temporary account held by a third party during a transaction",
+      "mode": "FLIP"
+    },
+    {
+      "id": 796,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is 'Direct Benefit Transfer' (DBT)?",
+      "options": ["Transferring subsidies directly into the bank accounts of beneficiaries", "Direct cash transfers", "Loan disbursement", "Interest transfer"],
+      "a": "Transferring subsidies directly into the bank accounts of beneficiaries",
+      "mode": "FLIP"
+    },
+    {
+      "id": 797,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'Asset-Liability Management'?",
+      "options": ["The practice of managing financial risks in a bank", "Managing investments", "Managing loans", "Managing savings accounts"],
+      "a": "The practice of managing financial risks in a bank",
+      "mode": "FLIP"
+    },
+    {
+      "id": 798,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is 'Compound Interest'?",
+      "options": ["Interest calculated on the initial principal and also on the accumulated interest", "Simple interest", "Interest on savings", "Interest on loans"],
+      "a": "Interest calculated on the initial principal and also on the accumulated interest",
+      "mode": "FLIP"
+    },
+    {
+      "id": 799,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'Virtual Banking'?",
+      "options": ["Banking without any physical branches", "Online shopping", "Mobile payments", "ATM services"],
+      "a": "Banking without any physical branches",
+      "mode": "FLIP"
+    },
+    {
+      "id": 800,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is the primary function of a Commercial Bank?",
+      "options": ["Accepting deposits and granting loans", "Managing investments", "Providing insurance", "Managing foreign exchange"],
+      "a": "Accepting deposits and granting loans",
+      "mode": "FLIP"
+    },
+{
+      "id": 781,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is a 'Debit Card'?",
+      "options": ["A card that allows electronic access to the holder's bank account", "A card for credit purchases", "A savings account", "A loan"],
+      "a": "A card that allows electronic access to the holder's bank account",
+      "mode": "FLIP"
+    },
+    {
+      "id": 782,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'Digital Banking'?",
+      "options": ["The digitization of all traditional banking services", "Online shopping", "Mobile payments only", "ATM services"],
+      "a": "The digitization of all traditional banking services",
+      "mode": "FLIP"
+    },
+    {
+      "id": 783,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "Who is the custodian of India's foreign exchange reserves?",
+      "options": ["Reserve Bank of India", "Government of India", "State Bank of India", "ICICI Bank"],
+      "a": "Reserve Bank of India",
+      "mode": "FLIP"
+    },
+    {
+      "id": 784,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is the 'SLR'?",
+      "options": ["Statutory Liquidity Ratio, the minimum percentage of assets a bank must maintain", "Savings Loan Ratio", "Standard Lending Rate", "Secured Loan Requirement"],
+      "a": "Statutory Liquidity Ratio, the minimum percentage of assets a bank must maintain",
+      "mode": "FLIP"
+    },
+    {
+      "id": 785,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is a 'Credit Card'?",
+      "options": ["A card allowing the holder to purchase goods on credit", "A debit card", "A savings account", "A loan"],
+      "a": "A card allowing the holder to purchase goods on credit",
+      "mode": "FLIP"
+    },
+    {
+      "id": 786,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is 'Microfinance'?",
+      "options": ["Providing financial services to low-income individuals or groups", "Large loans for corporations", "International banking", "High-value transactions"],
+      "a": "Providing financial services to low-income individuals or groups",
+      "mode": "FLIP"
+    },
+    {
+      "id": 787,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "Define 'Interest Rate'.",
+      "options": ["The proportion of a loan that is charged as interest to the borrower", "The rate of inflation", "The bank's profit margin", "The savings rate"],
+      "a": "The proportion of a loan that is charged as interest to the borrower",
+      "mode": "FLIP"
+    },
+    {
+      "id": 788,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is an 'Overdraft'?",
+      "options": ["A deficit in a bank account caused by drawing more money than is held", "A type of loan", "A savings account", "A credit card"],
+      "a": "A deficit in a bank account caused by drawing more money than is held",
+      "mode": "FLIP"
+    },
+    {
+      "id": 789,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is 'Financial Inclusion'?",
+      "options": ["Ensuring affordable financial services to all sections of society", "High-end banking", "International finance", "Stock market investments"],
+      "a": "Ensuring affordable financial services to all sections of society",
+      "mode": "FLIP"
+    },
+    {
+      "id": 790,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'Bank Rate'?",
+      "options": ["The rate at which the central bank provides loans to commercial banks", "The savings rate", "The loan interest rate", "The inflation rate"],
+      "a": "The rate at which the central bank provides loans to commercial banks",
+      "mode": "FLIP"
+    },
+    {
+      "id": 791,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'SWIFT'?",
+      "options": ["Society for Worldwide Interbank Financial Telecommunication", "Secure Web International Financial Transactions", "System for Worldwide Interbank Financial Transfers", "Swift Worldwide International Finance"],
+      "a": "Society for Worldwide Interbank Financial Telecommunication",
+      "mode": "FLIP"
+    },
+    {
+      "id": 792,
+      "category": "Investments",
+      "type": "MCQ",
+      "q": "What is 'Mutual Fund'?",
+      "options": ["An investment vehicle made up of a pool of money collected from many investors", "A fixed deposit", "A savings account", "A loan"],
+      "a": "An investment vehicle made up of a pool of money collected from many investors",
+      "mode": "FLIP"
+    },
+    {
+      "id": 793,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'Net Banking'?",
+      "options": ["Banking services performed over the internet", "Banking via mobile", "ATM services", "Branch banking"],
+      "a": "Banking services performed over the internet",
+      "mode": "FLIP"
+    },
+    {
+      "id": 794,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is the 'Base Rate'?",
+      "options": ["The minimum interest rate a bank is allowed to charge for a loan", "The savings rate", "The repo rate", "The inflation rate"],
+      "a": "The minimum interest rate a bank is allowed to charge for a loan",
+      "mode": "FLIP"
+    },
+    {
+      "id": 795,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is an 'Escrow Account'?",
+      "options": ["A temporary account held by a third party during a transaction", "A savings account", "A fixed deposit", "A loan"],
+      "a": "A temporary account held by a third party during a transaction",
+      "mode": "FLIP"
+    },
+    {
+      "id": 796,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is 'Direct Benefit Transfer' (DBT)?",
+      "options": ["Transferring subsidies directly into the bank accounts of beneficiaries", "Direct cash transfers", "Loan disbursement", "Interest transfer"],
+      "a": "Transferring subsidies directly into the bank accounts of beneficiaries",
+      "mode": "FLIP"
+    },
+    {
+      "id": 797,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'Asset-Liability Management'?",
+      "options": ["The practice of managing financial risks in a bank", "Managing investments", "Managing loans", "Managing savings accounts"],
+      "a": "The practice of managing financial risks in a bank",
+      "mode": "FLIP"
+    },
+    {
+      "id": 798,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is 'Compound Interest'?",
+      "options": ["Interest calculated on the initial principal and also on the accumulated interest", "Simple interest", "Interest on savings", "Interest on loans"],
+      "a": "Interest calculated on the initial principal and also on the accumulated interest",
+      "mode": "FLIP"
+    },
+    {
+      "id": 799,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'Virtual Banking'?",
+      "options": ["Banking without any physical branches", "Online shopping", "Mobile payments", "ATM services"],
+      "a": "Banking without any physical branches",
+      "mode": "FLIP"
+    },
+    {
+      "id": 800,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is the primary function of a Commercial Bank?",
+      "options": ["Accepting deposits and granting loans", "Managing investments", "Providing insurance", "Managing foreign exchange"],
+      "a": "Accepting deposits and granting loans",
+      "mode": "FLIP"
+    },
+    {
+      "id": 801,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "Which country has the oldest written constitution still in effect?",
+      "options": ["The United States of America", "India", "UK", "Australia"],
+      "a": "The United States of America",
+      "mode": "FLIP"
+    },
+    {
+      "id": 802,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is the primary cause of ocean acidification?",
+      "options": ["Increased absorption of atmospheric carbon dioxide", "Pollution", "Overfishing", "Climate change"],
+      "a": "Increased absorption of atmospheric carbon dioxide",
+      "mode": "FLIP"
+    },
+    {
+      "id": 803,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which desert is the largest in the world?",
+      "options": ["The Antarctic Desert", "Sahara", "Gobi", "Arabian"],
+      "a": "The Antarctic Desert",
+      "mode": "FLIP"
+    },
+    {
+      "id": 804,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the most abundant gas in Earth's atmosphere?",
+      "options": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Helium"],
+      "a": "Nitrogen",
+      "mode": "FLIP"
+    },
+    {
+      "id": 805,
+      "category": "History",
+      "type": "MCQ",
+      "q": "In what year did the Berlin Wall fall?",
+      "options": ["1989", "1991", "1987", "1990"],
+      "a": "1989",
+      "mode": "FLIP"
+    },
+    {
+      "id": 806,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is a 'Veto'?",
+      "options": ["The constitutional right to reject a decision or proposal made by a law-making body", "A law", "A proposal", "A bill"],
+      "a": "The constitutional right to reject a decision or proposal made by a law-making body",
+      "mode": "FLIP"
+    },
+    {
+      "id": 807,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What does the Montreal Protocol aim to protect?",
+      "options": ["The ozone layer", "Climate change", "Biodiversity", "Forests"],
+      "a": "The ozone layer",
+      "mode": "FLIP"
+    },
+    {
+      "id": 808,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which country is known as the Land of the Rising Sun?",
+      "options": ["Japan", "China", "Korea", "Thailand"],
+      "a": "Japan",
+      "mode": "FLIP"
+    },
+    {
+      "id": 809,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the study of fungi called?",
+      "options": ["Mycology", "Botany", "Zoology", "Ecology"],
+      "a": "Mycology",
+      "mode": "FLIP"
+    },
+    {
+      "id": 810,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the first Emperor of Rome?",
+      "options": ["Augustus Caesar", "Julius Caesar", "Napoleon", "Constantine"],
+      "a": "Augustus Caesar",
+      "mode": "FLIP"
+    },
+    {
+      "id": 811,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is the term for a government run by religious leaders?",
+      "options": ["Theocracy", "Democracy", "Monarchy", "Dictatorship"],
+      "a": "Theocracy",
+      "mode": "FLIP"
+    },
+    {
+      "id": 812,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is the main component of 'smog'?",
+      "options": ["Ground-level ozone and particulate matter", "Carbon dioxide", "Methane", "Water vapor"],
+      "a": "Ground-level ozone and particulate matter",
+      "mode": "FLIP"
+    },
+    {
+      "id": 813,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which is the smallest country in the world by land area?",
+      "options": ["Vatican City", "Monaco", "Nauru", "Tuvalu"],
+      "a": "Vatican City",
+      "mode": "FLIP"
+    },
+    {
+      "id": 814,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which planet rotates on its side?",
+      "options": ["Uranus", "Mars", "Jupiter", "Saturn"],
+      "a": "Uranus",
+      "mode": "FLIP"
+    },
+    {
+      "id": 815,
+      "category": "History",
+      "type": "MCQ",
+      "q": "What ended the First World War?",
+      "options": ["The Treaty of Versailles", "The Armistice", "The League of Nations", "The Paris Peace Conference"],
+      "a": "The Treaty of Versailles",
+      "mode": "FLIP"
+    },
+    {
+      "id": 816,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Unicameral' legislature?",
+      "options": ["A system with only one legislative house", "A system with two houses", "A system with three houses", "A system with no houses"],
+      "a": "A system with only one legislative house",
+      "mode": "FLIP"
+    },
+    {
+      "id": 817,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is the 'Greenhouse Effect'?",
+      "options": ["The trapping of heat in the atmosphere by gases", "A gardening technique", "A weather pattern", "A type of pollution"],
+      "a": "The trapping of heat in the atmosphere by gases",
+      "mode": "FLIP"
+    },
+    {
+      "id": 818,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which river flows through Paris?",
+      "options": ["The Seine", "The Thames", "The Rhine", "The Danube"],
+      "a": "The Seine",
+      "mode": "FLIP"
+    },
+    {
+      "id": 819,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the hardest natural substance on Earth?",
+      "options": ["Diamond", "Graphite", "Quartz", "Topaz"],
+      "a": "Diamond",
+      "mode": "FLIP"
+    },
+    {
+      "id": 820,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the last Tsar of Russia?",
+      "options": ["Nicholas II", "Peter the Great", "Catherine the Great", "Alexander III"],
+      "a": "Nicholas II",
+      "mode": "FLIP"
+    },
+    {
+      "id": 821,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What does the 'UN' stand for?",
+      "options": ["United Nations", "Unified Nations", "Union of Nations", "United Neighbors"],
+      "a": "United Nations",
+      "mode": "FLIP"
+    },
+    {
+      "id": 822,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Renewable Energy'?",
+      "options": ["Energy from sources that are naturally replenished", "Fossil fuels", "Nuclear energy", "Coal"],
+      "a": "Energy from sources that are naturally replenished",
+      "mode": "FLIP"
+    },
+    {
+      "id": 823,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which is the largest continent by area?",
+      "options": ["Asia", "Africa", "Europe", "North America"],
+      "a": "Asia",
+      "mode": "FLIP"
+    },
+    {
+      "id": 824,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the chemical symbol for Silver?",
+      "options": ["Ag", "Au", "Hg", "Pb"],
+      "a": "Ag",
+      "mode": "FLIP"
+    },
+    {
+      "id": 825,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Which empire was ruled by Genghis Khan?",
+      "options": ["The Mongol Empire", "The Roman Empire", "The British Empire", "The Ottoman Empire"],
+      "a": "The Mongol Empire",
+      "mode": "FLIP"
+},
+{
+      "id": 826,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Diplomacy'?",
+      "options": ["The profession or activity of managing international relations", "A type of war", "A government policy", "A trade agreement"],
+      "a": "The profession or activity of managing international relations",
+      "mode": "FLIP"
+    },
+    {
+      "id": 827,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Biodegradable'?",
+      "options": ["Material capable of being decomposed by bacteria or living organisms", "A type of plastic", "A pollutant", "A greenhouse gas"],
+      "a": "Material capable of being decomposed by bacteria or living organisms",
+      "mode": "FLIP"
+    },
+    {
+      "id": 828,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which country is the largest in terms of land area?",
+      "options": ["Russia", "Canada", "China", "USA"],
+      "a": "Russia",
+      "mode": "FLIP"
+    },
+    {
+      "id": 829,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the boiling point of water in Celsius?",
+      "options": ["100 degrees Celsius", "0 degrees Celsius", "50 degrees Celsius", "200 degrees Celsius"],
+      "a": "100 degrees Celsius",
+      "mode": "FLIP"
+    },
+    {
+      "id": 830,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the main author of the Declaration of Independence?",
+      "options": ["Thomas Jefferson", "John Adams", "Benjamin Franklin", "George Washington"],
+      "a": "Thomas Jefferson",
+      "mode": "FLIP"
+    },
+{
+      "id": 831,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is an 'Embargo'?",
+      "options": ["An official ban on trade with a particular country", "A trade agreement", "A tax on imports", "A subsidy for exports"],
+      "a": "An official ban on trade with a particular country",
+      "mode": "FLIP"
+    },
+    {
+      "id": 832,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Deforestation'?",
+      "options": ["The large-scale clearing of forest areas", "Reforestation", "Afforestation", "Conservation"],
+      "a": "The large-scale clearing of forest areas",
+      "mode": "FLIP"
+    },
+    {
+      "id": 833,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Where is the Great Barrier Reef located?",
+      "options": ["Australia", "USA", "Brazil", "India"],
+      "a": "Australia",
+      "mode": "FLIP"
+    },
+    {
+      "id": 834,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the speed of sound?",
+      "options": ["Approximately 343 meters per second", "Approximately 100 meters per second", "Approximately 500 meters per second", "Approximately 1000 meters per second"],
+      "a": "Approximately 343 meters per second",
+      "mode": "FLIP"
+    },
+    {
+      "id": 835,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Which conflict is often called 'The Great War'?",
+      "options": ["World War I", "World War II", "Cold War", "Vietnam War"],
+      "a": "World War I",
+      "mode": "FLIP"
+    },
+    {
+      "id": 836,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Sovereignty'?",
+      "options": ["The full right and power of a governing body over itself", "A type of government", "A country's economy", "A political party"],
+      "a": "The full right and power of a governing body over itself",
+      "mode": "FLIP"
+    },
+    {
+      "id": 837,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Eutrophication'?",
+      "options": ["Excessive nutrients in water causing dense plant growth and death of animal life", "Water pollution", "Air pollution", "Soil erosion"],
+      "a": "Excessive nutrients in water causing dense plant growth and death of animal life",
+      "mode": "FLIP"
+    },
+    {
+      "id": 838,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which country is home to the Amazon Rainforest?",
+      "options": ["Brazil", "Peru", "Colombia", "Venezuela"],
+      "a": "Brazil",
+      "mode": "FLIP"
+    },
+    {
+      "id": 839,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the human body's largest organ?",
+      "options": ["Skin", "Brain", "Heart", "Lungs"],
+      "a": "Skin",
+      "mode": "FLIP"
+    },
+    {
+      "id": 840,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the famous French leader exiled to St. Helena?",
+      "options": ["Napoleon Bonaparte", "Charles de Gaulle", "Louis XIV", "Robespierre"],
+      "a": "Napoleon Bonaparte",
+      "mode": "FLIP"
+    },
+    {
+      "id": 841,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Suffrage'?",
+      "options": ["The right to vote in political elections", "A type of government", "A political party", "A protest movement"],
+      "a": "The right to vote in political elections",
+      "mode": "FLIP"
+    },
+    {
+      "id": 842,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Desertification'?",
+      "options": ["The process by which fertile land becomes desert", "A type of soil erosion", "A climate change phenomenon", "A natural disaster"],
+      "a": "The process by which fertile land becomes desert",
+      "mode": "FLIP"
+    },
+    {
+      "id": 843,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which city is known as the 'Big Apple'?",
+      "options": ["New York City", "Los Angeles", "Chicago", "Houston"],
+      "a": "New York City",
+      "mode": "FLIP"
+    },
+    {
+      "id": 844,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Inertia'?",
+      "options": ["The tendency of an object to resist changes in its state of motion", "A force", "A type of energy", "A type of motion"],
+      "a": "The tendency of an object to resist changes in its state of motion",
+      "mode": "FLIP"
+    },
+    {
+      "id": 845,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who founded the Ming Dynasty?",
+      "options": ["Zhu Yuanzhang", "Kublai Khan", "Mao Zedong", "Sun Yat-sen"],
+      "a": "Zhu Yuanzhang",
+      "mode": "FLIP"
+    },
+    {
+      "id": 846,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is a 'Coalition' government?",
+      "options": ["A cabinet of parliamentary government where several parties cooperate", "A single-party government", "A military government", "A monarchy"],
+      "a": "A cabinet of parliamentary government where several parties cooperate",
+      "mode": "FLIP"
+    },
+    {
+      "id": 847,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Carbon Footprint'?",
+      "options": ["The total amount of greenhouse gases generated by our actions", "A type of pollution", "A climate change phenomenon", "A natural disaster"],
+      "a": "The total amount of greenhouse gases generated by our actions",
+      "mode": "FLIP"
+    },
+    {
+      "id": 848,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which ocean is located between Africa and Australia?",
+      "options": ["Indian Ocean", "Pacific Ocean", "Atlantic Ocean", "Arctic Ocean"],
+      "a": "Indian Ocean",
+      "mode": "FLIP"
+    },
+    {
+      "id": 849,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the powerhouse of the cell?",
+      "options": ["Mitochondria", "Nucleus", "Ribosome", "Lysosome"],
+      "a": "Mitochondria",
+      "mode": "FLIP"
+    },
+    {
+      "id": 850,
+      "category": "History",
+      "type": "MCQ",
+      "q": "When did the French Revolution begin?",
+      "options": ["1789", "1776", "1799", "1804"],
+      "a": "1789",
+      "mode": "FLIP"
+    },
+{
+      "id": 851,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Totalitarianism'?",
+      "options": ["A system where the state recognizes no limits to its authority", "A democratic system", "A monarchy", "A dictatorship"],
+      "a": "A system where the state recognizes no limits to its authority",
+      "mode": "FLIP"
+    },
+    {
+      "id": 852,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Acid Rain'?",
+      "options": ["Rain made acidic by atmospheric pollution", "A type of precipitation", "A weather phenomenon", "A natural disaster"],
+      "a": "Rain made acidic by atmospheric pollution",
+      "mode": "FLIP"
+    },
+    {
+      "id": 853,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which mountain range separates Europe and Asia?",
+      "options": ["The Ural Mountains", "The Himalayas", "The Alps", "The Rockies"],
+      "a": "The Ural Mountains",
+      "mode": "FLIP"
+    },
+    {
+      "id": 854,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Photosynthesis'?",
+      "options": ["Process by which plants use sunlight to synthesize food", "A type of respiration", "A type of decomposition", "A type of fermentation"],
+      "a": "Process by which plants use sunlight to synthesize food",
+      "mode": "FLIP"
+    },
+    {
+      "id": 855,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the Queen of England during the Spanish Armada?",
+      "options": ["Elizabeth I", "Mary I", "Victoria", "Anne"],
+      "a": "Elizabeth I",
+      "mode": "FLIP"
+    },
+    {
+      "id": 856,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Liberalism'?",
+      "options": ["A political philosophy based on liberty and equality", "A type of government", "A political party", "A social movement"],
+      "a": "A political philosophy based on liberty and equality",
+      "mode": "FLIP"
+    },
+    {
+      "id": 857,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Sustainability'?",
+      "options": ["Meeting the needs of the present without compromising the future", "A type of conservation", "A type of pollution", "A type of development"],
+      "a": "Meeting the needs of the present without compromising the future",
+      "mode": "FLIP"
+    },
+    {
+      "id": 858,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which island nation is known for having many volcanoes?",
+      "options": ["Iceland", "Japan", "Indonesia", "Philippines"],
+      "a": "Iceland",
+      "mode": "FLIP"
+    },
+    {
+      "id": 859,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the atomic number of Hydrogen?",
+      "options": ["1", "2", "3", "4"],
+      "a": "1",
+      "mode": "FLIP"
+    },
+    {
+      "id": 860,
+      "category": "History",
+      "type": "MCQ",
+      "q": "What was the 'Silk Road'?",
+      "options": ["An ancient network of trade routes connecting East and West", "A type of fabric", "A trade agreement", "A historical event"],
+      "a": "An ancient network of trade routes connecting East and West",
+      "mode": "FLIP"
+    },
+    {
+      "id": 861,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Conservatism'?",
+      "options": ["A commitment to traditional values and opposition to radical change", "A type of government", "A political party", "A social movement"],
+      "a": "A commitment to traditional values and opposition to radical change",
+      "mode": "FLIP"
+    },
+    {
+      "id": 862,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Pollution'?",
+      "options": ["The presence of harmful substances in the environment", "A type of conservation", "A type of sustainability", "A type of development"],
+      "a": "The presence of harmful substances in the environment",
+      "mode": "FLIP"
+    },
+    {
+      "id": 863,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Canada?",
+      "options": ["Ottawa", "Toronto", "Vancouver", "Montreal"],
+      "a": "Ottawa",
+      "mode": "FLIP"
+    },
+    {
+      "id": 864,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Gravity'?",
+      "options": ["The force that attracts a body toward the center of the earth", "A type of energy", "A type of motion", "A type of wave"],
+      "a": "The force that attracts a body toward the center of the earth",
+      "mode": "FLIP"
+    },
+    {
+      "id": 865,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who wrote 'The Communist Manifesto'?",
+      "options": ["Karl Marx and Friedrich Engels", "Lenin", "Mao", "Stalin"],
+      "a": "Karl Marx and Friedrich Engels",
+      "mode": "FLIP"
+    },
+    {
+      "id": 866,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Referendum'?",
+      "options": ["A general vote by the electorate on a single political question", "A type of election", "A type of government", "A type of law"],
+      "a": "A general vote by the electorate on a single political question",
+      "mode": "FLIP"
+    },
+    {
+      "id": 867,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Conservation'?",
+      "options": ["The preservation and protection of natural resources", "A type of pollution", "A type of development", "A type of sustainability"],
+      "a": "The preservation and protection of natural resources",
+      "mode": "FLIP"
+    },
+    {
+      "id": 868,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which is the longest river in the world?",
+      "options": ["The Nile", "The Amazon", "The Yangtze", "The Mississippi"],
+      "a": "The Nile",
+      "mode": "FLIP"
+    },
+    {
+      "id": 869,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'DNA'?",
+      "options": ["Deoxyribonucleic acid, the molecule carrying genetic instructions", "A type of protein", "A type of cell", "A type of tissue"],
+      "a": "Deoxyribonucleic acid, the molecule carrying genetic instructions",
+      "mode": "FLIP"
+    },
+    {
+      "id": 870,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the leader of the Indian independence movement?",
+      "options": ["Mahatma Gandhi", "Jawaharlal Nehru", "Subhas Chandra Bose", "Bhagat Singh"],
+      "a": "Mahatma Gandhi",
+      "mode": "FLIP"
+    },
+{
+      "id": 871,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is a 'Republic'?",
+      "options": ["A state in which power is held by the people and their elected representatives", "A monarchy", "A dictatorship", "A theocracy"],
+      "a": "A state in which power is held by the people and their elected representatives",
+      "mode": "FLIP"
+    },
+    {
+      "id": 872,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Ecosystem'?",
+      "options": ["A biological community of interacting organisms and their physical environment", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "A biological community of interacting organisms and their physical environment",
+      "mode": "FLIP"
+    },
+    {
+      "id": 873,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which country has the most people?",
+      "options": ["India", "China", "USA", "Indonesia"],
+      "a": "India",
+      "mode": "FLIP"
+    },
+    {
+      "id": 874,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Light Year'?",
+      "options": ["The distance light travels in a year", "A unit of time", "A unit of speed", "A unit of energy"],
+      "a": "The distance light travels in a year",
+      "mode": "FLIP"
+    },
+    {
+      "id": 875,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who painted the Sistine Chapel ceiling?",
+      "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Caravaggio"],
+      "a": "Michelangelo",
+      "mode": "FLIP"
+    },
+    {
+      "id": 876,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Anarchy'?",
+      "options": ["A state of disorder due to absence of authority", "A type of government", "A type of law", "A type of economy"],
+      "a": "A state of disorder due to absence of authority",
+      "mode": "FLIP"
+    },
+    {
+      "id": 877,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Renewable Resource'?",
+      "options": ["A resource that can be replaced in a human lifespan", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "A resource that can be replaced in a human lifespan",
+      "mode": "FLIP"
+    },
+    {
+      "id": 878,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which country is the 'Land of Thousand Lakes'?",
+      "options": ["Finland", "Sweden", "Norway", "Denmark"],
+      "a": "Finland",
+      "mode": "FLIP"
+    },
+    {
+      "id": 879,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Absolute Zero'?",
+      "options": ["The lowest possible temperature (-273.15 degrees Celsius)", "A type of energy", "A type of motion", "A type of wave"],
+      "a": "The lowest possible temperature (-273.15 degrees Celsius)",
+      "mode": "FLIP"
+    },
+    {
+      "id": 880,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who discovered America in 1492?",
+      "options": ["Christopher Columbus", "Vasco da Gama", "Ferdinand Magellan", "Leif Erikson"],
+      "a": "Christopher Columbus",
+      "mode": "FLIP"
+    },
+    {
+      "id": 881,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Fascism'?",
+      "options": ["A far-right, authoritarian ultra-nationalist political ideology", "A type of government", "A type of law", "A type of economy"],
+      "a": "A far-right, authoritarian ultra-nationalist political ideology",
+      "mode": "FLIP"
+    },
+    {
+      "id": 882,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Ozone Depletion'?",
+      "options": ["The thinning of the ozone layer in the stratosphere", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "The thinning of the ozone layer in the stratosphere",
+      "mode": "FLIP"
+    },
+    {
+      "id": 883,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which sea is between Europe and Africa?",
+      "options": ["The Mediterranean Sea", "The Red Sea", "The Black Sea", "The Caspian Sea"],
+      "a": "The Mediterranean Sea",
+      "mode": "FLIP"
+    },
+    {
+      "id": 884,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Velocity'?",
+      "options": ["The speed of an object in a given direction", "A type of energy", "A type of motion", "A type of force"],
+      "a": "The speed of an object in a given direction",
+      "mode": "FLIP"
+    },
+    {
+      "id": 885,
+      "category": "History",
+      "type": "MCQ",
+      "q": "When was the Magna Carta signed?",
+      "options": ["1215", "1066", "1492", "1776"],
+      "a": "1215",
+      "mode": "FLIP"
+    },
+    {
+      "id": 886,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Populism'?",
+      "options": ["Political approach that strives to appeal to ordinary people", "A type of government", "A type of law", "A type of economy"],
+      "a": "Political approach that strives to appeal to ordinary people",
+      "mode": "FLIP"
+    },
+    {
+      "id": 887,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Water Scarcity'?",
+      "options": ["The lack of sufficient available water resources", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "The lack of sufficient available water resources",
+      "mode": "FLIP"
+    },
+    {
+      "id": 888,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Japan?",
+      "options": ["Tokyo", "Osaka", "Kyoto", "Hiroshima"],
+      "a": "Tokyo",
+      "mode": "FLIP"
+    },
+    {
+      "id": 889,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Osmosis'?",
+      "options": ["Movement of solvent through a semipermeable membrane", "A type of energy", "A type of motion", "A type of force"],
+      "a": "Movement of solvent through a semipermeable membrane",
+      "mode": "FLIP"
+    },
+    {
+      "id": 890,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the first man to orbit the Earth?",
+      "options": ["Yuri Gagarin", "Neil Armstrong", "Buzz Aldrin", "John Glenn"],
+      "a": "Yuri Gagarin",
+      "mode": "FLIP"
+    },
+{
+      "id": 891,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Federalism'?",
+      "options": ["A system where power is divided between central and regional governments", "A system where power is held by one person", "A system where power is held by a group of people", "A system where power is held by a monarch"],
+      "a": "A system where power is divided between central and regional governments",
+      "mode": "FLIP"
+    },
+    {
+      "id": 892,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Global Warming'?",
+      "options": ["Long-term heating of Earth's climate system", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "Long-term heating of Earth's climate system",
+      "mode": "FLIP"
+    },
+    {
+      "id": 893,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which country is known as the 'Emerald Isle'?",
+      "options": ["Ireland", "Scotland", "England", "Wales"],
+      "a": "Ireland",
+      "mode": "FLIP"
+    },
+    {
+      "id": 894,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Friction'?",
+      "options": ["The resistance that one surface or object encounters when moving over another", "A type of energy", "A type of motion", "A type of force"],
+      "a": "The resistance that one surface or object encounters when moving over another",
+      "mode": "FLIP"
+    },
+    {
+      "id": 895,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the 'Maid of Orleans'?",
+      "options": ["Joan of Arc", "Marie Antoinette", "Catherine the Great", "Elizabeth I"],
+      "a": "Joan of Arc",
+      "mode": "FLIP"
+    },
+    {
+      "id": 896,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Monarchy'?",
+      "options": ["A system where a single person holds the title of head of state", "A system where power is held by a group of people", "A system where power is held by a monarch", "A system where power is held by a dictator"],
+      "a": "A system where a single person holds the title of head of state",
+      "mode": "FLIP"
+    },
+    {
+      "id": 897,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Wildlife Protection'?",
+      "options": ["The practice of protecting wild species and their habitats", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "The practice of protecting wild species and their habitats",
+      "mode": "FLIP"
+    },
+    {
+      "id": 898,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Where is the Eiffel Tower?",
+      "options": ["Paris, France", "London, UK", "Berlin, Germany", "Rome, Italy"],
+      "a": "Paris, France",
+      "mode": "FLIP"
+    },
+    {
+      "id": 899,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Valence electrons'?",
+      "options": ["Electrons in the outermost shell of an atom", "A type of energy", "A type of motion", "A type of force"],
+      "a": "Electrons in the outermost shell of an atom",
+      "mode": "FLIP"
+    },
+    {
+      "id": 900,
+      "category": "History",
+      "type": "MCQ",
+      "q": "What was the 'Golden Age' of Greece?",
+      "options": ["5th Century BC, peak of Athenian democracy", "A time of war", "A time of poverty", "A time of famine"],
+      "a": "5th Century BC, peak of Athenian democracy",
+      "mode": "FLIP"
+    },
+    {
+      "id": 901,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Bicameralism'?",
+      "options": ["A legislature with two houses", "A system where power is held by one person", "A system where power is held by a group of people", "A system where power is held by a monarch"],
+      "a": "A legislature with two houses",
+      "mode": "FLIP"
+    },
+    {
+      "id": 902,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Solar Energy'?",
+      "options": ["Energy obtained from the sun's radiation", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "Energy obtained from the sun's radiation",
+      "mode": "FLIP"
+    },
+    {
+      "id": 903,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which is the tallest mountain in the world?",
+      "options": ["Mount Everest", "K2", "Kangchenjunga", "Lhotse"],
+      "a": "Mount Everest",
+      "mode": "FLIP"
+    },
+    {
+      "id": 904,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Atomic weight'?",
+      "options": ["The average mass of atoms of an element", "A type of energy", "A type of motion", "A type of force"],
+      "a": "The average mass of atoms of an element",
+      "mode": "FLIP"
+    },
+    {
+      "id": 905,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the author of 'The Odyssey'?",
+      "options": ["Homer", "Virgil", "Ovid", "Sophocles"],
+      "a": "Homer",
+      "mode": "FLIP"
+    },
+    {
+      "id": 906,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is a 'Constituency'?",
+      "options": ["A group of voters in a specified area who elect a representative", "A type of government", "A type of law", "A type of economy"],
+      "a": "A group of voters in a specified area who elect a representative",
+      "mode": "FLIP"
+    },
+    {
+      "id": 907,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Composting'?",
+      "options": ["Recycling organic matter into fertilizer", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "Recycling organic matter into fertilizer",
+      "mode": "FLIP"
+    },
+    {
+      "id": 908,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Brazil?",
+      "options": ["Brasília", "Rio de Janeiro", "São Paulo", "Buenos Aires"],
+      "a": "Brasília",
+      "mode": "FLIP"
+    },
+    {
+      "id": 909,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Electron'?",
+      "options": ["A stable subatomic particle with a negative charge", "A type of energy", "A type of motion", "A type of force"],
+      "a": "A stable subatomic particle with a negative charge",
+      "mode": "FLIP"
+    },
+    {
+      "id": 910,
+      "category": "History",
+      "type": "MCQ",
+      "q": "What was the 'Age of Enlightenment'?",
+      "options": ["An 18th-century philosophical movement", "A time of war", "A time of poverty", "A time of famine"],
+      "a": "An 18th-century philosophical movement",
+      "mode": "FLIP"
+    },
+    {
+      "id": 911,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Parliament'?",
+      "options": ["A national representative body having supreme legislative powers", "A type of government", "A type of law", "A type of economy"],
+      "a": "A national representative body having supreme legislative powers",
+      "mode": "FLIP"
+    },
+{
+      "id": 912,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Marine Pollution'?",
+      "options": ["The pollution of oceans and seas", "A type of air pollution", "A type of land pollution", "A type of noise pollution"],
+      "a": "The pollution of oceans and seas",
+      "mode": "FLIP"
+    },
+    {
+      "id": 913,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which country is the 'Land of Maple Leaf'?",
+      "options": ["Canada", "USA", "Australia", "UK"],
+      "a": "Canada",
+      "mode": "FLIP"
+    },
+    {
+      "id": 914,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Proton'?",
+      "options": ["A subatomic particle with a positive charge", "A subatomic particle with a negative charge", "A subatomic particle with no charge", "A type of energy"],
+      "a": "A subatomic particle with a positive charge",
+      "mode": "FLIP"
+    },
+    {
+      "id": 915,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the founder of the Ottoman Empire?",
+      "options": ["Osman I", "Suleiman the Magnificent", "Mehmed II", "Selim I"],
+      "a": "Osman I",
+      "mode": "FLIP"
+    },
+    {
+      "id": 916,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Executive' branch?",
+      "options": ["The branch responsible for implementing laws", "The branch responsible for making laws", "The branch responsible for interpreting laws", "The branch responsible for enforcing laws"],
+      "a": "The branch responsible for implementing laws",
+      "mode": "FLIP"
+    },
+    {
+      "id": 917,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Soil Erosion'?",
+      "options": ["The wearing away of topsoil by natural forces", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "The wearing away of topsoil by natural forces",
+      "mode": "FLIP"
+    },
+    {
+      "id": 918,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Germany?",
+      "options": ["Berlin", "Munich", "Hamburg", "Frankfurt"],
+      "a": "Berlin",
+      "mode": "FLIP"
+    },
+    {
+      "id": 919,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Neutron'?",
+      "options": ["A subatomic particle with no charge", "A subatomic particle with a positive charge", "A subatomic particle with a negative charge", "A type of energy"],
+      "a": "A subatomic particle with no charge",
+      "mode": "FLIP"
+    },
+    {
+      "id": 920,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who invented the printing press?",
+      "options": ["Johannes Gutenberg", "Leonardo da Vinci", "Galileo Galilei", "Isaac Newton"],
+      "a": "Johannes Gutenberg",
+      "mode": "FLIP"
+    },
+{
+      "id": 921,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Judiciary'?",
+      "options": ["The system of courts that interprets and applies the law", "A type of government", "A type of law", "A type of economy"],
+      "a": "The system of courts that interprets and applies the law",
+      "mode": "FLIP"
+    },
+    {
+      "id": 922,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Hydroelectric power'?",
+      "options": ["Electricity produced from moving water", "A type of fossil fuel", "A type of renewable energy", "A type of pollution"],
+      "a": "Electricity produced from moving water",
+      "mode": "FLIP"
+    },
+    {
+      "id": 923,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which country is known as the 'Rainbow Nation'?",
+      "options": ["South Africa", "USA", "Australia", "UK"],
+      "a": "South Africa",
+      "mode": "FLIP"
+    },
+    {
+      "id": 924,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Isotope'?",
+      "options": ["Atoms of the same element with different numbers of neutrons", "A type of energy", "A type of motion", "A type of force"],
+      "a": "Atoms of the same element with different numbers of neutrons",
+      "mode": "FLIP"
+    },
+    {
+      "id": 925,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the first woman to win a Nobel Prize?",
+      "options": ["Marie Curie", "Rosalind Franklin", "Jane Austen", "Florence Nightingale"],
+      "a": "Marie Curie",
+      "mode": "FLIP"
+    },
+    {
+      "id": 926,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Legislature'?",
+      "options": ["The body of people who make laws", "A type of government", "A type of law", "A type of economy"],
+      "a": "The body of people who make laws",
+      "mode": "FLIP"
+    },
+    {
+      "id": 927,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Biomass'?",
+      "options": ["Organic matter used as a fuel", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "Organic matter used as a fuel",
+      "mode": "FLIP"
+    },
+    {
+      "id": 928,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Australia?",
+      "options": ["Canberra", "Sydney", "Melbourne", "Perth"],
+      "a": "Canberra",
+      "mode": "FLIP"
+    },
+    {
+      "id": 929,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Chemical bond'?",
+      "options": ["A lasting attraction between atoms that enables chemical compounds", "A type of energy", "A type of motion", "A type of force"],
+      "a": "A lasting attraction between atoms that enables chemical compounds",
+      "mode": "FLIP"
+    },
+    {
+      "id": 930,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who discovered gravity?",
+      "options": ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Leonardo da Vinci"],
+      "a": "Isaac Newton",
+      "mode": "FLIP"
+    },
+    {
+      "id": 931,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Human Rights'?",
+      "options": ["Fundamental rights belonging to every person", "A type of government", "A type of law", "A type of economy"],
+      "a": "Fundamental rights belonging to every person",
+      "mode": "FLIP"
+    },
+    {
+      "id": 932,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Geothermal energy'?",
+      "options": ["Heat energy from within the Earth", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "Heat energy from within the Earth",
+      "mode": "FLIP"
+    },
+    {
+      "id": 933,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which city is known as the 'Eternal City'?",
+      "options": ["Rome", "Paris", "London", "Berlin"],
+      "a": "Rome",
+      "mode": "FLIP"
+    },
+    {
+      "id": 934,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Combustion'?",
+      "options": ["A chemical process of burning", "A type of energy", "A type of motion", "A type of force"],
+      "a": "A chemical process of burning",
+      "mode": "FLIP"
+    },
+    {
+      "id": 935,
+      "category": "History",
+      "type": "MCQ",
+      "q": "What was the 'Industrial Revolution'?",
+      "options": ["The transition to new manufacturing processes", "A time of war", "A time of poverty", "A time of famine"],
+      "a": "The transition to new manufacturing processes",
+      "mode": "FLIP"
+    },
+    {
+      "id": 936,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Rule of Law'?",
+      "options": ["The restriction of the arbitrary exercise of power", "A type of government", "A type of law", "A type of economy"],
+      "a": "The restriction of the arbitrary exercise of power",
+      "mode": "FLIP"
+    },
+    {
+      "id": 937,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Renewable energy source'?",
+      "options": ["Energy that is not depleted when used", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "Energy that is not depleted when used",
+      "mode": "FLIP"
+    },
+    {
+      "id": 938,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Russia?",
+      "options": ["Moscow", "St. Petersburg", "Kiev", "Minsk"],
+      "a": "Moscow",
+      "mode": "FLIP"
+    },
+    {
+      "id": 939,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Mixture'?",
+      "options": ["A substance made by mixing other substances together", "A type of energy", "A type of motion", "A type of force"],
+      "a": "A substance made by mixing other substances together",
+      "mode": "FLIP"
+    },
+    {
+      "id": 940,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the founder of Islam?",
+      "options": ["Prophet Muhammad", "Jesus Christ", "Buddha", "Gandhi"],
+      "a": "Prophet Muhammad",
+      "mode": "FLIP"
+    },
+ {
+      "id": 941,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Communism'?",
+      "options": ["A social organization based on holding all property in common", "A type of government", "A type of law", "A type of economy"],
+      "a": "A social organization based on holding all property in common",
+      "mode": "FLIP"
+    },
+    {
+      "id": 942,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Air pollution'?",
+      "options": ["Contamination of the air by harmful substances", "A type of conservation", "A type of sustainability", "A type of development"],
+      "a": "Contamination of the air by harmful substances",
+      "mode": "FLIP"
+    },
+    {
+      "id": 943,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of China?",
+      "options": ["Beijing", "Shanghai", "Hong Kong", "Tokyo"],
+      "a": "Beijing",
+      "mode": "FLIP"
+    },
+    {
+      "id": 944,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Compound'?",
+      "options": ["A substance formed from two or more elements", "A type of energy", "A type of motion", "A type of force"],
+      "a": "A substance formed from two or more elements",
+      "mode": "FLIP"
+    },
+    {
+      "id": 945,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who wrote 'The Republic'?",
+      "options": ["Plato", "Aristotle", "Socrates", "Homer"],
+      "a": "Plato",
+      "mode": "FLIP"
+    },
+    {
+      "id": 946,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Socialism'?",
+      "options": ["A system where the means of production are owned by the community", "A type of government", "A type of law", "A type of economy"],
+      "a": "A system where the means of production are owned by the community",
+      "mode": "FLIP"
+    },
+    {
+      "id": 947,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Noise pollution'?",
+      "options": ["Harmful or annoying levels of noise", "A type of air pollution", "A type of water pollution", "A type of land pollution"],
+      "a": "Harmful or annoying levels of noise",
+      "mode": "FLIP"
+    },
+    {
+      "id": 948,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Egypt?",
+      "options": ["Cairo", "Alexandria", "Giza", "Luxor"],
+      "a": "Cairo",
+      "mode": "FLIP"
+    },
+    {
+      "id": 949,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Element'?",
+      "options": ["A pure substance consisting of only one type of atom", "A type of energy", "A type of motion", "A type of force"],
+      "a": "A pure substance consisting of only one type of atom",
+      "mode": "FLIP"
+    },
+    {
+      "id": 950,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who is the father of medicine?",
+      "options": ["Hippocrates", "Galen", "Aristotle", "Plato"],
+      "a": "Hippocrates",
+      "mode": "FLIP"
+    },
+    {
+      "id": 951,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Democracy'?",
+      "options": ["Government by the people", "A type of government", "A type of law", "A type of economy"],
+      "a": "Government by the people",
+      "mode": "FLIP"
+    },
+    {
+      "id": 952,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Landfill'?",
+      "options": ["A place to dispose of refuse and other waste material", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "A place to dispose of refuse and other waste material",
+      "mode": "FLIP"
+    },
+    {
+      "id": 953,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of France?",
+      "options": ["Paris", "London", "Berlin", "Rome"],
+      "a": "Paris",
+      "mode": "FLIP"
+    },
+    {
+      "id": 954,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Atom'?",
+      "options": ["The basic unit of a chemical element", "A type of energy", "A type of motion", "A type of force"],
+      "a": "The basic unit of a chemical element",
+      "mode": "FLIP"
+    },
+    {
+      "id": 955,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the first emperor of China?",
+      "options": ["Qin Shi Huang", "Mao Zedong", "Sun Yat-sen", "Confucius"],
+      "a": "Qin Shi Huang",
+      "mode": "FLIP"
+    },
+    {
+      "id": 956,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Dictatorship'?",
+      "options": ["Government by a dictator", "A type of government", "A type of law", "A type of economy"],
+      "a": "Government by a dictator",
+      "mode": "FLIP"
+    },
+    {
+      "id": 957,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Wildlife'?",
+      "options": ["Wild animals collectively", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "Wild animals collectively",
+      "mode": "FLIP"
+    },
+    {
+      "id": 958,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Italy?",
+      "options": ["Rome", "Milan", "Florence", "Venice"],
+      "a": "Rome",
+      "mode": "FLIP"
+    },
+    {
+      "id": 959,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Energy'?",
+      "options": ["The capacity to do work", "A type of motion", "A type of force", "A type of power"],
+      "a": "The capacity to do work",
+      "mode": "FLIP"
+    },
+    {
+      "id": 960,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the 'Father of History'?",
+      "options": ["Herodotus", "Thucydides", "Xenophon", "Polybius"],
+      "a": "Herodotus",
+      "mode": "FLIP"
+    },
+{
+      "id": 961,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Bureaucracy'?",
+      "options": ["A system of government in which most decisions are made by officials", "A type of government", "A type of law", "A type of economy"],
+      "a": "A system of government in which most decisions are made by officials",
+      "mode": "FLIP"
+    },
+    {
+      "id": 962,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Reforestation'?",
+      "options": ["The process of replanting an area with trees", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "The process of replanting an area with trees",
+      "mode": "FLIP"
+    },
+    {
+      "id": 963,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of India?",
+      "options": ["New Delhi", "Mumbai", "Bangalore", "Chennai"],
+      "a": "New Delhi",
+      "mode": "FLIP"
+    },
+    {
+      "id": 964,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Mass'?",
+      "options": ["A coherent body of matter", "A type of energy", "A type of motion", "A type of force"],
+      "a": "A coherent body of matter",
+      "mode": "FLIP"
+    },
+    {
+      "id": 965,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the first man on the moon?",
+      "options": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "John Glenn"],
+      "a": "Neil Armstrong",
+      "mode": "FLIP"
+    },
+    {
+      "id": 966,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Ideology'?",
+      "options": ["A system of ideas and ideals", "A type of government", "A type of law", "A type of economy"],
+      "a": "A system of ideas and ideals",
+      "mode": "FLIP"
+    },
+    {
+      "id": 967,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Recycling'?",
+      "options": ["Converting waste into reusable material", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "Converting waste into reusable material",
+      "mode": "FLIP"
+    },
+    {
+      "id": 968,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Spain?",
+      "options": ["Madrid", "Barcelona", "Seville", "Valencia"],
+      "a": "Madrid",
+      "mode": "FLIP"
+    },
+    {
+      "id": 969,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Molecule'?",
+      "options": ["A group of atoms bonded together", "A type of energy", "A type of motion", "A type of force"],
+      "a": "A group of atoms bonded together",
+      "mode": "FLIP"
+    },
+    {
+      "id": 970,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the founder of Buddhism?",
+      "options": ["Gautama Buddha", "Mahavira", "Jesus Christ", "Prophet Muhammad"],
+      "a": "Gautama Buddha",
+      "mode": "FLIP"
+    },
+    {
+      "id": 971,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Constitution'?",
+      "options": ["A body of fundamental principles according to which a state is governed", "A type of government", "A type of law", "A type of economy"],
+      "a": "A body of fundamental principles according to which a state is governed",
+      "mode": "FLIP"
+    },
+    {
+      "id": 972,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Climate change'?",
+      "options": ["Long-term changes in temperatures and weather patterns", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "Long-term changes in temperatures and weather patterns",
+      "mode": "FLIP"
+    },
+    {
+      "id": 973,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of UK?",
+      "options": ["London", "Birmingham", "Manchester", "Leeds"],
+      "a": "London",
+      "mode": "FLIP"
+    },
+    {
+      "id": 974,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Matter'?",
+      "options": ["Anything that has mass and takes up space", "A type of energy", "A type of motion", "A type of force"],
+      "a": "Anything that has mass and takes up space",
+      "mode": "FLIP"
+    },
+    {
+      "id": 975,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the last pharaoh of Egypt?",
+      "options": ["Cleopatra VII", "Ramses II", "Khafre", "Tutankhamun"],
+      "a": "Cleopatra VII",
+      "mode": "FLIP"
+    },
+    {
+      "id": 976,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Election'?",
+      "options": ["A formal group decision-making process by which a population chooses an individual to hold public office", "A type of government", "A type of law", "A type of economy"],
+      "a": "A formal group decision-making process by which a population chooses an individual to hold public office",
+      "mode": "FLIP"
+    },
+    {
+      "id": 977,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Renewable energy'?",
+      "options": ["Energy from a source that is not depleted", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "Energy from a source that is not depleted",
+      "mode": "FLIP"
+    },
+    {
+      "id": 978,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of South Africa?",
+      "options": ["Pretoria", "Cape Town", "Johannesburg", "Durban"],
+      "a": "Pretoria",
+      "mode": "FLIP"
+    },
+    {
+      "id": 979,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Biology'?",
+      "options": ["The study of living organisms", "A type of energy", "A type of motion", "A type of force"],
+      "a": "The study of living organisms",
+      "mode": "FLIP"
+    },
+    {
+      "id": 980,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the founder of Christianity?",
+      "options": ["Jesus Christ", "Gautama Buddha", "Prophet Muhammad", "Mahavira"],
+      "a": "Jesus Christ",
+      "mode": "FLIP"
+    },
+{
+      "id": 981,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Legislative branch'?",
+      "options": ["The branch responsible for making laws", "The branch responsible for enforcing laws", "The branch responsible for interpreting laws", "The branch responsible for executing laws"],
+      "a": "The branch responsible for making laws",
+      "mode": "FLIP"
+    },
+    {
+      "id": 982,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Biodiversity'?",
+      "options": ["The variety of all living things", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "The variety of all living things",
+      "mode": "FLIP"
+    },
+    {
+      "id": 983,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Mexico?",
+      "options": ["Mexico City", "Guadalajara", "Monterrey", "Cancun"],
+      "a": "Mexico City",
+      "mode": "FLIP"
+    },
+    {
+      "id": 984,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Chemistry'?",
+      "options": ["The study of substances and their changes", "The study of living organisms", "The study of matter and energy", "The study of celestial bodies"],
+      "a": "The study of substances and their changes",
+      "mode": "FLIP"
+    },
+    {
+      "id": 985,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the author of the 'Divine Comedy'?",
+      "options": ["Dante Alighieri", "Petrarch", "Boccaccio", "Machiavelli"],
+      "a": "Dante Alighieri",
+      "mode": "FLIP"
+    },
+    {
+      "id": 986,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Judicial branch'?",
+      "options": ["The branch responsible for interpreting laws", "The branch responsible for making laws", "The branch responsible for enforcing laws", "The branch responsible for executing laws"],
+      "a": "The branch responsible for interpreting laws",
+      "mode": "FLIP"
+    },
+    {
+      "id": 987,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Sustainability'?",
+      "options": ["Avoiding the depletion of natural resources", "A type of pollution", "A type of conservation", "A type of development"],
+      "a": "Avoiding the depletion of natural resources",
+      "mode": "FLIP"
+    },
+    {
+      "id": 988,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Thailand?",
+      "options": ["Bangkok", "Chiang Mai", "Phuket", "Ayutthaya"],
+      "a": "Bangkok",
+      "mode": "FLIP"
+    },
+    {
+      "id": 989,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Physics'?",
+      "options": ["The study of matter and energy", "The study of living organisms", "The study of substances and their changes", "The study of celestial bodies"],
+      "a": "The study of matter and energy",
+      "mode": "FLIP"
+    },
+    {
+      "id": 990,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the first president of the USA?",
+      "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "Franklin D. Roosevelt"],
+      "a": "George Washington",
+      "mode": "FLIP"
+    },
+    {
+      "id": 991,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Foreign policy'?",
+      "options": ["A government's strategy in dealing with other nations", "A type of government", "A type of law", "A type of economy"],
+      "a": "A government's strategy in dealing with other nations",
+      "mode": "FLIP"
+    },
+    {
+      "id": 992,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Global warming'?",
+      "options": ["The increase in the Earth's average temperature", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "The increase in the Earth's average temperature",
+      "mode": "FLIP"
+    },
+    {
+      "id": 993,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of South Korea?",
+      "options": ["Seoul", "Busan", "Pyongyang", "Tokyo"],
+      "a": "Seoul",
+      "mode": "FLIP"
+    },
+    {
+      "id": 994,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Geology'?",
+      "options": ["The study of the Earth's physical structure", "The study of living organisms", "The study of substances and their changes", "The study of celestial bodies"],
+      "a": "The study of the Earth's physical structure",
+      "mode": "FLIP"
+    },
+    {
+      "id": 995,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the famous inventor of the light bulb?",
+      "options": ["Thomas Edison", "Nikola Tesla", "Albert Einstein", "Leonardo da Vinci"],
+      "a": "Thomas Edison",
+      "mode": "FLIP"
+    },
+    {
+      "id": 996,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Public policy'?",
+      "options": ["The principles on which social laws are based", "A type of government", "A type of law", "A type of economy"],
+      "a": "The principles on which social laws are based",
+      "mode": "FLIP"
+    },
+    {
+      "id": 997,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Ecology'?",
+      "options": ["The study of organisms and their environment", "A type of pollution", "A type of conservation", "A type of sustainability"],
+      "a": "The study of organisms and their environment",
+      "mode": "FLIP"
+    },
+    {
+      "id": 998,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Argentina?",
+      "options": ["Buenos Aires", "Cordoba", "Mendoza", "Tierra del Fuego"],
+      "a": "Buenos Aires",
+      "mode": "FLIP"
+    },
+    {
+      "id": 999,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'Astronomy'?",
+      "options": ["The study of celestial bodies", "The study of living organisms", "The study of substances and their changes", "The study of matter and energy"],
+      "a": "The study of celestial bodies",
+      "mode": "FLIP"
+    },
+    {
+      "id": 1000,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the conqueror of the Aztec Empire?",
+      "options": ["Hernán Cortés", "Francisco Pizarro", "Vasco da Gama", "Ferdinand Magellan"],
+      "a": "Hernán Cortés",
+      "mode": "FLIP"
+    }
+]
+}
