@@ -7,9 +7,6 @@
 <meta name="description" content="Akanda Bharat Sovereign Township - 36 Pillar Ecosystem">
 <meta name="theme-color" content="#0a192f">
 <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icon-192.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
 *{box-sizing:border-box}
 html{font-size:16px}
@@ -38,13 +35,12 @@ h3{color:#ffd700;font-size:14px;margin:0 8px 0;text-align:center}
 img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 
 /* MODAL ENGINE SYSTEM ARCHITECTURE */
-.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0.95);z-index:9999;overflow:auto;padding:20px}
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:9999;overflow:auto;padding:20px}
 .modal-inner{max-width:900px;margin:40px auto;background:#112240;border-radius:12px;padding:25px;position:relative;border:1px solid #233554}
 .modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
 .modal-close{font-size:28px;cursor:pointer;line-height:1;color:#64ffda}
 .modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:13px;line-height:1.8;text-align:left;max-height:70vh;overflow-y:auto}
 .modal-body h4{color:#64ffda;margin-top:15px}
-.modal-body ul{padding-left:20px}
 
 /* PROFILE MODAL INPUT CONFIGS */
 .profile-input {
@@ -77,7 +73,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 }
 .modal-btn-action:active { transform: scale(0.98); background: #4cd4b7; }
 
-/* WELCOME NOTE OVERLAY - UPDATED */
+/* WELCOME NOTE OVERLAY SYSTEM LAYERS */
 #abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s ease;transform:scale(1)}
 .glow-welcome-text{color:#64ffda;font-size:32px;font-weight:bold;text-align:center;letter-spacing:3px;text-shadow:0 0 12px rgba(100,255,218,0.3);margin-bottom:10px}
 #abst-welcome-sub{color:#FFD700;font-size:16px;letter-spacing:4px;font-weight:bold;text-align:center;margin-bottom:15px}
@@ -97,6 +93,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease;
 }
 .droplet-gateway img {
     width: 100%;
@@ -104,7 +101,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
     object-fit: contain;
     border-radius: 50%;
     box-shadow: 0 0 25px rgba(100,255,218,0.4);
-    animation: floatDroplet 3.5s ease-in-out infinite;
+    animation: floatDroplet 3s ease-in-out infinite;
 }
 .droplet-gateway::after {
     content: '';
@@ -129,12 +126,12 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 
 @keyframes floatDroplet {
     0%, 100% { transform: translateY(0); filter: drop-shadow(0 0 15px rgba(100,255,218,0.5)); }
-    50% { transform: translateY(-15px); filter: drop-shadow(0 25px rgba(100,255,218,0.8)); }
+    50% { transform: translateY(-12px); filter: drop-shadow(0 0 25px rgba(100,255,218,0.8)); }
 }
 @keyframes rotateRing { 100% { transform: rotate(360deg); } }
 @keyframes textBlink { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; text-shadow: 0 0 8px #64ffda; } }
 
-/* DYNAMIC SWIRLING INTERACTIVE DASHBOARD SYSTEM */
+/* INTERACTIVE GRID STRUCTURE */
 .icon-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 0 20px;max-width:100%;margin:20px auto 0}
 .icon-card{
     background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;
@@ -151,7 +148,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 .icon-card:active .icon{transform:scale(1.2)}
 .icon-card span{color:#64ffda;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;display:block}
 
-/* SWIRL ANIMATION */
+/* SWIRL INTERACTIVE ANIMATION GRID NODES */
 @keyframes swirlIn {
   0% {opacity:0; transform:scale(0) rotate(-720deg);}
   70% {opacity:1; transform:scale(1.1) rotate(20deg);}
@@ -164,17 +161,18 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 </head>
 <body>
 
-<!-- WELCOME NOTE + TOUCH TO OPEN - DYNAMIC ID & NAME -->
+<!-- INTERACTIVE TOUCH TO OPEN WELCOME NOTE ENGINE OVERLAY -->
 <div id="abst-welcome-overlay">
   <div class="glow-welcome-text">WELCOME TO ABST</div>
-  <div id="welcome-id-display" style="color:#FFD700;font-size:16px;letter-spacing:4px;font-weight:bold;text-align:center">SOVEREIGN ID: INDIAN.001</div>
+  <div id="welcome-id-display">SOVEREIGN ID: INDIAN.001</div>
   
   <div class="welcome-note-text">
     Akanda Bharat Sovereign Township - A 36-Pillar Ecosystem of Total Independence.<br>
     <b style="color:#64ffda">Master Visionary: <span id="welcome-visionary-name">RAM GANESH MAKINA</span></b><br>
-    Jarvis AI Core Layer 7 Security Activated
+    Jarvis AI Core Security Layer 7 Activated
   </div>
   
+  <!-- Bouncing Frame Gateway Layer -->
   <div class="droplet-gateway" onclick="unlockDashboard()">
     <img src="seal.png" onerror="this.src='icon-192.png'; this.onerror=function(){this.src='https://img.icons8.com/plasma/120/00FF88/water-droplet.png';};" alt="ABST Security Seal Node">
   </div>
@@ -193,7 +191,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <p class="tagline">A 36-Pillar Ecosystem of Total Independence</p>
 <p class="visionary" id="dash-visionary-display">Master Visionary: INDIAN.001 RAM GANESH MAKINA</p>
 
-<!-- ALL DASHBOARD ICONS RENDERED INSIDE WITH DYNAMIC SWIRL HOOKS -->
+<!-- ALL DASHBOARD ICONS SYSTEM LAYOUT LINKED WITH ID CONFIGS -->
 <div class="icon-dashboard" id="iconGrid">
   <div class="icon-card install-btn-node" id="pwaInstallCard" onclick="triggerPwaInstallation()">
     <div class="icon">📲</div><span>INSTALL APP</span>
@@ -245,7 +243,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <p class="status" id="dash-status-string">Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: INDIAN.001 RAM GANESH MAKINA | P36 Active</p>
 </div>
 
-<!-- DYNAMIC PROFILE UPDATE MODAL -->
+<!-- DYNAMIC PROFILE UPDATE CONFIG MODAL CONTAINER -->
 <div id="profileModal" class="modal">
 <div class="modal-inner" style="max-width:550px;">
 <div class="modal-head">
@@ -261,8 +259,10 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <p style="color:#8892b0;font-size:12px;line-height:1.5;margin:10px 0 0">Editing updates all screens instantly: Welcome Note, Main Page, Status. Data saves to device.</p>
 </div>
 <button onclick="saveProfileConfigurationData()" class="modal-btn-action" style="background:#5effde;color:#0a192f;font-size:16px">💾 SAVE & REFRESH RECOGNITION</button>
-    </div>
-    <!-- 36 PILLARS LIST MODAL -->
+</div>
+</div>
+
+<!-- 36 PILLARS LIST MODAL -->
 <div id="pillars36Modal" class="modal">
 <div class="modal-inner">
 <div class="modal-head"><h2 style="color:#64ffda;margin:0">📋 ABST 36 PILLARS - COMPLETE LIST</h2><span onclick="closeM('pillars36Modal')" class="modal-close">&times;</span></div>
@@ -294,6 +294,7 @@ P36: MD Agni-Pariksha Leadership Mandate
 </div>
 <button onclick="closeM('pillars36Modal')" class="modal-btn-action">🏠 BACK TO HOME</button>
 </div>
+</div>
 
 <!-- LICENSE MODAL -->
 <div id="licenseModal" class="modal">
@@ -309,6 +310,7 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 5. ABST-MVL-v1.0 | 2026-04-10
 </div>
 <button onclick="closeM('licenseModal')" class="modal-btn-action">CLOSE</button>
+</div>
 </div>
 
 <!-- README MODAL -->
@@ -397,7 +399,7 @@ function closeM(id){
   }
 }
 
-/* ENTRY ACTION TRIGGERS + SWIRL ICONS */
+/* ENTRY MATRIX AND DYNAMIC SWIRL HOOKS TRIGGER ENGINE */
 function unlockDashboard() {
   var overlay = document.getElementById('abst-welcome-overlay');
   var cards = document.querySelectorAll('.icon-card');
@@ -409,7 +411,7 @@ function unlockDashboard() {
       overlay.style.display = 'none';
       sessionStorage.setItem('welcomeOpenedThisSession', 'true');
       
-      // SWIRL ANIMATION TRIGGER
+      // SWIRL ENTRY SEQUENCE FOR DASHBOARD CARDS
       cards.forEach((card, index) => {
         setTimeout(() => {
           card.classList.add('swirl');
@@ -420,22 +422,30 @@ function unlockDashboard() {
   }
 }
 
-/* LOCALSTORAGE PROFILE IDENTITY - AUTO SYNC ALL SCREENS */
+/* STORAGE RETRIEVAL AND PERSISTENT RECOGNITION UPDATER */
 function loadSavedIdentityData() {
   var storedName = localStorage.getItem('abst_visionary_name') || "RAM GANESH MAKINA";
   var storedID = localStorage.getItem('abst_sovereign_id') || "INDIAN.001";
   
-  // 1. Main Page
-  document.getElementById('dash-visionary-display').innerText = "Master Visionary: " + storedID + " " + storedName;
-  document.getElementById('dash-status-string').innerHTML = "Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
+  // 1. Dashboard Context Updates
+  var dashVision = document.getElementById('dash-visionary-display');
+  if(dashVision) dashVision.innerText = "Master Visionary: " + storedID + " " + storedName;
   
-  // 2. Welcome Screen - ID & NAME BOTH UPDATE
-  document.getElementById('welcome-id-display').innerText = "SOVEREIGN ID: " + storedID;
-  document.getElementById('welcome-visionary-name').innerText = storedName;
+  var dashStatus = document.getElementById('dash-status-string');
+  if(dashStatus) dashStatus.innerHTML = "Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
   
-  // 3. Profile Modal Inputs
-  document.getElementById('inputMasterName').value = storedName;
-  document.getElementById('inputSovereignID').value = storedID;
+  // 2. Gateway Overlay Synchronization Nodes
+  var welcomeID = document.getElementById('welcome-id-display');
+  if(welcomeID) welcomeID.innerText = "SOVEREIGN ID: " + storedID;
+  
+  var welcomeName = document.getElementById('welcome-visionary-name');
+  if(welcomeName) welcomeName.innerText = storedName;
+  
+  // 3. Admin Input Form Memory
+  var inputName = document.getElementById('inputMasterName');
+  var inputID = document.getElementById('inputSovereignID');
+  if(inputName) inputName.value = storedName;
+  if(inputID) inputID.value = storedID;
 }
 
 function saveProfileConfigurationData() {
@@ -445,12 +455,11 @@ function saveProfileConfigurationData() {
   if(varName !== "") localStorage.setItem('abst_visionary_name', varName);
   if(varID !== "") localStorage.setItem('abst_sovereign_id', varID);
   
-  // INSTANT UPDATE ALL SCREENS
   loadSavedIdentityData();
   closeM('profileModal');
 }
 
-/* PWA INSTALL ENGINE */
+/* UNIVERSAL APPLICATION DEPLOYMENT HOOKS */
 window.addEventListener('beforeinstallprompt', function(e) {
   e.preventDefault();
   deferredAppInstallPrompt = e;
@@ -464,10 +473,9 @@ window.addEventListener('beforeinstallprompt', function(e) {
 function triggerPwaInstallation() {
   var installCardNode = document.getElementById('pwaInstallCard');
   if(!deferredAppInstallPrompt) {
-    alert('📲 To install:\n\nAndroid: Chrome menu → Install App\n\niPhone: Safari Share → Add to Home Screen\n\nDesktop: Chrome address bar → Install icon');
+    alert('To install app:\n• Android: Chrome menu -> Add to Home screen\n• iOS Safari: Share -> Add to Home screen');
     return;
   }
-  
   deferredAppInstallPrompt.prompt();
   deferredAppInstallPrompt.userChoice.then(function(choiceResult) {
     if (choiceResult.outcome === 'accepted') {
@@ -479,21 +487,15 @@ function triggerPwaInstallation() {
   });
 }
 
-window.addEventListener('appinstalled', () => {
-  var installCardNode = document.getElementById('pwaInstallCard');
-  if(installCardNode) installCardNode.style.display = 'none';
-  isAppInstalled = true;
-  localStorage.setItem('abst_installed', 'true');
-});
-
 window.addEventListener('DOMContentLoaded', function(){
   loadSavedIdentityData();
   
   var overlay = document.getElementById('abst-welcome-overlay');
+  var cards = document.querySelectorAll('.icon-card');
+  
+  // Session handling to preserve dynamic matrix rendering triggers
   if (sessionStorage.getItem('welcomeOpenedThisSession') === 'true' || window.matchMedia('(display-mode: standalone)').matches) {
      if(overlay) overlay.style.display = 'none';
-     // If welcome skipped, trigger swirl directly
-     var cards = document.querySelectorAll('.icon-card');
      cards.forEach((card, index) => {
        setTimeout(() => {
          card.classList.add('swirl');
@@ -515,13 +517,10 @@ document.addEventListener('keydown',function(e){
   }
 });
 
-/* OFFLINE SERVICE WORKER - NET/WIFI LEKAPOINA PANICHESTHADI */
 if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('./service-worker.js',{scope:'./'})
-  .then(function(reg){ console.log("ABST Offline Matrix Active."); })
-  .catch(function(err){ console.log("Offline Layer Error: ", err); });
+  navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
+  .catch(function(err){ console.log("Offline Layer Sync: ", err); });
 }
 </script>
 </body>
 </html>
-    
