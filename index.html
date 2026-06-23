@@ -6,7 +6,6 @@
 <title>My Jeevandhara - ABST</title>
 <meta name="description" content="Akanda Bharat Sovereign Township - 36 Pillar Ecosystem">
 <meta name="theme-color" content="#0a192f">
-<link rel="manifest" href="manifest.json">
 <style>
 *{box-sizing:border-box}
 html{font-size:16px}
@@ -21,40 +20,51 @@ h3{color:#ffd700;font-size:14px;margin:0 8px 0;text-align:center}
 img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 
 /* MODAL ENGINE SYSTEM ARCHITECTURE */
-.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:9999;overflow:auto;padding:20px}
-.modal-inner{max-width:900px;margin:40px auto;background:#112240;border-radius:12px;padding:25px;position:relative;border:1px solid #233554}
-.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
-.modal-close{font-size:28px;cursor:pointer;line-height:1;color:#64ffda}
-.modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:13px;line-height:1.8;text-align:left;max-height:70vh;overflow-y:auto}
-.modal-body h4{color:#64ffda;margin-top:15px;border-left:3px solid #64ffda;padding-left:8px}
-.modal-body p{color:#ccd6f6;margin-bottom:12px}
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;overflow:auto;padding:20px}
+.modal-inner{max-width:500px;margin:50px auto;background:#112240;border-radius:12px;padding:25px;position:relative;border:1px solid #1a2a4a}
+.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.modal-close{font-size:24px;cursor:pointer;color:#64ffda;font-weight:bold}
+.modal-body{color:#ccd6f6;background:#0a192f;border-radius:8px;padding:20px;font-size:14px;line-height:1.7;text-align:left;border:1px solid #1a2a4a}
+.modal-body h4{color:#64ffda;margin-top:15px;margin-bottom:5px}
+.modal-body p{margin:0 0 10px 0}
+
+/* SCREENSHOT BUTTON STANDARD DESIGN */
+.modal-btn-action {
+    width: 100%;
+    margin-top: 20px;
+    background: #5effde;
+    color: #0a192f;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+}
+.modal-btn-action:active {
+    transform: scale(0.98);
+    background: #4cd4b7;
+}
 
 /* OVERLAY WELCOME ENGINE */
 #abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity 0.5s ease-out}
-.glow-welcome-text{color:#64ffda;font-size:32px;font-weight:bold;text-align:center;letter-spacing:3px;text-shadow:0 0 10px rgba(100,255,218,0.3);animation:neonPulse 2s ease-in-out infinite}
-#abst-welcome-sub{color:#FFD700;font-size:16px;margin-top:12px;letter-spacing:4px;font-weight:bold}
-
-@keyframes neonPulse{
-  0%, 100%{color:#64ffda}
-  50%{color:#a2fff0}
-}
+.glow-welcome-text{color:#64ffda;font-size:32px;font-weight:bold;text-align:center;letter-spacing:3px}
 
 .icon-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 0 20px;max-width:100%;margin:20px auto 0}
 .icon-card{background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer}
 .icon-card:active{background:#1a2f4a;transform:scale(0.97)}
 .icon-card.jarvis{border-color:#64ffda}
 .icon-card .icon{font-size:1.8rem;margin-bottom:5px}
-.icon-card span{color:#64ffda;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;display:block}
+.icon-card span{color:#64ffda;font-size:0.65rem;font-weight:700;letter-spacing:0.5px;display:block}
 </style>
 </head>
 <body>
 
-<!-- SESSION TRIGGERED OVERLAY -->
 <div id="abst-welcome-overlay">
   <div class="glow-welcome-text">WELCOME TO ABST</div>
-  <div id="abst-welcome-sub">SOVEREIGN ID: INDIAN.001</div>
-  <div style="color:#8892b0;font-size:13px;margin-top:25px;">Master Visionary: RAM GANESH MAKINA</div>
-  <div style="color:#64ffda;font-size:11px;margin-top:40px;">INITIALIZING LAYER 7 SECURE CORE...</div>
+  <div style="color:#FFD700;font-size:16px;margin-top:12px;font-weight:bold;letter-spacing:2px;">SOVEREIGN ID: INDIAN.001</div>
 </div>
 
 <div class="container">
@@ -62,7 +72,7 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <h1>My Jeevandhara</h1>
 <h3>Akanda Bharat Sovereign Township</h3>
 <p class="tagline">A 36-Pillar Ecosystem of Total Independence</p>
-<p class="visionary">Master Visionary: INDIAN.001 RAM GANESH MAKINA</p>
+<p class="visionary">Master Visionary: RAM GANESH MAKINA</p>
 
 <div class="icon-dashboard">
   <div class="icon-card" onclick="openM('dpr36Modal')">
@@ -112,91 +122,92 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <p class="status">Status: Operational | Jarvis AI Core Layer 7<br>Master: INDIAN.001 RAM GANESH MAKINA</p>
 </div>
 
-<!-- 10 STEP BLUEPRINT MODAL WITH ALL COMPLETELY FILED OVERLAYS -->
-<div id="blueprintModal" class="modal">
-<div class="modal-inner">
-<div class="modal-head">
-<h2 style="color:#FFD700;margin:0">🌐 DPR FRAMEWORK - 10 STEP BLUEPRINT</h2>
-<span onclick="closeM('blueprintModal')" class="modal-close">&times;</span>
-</div>
-<div class="modal-body">
-<h1 style="color:#64ffda;text-align:left;font-size:22px;margin-bottom:15px;">AKANDA BHARAT SMART ENERGY & EV ECOSYSTEM</h1>
-
-<h3 style="color:#00d4ff;margin-top:20px;">🛣️ SECTION 1: MOBILITY & DIRECT HARVESTING</h3>
-<h4>STEP 1: BHARAT DHARA EV LANE (Dynamic Charging Network)</h4>
-<p>A high-efficiency, dedicated 2-lane smart corridor designed for non-stop electric vehicle transit and continuous wireless inductive energy replenishment.</p>
-
-<h4>STEP 2: SMART ENERGY SPEED BUMPS (Kinetic Harvesting Zones)</h4>
-<p>Positioned strategically at critical traffic calming points to convert vehicular momentum directly into high-yield grid-fed electrical current via heavy piezoelectric systems.</p>
-
-<h4>STEP 3: INTEGRATED SOLAR WIND BARRIERS</h4>
-<p>Aerodynamic modular perimeter setups transforming crosswind drafts generated by heavy transit lines into active distributed power nodes using miniature vertical aero-turbines.</p>
-
-<h3 style="color:#00d4ff;margin-top:20px;">⚡ SECTION 2: INDEPENDENT PRODUCTION & THERMAL CORE</h3>
-<h4>STEP 4: PLASMA ENERGY CO-GENERATION</h4>
-<p>Deployment of sub-surface continuous plasma arc thermal engines processing raw municipal residue output direct into inert structural slag-bricks and base electricity layers.</p>
-
-<h4>STEP 5: ATMOSPHERIC RAIN HARVESTING MATRIX (TENG)</h4>
-<p>Triboelectric Nanogenerators embedded across smart roofing shields converting mechanical contact force from seasonal precipitation cycles into static electrical storage.</p>
-
-<h4>STEP 6: MOON-RAY PHOTOVOLTAIC LAYERS</h4>
-<p>Specialized high-sensitivity optical capture arrays tracking secondary luminescence configurations to generate lower-tier trickle currents throughout non-daylight phases.</p>
-
-<h3 style="color:#00d4ff;margin-top:20px;">🛡️ SECTION 3: RECYCLING, GRID MANAGEMENT & STORAGE</h3>
-<h4>STEP 7: rPET & CRITICAL METAL PROCESSING SHIELDS</h4>
-<p>Automated closed-loop separation lines converting processing polymers, glass elements, and structural aluminium scrap back into direct industrial manufacturing components.</p>
-
-<h4>STEP 8: THE SECURE BIO-VAULT RECOVERY ENGINE</h4>
-<p>Air-gapped mechanical storage facilities housing localized grid controllers, battery bank arrays, and core structural biological assets away from external network linkages.</p>
-
-<h4>STEP 9: TRIVARNA BHARAT METRICS NODE</h4>
-<p>A distributed database layer logging public resource recycling transactions, rewarding citizens automatically with infrastructure credits managed strictly by local tracking algorithms.</p>
-
-<h4>STEP 10: MD AGNI-PARIKSHA LEADERSHIP STABILITY MANDATE</h4>
-<p>Final systemic structural protocol forcing local state operational management heads into raw rural deployment checkouts to secure baseline resource balance verification.</p>
-</div>
-<button onclick="closeM('blueprintModal')" style="width:100%;margin-top:15px;background:#FFD700;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏢 CLOSE & RETURN TO DASHBOARD</button>
-</div>
-</div>
-
-<!-- 36 PILLARS LIST MODAL -->
+<!-- FILE 1000352528.jpg VERBATIM DATA MATCH -->
 <div id="pillars36Modal" class="modal">
 <div class="modal-inner">
 <div class="modal-head">
-<h2 style="color:#64ffda;margin:0">📋 ABST 36 PILLARS - COMPLETE LIST</h2>
+<h2 style="color:#64ffda;margin:0;font-size:20px;font-weight:bold;display:flex;align-items:center;gap:8px;">📋 ABST 36 PILLARS - COMPLETE LIST</h2>
 <span onclick="closeM('pillars36Modal')" class="modal-close">&times;</span>
 </div>
 <div class="modal-body">
-<p><strong>Sector I to VI Complete Infrastructure Core Map linked inside Jarvis AI Framework.</strong></p>
+<p style="text-align:center;margin:10px 0;font-size:14px;color:#ccd6f6;">Sector I to VI Complete Infrastructure Core Map linked inside Jarvis AI Framework.</p>
 </div>
-<button onclick="closeM('pillars36Modal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 CLOSE</button>
+<button onclick="closeM('pillars36Modal')" class="modal-btn-action">🏠 CLOSE</button>
 </div>
 </div>
 
-<!-- LICENSE MODAL -->
+<!-- FILE 1000352529.jpg VERBATIM DATA MATCH -->
 <div id="licenseModal" class="modal">
 <div class="modal-inner">
-<div class="modal-head"><h2 style="color:#64ffda;margin:0">📜 ABST LICENSE</h2><span onclick="closeM('licenseModal')" class="modal-close">&times;</span></div>
-<div class="modal-body">Copyright (c) 2026 ABST - Master Lock System. All Rights Reserved.</div>
-<button onclick="closeM('licenseModal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
+<div class="modal-head">
+<h2 style="color:#64ffda;margin:0;font-size:20px;font-weight:bold;display:flex;align-items:center;gap:8px;">📜 ABST LICENSE</h2>
+<span onclick="closeM('licenseModal')" class="modal-close">&times;</span>
+</div>
+<div class="modal-body">
+<p style="text-align:center;margin:10px 0;font-size:14px;color:#ccd6f6;">Copyright (c) 2026 ABST - Master Lock System. All Rights Reserved.</p>
+</div>
+<button onclick="closeM('licenseModal')" class="modal-btn-action">CLOSE</button>
 </div>
 </div>
 
-<!-- README MODAL -->
+<!-- FILE 1000352530.jpg VERBATIM DATA MATCH -->
 <div id="readmeModal" class="modal">
 <div class="modal-inner">
-<div class="modal-head"><h2 style="color:#64ffda;margin:0">📖 ABST README</h2><span onclick="closeM('readmeModal')" class="modal-close">&times;</span></div>
-<div class="modal-body">ABST Smart Grid Engine Framework Core. Initialized.</div>
-<button onclick="closeM('readmeModal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
+<div class="modal-head">
+<h2 style="color:#64ffda;margin:0;font-size:20px;font-weight:bold;display:flex;align-items:center;gap:8px;">📖 ABST README</h2>
+<span onclick="closeM('readmeModal')" class="modal-close">&times;</span>
+</div>
+<div class="modal-body">
+<p style="text-align:center;margin:10px 0;font-size:14px;color:#ccd6f6;">ABST Smart Grid Engine Framework Core. Initialized.</p>
+</div>
+<button onclick="closeM('readmeModal')" class="modal-btn-action">CLOSE</button>
 </div>
 </div>
 
-<!-- MASTERPLAN MODAL -->
+<!-- 10 STEP BLUEPRINT MODAL -->
+<div id="blueprintModal" class="modal">
+<div class="modal-inner" style="max-width: 600px;">
+<div class="modal-head">
+<h2 style="color:#FFD700;margin:0;font-size:18px;">🌐 DPR FRAMEWORK - 10 STEP BLUEPRINT</h2>
+<span onclick="closeM('blueprintModal')" class="modal-close">&times;</span>
+</div>
+<div class="modal-body" style="max-height:60vh; overflow-y:auto;">
+<h3 style="color:#64ffda;text-align:left;font-size:16px;margin:0 0 15px 0;">AKANDA BHARAT SMART ENERGY & EV ECOSYSTEM</h3>
+<p style="color:#64ffda;font-weight:bold;margin-top:15px;">🛣️ SECTION 1: MOBILITY & DIRECT HARVESTING</p>
+<h4>STEP 1: BHARAT DHARA EV LANE</h4>
+<p>A high-efficiency, dedicated 2-lane smart corridor designed for non-stop electric vehicle transit.</p>
+<h4>STEP 2: SMART ENERGY SPEED BUMPS</h4>
+<p>Positioned strategically at critical traffic calming points to convert vehicular momentum directly into electrical current.</p>
+<h4>STEP 3: INTEGRATED SOLAR WIND BARRIERS</h4>
+<p>Transforms crosswind drafts generated by heavy transit lines into active power nodes.</p>
+
+<p style="color:#64ffda;font-weight:bold;margin-top:15px;">⚡ SECTION 2: INDEPENDENT PRODUCTION & THERMAL CORE</p>
+<h4>STEP 4: PLASMA ENERGY CO-GENERATION</h4>
+<p>Deployment of plasma arc thermal engines processing raw municipal residue output direct into inert structural slag-bricks.</p>
+<h4>STEP 5: ATMOSPHERIC RAIN HARVESTING MATRIX (TENG)</h4>
+<p>Triboelectric Nanogenerators embedded across smart roofing shields converting precipitation force into storage.</p>
+<h4>STEP 6: MOON-RAY PHOTOVOLTAIC LAYERS</h4>
+<p>Specialized high-sensitivity optical capture arrays tracking secondary luminescence configurations.</p>
+
+<p style="color:#64ffda;font-weight:bold;margin-top:15px;">🛡️ SECTION 3: RECYCLING, GRID MANAGEMENT & STORAGE</p>
+<h4>STEP 7: rPET & CRITICAL METAL PROCESSING SHIELDS</h4>
+<p>Automated closed-loop separation lines converting processing polymers, glass elements, and structural aluminium scrap.</p>
+<h4>STEP 8: THE SECURE BIO-VAULT RECOVERY ENGINE</h4>
+<p>Air-gapped mechanical storage facilities housing localized grid controllers away from external network linkages.</p>
+<h4>STEP 9: TRIVARNA BHARAT METRICS NODE</h4>
+<p>A distributed database layer logging public resource recycling transactions, rewarding citizens with infrastructure credits.</p>
+<h4>STEP 10: MD AGNI-PARIKSHA LEADERSHIP MANDATE</h4>
+<p>Final systemic structural protocol forcing local state operational management heads into raw rural deployment checkouts.</p>
+</div>
+<button onclick="closeM('blueprintModal')" class="modal-btn-action" style="background:#ffd700;">🏢 CLOSE & RETURN</button>
+</div>
+</div>
+
 <div id="dpr36Modal" class="modal">
 <div class="modal-inner">
 <div class="modal-head"><h2 style="color:#64ffda;margin:0">🏛️ MASTERPLAN MAPS</h2><span onclick="closeM('dpr36Modal')" class="modal-close">&times;</span></div>
 <div class="modal-body">Maps Loading Core Grid Array System...</div>
-<button onclick="closeM('dpr36Modal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
+<button onclick="closeM('dpr36Modal')" class="modal-btn-action">CLOSE</button>
 </div>
 </div>
 
@@ -208,7 +219,6 @@ function openM(id){
   m.style.display='block';
   document.documentElement.classList.add('modal-open');
 }
-
 function closeM(id){
   var m=document.getElementById(id);
   if(m){
@@ -216,15 +226,6 @@ function closeM(id){
     document.documentElement.classList.remove('modal-open');
   }
 }
-
-document.addEventListener('keydown',function(e){
-  if(e.key==='Escape'){
-    document.querySelectorAll('.modal').forEach(function(m){m.style.display='none'});
-    document.documentElement.classList.remove('modal-open');
-  }
-});
-
-// SESSION INJECTION LOCK ENGINE (NO RELOAD LEAKS)
 window.addEventListener('DOMContentLoaded', function(){
   var overlay = document.getElementById('abst-welcome-overlay');
   if (overlay) {
@@ -237,7 +238,7 @@ window.addEventListener('DOMContentLoaded', function(){
           overlay.style.display = 'none';
           sessionStorage.setItem('welcomeExecuted', 'true');
         }, 500);
-      }, 4500);
+      }, 2000);
     }
   }
 });
