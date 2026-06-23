@@ -26,12 +26,11 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 .modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
 .modal-close{font-size:28px;cursor:pointer;line-height:1;color:#64ffda}
 .modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:13px;line-height:1.8;text-align:left;max-height:70vh;overflow-y:auto}
-.modal-body h4{color:#ffd700;margin-top:15px}
+.modal-body h4{color:#64ffda;margin-top:15px}
 .modal-body ul{padding-left:20px}
 
 /* HIGH-TECH INTERACTIVE GLOW WELCOME OVERLAY */
-#abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer}
-#abst-welcome-overlay.hidden{display:none}
+#abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity 0.5s ease-out}
 
 .glow-welcome-text{color:#64ffda;font-size:32px;font-weight:bold;text-align:center;letter-spacing:3px;text-shadow:0 0 10px rgba(100,255,218,0.3), 0 0 20px rgba(100,255,218,0.2);animation:neonPulse 2s ease-in-out infinite}
 #abst-welcome-sub{color:#FFD700;font-size:16px;margin-top:12px;letter-spacing:4px;font-weight:bold;text-shadow:0 0 8px rgba(255,215,0,0.4)}
@@ -45,16 +44,10 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 .interactive-phase-box{background:#112240;border:2px solid #233554;border-radius:8px;padding:15px;margin-bottom:15px;cursor:pointer;transition:all 0.2s ease-in-out}
 .interactive-phase-box:hover, .interactive-phase-box:active{background:#162c50;border-color:#ffd700;box-shadow:0 0 12px rgba(255,215,0,0.15)}
 
-/* LIVE INTEL STATUS DISPLAY */
-.live-intel-bar{background:#112240;border:1px dashed #233554;border-radius:12px;padding:10px 15px;margin:15px 0;display:flex;justify-content:space-between;font-family:monospace;font-size:11px}
-.intel-node{color:#64ffda}
-.intel-val{color:#ffd700;font-weight:bold}
-
 .icon-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 0 20px;max-width:100%;margin:20px auto 0}
 .icon-card{background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;transition:transform 0.1s ease}
 .icon-card:active{background:#1a2f4a;transform:scale(0.97)}
 .icon-card.jarvis{border-color:#64ffda;box-shadow:0 0 20px rgba(100,255,218,0.3)}
-.icon-card.tracker-highlight{border-color:#ffd700;box-shadow:0 0 15px rgba(255,215,0,0.2)}
 .icon-card .icon{font-size:1.8rem;margin-bottom:5px}
 .icon-card span{color:#64ffda;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;display:block}
 
@@ -65,12 +58,12 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 </head>
 <body>
 
-<!-- WELCOME SCREEN (CLICK TO ENTER) -->
-<div id="abst-welcome-overlay" onclick="bypassWelcome()">
+<!-- AUTO-ADVANCING WELCOME SCREEN (4.5s COUNTDOWN TIMEOUT) -->
+<div id="abst-welcome-overlay">
   <div class="glow-welcome-text">WELCOME TO ABST</div>
   <div id="abst-welcome-sub">SOVEREIGN ID: INDIAN.001</div>
   <div style="color:#8892b0;font-size:13px;margin-top:25px;letter-spacing:1px">Master Visionary: RAM GANESH MAKINA</div>
-  <div style="color:#64ffda;font-size:11px;margin-top:40px;opacity:0.7;animation:pulse 1.5s infinite">▶ TAP ON SCREEN TO ENTER SYSTEM ◀</div>
+  <div style="color:#64ffda;font-size:11px;margin-top:40px;opacity:0.7;">INITIALIZING CORE INTERFACES...</div>
 </div>
 
 <div class="container">
@@ -79,12 +72,6 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <h3>Akanda Bharat Sovereign Township</h3>
 <p class="tagline">A 36-Pillar Ecosystem of Total Independence</p>
 <p class="visionary">Master Visionary: INDIAN.001 RAM GANESH MAKINA</p>
-
-<!-- PITCH REALITY METRICS WIDGET BAR -->
-<div class="live-intel-bar">
-  <div class="intel-node">💧 AMRUTAVARSHA: <span class="intel-val" id="waterCounter">42,503 L</span></div>
-  <div class="intel-node">🌱 CARBON OFFSET: <span class="intel-val" id="carbonCounter">184.24 T</span></div>
-</div>
 
 <div class="icon-dashboard">
   <div class="icon-card" onclick="openM('dpr36Modal')">
@@ -95,9 +82,6 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
   </div>
   <div class="icon-card" onclick="window.open('./MyJeevandhara_Investor_Note.pdf','_blank')">
     <div class="icon">📊</div><span>INVESTOR NOTE</span>
-  </div>
-  <div class="icon-card tracker-highlight" onclick="openM('executionTrackerModal')">
-    <div class="icon">🏗️</div><span>EXECUTION TRACKER</span>
   </div>
   <div class="icon-card" onclick="window.location.href='dpr-complete.html'">
     <div class="icon">📜</div><span>DPR FULL TEXT</span>
@@ -137,7 +121,7 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <p class="status">Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: INDIAN.001 RAM GANESH MAKINA | P36 Active</p>
 </div>
 
-<!-- EXECUTION TRACKER MODAL -->
+<!-- MODULE INTEGRATION FOR INNER LINKS LOGIC -->
 <div id="executionTrackerModal" class="modal">
 <div class="modal-inner">
 <div class="modal-head">
@@ -145,63 +129,22 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <span onclick="closeM('executionTrackerModal')" class="modal-close">&times;</span>
 </div>
 <div class="modal-body">
-<h1 style="color:#64ffda;text-align:left;font-size:20px;border-bottom:1px solid #233554;padding-bottom:5px;margin-bottom:15px">EIA AUDIT & STRATEGIC BLUEPRINT VALIDATION</h1>
-
-<h4 style="color:#64ffda;margin-top:0">🛡️ SECTION 1: THE CORE SCALABILITY DISCHARGE (4-WAY MATRIX)</h4>
-<div style="background:#112240;border-left:4px solid #34d399;padding:12px;margin-bottom:15px;border-radius:0 8px 8px 0">
-  <ul style="margin:0;padding-left:15px;list-style-type:square">
-    <li><strong>Water Shield (Zero Tables Depletion):</strong> Complete zero-groundwater baseline. Uses seasonal free-condensation to sustain cooling networks with absolute zero active water input across 120 days of winter.</li>
-    <li><strong>Power Shield (2 MW Conservation):</strong> Low thermal delta structures lower localized work pressure, yielding a stable 40% reduction in continuous energy load.</li>
-    <li><strong>Public Security (500-Home Grid Capacity Offset):</strong> Zero deep industrial borewells on site. The 2 MW saving directly frees up public grid transmission safety headers for surrounding villages.</li>
-    <li><strong>Sovereign Compliance Match:</strong> Fully meets global ASHRAE standard operating thermal parameters (18°C - 27°C) alongside MoEFCC and APPCB regulations.</li>
-  </ul>
-</div>
-
-<h4 style="color:#64ffda">📋 SECTION 2: REGULATORY ASSURANCE CRITERIA (EIA HEARING SCRUTINY)</h4>
+<h4 style="color:#64ffda">📋 REGULATORY ASSURANCE CRITERIA</h4>
 <div class="interactive-phase-box">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
     <span style="color:#ffd700;font-weight:bold;font-size:14px">A. Monsoon Backup Isolation Strategy</span>
     <span class="tracker-badge success">READY</span>
   </div>
-  <p style="margin:0;font-size:12px;color:#8892b0;font-style:italic">"During periods of heavy monsoon downpours or sustained high-humidity windows where open-air thermal condensation limits stabilize, the computational cooling system automatically shifts into an advanced closed-loop chiller configuration utilizing treated Sewage Treatment Plant (STP) greywater loops. This configuration completely isolates the infrastructure from local municipal water bodies, maintaining absolute zero groundwater dependency across all seasons, weather conditions, or environmental extremes."</p>
+  <p style="margin:0;font-size:12px;color:#8892b0;font-style:italic">"During periods of heavy monsoon downpours or sustained high-humidity windows where open-air thermal condensation limits stabilize, the computational cooling system automatically shifts into an advanced closed-loop chiller configuration utilizing treated Sewage Treatment Plant (STP) greywater loops."</p>
 </div>
-
-<div class="interactive-phase-box">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-    <span style="color:#ffd700;font-weight:bold;font-size:14px">B. Automated SCADA Compliance Metering Network</span>
-    <span class="tracker-badge success">READY</span>
-  </div>
-  <p style="margin:0;font-size:12px;color:#8892b0;font-style:italic">"To provide auditable, real-time proof of zero-extraction status to regulatory authorities, an integrated array of industrial smart water inline meters coupled with a centralized SCADA system will record every cubic meter of water sourced and processed daily. An automated, tamper-proof monthly monitoring report will be compiled and submitted directly to the APPCB, confirming complete compliance with the zero groundwater extraction mandate."</p>
-</div>
-
-<h4 style="color:#64ffda">📊 SECTION 3: TURNKEY CIVIL ROADMAP & LEGACY OVERVIEW</h4>
-<!-- INSTALLED CLICK ACCELERATORS -->
 <div class="interactive-phase-box" onclick="closeM('executionTrackerModal'); openM('dpr36Modal');">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
     <span style="color:#ffd700;font-weight:bold;font-size:14px">Phase I: Digital Twin Construction Timeline</span>
     <span class="tracker-badge process">VIEW ARCHITECTURE MODEL</span>
   </div>
-  <p style="margin:5px 0 0 0;font-size:12px;color:#8892b0">24-Month Parallel Modular Structural Matrix. Baseline structural bones tracking deployment of high-tier pre-fabricated Lego-style modular walls built directly via the <strong>P17 Slag-Brick Factory</strong> right after core Plasma installation layers clear standard speed targets.</p>
+  <p style="margin:5px 0 0 0;font-size:12px;color:#8892b0">24-Month Parallel Modular Structural Matrix. Baseline structural bones tracking deployment of high-tier pre-fabricated Lego-style modular walls built directly via the <strong>P17 Slag-Brick Factory</strong>.</p>
 </div>
-
-<div class="interactive-phase-box" onclick="alert('System Core Integration Pending: The Revenue Trade Portal unlocks upon Mother Hub Vizag Field Initialization Phase.')">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-    <span style="color:#ffd700;font-weight:bold;font-size:14px">Phase II: "Our Amrutavarsha" Revenue Trade Portal</span>
-    <span class="tracker-badge process">LEDGER DISCONNECTED</span>
-  </div>
-  <p style="margin:5px 0 0 0;font-size:12px;color:#8892b0">Commercial corporate trade hub node setup framework. Monitors decentralized global retail volume tracking loops, wholesale distribution networks, and supply allocations ledger queues dynamically upon regional field activation.</p>
 </div>
-
-<div class="interactive-phase-box" onclick="closeM('executionTrackerModal'); openM('pillars36Modal');">
-  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-    <span style="color:#ffd700;font-weight:bold;font-size:14px">Phase III: P36 "MD Agni-Pariksha" Governance Matrix</span>
-    <span class="tracker-badge success">COMPLIANCE PROTOCOL LOCKED</span>
-  </div>
-  <p style="margin:5px 0 0 0;font-size:12px;color:#8892b0">Mandatory core asset distribution tracking system layout. Enforces zero-greed constitutional mandates by verifying each state Managing Director's 6-month rural field rotation service validation logs automatically.</p>
-</div>
-
-</div>
-<button onclick="closeM('executionTrackerModal')" style="width:100%;margin-top:15px;background:#ffd700;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
 </div>
 </div>
 
@@ -256,8 +199,7 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 2. NO COPY, FORK, MIRROR, REUPLOAD WITHOUT WRITTEN CONSENT<br>
 3. VERIFICATION: Jarvis AI Core Security Layer 7<br>
 4. STATUS: Mother Hub Vizag - Operational<br>
-5. ABST-MVL-v1.0 | 2026-04-10<br><br>
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT ANY WARRANTY.
+5. ABST-MVL-v1.0 | 2026-04-10
 </div>
 <button onclick="closeM('licenseModal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
 </div>
@@ -276,10 +218,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT ANY WARRANTY.
 <b>36-Pillar Ecosystem:</b> Total Independence Model<br>
 <b>Mission:</b> Sector 1 to 5 - Complete Sovereign System<br>
 <b>Status:</b> Operational | Mother Hub: Vizag<br>
-<b>Security:</b> Jarvis AI Core Layer 7<br>
-<b>Lock:</b> ABST-MVL-v1.0 | 2026-04-10<br><br>
-This project is protected under Master Visionary Lock.<br>
-See LICENSE for terms.
+<b>Security:</b> Jarvis AI Core Layer 7
 </div>
 <button onclick="closeM('readmeModal')" style="width:100%;margin-top:15px;background:#2e7d32;color:#fff;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">CLOSE</button>
 </div>
@@ -303,9 +242,6 @@ See LICENSE for terms.
 <h3 style="color:#64ffda;margin-bottom:10px">🌙 MASTER PLAN - NIGHT VIEW</h3>
 <img id="nightImg" alt="ABST Master Plan Night Mode" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #FFD700;background:#112240;min-height:200px">
 </div>
-<p><strong>Core Philosophy:</strong> <em>“One Nation One India One Bharat”</em></p>
-<p><strong>Development Vision:</strong> A self-sustaining, zero-emission, decentralized smart township powered by 36 integrated pillars.</p>
-<p><strong>Total Questions:</strong> 36 Pillars × 3 = 108 Mantra + 1000 Education Sahasra</p>
 </div>
 <button onclick="closeM('dpr36Modal')" style="width:100%;margin-top:15px;background:#64ffda;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
 </div>
@@ -319,88 +255,17 @@ See LICENSE for terms.
 </div>
 <div class="modal-body">
 <h1 style="color:#64ffda;text-align:left;font-size:22px">AKANDA BHARAT SMART ENERGY & EV ECOSYSTEM</h1>
-<h2 style="color:#ffd700;text-align:left;font-size:16px">🌐 Master Infrastructure Blueprint & Detailed Project Report (DPR)</h2>
-<p><strong>Core Philosophy:</strong> <em>“Drive Chesthune Charge – Park Chesthune Power”</em></p>
-<p><strong>Development Vision:</strong> A self-sustaining, zero-emission, decentralized smart township powered by the integration of the Pancha Bhoota and advanced cyber-physical infrastructure.</p>
 <h3 style="color:#64ffda">🛣️ SECTION 1: MOBILITY & DIRECT HARVESTING</h3>
 <h4>STEP 1: BHARAT DHARA EV LANE (Dynamic Charging Network)</h4>
 <p>A high-efficiency, dedicated 2-lane smart corridor designed for non-stop electric vehicle transit and continuous energy replenishment.</p>
-<ul>
-<li><strong>The Technology:</strong> Deep-embedded underground induction coils operating on highly resonant magnetic coupling frequencies.</li>
-<li><strong>Zero-Grid Footprint:</strong> Eliminates the need for traditional overhead catenary lines or visual landscape pollution.</li>
-<li><strong>On-Demand Activation:</strong> Segmented smart sensors communicate directly with incoming vehicle transponders, exciting only the specific underground pad section positioned beneath a moving EV to prevent transmission loss.</li>
-<li><strong>Efficiency Metric:</strong> Optimized for a steady continuous speed of <strong>60 km/h</strong> to ensure a consistent, flawless energy transfer rate >90%.</li>
-</ul>
 <h4>STEP 2: SMART ENERGY SPEED BUMPS (Kinetic Harvesting Zones)</h4>
 <p>Positioned strategically at critical traffic calming points to convert vehicular momentum directly into high-yield electrical current.</p>
-<ul>
-<li><strong>Deployment Locations:</strong> Implemented explicitly at township entrance toll gates, parking access ramps, and primary commercial intersection checkpoints.</li>
-<li><strong>Mechanical Mechanism:</strong> Heavy-duty, rubberized articulating surface pads that plunge under vehicle weight, spinning high-torque internal rack-and-pinion flywheels connected to underground mechanical alternators.</li>
-<li><strong>Closed-Loop Function:</strong> Captures the massive kinetic force typically wasted as brake heat during vehicle deceleration and channels it directly to power localized micro-grids, pedestrian lighting, and roadside sensors.</li>
-</ul>
-<h3 style="color:#64ffda">🏗️ SECTION 2: INFRASTRUCTURE & UTILITY NETWORKS</h3>
-<h4>STEP 3: UNDERGROUND ENERGY NETWORK (Subterranean Utility Tunnels)</h4>
-<p>The foundational physical skeleton of the city, keeping high-voltage transmission lines safe, accessible, and completely hidden from view.</p>
-<ul>
-<li><strong>Walkthrough Utility Tunnels:</strong> Spacious, structured underground concrete chambers engineered for housing power, data, and water lines side-by-side securely.</li>
-<li><strong>HDD Pipeline Isolation:</strong> Horizontal Directional Drilling (HDD) networks ensure maintenance can be carried out smoothly without disrupting the surface roads or halting EV lane operations.</li>
-<li><strong>Grid Decentralization:</strong> Collects raw AC/DC outputs from variable renewable sources across the township and safely distributes stabilized power to regional hubs.</li>
-</ul>
-<h4>STEP 4: P35 COMMAND HUB (The Digital Nervous System)</h4>
-<p>The centralized cognitive operational brain of the entire Sovereign City ecosystem, leveraging continuous automated data loops.</p>
-<ul>
-<li><strong>Real-Time Matrix Monitoring:</strong> Tracks power generation variables simultaneously across all wind leaves, kinetic speed bumps, and solar surfaces.</li>
-<li><strong>Load Balancing:</strong> Automatically routes energy supply to the <strong>Bharat Dhara EV Lane</strong> during heavy traffic peaks and redirects excess currents to storage banks during low-demand windows.</li>
-<li><strong>Water & Security Overseer:</strong> Monitors clean water distribution levels, filtration pressures, and structural perimeter integrity continuously.</li>
-</ul>
-<h3 style="color:#64ffda">🏬 SECTION 3: COMMERCIAL & URBAN RENEWABLE ARCHITECTURE</h3>
-<h4>STEP 5: AKANDA MALL SMART PARKING (Static Wireless Charging)</h4>
-<p>An elegant, hands-free charging environment built into primary commercial zones that completely redefines the modern parking experience.</p>
-<ul>
-<li><strong>The Interaction:</strong> Drivers experience a seamless "Park and Leave" flow—no heavy charging cables, manual payment interfaces, or mechanical plugs are required.</li>
-<li><strong>Resonant Inductive Mats:</strong> Flush-mount ground pads transfer power wirelessly straight into the vehicle's undercarriage receiver pad the moment the car aligns over the bay.</li>
-<li><strong>Automated Power Cut-off:</strong> Smart BMS systems execute an instant auto-disconnect sequence when the vehicle battery reaches 100% capacity to prevent overcharging degradation.</li>
-</ul>
-<h4>STEP 6: SOLAR ROOF PARKING CANOPY (Dual-Benefit Power Plants)</h4>
-<p>Turning open, exposed parking areas into robust, shelter-providing solar generation installations.</p>
-<ul>
-<li><strong>Structural Architecture:</strong> Durable overhead canopies lined completely with high-efficiency monocrystalline solar panels that act as heavy weather shields against rain and extreme sun.</li>
-<li><strong>Direct Supply Routing:</strong> Feeds the captured solar energy straight through underground conduits directly into the local parking lot's wireless charging pads below.</li>
-</ul>
-<h4>STEP 7: WIND LEAF ENERGY TREES (Biomimetic Wind Generation)</h4>
-<p>A unique intersection of high-concept landscape aesthetics and continuous, distributed micro-wind generation.</p>
-<ul>
-<li><strong>The Design:</strong> Striking decorative tree structures engineered to blend flawlessly into urban parks, shopping areas, and roadside green spaces.</li>
-<li><strong>AeroLeaf Technology:</strong> Houses micro-vertical axis wind turbines shaped like natural leaves that spin silently to capture omnidirectional breeze currents day and night.</li>
-</ul>
-<h3 style="color:#64ffda">💧 SECTION 4: RESOURCE INDEPENDENCE & METROPOLITAN SOVEREIGNTY</h3>
-<h4>STEP 8: BATTERY ENERGY STORAGE HUB (The Stabilizing Matrix)</h4>
-<p>A highly fortified, multi-megawatt subterranean battery storage system designed to guarantee uninterrupted power continuity.</p>
-<ul>
-<li><strong>Grid Stabilization:</strong> Absorbs sharp generation spikes from solar and wind systems during peak conditions, completely smoothing out the grid's power profile.</li>
-<li><strong>100% Uptime Guarantee:</strong> Supplies backup current to critical infrastructure, water filtration plants, and the EV lane at night or during sudden weather changes.</li>
-</ul>
-<h4>STEP 9: OUR AMRUTAVARSHA WATER TOWER (Hydro-Sovereignty Node)</h4>
-<p>A vital civic installation securing complete water self-reliance through advanced extraction and purification technologies.</p>
-<ul>
-<li><strong>Atmospheric Generation:</strong> Combines massive commercial atmospheric water generators (AWG) to pull pure water moisture straight from the coastal air.</li>
-<li><strong>Dual-Ion Ionization Shield:</strong> Utilizes a signature pharmaceutical-grade copper and silver ionization process to destroy pathogens and maintain crystalline purity.</li>
-<li><strong>Emergency Storage Reserves:</strong> Massive elevated and underground reservoirs ready to supply the township seamlessly during drought or natural disruption.</li>
-</ul>
-<h4>STEP 10: AKANDA BHARAT SOVEREIGN CITY (The Completed Sacred Mandala)</h4>
-<p>The ultimate execution of a smart city—an entirely integrated, completely circular eco-township organized in harmony with ancient sacred geometries.</p>
-<ul>
-<li><strong>Sri Yantra Structural Layout:</strong> The city zones are geometrically aligned to optimize logistics, utility paths, energy distribution efficiency, and community well-being.</li>
-<li><strong>100% Closed-Loop Independence:</strong> Energy, water, and mobility networks function in a perfect, harmonious cyclical loop where every output becomes a useful input for another sector.</li>
-</ul>
 </div>
 <button onclick="closeM('blueprintModal')" style="width:100%;margin-top:15px;background:#FFD700;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
 </div>
 
 <script>
-// CLEAN ENGINE MODAL TRIGGERS
 function openM(id){
-  // Close any active open modal instantly before rendering target framework to avoid overlap assets
   var activeModals = document.querySelectorAll('.modal');
   activeModals.forEach(function(modal) {
      modal.style.display = 'none';
@@ -426,24 +291,6 @@ function closeM(id){
   }
 }
 
-function runSimulatedCounters() {
-  var waterBase = 42503;
-  var carbonBase = 184.24;
-  setInterval(function() {
-    waterBase += Math.floor(Math.random() * 2) + 1;
-    carbonBase += (Math.random() * 0.01);
-    var waterElem = document.getElementById('waterCounter');
-    var carbonElem = document.getElementById('carbonCounter');
-    if(waterElem) waterElem.innerText = waterBase.toLocaleString() + " L";
-    if(carbonElem) carbonElem.innerText = carbonBase.toFixed(2) + " T";
-  }, 3000);
-}
-
-function bypassWelcome() {
-  var o=document.getElementById('abst-welcome-overlay');
-  if(o) o.style.display='none';
-}
-
 document.addEventListener('keydown',function(e){
   if(e.key==='Escape'){
     document.querySelectorAll('.modal').forEach(function(m){m.style.display='none'});
@@ -451,14 +298,16 @@ document.addEventListener('keydown',function(e){
   }
 });
 
+// AUTOMATIC OVERLAY REDIRECT RUNNER (4.5 SECONDS DEPLOYMENT)
 window.addEventListener('load',function(){
-  runSimulatedCounters();
-  var o=document.getElementById('abst-welcome-overlay');
-  if(sessionStorage.getItem('abst_welcome_shown')){
-    if(o) o.style.display='none';
-  }else{
-    sessionStorage.setItem('abst_welcome_shown','true');
-    // Removed legacy timeout so it forces interactions or stays crisp clean
+  var overlay=document.getElementById('abst-welcome-overlay');
+  if(overlay){
+    setTimeout(function(){
+      overlay.style.opacity = '0';
+      setTimeout(function(){
+        overlay.style.display = 'none';
+      }, 500);
+    }, 4500);
   }
 });
 
