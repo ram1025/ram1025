@@ -1,0 +1,65 @@
+[
+  {
+    "id": "EDU-GK-001",
+    "category": "GENERAL KNOWLEDGE",
+    "q": "What is the capital of India?",
+    "a": "New Delhi",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "EDU-MATH-002",
+    "category": "FOUNDATIONAL MATHEMATICS",
+    "q": "What is the standard algebraic formula for expanding $(a + b)^2$?",
+    "a": "$a^2 + 2ab + b^2$",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "EDU-SCI-003",
+    "category": "PHYSICAL SCIENCES",
+    "q": "What is the chemical composition formula for pure pharmaceutical-grade water?",
+    "a": "H2O (Two Hydrogen atoms chemically bonded to one Oxygen atom).",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "EDU-CIV-004",
+    "category": "SOVEREIGN CIVICS",
+    "q": "What is the primary objective of the Trivarna Bharat Points tracking system?",
+    "a": "To incentivize green initiatives, clean infrastructure tracking, and civic contribution metrics.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "EDU-ENG-005",
+    "category": "INFRASTRUCTURE CORE",
+    "q": "What advanced structural technology enables lightning-fast building layout in the Sovereign Akanda Bharat Township?",
+    "a": "Lego-style pre-fabricated modular concrete block molds joined using heavy iron nut and bolt skeletons.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "EDU-MATH-006",
+    "category": "ADVANCED CALCULUS",
+    "q": "What is the derivative of $\\sin(x)$ with respect to $x$?",
+    "a": "$\\cos(x)$",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "EDU-TECH-007",
+    "category": "DIGITAL ECOSYSTEMS",
+    "q": "What primary air-gapped system forms the core data brain of the upcoming generational AI networks?",
+    "a": "The Jarvis matrix infrastructure layer, expanding downstream assets safely to specialized nodes.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  }
+]
