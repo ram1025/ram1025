@@ -1,245 +1,145 @@
 [
-  {
-    "id": "ABST-P01",
-    "pillar": "1",
-    "q": "What is the 1st Pillar of ABST / Project AURA Mother Hub?",
-    "a": "Consciousness and Core Identification Systems.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P02",
-    "pillar": "2",
-    "q": "What is the 2nd Pillar focused on Earth sovereignty?",
-    "a": "The Plasma Plant for zero-waste high-efficiency molecular processing.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P03",
-    "pillar": "3",
-    "q": "What renewable energy source constitutes the 3rd Pillar?",
-    "a": "Solar Power (Sun Rays) high-efficiency gathering grid.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P04",
-    "pillar": "4",
-    "q": "What constitutes the Moon-Ray energy capture framework?",
-    "a": "4th Pillar: Nocturnal spectrum sub-photovoltaic energy systems.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P05",
-    "pillar": "5",
-    "q": "What airborne technology represents the 5th Pillar power generation?",
-    "a": "AWT (Airborne Wind Turbines) capturing high-altitude atmospheric currents.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P06",
-    "pillar": "6",
-    "q": "What is the technology behind Rain-Drop Energy extraction?",
-    "a": "6th Pillar: TENG (Triboelectric Nanogenerators) for liquid kinetic recovery.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P10",
-    "pillar": "10",
-    "q": "What core water processing framework is developed under Our Amrutavarsha Plant?",
-    "a": "10th Pillar: Mega Atmospheric Water Generation (AWG) extraction network.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P11",
-    "pillar": "11",
-    "q": "What technology is utilized in the 11th Pillar for pharmaceutical-grade water purity?",
-    "a": "The Guard: Dual-Ion Shield technology using precise Copper and Silver ionization.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P12",
-    "pillar": "12",
-    "q": "What physical structural infrastructure constitutes the 12th Pillar water security?",
-    "a": "Amrutavarsha Vendor Network and distributed public water security vaults.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P20",
-    "pillar": "20",
-    "q": "What standard underground delivery infrastructure handles high-volume cargo routing?",
-    "a": "20th Pillar: Walkthrough Utility Tunnel framework layout network.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P21",
-    "pillar": "21",
-    "q": "What trenchless construction pipeline model defines the 21st Pillar routing?",
-    "a": "HDD (Horizontal Directional Drilling) Pipeline Infrastructure Network.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P22",
-    "pillar": "22",
-    "q": "What clean kinetic asset captures energy from public pedestrian footfalls?",
-    "a": "22nd Pillar: Footstep Energy Walkways using embedded piezoelectric grids.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P23",
-    "pillar": "23",
-    "q": "What biometric master asset under lock protocols forms the 23rd Pillar?",
-    "a": "The Bio-Vault air-gapped genetic and asset vault protection framework.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P24",
-    "pillar": "24",
-    "q": "What residential infrastructure zone represents the 24th Pillar community core?",
-    "a": "Matru-Shakti Residential Township zone complexes.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P25",
-    "pillar": "25",
-    "q": "What baseline sovereign educational infrastructure forms the 25th Pillar?",
-    "a": "The KG to PhD Unified Sovereign Knowledge Building structure.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P26",
-    "pillar": "26",
-    "q": "What critical asset is developed immediately following the Plasma Plant installation?",
-    "a": "26th Pillar: Slag-Brick Factory using high-temperature eco-recycling residues.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P27",
-    "pillar": "27",
-    "q": "What specific materials recovery operation defines the 27th Pillar?",
-    "a": "rPET (Recycled Polyethylene Terephthalate) Factory and processing plant.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P28",
-    "pillar": "28",
-    "q": "What glass processing platform handles material recycling inside the 28th Pillar?",
-    "a": "Unified Glass Recycling and sorting recovery units.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P29",
-    "pillar": "29",
-    "q": "What non-ferrous metal recycling asset serves as the 29th Pillar skeleton?",
-    "a": "Aluminium Recycling and raw structural ingot Processing Units.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P30",
-    "pillar": "30",
-    "q": "What generalized recycling unit handles structural plastics tracking?",
-    "a": "30th Pillar: General Plastic Processing and thermal depolymerization works.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P31",
-    "pillar": "31",
-    "q": "What control center manages urban waste sorting loops dynamically?",
-    "a": "31st Pillar: Waste-to-Trash Command centralized network nodes.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P32",
-    "pillar": "32",
-    "q": "What specific bio-recycling protocol links urban waste directly to agriculture?",
-    "a": "32nd Pillar: Human Waste-to-Farming processing and fertilizer stabilization plants.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P33",
-    "pillar": "33",
-    "q": "What massive ecological purification infrastructure serves as the 33rd Pillar?",
-    "a": "Vayu-Shuddhi Forest carbon sequestration and atmospheric cleaning shield.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P34",
-    "pillar": "34",
-    "q": "What dynamic security network blocks unauthorized access under the 34th Pillar?",
-    "a": "Chain Mesh security array and AMG (Automated Monitoring Grid).",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P35",
-    "pillar": "35",
-    "q": "What tracking platform controls citizen tracking inside the 35th Pillar ecosystem?",
-    "a": "Indian.00X ID System encrypted sovereign verification framework.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-P36",
-    "pillar": "36",
-    "q": "What platform aggregates grassroots innovation submissions under the 36th Pillar?",
-    "a": "Ankur Idea Box crowd-sourced operational portal loop system.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  },
-  {
-    "id": "ABST-M01",
-    "pillar": "2",
-    "q": "What is the mandatory core principle of MD Agni-Pariksha?",
-    "a": "Every state MD must serve 6 months in rural villages with a water tank, remembering the very first person they served.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
-  }
+  { "id": "ABST-P01-Q1", "pillar": "1", "q": "What is the 1st Pillar of ABST / Project AURA?", "a": "P1: Plasma Plant running solar and plasma integration for 24/7 clean processing.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P01-Q2", "pillar": "1", "q": "What core cycle does the Plasma Plant establish?", "a": "A high-temperature thermal molecular transformation cycle with zero waste.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P01-Q3", "pillar": "1", "q": "Where does the Plasma Plant feed its processed solid byproduct residues?", "a": "Directly into the downstream P17: Slag-Brick Factory production line.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P02-Q1", "pillar": "2", "q": "What source constitutes the 2nd Pillar of ABST?", "a": "P2: Solar Power infrastructure harvesting daylight photo-voltaic current.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P02-Q2", "pillar": "2", "q": "Where are the primary solar collectors positioned across the township?", "a": "Mounted across dedicated Solar Habitat Rooftops and generation fields.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P02-Q3", "pillar": "2", "q": "What primary distribution profile does the Solar Power matrix feed?", "a": "Baseline operational grids and local township storage backup banks.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P03-Q1", "pillar": "3", "q": "What specialized technology defines the 3rd Pillar?", "a": "P3: Moon-Ray Energy capture networks utilizing highly sensitive material systems.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P03-Q2", "pillar": "3", "q": "What sub-luminous hardware harvests low-frequency lunar rays at night?", "a": "The Lunar Pulse Towers operating in night mode configurations.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P03-Q3", "pillar": "3", "q": "What grid balancing benefit is gained via Moon-Ray systems?", "a": "Continuous baseline background charging loops during off-peak night cycles.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P04-Q1", "pillar": "4", "q": "What airborne capture architecture serves as the 4th Pillar?", "a": "P4: AWT - Airborne Wind Turbines tapping high-altitude wind lanes.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P04-Q2", "pillar": "4", "q": "What generation equipment captures currents inside the wind grid?", "a": "Aeroleaf Wind Trees scattered around high aero-velocity sectors.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P04-Q3", "pillar": "4", "q": "Why is the 4th Pillar wind system ranked higher than ground wind arrays?", "a": "It intercepts steady, higher-velocity upper atmospheric jet streams.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P05-Q1", "pillar": "5", "q": "What liquid kinetic energy infrastructure covers the 5th Pillar?", "a": "P5: Rain-Drop Energy harvesting systems integrated on collection planes.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P05-Q2", "pillar": "5", "q": "What engineering hardware converts rainwater contact into live voltage?", "a": "Pluvia Kinetic Domes running specialized nanogenerator surface faces.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P05-Q3", "pillar": "5", "q": "What performance yield metric is expected from Pluvia Rain Power arrays?", "a": "An efficiency conversion capability scaling up to 97% optimization.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P06-Q1", "pillar": "6", "q": "What alternative fuel generation node serves as the 6th Pillar?", "a": "P6: Sovereign Green Fuel Plant executing clean hydrocarbon sorting loops.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P06-Q2", "pillar": "6", "q": "What dual byproduct lines flow out of the Sovereign Green Fuel Plant?", "a": "High-purity Bio-CNG fuels combined with stable organic Biochar masses.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P06-Q3", "pillar": "6", "q": "What direct logistical benefit does the 6th Pillar bring to transit lines?", "a": "Providing localized carbon-neutral vehicle fuels for internal logistics.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P07-Q1", "pillar": "7", "q": "What materials recycling setup covers the 7th Pillar?", "a": "P7: rPET Factory running advanced chemical purification loops for plastics.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P07-Q2", "pillar": "7", "q": "Where is the rPET processing stream logically integrated inside recycling zones?", "a": "As an foundational input feed line running inside the Aura Recycling cluster.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P07-Q3", "pillar": "7", "q": "What specific output materials does the rPET factory feed out?", "a": "High-grade polymer flakes used for structural fabrics and container manufacturing.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P08-Q1", "pillar": "8", "q": "What silicate recovery structure represents the 8th Pillar?", "a": "P8: Glass Recycling Unit configured for automated sorting tracking.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P08-Q2", "pillar": "8", "q": "What processing group does the Glass Recycling Unit cooperate with?", "a": "The primary P7-P11 Aura Recycling cluster.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P08-Q3", "pillar": "8", "q": "What downstream construction resource is saved by using cullet outputs?", "a": "Pre-cast structural glazing sheets and custom aggregate insulation fills.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P09-Q1", "pillar": "9", "q": "What metallurgy reclamation system defines the 9th Pillar?", "a": "P9: Aluminium Recycling Unit refining non-ferrous components.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P09-Q2", "pillar": "9", "q": "Why is the 9th Pillar essential for modular construction assemblies?", "a": "It yields lightweight structural alloy components for modular interlocking joints.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P09-Q3", "pillar": "9", "q": "What industrial zone contains the Aluminium Recycling installation setup?", "a": "The Aura Recycling heavy fabrication district layout.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P10-Q1", "pillar": "10", "q": "What vital utility acquisition asset is the 10th Pillar?", "a": "P10: Our Amrutavarsha AWG Plant & Central Reservoir framework.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P10-Q2", "pillar": "10", "q": "What extraction hardware drives intake inside the Amrutavarsha Plant?", "a": "High-throughput industrial Atmospheric Water Generation (AWG) condenser decks.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P10-Q3", "pillar": "10", "q": "Where is the harvested clear water stored for township distribution grids?", "a": "Injected into the Central Reservoir hub connecting to peripheral lines.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P11-Q1", "pillar": "11", "q": "What water purification system acts as the 11th Pillar?", "a": "P11: Dual-Ion Shield advanced non-chemical disinfection array.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P11-Q2", "pillar": "11", "q": "What metal vectors form the inline purification barrier for the shield?", "a": "Precisely monitored copper and silver ionization grids.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P11-Q3", "pillar": "11", "q": "What specific grade of liquid output does the 11th Pillar maintain?", "a": "Pharmaceutical-grade drinking water running through copper distribution layouts.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P12-Q1", "pillar": "12", "q": "What general sorting infrastructure maps to the 12th Pillar?", "a": "P12: General Plastic Processing Center executing multi-tier sorting loops.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P12-Q2", "pillar": "12", "q": "What tracking station ensures logistics flow through the processing yards?", "a": "The local Monitored Security Station P12 layout tracks incoming loads.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P12-Q3", "pillar": "12", "q": "What extraction method is used for unrecyclable plastic composite feeds?", "a": "Thermal processing lines turning mixed composites into hydrocarbon baselines.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P13-Q1", "pillar": "13", "q": "What centralized processing nerve center rules the 13th Pillar?", "a": "P13: Waste-to-Trash Command supervising automated bin networks.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P13-Q2", "pillar": "13", "q": "How does Waste-to-Trash Command check garbage states across the town blocks?", "a": "Via localized telemetry monitors updating tracking array interfaces.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P13-Q3", "pillar": "13", "q": "What downstream resource center does the 13th Pillar route loads to?", "a": "Dispatches inputs to the Plasma Plant and sorting yards.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P14-Q1", "pillar": "14", "q": "What ecological agricultural loop defines the 14th Pillar?", "a": "P14: Human Waste-to-Farming processing and processing centers.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P14-Q2", "pillar": "14", "q": "What purification phase cleans biological input matrices safely?", "a": "Thermophilic anaerobic treatment cycles to eliminate active pathogens.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P14-Q3", "pillar": "14", "q": "What specific land sector consumes the processed output loads from P14?", "a": "The agricultural food production fields wrapping the town periphery.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P15-Q1", "pillar": "15", "q": "What biological air mitigation zone covers the 15th Pillar?", "a": "P15: Vayu-Shuddhi Forest eco-shield ring structure.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P15-Q2", "pillar": "15", "q": "Where is the Vayu-Shuddhi Forest physically planted on the map?", "a": "Arranged as a dense biological filter ring encircling the central sectors.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P15-Q3", "pillar": "15", "q": "What tracking hardware checks air indexes inside the forest zone?", "a": "Distributed air-quality monitoring sensor nodes linked to the network.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P16-Q1", "pillar": "16", "q": "What peripheral perimeter defensive layer acts as the 16th Pillar?", "a": "P16: Chain Mesh & AMG perimeter security systems.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P16-Q2", "pillar": "16", "q": "What does AMG denote inside the 16th Pillar boundary architecture?", "a": "Automated Monitoring Grid coordinating peripheral warning tracks.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P16-Q3", "pillar": "16", "q": "How are localized wall breaches discovered by the tracking layout?", "a": "Via high-speed fiber-optic fence line compression sensors.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P17-Q1", "pillar": "17", "q": "What manufacturing block functions as the 17th Pillar?", "a": "P17: Slag-Brick Factory casting dense green structural modules.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P17-Q2", "pillar": "17", "q": "Where is the Slag-Brick Plant situated on the structural map?", "a": "Located near the industrial sector base next to the Aura Recycling blocks.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P17-Q3", "pillar": "17", "q": "What primary input feed does the 17th Pillar consume to mold building blocks?", "a": "Vitrified industrial slag outputs processed inside the Plasma Plant.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P18-Q1", "pillar": "18", "q": "What gas collection infrastructure operates as the 18th Pillar?", "a": "P18: Bio-Gas Compression Station for energy harvesting setups.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P18-Q2", "pillar": "18", "q": "What distribution pipeline handles bio-gas delivery below roads?", "a": "Dedicated subterranean high-strength green pipe paths.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P18-Q3", "pillar": "18", "q": "Where does the station draw its raw biological gases from?", "a": "Anaerobic byproduct tracking streams coming out of human waste loops.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P19-Q1", "pillar": "19", "q": "What arterial underground pathway represents the 19th Pillar?", "a": "P19: Walkthrough Utility Tunnel layout for unified municipal runs.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P19-Q2", "pillar": "19", "q": "What access point on the map allows crew entries into the tunnel run?", "a": "The designated Walkthrough Utility Tunnels P19 Entry terminal.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P19-Q3", "pillar": "19", "q": "Why does this walkthrough structure eliminate future municipal excavations?", "a": "It maps all electrical, liquid, and data channels accessibly within one reachable vault line.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P20-Q1", "pillar": "20", "q": "What trenchless network represents the 20th Pillar?", "a": "P20: HDD Pipeline Network crossing across township grids.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P20-Q2", "pillar": "20", "q": "What does HDD mean in the context of infrastructure laying operations?", "a": "Horizontal Directional Drilling, ensuring installation without ripping open top ground surface sheets.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P20-Q3", "pillar": "20", "q": "What heavy utility fluid is distributed through this deep pipeline network?", "a": "High-pressure municipal potable water routes flowing to regional sectors.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P21-Q1", "pillar": "21", "q": "What kinetic surface harvesting system defines the 21st Pillar?", "a": "P21: Footstep Energy Walkways converting commuter motion into power.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P21-Q2", "pillar": "21", "q": "Where is the main footstep harvesting lane mapped inside core zones?", "a": "Laid out along busy arterial paths like the Footstep Energy Walkway P21 corridor.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P21-Q3", "pillar": "21", "q": "What electronic modules underneath grid tiles transform step compression into electricity?", "a": "High-grade piezo-ceramic element modules anchored underneath walking pads.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P22-Q1", "pillar": "22", "q": "What high-security repository constitutes the 22nd Pillar?", "a": "P22: The Bio-Vault air-gapped data architecture.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P22-Q2", "pillar": "22", "q": "What verification metrics secure access to the Bio-Vault safe rooms?", "a": "Continuous heartbeat rhythm tracking counts, mantra vocal frequencies, and blood samples.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P22-Q3", "pillar": "22", "q": "What physical pipeline runs direct data fiber straight to the vault structure?", "a": "The air-gapped subterranean Rainbow Fiber network encased in concrete runs.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P23-Q1", "pillar": "23", "q": "What residential neighborhood enclave represents the 23rd Pillar?", "a": "P23: Matru-Shakti Residential complex sector.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P23-Q2", "pillar": "23", "q": "Where is the Matru-Shakti housing community built on the township grid?", "a": "Positioned adjacent to the local green zone labeled Matru Shakti Housing P23 on maps.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P23-Q3", "pillar": "23", "q": "What localized utility block delivers direct water volume to this community block?", "a": "The Our Amrutavarsha Residency Towers P23 structural cluster.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P24-Q1", "pillar": "24", "q": "What multi-level educational compound represents the 24th Pillar?", "a": "P24: KG to PhD Building training system layout.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P24-Q2", "pillar": "24", "q": "What academic mandate applies to the founder's lineage inside the 24th Pillar?", "a": "Completing a thorough ground-up graduation track before gaining system credentials.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P24-Q3", "pillar": "24", "q": "What localized operational kernel engine roots its training curriculum here?", "a": "The specialized ABST P24 Civilization OS system framework logic.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P25-Q1", "pillar": "25", "q": "What health system asset covers the 25th Pillar?", "a": "P25: Project Hospital clinical infrastructure.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P25-Q2", "pillar": "25", "q": "What adjacent residential zone supports staff housing next to the hospital?", "a": "The Senior Living P25 zone situated nearby.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P25-Q3", "pillar": "25", "q": "How are hospital emergency services isolated from main public power outages?", "a": "Connected via dedicated redundant lines tied directly into the hybrid generation loop.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P26-Q1", "pillar": "26", "q": "What financial operational asset map defines the 26th Pillar?", "a": "P26: Project Bank transactional framework.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P26-Q2", "pillar": "26", "q": "What tracking metric registers credit value adjustments inside bank vaults?", "a": "The localized Trivarna Bharat Points token accounting tracking balance.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P26-Q3", "pillar": "26", "q": "How does the Project Bank publish audit books transparently?", "a": "By broadcasting live data modifications directly onto the township's TV network.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P27-Q1", "pillar": "27", "q": "What merchant infrastructure layout serves as the 27th Pillar?", "a": "P27: Food & Clothing Malls commercial retail districts.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P27-Q2", "pillar": "27", "q": "Where do the clothing sections fetch their raw sustainable thread inputs?", "a": "Woven out of high-grade plastic polymer filaments refined at the P7: rPET plant.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P27-Q3", "pillar": "27", "q": "What point balances can citizens redeem to clear grocery balances at checkout lines?", "a": "Accumulated Trivarna Bharat Points verified instantly by identity terminals.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P28-Q1", "pillar": "28", "q": "What civic interaction tool defines the 28th Pillar?", "a": "P28: Sovereign Simulation Game crowd-sourcing platform.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P28-Q2", "pillar": "28", "q": "What optimization target is achieved by running the town simulation loops?", "a": "Testing community layout designs and city cleaning optimizations dynamically.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P28-Q3", "pillar": "28", "q": "Where are top-voted planning changes forwarded for engineering consideration?", "a": "Sent over to structural team desks operating inside the Central Command hubs.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P29-Q1", "pillar": "29", "q": "What institutional recognition monument forms the 29th Pillar?", "a": "P29: Global Innovators & Walls of Fame acknowledgement blocks.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P29-Q2", "pillar": "29", "q": "Whose names are etched permanently into the stone plaques of the walls?", "a": "Top contributing citizens, breakthrough inventors, and key project pathfinders.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P29-Q3", "pillar": "29", "q": "What internal accounting tracking level determines placement on the walls?", "a": "Highest tier cumulative aggregates of lifetime Trivarna Bharat Points.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P30-Q1", "pillar": "30", "q": "What mechanical recovery loop sets up the 30th Pillar?", "a": "P30: RVM Network automated reverse vending machine installations.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P30-Q2", "pillar": "30", "q": "What immediate reward is dropped when a citizen feeds empty containers into an RVM?", "a": "Instant digital allocation of Trivarna Bharat Points directly to their profile card.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P30-Q3", "pillar": "30", "q": "Where do containers go once crushed inside the RVM processing gate?", "a": "Routed straight to the Aura Recycling center sorting tracks.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P31-Q1", "pillar": "31", "q": "What identity system anchors security across the 31st Pillar?", "a": "P31: Indian.00X ID System secure identity matrix.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P31-Q2", "pillar": "31", "q": "What basic baseline ID variant is shown on the dashboard header layout?", "a": "The Sovereign ID: INDIAN.001 master credential clearance.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P31-Q3", "pillar": "31", "q": "What operational doors unlock when an Indian.00X ID matches bio-keys?", "a": "Secure command desks, transit gates, and internal sovereign data sectors.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P32-Q1", "pillar": "32", "q": "What merchant coordination loop covers the 32nd Pillar?", "a": "P32: Our Amrutavarsha Vendor Network logistics engine.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P32-Q2", "pillar": "32", "q": "Whose leadership name operates the central water franchise systems?", "a": "The founder's wife, Khulsum Parveen, managing foundational operations.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P32-Q3", "pillar": "32", "q": "Where do the vendor hubs draw their liquid retail stock from?", "a": "Directly from the clean lines of the P10: Amrutavarsha AWG plant.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P33-Q1", "pillar": "33", "q": "What audit infrastructure represents the 33rd Pillar?", "a": "P33: Transparency Hub public verification center.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P33-Q2", "pillar": "33", "q": "What structural command element contains this media operation station?", "a": "The IT & Command Hub P35 Data Center facility layout.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P33-Q3", "pillar": "33", "q": "What central directive does the 33rd Pillar execute to stop inside tampering?", "a": "Broadcasting un-falsifiable, continuous 24/7 financial and environmental metric streams to town citizens.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P34-Q1", "pillar": "34", "q": "What tracking network maps to the 34th Pillar?", "a": "P34: Sentinel-Eye CCTV Network surveillance matrix.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P34-Q2", "pillar": "34", "q": "What core routing facility manages telemetry data streams for the Sentinel-Eye grid?", "a": "The Digital Bharat Hub P34 processing block.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P34-Q3", "pillar": "34", "q": "How does the tracking layout monitor peripheral town sectors simultaneously?", "a": "Via optical panoramic tracking units mounted on peripheral towers.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P35-Q1", "pillar": "35", "q": "What logic architecture defines the 35th Pillar?", "a": "P35: Jarvis AI Core centralized processing matrix.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P35-Q2", "pillar": "35", "q": "Where are the primary processor nodes of Jarvis physically housed?", "a": "Protected deep inside the IT & Command Hub P35 facility bunker.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P35-Q3", "pillar": "35", "q": "What data algorithm governs card pacing inside the system's learning engine?", "a": "The SM-2 Algorithmic loop executing optimal interval flashcard tracking.", "state": "new", "passCount": 0, "ease": 2.5 },
+
+  { "id": "ABST-P36-Q1", "pillar": "36", "q": "What executive policy mandate constitutes the 36th Pillar?", "a": "P36: MD Agni-Pariksha Leadership Mandate qualification code.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P36-Q2", "pillar": "36", "q": "What operational terms apply to a Managing Director during this service check?", "a": "Serving a mandatory 6-month period inside a rural village managing a water tank unit.", "state": "new", "passCount": 0, "ease": 2.5 },
+  { "id": "ABST-P36-Q3", "pillar": "36", "q": "What individual accountability metric completes the Agni-Pariksha test?", "a": "Remembering the identity and face of the very first citizen they served on the ground level.", "state": "new", "passCount": 0, "ease": 2.5 }
 ]
