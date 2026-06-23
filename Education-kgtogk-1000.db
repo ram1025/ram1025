@@ -63,3 +63,3607 @@
     "ease": 2.5
   }
 ]
+[
+  {
+    "id": 241,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "MPC: What is the derivative of x squared with respect to x?",
+    "options": ["x", "2x", "x^2", "2"],
+    "a": "2x",
+    "mode": "FLIP"
+  },
+  {
+    "id": 242,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "MPC: Which vector operation results in a scalar quantity?",
+    "options": ["Cross Product", "Dot Product", "Vector Addition", "Curl"],
+    "a": "Dot Product",
+    "mode": "FLIP"
+  },
+  {
+    "id": 243,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "MPC: What is the value of log base 10 of 100?",
+    "options": ["1", "2", "10", "100"],
+    "a": "2",
+    "mode": "FLIP"
+  },
+  {
+    "id": 244,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "MPC: What type of collision conserves both kinetic energy and momentum?",
+    "options": ["Inelastic", "Elastic", "Perfectly Inelastic", "Explosive"],
+    "a": "Elastic",
+    "mode": "FLIP"
+  },
+  {
+    "id": 245,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "MPC: What is the value of the universal gravitational constant G?",
+    "options": ["6.67 x 10^-11 N m^2/kg^2", "9.8 m/s^2", "6.02 x 10^23", "3 x 10^8 m/s"],
+    "a": "6.67 x 10^-11 N m^2/kg^2",
+    "mode": "FLIP"
+  },
+  {
+    "id": 246,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "MPC: What is the hybridisation of carbon in methane (CH4)?",
+    "options": ["sp", "sp2", "sp3", "dsp2"],
+    "a": "sp3",
+    "mode": "FLIP"
+  },
+  {
+    "id": 247,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "MPC: Which gas law states that volume is directly proportional to temperature at constant pressure?",
+    "options": ["Boyle's Law", "Charles's Law", "Gay-Lussac's Law", "Avogadro's Law"],
+    "a": "Charles's Law",
+    "mode": "FLIP"
+  },
+  {
+    "id": 248,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "MPC: What is the value of sin(90 degrees)?",
+    "options": ["0", "0.5", "1", "-1"],
+    "a": "1",
+    "mode": "FLIP"
+  },
+  {
+    "id": 249,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What is the value of the integral of 1/x with respect to x?",
+    "options": ["x", "ln(x)", "e^x", "-1/x^2"],
+    "a": "ln(x)",
+    "mode": "FLIP"
+  },
+  {
+    "id": 250,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What device stores electric charge in an electrical circuit?",
+    "options": ["Resistor", "Inductor", "Capacitor", "Diode"],
+    "a": "Capacitor",
+    "mode": "FLIP"
+  },
+  {
+    "id": 251,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What is the unit of magnetic flux density?",
+    "options": ["Weber", "Tesla", "Henry", "Farad"],
+    "a": "Tesla",
+    "mode": "FLIP"
+  },
+  {
+    "id": 252,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: Which rule determines the direction of a magnetic field around a straight current-carrying wire?",
+    "options": ["Right-Hand Thumb Rule", "Fleming's Left-Hand Rule", "Fleming's Right-Hand Rule", "Lenz's Law"],
+    "a": "Right-Hand Thumb Rule",
+    "mode": "FLIP"
+  },
+  {
+    "id": 253,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What type of semiconductor is formed by doping silicon with arsenic?",
+    "options": ["p-type", "n-type", "Intrinsic", "Insulator"],
+    "a": "n-type",
+    "mode": "FLIP"
+  },
+  {
+    "id": 254,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What order of reaction has a rate independent of reactant concentration?",
+    "options": ["First Order", "Second Order", "Zero Order", "Pseudo First Order"],
+    "a": "Zero Order",
+    "mode": "FLIP"
+  },
+  {
+    "id": 255,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: Which functional group characterizes aldehydes?",
+    "options": ["-COOH", "-CHO", "-OH", "-CO-"],
+    "a": "-CHO",
+    "mode": "FLIP"
+  },
+  {
+    "id": 256,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What property causes light to bend when moving from one medium to another?",
+    "options": ["Reflection", "Refraction", "Diffraction", "Polarization"],
+    "a": "Refraction",
+    "mode": "FLIP"
+  },
+  {
+    "id": 257,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What is the determinant of an identity matrix?",
+    "options": ["0", "1", "-1", "Undefined"],
+    "a": "1",
+    "mode": "FLIP"
+  },
+  {
+    "id": 258,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What phenomenon demonstrates the particle nature of light?",
+    "options": ["Interference", "Diffraction", "Photoelectric Effect", "Polarization"],
+    "a": "Photoelectric Effect",
+    "mode": "FLIP"
+  },
+  {
+    "id": 259,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What is the standard SI unit of electric potential?",
+    "options": ["Ampere", "Ohm", "Volt", "Coulomb"],
+    "a": "Volt",
+    "mode": "FLIP"
+  },
+  {
+    "id": 260,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What mineral ore is refined to produce Aluminium?",
+    "options": ["Hematite", "Bauxite", "Galena", "Magnetite"],
+    "a": "Bauxite",
+    "mode": "FLIP"
+  },
+  {
+    "id": 261,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: If a matrix commutes under multiplication with another, then AB equals:",
+    "options": ["BA", "-BA", "I", "0"],
+    "a": "BA",
+    "mode": "FLIP"
+  },
+  {
+    "id": 262,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What law relates the total electric flux through a closed surface to the enclosed charge?",
+    "options": ["Gauss's Law", "Ampere's Law", "Coulomb's Law", "Faraday's Law"],
+    "a": "Gauss's Law",
+    "mode": "FLIP"
+  },
+  {
+    "id": 263,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What is the name of the process used to manufacture Ammonia industrially?",
+    "options": ["Haber Process", "Ostwald Process", "Contact Process", "Solvay Process"],
+    "a": "Haber Process",
+    "mode": "FLIP"
+  },
+  {
+    "id": 264,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What are the roots of the equation x^2 + 1 = 0?",
+    "options": ["1, -1", "0", "i, -i", "Real numbers"],
+    "a": "i, -i",
+    "mode": "FLIP"
+  },
+  {
+    "id": 265,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "MPC: What kind of lens is used to correct Hypermetropia?",
+    "options": ["Concave", "Convex", "Cylindrical", "Bifocal"],
+    "a": "Convex",
+    "mode": "FLIP"
+  },
+  {
+    "id": 266,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "BiPC: Which powerhouse plant organelle converts sugar into ATP?",
+    "options": ["Chloroplast", "Mitochondria", "Golgi Body", "Ribosome"],
+    "a": "Mitochondria",
+    "mode": "FLIP"
+  },
+  {
+    "id": 267,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "BiPC: What tissue transports manufactured food from leaves to other plant parts?",
+    "options": ["Xylem", "Phloem", "Parenchyma", "Cambium"],
+    "a": "Phloem",
+    "mode": "FLIP"
+  },
+  {
+    "id": 268,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "BiPC: Who is universally recognized as the Father of Botany?",
+    "options": ["Aristotle", "Theophrastus", "Gregor Mendel", "Linnaeus"],
+    "a": "Theophrastus",
+    "mode": "FLIP"
+  },
+  {
+    "id": 269,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "BiPC: What major human organ filters urea out of the bloodstream?",
+    "options": ["Liver", "Kidney", "Lungs", "Heart"],
+    "a": "Kidney",
+    "mode": "FLIP"
+  },
+  {
+    "id": 270,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "BiPC: What chemical compound acts as the primary oxygen carrier in human blood?",
+    "options": ["Hemocyanin", "Hemoglobin", "Myoglobin", "Albumin"],
+    "a": "Hemoglobin",
+    "mode": "FLIP"
+  },
+  {
+    "id": 271,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "BiPC: Which vitamin deficiency leads to impaired night vision?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "a": "Vitamin A",
+    "mode": "FLIP"
+  },
+  {
+    "id": 272,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "BiPC: What structural bone framework protects the human brain?",
+    "options": ["Ribcage", "Sternum", "Cranium", "Pelvis"],
+    "a": "Cranium",
+    "mode": "FLIP"
+  },
+  {
+    "id": 273,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "BiPC: What type of animal nutrition involves engulfing solid organic food items?",
+    "options": ["Saprozoic", "Holozoic", "Parasitic", "Symbiotic"],
+    "a": "Holozoic",
+    "mode": "FLIP"
+  },
+  {
+    "id": 274,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: Who formulated the fundamental laws of genetic inheritance?",
+    "options": ["Charles Darwin", "Gregor Mendel", "Jean Lamarck", "Watson and Crick"],
+    "a": "Gregor Mendel",
+    "mode": "FLIP"
+  },
+  {
+    "id": 275,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What structural spiral geometry describes the double helix blueprint of DNA?",
+    "options": ["Single Helix", "Double Helix", "Triple Strand", "Linear"],
+    "a": "Double Helix",
+    "mode": "FLIP"
+  },
+  {
+    "id": 276,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What hormone drops trigger the condition known as Diabetes Mellitus?",
+    "options": ["Glucagon", "Insulin", "Thyroxin", "Adrenaline"],
+    "a": "Insulin",
+    "mode": "FLIP"
+  },
+  {
+    "id": 277,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What protective viral envelope shell encapsulates genetic RNA or DNA strands?",
+    "options": ["Capsid", "Cell Wall", "Plasma Membrane", "Endospore"],
+    "a": "Capsid",
+    "mode": "FLIP"
+  },
+  {
+    "id": 278,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What structure develops into a botanical seed after successful plant fertilization?",
+    "options": ["Ovary", "Ovule", "Stigma", "Anther"],
+    "a": "Ovule",
+    "mode": "FLIP"
+  },
+  {
+    "id": 279,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What unique target cells are specifically destroyed by the HIV virus?",
+    "options": ["Red Blood Cells", "B-cells", "Helper T-cells", "Blood Platelets"],
+    "a": "Helper T-cells",
+    "mode": "FLIP"
+  },
+  {
+    "id": 280,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What graphical diagram charts ecological hierarchies from producers to apex predators?",
+    "options": ["Food Web", "Ecological Pyramid", "Phylogenetic Tree", "Cladogram"],
+    "a": "Ecological Pyramid",
+    "mode": "FLIP"
+  },
+  {
+    "id": 281,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What is the primary gaseous plant hormone responsible for fruit ripening?",
+    "options": ["Auxin", "Gibberellin", "Ethylene", "Abscisic Acid"],
+    "a": "Ethylene",
+    "mode": "FLIP"
+  },
+  {
+    "id": 282,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: Which human organ secretes bile juice to emulsify dietary fats?",
+    "options": ["Pancreas", "Stomach", "Liver", "Gallbladder"],
+    "a": "Liver",
+    "mode": "FLIP"
+  },
+  {
+    "id": 283,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What structural functional units filter systemic fluids within human kidneys?",
+    "options": ["Neurons", "Nephrons", "Alveoli", "Villi"],
+    "a": "Nephrons",
+    "mode": "FLIP"
+  },
+  {
+    "id": 284,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What baseline stage describes a stable biological community capping ecological succession?",
+    "options": ["Seral Stage", "Pioneer Community", "Climax Community", "Ecotone"],
+    "a": "Climax Community",
+    "mode": "FLIP"
+  },
+  {
+    "id": 285,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What cell division mechanism preserves standard chromosome numbers across daughters?",
+    "options": ["Mitosis", "Meiosis", "Amitosis", "Binary Fission"],
+    "a": "Mitosis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 286,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What process involves transcribing encoded DNA sequences into functional mRNA patterns?",
+    "options": ["Translation", "Transcription", "Replication", "Mutation"],
+    "a": "Transcription",
+    "mode": "FLIP"
+  },
+  {
+    "id": 287,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: Which interactive symbiosis benefits one species while leaving the other completely unaffected?",
+    "options": ["Mutualism", "Parasitism", "Commensalism", "Amensalism"],
+    "a": "Commensalism",
+    "mode": "FLIP"
+  },
+  {
+    "id": 288,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What specific base component pairs exclusively with Adenine inside RNA structures?",
+    "options": ["Thymine", "Uracil", "Cytosine", "Guanine"],
+    "a": "Uracil",
+    "mode": "FLIP"
+  },
+  {
+    "id": 289,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What standard antibody class dominates early human immune responses?",
+    "options": ["IgG", "IgA", "IgM", "IgE"],
+    "a": "IgM",
+    "mode": "FLIP"
+  },
+  {
+    "id": 290,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "BiPC: What standard vector transmits structural DNA loops inside genetic engineering projects?",
+    "options": ["Plasmid", "Ribosome", "Chromosome", "Histone"],
+    "a": "Plasmid",
+    "mode": "FLIP"
+  },
+  {
+    "id": 291,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "CEC: What economic baseline tracking defines the core science of managing scarce resources?",
+    "options": ["Accounting", "Economics", "Commerce", "Management"],
+    "a": "Economics",
+    "mode": "FLIP"
+  },
+  {
+    "id": 292,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "CEC: What primary book captures everyday financial exchanges in chronological sequence?",
+    "options": ["Ledger", "Journal", "Balance Sheet", "Trial Balance"],
+    "a": "Journal",
+    "mode": "FLIP"
+  },
+  {
+    "id": 293,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "CEC: Who is universally acclaimed as the historic Father of Economics?",
+    "options": ["John Maynard Keynes", "Adam Smith", "Alfred Marshall", "Karl Marx"],
+    "a": "Adam Smith",
+    "mode": "FLIP"
+  },
+  {
+    "id": 294,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "CEC: What core asset class can be quickly liquidated into standard cash parameters?",
+    "options": ["Fixed Assets", "Liquid Assets", "Intangible Assets", "Fictitious Assets"],
+    "a": "Liquid Assets",
+    "mode": "FLIP"
+  },
+  {
+    "id": 295,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "CEC: What microeconomic principle shows consumer demand falling as product prices rise?",
+    "options": ["Law of Supply", "Law of Demand", "Law of Diminishing Utility", "Law of Substitution"],
+    "a": "Law of Demand",
+    "mode": "FLIP"
+  },
+  {
+    "id": 296,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "CEC: What primary side of a standard ledger account logs incoming asset value gains?",
+    "options": ["Debit Side", "Credit Side", "Asset Side", "Liability Side"],
+    "a": "Debit Side",
+    "mode": "FLIP"
+  },
+  {
+    "id": 297,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "CEC: What corporate structure runs operations owned jointly by multiple shared partners?",
+    "options": ["Sole Proprietorship", "Partnership", "Joint Stock Company", "Cooperative"],
+    "a": "Partnership",
+    "mode": "FLIP"
+  },
+  {
+    "id": 298,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "CEC: What accounting rule demands capturing operations from a separate company lens rather than the owner's?",
+    "options": ["Going Concern Concept", "Business Entity Concept", "Money Measurement Concept", "Dual Aspect Concept"],
+    "a": "Business Entity Concept",
+    "mode": "FLIP"
+  },
+  {
+    "id": 299,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What final ledger sheet tracks structural balances across enterprise asset and debt blocks?",
+    "options": ["Trading Account", "Profit & Loss Account", "Balance Sheet", "Cash Flow Statement"],
+    "a": "Balance Sheet",
+    "mode": "FLIP"
+  },
+  {
+    "id": 300,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What market structure features a single enterprise controlling an entire product supply loop?",
+    "options": ["Perfect Competition", "Monopoly", "Oligopoly", "Monopolistic Competition"],
+    "a": "Monopoly",
+    "mode": "FLIP"
+  },
+  {
+    "id": 301,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: Which institutional bank controls currency design and systemic cash reserves in India?",
+    "options": ["State Bank of India", "Reserve Bank of India", "HDFC Bank", "Punjab National Bank"],
+    "a": "Reserve Bank of India",
+    "mode": "FLIP"
+  },
+  {
+    "id": 302,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What specific financial entry tracks gradual value degradation across operating fixed assets?",
+    "options": ["Appreciation", "Depreciation", "Amortization", "Bad Debts"],
+    "a": "Depreciation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 303,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What macroeconomic category calculates total internal output valuations produced inside a country's boundaries?",
+    "options": ["Gross Domestic Product", "Gross National Product", "Net National Product", "Per Capita Income"],
+    "a": "Gross Domestic Product",
+    "mode": "FLIP"
+  },
+  {
+    "id": 304,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What internal management function steers teams toward strategic institutional milestones?",
+    "options": ["Planning", "Organizing", "Staffing", "Directing"],
+    "a": "Directing",
+    "mode": "FLIP"
+  },
+  {
+    "id": 305,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What structural accounting system double checks mathematical accuracy across all ledger balances?",
+    "options": ["Balance Sheet", "Trial Balance", "Bank Reconciliation Statement", "Ledger Summary"],
+    "a": "Trial Balance",
+    "mode": "FLIP"
+  },
+  {
+    "id": 306,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What premium is paid to safeguard corporate assets from sudden accidental loss parameters?",
+    "options": ["Interest", "Dividend", "Insurance Premium", "Tax"],
+    "a": "Insurance Premium",
+    "mode": "FLIP"
+  },
+  {
+    "id": 307,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What economic environment features persistent upward trends in universal market price sheets?",
+    "options": ["Deflation", "Stagflation", "Inflation", "Depression"],
+    "a": "Inflation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 308,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What financial metric reveals the absolute relationship between operating net profit and sales?",
+    "options": ["Current Ratio", "Gross Profit Ratio", "Net Profit Ratio", "Debt Equity Ratio"],
+    "a": "Net Profit Ratio",
+    "mode": "FLIP"
+  },
+  {
+    "id": 309,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: Which regulatory authority supervises Indian stock exchanges and capital markets?",
+    "options": ["RBI", "SEBI", "IRDAI", "CCI"],
+    "a": "SEBI",
+    "mode": "FLIP"
+  },
+  {
+    "id": 310,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What primary channel coordinates physical stock shipments directly from production hubs to end markets?",
+    "options": ["Wholesaler", "Retailer", "Broker", "Distributor"],
+    "a": "Distributor",
+    "mode": "FLIP"
+  },
+  {
+    "id": 311,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What document invites the general public to subscribe to a company's shares?",
+    "options": ["Prospectus", "Articles of Association", "Memorandum of Association", "Share Certificate"],
+    "a": "Prospectus",
+    "mode": "FLIP"
+  },
+  {
+    "id": 312,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What type of partner does not actively manage operations but shares in corporate profits?",
+    "options": ["Active Partner", "Sleeping Partner", "Nominal Partner", "Partner by Estoppel"],
+    "a": "Sleeping Partner",
+    "mode": "FLIP"
+  },
+  {
+    "id": 313,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What accounting error occurs when an entry is made on the correct side but in the wrong account?",
+    "options": ["Error of Omission", "Error of Commission", "Error of Principle", "Compensating Error"],
+    "a": "Error of Commission",
+    "mode": "FLIP"
+  },
+  {
+    "id": 314,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What type of cost does not vary with a change in the level of production output?",
+    "options": ["Variable Cost", "Fixed Cost", "Marginal Cost", "Opportunity Cost"],
+    "a": "Fixed Cost",
+    "mode": "FLIP"
+  },
+  {
+    "id": 315,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "CEC: What budget strategy charts equal projections across estimated state revenue and operational spend cycles?",
+    "options": ["Surplus Budget", "Deficit Budget", "Balanced Budget", "Capital Budget"],
+    "a": "Balanced Budget",
+    "mode": "FLIP"
+  },
+  {
+    "id": 316,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "HEC: What specific academic line focuses on systematic reviews covering past human events?",
+    "options": ["Sociology", "History", "Civics", "Geography"],
+    "a": "History",
+    "mode": "FLIP"
+  },
+  {
+    "id": 317,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "HEC: What administrative structure governs local civic programs across towns and major cities?",
+    "options": ["Panchayat Samiti", "Municipal Corporation", "Zilla Parishad", "Gram Sabha"],
+    "a": "Municipal Corporation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 318,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "HEC: Which historic internal ruler set up centralized tax structures across the Delhi Sultanate?",
+    "options": ["Alauddin Khalji", "Iltutmish", "Balban", "Firoz Shah Tughlaq"],
+    "a": "Alauddin Khalji",
+    "mode": "FLIP"
+  },
+  {
+    "id": 319,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "HEC: What standard map projections chart equal elevation layers over rugged mountain landscapes?",
+    "options": ["Isobars", "Contours", "Isotherms", "Isomeasured lines"],
+    "a": "Contours",
+    "mode": "FLIP"
+  },
+  {
+    "id": 320,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "HEC: Which core collection of historic scriptures contains the early foundations of Indian philosophy?",
+    "options": ["The Puranas", "The Vedas", "The Epics", "The Jatakas"],
+    "a": "The Vedas",
+    "mode": "FLIP"
+  },
+  {
+    "id": 321,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "HEC: What architectural rock pillars display Mauryan administrative codes across ancient India?",
+    "options": ["Gupta pillars", "Ashokan Pillars", "Chalukya edicts", "Satavahana structures"],
+    "a": "Ashokan Pillars",
+    "mode": "FLIP"
+  },
+  {
+    "id": 322,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "HEC: What dynamic geographic shift details massive population moves from farming grids to metro centers?",
+    "options": ["Emigration", "Urbanization", "Industrialization", "Localization"],
+    "a": "Urbanization",
+    "mode": "FLIP"
+  },
+  {
+    "id": 323,
+    "category": "Class 11",
+    "type": "MCQ",
+    "q": "HEC: Which baseline organ holds the structural administrative core of a modern democratic state?",
+    "options": ["The Judiciary", "The Legislature", "The Executive", "All of the above"],
+    "a": "All of the above",
+    "mode": "FLIP"
+  },
+  {
+    "id": 324,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: In what year did Indian citizens officially adopt the sovereign Constitution of India?",
+    "options": ["1947", "1950", "1949", "1952"],
+    "a": "1950",
+    "mode": "FLIP"
+  },
+  {
+    "id": 325,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: What administrative body runs supreme judicial reviews under the Indian constitutional system?",
+    "options": ["High Court", "Supreme Court", "District Court", "Lok Adalat"],
+    "a": "Supreme Court",
+    "mode": "FLIP"
+  },
+  {
+    "id": 326,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: Which historic Indian leader organized internal integration programs across princely states?",
+    "options": ["Jawaharlal Nehru", "Sardar Vallabhbhai Patel", "Mahatma Gandhi", "Dr. B.R. Ambedkar"],
+    "a": "Sardar Vallabhbhai Patel",
+    "mode": "FLIP"
+  },
+  {
+    "id": 327,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: Which Indian state first executed a localized execution of the Panchayati Raj system?",
+    "options": ["Andhra Pradesh", "Rajasthan", "Madhya Pradesh", "Gujarat"],
+    "a": "Rajasthan",
+    "mode": "FLIP"
+  },
+  {
+    "id": 328,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: What structural index maps total child births counted across 1,000 citizens annually?",
+    "options": ["Fertility rate", "Crude Birth Rate", "Growth index", "Mortality index"],
+    "a": "Crude Birth Rate",
+    "mode": "FLIP"
+  },
+  {
+    "id": 329,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: Which major internal battle sealed British administrative rule over Bengal in 1764?",
+    "options": ["Battle of Plassey", "Battle of Buxar", "Third Battle of Panipat", "Anglo-Mysore Battle"],
+    "a": "Battle of Buxar",
+    "mode": "FLIP"
+  },
+  {
+    "id": 330,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: What specific geographic line tracks zero-degree position values across global map coordinates?",
+    "options": ["Equator", "Prime Meridian", "Tropic of Cancer", "International Date Line"],
+    "a": "Equator",
+    "mode": "FLIP"
+  },
+  {
+    "id": 331,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: What standard constitutional article guarantees equal treatment under law to all Indian citizens?",
+    "options": ["Article 14", "Article 19", "Article 21", "Article 32"],
+    "a": "Article 14",
+    "mode": "FLIP"
+  },
+  {
+    "id": 332,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: Who founded the highly centralizing Maurya Dynasty in ancient India?",
+    "options": ["Ashoka", "Chandragupta Maurya", "Bindusara", "Samudragupta"],
+    "a": "Chandragupta Maurya",
+    "mode": "FLIP"
+  },
+  {
+    "id": 333,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: What physical phenomenon describes long-term changes in planetary weather parameters over decades?",
+    "options": ["Global warming", "Climate Change", "Greenhouse effect", "El Nino"],
+    "a": "Climate Change",
+    "mode": "FLIP"
+  },
+  {
+    "id": 334,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: Which social system details layered divisions of human populations into ancestral classes?",
+    "options": ["Class system", "Caste system", "Tribal system", "Guild system"],
+    "a": "Caste system",
+    "mode": "FLIP"
+  },
+  {
+    "id": 335,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: What standard fundamental right inside the Indian Constitution protects free speech and assembly?",
+    "options": ["Right to Equality", "Right to Freedom", "Right against Exploitation", "Right to Privacy"],
+    "a": "Right to Freedom",
+    "mode": "FLIP"
+  },
+  {
+    "id": 336,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: What ancient university stood as a legendary global center for higher learning in Bihar?",
+    "options": ["Taxila", "Nalanda", "Vikramashila", "Valabhi"],
+    "a": "Nalanda",
+    "mode": "FLIP"
+  },
+  {
+    "id": 337,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: What natural resource layer provides fertile ground matrices supporting global farming systems?",
+    "options": ["Bedrock", "Subsoil", "Topsoil", "Regolith"],
+    "a": "Topsoil",
+    "mode": "FLIP"
+  },
+  {
+    "id": 338,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: Which historic system tracking details the foundational source codes of town planning in India?",
+    "options": ["Vedic Period", "Indus Valley Civilization", "Gupta Empire", "Mughal Period"],
+    "a": "Indus Valley Civilization",
+    "mode": "FLIP"
+  },
+  {
+    "id": 339,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: What form of governance structures authority across traditional absolute bloodline dynamics?",
+    "options": ["Democracy", "Monarchy", "Oligarchy", "Anarchy"],
+    "a": "Monarchy",
+    "mode": "FLIP"
+  },
+  {
+    "id": 340,
+    "category": "Class 12",
+    "type": "MCQ",
+    "q": "HEC: What tracking branch assesses global changes across shifting earth surface structures?",
+    "options": ["Geology", "Geomorphology", "Meteorology", "Cartography"],
+    "a": "Geomorphology",
+    "mode": "FLIP"
+  }
+]
+[
+  {
+    "id": 341,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: Which chemical element is the primary component of organic molecules?",
+    "options": ["Hydrogen", "Oxygen", "Carbon", "Nitrogen"],
+    "a": "Carbon",
+    "mode": "FLIP"
+  },
+  {
+    "id": 342,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What is the pH value of pure, neutral water at room temperature?",
+    "options": ["0", "5", "7", "14"],
+    "a": "7",
+    "mode": "FLIP"
+  },
+  {
+    "id": 343,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What acceleration does an object experience in free fall near Earth's surface?",
+    "options": ["5.5 m/s^2", "9.8 m/s^2", "12.1 m/s^2", "0 m/s^2"],
+    "a": "9.8 m/s^2",
+    "mode": "FLIP"
+  },
+  {
+    "id": 344,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What are the base building blocks that link together to build functional proteins?",
+    "options": ["Fatty Acids", "Amino Acids", "Monosaccharides", "Nucleotides"],
+    "a": "Amino Acids",
+    "mode": "FLIP"
+  },
+  {
+    "id": 345,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What specific biological process allows plants to synthesize nutrients using sunlight?",
+    "options": ["Respiration", "Photosynthesis", "Transpiration", "Fermentation"],
+    "a": "Photosynthesis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 346,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What basic accounting equation balances enterprise assets with owner funding streams?",
+    "options": ["Assets = Liabilities - Equity", "Assets = Liabilities + Equity", "Liabilities = Assets + Equity", "Equity = Assets + Liabilities"],
+    "a": "Assets = Liabilities + Equity",
+    "mode": "FLIP"
+  },
+  {
+    "id": 347,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What operational ledger documents daily raw economic updates before secondary posting?",
+    "options": ["Ledger Book", "Journal", "Trial Balance", "Profit Sheet"],
+    "a": "Journal",
+    "mode": "FLIP"
+  },
+  {
+    "id": 348,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What financial ledger documents the net tracking relationship between sales margins and basic operations?",
+    "options": ["Trading Account", "Profit & Loss Account", "Balance Sheet", "Cash Flow Index"],
+    "a": "Profit & Loss Account",
+    "mode": "FLIP"
+  },
+  {
+    "id": 349,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What economic situation reflects consistent premium pricing hikes tracking across core markets?",
+    "options": ["Deflation", "Stagflation", "Inflation", "Depression"],
+    "a": "Inflation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 350,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: Which institutional bank coordinates fiscal frameworks and monetary reserves across India?",
+    "options": ["State Bank of India", "Reserve Bank of India", "ICICI Bank", "Punjab National Bank"],
+    "a": "Reserve Bank of India",
+    "mode": "FLIP"
+  },
+  {
+    "id": 351,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: Which core academic domain evaluates classic systemic chronicles covering human past timelines?",
+    "options": ["Sociology", "History", "Civics", "Anthropology"],
+    "a": "History",
+    "mode": "FLIP"
+  },
+  {
+    "id": 352,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: What dynamic governance framework yields absolute state choice power to the general voting populace?",
+    "options": ["Monarchy", "Oligarchy", "Democracy", "Autocracy"],
+    "a": "Democracy",
+    "mode": "FLIP"
+  },
+  {
+    "id": 353,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: What baseline constitutional guide details core human protections across the Indian framework?",
+    "options": ["Directive Principles", "Fundamental Rights", "Preamble", "Fundamental Duties"],
+    "a": "Fundamental Rights",
+    "mode": "FLIP"
+  },
+  {
+    "id": 354,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: Which legendary Greek thinker remains recognized as the historic grandfather of Political Science?",
+    "options": ["Plato", "Aristotle", "Socrates", "Herodotus"],
+    "a": "Aristotle",
+    "mode": "FLIP"
+  },
+  {
+    "id": 355,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: What geographical structural study targets localized physical earth changes over shifting epochs?",
+    "options": ["Meteorology", "Geomorphology", "Cartography", "Demography"],
+    "a": "Geomorphology",
+    "mode": "FLIP"
+  },
+  {
+    "id": 356,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: Which foundational management step builds initial tactical frameworks prior to deployment?",
+    "options": ["Organizing", "Staffing", "Planning", "Controlling"],
+    "a": "Planning",
+    "mode": "FLIP"
+  },
+  {
+    "id": 357,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: What marketing dimension focuses directly on distributing products from hubs to market shelves?",
+    "options": ["Price", "Product", "Place", "Promotion"],
+    "a": "Place",
+    "mode": "FLIP"
+  },
+  {
+    "id": 358,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: What organizational branch addresses internal recruitment and human resource pipelines?",
+    "options": ["PR Department", "HR Department", "R&D Wing", "Logistics Division"],
+    "a": "HR Department",
+    "mode": "FLIP"
+  },
+  {
+    "id": 359,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: What organizational tool matches business Strengths and Weaknesses with external market pathways?",
+    "options": ["BCG Matrix", "SWOT Analysis", "PESTLE Review", "Value Chain"],
+    "a": "SWOT Analysis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 360,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: What structural concept measures the price responsiveness of consumer purchases against baseline shifts?",
+    "options": ["Elasticity of Demand", "Law of Supply", "Equilibrium Pricing", "Marginal Utility"],
+    "a": "Elasticity of Demand",
+    "mode": "FLIP"
+  },
+  {
+    "id": 361,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What primary logical unit acts as the core mathematical computational block inside CPUs?",
+    "options": ["Control Unit", "ALU", "RAM Module", "BIOS Chip"],
+    "a": "ALU",
+    "mode": "FLIP"
+  },
+  {
+    "id": 362,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What volatile hardware module provides high-speed, temporary workspace during operational execution?",
+    "options": ["Hard Drive", "ROM", "RAM", "Solid State Disk"],
+    "a": "RAM",
+    "mode": "FLIP"
+  },
+  {
+    "id": 363,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What operational software serves as the base logical bridge linking human inputs to bare computer systems?",
+    "options": ["Web Browser", "Operating System", "Database Server", "Compiler Engine"],
+    "a": "Operating System",
+    "mode": "FLIP"
+  },
+  {
+    "id": 364,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: Which structural language tool leverages standardized OOP paradigms across modular class layouts?",
+    "options": ["C Language", "Assembly", "Java", "Basic HTML"],
+    "a": "Java",
+    "mode": "FLIP"
+  },
+  {
+    "id": 365,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What specialized protocol uses structural tables to format and query relational database configurations?",
+    "options": ["HTTP", "SQL", "FTP", "SMTP"],
+    "a": "SQL",
+    "mode": "FLIP"
+  },
+  {
+    "id": 366,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What operational thermodynamic cycle guides standard automotive internal combustion engines?",
+    "options": ["Carnot Cycle", "Otto Cycle", "Rankine Cycle", "Diesel Cycle"],
+    "a": "Otto Cycle",
+    "mode": "FLIP"
+  },
+  {
+    "id": 367,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What structural material metric tracks a component's capacity to counter permanent deformation shapes?",
+    "options": ["Ductility", "Hardness", "Malleability", "Elasticity"],
+    "a": "Hardness",
+    "mode": "FLIP"
+  },
+  {
+    "id": 368,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What physical value scales the dynamic fluid friction opposing standard pipe flow lines?",
+    "options": ["Viscosity", "Surface Tension", "Density", "Buoyancy"],
+    "a": "Viscosity",
+    "mode": "FLIP"
+  },
+  {
+    "id": 369,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: Which specific structural stress exerts perpendicular pulling tension across a load face?",
+    "options": ["Shear Stress", "Tensile Stress", "Compressive Stress", "Torsional Stress"],
+    "a": "Tensile Stress",
+    "mode": "FLIP"
+  },
+  {
+    "id": 370,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What governor component leverages centrifugal rotation forces to scale down fuel input volumes?",
+    "options": ["Flywheel", "Centrifugal Governor", "Camshaft", "Piston Ring"],
+    "a": "Centrifugal Governor",
+    "mode": "FLIP"
+  },
+  {
+    "id": 371,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: What fundamental law asserts that voltage changes directly scale electric currents across target resistors?",
+    "options": ["Kirchhoff's Law", "Ohm's Law", "Faraday's Law", "Lenz's Law"],
+    "a": "Ohm's Law",
+    "mode": "FLIP"
+  },
+  {
+    "id": 372,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: What basic unit tracks the absolute measure of magnetic flux values passing a target surface?",
+    "options": ["Tesla", "Weber", "Henry", "Farad"],
+    "a": "Weber",
+    "mode": "FLIP"
+  },
+  {
+    "id": 373,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: What induction device converts voltage parameters up or down without altering baseline frequency scales?",
+    "options": ["Alternator", "Transformer", "DC Motor", "Rectifier Unit"],
+    "a": "Transformer",
+    "mode": "FLIP"
+  },
+  {
+    "id": 374,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: Which structural component converts alternating current lines into smooth direct current paths?",
+    "options": ["Inverter", "Rectifier", "Amplifier", "Oscillator"],
+    "a": "Rectifier",
+    "mode": "FLIP"
+  },
+  {
+    "id": 375,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: What specific passive circuit loop component opposes abrupt current changes through induction profiles?",
+    "options": ["Resistor", "Capacitor", "Inductor", "Zener Diode"],
+    "a": "Inductor",
+    "mode": "FLIP"
+  },
+  {
+    "id": 376,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What fundamental structural testing system measures subsoil weight capacity prior to setting foundation lines?",
+    "options": ["Slump Test", "Plate Load Test", "Proctor Test", "Core Test"],
+    "a": "Plate Load Test",
+    "mode": "FLIP"
+  },
+  {
+    "id": 377,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What physical concrete property evaluation tracks fresh mixture fluidity states using a standard cone mold?",
+    "options": ["Tensile Check", "Slump Test", "Compaction Factor", "Vee-Bee Test"],
+    "a": "Slump Test",
+    "mode": "FLIP"
+  },
+  {
+    "id": 378,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What specific surveying technique maps elevation layout changes relative to a stable base point?",
+    "options": ["Levelling", "Triangulation", "Traversing", "Contouring"],
+    "a": "Levelling",
+    "mode": "FLIP"
+  },
+  {
+    "id": 379,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: Which architectural foundation structure uses deep columns to anchor loads directly into stable bedrock layers?",
+    "options": ["Strip Footing", "Raft Foundation", "Pile Foundation", "Strap Footing"],
+    "a": "Pile Foundation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 380,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What structural structural cross member provides horizontal floor reinforcement across supporting vertical pillars?",
+    "options": ["Column", "Lintel", "Beam", "Truss Assembly"],
+    "a": "Beam",
+    "mode": "FLIP"
+  },
+  {
+    "id": 381,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What specific dimension tracks flow profile shifts across a fluid using a standard dimensionless scaling ratio?",
+    "options": ["Nusselt Number", "Reynolds Number", "Prandtl Number", "Prandtl Ratio"],
+    "a": "Reynolds Number",
+    "mode": "FLIP"
+  },
+  {
+    "id": 382,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What thermal separation unit separates crude feed components based on individual boiling point ranges?",
+    "options": ["Absorption Column", "Fractional Distillation", "Liquid Extraction", "Crystallizer"],
+    "a": "Fractional Distillation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 383,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What energetic reaction system absorbs environmental heat to complete internal transformation loops?",
+    "options": ["Exothermic", "Endothermic", "Adiabatic", "Isothermal"],
+    "a": "Endothermic",
+    "mode": "FLIP"
+  },
+  {
+    "id": 384,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What active material accelerates chemical transformation lines without altering its own composition?",
+    "options": ["Reactant", "Catalyst", "Solvent", "Inhibitor"],
+    "a": "Catalyst",
+    "mode": "FLIP"
+  },
+  {
+    "id": 385,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What thermodynamic system features zero mass transfer or energy interactions across its boundaries?",
+    "options": ["Open System", "Closed System", "Isolated System", "Steady State System"],
+    "a": "Isolated System",
+    "mode": "FLIP"
+  },
+  {
+    "id": 386,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What fundamental aerodynamic force opposes forward flight momentum through air friction profiles?",
+    "options": ["Lift", "Thrust", "Drag", "Weight"],
+    "a": "Drag",
+    "mode": "FLIP"
+  },
+  {
+    "id": 387,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What dimensionless ratio compares an aircraft's airspeed directly to the local speed of sound?",
+    "options": ["Reynolds Number", "Mach Number", "Froude Number", "Weber Index"],
+    "a": "Mach Number",
+    "mode": "FLIP"
+  },
+  {
+    "id": 388,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: Which active wing assembly surface guides an aircraft's banking maneuvers along its roll axis?",
+    "options": ["Rudder", "Elevator", "Aileron", "Flap System"],
+    "a": "Aileron",
+    "mode": "FLIP"
+  },
+  {
+    "id": 389,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What physics theorem dictates that velocity surges within a fluid stream cause local pressure drops?",
+    "options": ["Pascal's Law", "Bernoulli's Principle", "Archimedes' Law", "Stokes' Equation"],
+    "a": "Bernoulli's Principle",
+    "mode": "FLIP"
+  },
+  {
+    "id": 390,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What specific structural tail surface manages an aircraft's directional yaw adjustments?",
+    "options": ["Horizontal Stabilizer", "Rudder", "Main Wing Spar", "Winglet Extension"],
+    "a": "Rudder",
+    "mode": "FLIP"
+  },
+  {
+    "id": 391,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What design approach organizes functional code blocks within interactive, data-carrying object structures?",
+    "options": ["Procedural Coding", "Object-Oriented Programming", "Functional Framework", "Linear Scripting"],
+    "a": "Object-Oriented Programming",
+    "mode": "FLIP"
+  },
+  {
+    "id": 392,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What agile framework tracks project execution loops through brief, structured production sprints?",
+    "options": ["Waterfall Model", "Scrum Framework", "V-Model Plan", "Spiral Protocol"],
+    "a": "Scrum Framework",
+    "mode": "FLIP"
+  },
+  {
+    "id": 393,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What structural index gauges the mutual interdependence linking two distinct code modules?",
+    "options": ["Cohesion", "Coupling", "Inheritance", "Polymorphism"],
+    "a": "Coupling",
+    "mode": "FLIP"
+  },
+  {
+    "id": 394,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What basic data tracking network routes elements under a strict Last-In, First-Out sequence?",
+    "options": ["Queue Array", "Stack", "Linked List", "Binary Tree"],
+    "a": "Stack",
+    "mode": "FLIP"
+  },
+  {
+    "id": 395,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What operational process translates target system code strings to uncover logic errors prior to release?",
+    "options": ["Deployment", "Debugging", "Refactoring", "Minification"],
+    "a": "Debugging",
+    "mode": "FLIP"
+  },
+  {
+    "id": 396,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What diagnostic system tracks internal body profiles by reading radiofrequency responses from atomic nuclei?",
+    "options": ["X-Ray Scan", "CT Scanner", "MRI", "Ultrasound System"],
+    "a": "MRI",
+    "mode": "FLIP"
+  },
+  {
+    "id": 397,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What monitoring device uses skin electrodes to track the heart's electrical rhythms?",
+    "options": ["Electroencephalogram", "Electrocardiogram", "Electromyogram", "Pulse Oximeter"],
+    "a": "Electrocardiogram",
+    "mode": "FLIP"
+  },
+  {
+    "id": 398,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What biocompatible material properties minimize negative systemic tissue interactions?",
+    "options": ["Bioavailability", "Biocompatibility", "Biodegradability", "Biofluency"],
+    "a": "Biocompatibility",
+    "mode": "FLIP"
+  },
+  {
+    "id": 399,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What mechanical support framework keeps blocked coronary arteries patent after deployment?",
+    "options": ["Pacemaker", "Stent", "Artificial Valve", "Dialyzer Module"],
+    "a": "Stent",
+    "mode": "FLIP"
+  },
+  {
+    "id": 400,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What biomedical device filters metabolic waste from blood when renal function fails?",
+    "options": ["Ventilator", "Dialyzer", "Infusion Pump", "Defibrillator Unit"],
+    "a": "Dialyzer",
+    "mode": "FLIP"
+  },
+  {
+    "id": 401,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: What is the longest and strongest bone in the human body?",
+    "options": ["Humerus", "Femur", "Tibia", "Fibula"],
+    "a": "Femur",
+    "mode": "FLIP"
+  },
+  {
+    "id": 402,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: Which cranial nerve is primarily responsible for the sense of vision?",
+    "options": ["CN I", "CN II", "CN III", "CN IV"],
+    "a": "CN II",
+    "mode": "FLIP"
+  },
+  {
+    "id": 403,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: What anatomical valve guards the exit path linking the left ventricle to the systemic circulation?",
+    "options": ["Tricuspid Valve", "Mitral Valve", "Aortic Valve", "Pulmonary Valve"],
+    "a": "Aortic Valve",
+    "mode": "FLIP"
+  },
+  {
+    "id": 404,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: What muscle serves as the primary driver for human respiratory lung expansion?",
+    "options": ["Intercostal Muscle", "Pectoralis Major", "Diaphragm", "Latissimus Dorsi"],
+    "a": "Diaphragm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 405,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: What organ stores and concentrates bile produced by the liver?",
+    "options": ["Pancreas", "Duodenum", "Gallbladder", "Spleen"],
+    "a": "Gallbladder",
+    "mode": "FLIP"
+  },
+  {
+    "id": 406,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: What is the primary functional unit of the human kidney responsible for urine formation?",
+    "options": ["Neuron", "Nephron", "Alveolus", "Hepatocyte"],
+    "a": "Nephron",
+    "mode": "FLIP"
+  },
+  {
+    "id": 407,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: Which hormone, produced by pancreatic beta cells, lowers blood glucose levels?",
+    "options": ["Glucagon", "Insulin", "Somatostatin", "Cortisol"],
+    "a": "Insulin",
+    "mode": "FLIP"
+  },
+  {
+    "id": 408,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: Where is the primary respiratory control center located in the human brain?",
+    "options": ["Cerebellum", "Medulla Oblongata", "Cerebrum", "Thalamus"],
+    "a": "Medulla Oblongata",
+    "mode": "FLIP"
+  },
+  {
+    "id": 409,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: What protein molecule acts as the primary oxygen carrier within red blood cells?",
+    "options": ["Myoglobin", "Hemoglobin", "Albumin", "Fibrinogen"],
+    "a": "Hemoglobin",
+    "mode": "FLIP"
+  },
+  {
+    "id": 410,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: What term defines the maintenance of a stable internal environment despite external changes?",
+    "options": ["Metabolism", "Homeostasis", "Osmosis", "Hemostasis"],
+    "a": "Homeostasis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 411,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: Which metabolic pathway breaks down glucose into pyruvate to yield initial ATP?",
+    "options": ["Krebs Cycle", "Glycolysis", "Gluconeogenesis", "Glycogenolysis"],
+    "a": "Glycolysis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 412,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: What structural spiral geometry describes the double helix blueprint of DNA?",
+    "options": ["Single Strand", "Triple Strand", "Double Helix", "Beta Sheet"],
+    "a": "Double Helix",
+    "mode": "FLIP"
+  },
+  {
+    "id": 413,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: Which vitamin serves as an essential cofactor for structural collagen synthesis?",
+    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+    "a": "Vitamin C",
+    "mode": "FLIP"
+  },
+  {
+    "id": 414,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: Elevated blood levels of which metabolic breakdown product cause gout?",
+    "options": ["Urea", "Creatinine", "Uric Acid", "Lactic Acid"],
+    "a": "Uric Acid",
+    "mode": "FLIP"
+  },
+  {
+    "id": 415,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: Which intracellular organelle houses the enzymes for the citric acid cycle?",
+    "options": ["Ribosome", "Mitochondrion", "Lysosome", "Golgi Apparatus"],
+    "a": "Mitochondrion",
+    "mode": "FLIP"
+  },
+  {
+    "id": 416,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What type of cellular adaptation involves an increase in cell size, leading to larger organs?",
+    "options": ["Hyperplasia", "Hypertrophy", "Atrophy", "Metaplasia"],
+    "a": "Hypertrophy",
+    "mode": "FLIP"
+  },
+  {
+    "id": 417,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What core hallmark signs define acute localized tissue inflammation?",
+    "options": ["Pain only", "Heat and Swelling", "Redness, Heat, Swelling, Pain, Loss of function", "Necrosis and Fibrosis"],
+    "a": "Redness, Heat, Swelling, Pain, Loss of function",
+    "mode": "FLIP"
+  },
+  {
+    "id": 418,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What mechanism describes programmed, energy-dependent cell death?",
+    "options": ["Necrosis", "Apoptosis", "Autolysis", "Infarction"],
+    "a": "Apoptosis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 419,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What pattern of tissue necrosis is classically associated with tuberculosis infections?",
+    "options": ["Coagulative Necrosis", "Liquefactive Necrosis", "Caseous Necrosis", "Fat Necrosis"],
+    "a": "Caseous Necrosis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 420,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What term describes a wandering intravascular mass that lodges in a vessel and occludes it?",
+    "options": ["Thrombus", "Embolus", "Atheroma", "Aneurysm"],
+    "a": "Embolus",
+    "mode": "FLIP"
+  },
+  {
+    "id": 421,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: Which bacterial pathogen is the primary causative agent of tuberculosis?",
+    "options": ["Staphylococcus aureus", "Mycobacterium tuberculosis", "Escherichia coli", "Streptococcus pneumoniae"],
+    "a": "Mycobacterium tuberculosis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 422,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: What cell wall component is target-stained to differentiate Gram-positive from Gram-negative bacteria?",
+    "options": ["Chitin", "Peptidoglycan", "Lipopolysaccharide", "Cholesterol"],
+    "a": "Peptidoglycan",
+    "mode": "FLIP"
+  },
+  {
+    "id": 423,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: Which virus causes shingles upon reactivation from latency in dorsal root ganglia?",
+    "options": ["Epstein-Barr Virus", "Varicella-Zoster Virus", "Cytomegalovirus", "Herpes Simplex Virus 1"],
+    "a": "Varicella-Zoster Virus",
+    "mode": "FLIP"
+  },
+  {
+    "id": 424,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: Which protozoan parasite is responsible for causing malignant tertian malaria?",
+    "options": ["Plasmodium vivax", "Plasmodium falciparum", "Plasmodium malariae", "Plasmodium ovale"],
+    "a": "Plasmodium falciparum",
+    "mode": "FLIP"
+  },
+  {
+    "id": 425,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: What structure allows certain bacteria to survive harsh conditions like heat or desiccation?",
+    "options": ["Flagella", "Capsule", "Endospore", "Pili"],
+    "a": "Endospore",
+    "mode": "FLIP"
+  },
+  {
+    "id": 426,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: What term describes the study of what the body does to a drug?",
+    "options": ["Pharmacodynamics", "Pharmacokinetics", "Pharmacogenomics", "Toxicology"],
+    "a": "Pharmacokinetics",
+    "mode": "FLIP"
+  },
+  {
+    "id": 427,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: Which organ serves as the primary site for drug metabolism in the human body?",
+    "options": ["Kidney", "Liver", "Lungs", "Small Intestine"],
+    "a": "Liver",
+    "mode": "FLIP"
+  },
+  {
+    "id": 428,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: What drug class treats bacterial infections by inhibiting cell wall synthesis?",
+    "options": ["Aminoglycosides", "Macrolides", "Beta-lactam Antibiotics", "Fluoroquinolones"],
+    "a": "Beta-lactam Antibiotics",
+    "mode": "FLIP"
+  },
+  {
+    "id": 429,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: What specific drug serves as the first-line emergency treatment for anaphylactic shock?",
+    "options": ["Atropine", "Epinephrine", "Hydrocortisone", "Dopamine"],
+    "a": "Epinephrine",
+    "mode": "FLIP"
+  },
+  {
+    "id": 430,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: What metric tracks the safety margin of a drug by comparing toxic dose to effective dose?",
+    "options": ["Bioavailability", "Therapeutic Index", "Half-life", "Clearance Rate"],
+    "a": "Therapeutic Index",
+    "mode": "FLIP"
+  },
+  {
+    "id": 431,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Forensic Medicine: What sign of death refers to the post-mortem cooling of the body temperature?",
+    "options": ["Algor Mortis", "Livor Mortis", "Rigor Mortis", "Putrefaction"],
+    "a": "Algor Mortis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 432,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Forensic Medicine: What finding confirm a victim was alive before drowning?",
+    "options": ["Cadaveric Spasm", "Diatoms in bone marrow", "Post-mortem lividity", "Putrefactive gas"],
+    "a": "Diatoms in bone marrow",
+    "mode": "FLIP"
+  },
+  {
+    "id": 433,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Medicine: What hallmark clinical feature is characterized by a classic 'teardrop on rose petal' appearance?",
+    "options": ["Smallpox", "Chickenpox", "Measles", "Rubella"],
+    "a": "Chickenpox",
+    "mode": "FLIP"
+  },
+  {
+    "id": 434,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Medicine: Which biomarker is most sensitive for diagnosing acute myocardial infarction?",
+    "options": ["CK-MB", "Cardiac Troponin", "LDH", "Myoglobin"],
+    "a": "Cardiac Troponin",
+    "mode": "FLIP"
+  },
+  {
+    "id": 435,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Medicine: What primary endocrine disorder is characterized by a chronic deficiency of thyroid hormone?",
+    "options": ["Hyperthyroidism", "Hypothyroidism", "Cushing's Syndrome", "Addison's Disease"],
+    "a": "Hypothyroidism",
+    "mode": "FLIP"
+  },
+  {
+    "id": 436,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Surgery: What localized abdominal point shows maximum tenderness in acute appendicitis?",
+    "options": ["Murphy's Point", "McBurney's Point", "Boas's Point", "Cullen's Point"],
+    "a": "McBurney's Point",
+    "mode": "FLIP"
+  },
+  {
+    "id": 437,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Surgery: What immediate critical maneuver stabilizes a tension pneumothorax in the field?",
+    "options": ["Tracheostomy", "Needle Decompression", "Thoracotomy", "Endotracheal Intubation"],
+    "a": "Needle Decompression",
+    "mode": "FLIP"
+  },
+  {
+    "id": 438,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Surgery: What type of shock is caused by massive, rapid intravascular blood loss?",
+    "options": ["Cardiogenic Shock", "Septic Shock", "Hypovolemic Shock", "Neurogenic Shock"],
+    "a": "Hypovolemic Shock",
+    "mode": "FLIP"
+  },
+  {
+    "id": 439,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "OBG: What term defines an abnormal pregnancy occurring outside the uterine cavity?",
+    "options": ["Molar Pregnancy", "Ectopic Pregnancy", "Placenta Previa", "Abruptio Placentae"],
+    "a": "Ectopic Pregnancy",
+    "mode": "FLIP"
+  },
+  {
+    "id": 440,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "OBG: What score evaluates a newborn's physical condition exactly 1 and 5 minutes after birth?",
+    "options": ["Glasgow Coma Scale", "APGAR Score", "Silverman Score", "Bishop Score"],
+    "a": "APGAR Score",
+    "mode": "FLIP"
+  },
+  {
+    "id": 441,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What fundamental rule dictates that a chemical system shifts to counteract stress?",
+    "options": ["Henry's Law", "Le Chatelier's Principle", "Raoult's Law", "Dalton's Law"],
+    "a": "Le Chatelier's Principle",
+    "mode": "FLIP"
+  },
+  {
+    "id": 442,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What form of cell division yields four genetically diverse haploid daughter cells?",
+    "options": ["Mitosis", "Meiosis", "Binary Fission", "Budding"],
+    "a": "Meiosis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 443,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What physical metric describes the average kinetic energy of molecules within a system?",
+    "options": ["Heat", "Temperature", "Entropy", "Enthalpy"],
+    "a": "Temperature",
+    "mode": "FLIP"
+  },
+  {
+    "id": 444,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What unique organelle houses hydrolytic enzymes to break down cellular waste materials?",
+    "options": ["Peroxisome", "Lysosome", "Centrosome", "Glyoxysome"],
+    "a": "Lysosome",
+    "mode": "FLIP"
+  },
+  {
+    "id": 445,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What fundamental physical constant defines the exact velocity of light in a vacuum?",
+    "options": ["3 x 10^8 m/s", "9.81 m/s^2", "6.67 x 10^-11", "1.6 x 10^-19"],
+    "a": "3 x 10^8 m/s",
+    "mode": "FLIP"
+  },
+  {
+    "id": 446,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What basic accounting concept assumes an enterprise will operate indefinitely?",
+    "options": ["Business Entity", "Going Concern", "Money Measurement", "Dual Aspect"],
+    "a": "Going Concern",
+    "mode": "FLIP"
+  },
+  {
+    "id": 447,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What final summary sheet cross-verifies the arithmetical accuracy of ledger accounts?",
+    "options": ["Balance Sheet", "Trial Balance", "Bank Reconciliation", "Cash Flow Index"],
+    "a": "Trial Balance",
+    "mode": "FLIP"
+  },
+  {
+    "id": 448,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What system tracking captures value depreciation across enterprise fixed operating assets?",
+    "options": ["Appreciation", "Depreciation", "Amortization", "Revaluation"],
+    "a": "Depreciation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 449,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What market dynamic features a singular enterprise controlling an entire product loop?",
+    "options": ["Perfect Competition", "Monopoly", "Oligopoly", "Duopoly"],
+    "a": "Monopoly",
+    "mode": "FLIP"
+  },
+  {
+    "id": 450,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What indicator tracks total finished production value output inside domestic boundaries?",
+    "options": ["Gross National Product", "Gross Domestic Product", "Net National Product", "Per Capita Output"],
+    "a": "Gross Domestic Product",
+    "mode": "FLIP"
+  },
+  {
+    "id": 451,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: What social domain explores human community interactions, groups, and institutional networks?",
+    "options": ["Psychology", "Sociology", "Archeology", "Philology"],
+    "a": "Sociology",
+    "mode": "FLIP"
+  },
+  {
+    "id": 452,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: Which foundational system provides supreme legal and governance boundaries across India?",
+    "options": ["Indian Penal Code", "Constitution of India", "Parliamentary Code", "Judicial Register"],
+    "a": "Constitution of India",
+    "mode": "FLIP"
+  },
+  {
+    "id": 453,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: What macro tracking index captures total child birth rates per thousand citizens annually?",
+    "options": ["Fertility Matrix", "Crude Birth Rate", "Growth Parameter", "Mortality Scale"],
+    "a": "Crude Birth Rate",
+    "mode": "FLIP"
+  },
+  {
+    "id": 454,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: What classic economic model explores pricing shifts guided by supply and demand?",
+    "options": ["Microeconomics", "Macroeconomics", "Behavioral Economics", "Econometrics"],
+    "a": "Microeconomics",
+    "mode": "FLIP"
+  },
+  {
+    "id": 455,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: What ancient urban civilization laid the earliest groundwork for structural planning in India?",
+    "options": ["Vedic Settlement", "Indus Valley Civilization", "Mauryan Network", "Gupta Domain"],
+    "a": "Indus Valley Civilization",
+    "mode": "FLIP"
+  },
+  {
+    "id": 456,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: What operational metric reflects the true relationship between total sales revenue and net profits?",
+    "options": ["Current Ratio", "Gross Profit Margin", "Net Profit Ratio", "Debt Ratio"],
+    "a": "Net Profit Ratio",
+    "mode": "FLIP"
+  },
+  {
+    "id": 457,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: Which oversight entity monitors and regulates Indian stock market parameters?",
+    "options": ["RBI", "SEBI", "IRDA", "NABARD"],
+    "a": "SEBI",
+    "mode": "FLIP"
+  },
+  {
+    "id": 458,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: What internal corporate document invites public subscription offers for asset share pools?",
+    "options": ["Articles of Association", "Prospectus", "Memorandum of Scope", "Share Ledger"],
+    "a": "Prospectus",
+    "mode": "FLIP"
+  },
+  {
+    "id": 459,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: What operational cost profile shows zero fluctuation despite manufacturing capacity updates?",
+    "options": ["Variable Cost", "Fixed Cost", "Marginal Expense", "Direct Overhead"],
+    "a": "Fixed Cost",
+    "mode": "FLIP"
+  },
+  {
+    "id": 460,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: What fiscal setup matches estimated government revenues evenly against operating costs?",
+    "options": ["Surplus Budget", "Deficit Plan", "Balanced Budget", "Capital Ledger"],
+    "a": "Balanced Budget",
+    "mode": "FLIP"
+  },
+  {
+    "id": 461,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What architectural data format leverages structured nodes to align relational data tables?",
+    "options": ["Flat File", "RDBMS", "Hierarchical Grid", "Network Array"],
+    "a": "RDBMS",
+    "mode": "FLIP"
+  },
+  {
+    "id": 462,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What networking node bridges local local networks safely to internet communication lines?",
+    "options": ["Hub Switch", "Repeater", "Router", "Bridge Connector"],
+    "a": "Router",
+    "mode": "FLIP"
+  },
+  {
+    "id": 463,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What network security wall monitors external traffic loops using customizable rules?",
+    "options": ["Antivirus Software", "Firewall", "Proxy Node", "Inbound Filter"],
+    "a": "Firewall",
+    "mode": "FLIP"
+  },
+  {
+    "id": 464,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What core property inside web formatting scripts specifies hypertext layout definitions?",
+    "options": ["HTTP", "HTML", "URL Script", "FTP Protocol"],
+    "a": "HTML",
+    "mode": "FLIP"
+  },
+  {
+    "id": 465,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What cloud computing architecture hosts application infrastructure over shared internet grids?",
+    "options": ["Local Hosting", "Cloud Computing", "Mainframe Grid", "Client-Server System"],
+    "a": "Cloud Computing",
+    "mode": "FLIP"
+  },
+  {
+    "id": 466,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What thermodynamic mechanism transfers thermal energy via direct physical contact?",
+    "options": ["Convection", "Conduction", "Radiation", "Advection"],
+    "a": "Conduction",
+    "mode": "FLIP"
+  },
+  {
+    "id": 467,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What ratio assesses true material deformation relative to its original dimensions?",
+    "options": ["Stress", "Strain", "Modulus", "Poisson Ratio"],
+    "a": "Strain",
+    "mode": "FLIP"
+  },
+  {
+    "id": 468,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What classic link assembly turns standard rotational momentum into straight piston strokes?",
+    "options": ["Gear Train", "Crankshaft", "Flywheel", "Cam-Follower Layout"],
+    "a": "Crankshaft",
+    "mode": "FLIP"
+  },
+  {
+    "id": 469,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What mechanical device stores rotational energy during power surges to steady engine speeds?",
+    "options": ["Governor", "Flywheel", "Clutch Plate", "Differential Gear"],
+    "a": "Flywheel",
+    "mode": "FLIP"
+  },
+  {
+    "id": 470,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What operational fluid parameter quantifies a liquid's internal resistance to flow?",
+    "options": ["Surface Tension", "Density Coefficient", "Kinematic Viscosity", "Buoyant Force"],
+    "a": "Kinematic Viscosity",
+    "mode": "FLIP"
+  },
+  {
+    "id": 471,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: What fundamental circuit rule ensures that current entering a node matches current exiting?",
+    "options": ["Kirchhoff's Voltage Law", "Kirchhoff's Current Law", "Thevenin Theorem", "Norton Rule"],
+    "a": "Kirchhoff's Current Law",
+    "mode": "FLIP"
+  },
+  {
+    "id": 472,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: What units quantify total electrical capacitance within active circuit systems?",
+    "options": ["Ohm", "Henry", "Farad", "Siemens"],
+    "a": "Farad",
+    "mode": "FLIP"
+  },
+  {
+    "id": 473,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: Which engine configuration uses external commutation mechanisms to manage rotor current switches?",
+    "options": ["Induction Motor", "Synchronous Motor", "DC Brush Motor", "Stepper System"],
+    "a": "DC Brush Motor",
+    "mode": "FLIP"
+  },
+  {
+    "id": 474,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: What material class blocks electrical current flow due to wide atomic band gaps?",
+    "options": ["Conductor", "Semiconductor", "Insulator", "Superconductor"],
+    "a": "Insulator",
+    "mode": "FLIP"
+  },
+  {
+    "id": 475,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: What mathematical tool converts time-domain signals into frequency-domain profiles?",
+    "options": ["Laplace Transform", "Fourier Transform", "Z-Transform", "Matrix Inversion"],
+    "a": "Fourier Transform",
+    "mode": "FLIP"
+  },
+  {
+    "id": 476,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What core structural test measures internal concrete load limits before structural collapse?",
+    "options": ["Tensile split test", "Compressive Strength Test", "Flexural check", "Core cutting check"],
+    "a": "Compressive Strength Test",
+    "mode": "FLIP"
+  },
+  {
+    "id": 477,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What structural design type embeds steel rebar within concrete matrices to handle tensile stresses?",
+    "options": ["Precast Layout", "Reinforced Cement Concrete", "Mass Concrete Matrix", "Fiber Concrete Panel"],
+    "a": "Reinforced Cement Concrete",
+    "mode": "FLIP"
+  },
+  {
+    "id": 478,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What specific alignment path connects varying road elevation profiles smoothly?",
+    "options": ["Horizontal Curve", "Vertical Curve", "Transition Spiral", "Superelevation Span"],
+    "a": "Vertical Curve",
+    "mode": "FLIP"
+  },
+  {
+    "id": 479,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What foundational design covers a unified concrete footprint underneath an entire building space?",
+    "options": ["Isolated Footing", "Combined Footing", "Raft Foundation", "Pile Cap Array"],
+    "a": "Raft Foundation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 480,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What environmental process monitors and screens raw river water streams for safe municipal delivery?",
+    "options": ["Desalination Flow", "Water Treatment System", "Sewage Digestion", "Flocculation Cycle"],
+    "a": "Water Treatment System",
+    "mode": "FLIP"
+  },
+  {
+    "id": 481,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What principle ensures that total mass entering an operational unit matches the total mass exiting?",
+    "options": ["Energy Balance", "Conservation of Mass", "Thermodynamic Rule", "Stoichiometric Index"],
+    "a": "Conservation of Mass",
+    "mode": "FLIP"
+  },
+  {
+    "id": 482,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What operations setup moves volatile target chemical phases into active absorption liquids?",
+    "options": ["Distillation Run", "Gas Absorption", "Liquid Extraction", "Leaching Network"],
+    "a": "Gas Absorption",
+    "mode": "FLIP"
+  },
+  {
+    "id": 483,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What specialized reactor configuration uses a continuous, unmixed pipeline flow design?",
+    "options": ["Batch Reactor Tank", "Plug Flow Reactor", "CSTR System", "Fluidized Bed Layout"],
+    "a": "Plug Flow Reactor",
+    "mode": "FLIP"
+  },
+  {
+    "id": 484,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What thermodynamic condition maintains equal temperature parameters across multiple contacting phases?",
+    "options": ["Chemical Equilibrium", "Thermal Equilibrium", "Mechanical Balance", "Phase Congruence"],
+    "a": "Thermal Equilibrium",
+    "mode": "FLIP"
+  },
+  {
+    "id": 485,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What processing dynamic updates system variables continuously over operating timeframes?",
+    "options": ["Steady State Run", "Unsteady State Process", "Isothermal Cycle", "Adiabatic Stream"],
+    "a": "Unsteady State Process",
+    "mode": "FLIP"
+  },
+  {
+    "id": 486,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What vertical force counteracts an aircraft's total weight during cruise phases?",
+    "options": ["Thrust Force", "Drag Force", "Lift Force", "Side Force"],
+    "a": "Lift Force",
+    "mode": "FLIP"
+  },
+  {
+    "id": 487,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What core aerodynamic phenomenon creates lift via surface pressure variations over asymmetrical wing profiles?",
+    "options": ["Coanda Effect", "Airfoil Profile Action", "Magnus Effect", "Skin Friction Layer"],
+    "a": "Airfoil Profile Action",
+    "mode": "FLIP"
+  },
+  {
+    "id": 488,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: Which active tail surface controls an aircraft's pitch orientation?",
+    "options": ["Aileron Panel", "Rudder Blade", "Elevator Panel", "Trim Tab Assembly"],
+    "a": "Elevator Panel",
+    "mode": "FLIP"
+  },
+  {
+    "id": 489,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What engine style generates thrust by high-speed mechanical fan compression and fuel combustion cascades?",
+    "options": ["Ramjet Core", "Turbojet Engine", "Rocket Motor", "Piston Propeller"],
+    "a": "Turbojet Engine",
+    "mode": "FLIP"
+  },
+  {
+    "id": 490,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What structural velocity limits separate subsonic flight envelopes from supersonic regions?",
+    "options": ["Mach 0.5", "Mach 1.0", "Mach 2.0", "Mach 5.0"],
+    "a": "Mach 1.0",
+    "mode": "FLIP"
+  },
+  {
+    "id": 491,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What tracking system records code file adjustments chronologically across development projects?",
+    "options": ["Compiler Suite", "Version Control System", "IDE Tool", "Debugger Interface"],
+    "a": "Version Control System",
+    "mode": "FLIP"
+  },
+  {
+    "id": 492,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What basic testing system evaluates isolated software code bits independently before deployment?",
+    "options": ["Integration Check", "Unit Testing", "System Verification", "Acceptance Protocol"],
+    "a": "Unit Testing",
+    "mode": "FLIP"
+  },
+  {
+    "id": 493,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What core database asset property ensures reliable processing across concurrent active transaction threads?",
+    "options": ["JSON Format", "ACID Properties", "REST Structure", "CRUD Sequence"],
+    "a": "ACID Properties",
+    "mode": "FLIP"
+  },
+  {
+    "id": 494,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What architectural style leverages standardized HTTP methods to connect network services seamlessly?",
+    "options": ["SOAP Protocol", "REST API", "GraphQL Scheme", "gRPC Layout"],
+    "a": "REST API",
+    "mode": "FLIP"
+  },
+  {
+    "id": 495,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What development methodology unifies engineering updates and IT operations into an ongoing delivery pipeline?",
+    "options": ["Waterfall Style", "DevOps Framework", "Six Sigma Track", "Spiral Flow"],
+    "a": "DevOps Framework",
+    "mode": "FLIP"
+  },
+  {
+    "id": 496,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What diagnostic system creates layered cross-sectional tissue images using rotating X-ray beams?",
+    "options": ["Fluoroscopy", "Computed Tomography", "Ultrasound Grid", "PET Scanner"],
+    "a": "Computed Tomography",
+    "mode": "FLIP"
+  },
+  {
+    "id": 497,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What electronic life-support device regulates cardiac rhythm via targeted electrical impulses?",
+    "options": ["Defibrillator Unit", "Artificial Pacemaker", "Ventilator Core", "Infusion Pump"],
+    "a": "Artificial Pacemaker",
+    "mode": "FLIP"
+  },
+  {
+    "id": 498,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What active signal recording system monitors and charts human brainwave patterns?",
+    "options": ["Electrocardiogram", "Electroencephalogram", "Electromyogram", "Electroretinogram"],
+    "a": "Electroencephalogram",
+    "mode": "FLIP"
+  },
+  {
+    "id": 499,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What artificial joint prosthesis restores range of motion to damaged femoral structures?",
+    "options": ["Dental Implant", "Artificial Hip Replacement", "Vascular Graft", "Bone Plate Patch"],
+    "a": "Artificial Hip Replacement",
+    "mode": "FLIP"
+  },
+  {
+    "id": 500,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What medical device maintains systemic blood oxygenation during open-heart surgical procedures?",
+    "options": ["Ventilator Unit", "Heart-Lung Machine", "Hemodialyzer", "Anesthesia Unit"],
+    "a": "Heart-Lung Machine",
+    "mode": "FLIP"
+  },
+  {
+    "id": 501,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: What specific anatomical space houses the human heart, thymus, and major great vessels?",
+    "options": ["Pleural Cavity", "Mediastinum", "Peritoneal Cavity", "Retroperitoneum"],
+    "a": "Mediastinum",
+    "mode": "FLIP"
+  },
+  {
+    "id": 502,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: Which prominent nerve tracks underneath the inguinal ligament alongside the major systemic femoral artery?",
+    "options": ["Sciatic Nerve", "Femoral Nerve", "Obturator Nerve", "Tibial Nerve"],
+    "a": "Femoral Nerve",
+    "mode": "FLIP"
+  },
+  {
+    "id": 503,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: What histological cell structure lines the internal lumens of vascular capillary loops?",
+    "options": ["Squamous Epithelium", "Endothelium", "Mesothelium", "Cuboidal Lining"],
+    "a": "Endothelium",
+    "mode": "FLIP"
+  },
+  {
+    "id": 504,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: Which cranial nerve manages standard muscle movements across facial expression structures?",
+    "options": ["CN V", "CN VII", "CN IX", "CN X"],
+    "a": "CN VII",
+    "mode": "FLIP"
+  },
+  {
+    "id": 505,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: What lymph node cluster filters drainage fields originating from upper extremity zones?",
+    "options": ["Inguinal Nodes", "Axillary Nodes", "Cervical Nodes", "Mesenteric Nodes"],
+    "a": "Axillary Nodes",
+    "mode": "FLIP"
+  },
+  {
+    "id": 506,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: What primary compound acts as the principal chemical buffer system inside human extracellular fluids?",
+    "options": ["Phosphate Buffer", "Bicarbonate Buffer System", "Protein Buffer System", "Hemoglobin Matrix"],
+    "a": "Bicarbonate Buffer System",
+    "mode": "FLIP"
+  },
+  {
+    "id": 507,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: What electrical node acts as the primary intrinsic pacemaker regulating standard cardiac rhythms?",
+    "options": ["Atrioventricular Node", "Sinoatrial Node", "Purkinje Network", "Bundle of His"],
+    "a": "Sinoatrial Node",
+    "mode": "FLIP"
+  },
+  {
+    "id": 508,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: What primary hormone triggers uterine contractions during active human labor cycles?",
+    "options": ["Prolactin", "Oxytocin", "Progesterone", "Estrogen"],
+    "a": "Oxytocin",
+    "mode": "FLIP"
+  },
+  {
+    "id": 509,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: Which hormone prompts renal collecting tubules to maximize water reabsorption?",
+    "options": ["Aldosterone", "Antidiuretic Hormone", "Renin Module", "Angiotensin"],
+    "a": "Antidiuretic Hormone",
+    "mode": "FLIP"
+  },
+  {
+    "id": 510,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: What baseline pressure value spans across systemic vascular lines during active ventricular contraction?",
+    "options": ["Diastolic Pressure", "Systolic Pressure", "Mean Arterial Shift", "Pulse Value"],
+    "a": "Systolic Pressure",
+    "mode": "FLIP"
+  },
+  {
+    "id": 411,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: Which pathway yields functional glucose stores from raw non-carbohydrate substrates?",
+    "options": ["Glycogenolysis", "Gluconeogenesis", "Glycolysis Run", "Pentose Shunt"],
+    "a": "Gluconeogenesis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 512,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: What organic molecules serve as the basic structural monomer units building functional RNA patterns?",
+    "options": ["Deoxyribonucleotides", "Ribonucleotides", "Amino Acids", "Fatty Acid Chains"],
+    "a": "Ribonucleotides",
+    "mode": "FLIP"
+  },
+  {
+    "id": 513,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: Deficiencies in which lipid transporter cascade promote systemic atherosclerotic plaques?",
+    "options": ["Chylomicrons", "HDL", "LDL", "VLDL"],
+    "a": "LDL",
+    "mode": "FLIP"
+  },
+  {
+    "id": 514,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: Which enzymatic catalyst regulates the rate-limiting step of systemic cholesterol biosynthesis?",
+    "options": ["Hexokinase", "HMG-CoA Reductase", "Acetyl-CoA Carboxylase", "Phosphofructokinase"],
+    "a": "HMG-CoA Reductase",
+    "mode": "FLIP"
+  },
+  {
+    "id": 515,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: What unique condition triggers elevated systemic ketone body generation?",
+    "options": ["High Carbohydrate Diet", "Diabetic Ketoacidosis", "Protein Malnutrition", "Water Intoxication"],
+    "a": "Diabetic Ketoacidosis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 516,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What generic term describes a malignant neoplastic transformation originating within epithelial layers?",
+    "options": ["Sarcoma", "Carcinoma", "Adenoma", "Lymphoma"],
+    "a": "Carcinoma",
+    "mode": "FLIP"
+  },
+  {
+    "id": 517,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What physical phenomenon marks the systemic migration of neoplastic cell structures to distant organs?",
+    "options": ["Anaplasia", "Metastasis", "Dysplasia", "Hyperplasia"],
+    "a": "Metastasis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 518,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What vascular occlusion cascade leads directly to localized ischemic tissue necrosis?",
+    "options": ["Infarction", "Hyperemia", "Congestion", "Edema Layout"],
+    "a": "Infarction",
+    "mode": "FLIP"
+  },
+  {
+    "id": 519,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What unique microscopic structures accumulate within cerebral tissues during Alzheimer's disease progression?",
+    "options": ["Aschoff Bodies", "Negri Bodies", "Neurofibrillary Tangles", "Mallory Denks"],
+    "a": "Neurofibrillary Tangles",
+    "mode": "FLIP"
+  },
+  {
+    "id": 520,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: Which classic chemical mediator drives vascular permeability changes during acute inflammatory cycles?",
+    "options": ["Interferon", "Histamine", "Bradykinin", "Complement C5a"],
+    "a": "Histamine",
+    "mode": "FLIP"
+  },
+  {
+    "id": 521,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: Which enteric Gram-negative rod is the primary cause of uncomplicated urinary tract infections?",
+    "options": ["Pseudomonas aeruginosa", "Escherichia coli", "Salmonella typhi", "Klebsiella pneumoniae"],
+    "a": "Escherichia coli",
+    "mode": "FLIP"
+  },
+  {
+    "id": 522,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: What standard antimicrobial drug tracking class targets bacterial translation blocks at 50S ribosomal units?",
+    "options": ["Tetracyclines", "Macrolides", "Aminoglycosides", "Penicillins"],
+    "a": "Macrolides",
+    "mode": "FLIP"
+  },
+  {
+    "id": 523,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: Which retroviral pathogen targets helper T-lymphocytes to compromise systemic immunity?",
+    "options": ["Hepatitis B Virus", "Human Immunodeficiency Virus", "Influenza A Virus", "Epstein-Barr Core"],
+    "a": "Human Immunodeficiency Virus",
+    "mode": "FLIP"
+  },
+  {
+    "id": 524,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: What unique structural feature protects capsular bacterial patterns from macrophage clearance?",
+    "options": ["Polysaccharide Capsule", "Flagellar Core", "Outer Membrane Panel", "Teichoic Acid Chain"],
+    "a": "Polysaccharide Capsule",
+    "mode": "FLIP"
+  },
+  {
+    "id": 525,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: Which dimorphic fungal pathogen causes opportunistic systemic infections in immunocompromised hosts?",
+    "options": ["Microsporum canis", "Candida albicans", "Aspergillus fumigatus", "Cryptococcus neoformans"],
+    "a": "Candida albicans",
+    "mode": "FLIP"
+  },
+  {
+    "id": 526,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: What drug metric measures absolute circulating drug fractions that enter systemic tracks unchanged?",
+    "options": ["Volume of Distribution", "Bioavailability", "Clearance Rate", "Half-Life Profile"],
+    "a": "Bioavailability",
+    "mode": "FLIP"
+  },
+  {
+    "id": 527,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: What category of competitive drug block bounds target receptors without triggering active cascades?",
+    "options": ["Agonist", "Antagonist", "Partial Agonist", "Inverse Agonist"],
+    "a": "Antagonist",
+    "mode": "FLIP"
+  },
+  {
+    "id": 528,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: What drug acts as a competitive inhibitor of HMG-CoA reductase to lower systemic lipid levels?",
+    "options": ["Metformin", "Atorvastatin", "Lisinopril", "Amlodipine"],
+    "a": "Atorvastatin",
+    "mode": "FLIP"
+  },
+  {
+    "id": 529,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: Which loop diuretic inhibits sodium-potassium-chloride cotransporters within the loop of Henle?",
+    "options": ["Furosemide", "Hydrochlorothiazide", "Spironolactone", "Acetazolamide"],
+    "a": "Furosemide",
+    "mode": "FLIP"
+  },
+  {
+    "id": 530,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: What specific agent acts as the primary chemical antidote to counter systemic opioid toxicity?",
+    "options": ["Flumazenil", "Naloxone", "Atropine Sulfate", "Acetylcysteine Matrix"],
+    "a": "Naloxone",
+    "mode": "FLIP"
+  },
+  {
+    "id": 531,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Forensic Medicine: What progressive post-mortem transformation results in systemic muscle stiffening?",
+    "options": ["Livor Mortis", "Rigor Mortis", "Algor Mortis", "Adipocere Evolution"],
+    "a": "Rigor Mortis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 532,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Forensic Medicine: What type of injury is caused by blunt-force trauma that tears or lacerates skin profiles?",
+    "options": ["Incised Wound", "Laceration", "Abrasion Track", "Contusion Patch"],
+    "a": "Laceration",
+    "mode": "FLIP"
+  },
+  {
+    "id": 533,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Medicine: What neurological disorder features episodic, excessive, and uncoordinated cerebral electrical discharges?",
+    "options": ["Ischemic Stroke", "Epilepsy", "Parkinson's Disease", "Multiple Sclerosis"],
+    "a": "Epilepsy",
+    "mode": "FLIP"
+  },
+  {
+    "id": 534,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Medicine: Which clinical metric profiles baseline diagnostic criteria tracking systemic type 2 diabetes mellitus?",
+    "options": ["Fasting Plasma Glucose >= 126 mg/dL", "Fasting Glucose >= 100 mg/dL", "HbA1c >= 5.7%", "Random Glucose >= 140 mg/dL"],
+    "a": "Fasting Plasma Glucose >= 126 mg/dL",
+    "mode": "FLIP"
+  },
+  {
+    "id": 535,
+    "category": "Medicine",
+    "type": "MCQ",
+    "q": "Medicine: Which cardiac rhythm variation demands immediate electrical defibrillation intervention?",
+    "options": ["Atrial Fibrillation", "Ventricular Fibrillation", "Sinus Bradycardia", "First-Degree AV Block"],
+    "a": "Ventricular Fibrillation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 536,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Surgery: What hallmark sign identifies acute gallbladder inflammation upon right subcostal palpation?",
+    "options": ["Rovsing Sign", "Murphy Sign", "Psoas Sign", "McBurney Sign"],
+    "a": "Murphy Sign",
+    "mode": "FLIP"
+  },
+  {
+    "id": 537,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Surgery: What form of intestinal tracking obstruction presents with classic bilious vomiting cascades?",
+    "options": ["Pyloric Stenosis", "Small Bowel Obstruction", "Incisional Hernia", "Internal Hemorrhoids"],
+    "a": "Small Bowel Obstruction",
+    "mode": "FLIP"
+  },
+  {
+    "id": 538,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Surgery: What mechanical disruption patterns describe air accumulation within pleural cavity spaces?",
+    "options": ["Hemothorax", "Pneumothorax", "Chylothorax", "Empyema Fluid"],
+    "a": "Pneumothorax",
+    "mode": "FLIP"
+  },
+  {
+    "id": 539,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "OBG: What severe toxemia stage during pregnancy induces generalized tonic-clonic seizures?",
+    "options": ["Gestational Hypertension", "Preeclampsia", "Eclampsia", "HELLP Syndrome"],
+    "a": "Eclampsia",
+    "mode": "FLIP"
+  },
+  {
+    "id": 540,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "OBG: What anatomical condition involves abnormal placental positioning over the internal cervical os?",
+    "options": ["Placenta Previa", "Abruptio Placentae", "Placenta Accreta", "Vasa Previa"],
+    "a": "Placenta Previa",
+    "mode": "FLIP"
+  },
+  {
+    "id": 541,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What fundamental law relates gas volume inversely to pressure at a stable temperature?",
+    "options": ["Charles's Law", "Boyle's Law", "Avogadro's Law", "Gay-Lussac's Law"],
+    "a": "Boyle's Law",
+    "mode": "FLIP"
+  },
+  {
+    "id": 542,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What functional component inside plant cells houses chlorophyll molecules?",
+    "options": ["Mitochondria", "Chloroplast", "Vacuole", "Ribosome"],
+    "a": "Chloroplast",
+    "mode": "FLIP"
+  },
+  {
+    "id": 443,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What vector operation quantifies the directional rotation profiles of fluid vectors?",
+    "options": ["Gradient", "Divergence", "Curl", "Laplacian"],
+    "a": "Curl",
+    "mode": "FLIP"
+  },
+  {
+    "id": 544,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: What unique bond links base nucleotide matrices together across DNA strands?",
+    "options": ["Peptide Bond", "Phosphodiester Bond", "Glycosidic Link", "Ester Linkage"],
+    "a": "Phosphodiester Bond",
+    "mode": "FLIP"
+  },
+  {
+    "id": 545,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Sc: Which organic compound family is characterized by a carbon-carbon triple bond?",
+    "options": ["Alkanes", "Alkenes", "Alkynes", "Arenes"],
+    "a": "Alkynes",
+    "mode": "FLIP"
+  },
+  {
+    "id": 546,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: Which side of a ledger account records structural decreases in corporate liability values?",
+    "options": ["Debit Side", "Credit Side", "Asset Column", "Equity Entry"],
+    "a": "Debit Side",
+    "mode": "FLIP"
+  },
+  {
+    "id": 547,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What system coordinates physical inventory valuations by tracking the oldest stock units first?",
+    "options": ["LIFO Method", "FIFO Method", "Weighted Average", "Specific Identification"],
+    "a": "FIFO Method",
+    "mode": "FLIP"
+  },
+  {
+    "id": 548,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What form of commercial organization runs joint business ventures managed by multiple shared partners?",
+    "options": ["Sole Proprietorship", "Partnership", "Cooperative Society", "Public Trust"],
+    "a": "Partnership",
+    "mode": "FLIP"
+  },
+  {
+    "id": 549,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What pricing situation balances market supply volumes evenly with consumer demand profiles?",
+    "options": ["Surplus Matrix", "Shortage State", "Equilibrium Price", "Floor Pricing"],
+    "a": "Equilibrium Price",
+    "mode": "FLIP"
+  },
+  {
+    "id": 550,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.Com: What business ledger details reconciliation metrics matching enterprise cash balances with bank updates?",
+    "options": ["Trial Balance Summary", "Bank Reconciliation Statement", "Ledger Ledger Index", "Profit Split Sheet"],
+    "a": "Bank Reconciliation Statement",
+    "mode": "FLIP"
+  },
+  {
+    "id": 551,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: Which core domain reviews planetary soil matrices, weather patterns, and continental shifts?",
+    "options": ["Anthropology", "Geography", "History", "Sociology"],
+    "a": "Geography",
+    "mode": "FLIP"
+  },
+  {
+    "id": 552,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: What specialized legislative branch drives the creation of statutory laws in India?",
+    "options": ["The Executive", "The Judiciary", "The Legislature", "The Union Bureaucracy"],
+    "a": "The Legislature",
+    "mode": "FLIP"
+  },
+  {
+    "id": 553,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: What demographic index logs total deaths counted across 1,000 citizens annually?",
+    "options": ["Crude Death Rate", "Morbidity Scale", "Infant Loss Index", "Life Expectancy Chart"],
+    "a": "Crude Death Rate",
+    "mode": "FLIP"
+  },
+  {
+    "id": 554,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: Which foundational right in the Constitution of India ensures equal legal treatment for all citizens?",
+    "options": ["Right to Freedom", "Right to Equality", "Right to Education", "Right to Remedies"],
+    "a": "Right to Equality",
+    "mode": "FLIP"
+  },
+  {
+    "id": 555,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "B.A: What ancient university was renowned as a center for higher learning in ancient Bihar?",
+    "options": ["Taxila", "Nalanda", "Vikramashila", "Valabhi"],
+    "a": "Nalanda",
+    "mode": "FLIP"
+  },
+  {
+    "id": 556,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: What fundamental metric scales enterprise liquidity by comparing current assets to current liabilities?",
+    "options": ["Quick Ratio", "Current Ratio", "Debt-to-Equity", "Return on Equity"],
+    "a": "Current Ratio",
+    "mode": "FLIP"
+  },
+  {
+    "id": 557,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: Which organizational structure establishes a single legal identity separate from its individual share owners?",
+    "options": ["Sole Proprietorship", "Partnership Grid", "Joint Stock Company", "Unlimited Venture"],
+    "a": "Joint Stock Company",
+    "mode": "FLIP"
+  },
+  {
+    "id": 558,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: What baseline insurance premium safe-guards business assets from sudden catastrophic loss patterns?",
+    "options": ["Dividend Share", "Interest Yield", "Insurance Premium", "Tax Assessment"],
+    "a": "Insurance Premium",
+    "mode": "FLIP"
+  },
+  {
+    "id": 559,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: What structural concept tracks cost advantages gained through expanded production volumes?",
+    "options": ["Diseconomies of Scale", "Economies of Scale", "Marginal Utility Gains", "Opportunity Cost Shifts"],
+    "a": "Economies of Scale",
+    "mode": "FLIP"
+  },
+  {
+    "id": 560,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BBA: What administrative document governs internal operational rules across joint-stock corporate structures?",
+    "options": ["Prospectus Document", "Articles of Association", "Memorandum of Scope", "Share Certificate Listing"],
+    "a": "Articles of Association",
+    "mode": "FLIP"
+  },
+  {
+    "id": 561,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What primitive language level leverages pure binary bits to drive central processing execution?",
+    "options": ["High-Level Language", "Assembly Language", "Machine Language", "Bytecode Framework"],
+    "a": "Machine Language",
+    "mode": "FLIP"
+  },
+  {
+    "id": 562,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What classic tracking structure arranges data elements under a strict First-In, First-Out sequence?",
+    "options": ["Stack Node", "Queue", "Binary Tree", "Linked List Array"],
+    "a": "Queue",
+    "mode": "FLIP"
+  },
+  {
+    "id": 563,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What internet identity protocol matches server IP numbers with human-readable domain names?",
+    "options": ["DHCP", "DNS", "FTP", "SMTP Engine"],
+    "a": "DNS",
+    "mode": "FLIP"
+  },
+  {
+    "id": 564,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What styling language defines the visual formatting and layout of HTML web pages?",
+    "options": ["JavaScript", "CSS", "PHP Core", "XML Panel"],
+    "a": "CSS",
+    "mode": "FLIP"
+  },
+  {
+    "id": 565,
+    "category": "Degree UG",
+    "type": "MCQ",
+    "q": "BCA: What error tracking software catches system programming flaws during execution cycles?",
+    "options": ["Compiler Suite", "Interpreter Core", "Debugger", "Linker Module"],
+    "a": "Debugger",
+    "mode": "FLIP"
+  },
+  {
+    "id": 566,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What thermodynamic cycle governs traditional steam turbine power plants?",
+    "options": ["Brayton Cycle", "Rankine Cycle", "Diesel Cycle", "Stirling Loop"],
+    "a": "Rankine Cycle",
+    "mode": "FLIP"
+  },
+  {
+    "id": 567,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What point on a stress-strain curve marks the transition from elastic to plastic deformation?",
+    "options": ["Elastic Limit", "Yield Point", "Ultimate Tensile Strength", "Fracture Point"],
+    "a": "Yield Point",
+    "mode": "FLIP"
+  },
+  {
+    "id": 568,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What mode of heat transfer uses buoyant density drops to move fluid thermal energy?",
+    "options": ["Conduction", "Convection", "Radiation", "Diffusion"],
+    "a": "Convection",
+    "mode": "FLIP"
+  },
+  {
+    "id": 569,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What fundamental gear type connects non-intersecting perpendicular shaft systems?",
+    "options": ["Spur Gear", "Helical Mesh", "Worm Gear Assembly", "Bevel Gear Set"],
+    "a": "Worm Gear Assembly",
+    "mode": "FLIP"
+  },
+  {
+    "id": 570,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Mechanical: What fluid property generates resistance to volumetric changes under compression?",
+    "options": ["Bulk Modulus", "Shear Modulus", "Young's Value", "Poisson Ratio"],
+    "a": "Bulk Modulus",
+    "mode": "FLIP"
+  },
+  {
+    "id": 571,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: What law relates induced electromotive force to changing magnetic flux profiles?",
+    "options": ["Ampere's Law", "Faraday's Law of Induction", "Coulomb's Law", "Ohm's Principle"],
+    "a": "Faraday's Law of Induction",
+    "mode": "FLIP"
+  },
+  {
+    "id": 572,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: What units quantify magnetic field density across active systems?",
+    "options": ["Weber", "Tesla", "Henry", "Farad"],
+    "a": "Tesla",
+    "mode": "FLIP"
+  },
+  {
+    "id": 573,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: What electronic component uses p-n junctions to restrict current to a single direction?",
+    "options": ["Resistor", "Capacitor", "Diode", "Inductor Loop"],
+    "a": "Diode",
+    "mode": "FLIP"
+  },
+  {
+    "id": 574,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: Which semiconductor doping style injects trivalent atoms to generate positive holes?",
+    "options": ["n-type semiconductor", "p-type semiconductor", "Intrinsic crystal", "Insulating panel"],
+    "a": "p-type semiconductor",
+    "mode": "FLIP"
+  },
+  {
+    "id": 575,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Electrical: What tracking metric reflects the true ratio of active power to total apparent power?",
+    "options": ["Quality Factor", "Power Factor", "Impedance Ratio", "Admittance Scale"],
+    "a": "Power Factor",
+    "mode": "FLIP"
+  },
+  {
+    "id": 576,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What diagnostic concrete test calculates aggregate sizing distribution using standard mesh screens?",
+    "options": ["Sieve Analysis", "Slump Test", "Compaction Factor Check", "Core Drill Sweep"],
+    "a": "Sieve Analysis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 577,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What specialized wall configuration counters lateral soil pressure across elevation transitions?",
+    "options": ["Shear Wall", "Retaining Wall", "Load-Bearing Wall", "Curtain Panel"],
+    "a": "Retaining Wall",
+    "mode": "FLIP"
+  },
+  {
+    "id": 578,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What soil consolidation process expels pore water to boost foundation stability over time?",
+    "options": ["Compaction", "Consolidation", "Liquefaction", "Flocculation"],
+    "a": "Consolidation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 579,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What geometric feature raises the outer edge of a roadway curve to counteract centrifugal force?",
+    "options": ["Camber", "Superelevation", "Gradient", "Transition Path"],
+    "a": "Superelevation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 580,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Civil: What physical parameter limits structural beam deformation under load?",
+    "options": ["Moment of Inertia", "Section Modulus", "Deflection Limit", "Shear Area"],
+    "a": "Deflection Limit",
+    "mode": "FLIP"
+  },
+  {
+    "id": 581,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What dimensionless parameter describes the ratio of momentum diffusivity to thermal diffusivity?",
+    "options": ["Reynolds Number", "Prandtl Number", "Schmidt Number", "Lewis Number"],
+    "a": "Prandtl Number",
+    "mode": "FLIP"
+  },
+  {
+    "id": 582,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What separation technique leverages selective solvents to isolate liquid solutes from chemical feeds?",
+    "options": ["Distillation", "Liquid-Liquid Extraction", "Gas Stripping", "Leaching Process"],
+    "a": "Liquid-Liquid Extraction",
+    "mode": "FLIP"
+  },
+  {
+    "id": 383,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What thermodynamic parameter quantifies the molecular randomness or disorder within a system?",
+    "options": ["Enthalpy", "Entropy", "Gibbs Free Energy", "Internal Energy"],
+    "a": "Entropy",
+    "mode": "FLIP"
+  },
+  {
+    "id": 584,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What reaction framework features uniform reactants and catalysts within a single phase?",
+    "options": ["Heterogeneous Reaction", "Homogeneous Reaction", "Catalytic Splitting", "Endothermic Shift"],
+    "a": "Homogeneous Reaction",
+    "mode": "FLIP"
+  },
+  {
+    "id": 585,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Chemical: What law asserts that a gas stream's partial solubility correlates directly with its headspace pressure?",
+    "options": ["Raoult's Law", "Henry's Law", "Dalton's Law", "Amagat's Principle"],
+    "a": "Henry's Law",
+    "mode": "FLIP"
+  },
+  {
+    "id": 586,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What thermodynamic cycle tracks the ideal performance profiles of gas turbine jet engines?",
+    "options": ["Brayton Cycle", "Otto Cycle", "Diesel Cycle", "Rankine Cycle"],
+    "a": "Brayton Cycle",
+    "mode": "FLIP"
+  },
+  {
+    "id": 587,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What specific wing modification helps suppress drag by breaking up wingtip vortex streams?",
+    "options": ["Flap Panel", "Slat Track", "Winglet", "Spoiler Plate"],
+    "a": "Winglet",
+    "mode": "FLIP"
+  },
+  {
+    "id": 588,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What speed metric defines the threshold required to break free from planetary gravitational fields?",
+    "options": ["Orbital Velocity", "Escape Velocity", "Terminal Velocity", "Supersonic Speed Threshold"],
+    "a": "Escape Velocity",
+    "mode": "FLIP"
+  },
+  {
+    "id": 589,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What control system surface helps damp out sudden pitch oscillations?",
+    "options": ["Aileron", "Elevator Trim Tab", "Canard Assembly", "Horizontal Stabilizer"],
+    "a": "Elevator Trim Tab",
+    "mode": "FLIP"
+  },
+  {
+    "id": 590,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Aerospace: What aerodynamic region involves flight velocities spanning between Mach 1.2 and Mach 5.0?",
+    "options": ["Subsonic", "Transonic", "Supersonic", "Hypersonic"],
+    "a": "Supersonic",
+    "mode": "FLIP"
+  },
+  {
+    "id": 591,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What design principle ensures software entities remain open for extension but closed for modification?",
+    "options": ["Single Responsibility Principle", "Open-Closed Principle", "Liskov Substitution", "Interface Segregation"],
+    "a": "Open-Closed Principle",
+    "mode": "FLIP"
+  },
+  {
+    "id": 592,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What structural index gauges the internal functional focus within a single software module?",
+    "options": ["Coupling", "Cohesion", "Encapsulation", "Abstraction Value"],
+    "a": "Cohesion",
+    "mode": "FLIP"
+  },
+  {
+    "id": 593,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What testing strategy evaluates a complete, integrated system without inspecting its internal code?",
+    "options": ["White-Box Testing", "Black-Box Testing", "Unit Testing", "Mutation Testing"],
+    "a": "Black-Box Testing",
+    "mode": "FLIP"
+  },
+  {
+    "id": 594,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What structural paradigm optimizes data schema layouts to eliminate database redundancies?",
+    "options": ["Denormalization", "Normalization", "Indexing Layout", "Query Refactoring"],
+    "a": "Normalization",
+    "mode": "FLIP"
+  },
+  {
+    "id": 595,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Software: What secure protocol layer encrypts information exchanges between web browsers and servers?",
+    "options": ["HTTP", "HTTPS / TLS", "FTP Link", "SSH Protocol"],
+    "a": "HTTPS / TLS",
+    "mode": "FLIP"
+  },
+  {
+    "id": 596,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What non-invasive diagnostic technique charts internal organ structures using high-frequency sound reflections?",
+    "options": ["X-Ray Imaging", "Ultrasonography", "CT Scan Engine", "Fluoroscopy Unit"],
+    "a": "Ultrasonography",
+    "mode": "FLIP"
+  },
+  {
+    "id": 597,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What diagnostic signal profile monitors and tracks muscle tissue electrical activity?",
+    "options": ["Electrocardiogram", "Electromyogram", "Electroencephalogram", "Electroretinogram"],
+    "a": "Electromyogram",
+    "mode": "FLIP"
+  },
+  {
+    "id": 598,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What polymer class undergoes predictable in vivo degradation within human tissue environments?",
+    "options": ["Non-degradable polymer", "Biodegradable polymer", "Biostable metallic alloy", "Ceramic composite"],
+    "a": "Biodegradable polymer",
+    "mode": "FLIP"
+  },
+  {
+    "id": 599,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What active optical device measures oxygen saturation levels non-invasively through a finger sensor?",
+    "options": ["Sphygmomanometer", "Pulse Oximeter", "Glucometer Panel", "Capnograph Unit"],
+    "a": "Pulse Oximeter",
+    "mode": "FLIP"
+  },
+  {
+    "id": 600,
+    "category": "Engineering",
+    "type": "MCQ",
+    "q": "Biomedical: What specialized life-support machine manages respiratory ventilation for patients unable to breathe independently?",
+    "options": ["Hemodialyzer Core", "Mechanical Ventilator", "Defibrillator Unit", "Infusion Pump Set"],
+    "a": "Mechanical Ventilator",
+    "mode": "FLIP"
+  },
+  {
+    "id": 601,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: What muscle tendon forms the thickest and strongest terminal anchor point in the human lower leg?",
+    "options": ["Patellar Tendon", "Achilles Tendon", "Tibialis Anterior", "Biceps Femoris"],
+    "a": "Achilles Tendon",
+    "mode": "FLIP"
+  },
+  {
+    "id": 602,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: Which structure separates the thoracic cavity from the abdominal cavity?",
+    "options": ["Linea Alba", "Diaphragm", "Peritoneum Panel", "Pleural Membrane"],
+    "a": "Diaphragm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 603,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: What structural valve regulates digesta transfers between the stomach and duodenum?",
+    "options": ["Cardiac Sphincter", "Pyloric Sphincter", "Ileocecal Valve", "Oddi Sphincter"],
+    "a": "Pyloric Sphincter",
+    "mode": "FLIP"
+  },
+  {
+    "id": 604,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: Which cranial nerve provides parasympathetic innervation to the thoracic and abdominal viscera?",
+    "options": ["CN IX", "CN X", "CN XI", "CN XII"],
+    "a": "CN X",
+    "mode": "FLIP"
+  },
+  {
+    "id": 605,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Anatomy: What structural bone framework houses and protects the human pituitary gland?",
+    "options": ["Sella Turcica", "Foramen Magnum", "Cribriform Plate", "Crista Galli"],
+    "a": "Sella Turcica",
+    "mode": "FLIP"
+  },
+  {
+    "id": 606,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: What core mechanism drives gas exchange across pulmonary alveolar membranes?",
+    "options": ["Active Transport", "Simple Diffusion", "Facilitated Osmosis", "Endocytosis Loop"],
+    "a": "Simple Diffusion",
+    "mode": "FLIP"
+  },
+  {
+    "id": 607,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: Which hormone prompts the gallbladder to contract and release bile into the duodenum?",
+    "options": ["Secretin", "Cholecystokinin", "Gastrin Module", "Motilin Link"],
+    "a": "Cholecystokinin",
+    "mode": "FLIP"
+  },
+  {
+    "id": 608,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: What term defines the total volume of air inspired or expired during a normal, quiet breath?",
+    "options": ["Vital Capacity", "Residual Volume", "Tidal Volume", "Inspiratory Reserve"],
+    "a": "Tidal Volume",
+    "mode": "FLIP"
+  },
+  {
+    "id": 609,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: Which specialized cells produce hydrochloric acid within the gastric mucosa?",
+    "options": ["Chief Cells", "Parietal Cells", "Mucous Cells", "G-Cells"],
+    "a": "Parietal Cells",
+    "mode": "FLIP"
+  },
+  {
+    "id": 610,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Physiology: What vascular loop structure maintains the hyperosmotic medullary gradient within the kidneys?",
+    "options": ["Glomerulus Grid", "Vasa Recta", "Proximal Tubule", "Bowman Capsule"],
+    "a": "Vasa Recta",
+    "mode": "FLIP"
+  },
+  {
+    "id": 611,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: What is the primary end product of anaerobic glycolysis in human muscle tissue?",
+    "options": ["Pyruvate", "Lactate", "Acetyl-CoA", "Ethanol"],
+    "a": "Lactate",
+    "mode": "FLIP"
+  },
+  {
+    "id": 612,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: Which nitrogenous base replaces thymine during RNA synthesis cascades?",
+    "options": ["Adenine", "Uracil", "Cytosine", "Guanine"],
+    "a": "Uracil",
+    "mode": "FLIP"
+  },
+  {
+    "id": 613,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: What metabolic pathway generates NADPH and ribose-5-phosphate components?",
+    "options": ["Krebs Cycle", "Pentose Phosphate Pathway", "Glycolysis Run", "Beta Oxidation"],
+    "a": "Pentose Phosphate Pathway",
+    "mode": "FLIP"
+  },
+  {
+    "id": 614,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: Which enzyme deficiency causes classic Phenylketonuria?",
+    "options": ["Tyrosinase", "Phenylalanine Hydroxylase", "Homogentisate Oxidase", "Galactokinase"],
+    "a": "Phenylalanine Hydroxylase",
+    "mode": "FLIP"
+  },
+  {
+    "id": 615,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Biochemistry: What molecule acts as the primary immediate high-energy currency across human biological systems?",
+    "options": ["NADH", "FADH2", "Adenosine Triphosphate", "Cyclic AMP"],
+    "a": "Adenosine Triphosphate",
+    "mode": "FLIP"
+  },
+  {
+    "id": 616,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What morphological term describes tissue cell adaptations involving a reversible swap to another mature cell type?",
+    "options": ["Anaplasia", "Dysplasia", "Metaplasia", "Hyperplasia"],
+    "a": "Metaplasia",
+    "mode": "FLIP"
+  },
+  {
+    "id": 617,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What form of cell death is characterized by cell swelling, membrane rupture, and inflammation?",
+    "options": ["Apoptosis", "Necrosis", "Autophagy", "Atrophy"],
+    "a": "Necrosis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 618,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What type of cellular accumulation forms classic foam cells in atherosclerotic plaques?",
+    "options": ["Glycogen", "Cholesterol and Lipids", "Calcium Deposits", "Melanin Pigment"],
+    "a": "Cholesterol and Lipids",
+    "mode": "FLIP"
+  },
+  {
+    "id": 619,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What unique multi-nucleated giant cell pattern is classic for granulomatous inflammation in tuberculosis?",
+    "options": ["Reed-Sternberg Cells", "Langhans Giant Cells", "Foreign Body Giant Cells", "Touton Giant Cells"],
+    "a": "Langhans Giant Cells",
+    "mode": "FLIP"
+  },
+  {
+    "id": 620,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pathology: What localized fluid accumulation pattern indicates a high-protein inflammatory exudate?",
+    "options": ["Transudate Edema", "Exudate Edema", "Lymphedema", "Myxedema Layout"],
+    "a": "Exudate Edema",
+    "mode": "FLIP"
+  },
+  {
+    "id": 621,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: Which spirochete bacterium is the causative agent of syphilis?",
+    "options": ["Borrelia burgdorferi", "Treponema pallidum", "Leptospira interrogans", "Campylobacter jejuni"],
+    "a": "Treponema pallidum",
+    "mode": "FLIP"
+  },
+  {
+    "id": 622,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: What mechanism describes plasmid transfers between bacteria via direct pili-mediated contact?",
+    "options": ["Transformation", "Transduction", "Conjugation", "Transposition"],
+    "a": "Conjugation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 623,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: Which virus is the primary cause of acute hepatocellular carcinoma globally?",
+    "options": ["Hepatitis A Virus", "Hepatitis B Virus", "Epstein-Barr Virus", "Yellow Fever Virus"],
+    "a": "Hepatitis B Virus",
+    "mode": "FLIP"
+  },
+  {
+    "id": 624,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: Which parasite causes hydraulic, water-borne diarrhea displaying characteristic asymmetric trophozoites?",
+    "options": ["Entamoeba histolytica", "Giardia lamblia", "Cryptosporidium parvum", "Balantidium coli"],
+    "a": "Giardia lamblia",
+    "mode": "FLIP"
+  },
+  {
+    "id": 625,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Microbiology: What cell wall lipid component is targeted by the acid-fast Ziehl-Neelsen stain?",
+    "options": ["Teichoic Acid", "Mycolic Acid", "Ergosterol Matrix", "Lipopolysaccharide"],
+    "a": "Mycolic Acid",
+    "mode": "FLIP"
+  },
+  {
+    "id": 626,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: What term describes what a drug does to the human body, including receptor binding dynamics?",
+    "options": ["Pharmacokinetics", "Pharmacodynamics", "Toxicology Profile", "Therapeutics Track"],
+    "a": "Pharmacodynamics",
+    "mode": "FLIP"
+  },
+  {
+    "id": 627,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: What category describes a drug that binds a receptor and activates it fully?",
+    "options": ["Full Agonist", "Antagonist", "Inverse Agonist", "Partial Agonist"],
+    "a": "Full Agonist",
+    "mode": "FLIP"
+  },
+  {
+    "id": 628,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: What specific drug inhibits bacterial cell wall cross-linking by binding D-alanyl-D-alanine terminals?",
+    "options": ["Amoxicillin", "Vancomycin", "Erythromycin", "Ciprofloxacin"],
+    "a": "Vancomycin",
+    "mode": "FLIP"
+  },
+  {
+    "id": 629,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: Which drug acts as a selective beta-1 adrenergic antagonist to lower heart rate?",
+    "options": ["Albuterol", "Metoprolol", "Propranolol", "Prazosin"],
+    "a": "Metoprolol",
+    "mode": "FLIP"
+  },
+  {
+    "id": 630,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Pharmacology: What parameter tracks the time needed for systemic drug concentrations to fall by 50%?",
+    "options": ["Clearance Rate", "Half-Life", "Volume of Distribution", "Steady-State Window"],
+    "a": "Half-Life",
+    "mode": "FLIP"
+  },
+  {
+    "id": 631,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Forensic Medicine: What sign of death is characterized by post-mortem purple-red skin discoloration from blood pooling?",
+    "options": ["Algor Mortis", "Livor Mortis", "Rigor Mortis", "Saponification"],
+    "a": "Livor Mortis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 632,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Forensic Medicine: What type of injury features clean, linear skin splits caused by sharp-edged weapons?",
+    "options": ["Laceration", "Incised Wound", "Abrasion Track", "Contusion Patch"],
+    "a": "Incised Wound",
+    "mode": "FLIP"
+  },
+  {
+    "id": 633,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Medicine: What endocrine disease is characterized by chronic cortisol overproduction?",
+    "options": ["Addison's Disease", "Cushing's Syndrome", "Hashimoto's Disease", "Diabetes Insipidus"],
+    "a": "Cushing's Syndrome",
+    "mode": "FLIP"
+  },
+  {
+    "id": 634,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Medicine: Which classic diagnostic finding on an ECG indicates acute transmural myocardial ischemia?",
+    "options": ["PR Segment Depression", "ST Segment Elevation", "T Wave Inversion", "QT Prolongation"],
+    "a": "ST Segment Elevation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 635,
+    "category": "Medicine",
+    "type": "MCQ",
+    "q": "Medicine: What condition presents with the classic clinical triad of dementia, gait ataxia, and urinary incontinence?",
+    "options": ["Alzheimer's Disease", "Normal Pressure Hydrocephalus", "Parkinson's Disease", "Multiple Infarct Dementia"],
+    "a": "Normal Pressure Hydrocephalus",
+    "mode": "FLIP"
+  },
+  {
+    "id": 636,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Surgery: What clinical sign confirms acute peritonitis upon sudden release of abdominal pressure?",
+    "options": ["Guarding", "Rebound Tenderness", "Rigidity", "Tympanites"],
+    "a": "Rebound Tenderness",
+    "mode": "FLIP"
+  },
+  {
+    "id": 637,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Surgery: What type of mechanical shock results from a sudden loss of sympathetic vascular tone?",
+    "options": ["Hypovolemic Shock", "Neurogenic Shock", "Anaphylactic Shock", "Septic Shock"],
+    "a": "Neurogenic Shock",
+    "mode": "FLIP"
+  },
+  {
+    "id": 638,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "Surgery: What structural component fails when an abdominal organ protrudes through a surgical scar path?",
+    "options": ["Inguinal Hernia", "Incisional Hernia", "Umbilical Defect", "Hiatal Slippage"],
+    "a": "Incisional Hernia",
+    "mode": "FLIP"
+  },
+  {
+    "id": 639,
+    "category": "Medical MBBS",
+    "type": "MCQ",
+    "q": "OBG: What syndrome profiles tracking challenges like hemolysis, elevated liver enzymes, and low platelets in pregnant individuals?",
+    "options": ["Eclampsia Syndrome", "HELLP Syndrome", "TORCH Complex", "Sheehan Syndrome"],
+    "a": "HELLP Syndrome",
+    "mode": "FLIP"
+  },
+  {
+    "id": 640,
+    "category": "OBG",
+    "type": "MCQ",
+    "q": "OBG: What condition is characterized by painful, premature separation of a normally situated placenta from the uterine wall?",
+    "options": ["Placenta Previa", "Abruptio Placentae", "Placenta Accreta", "Vasa Previa"],
+    "a": "Abruptio Placentae",
+    "mode": "FLIP"
+  }
+]
