@@ -292,7 +292,7 @@ P30: RVM Network | P31: Indian.00X ID System | P32: Our Amrutavarsha Vendor Netw
 P36: MD Agni-Pariksha Leadership Mandate
 </div>
 </div>
-<button onclick="closeM('pillars36Modal')" class="modal-btn-action">🏠 BACK TO HOME</button>
+<button onclick="closeM('pillars36Modal')" class="modal-btn-action">👑 CLOSE SYSTEM</button>
 </div>
 </div>
 
@@ -345,7 +345,7 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 <img id="nightImg" alt="ABST Master Plan Night Mode" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #FFD700;background:#112240;min-height:200px">
 </div>
 </div>
-<button onclick="closeM('dpr36Modal')" class="modal-btn-action">🏢 BACK TO HOME</button>
+<button onclick="closeM('dpr36Modal')" class="modal-btn-action">🏢 CLOSE PLAN</button>
 </div>
 </div>
 
@@ -376,7 +376,6 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 <script>
 let deferredAppInstallPrompt = null;
 let isAppInstalled = false;
-let dashboardUnlocked = false; // Persistent memory lock layer
 
 function openM(id){
   document.querySelectorAll('.modal').forEach(function(modal) { modal.style.display = 'none'; });
@@ -408,7 +407,9 @@ function unlockDashboard() {
   if(overlay) {
     overlay.style.opacity = '0';
     overlay.style.transform = 'scale(1.1)';
-    dashboardUnlocked = true; // Welcome lock safe confirmation log
+    
+    // Welcome note page ni dynamic ga bypass cheyadaniki security tokens engine allocation setup
+    sessionStorage.setItem('dashboard_direct_unlock_token', 'true');
     
     setTimeout(function(){
       overlay.style.display = 'none';
@@ -490,13 +491,25 @@ function triggerPwaInstallation() {
 }
 
 window.addEventListener('DOMContentLoaded', function(){
-  // Force Welcome Note Overlay rendering logic only on pure initial page loads
   var overlay = document.getElementById('abst-welcome-overlay');
-  if(overlay && !dashboardUnlocked) {
-     overlay.style.display = 'flex';
-  }
+  var cards = document.querySelectorAll('.icon-card');
   
   loadSavedIdentityData();
+  
+  // Dynamic validation check: Sub-pages nunchi safe return chesthe welcome note layer hidden chesthundi
+  if (sessionStorage.getItem('dashboard_direct_unlock_token') === 'true') {
+    if(overlay) {
+      overlay.style.display = 'none';
+    }
+    cards.forEach((card) => {
+      card.classList.add('swirl');
+    });
+  } else {
+    // Pure initial app configuration load clear check
+    if(overlay) {
+      overlay.style.display = 'flex';
+    }
+  }
   
   if(window.matchMedia('(display-mode: standalone)').matches || localStorage.getItem('abst_installed') === 'true') {
      var installCardNode = document.getElementById('pwaInstallCard');
@@ -508,7 +521,7 @@ window.addEventListener('DOMContentLoaded', function(){
 document.addEventListener('keydown',function(e){
   if(e.key==='Escape'){
     document.querySelectorAll('.modal').forEach(function(m){m.style.display='none'});
-    document.documentElement.classList.remove('modal-open');
+    document.documentElement.classList.remove('remove-open');
   }
 });
 
