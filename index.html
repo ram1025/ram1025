@@ -43,16 +43,17 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 .modal-body h4{color:#64ffda;margin-top:15px}
 .modal-body ul{padding-left:20px}
 
-/* INPUT FORM FIELD CORE SCHEMES */
+/* PROFILE MODAL INPUT CONFIGS */
 .profile-input {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     background: #0a192f;
     border: 1px solid #233554;
-    border-radius: 6px;
+    border-radius: 8px;
     color: #fff;
-    font-size: 14px;
-    margin-bottom: 15px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 .profile-input:focus { border-color: #64ffda; outline: none; }
 
@@ -120,17 +121,17 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 
 @keyframes floatDroplet {
     0%, 100% { transform: translateY(0); filter: drop-shadow(0 0 15px rgba(100,255,218,0.5)); }
-    50% { transform: translateY(-10px); filter: drop-shadow(0 0 25px rgba(100,255,218,0.8)); }
+    50% { transform: translateY(-15px); filter: drop-shadow(0 0 25px rgba(100,255,218,0.8)); }
 }
 @keyframes rotateRing { 100% { transform: rotate(360deg); } }
 @keyframes textBlink { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; text-shadow: 0 0 8px #64ffda; } }
 
 /* DYNAMIC SWIRLING INTERACTIVE DASHBOARD SYSTEM */
 .icon-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 0 20px;max-width:100%;margin:20px auto 0}
-.icon-card{background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;transition:transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease}
+.icon-card{background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;transition:transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease}
 .icon-card:active{background:#1a2f4a;transform:scale(0.85) rotate(360deg);border-color:#64ffda}
 .icon-card.jarvis{border-color:#64ffda;box-shadow:0 0 20px rgba(100,255,218,0.1)}
-.icon-card.install-btn-node{border-color:#ffd700;box-shadow:0 0 15px rgba(255,215,0,0.2);display:none} /* Hidden initially until engine detects non-installed state */
+.icon-card.install-btn-node{border-color:#ffd700;box-shadow:0 0 15px rgba(255,215,0,0.2);display:none} 
 .icon-card .icon{font-size:1.8rem;margin-bottom:5px;transition:transform 0.3s ease}
 .icon-card:active .icon{transform:scale(1.2)}
 .icon-card span{color:#64ffda;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;display:block}
@@ -141,9 +142,9 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <!-- INTERACTIVE TOUCH TO OPEN WELCOME ENGINE -->
 <div id="abst-welcome-overlay">
   <div class="glow-welcome-text">WELCOME TO ABST</div>
-  <div id="welcome-id-display" class="glow-welcome-text" style="color:#FFD700;font-size:16px;letter-spacing:4px;margin-top:5px">SOVEREIGN ID: INDIAN.001</div>
+  <div id="welcome-id-display" style="color:#FFD700;font-size:16px;letter-spacing:4px;font-weight:bold;text-align:center;margin-bottom:10px">SOVEREIGN ID: INDIAN.001</div>
   
-  <!-- Touch Active Hub Target Reference: 1000352538.jpg visual mapping -->
+  <!-- Touch Active Hub Target Layer -->
   <div class="droplet-gateway" onclick="unlockDashboard()">
     <img src="icon-192.png" onerror="this.src='seal.png'; this.onerror=function(){this.src='https://img.icons8.com/plasma/120/00FF88/water-droplet.png';};" alt="ABST Security Seal Node">
   </div>
@@ -153,11 +154,11 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 </div>
 
 <div class="container">
-<!-- MENU HAMBURGER BUTTON -->
+<!-- MENU HAMBURGER BUTTON ON TOP LEFT -->
 <div class="menu-trigger" onclick="openM('profileModal')">☰</div>
 
-<img src="icon-192.png" alt="Seal" width="90" height="90" style="border-radius:50%" class="main-seal">
-<h1 id="dash-title-name">My Jeevandhara</h1>
+<img src="icon-192.png" onerror="this.src='seal.png';" alt="Seal" width="90" height="90" style="border-radius:50%" class="main-seal">
+<h1>My Jeevandhara</h1>
 <h3>Akanda Bharat Sovereign Township</h3>
 <p class="tagline">A 36-Pillar Ecosystem of Total Independence</p>
 <p class="visionary" id="dash-visionary-display">Master Visionary: INDIAN.001 RAM GANESH MAKINA</p>
@@ -215,22 +216,22 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <p class="status" id="dash-status-string">Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: INDIAN.001 RAM GANESH MAKINA | P36 Active</p>
 </div>
 
-<!-- DYNAMIC PROFILE UPDATE MODAL -->
+<!-- DYNAMIC PROFILE UPDATE MODAL AS PER SCREENSHOT SCHEMA -->
 <div id="profileModal" class="modal">
-<div class="modal-inner">
+<div class="modal-inner" style="max-width:550px;">
 <div class="modal-head">
-<h2 style="color:#64ffda;margin:0">👤 PROFILE IDENTITY CONFIG</h2>
+<h2 style="color:#64ffda;margin:0;font-size:22px;display:flex;align-items:center;gap:10px">👤 PROFILE IDENTITY CONFIG</h2>
 <span onclick="closeM('profileModal')" class="modal-close">&times;</span>
 </div>
-<div class="modal-body">
-<label style="color:#8892b0;display:block;margin-bottom:5px;font-weight:bold">MASTER VISIONARY NAME</label>
+<div class="modal-body" style="background:#112240;padding:20px 15px">
+<label style="color:#8892b0;display:block;margin-bottom:8px;font-weight:bold;font-size:12px;letter-spacing:1px">MASTER VISIONARY NAME</label>
 <input type="text" id="inputMasterName" class="profile-input" placeholder="RAM GANESH MAKINA">
 
-<label style="color:#8892b0;display:block;margin-bottom:5px;font-weight:bold">SOVEREIGN ID CONFIG</label>
+<label style="color:#8892b0;display:block;margin-bottom:8px;font-weight:bold;font-size:12px;letter-spacing:1px">SOVEREIGN ID CONFIG</label>
 <input type="text" id="inputSovereignID" class="profile-input" placeholder="INDIAN.001">
-<p style="color:#8892b0;font-size:11px;line-height:1.4">Editing updates the core structural registry values within local dashboard layout configuration records temporarily until sync refresh locks reset.</p>
+<p style="color:#8892b0;font-size:12px;line-height:1.5;margin:10px 0 0 0">Editing updates the core structural registry values within local dashboard layout configuration records temporarily until sync refresh locks reset.</p>
 </div>
-<button onclick="saveProfileConfigurationData()" class="modal-btn-action">💾 SAVE & REFRESH RECOGNITION</button>
+<button onclick="saveProfileConfigurationData()" class="modal-btn-action" style="background:#5effde;color:#0a192f;font-size:16px">💾 SAVE & REFRESH RECOGNITION</button>
 </div>
 </div>
 
@@ -383,17 +384,15 @@ function unlockDashboard() {
   }
 }
 
-/* LOCALSTORAGE RECOGNITION DATABASE SYSTEMS */
+/* LOCALSTORAGE PERSISTENT PROFILE IDENTITY DATA LAYERS */
 function loadSavedIdentityData() {
   var storedName = localStorage.getItem('abst_visionary_name') || "RAM GANESH MAKINA";
   var storedID = localStorage.getItem('abst_sovereign_id') || "INDIAN.001";
   
-  // Apply data states to UI strings
   document.getElementById('dash-visionary-display').innerText = "Master Visionary: " + storedID + " " + storedName;
   document.getElementById('welcome-id-display').innerText = "SOVEREIGN ID: " + storedID;
   document.getElementById('dash-status-string').innerHTML = "Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
   
-  // Set placeholders inside variables form fields
   document.getElementById('inputMasterName').value = storedName;
   document.getElementById('inputSovereignID').value = storedID;
 }
@@ -409,12 +408,11 @@ function saveProfileConfigurationData() {
   closeM('profileModal');
 }
 
-/* NATIVE CROSS-PLATFORM SYSTEM ENGINE INSTALLATION CONTROLLERS */
+/* UNIVERSAL APP INSTALL ENGINE CROSS PLATFORM DETECTIONS */
 window.addEventListener('beforeinstallprompt', function(e) {
   e.preventDefault();
   deferredAppInstallPrompt = e;
   
-  // Verification check: Only display icon node if device has not pre-installed web package link asset yet
   var installCardNode = document.getElementById('pwaInstallCard');
   if(installCardNode && !window.matchMedia('(display-mode: standalone)').matches) {
      installCardNode.style.display = 'grid';
@@ -434,7 +432,6 @@ function triggerPwaInstallation() {
   });
 }
 
-// Clean auto-hiding layer hook if user operates inside native desktop app window standalone layout directly already
 window.addEventListener('DOMContentLoaded', function(){
   loadSavedIdentityData();
   
@@ -456,11 +453,11 @@ document.addEventListener('keydown',function(e){
   }
 });
 
-/* OFFLINE CAPABILITY ENGINE VIA STANDALONE NETWORK INTERFACES */
+/* TOTAL OFFLINE SERVICE WORKER CACHE INTERFACE MATRIX */
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
-  .then(function(reg){ console.log("Offline Engine Status: Operational Secure Layer."); })
-  .catch(function(err){ console.log("Offline Layer Error Mapping: ", err); });
+  .then(function(reg){ console.log("Offline Matrix Active."); })
+  .catch(function(err){ console.log("Offline Layer Sync Interrupted: ", err); });
 }
 </script>
 </body>
