@@ -3667,3 +3667,67 @@
     "mode": "FLIP"
   }
 ]
+{
+  "education_database": [
+    {
+      "id": 641,
+      "category": "Science",
+      "question": "What is the primary function of the mitochondria in a cell?",
+      "answer": "To produce energy in the form of ATP through cellular respiration."
+    },
+    {
+      "id": 642,
+      "category": "Mathematics",
+      "question": "Define a prime number.",
+      "answer": "A natural number greater than 1 that has no positive divisors other than 1 and itself."
+    },
+    {
+      "id": 643,
+      "category": "History",
+      "question": "Which civilization is credited with the invention of the wheel?",
+      "answer": "The Mesopotamian civilization (Sumerians)."
+    },
+    {
+      "id": 644,
+      "category": "Technology",
+      "question": "What does the acronym 'RAM' stand for in computing?",
+      "answer": "Random Access Memory."
+    },
+    {
+      "id": 645,
+      "category": "Literature",
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "answer": "William Shakespeare."
+    },
+    {
+      "id": 646,
+      "category": "Geography",
+      "question": "Which is the longest river in the world?",
+      "answer": "The Nile River."
+    },
+    {
+      "id": 647,
+      "category": "Physics",
+      "question": "What is the speed of light in a vacuum?",
+      "answer": "Approximately 299,792,458 meters per second."
+    },
+    {
+      "id": 648,
+      "category": "Biology",
+      "question": "What is the process by which plants convert sunlight into energy?",
+      "answer": "Photosynthesis."
+    },
+    {
+      "id": 649,
+      "category": "Chemistry",
+      "question": "What is the chemical symbol for gold?",
+      "answer": "Au."
+    },
+    {
+      "id": 650,
+      "category": "General Knowledge",
+      "question": "Which planet is known as the 'Red Planet'?",
+      "answer": "Mars."
+    }
+  ]
+}
