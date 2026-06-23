@@ -1,0 +1,245 @@
+[
+  {
+    "id": "ABST-P01",
+    "pillar": "1",
+    "q": "What is the 1st Pillar of ABST / Project AURA Mother Hub?",
+    "a": "Consciousness and Core Identification Systems.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P02",
+    "pillar": "2",
+    "q": "What is the 2nd Pillar focused on Earth sovereignty?",
+    "a": "The Plasma Plant for zero-waste high-efficiency molecular processing.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P03",
+    "pillar": "3",
+    "q": "What renewable energy source constitutes the 3rd Pillar?",
+    "a": "Solar Power (Sun Rays) high-efficiency gathering grid.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P04",
+    "pillar": "4",
+    "q": "What constitutes the Moon-Ray energy capture framework?",
+    "a": "4th Pillar: Nocturnal spectrum sub-photovoltaic energy systems.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P05",
+    "pillar": "5",
+    "q": "What airborne technology represents the 5th Pillar power generation?",
+    "a": "AWT (Airborne Wind Turbines) capturing high-altitude atmospheric currents.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P06",
+    "pillar": "6",
+    "q": "What is the technology behind Rain-Drop Energy extraction?",
+    "a": "6th Pillar: TENG (Triboelectric Nanogenerators) for liquid kinetic recovery.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P10",
+    "pillar": "10",
+    "q": "What core water processing framework is developed under Our Amrutavarsha Plant?",
+    "a": "10th Pillar: Mega Atmospheric Water Generation (AWG) extraction network.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P11",
+    "pillar": "11",
+    "q": "What technology is utilized in the 11th Pillar for pharmaceutical-grade water purity?",
+    "a": "The Guard: Dual-Ion Shield technology using precise Copper and Silver ionization.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P12",
+    "pillar": "12",
+    "q": "What physical structural infrastructure constitutes the 12th Pillar water security?",
+    "a": "Amrutavarsha Vendor Network and distributed public water security vaults.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P20",
+    "pillar": "20",
+    "q": "What standard underground delivery infrastructure handles high-volume cargo routing?",
+    "a": "20th Pillar: Walkthrough Utility Tunnel framework layout network.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P21",
+    "pillar": "21",
+    "q": "What trenchless construction pipeline model defines the 21st Pillar routing?",
+    "a": "HDD (Horizontal Directional Drilling) Pipeline Infrastructure Network.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P22",
+    "pillar": "22",
+    "q": "What clean kinetic asset captures energy from public pedestrian footfalls?",
+    "a": "22nd Pillar: Footstep Energy Walkways using embedded piezoelectric grids.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P23",
+    "pillar": "23",
+    "q": "What biometric master asset under lock protocols forms the 23rd Pillar?",
+    "a": "The Bio-Vault air-gapped genetic and asset vault protection framework.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P24",
+    "pillar": "24",
+    "q": "What residential infrastructure zone represents the 24th Pillar community core?",
+    "a": "Matru-Shakti Residential Township zone complexes.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P25",
+    "pillar": "25",
+    "q": "What baseline sovereign educational infrastructure forms the 25th Pillar?",
+    "a": "The KG to PhD Unified Sovereign Knowledge Building structure.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P26",
+    "pillar": "26",
+    "q": "What critical asset is developed immediately following the Plasma Plant installation?",
+    "a": "26th Pillar: Slag-Brick Factory using high-temperature eco-recycling residues.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P27",
+    "pillar": "27",
+    "q": "What specific materials recovery operation defines the 27th Pillar?",
+    "a": "rPET (Recycled Polyethylene Terephthalate) Factory and processing plant.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P28",
+    "pillar": "28",
+    "q": "What glass processing platform handles material recycling inside the 28th Pillar?",
+    "a": "Unified Glass Recycling and sorting recovery units.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P29",
+    "pillar": "29",
+    "q": "What non-ferrous metal recycling asset serves as the 29th Pillar skeleton?",
+    "a": "Aluminium Recycling and raw structural ingot Processing Units.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P30",
+    "pillar": "30",
+    "q": "What generalized recycling unit handles structural plastics tracking?",
+    "a": "30th Pillar: General Plastic Processing and thermal depolymerization works.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P31",
+    "pillar": "31",
+    "q": "What control center manages urban waste sorting loops dynamically?",
+    "a": "31st Pillar: Waste-to-Trash Command centralized network nodes.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P32",
+    "pillar": "32",
+    "q": "What specific bio-recycling protocol links urban waste directly to agriculture?",
+    "a": "32nd Pillar: Human Waste-to-Farming processing and fertilizer stabilization plants.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P33",
+    "pillar": "33",
+    "q": "What massive ecological purification infrastructure serves as the 33rd Pillar?",
+    "a": "Vayu-Shuddhi Forest carbon sequestration and atmospheric cleaning shield.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P34",
+    "pillar": "34",
+    "q": "What dynamic security network blocks unauthorized access under the 34th Pillar?",
+    "a": "Chain Mesh security array and AMG (Automated Monitoring Grid).",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P35",
+    "pillar": "35",
+    "q": "What tracking platform controls citizen tracking inside the 35th Pillar ecosystem?",
+    "a": "Indian.00X ID System encrypted sovereign verification framework.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-P36",
+    "pillar": "36",
+    "q": "What platform aggregates grassroots innovation submissions under the 36th Pillar?",
+    "a": "Ankur Idea Box crowd-sourced operational portal loop system.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": "ABST-M01",
+    "pillar": "2",
+    "q": "What is the mandatory core principle of MD Agni-Pariksha?",
+    "a": "Every state MD must serve 6 months in rural villages with a water tank, remembering the very first person they served.",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  }
+]
