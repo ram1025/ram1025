@@ -6271,19 +6271,7 @@
       "options": ["Movement of solvent through a semi-permeable membrane", "Cell division", "Protein synthesis", "DNA replication"],
       "a": "Movement of solvent through a semi-permeable membrane",
       "mode": "FLIP"
-    }
-  ]
-}Next? 😊
-[6:36 pm, 23/06/2026] Ganesh Ram Makina: {"id": 691, "question": "Which enzyme digests starch in saliva?", "answer": "Amylase."},
-      {"id": 692, "question": "What is the main waste product of human metabolism?", "answer": "Urea."},
-      {"id": 693, "question": "What is 'meiosis'?", "answer": "Cell division resulting in four daughter cells with half the chromosomes."},
-      {"id": 694, "question": "Which hormone is known as the 'fight or flight' hormone?", "answer": "Adrenaline."},
-      {"id": 695, "question": "What is the structure of DNA?", "answer": "Double helix."},
-      {"id": 696, "question": "Which white blood cell is most abundant?", "answer": "Neutrophils."},
-      {"id": 697, "question": "What is the function of the gallbladder?", "answer": "Storage of bile."},
-      {"id": 698, "qu…
-Reformatted questions 😊:javascript{
-  "education_database": [
+    },
     {
       "id": 691,
       "category": "Science",
