@@ -274,11 +274,21 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 <div class="modal-body" style="background:#112240;padding:20px 15px">
 
 <img id="profile-photo-preview" src="icon-192.png" class="profile-photo-preview" alt="Profile Photo">
-<label class="profile-label">PROFILE PHOTO URL</label>
-<input type="text" id="inputProfilePhoto" class="profile-input" placeholder="seal.png or https://...">
+<label class="profile-label">PROFILE PHOTO (UPLOAD)</label>
+<input type="file" id="inputProfilePhotoFile" accept="image/*" class="profile-input" onchange="previewImage(this)">
+<input type="hidden" id="inputProfilePhotoBase64">
 
 <label class="profile-label">MASTER VISIONARY NAME</label>
 <input type="text" id="inputMasterName" class="profile-input" placeholder="RAM GANESH MAKINA">
+
+<label class="profile-label">EMAIL ADDRESS</label>
+<input type="email" id="inputEmail" class="profile-input" placeholder="master@abst.com">
+
+<label class="profile-label">PHONE NUMBER</label>
+<input type="tel" id="inputPhone" class="profile-input" placeholder="+91 XXX XXX XXXX">
+
+<label class="profile-label">BLOOD GROUP</label>
+<input type="text" id="inputBlood" class="profile-input" placeholder="e.g., O+">
 
 <label class="profile-label">SOVEREIGN ID CONFIG</label>
 <input type="text" id="inputSovereignID" class="profile-input" placeholder="INDIAN.001">
@@ -305,8 +315,6 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 
 <label class="profile-label">CUSTOM TAGLINE / BIO</label>
 <input type="text" id="inputBio" class="profile-input" placeholder="Building Tomorrow's Sovereign Cities">
-
-<p style="color:#8892b0;font-size:12px;line-height:1.5;margin:10px 0 0">Editing updates all screens instantly: Welcome Note, Main Page, Status. Data saves to device.</p>
 </div>
 <button onclick="saveProfileConfigurationData()" class="modal-btn-action" style="background:#5effde;color:#0a192f;font-size:16px">💾 SAVE & REFRESH RECOGNITION</button>
 </div>
@@ -444,131 +452,100 @@ function closeM(id){
   }
 }
 
-/* ENTRY MATRIX AND DYNAMIC SWIRL HOOKS TRIGGER ENGINE */
+function previewImage(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      document.getElementById('profile-photo-preview').src = e.target.result;
+      document.getElementById('inputProfilePhotoBase64').value = e.target.result;
+    };
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
 function unlockDashboard() {
   var overlay = document.getElementById('abst-welcome-overlay');
   var cards = document.querySelectorAll('.icon-card');
-  
   if(overlay) {
     overlay.style.opacity = '0';
     overlay.style.transform = 'scale(1.1)';
-    
-    // Welcome note page token definition logic setup
     sessionStorage.setItem('dashboard_direct_unlock_token', 'true');
-    
     setTimeout(function(){
       overlay.style.display = 'none';
-      
-      // SWIRL ENTRY SEQUENCE FOR DASHBOARD CARDS
-      cards.forEach((card, index) => {
-        setTimeout(() => {
-          card.classList.add('swirl');
-        }, index * 60);
-      });
-      
+      cards.forEach((card, index) => { setTimeout(() => { card.classList.add('swirl'); }, index * 60); });
     }, 600);
   }
 }
 
-/* STORAGE RETRIEVAL AND PERSISTENT RECOGNITION UPDATER */
 function loadSavedIdentityData() {
-  var storedName = localStorage.getItem('abst_visionary_name') || "RAM GANESH MAKINA";
-  var storedID = localStorage.getItem('abst_sovereign_id') || "INDIAN.001";
-  var storedDesignation = localStorage.getItem('abst_designation') || "Chief Architect";
-  var storedLocation = localStorage.getItem('abst_location') || "Vizag Mother Hub";
-  var storedSecurity = localStorage.getItem('abst_security') || "7";
-  var storedBio = localStorage.getItem('abst_bio') || "Building Tomorrow's Sovereign Cities";
-  var storedPhoto = localStorage.getItem('abst_photo') || "icon-192.png";
+  var fields = {
+    name: 'abst_visionary_name', id: 'abst_sovereign_id', desig: 'abst_designation', 
+    loc: 'abst_location', sec: 'abst_security', bio: 'abst_bio', 
+    email: 'abst_email', phone: 'abst_phone', blood: 'abst_blood', photo: 'abst_photo'
+  };
   
-  // 1. Main Page Configs Sync
-  var dashVision = document.getElementById('dash-visionary-display');
-  if(dashVision) dashVision.innerText = "Master Visionary: " + storedID + " " + storedName;
+  var name = localStorage.getItem(fields.name) || "RAM GANESH MAKINA";
+  var id = localStorage.getItem(fields.id) || "INDIAN.001";
+  var desig = localStorage.getItem(fields.desig) || "Chief Architect";
+  var loc = localStorage.getItem(fields.loc) || "Vizag Mother Hub";
+  var sec = localStorage.getItem(fields.sec) || "7";
+  var bio = localStorage.getItem(fields.bio) || "Building Tomorrow's Sovereign Cities";
+  var email = localStorage.getItem(fields.email) || "";
+  var phone = localStorage.getItem(fields.phone) || "";
+  var blood = localStorage.getItem(fields.blood) || "";
+  var photo = localStorage.getItem(fields.photo) || "icon-192.png";
   
-  var dashDesignation = document.getElementById('dash-designation-display');
-  if(dashDesignation) dashDesignation.innerText = storedDesignation + " | " + storedLocation + " | Security Layer " + storedSecurity;
+  document.getElementById('dash-visionary-display').innerText = "Master Visionary: " + id + " " + name;
+  document.getElementById('dash-designation-display').innerText = desig + " | " + loc + " | Security Layer " + sec;
+  document.getElementById('dash-status-string').innerHTML = "Status: Operational | Jarvis AI Core Layer " + sec + " | 36 Pillars Complete<br>Master: " + id + " " + name + " | P36 Active";
+  document.getElementById('main-seal-img').src = photo;
+  document.getElementById('dash-bio-display').innerText = bio;
   
-  var dashStatus = document.getElementById('dash-status-string');
-  if(dashStatus) dashStatus.innerHTML = "Status: Operational | Jarvis AI Core Layer " + storedSecurity + " | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
+  document.getElementById('welcome-id-display').innerText = id;
+  document.getElementById('welcome-visionary-name').innerText = name;
+  document.getElementById('welcome-designation').innerText = desig;
+  document.getElementById('welcome-location').innerText = loc;
+  document.getElementById('welcome-security').innerText = sec;
+  document.getElementById('welcome-seal-img').src = photo;
   
-  var mainSeal = document.getElementById('main-seal-img');
-  if(mainSeal) mainSeal.src = storedPhoto;
-  
-  var dashBio = document.getElementById('dash-bio-display');
-  if(dashBio) dashBio.innerText = storedBio;
-  
-  // 2. Gateway Overlay Synchronization Nodes
-  var welcomeID = document.getElementById('welcome-id-display');
-  if(welcomeID) welcomeID.innerText = storedID;
-  
-  var welcomeName = document.getElementById('welcome-visionary-name');
-  if(welcomeName) welcomeName.innerText = storedName;
-  
-  var welcomeDesignation = document.getElementById('welcome-designation');
-  if(welcomeDesignation) welcomeDesignation.innerText = storedDesignation;
-  
-  var welcomeLocation = document.getElementById('welcome-location');
-  if(welcomeLocation) welcomeLocation.innerText = storedLocation;
-  
-  var welcomeSecurity = document.getElementById('welcome-security');
-  if(welcomeSecurity) welcomeSecurity.innerText = storedSecurity;
-  
-  var welcomeSeal = document.getElementById('welcome-seal-img');
-  if(welcomeSeal) welcomeSeal.src = storedPhoto;
-  
-  // 3. Admin Input Form Memory Sync
-  var inputName = document.getElementById('inputMasterName');
-  var inputID = document.getElementById('inputSovereignID');
-  var inputDesig = document.getElementById('inputDesignation');
-  var inputLoc = document.getElementById('inputLocation');
-  var inputSec = document.getElementById('inputSecurity');
-  var inputBioField = document.getElementById('inputBio');
-  var inputPhotoField = document.getElementById('inputProfilePhoto');
-  var photoPreview = document.getElementById('profile-photo-preview');
-  
-  if(inputName) inputName.value = storedName;
-  if(inputID) inputID.value = storedID;
-  if(inputDesig) inputDesig.value = storedDesignation;
-  if(inputLoc) inputLoc.value = storedLocation;
-  if(inputSec) inputSec.value = storedSecurity;
-  if(inputBioField) inputBioField.value = storedBio;
-  if(inputPhotoField) inputPhotoField.value = storedPhoto;
-  if(photoPreview) photoPreview.src = storedPhoto;
+  document.getElementById('inputMasterName').value = name;
+  document.getElementById('inputSovereignID').value = id;
+  document.getElementById('inputDesignation').value = desig;
+  document.getElementById('inputLocation').value = loc;
+  document.getElementById('inputSecurity').value = sec;
+  document.getElementById('inputBio').value = bio;
+  document.getElementById('inputEmail').value = email;
+  document.getElementById('inputPhone').value = phone;
+  document.getElementById('inputBlood').value = blood;
+  document.getElementById('profile-photo-preview').src = photo;
 }
 
 function saveProfileConfigurationData() {
-  var varName = document.getElementById('inputMasterName').value.trim();
-  var varID = document.getElementById('inputSovereignID').value.trim();
-  var varDesignation = document.getElementById('inputDesignation').value;
-  var varLocation = document.getElementById('inputLocation').value.trim();
-  var varSecurity = document.getElementById('inputSecurity').value;
-  var varBio = document.getElementById('inputBio').value.trim();
-  var varPhoto = document.getElementById('inputProfilePhoto').value.trim();
+  localStorage.setItem('abst_visionary_name', document.getElementById('inputMasterName').value);
+  localStorage.setItem('abst_sovereign_id', document.getElementById('inputSovereignID').value);
+  localStorage.setItem('abst_designation', document.getElementById('inputDesignation').value);
+  localStorage.setItem('abst_location', document.getElementById('inputLocation').value);
+  localStorage.setItem('abst_security', document.getElementById('inputSecurity').value);
+  localStorage.setItem('abst_bio', document.getElementById('inputBio').value);
+  localStorage.setItem('abst_email', document.getElementById('inputEmail').value);
+  localStorage.setItem('abst_phone', document.getElementById('inputPhone').value);
+  localStorage.setItem('abst_blood', document.getElementById('inputBlood').value);
   
-  if(varName !== "") localStorage.setItem('abst_visionary_name', varName);
-  if(varID !== "") localStorage.setItem('abst_sovereign_id', varID);
-  if(varDesignation !== "") localStorage.setItem('abst_designation', varDesignation);
-  if(varLocation !== "") localStorage.setItem('abst_location', varLocation);
-  if(varSecurity !== "") localStorage.setItem('abst_security', varSecurity);
-  if(varBio !== "") localStorage.setItem('abst_bio', varBio);
-  if(varPhoto !== "") localStorage.setItem('abst_photo', varPhoto);
+  var newPhoto = document.getElementById('inputProfilePhotoBase64').value;
+  if(newPhoto) localStorage.setItem('abst_photo', newPhoto);
   
   loadSavedIdentityData();
   closeM('profileModal');
 }
 
-/* UNIVERSAL APPLICATION DEPLOYMENT HOOKS */
 window.addEventListener('beforeinstallprompt', function(e) {
   e.preventDefault();
   deferredAppInstallPrompt = e;
-  
   var installCardNode = document.getElementById('pwaInstallCard');
-  if(installCardNode && !window.matchMedia('(display-mode: standalone)').matches && !isAppInstalled) {
-     installCardNode.style.display = 'grid';
-  }
+  if(installCardNode && !window.matchMedia('(display-mode: standalone)').matches && !isAppInstalled) installCardNode.style.display = 'grid';
 });
 
 function triggerPwaInstallation() {
-  var installCardNode = document.getElementById('pwaInstallCard');
   if(!deferredAppInstallPrompt) {
     alert('📲 To install:\n\nAndroid: Chrome menu → Install App\n\niPhone: Safari Share → Add to Home Screen\n\nDesktop: Chrome address bar → Install icon');
     return;
@@ -576,59 +553,20 @@ function triggerPwaInstallation() {
   deferredAppInstallPrompt.prompt();
   deferredAppInstallPrompt.userChoice.then(function(choiceResult) {
     if (choiceResult.outcome === 'accepted') {
-      if(installCardNode) installCardNode.style.display = 'none';
+      document.getElementById('pwaInstallCard').style.display = 'none';
       isAppInstalled = true;
-      localStorage.setItem('abst_installed', 'true');
     }
-    deferredAppInstallPrompt = null;
   });
 }
 
-window.addEventListener('appinstalled', () => {
-  var installCardNode = document.getElementById('pwaInstallCard');
-  if(installCardNode) installCardNode.style.display = 'none';
-  isAppInstalled = true;
-  localStorage.setItem('abst_installed', 'true');
-});
-
 window.addEventListener('DOMContentLoaded', function(){
-  var overlay = document.getElementById('abst-welcome-overlay');
-  var cards = document.querySelectorAll('.icon-card');
-  
   loadSavedIdentityData();
-  
-  // Dynamic validation check: Token validation system to prevent overlay flashing on back operations
   if (sessionStorage.getItem('dashboard_direct_unlock_token') === 'true') {
-    if(overlay) {
-      overlay.style.display = 'none';
-    }
-    cards.forEach((card) => {
-      card.classList.add('swirl');
-    });
-  } else {
-    if(overlay) {
-      overlay.style.display = 'flex';
-    }
-  }
-  
-  if(window.matchMedia('(display-mode: standalone)').matches || localStorage.getItem('abst_installed') === 'true') {
-     var installCardNode = document.getElementById('pwaInstallCard');
-     if(installCardNode) installCardNode.style.display = 'none';
-     isAppInstalled = true;
+    var overlay = document.getElementById('abst-welcome-overlay');
+    if(overlay) overlay.style.display = 'none';
+    document.querySelectorAll('.icon-card').forEach((card) => { card.classList.add('swirl'); });
   }
 });
-
-document.addEventListener('keydown',function(e){
-  if(e.key==='Escape'){
-    document.querySelectorAll('.modal').forEach(function(m){m.style.display='none'});
-    document.documentElement.classList.remove('modal-open');
-  }
-});
-
-if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
-  .catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
-}
 </script>
 </body>
 </html>
