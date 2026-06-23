@@ -1,67 +1,2164 @@
 [
   {
-    "id": "EDU-GK-001",
-    "category": "GENERAL KNOWLEDGE",
-    "q": "What is the capital of India?",
+    "id": 1,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "Which fruit is red and keeps the doctor away?",
+    "options": ["Apple", "Banana", "Grapes", "Papaya"],
+    "a": "Apple",
+    "mode": "FLIP"
+  },
+  {
+    "id": 2,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "How many fingers do you have on one hand?",
+    "options": ["2", "5", "10", "4"],
+    "a": "5",
+    "mode": "FLIP"
+  },
+  {
+    "id": 3,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "What is the color of the sky on a clear day?",
+    "options": ["Red", "Green", "Blue", "Yellow"],
+    "a": "Blue",
+    "mode": "FLIP"
+  },
+  {
+    "id": 4,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "Which animal says 'Meow'?",
+    "options": ["Dog", "Cat", "Cow", "Lion"],
+    "a": "Cat",
+    "mode": "FLIP"
+  },
+  {
+    "id": 5,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "What comes after the letter 'A'?",
+    "options": ["C", "D", "B", "M"],
+    "a": "B",
+    "mode": "FLIP"
+  },
+  {
+    "id": 6,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "Which shape looks like a round ring?",
+    "options": ["Square", "Triangle", "Circle", "Star"],
+    "a": "Circle",
+    "mode": "FLIP"
+  },
+  {
+    "id": 7,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "What is the color of milk?",
+    "options": ["White", "Black", "Pink", "Blue"],
+    "a": "White",
+    "mode": "FLIP"
+  },
+  {
+    "id": 8,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "Which vehicle runs on tracks and goes 'Choo-Choo'?",
+    "options": ["Car", "Aeroplane", "Train", "Bicycle"],
+    "a": "Train",
+    "mode": "FLIP"
+  },
+  {
+    "id": 9,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "Which body part do you use to see things?",
+    "options": ["Ears", "Eyes", "Nose", "Hands"],
+    "a": "Eyes",
+    "mode": "FLIP"
+  },
+  {
+    "id": 10,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "What number comes before 3?",
+    "options": ["1", "4", "2", "5"],
+    "a": "2",
+    "mode": "FLIP"
+  },
+  {
+    "id": 11,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "Which animal is known as the King of the Jungle?",
+    "options": ["Monkey", "Lion", "Rabbit", "Deer"],
+    "a": "Lion",
+    "mode": "FLIP"
+  },
+  {
+    "id": 12,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "What is the color of grass?",
+    "options": ["Green", "Yellow", "Red", "Purple"],
+    "a": "Green",
+    "mode": "FLIP"
+  },
+  {
+    "id": 13,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "Which body part do you use to smell a flower?",
+    "options": ["Tongue", "Ears", "Nose", "Feet"],
+    "a": "Nose",
+    "mode": "FLIP"
+  },
+  {
+    "id": 14,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "Which of these can fly in the sky?",
+    "options": ["Fish", "Bird", "Dog", "Turtle"],
+    "a": "Bird",
+    "mode": "FLIP"
+  },
+  {
+    "id": 15,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "What is the opposite of 'Hot'?",
+    "options": ["Warm", "Cold", "Dry", "Big"],
+    "a": "Cold",
+    "mode": "FLIP"
+  },
+  {
+    "id": 16,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "How many legs does a duck have?",
+    "options": ["4", "2", "0", "6"],
+    "a": "2",
+    "mode": "FLIP"
+  },
+  {
+    "id": 17,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "Which letter comes next in the sequence: X, Y, __?",
+    "options": ["A", "Z", "W", "B"],
+    "a": "Z",
+    "mode": "FLIP"
+  },
+  {
+    "id": 18,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "What color is a ripe banana?",
+    "options": ["Blue", "Yellow", "Black", "Pink"],
+    "a": "Yellow",
+    "mode": "FLIP"
+  },
+  {
+    "id": 19,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "Which shape has three sides?",
+    "options": ["Square", "Circle", "Triangle", "Oval"],
+    "a": "Triangle",
+    "mode": "FLIP"
+  },
+  {
+    "id": 20,
+    "category": "LKG",
+    "type": "MCQ",
+    "q": "What do we say when we receive a gift?",
+    "options": ["Sorry", "Thank You", "Goodbye", "Please"],
+    "a": "Thank You",
+    "mode": "FLIP"
+  },
+  {
+    "id": 21,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "What is a baby dog called?",
+    "options": ["Kitten", "Cub", "Puppy", "Calf"],
+    "a": "Puppy",
+    "mode": "FLIP"
+  },
+  {
+    "id": 22,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "Which is the biggest animal on land?",
+    "options": ["Elephant", "Lion", "Giraffe", "Tiger"],
+    "a": "Elephant",
+    "mode": "FLIP"
+  },
+  {
+    "id": 23,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "Solve this simple sum: 2 + 3 = ?",
+    "options": ["4", "5", "6", "3"],
+    "a": "5",
+    "mode": "FLIP"
+  },
+  {
+    "id": 24,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "Which celestial object shines brightly during the day?",
+    "options": ["Moon", "Sun", "Star", "Mars"],
+    "a": "Sun",
+    "mode": "FLIP"
+  },
+  {
+    "id": 25,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "Identify the vowel among these letters:",
+    "options": ["B", "M", "E", "T"],
+    "a": "E",
+    "mode": "FLIP"
+  },
+  {
+    "id": 26,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "How many days are there in a single week?",
+    "options": ["5", "6", "7", "30"],
+    "a": "7",
+    "mode": "FLIP"
+  },
+  {
+    "id": 27,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "Which of these animals lives under water?",
+    "options": ["Cat", "Fish", "Horse", "Goat"],
+    "a": "Fish",
+    "mode": "FLIP"
+  },
+  {
+    "id": 28,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "What is the opposite of the word 'Tall'?",
+    "options": ["Big", "Short", "High", "Long"],
+    "a": "Short",
+    "mode": "FLIP"
+  },
+  {
+    "id": 29,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "Which seasonal phenomenon gives water to our plants?",
+    "options": ["Wind", "Rain", "Sun", "Snow"],
+    "a": "Rain",
+    "mode": "FLIP"
+  },
+  {
+    "id": 30,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "What shape has four equal sides?",
+    "options": ["Triangle", "Circle", "Square", "Star"],
+    "a": "Square",
+    "mode": "FLIP"
+  },
+  {
+    "id": 31,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "What do we use to cut paper safely?",
+    "options": ["Spoon", "Scissors", "Hammer", "Brush"],
+    "a": "Scissors",
+    "mode": "FLIP"
+  },
+  {
+    "id": 32,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "Which domestic animal gives us milk?",
+    "options": ["Dog", "Cat", "Cow", "Lion"],
+    "a": "Cow",
+    "mode": "FLIP"
+  },
+  {
+    "id": 33,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "What color do you get when you mix Red and Yellow?",
+    "options": ["Green", "Blue", "Orange", "Purple"],
+    "a": "Orange",
+    "mode": "FLIP"
+  },
+  {
+    "id": 34,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "Which part of a plant grows deep under the soil?",
+    "options": ["Leaf", "Flower", "Root", "Fruit"],
+    "a": "Root",
+    "mode": "FLIP"
+  },
+  {
+    "id": 35,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "Which number comes directly after 9?",
+    "options": ["8", "10", "11", "12"],
+    "a": "10",
+    "mode": "FLIP"
+  },
+  {
+    "id": 36,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "What do we use an umbrella for?",
+    "options": ["To eat", "To stay dry in rain", "To sleep", "To play"],
+    "a": "To stay dry in rain",
+    "mode": "FLIP"
+  },
+  {
+    "id": 37,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "Which insect makes honey?",
+    "options": ["Ant", "Butterfly", "Honeybee", "Mosquito"],
+    "a": "Honeybee",
+    "mode": "FLIP"
+  },
+  {
+    "id": 38,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "What is the name of our home planet?",
+    "options": ["Mars", "Earth", "Sun", "Moon"],
+    "a": "Earth",
+    "mode": "FLIP"
+  },
+  {
+    "id": 39,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "How many wheels does a bicycle have?",
+    "options": ["1", "3", "2", "4"],
+    "a": "2",
+    "mode": "FLIP"
+  },
+  {
+    "id": 40,
+    "category": "UKG",
+    "type": "MCQ",
+    "q": "Which body part do you use to hear a song?",
+    "options": ["Eyes", "Nose", "Ears", "Mouth"],
+    "a": "Ears",
+    "mode": "FLIP"
+  },
+  {
+    "id": 41,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "What is 10 plus 5?",
+    "options": ["12", "15", "20", "14"],
+    "a": "15",
+    "mode": "FLIP"
+  },
+  {
+    "id": 42,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "Which of these is a living thing?",
+    "options": ["Stone", "Tree", "Toy Car", "Book"],
+    "a": "Tree",
+    "mode": "FLIP"
+  },
+  {
+    "id": 43,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "What is the national animal of India?",
+    "options": ["Lion", "Elephant", "Tiger", "Leopard"],
+    "a": "Tiger",
+    "mode": "FLIP"
+  },
+  {
+    "id": 44,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "Which word is a naming word (Noun)?",
+    "options": ["Run", "Happy", "Delhi", "Fast"],
+    "a": "Delhi",
+    "mode": "FLIP"
+  },
+  {
+    "id": 45,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "How many months are there in one year?",
+    "options": ["7", "10", "12", "365"],
+    "a": "12",
+    "mode": "FLIP"
+  },
+  {
+    "id": 46,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "Which sense organ helps us taste our food?",
+    "options": ["Skin", "Tongue", "Nose", "Eyes"],
+    "a": "Tongue",
+    "mode": "FLIP"
+  },
+  {
+    "id": 47,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "What is the opposite of the word 'Heavy'?",
+    "options": ["Soft", "Light", "Hard", "Small"],
+    "a": "Light",
+    "mode": "FLIP"
+  },
+  {
+    "id": 48,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "What gas do humans need to breathe in to survive?",
+    "options": ["Carbon Dioxide", "Nitrogen", "Oxygen", "Hydrogen"],
+    "a": "Oxygen",
+    "mode": "FLIP"
+  },
+  {
+    "id": 49,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "Which number is the smallest?",
+    "options": ["15", "29", "8", "42"],
+    "a": "8",
+    "mode": "FLIP"
+  },
+  {
+    "id": 50,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "Which bird spreads its beautiful feathers during rain?",
+    "options": ["Crow", "Peacock", "Sparrow", "Parrot"],
+    "a": "Peacock",
+    "mode": "FLIP"
+  },
+  {
+    "id": 51,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "Where does the sun rise?",
+    "options": ["West", "North", "South", "East"],
+    "a": "East",
+    "mode": "FLIP"
+  },
+  {
+    "id": 52,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "What do we call a large area filled with many trees?",
+    "options": ["Desert", "Forest", "Ocean", "Sky"],
+    "a": "Forest",
+    "mode": "FLIP"
+  },
+  {
+    "id": 53,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "How many primary colors are there?",
+    "options": ["2", "3", "5", "7"],
+    "a": "3",
+    "mode": "FLIP"
+  },
+  {
+    "id": 54,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "Which shape looks like an egg?",
+    "options": ["Circle", "Square", "Oval", "Rectangle"],
+    "a": "Oval",
+    "mode": "FLIP"
+  },
+  {
+    "id": 55,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "What do bees collect from flowers to make honey?",
+    "options": ["Water", "Nectar", "Leaves", "Mud"],
+    "a": "Nectar",
+    "mode": "FLIP"
+  },
+  {
+    "id": 56,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "What is the standard plural form of the word 'Child'?",
+    "options": ["Childs", "Children", "Childrens", "Childes"],
+    "a": "Children",
+    "mode": "FLIP"
+  },
+  {
+    "id": 57,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "Which mathematical symbol is used for subtraction?",
+    "options": ["+", "-", "x", "/"],
+    "a": "-",
+    "mode": "FLIP"
+  },
+  {
+    "id": 58,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "Which animal can live both on land and in water?",
+    "options": ["Fish", "Frog", "Cow", "Cat"],
+    "a": "Frog",
+    "mode": "FLIP"
+  },
+  {
+    "id": 59,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "What is 20 minus 7?",
+    "options": ["11", "12", "13", "14"],
+    "a": "13",
+    "mode": "FLIP"
+  },
+  {
+    "id": 60,
+    "category": "Class 1",
+    "type": "MCQ",
+    "q": "What do we use to clean our dirty teeth?",
+    "options": ["Soap", "Comb", "Toothbrush", "Spoon"],
+    "a": "Toothbrush",
+    "mode": "FLIP"
+  },
+  {
+    "id": 61,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "What is the place value of 5 in the number 254?",
+    "options": ["Ones", "Tens", "Hundreds", "Thousands"],
+    "a": "Tens",
+    "mode": "FLIP"
+  },
+  {
+    "id": 62,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "Which of these animals is a herbivore (eats plants)?",
+    "options": ["Lion", "Cow", "Tiger", "Wolf"],
+    "a": "Cow",
+    "mode": "FLIP"
+  },
+  {
+    "id": 63,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "What do we call a period of 366 days in a year?",
+    "options": ["Long Year", "Leap Year", "Full Year", "Solar Year"],
+    "a": "Leap Year",
+    "mode": "FLIP"
+  },
+  {
+    "id": 64,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "Which word is an action word (Verb)?",
+    "options": ["Beautiful", "Table", "Swimming", "Softly"],
+    "a": "Swimming",
+    "mode": "FLIP"
+  },
+  {
+    "id": 65,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "How many straight sides does a rectangle have?",
+    "options": ["3", "4", "5", "6"],
+    "a": "4",
+    "mode": "FLIP"
+  },
+  {
+    "id": 66,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "Which part of the plant prepares food using sunlight?",
+    "options": ["Root", "Stem", "Leaf", "Flower"],
+    "a": "Leaf",
+    "mode": "FLIP"
+  },
+  {
+    "id": 67,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "What is the capital city of India?",
+    "options": ["Mumbai", "Kolkata", "New Delhi", "Chennai"],
     "a": "New Delhi",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
+    "mode": "FLIP"
   },
   {
-    "id": "EDU-MATH-002",
-    "category": "FOUNDATIONAL MATHEMATICS",
-    "q": "What is the standard algebraic formula for expanding $(a + b)^2$?",
-    "a": "$a^2 + 2ab + b^2$",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
+    "id": 68,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "What type of clothes keep us warm during winters?",
+    "options": ["Cotton", "Woollen", "Silk", "Nylon"],
+    "a": "Woollen",
+    "mode": "FLIP"
   },
   {
-    "id": "EDU-SCI-003",
-    "category": "PHYSICAL SCIENCES",
-    "q": "What is the chemical composition formula for pure pharmaceutical-grade water?",
-    "a": "H2O (Two Hydrogen atoms chemically bonded to one Oxygen atom).",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
+    "id": 69,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "Solve this equation: 5 multiplied by 4 is equal to?",
+    "options": ["9", "25", "20", "15"],
+    "a": "20",
+    "mode": "FLIP"
   },
   {
-    "id": "EDU-CIV-004",
-    "category": "SOVEREIGN CIVICS",
-    "q": "What is the primary objective of the Trivarna Bharat Points tracking system?",
-    "a": "To incentivize green initiatives, clean infrastructure tracking, and civic contribution metrics.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
+    "id": 70,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "Which of these is a non-living domestic item?",
+    "options": ["Cat", "Chair", "Rose Plant", "Goldfish"],
+    "a": "Chair",
+    "mode": "FLIP"
   },
   {
-    "id": "EDU-ENG-005",
-    "category": "INFRASTRUCTURE CORE",
-    "q": "What advanced structural technology enables lightning-fast building layout in the Sovereign Akanda Bharat Township?",
-    "a": "Lego-style pre-fabricated modular concrete block molds joined using heavy iron nut and bolt skeletons.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
+    "id": 71,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "What do we call the model of the Earth that is round?",
+    "options": ["Map", "Globe", "Chart", "Compass"],
+    "a": "Globe",
+    "mode": "FLIP"
   },
   {
-    "id": "EDU-MATH-006",
-    "category": "ADVANCED CALCULUS",
-    "q": "What is the derivative of $\\sin(x)$ with respect to $x$?",
-    "a": "$\\cos(x)$",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
+    "id": 72,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "Which animal is called the Ship of the Desert?",
+    "options": ["Horse", "Camel", "Donkey", "Elephant"],
+    "a": "Camel",
+    "mode": "FLIP"
   },
   {
-    "id": "EDU-TECH-007",
-    "category": "DIGITAL ECOSYSTEMS",
-    "q": "What primary air-gapped system forms the core data brain of the upcoming generational AI networks?",
-    "a": "The Jarvis matrix infrastructure layer, expanding downstream assets safely to specialized nodes.",
-    "state": "new",
-    "passCount": 0,
-    "ease": 2.5
- },
+    "id": 73,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "What is the opposite of the word 'Beautiful'?",
+    "options": ["Pretty", "Ugly", "Nice", "Clean"],
+    "a": "Ugly",
+    "mode": "FLIP"
+  },
+  {
+    "id": 74,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "How many minutes make up one full hour?",
+    "options": ["30", "50", "60", "100"],
+    "a": "60",
+    "mode": "FLIP"
+  },
+  {
+    "id": 75,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "Which internal organ helps us pump blood to the body?",
+    "options": ["Lungs", "Stomach", "Heart", "Brain"],
+    "a": "Heart",
+    "mode": "FLIP"
+  },
+  {
+    "id": 76,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "What is the sum of the largest 1-digit number and 1?",
+    "options": ["9", "10", "11", "100"],
+    "a": "10",
+    "mode": "FLIP"
+  },
+  {
+    "id": 77,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "Which vehicle runs on water?",
+    "options": ["Train", "Car", "Ship", "Aeroplane"],
+    "a": "Ship",
+    "mode": "FLIP"
+  },
+  {
+    "id": 78,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "What is the national fruit of India?",
+    "options": ["Apple", "Mango", "Orange", "Banana"],
+    "a": "Mango",
+    "mode": "FLIP"
+  },
+  {
+    "id": 79,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "Which of these words is a pronoun?",
+    "options": ["Ram", "He", "Running", "Book"],
+    "a": "He",
+    "mode": "FLIP"
+  },
+  {
+    "id": 80,
+    "category": "Class 2",
+    "type": "MCQ",
+    "q": "What do we call a baby cat?",
+    "options": ["Puppy", "Kitten", "Cub", "Chick"],
+    "a": "Kitten",
+    "mode": "FLIP"
+  },
+  {
+    "id": 81,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "What state of matter is water when it is frozen into ice?",
+    "options": ["Gas", "Liquid", "Solid", "Plasma"],
+    "a": "Solid",
+    "mode": "FLIP"
+  },
+  {
+    "id": 82,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "If a triangle has three equal sides, what is it called?",
+    "options": ["Isosceles", "Scalene", "Equilateral", "Right-angled"],
+    "a": "Equilateral",
+    "mode": "FLIP"
+  },
+  {
+    "id": 83,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "Which processing system acts as the 'brain' of a computer?",
+    "options": ["Monitor", "CPU", "Keyboard", "Mouse"],
+    "a": "CPU",
+    "mode": "FLIP"
+  },
+  {
+    "id": 84,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "What is the product of 12 multiplied by 5?",
+    "options": ["50", "55", "60", "65"],
+    "a": "60",
+    "mode": "FLIP"
+  },
+  {
+    "id": 85,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "Which green pigment gives leaves their green color?",
+    "options": ["Carotene", "Hemoglobin", "Chlorophyll", "Xanthophyll"],
+    "a": "Chlorophyll",
+    "mode": "FLIP"
+  },
+  {
+    "id": 86,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "What do we call a person who travels into outer space?",
+    "options": ["Pilot", "Sailor", "Astronaut", "Scientist"],
+    "a": "Astronaut",
+    "mode": "FLIP"
+  },
+  {
+    "id": 87,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "Identify the conjunction in this sentence: 'I ran fast, but I missed the bus.'",
+    "options": ["I", "ran", "but", "missed"],
+    "a": "but",
+    "mode": "FLIP"
+  },
+  {
+    "id": 88,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "Which layer of soil is the most fertile for agricultural planting?",
+    "options": ["Subsoil", "Topsoil", "Bedrock", "Parent Rock"],
+    "a": "Topsoil",
+    "mode": "FLIP"
+  },
+  {
+    "id": 89,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "What is the main source of light and energy for our solar system?",
+    "options": ["Moon", "Sun", "Jupiter", "Alpha Centauri"],
+    "a": "Sun",
+    "mode": "FLIP"
+  },
+  {
+    "id": 90,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "What is the mathematical result of 81 divided by 9?",
+    "options": ["7", "8", "9", "11"],
+    "a": "9",
+    "mode": "FLIP"
+  },
+  {
+    "id": 91,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "Which organ protects our inner body parts and lets us feel touch?",
+    "options": ["Liver", "Skin", "Lungs", "Heart"],
+    "a": "Skin",
+    "mode": "FLIP"
+  },
+  {
+    "id": 92,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "Which of these resources is a renewable source of energy?",
+    "options": ["Coal", "Petroleum", "Solar Energy", "Natural Gas"],
+    "a": "Solar Energy",
+    "mode": "FLIP"
+  },
+  {
+    "id": 93,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "What is the standard singular form of the word 'Geese'?",
+    "options": ["Gander", "Gooses", "Goose", "Geeses"],
+    "a": "Goose",
+    "mode": "FLIP"
+  },
+  {
+    "id": 94,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "How many days are in a standard non-leap calendar year?",
+    "options": ["360", "364", "365", "366"],
+    "a": "365",
+    "mode": "FLIP"
+  },
+  {
+    "id": 95,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Mercury", "Saturn"],
+    "a": "Mars",
+    "mode": "FLIP"
+  },
+  {
+    "id": 96,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "What do we call animals that eat both plants and meat?",
+    "options": ["Herbivores", "Carnivores", "Omnivores", "Parasites"],
+    "a": "Omnivores",
+    "mode": "FLIP"
+  },
+  {
+    "id": 97,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "What is the perimeter of a square with a side length of 5 cm?",
+    "options": ["10 cm", "15 cm", "20 cm", "25 cm"],
+    "a": "20 cm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 98,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "Who was India's first Prime Minister?",
+    "options": ["Mahatma Gandhi", "Jawaharlal Nehru", "Dr. B.R. Ambedkar", "Subhas Chandra Bose"],
+    "a": "Jawaharlal Nehru",
+    "mode": "FLIP"
+  },
+  {
+    "id": 99,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "Which direction is directly opposite to North?",
+    "options": ["East", "West", "South", "North-East"],
+    "a": "South",
+    "mode": "FLIP"
+  },
+  {
+    "id": 100,
+    "category": "Class 3",
+    "type": "MCQ",
+    "q": "What form of precipitation falls as solid icy flakes?",
+    "options": ["Rain", "Snow", "Dew", "Fog"],
+    "a": "Snow",
+    "mode": "FLIP"
+  },
+  {
+    "id": 101,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "What process do plants use to make food from carbon dioxide, water, and sunlight?",
+    "options": ["Respiration", "Photosynthesis", "Transpiration", "Germination"],
+    "a": "Photosynthesis",
+    "mode": "FLIP"
+  },
+  {
+    "id": 102,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "What type of angle measures exactly 90 degrees?",
+    "options": ["Acute Angle", "Obtuse Angle", "Right Angle", "Straight Angle"],
+    "a": "Right Angle",
+    "mode": "FLIP"
+  },
+  {
+    "id": 103,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "Which internal organ processes food and breaks it down using acids?",
+    "options": ["Lungs", "Kidneys", "Stomach", "Heart"],
+    "a": "Stomach",
+    "mode": "FLIP"
+  },
+  {
+    "id": 104,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "What is the equivalent fraction value for 0.5?",
+    "options": ["1/4", "1/2", "3/4", "1/5"],
+    "a": "1/2",
+    "mode": "FLIP"
+  },
+  {
+    "id": 105,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "Which historic monument in Agra was built by Emperor Shah Jahan?",
+    "options": ["Qutub Minar", "Red Fort", "Taj Mahal", "Hawa Mahal"],
+    "a": "Taj Mahal",
+    "mode": "FLIP"
+  },
+  {
+    "id": 106,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "What force pulls objects down toward the center of the Earth?",
+    "options": ["Friction", "Magnetism", "Gravity", "Elastic Force"],
+    "a": "Gravity",
+    "mode": "FLIP"
+  },
+  {
+    "id": 107,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "Identify the adjective in this sentence: 'The large elephant walked slowly.'",
+    "options": ["elephant", "walked", "large", "slowly"],
+    "a": "large",
+    "mode": "FLIP"
+  },
+  {
+    "id": 108,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "What is the largest internal organ in the human body?",
+    "options": ["Brain", "Liver", "Heart", "Pancreas"],
+    "a": "Liver",
+    "mode": "FLIP"
+  },
+  {
+    "id": 109,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "How many centimeters are there in exactly 2.5 meters?",
+    "options": ["25 cm", "250 cm", "2500 cm", "0.25 cm"],
+    "a": "250 cm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 110,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "Which state is a gas changing into a liquid state?",
+    "options": ["Evaporation", "Condensation", "Freezing", "Melting"],
+    "a": "Condensation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 111,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "Who wrote India's national anthem, 'Jana Gana Mana'?",
+    "options": ["Bankim Chandra Chatterjee", "Rabindranath Tagore", "Swami Vivekananda", "Sri Aurobindo"],
+    "a": "Rabindranath Tagore",
+    "mode": "FLIP"
+  },
+  {
+    "id": 112,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "What structural system of bones supports and protects our body?",
+    "options": ["Muscular System", "Nervous System", "Skeletal System", "Digestive System"],
+    "a": "Skeletal System",
+    "mode": "FLIP"
+  },
+  {
+    "id": 113,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "What do we call a path where one space object travels around another?",
+    "options": ["Axis", "Orbit", "Rotation", "Galaxy"],
+    "a": "Orbit",
+    "mode": "FLIP"
+  },
+  {
+    "id": 114,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "What is the value of 15 multiplied by 6?",
+    "options": ["80", "85", "90", "95"],
+    "a": "90",
+    "mode": "FLIP"
+  },
+  {
+    "id": 115,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "Which landform is an elevated flat area of land?",
+    "options": ["Mountain", "Valley", "Plateau", "Plain"],
+    "a": "Plateau",
+    "mode": "FLIP"
+  },
+  {
+    "id": 116,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "Which of these elements is required to build strong bones and teeth?",
+    "options": ["Iron", "Calcium", "Sodium", "Potassium"],
+    "a": "Calcium",
+    "mode": "FLIP"
+  },
+  {
+    "id": 117,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "Identify the abstract noun representing an internal state:",
+    "options": ["Honesty", "Teacher", "Gold", "City"],
+    "a": "Honesty",
+    "mode": "FLIP"
+  },
+  {
+    "id": 118,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "What type of map features landforms like rivers and mountains?",
+    "options": ["Political Map", "Physical Map", "Thematic Map", "Climate Map"],
+    "a": "Physical Map",
+    "mode": "FLIP"
+  },
+  {
+    "id": 119,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "What is the Roman Numeral value for the number 50?",
+    "options": ["X", "L", "C", "D"],
+    "a": "L",
+    "mode": "FLIP"
+  },
+  {
+    "id": 120,
+    "category": "Class 4",
+    "type": "MCQ",
+    "q": "What tool uses a magnetized needle to point toward magnetic North?",
+    "options": ["Thermometer", "Barometer", "Compass", "Telescope"],
+    "a": "Compass",
+    "mode": "FLIP"
+  },
+  {
+    "id": 121,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "What gas makes up about 78% of Earth's atmosphere?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Argon"],
+    "a": "Nitrogen",
+    "mode": "FLIP"
+  },
+  {
+    "id": 122,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "Calculate the Lowest Common Multiple (LCM) of 4 and 6:",
+    "options": ["2", "12", "24", "18"],
+    "a": "12",
+    "mode": "FLIP"
+  },
+  {
+    "id": 123,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "Which deficiency causes the disease known as Anemia?",
+    "options": ["Vitamin A", "Vitamin C", "Calcium", "Iron"],
+    "a": "Iron",
+    "mode": "FLIP"
+  },
+  {
+    "id": 124,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "Who is known as the Father of the Indian Constitution?",
+    "options": ["Dr. B.R. Ambedkar", "Mahatma Gandhi", "Dr. Rajendra Prasad", "Sardar Patel"],
+    "a": "Dr. B.R. Ambedkar",
+    "mode": "FLIP"
+  },
+  {
+    "id": 125,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "What do we call the process of water vapor rising into the sky from plants?",
+    "options": ["Evaporation", "Transpiration", "Precipitation", "Infiltration"],
+    "a": "Transpiration",
+    "mode": "FLIP"
+  },
+  {
+    "id": 126,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "What is the name of the structural line that divides Earth into Northern and Southern hemispheres?",
+    "options": ["Prime Meridian", "Tropic of Cancer", "Equator", "Tropic of Capricorn"],
+    "a": "Equator",
+    "mode": "FLIP"
+  },
+  {
+    "id": 127,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "Find the average value of these four figures: 10, 20, 30, and 40.",
+    "options": ["20", "25", "30", "35"],
+    "a": "25",
+    "mode": "FLIP"
+  },
+  {
+    "id": 128,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "Which body system runs electrical signals between the brain and nerves?",
+    "options": ["Circulatory System", "Nervous System", "Respiratory System", "Excretory System"],
+    "a": "Nervous System",
+    "mode": "FLIP"
+  },
+  {
+    "id": 129,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "What is the standard unit of measurement for liquid volume?",
+    "options": ["Meter", "Gram", "Liter", "Second"],
+    "a": "Liter",
+    "mode": "FLIP"
+  },
+  {
+    "id": 130,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "Which historical movement was launched by Mahatma Gandhi in 1942?",
+    "options": ["Non-Cooperation Movement", "Civil Disobedience Movement", "Quit India Movement", "Swadeshi Movement"],
+    "a": "Quit India Movement",
+    "mode": "FLIP"
+  },
+  {
+    "id": 131,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "What structural feature keeps fish stable and lets them steer under water?",
+    "options": ["Gills", "Scales", "Fins", "Lungs"],
+    "a": "Fins",
+    "mode": "FLIP"
+  },
+  {
+    "id": 132,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "What is the area of a rectangle with a length of 8 cm and a width of 5 cm?",
+    "options": ["13 sq cm", "26 sq cm", "40 sq cm", "35 sq cm"],
+    "a": "40 sq cm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 133,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "What dynamic weather patterns occur in India due to seasonal winds?",
+    "options": ["Cyclones", "Monsoons", "Tornadoes", "Blizzards"],
+    "a": "Monsoons",
+    "mode": "FLIP"
+  },
+  {
+    "id": 134,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "Which blood component helps fight off foreign infections?",
+    "options": ["Red Blood Cells", "White Blood Cells", "Platelets", "Plasma"],
+    "a": "White Blood Cells",
+    "mode": "FLIP"
+  },
+  {
+    "id": 135,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "What type of sentence makes a direct statement or fact?",
+    "options": ["Interrogative", "Imperative", "Exclamatory", "Assertive"],
+    "a": "Assertive",
+    "mode": "FLIP"
+  },
+  {
+    "id": 136,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "Which of these numbers is a prime number?",
+    "options": ["4", "9", "11", "15"],
+    "a": "11",
+    "mode": "FLIP"
+  },
+  {
+    "id": 137,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "What is the outermost layer of our planet Earth called?",
+    "options": ["Crust", "Mantle", "Outer Core", "Inner Core"],
+    "a": "Crust",
+    "mode": "FLIP"
+  },
+  {
+    "id": 138,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "What compound is made by combining two or more different elements?",
+    "options": ["Atom", "Mixture", "Compound", "Isotope"],
+    "a": "Compound",
+    "mode": "FLIP"
+  },
+  {
+    "id": 139,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "What is the decimal equivalent value of 3/5?",
+    "options": ["0.3", "0.5", "0.6", "0.75"],
+    "a": "0.6",
+    "mode": "FLIP"
+  },
+  {
+    "id": 140,
+    "category": "Class 5",
+    "type": "MCQ",
+    "q": "Which environmental issue describes a long period without rain?",
+    "options": ["Flood", "Drought", "Earthquake", "Tsunami"],
+    "a": "Drought",
+    "mode": "FLIP"
+  },
+  {
+    "id": 141,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "Which historical site from the Indus Valley Civilization features the Great Bath?",
+    "options": ["Harappa", "Mohenjo-daro", "Lothal", "Kalibangan"],
+    "a": "Mohenjo-daro",
+    "mode": "FLIP"
+  },
+  {
+    "id": 142,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "What structural components serve as the basic functional blocks of all living things?",
+    "options": ["Tissues", "Organs", "Cells", "Atoms"],
+    "a": "Cells",
+    "mode": "FLIP"
+  },
+  {
+    "id": 143,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "Solve this integer equation: (-15) + (+8) = ?",
+    "options": ["-23", "-7", "7", "23"],
+    "a": "-7",
+    "mode": "FLIP"
+  },
+  {
+    "id": 144,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "What type of rock forms when molten magma cools and solidifies?",
+    "options": ["Sedimentary", "Metamorphic", "Igneous", "Fossil"],
+    "a": "Igneous",
+    "mode": "FLIP"
+  },
+  {
+    "id": 145,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "Which tier of government functions at the local level in rural areas?",
+    "options": ["State Government", "Central Government", "Panchayati Raj", "Municipal Corporation"],
+    "a": "Panchayati Raj",
+    "mode": "FLIP"
+  },
+  {
+    "id": 146,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "What separation technique is used to separate mud from water?",
+    "options": ["Threshing", "Winnowing", "Filtration", "Handpicking"],
+    "a": "Filtration",
+    "mode": "FLIP"
+  },
+  {
+    "id": 147,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "Find the value of x if: 2x + 5 = 15.",
+    "options": ["5", "10", "7.5", "3"],
+    "a": "5",
+    "mode": "FLIP"
+  },
+  {
+    "id": 148,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "What structural connection attaches a muscle to a bone?",
+    "options": ["Ligament", "Tendon", "Cartilage", "Joint"],
+    "a": "Tendon",
+    "mode": "FLIP"
+  },
+  {
+    "id": 149,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "Which planetary body has a highly visible system of rings around it?",
+    "options": ["Mars", "Jupiter", "Saturn", "Neptune"],
+    "a": "Saturn",
+    "mode": "FLIP"
+  },
+  {
+    "id": 150,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "What type of nutrient is primary used for body growth and tissue repair?",
+    "options": ["Carbohydrates", "Fats", "Proteins", "Vitamins"],
+    "a": "Proteins",
+    "mode": "FLIP"
+  },
+  {
+    "id": 151,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "What basic materials allow electricity to pass through them easily?",
+    "options": ["Insulators", "Conductors", "Plastics", "Rubbers"],
+    "a": "Conductors",
+    "mode": "FLIP"
+  },
+  {
+    "id": 152,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "What long-term atmospheric patterns define a region over decades?",
+    "options": ["Weather", "Climate", "Season", "Humidity"],
+    "a": "Climate",
+    "mode": "FLIP"
+  },
+  {
+    "id": 153,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "What is the ratio of 40 minutes to 2 hours in simplest form?",
+    "options": ["20:1", "1:3", "2:1", "1:5"],
+    "a": "1:3",
+    "mode": "FLIP"
+  },
+  {
+    "id": 154,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "Which prominent king carved his messages on stone pillars across ancient India?",
+    "options": ["Chandragupta Maurya", "Ashoka", "Samudragupta", "Harsha"],
+    "a": "Ashoka",
+    "mode": "FLIP"
+  },
+  {
+    "id": 155,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "What process involves a seed growing into a young seedling?",
+    "options": ["Pollination", "Fertilization", "Germination", "Dispersal"],
+    "a": "Germination",
+    "mode": "FLIP"
+  },
+  {
+    "id": 156,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "What lines run north-south to measure position relative to the Prime Meridian?",
+    "options": ["Latitudes", "Longitudes", "Contours", "Isobars"],
+    "a": "Longitudes",
+    "mode": "FLIP"
+  },
+  {
+    "id": 157,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "Which vitamin deficiency causes the bleeding gum disease known as Scurvy?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "a": "Vitamin C",
+    "mode": "FLIP"
+  },
+  {
+    "id": 158,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "What is the total sum of all three angles inside any triangle?",
+    "options": [90, 180, 270, 360],
+    "a": 180,
+    "mode": "FLIP"
+  },
+  {
+    "id": 159,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "Which of these components is a non-living (abiotic) part of an ecosystem?",
+    "options": ["Plants", "Bacteria", "Soil", "Insects"],
+    "a": "Soil",
+    "mode": "FLIP"
+  },
+  {
+    "id": 160,
+    "category": "Class 6",
+    "type": "MCQ",
+    "q": "What punctuation mark introduces a list or an explanation?",
+    "options": ["Comma", "Semicolon", "Colon", "Hyphen"],
+    "a": "Colon",
+    "mode": "FLIP"
+  },
+  {
+    "id": 161,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "What feeding process allows a plant to consume organic matter trapped inside its leaves?",
+    "options": ["Autotrophic nutrition", "Saprotrophic nutrition", "Insectivorous nutrition", "Parasitic nutrition"],
+    "a": "Insectivorous nutrition",
+    "mode": "FLIP"
+  },
+  {
+    "id": 162,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "Which dynamic ruler founded the Maratha Kingdom in western India?",
+    "options": ["Chhatrapati Shivaji", "Maharana Pratap", "Akbar", "Prithviraj Chauhan"],
+    "a": "Chhatrapati Shivaji",
+    "mode": "FLIP"
+  },
+  {
+    "id": 163,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "Simplify the algebraic expression: 3x + 5y - x + 2y.",
+    "options": ["4x + 7y", "2x + 7y", "2x + 3y", "4x + 3y"],
+    "a": "2x + 7y",
+    "mode": "FLIP"
+  },
+  {
+    "id": 164,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "What scale measures the acidity or alkalinity of chemical solutions?",
+    "options": ["Celsius Scale", "pH Scale", "Richter Scale", "Kelvin Scale"],
+    "a": "pH Scale",
+    "mode": "FLIP"
+  },
+  {
+    "id": 165,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "What type of mirror curves inward and can magnify close images?",
+    "options": ["Plane Mirror", "Convex Mirror", "Concave Mirror", "Cylindrical Mirror"],
+    "a": "Concave Mirror",
+    "mode": "FLIP"
+  },
+  {
+    "id": 166,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "Which layer of the atmosphere contains the ozone layer that blocks ultraviolet radiation?",
+    "options": ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
+    "a": "Stratosphere",
+    "mode": "FLIP"
+  },
+  {
+    "id": 167,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "If two angles are complementary, what is the sum of their measures?",
+    "options": [45, 90, 180, 360],
+    "a": 90,
+    "mode": "FLIP"
+  },
+  {
+    "id": 168,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "What acid is naturally present inside the human stomach to help digest food?",
+    "options": ["Sulphuric Acid", "Hydrochloric Acid", "Nitric Acid", "Acetic Acid"],
+    "a": "Hydrochloric Acid",
+    "mode": "FLIP"
+  },
+  {
+    "id": 169,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "Which state document outlines fundamental guidelines for state policy in India?",
+    "options": ["Fundamental Rights", "Preamble", "Directive Principles of State Policy", "Fundamental Duties"],
+    "a": "Directive Principles of State Policy",
+    "mode": "FLIP"
+  },
+  {
+    "id": 170,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "What heat transfer mechanism moves thermal energy through a boiling liquid?",
+    "options": ["Conduction", "Convection", "Radiation", "Insulation"],
+    "a": "Convection",
+    "mode": "FLIP"
+  },
+  {
+    "id": 171,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "What is the exponential simplified value of: 2 cubed multiplied by 2 square?",
+    "options": ["2 to power 5", "2 to power 6", "4 to power 5", "4 to power 6"],
+    "a": "2 to power 5",
+    "mode": "FLIP"
+  },
+  {
+    "id": 172,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "What blood vessels carry oxygenated blood away from the heart to the body?",
+    "options": ["Veins", "Arteries", "Capillaries", "Venucles"],
+    "a": "Arteries",
+    "mode": "FLIP"
+  },
+  {
+    "id": 173,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "What historical traveler from Morocco visited India during Muhammad bin Tughluq's reign?",
+    "options": ["Marco Polo", "Ibn Battuta", "Fa-Hien", "Al-Biruni"],
+    "a": "Ibn Battuta",
+    "mode": "FLIP"
+  },
+  {
+    "id": 174,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "What value do you get when you calculate 25% of 120?",
+    "options": ["20", "25", "30", "40"],
+    "a": "30",
+    "mode": "FLIP"
+  },
+  {
+    "id": 175,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "What type of reproduction involves new plants growing from roots, stems, or leaves?",
+    "options": ["Sexual Reproduction", "Vegetative Propagation", "Budding", "Spore Formation"],
+    "a": "Vegetative Propagation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 176,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "Which biome is known as the 'orchard of the world' due to its fruit cultivation?",
+    "options": ["Coniferous Forests", "Mediterranean Region", "Tropical Rainforests", "Savanna Grasslands"],
+    "a": "Mediterranean Region",
+    "mode": "FLIP"
+  },
+  {
+    "id": 177,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "What type of change occurs when a piece of wood is burned into ash?",
+    "options": ["Physical Change", "Chemical Change", "Reversible Change", "Periodic Change"],
+    "a": "Chemical Change",
+    "mode": "FLIP"
+  },
+  {
+    "id": 178,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "Calculate the simple interest on Rs 1000 at a 10% annual rate for 2 years.",
+    "options": ["Rs 100", "Rs 200", "Rs 150", "Rs 50"],
+    "a": "Rs 200",
+    "mode": "FLIP"
+  },
+  {
+    "id": 179,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "What structural feature inside the small intestine absorbs nutrients into the blood?",
+    "options": ["Villi", "Alveoli", "Nephrons", "Stomata"],
+    "a": "Villi",
+    "mode": "FLIP"
+  },
+  {
+    "id": 180,
+    "category": "Class 7",
+    "type": "MCQ",
+    "q": "Which active element in an electric circuit melts to break the loop during an overload?",
+    "options": ["Switch", "Battery", "Fuse", "Resistor"],
+    "a": "Fuse",
+    "mode": "FLIP"
+  },
+  {
+    "id": 181,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "What non-metal element is highly reactive and stored underwater to prevent fire?",
+    "options": ["Sodium", "Phosphorus", "Sulfur", "Carbon"],
+    "a": "Phosphorus",
+    "mode": "FLIP"
+  },
+  {
+    "id": 182,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "In what historical year did the British East India Company win the Battle of Plassey?",
+    "options": ["1757", "1764", "1857", "1600"],
+    "a": "1757",
+    "mode": "FLIP"
+  },
+  {
+    "id": 183,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "Solve for x in this expression: x/3 + 5 = 9.",
+    "options": ["x=4", "x=12", "x=6", "x=15"],
+    "a": "x=12",
+    "mode": "FLIP"
+  },
+  {
+    "id": 184,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "What cellular structure contains genes and controls activities inside a cell?",
+    "options": ["Cytoplasm", "Cell Membrane", "Nucleus", "Vacuole"],
+    "a": "Nucleus",
+    "mode": "FLIP"
+  },
+  {
+    "id": 185,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "What term describes the force exerted per unit area on a surface?",
+    "options": ["Friction", "Pressure", "Work", "Torque"],
+    "a": "Pressure",
+    "mode": "FLIP"
+  },
+  {
+    "id": 186,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "Which mineral resource is often called 'Black Gold' due to its high value?",
+    "options": ["Coal", "Petroleum", "Iron Ore", "Bauxite"],
+    "a": "Petroleum",
+    "mode": "FLIP"
+  },
+  {
+    "id": 187,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "How many faces does a standard 3D solid cube have?",
+    "options": ["4", "6", "8", "12"],
+    "a": "6",
+    "mode": "FLIP"
+  },
+  {
+    "id": 188,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "Which human hormone triggers the flight-or-fight response during an emergency?",
+    "options": ["Insulin", "Thyroxin", "Adrenaline", "Estrogen"],
+    "a": "Adrenaline",
+    "mode": "FLIP"
+  },
+  {
+    "id": 189,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "Which constitutional right allows citizens to move court if their rights are violated?",
+    "options": ["Right to Equality", "Right to Freedom", "Right to Constitutional Remedies", "Cultural Rights"],
+    "a": "Right to Constitutional Remedies",
+    "mode": "FLIP"
+  },
+  {
+    "id": 190,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "What chemical process describes the slow breakdown of iron due to moisture and air?",
+    "options": ["Galvanization", "Rusting", "Combustion", "Neutralization"],
+    "a": "Rusting",
+    "mode": "FLIP"
+  },
+  {
+    "id": 191,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "Find the value of the expression: square root of 144 plus square root of 25.",
+    "options": ["13", "17", "19", "25"],
+    "a": "17",
+    "mode": "FLIP"
+  },
+  {
+    "id": 192,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "What protozoan parasite causes malaria and is carried by mosquitoes?",
+    "options": ["Amoeba", "Plasmodium", "Paramecium", "Virus"],
+    "a": "Plasmodium",
+    "mode": "FLIP"
+  },
+  {
+    "id": 193,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "Which system of agriculture involves growing crops on cleared forest plots and then moving away?",
+    "options": ["Intensive Farming", "Shifting Cultivation", "Commercial Farming", "Plantation"],
+    "a": "Shifting Cultivation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 194,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "What audible sound frequency range can a healthy human ear detect?",
+    "options": ["0 to 20 Hz", "20 Hz to 20,000 Hz", "Above 20,000 Hz", "10 to 10,000 Hz"],
+    "a": "20 Hz to 20,000 Hz",
+    "mode": "FLIP"
+  },
+  {
+    "id": 195,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "Identify the passive voice for: 'Sam wrote a letter.'",
+    "options": ["A letter is written by Sam", "A letter was written by Sam", "Sam was writing a letter", "A letter had been written by Sam"],
+    "a": "A letter was written by Sam",
+    "mode": "FLIP"
+  },
+  {
+    "id": 196,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "What is the sum of all interior angles of a convex quadrilateral?",
+    "options": [180, 270, 360, 540],
+    "a": 360,
+    "mode": "FLIP"
+  },
+  {
+    "id": 197,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "What process adds a layer of zinc on iron to protect it from rusting?",
+    "options": ["Electroplating", "Galvanization", "Anodizing", "Alloying"],
+    "a": "Galvanization",
+    "mode": "FLIP"
+  },
+  {
+    "id": 198,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "Who led the historic 1857 revolt against British forces from Jhansi?",
+    "options": ["Rani Lakshmibai", "Begum Hazrat Mahal", "Nana Saheb", "Kunwar Singh"],
+    "a": "Rani Lakshmibai",
+    "mode": "FLIP"
+  },
+  {
+    "id": 199,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "What metric measures the population density of a geographical region?",
+    "options": ["Total population", "People per square kilometer", "Birth rate", "Urban migration rate"],
+    "a": "People per square kilometer",
+    "mode": "FLIP"
+  },
+  {
+    "id": 200,
+    "category": "Class 8",
+    "type": "MCQ",
+    "q": "What structural coating allows non-stick cookware to resist heat?",
+    "options": ["PVC", "Rayon", "Teflon", "Bakelite"],
+    "a": "Teflon",
+    "mode": "FLIP"
+  },
+  {
+    "id": 201,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "Which cell organelle is widely referred to as the 'Powerhouse of the Cell'?",
+    "options": ["Golgi Apparatus", "Mitochondria", "Ribosomes", "Lysosomes"],
+    "a": "Mitochondria",
+    "mode": "FLIP"
+  },
+  {
+    "id": 202,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "What value represents the acceleration due to gravity (g) near Earth's surface?",
+    "options": ["9.8 m/s^2", "8.9 m/s^2", "10.5 m/s^2", "11.2 m/s^2"],
+    "a": "9.8 m/s^2",
+    "mode": "FLIP"
+  },
+  {
+    "id": 203,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "Which algebraic identity matches the expansion of (a^2 - b^2)?",
+    "options": ["(a-b)^2", "(a+b)^2", "(a+b)(a-b)", "(a^2+b^2)"],
+    "a": "(a+b)(a-b)",
+    "mode": "FLIP"
+  },
+  {
+    "id": 204,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "What historic event officially triggered the French Revolution in 1789?",
+    "options": ["Execution of Louis XVI", "Storming of the Bastille", "Tennis Court Oath", "Reign of Terror"],
+    "a": "Storming of the Bastille",
+    "mode": "FLIP"
+  },
+  {
+    "id": 205,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "Which constitutional system ensures that no branch of government becomes absolute?",
+    "options": ["Federalism", "Checks and Balances", "Coalition Government", "Unitary System"],
+    "a": "Checks and Balances",
+    "mode": "FLIP"
+  },
+  {
+    "id": 206,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "What physical state change describes a solid turning directly into gas?",
+    "options": ["Evaporation", "Sublimation", "Deposition", "Fusion"],
+    "a": "Sublimation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 207,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "What is the mathematical value of a non-zero number raised to the power of zero?",
+    "options": ["0", "1", "The number itself", "Infinity"],
+    "a": "1",
+    "mode": "FLIP"
+  },
+  {
+    "id": 208,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "Which biological tissue connects bone to another bone at joints?",
+    "options": ["Tendon", "Ligament", "Areolar Tissue", "Adipose Tissue"],
+    "a": "Ligament",
+    "mode": "FLIP"
+  },
+  {
+    "id": 209,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "What thermodynamic law describes an object resisting structural change in its state of motion?",
+    "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Gravitation"],
+    "a": "Newton's First Law",
+    "mode": "FLIP"
+  },
+  {
+    "id": 210,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "Which mountain peak stands as the highest point in the Himalayan range within India?",
+    "options": ["K2", "Kanchenjunga", "Nanda Devi", "Mount Everest"],
+    "a": "Kanchenjunga",
+    "mode": "FLIP"
+  },
+  {
+    "id": 211,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "What chemical law states that mass cannot be created or destroyed during a reaction?",
+    "options": ["Law of Constant Proportions", "Law of Conservation of Mass", "Law of Multiple Proportions", "Avogadro's Law"],
+    "a": "Law of Conservation of Mass",
+    "mode": "FLIP"
+  },
+  {
+    "id": 212,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "What is the total coordinates value of the origin point in a Cartesian plane?",
+    "options": ["(1,1)", "(0,1)", "(1,0)", "(0,0)"],
+    "a": "(0,0)",
+    "mode": "FLIP"
+  },
+  {
+    "id": 213,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "Which type of plant tissue is responsible for transporting water from roots?",
+    "options": ["Phloem", "Xylem", "Parenchyma", "Sclerenchyma"],
+    "a": "Xylem",
+    "mode": "FLIP"
+  },
+  {
+    "id": 214,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "What metric calculates the total work done per unit time?",
+    "options": ["Energy", "Power", "Force", "Momentum"],
+    "a": "Power",
+    "mode": "FLIP"
+  },
+  {
+    "id": 215,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "Which Indian river flows westward through a rift valley into the Arabian Sea?",
+    "options": ["Ganga", "Godavari", "Narmada", "Krishna"],
+    "a": "Narmada",
+    "mode": "FLIP"
+  },
+  {
+    "id": 216,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "What type of mixture contains particles that remain suspended without settling down?",
+    "options": ["True Solution", "Suspension", "Colloid", "Saturated Solution"],
+    "a": "Colloid",
+    "mode": "FLIP"
+  },
+  {
+    "id": 217,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "If two geometric triangles are congruent, their matching areas must be:",
+    "options": ["Double", "Half", "Equal", "Proportional"],
+    "a": "Equal",
+    "mode": "FLIP"
+  },
+  {
+    "id": 218,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "What specific institutional organ holds the ultimate authority to interpret the Constitution of India?",
+    "options": ["Parliament", "President", "Supreme Court", "Prime Minister"],
+    "a": "Supreme Court",
+    "mode": "FLIP"
+  },
+  {
+    "id": 219,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "What economic index calculates the number of births per thousand individuals annually?",
+    "options": ["Mortality Rate", "Birth Rate", "Growth Index", "Life Expectancy"],
+    "a": "Birth Rate",
+    "mode": "FLIP"
+  },
+  {
+    "id": 220,
+    "category": "Class 9",
+    "type": "MCQ",
+    "q": "What type of wave requires a physical material medium to travel through?",
+    "options": ["Light Wave", "Radio Wave", "Mechanical Wave", "X-Rays"],
+    "a": "Mechanical Wave",
+    "mode": "FLIP"
+  },
+  {
+    "id": 221,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What product is formed at the anode during the electrolysis of brine?",
+    "options": ["Hydrogen Gas", "Oxygen Gas", "Chlorine Gas", "Sodium Metal"],
+    "a": "Chlorine Gas",
+    "mode": "FLIP"
+  },
+  {
+    "id": 222,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What value represents the mathematical discriminant (D) of a standard quadratic equation?",
+    "options": ["b^2 - 4ac", "4ac - b^2", "b - 4ac", "b^2 + 4ac"],
+    "a": "b^2 - 4ac",
+    "mode": "FLIP"
+  },
+  {
+    "id": 223,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "Which photoreceptor cells inside the human eye help detect colors under bright light?",
+    "options": ["Rod cells", "Cone cells", "Optic disk", "Pupil cells"],
+    "a": "Cone cells",
+    "mode": "FLIP"
+  },
+  {
+    "id": 224,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What physical law correlates electrical current to voltage drop across a fixed conductor?",
+    "options": ["Joule's Law", "Ohm's Law", "Faraday's Law", "Ampere's Law"],
+    "a": "Ohm's Law",
+    "mode": "FLIP"
+  },
+  {
+    "id": 225,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "In what historical year did Mahatma Gandhi launch the Non-Cooperation Movement?",
+    "options": ["1915", "1920", "1930", "1942"],
+    "a": "1920",
+    "mode": "FLIP"
+  },
+  {
+    "id": 226,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "Which type of chemical bonding involves sharing electron pairs between non-metals?",
+    "options": ["Ionic Bond", "Covalent Bond", "Metallic Bond", "Hydrogen Bond"],
+    "a": "Covalent Bond",
+    "mode": "FLIP"
+  },
+  {
+    "id": 227,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "Find the 10th term of an Arithmetic Progression starting with 2, 4, 6, 8...",
+    "options": ["18", "20", "22", "24"],
+    "a": "20",
+    "mode": "FLIP"
+  },
+  {
+    "id": 228,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What biochemical catalyst breaks down complex starch into sugars in our mouth?",
+    "options": ["Pepsin", "Trypsin", "Salivary Amylase", "Lipase"],
+    "a": "Salivary Amylase",
+    "mode": "FLIP"
+  },
+  {
+    "id": 229,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What optical lens structure corrects the vision defect known as Myopia?",
+    "options": ["Convex Lens", "Concave Lens", "Bifocal Lens", "Cylindrical Lens"],
+    "a": "Concave Lens",
+    "mode": "FLIP"
+  },
+  {
+    "id": 230,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "Which soil type expands significantly when wet and is excellent for growing cotton?",
+    "options": ["Alluvial Soil", "Black Soil", "Red Soil", "Laterite Soil"],
+    "a": "Black Soil",
+    "mode": "FLIP"
+  },
+  {
+    "id": 231,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What happens to the properties of elements as you move left to right across a periodic table period?",
+    "options": ["Metallic character increases", "Non-metallic character increases", "Atomic size increases", "Valence electrons decrease"],
+    "a": "Non-metallic character increases",
+    "mode": "FLIP"
+  },
+  {
+    "id": 232,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What is the value of trigonometry expression: sin square theta plus cos square theta?",
+    "options": ["0", "1", "2", "-1"],
+    "a": "1",
+    "mode": "FLIP"
+  },
+  {
+    "id": 233,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What hormone regulates blood glucose levels and is produced by the pancreas?",
+    "options": ["Thyroxin", "Adrenaline", "Insulin", "Growth Hormone"],
+    "a": "Insulin",
+    "mode": "FLIP"
+  },
+  {
+    "id": 234,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What magnetic rule determines the direction of induced current in a generator?",
+    "options": ["Fleming's Left-Hand Rule", "Fleming's Right-Hand Rule", "Right-Hand Thumb Rule", "Maxwell's Screw Rule"],
+    "a": "Fleming's Right-Hand Rule",
+    "mode": "FLIP"
+  },
+  {
+    "id": 235,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "Which sector of the economy drives farming, forestry, and mining operations?",
+    "options": ["Primary Sector", "Secondary Sector", "Tertiary Sector", "Quaternary Sector"],
+    "a": "Primary Sector",
+    "mode": "FLIP"
+  },
+  {
+    "id": 236,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What gas compound is primarily responsible for turning lime water milky?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen Dioxide", "Sulfur Dioxide"],
+    "a": "Carbon Dioxide",
+    "mode": "FLIP"
+  },
+  {
+    "id": 237,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What is the maximum probability score possible for any statistical event?",
+    "options": ["0.5", "1", "100", "Infinite"],
+    "a": "1",
+    "mode": "FLIP"
+  },
+  {
+    "id": 238,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "Which biological structural system filters waste to form urine inside kidneys?",
+    "options": ["Nephrons", "Neurons", "Alveoli", "Villi"],
+    "a": "Nephrons",
+    "mode": "FLIP"
+  },
+  {
+    "id": 239,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What term describes power shared between a central authority and provincial units?",
+    "options": ["Dictatorship", "Federalism", "Monarchy", "Anarchy"],
+    "a": "Federalism",
+    "mode": "FLIP"
+  },
+  {
+    "id": 240,
+    "category": "Class 10",
+    "type": "MCQ",
+    "q": "What optical index tracks the bending of light as it moves between mediums?",
+    "options": ["Reflective Index", "Refractive Index", "Focal Length", "Magnification Factor"],
+    "a": "Refractive Index",
+    "mode": "FLIP"
+  },
   {
     "id": 241,
     "category": "Class 11",
@@ -3663,425 +5760,1337 @@
     "mode": "FLIP"
   },
   {
-  "education_database": [
-    {
       "id": 641,
       "category": "Science",
-      "question": "What is the primary function of the mitochondria in a cell?",
-      "answer": "To produce energy in the form of ATP through cellular respiration."
+      "type": "MCQ",
+      "q": "What is the primary function of the mitochondria in a cell?",
+      "options": ["To produce energy in the form of ATP", "Protein synthesis", "Store DNA", "Digest waste"],
+      "a": "To produce energy in the form of ATP",
+      "mode": "FLIP"
     },
     {
       "id": 642,
       "category": "Mathematics",
-      "question": "Define a prime number.",
-      "answer": "A natural number greater than 1 that has no positive divisors other than 1 and itself."
+      "type": "MCQ",
+      "q": "Define a prime number.",
+      "options": ["A number divisible by 2", "A natural number > 1 with only 1 and itself as divisors", "An even number", "A negative number"],
+      "a": "A natural number > 1 with only 1 and itself as divisors",
+      "mode": "FLIP"
     },
     {
       "id": 643,
       "category": "History",
-      "question": "Which civilization is credited with the invention of the wheel?",
-      "answer": "The Mesopotamian civilization (Sumerians)."
+      "type": "MCQ",
+      "q": "Which civilization is credited with the invention of the wheel?",
+      "options": ["The Mesopotamian civilization (Sumerians)", "Egyptians", "Greeks", "Romans"],
+      "a": "The Mesopotamian civilization (Sumerians)",
+      "mode": "FLIP"
     },
     {
       "id": 644,
       "category": "Technology",
-      "question": "What does the acronym 'RAM' stand for in computing?",
-      "answer": "Random Access Memory."
+      "type": "MCQ",
+      "q": "What does the acronym 'RAM' stand for in computing?",
+      "options": ["Random Access Memory", "Readily Available Memory", "Rapid Application Management", "Remote Access Module"],
+      "a": "Random Access Memory",
+      "mode": "FLIP"
     },
     {
       "id": 645,
       "category": "Literature",
-      "question": "Who wrote 'Romeo and Juliet'?",
-      "answer": "William Shakespeare."
+      "type": "MCQ",
+      "q": "Who wrote 'Romeo and Juliet'?",
+      "options": ["William Shakespeare", "Jane Austen", "Charles Dickens", "Mark Twain"],
+      "a": "William Shakespeare",
+      "mode": "FLIP"
     },
     {
       "id": 646,
       "category": "Geography",
-      "question": "Which is the longest river in the world?",
-      "answer": "The Nile River."
+      "type": "MCQ",
+      "q": "Which is the longest river in the world?",
+      "options": ["The Nile River", "The Amazon River", "The Yangtze River", "The Mississippi River"],
+      "a": "The Nile River",
+      "mode": "FLIP"
     },
     {
       "id": 647,
       "category": "Physics",
-      "question": "What is the speed of light in a vacuum?",
-      "answer": "Approximately 299,792,458 meters per second."
+      "type": "MCQ",
+      "q": "What is the speed of light in a vacuum?",
+      "options": ["Approximately 299,792,458 meters per second", "300,000 km/s", "200,000 km/s", "100,000 m/s"],
+      "a": "Approximately 299,792,458 meters per second",
+      "mode": "FLIP"
     },
     {
       "id": 648,
       "category": "Biology",
-      "question": "What is the process by which plants convert sunlight into energy?",
-      "answer": "Photosynthesis."
+      "type": "MCQ",
+      "q": "What is the process by which plants convert sunlight into energy?",
+      "options": ["Photosynthesis", "Respiration", "Transpiration", "Digestion"],
+      "a": "Photosynthesis",
+      "mode": "FLIP"
     },
     {
       "id": 649,
       "category": "Chemistry",
-      "question": "What is the chemical symbol for gold?",
-      "answer": "Au."
+      "type": "MCQ",
+      "q": "What is the chemical symbol for gold?",
+      "options": ["Au", "Ag", "Pb", "Fe"],
+      "a": "Au",
+      "mode": "FLIP"
     },
     {
       "id": 650,
       "category": "General Knowledge",
-      "question": "Which planet is known as the 'Red Planet'?",
-      "answer": "Mars."
-  },
-      {"id": 641, "question": "What is the primary function of the Article 32 of the Indian Constitution?", "answer": "Right to Constitutional Remedies."},
-      {"id": 642, "question": "Which body conducts the elections to the offices of President and Vice President?", "answer": "Election Commission of India."},
-      {"id": 643, "question": "What is 'Fiscal Deficit'?", "answer": "The difference between total revenue and total expenditure of the government."},
-      {"id": 644, "question": "Who was the first woman President of the Indian National Congress?", "answer": "Annie Besant."},
-      {"id": 645, "question": "Define the 'Doctrine of Lapse'.", "answer": "Policy introduced by Lord Dalhousie to annex princely states without natural heirs."},
-      {"id": 646, "question": "What is the core objective of the 'Panchsheel' principles?", "answer": "Non-interference and peaceful coexistence between nations."},
-      {"id": 647, "question": "Which layer of the atmosphere contains the ozone layer?", "answer": "Stratosphere."},
-      {"id": 648, "question": "What is 'Sustainable Development'?", "answer": "Development that meets needs of the present without compromising future generations."},
-      {"id": 649, "question": "Who is the Chairman of the NITI Aayog?", "answer": "Prime Minister of India."},
-      {"id": 650, "question": "What is the 'Green Revolution' associated with?", "answer": "High-yielding varieties of seeds and modernized agricultural techniques."},
-      {"id": 651, "question": "Define 'Secularism' in the Indian context.", "answer": "Equal respect and protection for all religions by the State."},
-      {"id": 652, "question": "What is a 'Money Bill'?", "answer": "A bill dealing with taxation, borrowing, or expenditure of the Consolidated Fund."},
-      {"id": 653, "question": "Which committee recommended the three-tier Panchayati Raj system?", "answer": "Balwant Rai Mehta Committee."},
-      {"id": 654, "question": "What is 'Balance of Payments'?", "answer": "A statement of all transactions between entities in one country and the rest of the world."},
-      {"id": 655, "question": "Who wrote the 'Arthashastra'?", "answer": "Chanakya (Kautilya)."},
-      {"id": 656, "question": "What is 'Monsoon'?", "answer": "A seasonal prevailing wind in the region of South Asia."},
-      {"id": 657, "question": "What is the 'Right to Information' (RTI)?", "answer": "A fundamental right that allows citizens to access government information."},
-      {"id": 658, "question": "Define 'Inflation'.", "answer": "A general increase in prices and fall in the purchasing value of money."},
-      {"id": 659, "question": "What is the 'Basic Structure Doctrine'?", "answer": "A judicial principle that Parliament cannot alter the fundamental features of the Constitution."},
-      {"id": 660, "question": "Who represents the executive head of the state in India?", "answer": "The President."},
-      {"id": 661, "question": "What is 'Gross Domestic Product' (GDP)?", "answer": "The total market value of all goods and services produced within a country in a period."},
-      {"id": 662, "question": "What was the 'Non-Cooperation Movement'?", "answer": "A movement launched by Gandhi in 1920 against British rule."},
-      {"id": 663, "question": "What is 'Bio-diversity'?", "answer": "The variety of life in the world or in a particular habitat."},
-      {"id": 664, "question": "What are 'Fundamental Duties'?", "answer": "Moral obligations of citizens towards the nation, added by the 42nd Amendment."},
-      {"id": 665, "question": "Define 'Globalization'.", "answer": "The interaction and integration of people, companies, and governments worldwide."},
-      {"id": 666, "question": "What is the 'Cabinet Mission Plan'?", "answer": "A mission sent to India in 1946 to discuss the transfer of power."},
-      {"id": 667, "question": "What is the 'Inter-State Council'?", "answer": "A body set up to discuss or investigate policies between states."},
-      {"id": 668, "question": "What is 'Current Account Deficit'?", "answer": "When a country's total import of goods exceeds its export of goods."},
-      {"id": 669, "question": "What is 'Civil Disobedience'?", "answer": "The refusal to comply with certain laws as a peaceful form of protest."},
-      {"id": 670, "question": "What is the 'Western Ghats' biodiversity hotspot?", "answer": "A mountain range along the western coast of India known for rich flora and fauna."},
-      {"id": 671, "question": "What is 'Public Interest Litigation' (PIL)?", "answer": "Litigation filed in a court of law for the protection of public interest."},
-      {"id": 672, "question": "Define 'Sovereignty'.", "answer": "The supreme authority of a state to govern itself."},
-      {"id": 673, "question": "What is the powerhouse of the cell?", "answer": "Mitochondria."},
-      {"id": 674, "question": "Which hormone regulates blood sugar levels?", "answer": "Insulin."},
-      {"id": 675, "question": "What is the unit of inheritance?", "answer": "Gene."},
-      {"id": 676, "question": "Which blood group is the universal donor?", "answer": "O Negative."},
-      {"id": 677, "question": "What is the pH of human blood?", "answer": "7.35 to 7.45."},
-      {"id": 678, "question": "What is the function of xylem in plants?", "answer": "Transport of water and minerals."},
-      {"id": 679, "question": "Which organ produces bile?", "answer": "Liver."},
-      {"id": 680, "question": "What is the chemical formula for glucose?", "answer": "C6H12O6."},
-      {"id": 681, "question": "Which process occurs in the ribosomes?", "answer": "Protein synthesis."},
-      {"id": 682, "question": "What is a 'synapse'?", "answer": "A junction between two nerve cells."},
-      {"id": 683, "question": "Which vitamin is synthesized by sunlight?", "answer": "Vitamin D."},
-      {"id": 684, "question": "What is the largest bone in the human body?", "answer": "Femur."},
-      {"id": 685, "question": "What is the function of the medulla oblongata?", "answer": "Controls involuntary functions like heartbeat and breathing."},
-      {"id": 686, "question": "Which gas is released during photosynthesis?", "answer": "Oxygen."},
-      {"id": 687, "question": "What is an 'Antibody'?", "answer": "A protein produced by the immune system to fight pathogens."},
-      {"id": 688, "question": "What is the role of DNA polymerase?", "answer": "DNA replication."},
-      {"id": 689, "question": "Which part of the brain is the 'master gland'?", "answer": "Pituitary gland."},
-      {"id": 690, "question": "What is 'osmosis'?", "answer": "Movement of solvent through a semi-permeable membrane."},
-      {"id": 691, "question": "Which enzyme digests starch in saliva?", "answer": "Amylase."},
+      "type": "MCQ",
+      "q": "Which planet is known as the 'Red Planet'?",
+      "options": ["Mars", "Jupiter", "Earth", "Saturn"],
+      "a": "Mars",
+      "mode": "FLIP"
+    },
+    {
+      "id": 651,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is the primary function of the Article 32 of the Indian Constitution?",
+      "options": ["Right to Constitutional Remedies", "Right to Equality", "Right to Freedom", "Right to Education"],
+      "a": "Right to Constitutional Remedies",
+      "mode": "FLIP"
+    },
+    {
+      "id": 652,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "Which body conducts the elections to the offices of President and Vice President?",
+      "options": ["Election Commission of India", "Parliament", "Supreme Court", "State Governments"],
+      "a": "Election Commission of India",
+      "mode": "FLIP"
+    },
+    {
+      "id": 653,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is 'Fiscal Deficit'?",
+      "options": ["The difference between total revenue and total expenditure of the government", "Total government debt", "Government savings", "Foreign exchange reserves"],
+      "a": "The difference between total revenue and total expenditure of the government",
+      "mode": "FLIP"
+    },
+    {
+      "id": 654,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the first woman President of the Indian National Congress?",
+      "options": ["Annie Besant", "Sarojini Naidu", "Indira Gandhi", "Sushma Swaraj"],
+      "a": "Annie Besant",
+      "mode": "FLIP"
+    },
+    {
+      "id": 655,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Define the 'Doctrine of Lapse'.",
+      "options": ["Policy introduced by Lord Dalhousie to annex princely states without natural heirs", "British rule in India", "Indian independence movement", "Trade policy"],
+      "a": "Policy introduced by Lord Dalhousie to annex princely states without natural heirs",
+      "mode": "FLIP"
+    },
+    {
+      "id": 656,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is the core objective of the 'Panchsheel' principles?",
+      "options": ["Non-interference and peaceful coexistence between nations", "Economic cooperation", "Military alliance", "Cultural exchange"],
+      "a": "Non-interference and peaceful coexistence between nations",
+      "mode": "FLIP"
+    },
+    {
+      "id": 657,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "Which layer of the atmosphere contains the ozone layer?",
+      "options": ["Stratosphere", "Troposphere", "Mesosphere", "Thermosphere"],
+      "a": "Stratosphere",
+      "mode": "FLIP"
+    },
+    {
+      "id": 658,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Sustainable Development'?",
+      "options": ["Development that meets needs of the present without compromising future generations", "Rapid industrial growth", "Population control", "Economic reforms"],
+      "a": "Development that meets needs of the present without compromising future generations",
+      "mode": "FLIP"
+    },
+    {
+      "id": 659,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "Who is the Chairman of the NITI Aayog?",
+      "options": ["Prime Minister of India", "Finance Minister", "President of India", "Chief Justice"],
+      "a": "Prime Minister of India",
+      "mode": "FLIP"
+    },
+    {
+      "id": 660,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is the 'Green Revolution' associated with?",
+      "options": ["High-yielding varieties of seeds and modernized agricultural techniques", "Industrial growth", "Environmental conservation", "Financial reforms"],
+      "a": "High-yielding varieties of seeds and modernized agricultural techniques",
+      "mode": "FLIP"
+    },
+    {
+      "id": 661,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "Define 'Secularism' in the Indian context.",
+      "options": ["Equal respect and protection for all religions by the State", "State religion", "Atheism", "Religious freedom"],
+      "a": "Equal respect and protection for all religions by the State",
+      "mode": "FLIP"
+    },
+    {
+      "id": 662,
+      "category": "History",
+      "type": "MCQ",
+      "q": "What was the 'Non-Cooperation Movement'?",
+      "options": ["A movement launched by Gandhi in 1920 against British rule.", "A movement for women's rights.", "A movement against caste system.", "A movement for industrial growth."],
+      "a": "A movement launched by Gandhi in 1920 against British rule.",
+      "mode": "FLIP"
+    },
+    {
+      "id": 663,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is 'Bio-diversity'?",
+      "options": ["The variety of life in the world or in a particular habitat.", "A type of forest.", "A species of plant.", "A conservation method."],
+      "a": "The variety of life in the world or in a particular habitat.",
+      "mode": "FLIP"
+    },
+    {
+      "id": 664,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What are 'Fundamental Duties'?",
+      "options": ["Moral obligations of citizens towards the nation, added by the 42nd Amendment.", "Rights given to citizens.", "Duties of the government.", "International agreements."],
+      "a": "Moral obligations of citizens towards the nation, added by the 42nd Amendment.",
+      "mode": "FLIP"
+    },
+    {
+      "id": 665,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "Define 'Globalization'.",
+      "options": ["The interaction and integration of people, companies, and governments worldwide.", "A type of trade barrier.", "A local market strategy.", "A government policy."],
+      "a": "The interaction and integration of people, companies, and governments worldwide.",
+      "mode": "FLIP"
+    },
+    {
+      "id": 666,
+      "category": "History",
+      "type": "MCQ",
+      "q": "What is the 'Cabinet Mission Plan'?",
+      "options": ["A mission sent to India in 1946 to discuss the transfer of power.", "A plan for economic growth.", "A military strategy.", "A cultural exchange program."],
+      "a": "A mission sent to India in 1946 to discuss the transfer of power.",
+      "mode": "FLIP"
+    },
+    {
+      "id": 667,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is the 'Inter-State Council'?",
+      "options": ["A body set up to discuss or investigate policies between states.", "A council for international relations.", "A judicial body.", "A financial institution."],
+      "a": "A body set up to discuss or investigate policies between states.",
+      "mode": "FLIP"
+    },
+    {
+      "id": 668,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is 'Current Account Deficit'?",
+      "options": ["When a country's total import of goods exceeds its export of goods.", "A surplus in trade.", "A financial surplus.", "A type of tax."],
+      "a": "When a country's total import of goods exceeds its export of goods.",
+      "mode": "FLIP"
+    },
+    {
+      "id": 669,
+      "category": "History",
+      "type": "MCQ",
+      "q": "What is 'Civil Disobedience'?",
+      "options": ["The refusal to comply with certain laws as a peaceful form of protest.", "A violent protest.", "A type of government.", "An economic policy."],
+      "a": "The refusal to comply with certain laws as a peaceful form of protest.",
+      "mode": "FLIP"
+    },
+    {
+      "id": 670,
+      "category": "Environment",
+      "type": "MCQ",
+      "q": "What is the 'Western Ghats' biodiversity hotspot?",
+      "options": ["A mountain range along the western coast of India known for rich flora and fauna.", "A desert region.", "A river system.", "A city in India."],
+      "a": "A mountain range along the western coast of India known for rich flora and fauna.",
+      "mode": "FLIP"
+    },
+    {
+      "id": 671,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "What is 'Public Interest Litigation' (PIL)?",
+      "options": ["Litigation filed in a court of law for the protection of public interest.", "A private lawsuit.", "A criminal case.", "A financial dispute."],
+      "a": "Litigation filed in a court of law for the protection of public interest.",
+      "mode": "FLIP"
+    },
+    {
+      "id": 672,
+      "category": "Politics",
+      "type": "MCQ",
+      "q": "Define 'Sovereignty'.",
+      "options": ["The supreme authority of a state to govern itself.", "A type of government.", "An international agreement.", "A financial term."],
+      "a": "The supreme authority of a state to govern itself.",
+      "mode": "FLIP"
+    },
+    {
+      "id": 673,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the powerhouse of the cell?",
+      "options": ["Mitochondria", "Nucleus", "Ribosome", "Lysosome"],
+      "a": "Mitochondria",
+      "mode": "FLIP"
+    },
+    {
+      "id": 674,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which hormone regulates blood sugar levels?",
+      "options": ["Insulin", "Adrenaline", "Thyroxine", "Oestrogen"],
+      "a": "Insulin",
+      "mode": "FLIP"
+    },
+    {
+      "id": 675,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the unit of inheritance?",
+      "options": ["Gene", "Chromosome", "DNA", "Protein"],
+      "a": "Gene",
+      "mode": "FLIP"
+    },
+    {
+      "id": 676,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which blood group is the universal donor?",
+      "options": ["O Negative", "O Positive", "AB Positive", "AB Negative"],
+      "a": "O Negative",
+      "mode": "FLIP"
+    },
+    {
+      "id": 677,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the pH of human blood?",
+      "options": ["7.35 to 7.45", "6.5 to 7.5", "8 to 8.5", "5 to 6"],
+      "a": "7.35 to 7.45",
+      "mode": "FLIP"
+    },
+    {
+      "id": 678,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the function of xylem in plants?",
+      "options": ["Transport of water and minerals", "Food transport", "Support structure", "Respiration"],
+      "a": "Transport of water and minerals",
+      "mode": "FLIP"
+    },
+    {
+      "id": 679,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which organ produces bile?",
+      "options": ["Liver", "Pancreas", "Gall bladder", "Stomach"],
+      "a": "Liver",
+      "mode": "FLIP"
+    },
+    {
+      "id": 680,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the chemical formula for glucose?",
+      "options": ["C6H12O6", "C12H22O11", "C2H5OH", "CH4"],
+      "a": "C6H12O6",
+      "mode": "FLIP"
+    },
+    {
+      "id": 681,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which process occurs in the ribosomes?",
+      "options": ["Protein synthesis", "DNA replication", "Cell division", "Respiration"],
+      "a": "Protein synthesis",
+      "mode": "FLIP"
+    },
+    {
+      "id": 682,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is a 'synapse'?",
+      "options": ["A junction between two nerve cells", "A type of neuron", "A brain cell", "A muscle cell"],
+      "a": "A junction between two nerve cells",
+      "mode": "FLIP"
+    },
+   {      
+"id": 683,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which vitamin is synthesized by sunlight?",
+      "options": ["Vitamin D", "Vitamin C", "Vitamin A", "Vitamin K"],
+      "a": "Vitamin D",
+      "mode": "FLIP"
+    },
+    {
+      "id": 684,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the largest bone in the human body?",
+      "options": ["Femur", "Tibia", "Humerus", "Radius"],
+      "a": "Femur",
+      "mode": "FLIP"
+    },
+    {
+      "id": 685,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the function of the medulla oblongata?",
+      "options": ["Controls involuntary functions like heartbeat and breathing", "Controls movement", "Regulates temperature", "Manages vision"],
+      "a": "Controls involuntary functions like heartbeat and breathing",
+      "mode": "FLIP"
+    },
+    {
+      "id": 686,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which gas is released during photosynthesis?",
+      "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+      "a": "Oxygen",
+      "mode": "FLIP"
+    },
+    {
+      "id": 687,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is an 'Antibody'?",
+      "options": ["A protein produced by the immune system to fight pathogens", "A type of cell", "A disease", "A medication"],
+      "a": "A protein produced by the immune system to fight pathogens",
+      "mode": "FLIP"
+    },
+    {
+      "id": 688,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the role of DNA polymerase?",
+      "options": ["DNA replication", "Protein synthesis", "Cell division", "Respiration"],
+      "a": "DNA replication",
+      "mode": "FLIP"
+    },
+    {
+      "id": 689,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which part of the brain is the 'master gland'?",
+      "options": ["Pituitary gland", "Hypothalamus", "Thalamus", "Cerebellum"],
+      "a": "Pituitary gland",
+      "mode": "FLIP"
+    },
+    {
+      "id": 690,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'osmosis'?",
+      "options": ["Movement of solvent through a semi-permeable membrane", "Cell division", "Protein synthesis", "DNA replication"],
+      "a": "Movement of solvent through a semi-permeable membrane",
+      "mode": "FLIP"
+    },
+{
+      "id": 684,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the largest bone in the human body?",
+      "options": ["Femur", "Tibia", "Humerus", "Radius"],
+      "a": "Femur",
+      "mode": "FLIP"
+    },
+    {
+      "id": 685,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the function of the medulla oblongata?",
+      "options": ["Controls involuntary functions like heartbeat and breathing", "Controls movement", "Regulates temperature", "Manages vision"],
+      "a": "Controls involuntary functions like heartbeat and breathing",
+      "mode": "FLIP"
+    },
+    {
+      "id": 686,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which gas is released during photosynthesis?",
+      "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+      "a": "Oxygen",
+      "mode": "FLIP"
+    },
+    {
+      "id": 687,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is an 'Antibody'?",
+      "options": ["A protein produced by the immune system to fight pathogens", "A type of cell", "A disease", "A medication"],
+      "a": "A protein produced by the immune system to fight pathogens",
+      "mode": "FLIP"
+    },
+    {
+      "id": 688,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the role of DNA polymerase?",
+      "options": ["DNA replication", "Protein synthesis", "Cell division", "Respiration"],
+      "a": "DNA replication",
+      "mode": "FLIP"
+    },
+    {
+      "id": 689,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which part of the brain is the 'master gland'?",
+      "options": ["Pituitary gland", "Hypothalamus", "Thalamus", "Cerebellum"],
+      "a": "Pituitary gland",
+      "mode": "FLIP"
+    },
+    {
+      "id": 690,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'osmosis'?",
+      "options": ["Movement of solvent through a semi-permeable membrane", "Cell division", "Protein synthesis", "DNA replication"],
+      "a": "Movement of solvent through a semi-permeable membrane",
+      "mode": "FLIP"
+    }
+  ]
+}Next? 😊
+[6:36 pm, 23/06/2026] Ganesh Ram Makina: {"id": 691, "question": "Which enzyme digests starch in saliva?", "answer": "Amylase."},
       {"id": 692, "question": "What is the main waste product of human metabolism?", "answer": "Urea."},
       {"id": 693, "question": "What is 'meiosis'?", "answer": "Cell division resulting in four daughter cells with half the chromosomes."},
       {"id": 694, "question": "Which hormone is known as the 'fight or flight' hormone?", "answer": "Adrenaline."},
       {"id": 695, "question": "What is the structure of DNA?", "answer": "Double helix."},
       {"id": 696, "question": "Which white blood cell is most abundant?", "answer": "Neutrophils."},
       {"id": 697, "question": "What is the function of the gallbladder?", "answer": "Storage of bile."},
-      {"id": 698, "question": "What is an 'allele'?", "answer": "A variant form of a given gene."},
-      {"id": 699, "question": "Which organism causes Malaria?", "answer": "Plasmodium parasite."},
-      {"id": 700, "question": "What is the function of hemoglobin?", "answer": "Transporting oxygen in blood."},
-      {"id": 701, "question": "What is a 'taxis' response?", "answer": "Movement of an organism in response to a stimulus."},
-      {"id": 702, "question": "Which organelle is the 'garbage disposal'?", "answer": "Lysosome."},
-      {"id": 703, "question": "What is the respiratory pigment in humans?", "answer": "Hemoglobin."},
-      {"id": 704, "question": "What is 'homeostasis'?", "answer": "Maintaining a stable internal environment."}
-      {"id": 705, "question": "State Newton's Second Law of Motion.", "answer": "Force equals mass times acceleration (F=ma)."},
-      {"id": 706, "question": "What is the value of Planck's constant?", "answer": "Approximately 6.626 x 10^-34 J s."},
-      {"id": 707, "question": "Define the 'Entropy' of a system.", "answer": "A measure of the disorder or randomness of a system."},
-      {"id": 708, "question": "What is the Heisenberg Uncertainty Principle?", "answer": "It is impossible to know both position and momentum of a particle simultaneously."},
-      {"id": 709, "question": "What is the 'Ohm's Law'?", "answer": "Voltage equals current times resistance (V=IR)."},
-      {"id": 710, "question": "Define 'Electronegativity'.", "answer": "The tendency of an atom to attract a shared pair of electrons."},
-      {"id": 711, "question": "What is the 'Doppler Effect'?", "answer": "Change in frequency of a wave in relation to an observer moving relative to the source."},
-      {"id": 712, "question": "What is a 'Convex Lens'?", "answer": "A lens that converges light rays."},
-      {"id": 713, "question": "Define 'Buffer Solution'.", "answer": "A solution that resists change in pH when small amounts of acid/base are added."},
-      {"id": 714, "question": "What is 'Kinetic Energy'?", "answer": "Energy possessed by an object due to its motion."},
-      {"id": 715, "question": "What is the 'First Law of Thermodynamics'?", "answer": "Energy cannot be created or destroyed, only transformed."},
-      {"id": 716, "question": "What is an 'Isotope'?", "answer": "Atoms of the same element with different numbers of neutrons."},
-      {"id": 717, "question": "Define 'Electric Flux'.", "answer": "The measure of electric field through a given surface area."},
-      {"id": 718, "question": "What is 'Centripetal Force'?", "answer": "Force acting on an object moving in a circular path directed towards the center."},
-      {"id": 719, "question": "What is an 'Exothermic Reaction'?", "answer": "A reaction that releases heat energy."},
-      {"id": 720, "question": "Define 'Refractive Index'.", "answer": "The ratio of the speed of light in vacuum to speed in the medium."},
-      {"id": 721, "question": "What is the 'Ideal Gas Law'?", "answer": "PV = nRT."},
-      {"id": 722, "question": "What is 'Angular Momentum'?", "answer": "The product of an object's moment of inertia and its angular velocity."},
-      {"id": 723, "question": "Define 'Catalyst'.", "answer": "A substance that increases the rate of reaction without being consumed."},
-      {"id": 724, "question": "What is 'Coulomb's Law'?", "answer": "Force between two charges is proportional to product of charges and inversely to square of distance."},
-      {"id": 725, "question": "What is 'Potential Energy'?", "answer": "Energy stored in an object due to its position or configuration."},
-      {"id": 726, "question": "Define 'Surface Tension'.", "answer": "Property of liquid surface that allows it to resist external force."},
-      {"id": 727, "question": "What is an 'Orbital'?", "answer": "A region in an atom where there is a high probability of finding electrons."},
-      {"id": 728, "question": "Define 'Work'.", "answer": "Force applied over a distance (W=Fd)."},
-      {"id": 729, "question": "What is 'Magnetic Field'?", "answer": "A vector field that describes magnetic influence on electric charges."},
-      {"id": 730, "question": "What is 'Molarity'?", "answer": "The number of moles of solute per liter of solution."},
-      {"id": 731, "question": "Define 'Torque'.", "answer": "A twisting force that causes rotation."},
-      {"id": 732, "question": "What is 'Superconductivity'?", "answer": "A state of zero electrical resistance in certain materials at low temperatures."},
-      {"id": 733, "question": "What is an 'Electrolytic Cell'?", "answer": "A cell that uses electrical energy to drive a non-spontaneous chemical reaction."},
-      {"id": 734, "question": "Define 'Frequency'.", "answer": "The number of occurrences of a repeating event per unit time."},
-      {"id": 735, "question": "What is 'Specific Heat Capacity'?", "answer": "The heat required to raise the temperature of one unit mass by one degree."},
-      {"id": 736, "question": "What is 'Resonance'?", "answer": "When a system is driven by an external force at its natural frequency."},
-      {"id": 737, "question": "Who is known as the 'Father of the Indian Constitution'?", "answer": "Dr. B.R. Ambedkar."},
-      {"id": 738, "question": "Which is the largest ocean in the world?", "answer": "Pacific Ocean."},
-      {"id": 739, "question": "What is the capital of Australia?", "answer": "Canberra."},
-      {"id": 740, "question": "Who was the first Prime Minister of India?", "answer": "Jawaharlal Nehru."},
-      {"id": 741, "question": "Which state has the longest coastline in India?", "answer": "Gujarat."},
-      {"id": 742, "question": "What is the currency of Japan?", "answer": "Japanese Yen."},
-      {"id": 743, "question": "Who painted the 'Mona Lisa'?", "answer": "Leonardo da Vinci."},
-      {"id": 744, "question": "Which is the smallest state in India?", "answer": "Goa."},
-      {"id": 745, "question": "What is the national animal of India?", "answer": "Tiger."},
-      {"id": 746, "question": "In which year did the Battle of Plassey take place?", "answer": "1757."},
-      {"id": 747, "question": "Which planet is closest to the Sun?", "answer": "Mercury."},
-      {"id": 748, "question": "What is the height of Mount Everest?", "answer": "8,848 meters."},
-      {"id": 749, "question": "Who invented the telephone?", "answer": "Alexander Graham Bell."},
-      {"id": 750, "question": "Which is the deepest lake in the world?", "answer": "Lake Baikal."},
-      {"id": 751, "question": "What is the capital of France?", "answer": "Paris."},
-      {"id": 752, "question": "Who was the first man to land on the moon?", "answer": "Neil Armstrong."},
-      {"id": 753, "question": "What is the chemical name of common salt?", "answer": "Sodium Chloride."},
-      {"id": 754, "question": "Which gas is most abundant in Earth's atmosphere?", "answer": "Nitrogen."},
-      {"id": 755, "question": "Who wrote 'Gitanjali'?", "answer": "Rabindranath Tagore."},
-      {"id": 756, "question": "Which is the longest mountain range in the world?", "answer": "Andes."},
-      {"id": 757, "question": "What is the main source of energy for Earth?", "answer": "Sun."},
-      {"id": 758, "question": "Who was the founder of the Maurya Empire?", "answer": "Chandragupta Maurya."},
-      {"id": 759, "question": "Which is the largest desert in the world?", "answer": "Sahara."},
-      {"id": 760, "question": "What is the standard time of India based on?", "answer": "82.5 degrees East Longitude."},
-      {"id": 761, "question": "Who is known as the 'Iron Man of India'?", "answer": "Sardar Vallabhbhai Patel."},
-      {"id": 762, "question": "What is the capital of Canada?", "answer": "Ottawa."},
-      {"id": 763, "question": "Which metal is a liquid at room temperature?", "answer": "Mercury."},
-      {"id": 764, "question": "What is the largest organ in the human body?", "answer": "Skin."},
-      {"id": 765, "question": "Who discovered Penicillin?", "answer": "Alexander Fleming."},
-      {"id": 766, "question": "What is the national game of India?", "answer": "Hockey (de facto)."},
-      {"id": 767, "question": "In which city is the Golden Temple located?", "answer": "Amritsar."},
-      {"id": 768, "question": "What is the currency of the United Kingdom?", "answer": "Pound Sterling."},
-      {"id": 769, "question": "What is the full form of 'RBI'?", "answer": "Reserve Bank of India."},
-      {"id": 770, "question": "What is 'Repo Rate'?", "answer": "The rate at which RBI lends money to commercial banks."},
-      {"id": 771, "question": "Define 'KYC'.", "answer": "Know Your Customer, a mandatory verification process."},
-      {"id": 772, "question": "What is 'NEFT'?", "answer": "National Electronic Funds Transfer."},
-      {"id": 773, "question": "What is 'Inflation' in banking terms?", "answer": "A decrease in the purchasing power of money."},
-      {"id": 774, "question": "Who acts as the regulator of capital markets in India?", "answer": "SEBI (Securities and Exchange Board of India)."},
-      {"id": 775, "question": "What is a 'Cheque'?", "answer": "A document that orders a bank to pay a specific amount from an account."},
-      {"id": 776, "question": "What is 'CRR'?", "answer": "Cash Reserve Ratio, the percentage of deposits kept with RBI."},
-      {"id": 777, "question": "What is an 'ATM'?", "answer": "Automated Teller Machine."},
-      {"id": 778, "question": "What is a 'Fixed Deposit'?", "answer": "A financial instrument where money is deposited for a fixed period."},
-      {"id": 779, "question": "What is 'RTGS'?", "answer": "Real-Time Gross Settlement."},
-      {"id": 780, "question": "Define 'Non-Performing Asset' (NPA).", "answer": "A loan or advance for which the principal or interest is overdue."},
-      {"id": 781, "question": "What is a 'Debit Card'?", "answer": "A card that allows electronic access to the holder's bank account."},
-      {"id": 782, "question": "What is 'Digital Banking'?", "answer": "The digitization of all traditional banking services."},
-      {"id": 783, "question": "Who is the custodian of India's foreign exchange reserves?", "answer": "Reserve Bank of India."},
-      {"id": 784, "question": "What is the 'SLR'?", "answer": "Statutory Liquidity Ratio, the minimum percentage of assets a bank must maintain."},
-      {"id": 785, "question": "What is a 'Credit Card'?", "answer": "A card allowing the holder to purchase goods on credit."},
-      {"id": 786, "question": "What is 'Microfinance'?", "answer": "Providing financial services to low-income individuals or groups."},
-      {"id": 787, "question": "Define 'Interest Rate'.", "answer": "The proportion of a loan that is charged as interest to the borrower."},
-      {"id": 788, "question": "What is an 'Overdraft'?", "answer": "A deficit in a bank account caused by drawing more money than is held."},
-      {"id": 789, "question": "What is 'Financial Inclusion'?", "answer": "Ensuring affordable financial services to all sections of society."},
-      {"id": 790, "question": "What is 'Bank Rate'?", "answer": "The rate at which the central bank provides loans to commercial banks."},
-      {"id": 791, "question": "What is 'SWIFT'?", "answer": "Society for Worldwide Interbank Financial Telecommunication."},
-      {"id": 792, "question": "What is 'Mutual Fund'?", "answer": "An investment vehicle made up of a pool of money collected from many investors."},
-      {"id": 793, "question": "What is 'Net Banking'?", "answer": "Banking services performed over the internet."},
-      {"id": 794, "question": "What is the 'Base Rate'?", "answer": "The minimum interest rate a bank is allowed to charge for a loan."},
-      {"id": 795, "question": "What is an 'Escrow Account'?", "answer": "A temporary account held by a third party during a transaction."},
-      {"id": 796, "question": "What is 'Direct Benefit Transfer' (DBT)?", "answer": "Transferring subsidies directly into the bank accounts of beneficiaries."},
-      {"id": 797, "question": "What is 'Asset-Liability Management'?", "answer": "The practice of managing financial risks in a bank."},
-      {"id": 798, "question": "What is 'Compound Interest'?", "answer": "Interest calculated on the initial principal and also on the accumulated interest."},
-      {"id": 799, "question": "What is 'Virtual Banking'?", "answer": "Banking without any physical branches."},
-      {"id": 800, "question": "What is the primary function of a Commercial Bank?", "answer": "Accepting deposits and granting loans."},
-    { "id": 801, "category": "Politics", "question": "Which country has the oldest written constitution still in effect?", "answer": "The United States of America." },
-    { "id": 802, "category": "Environment", "question": "What is the primary cause of ocean acidification?", "answer": "Increased absorption of atmospheric carbon dioxide." },
-    { "id": 803, "category": "Geography", "question": "Which desert is the largest in the world?", "answer": "The Antarctic Desert." },
-    { "id": 804, "category": "Science", "question": "What is the most abundant gas in Earth's atmosphere?", "answer": "Nitrogen." },
-    { "id": 805, "category": "History", "question": "In what year did the Berlin Wall fall?", "answer": "1989." },
-    { "id": 806, "category": "Politics", "question": "What is a 'Veto'?", "answer": "The constitutional right to reject a decision or proposal made by a law-making body." },
-    { "id": 807, "category": "Environment", "question": "What does the Montreal Protocol aim to protect?", "answer": "The ozone layer." },
-    { "id": 808, "category": "Geography", "question": "Which country is known as the Land of the Rising Sun?", "answer": "Japan." },
-    { "id": 809, "category": "Science", "question": "What is the study of fungi called?", "answer": "Mycology." },
-    { "id": 810, "category": "History", "question": "Who was the first Emperor of Rome?", "answer": "Augustus Caesar." },
-    { "id": 811, "category": "Politics", "question": "What is the term for a government run by religious leaders?", "answer": "Theocracy." },
-    { "id": 812, "category": "Environment", "question": "What is the main component of 'smog'?", "answer": "Ground-level ozone and particulate matter." },
-    { "id": 813, "category": "Geography", "question": "Which is the smallest country in the world by land area?", "answer": "Vatican City." },
-    { "id": 814, "category": "Science", "question": "Which planet rotates on its side?", "answer": "Uranus." },
-    { "id": 815, "category": "History", "question": "What ended the First World War?", "answer": "The Treaty of Versailles." },
-    { "id": 816, "category": "Politics", "question": "What is 'Unicameral' legislature?", "answer": "A system with only one legislative house." },
-    { "id": 817, "category": "Environment", "question": "What is the 'Greenhouse Effect'?", "answer": "The trapping of heat in the atmosphere by gases." },
-    { "id": 818, "category": "Geography", "question": "Which river flows through Paris?", "answer": "The Seine." },
-    { "id": 819, "category": "Science", "question": "What is the hardest natural substance on Earth?", "answer": "Diamond." },
-    { "id": 820, "category": "History", "question": "Who was the last Tsar of Russia?", "answer": "Nicholas II." },
-    { "id": 821, "category": "Politics", "question": "What does the 'UN' stand for?", "answer": "United Nations." },
-    { "id": 822, "category": "Environment", "question": "What is 'Renewable Energy'?", "answer": "Energy from sources that are naturally replenished." },
-    { "id": 823, "category": "Geography", "question": "Which is the largest continent by area?", "answer": "Asia." },
-    { "id": 824, "category": "Science", "question": "What is the chemical symbol for Silver?", "answer": "Ag." },
-    { "id": 825, "category": "History", "question": "Which empire was ruled by Genghis Khan?", "answer": "The Mongol Empire." },
-    { "id": 826, "category": "Politics", "question": "What is 'Diplomacy'?", "answer": "The profession or activity of managing international relations." },
-    { "id": 827, "category": "Environment", "question": "What is 'Biodegradable'?", "answer": "Material capable of being decomposed by bacteria or living organisms." },
-    { "id": 828, "category": "Geography", "question": "Which country is the largest in terms of land area?", "answer": "Russia." },
-    { "id": 829, "category": "Science", "question": "What is the boiling point of water in Celsius?", "answer": "100 degrees Celsius." },
-    { "id": 830, "category": "History", "question": "Who was the main author of the Declaration of Independence?", "answer": "Thomas Jefferson." },
-    { "id": 831, "category": "Politics", "question": "What is an 'Embargo'?", "answer": "An official ban on trade with a particular country." },
-    { "id": 832, "category": "Environment", "question": "What is 'Deforestation'?", "answer": "The large-scale clearing of forest areas." },
-    { "id": 833, "category": "Geography", "question": "Where is the Great Barrier Reef located?", "answer": "Australia." },
-    { "id": 834, "category": "Science", "question": "What is the speed of sound?", "answer": "Approximately 343 meters per second." },
-    { "id": 835, "category": "History", "question": "Which conflict is often called 'The Great War'?", "answer": "World War I." },
-    { "id": 836, "category": "Politics", "question": "What is 'Sovereignty'?", "answer": "The full right and power of a governing body over itself." },
-    { "id": 837, "category": "Environment", "question": "What is 'Eutrophication'?", "answer": "Excessive nutrients in water causing dense plant growth and death of animal life." },
-    { "id": 838, "category": "Geography", "question": "Which country is home to the Amazon Rainforest?", "answer": "Brazil." },
-    { "id": 839, "category": "Science", "question": "What is the human body's largest organ?", "answer": "Skin." },
-    { "id": 840, "category": "History", "question": "Who was the famous French leader exiled to St. Helena?", "answer": "Napoleon Bonaparte." },
-    { "id": 841, "category": "Politics", "question": "What is 'Suffrage'?", "answer": "The right to vote in political elections." },
-    { "id": 842, "category": "Environment", "question": "What is 'Desertification'?", "answer": "The process by which fertile land becomes desert." },
-    { "id": 843, "category": "Geography", "question": "Which city is known as the 'Big Apple'?", "answer": "New York City." },
-    { "id": 844, "category": "Science", "question": "What is 'Inertia'?", "answer": "The tendency of an object to resist changes in its state of motion." },
-    { "id": 845, "category": "History", "question": "Who founded the Ming Dynasty?", "answer": "Zhu Yuanzhang." },
-    { "id": 846, "category": "Politics", "question": "What is a 'Coalition' government?", "answer": "A cabinet of parliamentary government where several parties cooperate." },
-    { "id": 847, "category": "Environment", "question": "What is 'Carbon Footprint'?", "answer": "The total amount of greenhouse gases generated by our actions." },
-    { "id": 848, "category": "Geography", "question": "Which ocean is located between Africa and Australia?", "answer": "Indian Ocean." },
-    { "id": 849, "category": "Science", "question": "What is the powerhouse of the cell?", "answer": "Mitochondria." },
-    { "id": 850, "category": "History", "question": "When did the French Revolution begin?", "answer": "1789." },
-    { "id": 851, "category": "Politics", "question": "What is 'Totalitarianism'?", "answer": "A system where the state recognizes no limits to its authority." },
-    { "id": 852, "category": "Environment", "question": "What is 'Acid Rain'?", "answer": "Rain made acidic by atmospheric pollution." },
-    { "id": 853, "category": "Geography", "question": "Which mountain range separates Europe and Asia?", "answer": "The Ural Mountains." },
-    { "id": 854, "category": "Science", "question": "What is 'Photosynthesis'?", "answer": "Process by which plants use sunlight to synthesize food." },
-    { "id": 855, "category": "History", "question": "Who was the Queen of England during the Spanish Armada?", "answer": "Elizabeth I." },
-    { "id": 856, "category": "Politics", "question": "What is 'Liberalism'?", "answer": "A political philosophy based on liberty and equality." },
-    { "id": 857, "category": "Environment", "question": "What is 'Sustainability'?", "answer": "Meeting the needs of the present without compromising the future." },
-    { "id": 858, "category": "Geography", "question": "Which island nation is known for having many volcanoes?", "answer": "Iceland." },
-    { "id": 859, "category": "Science", "question": "What is the atomic number of Hydrogen?", "answer": "1." },
-    { "id": 860, "category": "History", "question": "What was the 'Silk Road'?", "answer": "An ancient network of trade routes connecting East and West." },
-    { "id": 861, "category": "Politics", "question": "What is 'Conservatism'?", "answer": "A commitment to traditional values and opposition to radical change." },
-    { "id": 862, "category": "Environment", "question": "What is 'Pollution'?", "answer": "The presence of harmful substances in the environment." },
-    { "id": 863, "category": "Geography", "question": "What is the capital of Canada?", "answer": "Ottawa." },
-    { "id": 864, "category": "Science", "question": "What is 'Gravity'?", "answer": "The force that attracts a body toward the center of the earth." },
-    { "id": 865, "category": "History", "question": "Who wrote 'The Communist Manifesto'?", "answer": "Karl Marx and Friedrich Engels." },
-    { "id": 866, "category": "Politics", "question": "What is 'Referendum'?", "answer": "A general vote by the electorate on a single political question." },
-    { "id": 867, "category": "Environment", "question": "What is 'Conservation'?", "answer": "The preservation and protection of natural resources." },
-    { "id": 868, "category": "Geography", "question": "Which is the longest river in the world?", "answer": "The Nile." },
-    { "id": 869, "category": "Science", "question": "What is 'DNA'?", "answer": "Deoxyribonucleic acid, the molecule carrying genetic instructions." },
-    { "id": 870, "category": "History", "question": "Who was the leader of the Indian independence movement?", "answer": "Mahatma Gandhi." },
-    { "id": 871, "category": "Politics", "question": "What is a 'Republic'?", "answer": "A state in which power is held by the people and their elected representatives." },
-    { "id": 872, "category": "Environment", "question": "What is 'Ecosystem'?", "answer": "A biological community of interacting organisms and their physical environment." },
-    { "id": 873, "category": "Geography", "question": "Which country has the most people?", "answer": "India." },
-    { "id": 874, "category": "Science", "question": "What is 'Light Year'?", "answer": "The distance light travels in a year." },
-    { "id": 875, "category": "History", "question": "Who painted the Sistine Chapel ceiling?", "answer": "Michelangelo." },
-    { "id": 876, "category": "Politics", "question": "What is 'Anarchy'?", "answer": "A state of disorder due to absence of authority." },
-    { "id": 877, "category": "Environment", "question": "What is 'Renewable Resource'?", "answer": "A resource that can be replaced in a human lifespan." },
-    { "id": 878, "category": "Geography", "question": "Which country is the 'Land of Thousand Lakes'?", "answer": "Finland." },
-    { "id": 879, "category": "Science", "question": "What is 'Absolute Zero'?", "answer": "The lowest possible temperature (-273.15 degrees Celsius)." },
-    { "id": 880, "category": "History", "question": "Who discovered America in 1492?", "answer": "Christopher Columbus." },
-    { "id": 881, "category": "Politics", "question": "What is 'Fascism'?", "answer": "A far-right, authoritarian ultra-nationalist political ideology." },
-    { "id": 882, "category": "Environment", "question": "What is 'Ozone Depletion'?", "answer": "The thinning of the ozone layer in the stratosphere." },
-    { "id": 883, "category": "Geography", "question": "Which sea is between Europe and Africa?", "answer": "The Mediterranean Sea." },
-    { "id": 884, "category": "Science", "question": "What is 'Velocity'?", "answer": "The speed of an object in a given direction." },
-    { "id": 885, "category": "History", "question": "When was the Magna Carta signed?", "answer": "1215." },
-    { "id": 886, "category": "Politics", "question": "What is 'Populism'?", "answer": "Political approach that strives to appeal to ordinary people." },
-    { "id": 887, "category": "Environment", "question": "What is 'Water Scarcity'?", "answer": "The lack of sufficient available water resources." },
-    { "id": 888, "category": "Geography", "question": "What is the capital of Japan?", "answer": "Tokyo." },
-    { "id": 889, "category": "Science", "question": "What is 'Osmosis'?", "answer": "Movement of solvent through a semipermeable membrane." },
-    { "id": 890, "category": "History", "question": "Who was the first man to orbit the Earth?", "answer": "Yuri Gagarin." },
-    { "id": 891, "category": "Politics", "question": "What is 'Federalism'?", "answer": "A system where power is divided between central and regional governments." },
-    { "id": 892, "category": "Environment", "question": "What is 'Global Warming'?", "answer": "Long-term heating of Earth's climate system." },
-    { "id": 893, "category": "Geography", "question": "Which country is known as the 'Emerald Isle'?", "answer": "Ireland." },
-    { "id": 894, "category": "Science", "question": "What is 'Friction'?", "answer": "The resistance that one surface or object encounters when moving over another." },
-    { "id": 895, "category": "History", "question": "Who was the 'Maid of Orleans'?", "answer": "Joan of Arc." },
-    { "id": 896, "category": "Politics", "question": "What is 'Monarchy'?", "answer": "A system where a single person holds the title of head of state." },
-    { "id": 897, "category": "Environment", "question": "What is 'Wildlife Protection'?", "answer": "The practice of protecting wild species and their habitats." },
-    { "id": 898, "category": "Geography", "question": "Where is the Eiffel Tower?", "answer": "Paris, France." },
-    { "id": 899, "category": "Science", "question": "What is 'Valence electrons'?", "answer": "Electrons in the outermost shell of an atom." },
-    { "id": 900, "category": "History", "question": "What was the 'Golden Age' of Greece?", "answer": "5th Century BC, peak of Athenian democracy." },
-    { "id": 901, "category": "Politics", "question": "What is 'Bicameralism'?", "answer": "A legislature with two houses." },
-    { "id": 902, "category": "Environment", "question": "What is 'Solar Energy'?", "answer": "Energy obtained from the sun's radiation." },
-    { "id": 903, "category": "Geography", "question": "Which is the tallest mountain in the world?", "answer": "Mount Everest." },
-    { "id": 904, "category": "Science", "question": "What is 'Atomic weight'?", "answer": "The average mass of atoms of an element." },
-    { "id": 905, "category": "History", "question": "Who was the author of 'The Odyssey'?", "answer": "Homer." },
-    { "id": 906, "category": "Politics", "question": "What is a 'Constituency'?", "answer": "A group of voters in a specified area who elect a representative." },
-    { "id": 907, "category": "Environment", "question": "What is 'Composting'?", "answer": "Recycling organic matter into fertilizer." },
-    { "id": 908, "category": "Geography", "question": "What is the capital of Brazil?", "answer": "Brasília." },
-    { "id": 909, "category": "Science", "question": "What is 'Electron'?", "answer": "A stable subatomic particle with a negative charge." },
-    { "id": 910, "category": "History", "question": "What was the 'Age of Enlightenment'?", "answer": "An 18th-century philosophical movement." },
-    { "id": 911, "category": "Politics", "question": "What is 'Parliament'?", "answer": "A national representative body having supreme legislative powers." },
-    { "id": 912, "category": "Environment", "question": "What is 'Marine Pollution'?", "answer": "The pollution of oceans and seas." },
-    { "id": 913, "category": "Geography", "question": "Which country is the 'Land of Maple Leaf'?", "answer": "Canada." },
-    { "id": 914, "category": "Science", "question": "What is 'Proton'?", "answer": "A subatomic particle with a positive charge." },
-    { "id": 915, "category": "History", "question": "Who was the founder of the Ottoman Empire?", "answer": "Osman I." },
-    { "id": 916, "category": "Politics", "question": "What is 'Executive' branch?", "answer": "The branch responsible for implementing laws." },
-    { "id": 917, "category": "Environment", "question": "What is 'Soil Erosion'?", "answer": "The wearing away of topsoil by natural forces." },
-    { "id": 918, "category": "Geography", "question": "What is the capital of Germany?", "answer": "Berlin." },
-    { "id": 919, "category": "Science", "question": "What is 'Neutron'?", "answer": "A subatomic particle with no charge." },
-    { "id": 920, "category": "History", "question": "Who invented the printing press?", "answer": "Johannes Gutenberg." },
-    { "id": 921, "category": "Politics", "question": "What is 'Judiciary'?", "answer": "The system of courts that interprets and applies the law." },
-    { "id": 922, "category": "Environment", "question": "What is 'Hydroelectric power'?", "answer": "Electricity produced from moving water." },
-    { "id": 923, "category": "Geography", "question": "Which country is known as the 'Rainbow Nation'?", "answer": "South Africa." },
-    { "id": 924, "category": "Science", "question": "What is 'Isotope'?", "answer": "Atoms of the same element with different numbers of neutrons." },
-    { "id": 925, "category": "History", "question": "Who was the first woman to win a Nobel Prize?", "answer": "Marie Curie." },
-    { "id": 926, "category": "Politics", "question": "What is 'Legislature'?", "answer": "The body of people who make laws." },
-    { "id": 927, "category": "Environment", "question": "What is 'Biomass'?", "answer": "Organic matter used as a fuel." },
-    { "id": 928, "category": "Geography", "question": "What is the capital of Australia?", "answer": "Canberra." },
-    { "id": 929, "category": "Science", "question": "What is 'Chemical bond'?", "answer": "A lasting attraction between atoms that enables chemical compounds." },
-    { "id": 930, "category": "History", "question": "Who discovered gravity?", "answer": "Isaac Newton." },
-    { "id": 931, "category": "Politics", "question": "What is 'Human Rights'?", "answer": "Fundamental rights belonging to every person." },
-    { "id": 932, "category": "Environment", "question": "What is 'Geothermal energy'?", "answer": "Heat energy from within the Earth." },
-    { "id": 933, "category": "Geography", "question": "Which city is known as the 'Eternal City'?", "answer": "Rome." },
-    { "id": 934, "category": "Science", "question": "What is 'Combustion'?", "answer": "A chemical process of burning." },
-    { "id": 935, "category": "History", "question": "What was the 'Industrial Revolution'?", "answer": "The transition to new manufacturing processes." },
-    { "id": 936, "category": "Politics", "question": "What is 'Rule of Law'?", "answer": "The restriction of the arbitrary exercise of power." },
-    { "id": 937, "category": "Environment", "question": "What is 'Renewable energy source'?", "answer": "Energy that is not depleted when used." },
-    { "id": 938, "category": "Geography", "question": "What is the capital of Russia?", "answer": "Moscow." },
-    { "id": 939, "category": "Science", "question": "What is 'Mixture'?", "answer": "A substance made by mixing other substances together." },
-    { "id": 940, "category": "History", "question": "Who was the founder of Islam?", "answer": "Prophet Muhammad." },
-    { "id": 941, "category": "Politics", "question": "What is 'Communism'?", "answer": "A social organization based on holding all property in common." },
-    { "id": 942, "category": "Environment", "question": "What is 'Air pollution'?", "answer": "Contamination of the air by harmful substances." },
-    { "id": 943, "category": "Geography", "question": "What is the capital of China?", "answer": "Beijing." },
-    { "id": 944, "category": "Science", "question": "What is 'Compound'?", "answer": "A substance formed from two or more elements." },
-    { "id": 945, "category": "History", "question": "Who wrote 'The Republic'?", "answer": "Plato." },
-    { "id": 946, "category": "Politics", "question": "What is 'Socialism'?", "answer": "A system where the means of production are owned by the community." },
-    { "id": 947, "category": "Environment", "question": "What is 'Noise pollution'?", "answer": "Harmful or annoying levels of noise." },
-    { "id": 948, "category": "Geography", "question": "What is the capital of Egypt?", "answer": "Cairo." },
-    { "id": 949, "category": "Science", "question": "What is 'Element'?", "answer": "A pure substance consisting of only one type of atom." },
-    { "id": 950, "category": "History", "question": "Who is the father of medicine?", "answer": "Hippocrates." },
-    { "id": 951, "category": "Politics", "question": "What is 'Democracy'?", "answer": "Government by the people." },
-    { "id": 952, "category": "Environment", "question": "What is 'Landfill'?", "answer": "A place to dispose of refuse and other waste material." },
-    { "id": 953, "category": "Geography", "question": "What is the capital of France?", "answer": "Paris." },
-    { "id": 954, "category": "Science", "question": "What is 'Atom'?", "answer": "The basic unit of a chemical element." },
-    { "id": 955, "category": "History", "question": "Who was the first emperor of China?", "answer": "Qin Shi Huang." },
-    { "id": 956, "category": "Politics", "question": "What is 'Dictatorship'?", "answer": "Government by a dictator." },
-    { "id": 957, "category": "Environment", "question": "What is 'Wildlife'?", "answer": "Wild animals collectively." },
-    { "id": 958, "category": "Geography", "question": "What is the capital of Italy?", "answer": "Rome." },
-    { "id": 959, "category": "Science", "question": "What is 'Energy'?", "answer": "The capacity to do work." },
-    { "id": 960, "category": "History", "question": "Who was the 'Father of History'?", "answer": "Herodotus." },
-    { "id": 961, "category": "Politics", "question": "What is 'Bureaucracy'?", "answer": "A system of government in which most decisions are made by officials." },
-    { "id": 962, "category": "Environment", "question": "What is 'Reforestation'?", "answer": "The process of replanting an area with trees." },
-    { "id": 963, "category": "Geography", "question": "What is the capital of India?", "answer": "New Delhi." },
-    { "id": 964, "category": "Science", "question": "What is 'Mass'?", "answer": "A coherent body of matter." },
-    { "id": 965, "category": "History", "question": "Who was the first man on the moon?", "answer": "Neil Armstrong." },
-    { "id": 966, "category": "Politics", "question": "What is 'Ideology'?", "answer": "A system of ideas and ideals." },
-    { "id": 967, "category": "Environment", "question": "What is 'Recycling'?", "answer": "Converting waste into reusable material." },
-    { "id": 968, "category": "Geography", "question": "What is the capital of Spain?", "answer": "Madrid." },
-    { "id": 969, "category": "Science", "question": "What is 'Molecule'?", "answer": "A group of atoms bonded together." },
-    { "id": 970, "category": "History", "question": "Who was the founder of Buddhism?", "answer": "Gautama Buddha." },
-    { "id": 971, "category": "Politics", "question": "What is 'Constitution'?", "answer": "A body of fundamental principles according to which a state is governed." },
-    { "id": 972, "category": "Environment", "question": "What is 'Climate change'?", "answer": "Long-term changes in temperatures and weather patterns." },
-    { "id": 973, "category": "Geography", "question": "What is the capital of UK?", "answer": "London." },
-    { "id": 974, "category": "Science", "question": "What is 'Matter'?", "answer": "Anything that has mass and takes up space." },
-    { "id": 975, "category": "History", "question": "Who was the last pharaoh of Egypt?", "answer": "Cleopatra VII." },
-    { "id": 976, "category": "Politics", "question": "What is 'Election'?", "answer": "A formal group decision-making process by which a population chooses an individual to hold public office." },
-    { "id": 977, "category": "Environment", "question": "What is 'Renewable energy'?", "answer": "Energy from a source that is not depleted." },
-    { "id": 978, "category": "Geography", "question": "What is the capital of South Africa?", "answer": "Pretoria." },
-    { "id": 979, "category": "Science", "question": "What is 'Biology'?", "answer": "The study of living organisms." },
-    { "id": 980, "category": "History", "question": "Who was the founder of Christianity?", "answer": "Jesus Christ." },
-    { "id": 981, "category": "Politics", "question": "What is 'Legislative branch'?", "answer": "The branch responsible for making laws." },
-    { "id": 982, "category": "Environment", "question": "What is 'Biodiversity'?", "answer": "The variety of all living things." },
-    { "id": 983, "category": "Geography", "question": "What is the capital of Mexico?", "answer": "Mexico City." },
-    { "id": 984, "category": "Science", "question": "What is 'Chemistry'?", "answer": "The study of substances and their changes." },
-    { "id": 985, "category": "History", "question": "Who was the author of the 'Divine Comedy'?", "answer": "Dante Alighieri." },
-    { "id": 986, "category": "Politics", "question": "What is 'Judicial branch'?", "answer": "The branch responsible for interpreting laws." },
-    { "id": 987, "category": "Environment", "question": "What is 'Sustainability'?", "answer": "Avoiding the depletion of natural resources." },
-    { "id": 988, "category": "Geography", "question": "What is the capital of Thailand?", "answer": "Bangkok." },
-    { "id": 989, "category": "Science", "question": "What is 'Physics'?", "answer": "The study of matter and energy." },
-    { "id": 990, "category": "History", "question": "Who was the first president of the USA?", "answer": "George Washington." },
-    { "id": 991, "category": "Politics", "question": "What is 'Foreign policy'?", "answer": "A government's strategy in dealing with other nations." },
-    { "id": 992, "category": "Environment", "question": "What is 'Global warming'?", "answer": "The increase in the Earth's average temperature." },
-    { "id": 993, "category": "Geography", "question": "What is the capital of South Korea?", "answer": "Seoul." },
-    { "id": 994, "category": "Science", "question": "What is 'Geology'?", "answer": "The study of the Earth's physical structure." },
-    { "id": 995, "category": "History", "question": "Who was the famous inventor of the light bulb?", "answer": "Thomas Edison." },
-    { "id": 996, "category": "Politics", "question": "What is 'Public policy'?", "answer": "The principles on which social laws are based." },
-    { "id": 997, "category": "Environment", "question": "What is 'Ecology'?", "answer": "The study of organisms and their environment." },
-    { "id": 998, "category": "Geography", "question": "What is the capital of Argentina?", "answer": "Buenos Aires." },
-    { "id": 999, "category": "Science", "question": "What is 'Astronomy'?", "answer": "The study of celestial bodies." },
-    { "id": 1000, "category": "History", "question": "Who was the conqueror of the Aztec Empire?", "answer": "Hernán Cortés." }
-  ]
+      {"id": 698, "qu…
+Reformatted questions 😊:javascript{
+  "education_database": [
+    {
+      "id": 691,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which enzyme digests starch in saliva?",
+      "options": ["Amylase", "Lipase", "Pepsin", "Trypsin"],
+      "a": "Amylase",
+      "mode": "FLIP"
+    },
+    {
+      "id": 692,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the main waste product of human metabolism?",
+      "options": ["Urea", "Carbon dioxide", "Water", "Sodium chloride"],
+      "a": "Urea",
+      "mode": "FLIP"
+    },
+    {
+      "id": 693,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'meiosis'?",
+      "options": ["Cell division resulting in four daughter cells with half the chromosomes", "Cell division resulting in two daughter cells", "Protein synthesis", "DNA replication"],
+      "a": "Cell division resulting in four daughter cells with half the chromosomes",
+      "mode": "FLIP"
+    },
+    {
+      "id": 694,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which hormone is known as the 'fight or flight' hormone?",
+      "options": ["Adrenaline", "Insulin", "Thyroxine", "Oestrogen"],
+      "a": "Adrenaline",
+      "mode": "FLIP"
+    },
+    {
+      "id": 695,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the structure of DNA?",
+      "options": ["Double helix", "Single helix", "Triple helix", "Quadruple helix"],
+      "a": "Double helix",
+      "mode": "FLIP"
+    },
+    {
+      "id": 696,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which white blood cell is most abundant?",
+      "options": ["Neutrophils", "Lymphocytes", "Monocytes", "Eosinophils"],
+      "a": "Neutrophils",
+      "mode": "FLIP"
+    },
+    {
+      "id": 697,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the function of the gallbladder?",
+      "options": ["Storage of bile", "Digestion of proteins", "Production of insulin", "Filtering blood"],
+      "a": "Storage of bile",
+      "mode": "FLIP"
+    },
+    {
+      "id": 698,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is an 'allele'?",
+      "options": ["A variant form of a given gene", "A type of cell", "A chromosome", "A protein"],
+      "a": "A variant form of a given gene",
+      "mode": "FLIP"
+    },
+    {
+      "id": 699,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which organism causes Malaria?",
+      "options": ["Plasmodium parasite", "Bacteria", "Virus", "Fungi"],
+      "a": "Plasmodium parasite",
+      "mode": "FLIP"
+    },
+    {
+      "id": 700,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the function of hemoglobin?",
+      "options": ["Transporting oxygen in blood", "Fighting infections", "Clotting blood", "Digesting food"],
+      "a": "Transporting oxygen in blood",
+      "mode": "FLIP"
+    },
+    {
+      "id": 701,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is a 'taxis' response?",
+      "options": ["Movement of an organism in response to a stimulus", "A type of cell", "A brain function", "A hormone"],
+      "a": "Movement of an organism in response to a stimulus",
+      "mode": "FLIP"
+    },
+    {
+      "id": 702,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which organelle is the 'garbage disposal'?",
+      "options": ["Lysosome", "Mitochondria", "Ribosome", "Nucleus"],
+      "a": "Lysosome",
+      "mode": "FLIP"
+    },
+    {
+      "id": 703,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the respiratory pigment in humans?",
+      "options": ["Hemoglobin", "Chlorophyll", "Melanin", "Keratin"],
+      "a": "Hemoglobin",
+      "mode": "FLIP"
+    },
+    {
+      "id": 704,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is 'homeostasis'?",
+      "options": ["Maintaining a stable internal environment", "Cell division", "Protein synthesis", "DNA replication"],
+      "a": "Maintaining a stable internal environment",
+      "mode": "FLIP"
+    },
+    {
+      "id": 705,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "State Newton's Second Law of Motion.",
+      "options": ["Force equals mass times acceleration (F=ma)", "Force equals velocity times acceleration", "Force equals mass times velocity", "Force equals acceleration times time"],
+      "a": "Force equals mass times acceleration (F=ma)",
+      "mode": "FLIP"
+    },
+    {
+      "id": 706,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is the value of Planck's constant?",
+      "options": ["Approximately 6.626 x 10^-34 J s", "Approximately 3 x 10^8 m/s", "Approximately 9.8 m/s^2", "Approximately 1.6 x 10^-19 C"],
+      "a": "Approximately 6.626 x 10^-34 J s",
+      "mode": "FLIP"
+    },
+    {
+      "id": 707,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "Define the 'Entropy' of a system.",
+      "options": ["A measure of the disorder or randomness of a system", "A measure of energy", "A measure of temperature", "A measure of pressure"],
+      "a": "A measure of the disorder or randomness of a system",
+      "mode": "FLIP"
+    },
+    {
+      "id": 708,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is the Heisenberg Uncertainty Principle?",
+      "options": ["It is impossible to know both position and momentum of a particle simultaneously", "It is impossible to know energy and time simultaneously", "It is impossible to know velocity and acceleration simultaneously", "It is impossible to know force and distance simultaneously"],
+      "a": "It is impossible to know both position and momentum of a particle simultaneously",
+      "mode": "FLIP"
+    },
+    {
+      "id": 709,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is the 'Ohm's Law'?",
+      "options": ["Voltage equals current times resistance (V=IR)", "Voltage equals power times current", "Current equals voltage times resistance", "Resistance equals voltage times current"],
+      "a": "Voltage equals current times resistance (V=IR)",
+      "mode": "FLIP"
+    },
+    {
+      "id": 710,
+      "category": "Chemistry",
+      "type": "MCQ",
+      "q": "Define 'Electronegativity'.",
+      "options": ["The tendency of an atom to attract a shared pair of electrons", "The tendency of an atom to lose electrons", "The tendency of an atom to gain electrons", "The tendency of an atom to share electrons"],
+      "a": "The tendency of an atom to attract a shared pair of electrons",
+      "mode": "FLIP"
+    },
+{
+      "id": 711,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is the 'Doppler Effect'?",
+      "options": ["Change in frequency of a wave in relation to an observer moving relative to the source", "Change in wavelength", "Change in speed", "Change in amplitude"],
+      "a": "Change in frequency of a wave in relation to an observer moving relative to the source",
+      "mode": "FLIP"
+    },
+    {
+      "id": 712,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is a 'Convex Lens'?",
+      "options": ["A lens that converges light rays", "A lens that diverges light rays", "A lens that reflects light", "A lens that absorbs light"],
+      "a": "A lens that converges light rays",
+      "mode": "FLIP"
+    },
+    {
+      "id": 713,
+      "category": "Chemistry",
+      "type": "MCQ",
+      "q": "Define 'Buffer Solution'.",
+      "options": ["A solution that resists change in pH when small amounts of acid/base are added", "A solution that changes pH easily", "A solution that is always acidic", "A solution that is always basic"],
+      "a": "A solution that resists change in pH when small amounts of acid/base are added",
+      "mode": "FLIP"
+    },
+    {
+      "id": 714,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is 'Kinetic Energy'?",
+      "options": ["Energy possessed by an object due to its motion", "Energy stored in an object", "Energy due to position", "Energy due to temperature"],
+      "a": "Energy possessed by an object due to its motion",
+      "mode": "FLIP"
+    },
+    {
+      "id": 715,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is the 'First Law of Thermodynamics'?",
+      "options": ["Energy cannot be created or destroyed, only transformed", "Energy can be created", "Energy can be destroyed", "Energy is always lost"],
+      "a": "Energy cannot be created or destroyed, only transformed",
+      "mode": "FLIP"
+    },
+    {
+      "id": 716,
+      "category": "Chemistry",
+      "type": "MCQ",
+      "q": "What is an 'Isotope'?",
+      "options": ["Atoms of the same element with different numbers of neutrons", "Atoms of different elements", "Atoms with same mass number", "Atoms with same atomic number"],
+      "a": "Atoms of the same element with different numbers of neutrons",
+      "mode": "FLIP"
+    },
+    {
+      "id": 717,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "Define 'Electric Flux'.",
+      "options": ["The measure of electric field through a given surface area", "The measure of magnetic field", "The measure of force", "The measure of energy"],
+      "a": "The measure of electric field through a given surface area",
+      "mode": "FLIP"
+    },
+    {
+      "id": 718,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is 'Centripetal Force'?",
+      "options": ["Force acting on an object moving in a circular path directed towards the center", "Force acting away from center", "Force acting in direction of motion", "Force opposite to motion"],
+      "a": "Force acting on an object moving in a circular path directed towards the center",
+      "mode": "FLIP"
+    },
+    {
+      "id": 719,
+      "category": "Chemistry",
+      "type": "MCQ",
+      "q": "What is an 'Exothermic Reaction'?",
+      "options": ["A reaction that releases heat energy", "A reaction that absorbs heat", "A reaction with no heat change", "A slow reaction"],
+      "a": "A reaction that releases heat energy",
+      "mode": "FLIP"
+    },
+    {
+      "id": 720,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "Define 'Refractive Index'.",
+      "options": ["The ratio of the speed of light in vacuum to speed in the medium", "The ratio of angles", "The ratio of wavelengths", "The ratio of frequencies"],
+      "a": "The ratio of the speed of light in vacuum to speed in the medium",
+      "mode": "FLIP"
+    },
+    {
+      "id": 721,
+      "category": "Chemistry",
+      "type": "MCQ",
+      "q": "What is the 'Ideal Gas Law'?",
+      "options": ["PV = nRT", "PV = nT", "P = nRT", "V = nRT"],
+      "a": "PV = nRT",
+      "mode": "FLIP"
+    },
+    {
+      "id": 722,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is 'Angular Momentum'?",
+      "options": ["The product of an object's moment of inertia and its angular velocity", "The product of mass and velocity", "The product of force and distance", "The product of energy and time"],
+      "a": "The product of an object's moment of inertia and its angular velocity",
+      "mode": "FLIP"
+    },
+    {
+      "id": 723,
+      "category": "Chemistry",
+      "type": "MCQ",
+      "q": "Define 'Catalyst'.",
+      "options": ["A substance that increases the rate of reaction without being consumed", "A reactant", "A product", "A solvent"],
+      "a": "A substance that increases the rate of reaction without being consumed",
+      "mode": "FLIP"
+    },
+    {
+      "id": 724,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is 'Coulomb's Law'?",
+      "options": ["Force between two charges is proportional to product of charges and inversely to square of distance", "Force is proportional to distance", "Force is inversely to charges", "Force is constant"],
+      "a": "Force between two charges is proportional to product of charges and inversely to square of distance",
+      "mode": "FLIP"
+    },
+    {
+      "id": 725,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is 'Potential Energy'?",
+      "options": ["Energy stored in an object due to its position or configuration", "Energy due to motion", "Energy due to heat", "Energy due to light"],
+      "a": "Energy stored in an object due to its position or configuration",
+      "mode": "FLIP"
+    },
+    {
+      "id": 726,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "Define 'Surface Tension'.",
+      "options": ["Property of liquid surface that allows it to resist external force", "Property of solids", "Property of gases", "Property of plasma"],
+      "a": "Property of liquid surface that allows it to resist external force",
+      "mode": "FLIP"
+    },
+    {
+      "id": 727,
+      "category": "Chemistry",
+      "type": "MCQ",
+      "q": "What is an 'Orbital'?",
+      "options": ["A region in an atom where there is a high probability of finding electrons", "A path of electrons", "A nucleus", "A proton"],
+      "a": "A region in an atom where there is a high probability of finding electrons",
+      "mode": "FLIP"
+    },
+    {
+      "id": 728,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "Define 'Work'.",
+      "options": ["Force applied over a distance (W=Fd)", "Force times time", "Energy times distance", "Power times time"],
+      "a": "Force applied over a distance (W=Fd)",
+      "mode": "FLIP"
+    },
+    {
+      "id": 729,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is 'Magnetic Field'?",
+      "options": ["A vector field that describes magnetic influence on electric charges", "A scalar field", "A gravitational field", "An electric field"],
+      "a": "A vector field that describes magnetic influence on electric charges",
+      "mode": "FLIP"
+    },
+    {
+      "id": 730,
+      "category": "Chemistry",
+      "type": "MCQ",
+      "q": "What is 'Molarity'?",
+      "options": ["The number of moles of solute per liter of solution", "The number of grams per liter", "The number of moles per kg", "The number of liters per mole"],
+      "a": "The number of moles of solute per liter of solution",
+      "mode": "FLIP"
+    },
+{
+      "id": 731,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "Define 'Torque'.",
+      "options": ["A twisting force that causes rotation", "A linear force", "A force that stops rotation", "A force that changes direction"],
+      "a": "A twisting force that causes rotation",
+      "mode": "FLIP"
+    },
+    {
+      "id": 732,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is 'Superconductivity'?",
+      "options": ["A state of zero electrical resistance in certain materials at low temperatures", "A state of high resistance", "A state of high temperature", "A state of zero voltage"],
+      "a": "A state of zero electrical resistance in certain materials at low temperatures",
+      "mode": "FLIP"
+    },
+    {
+      "id": 733,
+      "category": "Chemistry",
+      "type": "MCQ",
+      "q": "What is an 'Electrolytic Cell'?",
+      "options": ["A cell that uses electrical energy to drive a non-spontaneous chemical reaction", "A cell that produces electricity", "A cell that stores energy", "A cell that decomposes water"],
+      "a": "A cell that uses electrical energy to drive a non-spontaneous chemical reaction",
+      "mode": "FLIP"
+    },
+    {
+      "id": 734,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "Define 'Frequency'.",
+      "options": ["The number of occurrences of a repeating event per unit time", "The time taken for one event", "The speed of an event", "The distance between events"],
+      "a": "The number of occurrences of a repeating event per unit time",
+      "mode": "FLIP"
+    },
+    {
+      "id": 735,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is 'Specific Heat Capacity'?",
+      "options": ["The heat required to raise the temperature of one unit mass by one degree", "The heat required to melt a substance", "The heat required to boil a substance", "The heat required to change state"],
+      "a": "The heat required to raise the temperature of one unit mass by one degree",
+      "mode": "FLIP"
+    },
+    {
+      "id": 736,
+      "category": "Physics",
+      "type": "MCQ",
+      "q": "What is 'Resonance'?",
+      "options": ["When a system is driven by an external force at its natural frequency", "When a system is at rest", "When a system is in equilibrium", "When a system is unstable"],
+      "a": "When a system is driven by an external force at its natural frequency",
+      "mode": "FLIP"
+    },
+    {
+      "id": 737,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who is known as the 'Father of the Indian Constitution'?",
+      "options": ["Dr. B.R. Ambedkar", "Jawaharlal Nehru", "Mahatma Gandhi", "Sardar Patel"],
+      "a": "Dr. B.R. Ambedkar",
+      "mode": "FLIP"
+    },
+    {
+      "id": 738,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which is the largest ocean in the world?",
+      "options": ["Pacific Ocean", "Indian Ocean", "Atlantic Ocean", "Arctic Ocean"],
+      "a": "Pacific Ocean",
+      "mode": "FLIP"
+    },
+    {
+      "id": 739,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Australia?",
+      "options": ["Canberra", "Sydney", "Melbourne", "Perth"],
+      "a": "Canberra",
+      "mode": "FLIP"
+    },
+    {
+      "id": 740,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the first Prime Minister of India?",
+      "options": ["Jawaharlal Nehru", "Indira Gandhi", "Lal Bahadur Shastri", "Morarji Desai"],
+      "a": "Jawaharlal Nehru",
+      "mode": "FLIP"
+    },
+    {
+      "id": 741,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which state has the longest coastline in India?",
+      "options": ["Gujarat", "Maharashtra", "Kerala", "Tamil Nadu"],
+      "a": "Gujarat",
+      "mode": "FLIP"
+    },
+    {
+      "id": 742,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the currency of Japan?",
+      "options": ["Japanese Yen", "US Dollar", "Euro", "Rupee"],
+      "a": "Japanese Yen",
+      "mode": "FLIP"
+    },
+    {
+      "id": 743,
+      "category": "Art",
+      "type": "MCQ",
+      "q": "Who painted the 'Mona Lisa'?",
+      "options": ["Leonardo da Vinci", "Michelangelo", "Raphael", "Caravaggio"],
+      "a": "Leonardo da Vinci",
+      "mode": "FLIP"
+    },
+    {
+      "id": 744,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which is the smallest state in India?",
+      "options": ["Goa", "Sikkim", "Puducherry", "Lakshadweep"],
+      "a": "Goa",
+      "mode": "FLIP"
+    },
+    {
+      "id": 745,
+      "category": "General Knowledge",
+      "type": "MCQ",
+      "q": "What is the national animal of India?",
+      "options": ["Tiger", "Lion", "Elephant", "Peacock"],
+      "a": "Tiger",
+      "mode": "FLIP"
+    },
+    {
+      "id": 746,
+      "category": "History",
+      "type": "MCQ",
+      "q": "In which year did the Battle of Plassey take place?",
+      "options": ["1757", "1767", "1777", "1787"],
+      "a": "1757",
+      "mode": "FLIP"
+    },
+    {
+      "id": 747,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which planet is closest to the Sun?",
+      "options": ["Mercury", "Venus", "Earth", "Mars"],
+      "a": "Mercury",
+      "mode": "FLIP"
+    },
+    {
+      "id": 748,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the height of Mount Everest?",
+      "options": ["8,848 meters", "8,000 meters", "9,000 meters", "7,000 meters"],
+      "a": "8,848 meters",
+      "mode": "FLIP"
+    },
+    {
+      "id": 749,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who invented the telephone?",
+      "options": ["Alexander Graham Bell", "Thomas Edison", "Guglielmo Marconi", "Nikola Tesla"],
+      "a": "Alexander Graham Bell",
+      "mode": "FLIP"
+    },
+    {
+      "id": 750,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which is the deepest lake in the world?",
+      "options": ["Lake Baikal", "Lake Superior", "Lake Victoria", "Lake Tanganyika"],
+      "a": "Lake Baikal",
+      "mode": "FLIP"
+    },
+ {
+      "id": 751,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of France?",
+      "options": ["Paris", "London", "Berlin", "Rome"],
+      "a": "Paris",
+      "mode": "FLIP"
+    },
+    {
+      "id": 752,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the first man to land on the moon?",
+      "options": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Michael Collins"],
+      "a": "Neil Armstrong",
+      "mode": "FLIP"
+    },
+    {
+      "id": 753,
+      "category": "Chemistry",
+      "type": "MCQ",
+      "q": "What is the chemical name of common salt?",
+      "options": ["Sodium Chloride", "Potassium Chloride", "Calcium Chloride", "Magnesium Chloride"],
+      "a": "Sodium Chloride",
+      "mode": "FLIP"
+    },
+    {
+      "id": 754,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "Which gas is most abundant in Earth's atmosphere?",
+      "options": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Helium"],
+      "a": "Nitrogen",
+      "mode": "FLIP"
+    },
+    {
+      "id": 755,
+      "category": "Literature",
+      "type": "MCQ",
+      "q": "Who wrote 'Gitanjali'?",
+      "options": ["Rabindranath Tagore", "R.K. Narayan", "Mahatma Gandhi", "Jawaharlal Nehru"],
+      "a": "Rabindranath Tagore",
+      "mode": "FLIP"
+    },
+    {
+      "id": 756,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which is the longest mountain range in the world?",
+      "options": ["Andes", "Himalayas", "Rockies", "Alps"],
+      "a": "Andes",
+      "mode": "FLIP"
+    },
+    {
+      "id": 757,
+      "category": "Science",
+      "type": "MCQ",
+      "q": "What is the main source of energy for Earth?",
+      "options": ["Sun", "Moon", "Wind", "Water"],
+      "a": "Sun",
+      "mode": "FLIP"
+    },
+    {
+      "id": 758,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who was the founder of the Maurya Empire?",
+      "options": ["Chandragupta Maurya", "Ashoka", "Bindusara", "Bimbisara"],
+      "a": "Chandragupta Maurya",
+      "mode": "FLIP"
+    },
+    {
+      "id": 759,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "Which is the largest desert in the world?",
+      "options": ["Sahara", "Gobi", "Kantar", "Thar"],
+      "a": "Sahara",
+      "mode": "FLIP"
+    },
+    {
+      "id": 760,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the standard time of India based on?",
+      "options": ["82.5 degrees East Longitude", "75 degrees East Longitude", "90 degrees East Longitude", "60 degrees East Longitude"],
+      "a": "82.5 degrees East Longitude",
+      "mode": "FLIP"
+    },
+    {
+      "id": 761,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who is known as the 'Iron Man of India'?",
+      "options": ["Sardar Vallabhbhai Patel", "Jawaharlal Nehru", "Mahatma Gandhi", "Subhas Chandra Bose"],
+      "a": "Sardar Vallabhbhai Patel",
+      "mode": "FLIP"
+    },
+    {
+      "id": 762,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the capital of Canada?",
+      "options": ["Ottawa", "Toronto", "Vancouver", "Montreal"],
+      "a": "Ottawa",
+      "mode": "FLIP"
+    },
+    {
+      "id": 763,
+      "category": "Chemistry",
+      "type": "MCQ",
+      "q": "Which metal is a liquid at room temperature?",
+      "options": ["Mercury", "Lead", "Tin", "Zinc"],
+      "a": "Mercury",
+      "mode": "FLIP"
+    },
+    {
+      "id": 764,
+      "category": "Biology",
+      "type": "MCQ",
+      "q": "What is the largest organ in the human body?",
+      "options": ["Skin", "Liver", "Brain", "Heart"],
+      "a": "Skin",
+      "mode": "FLIP"
+    },
+    {
+      "id": 765,
+      "category": "History",
+      "type": "MCQ",
+      "q": "Who discovered Penicillin?",
+      "options": ["Alexander Fleming", "Louis Pasteur", "Robert Koch", "Edward Jenner"],
+      "a": "Alexander Fleming",
+      "mode": "FLIP"
+    },
+    {
+      "id": 766,
+      "category": "Sports",
+      "type": "MCQ",
+      "q": "What is the national game of India?",
+      "options": ["Hockey (de facto)", "Cricket", "Football", "Kabaddi"],
+      "a": "Hockey (de facto)",
+      "mode": "FLIP"
+    },
+    {
+      "id": 767,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "In which city is the Golden Temple located?",
+      "options": ["Amritsar", "Lahore", "Delhi", "Chennai"],
+      "a": "Amritsar",
+      "mode": "FLIP"
+    },
+    {
+      "id": 768,
+      "category": "Geography",
+      "type": "MCQ",
+      "q": "What is the currency of the United Kingdom?",
+      "options": ["Pound Sterling", "US Dollar", "Euro", "Yen"],
+      "a": "Pound Sterling",
+      "mode": "FLIP"
+    },
+    {
+      "id": 769,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is the full form of 'RBI'?",
+      "options": ["Reserve Bank of India", "Regional Bank of India", "Rural Bank of India", "Revenue Bank of India"],
+      "a": "Reserve Bank of India",
+      "mode": "FLIP"
+    },
+    {
+      "id": 770,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is 'Repo Rate'?",
+      "options": ["The rate at which RBI lends money to commercial banks", "The rate at which banks lend to customers", "The rate of inflation", "The rate of interest on savings"],
+      "a": "The rate at which RBI lends money to commercial banks",
+      "mode": "FLIP"
+    },
+    {
+      "id": 771,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "Define 'KYC'.",
+      "options": ["Know Your Customer, a mandatory verification process", "Know Your Currency", "Keep Your Cash", "Key Yield Criterion"],
+      "a": "Know Your Customer, a mandatory verification process",
+      "mode": "FLIP"
+    },
+    {
+      "id": 772,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'NEFT'?",
+      "options": ["National Electronic Funds Transfer", "New Electronic Funds Transfer", "Net Electronic Funds Transfer", "National Exchange Funds Transfer"],
+      "a": "National Electronic Funds Transfer",
+      "mode": "FLIP"
+    },
+    {
+      "id": 773,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "What is 'Inflation' in banking terms?",
+      "options": ["A decrease in the purchasing power of money", "An increase in interest rates", "A decrease in savings", "An increase in exports"],
+      "a": "A decrease in the purchasing power of money",
+      "mode": "FLIP"
+    },
+    {
+      "id": 774,
+      "category": "Economics",
+      "type": "MCQ",
+      "q": "Who acts as the regulator of capital markets in India?",
+      "options": ["SEBI (Securities and Exchange Board of India)", "RBI", "NSE", "BSE"],
+      "a": "SEBI (Securities and Exchange Board of India)",
+      "mode": "FLIP"
+    },
+{
+      "id": 775,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is a 'Cheque'?",
+      "options": ["A document that orders a bank to pay a specific amount from an account", "A type of loan", "A savings account", "A credit card"],
+      "a": "A document that orders a bank to pay a specific amount from an account",
+      "mode": "FLIP"
+    },
+    {
+      "id": 776,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'CRR'?",
+      "options": ["Cash Reserve Ratio, the percentage of deposits kept with RBI", "Credit Reserve Ratio", "Cash Return Rate", "Commercial Reserve Requirement"],
+      "a": "Cash Reserve Ratio, the percentage of deposits kept with RBI",
+      "mode": "FLIP"
+    },
+    {
+      "id": 777,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is an 'ATM'?",
+      "options": ["Automated Teller Machine", "Automatic Transaction Machine", "Advanced Teller Machine", "Account Tracking Machine"],
+      "a": "Automated Teller Machine",
+      "mode": "FLIP"
+    },
+    {
+      "id": 778,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is a 'Fixed Deposit'?",
+      "options": ["A financial instrument where money is deposited for a fixed period", "A savings account", "A current account", "A loan"],
+      "a": "A financial instrument where money is deposited for a fixed period",
+      "mode": "FLIP"
+    },
+    {
+      "id": 779,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "What is 'RTGS'?",
+      "options": ["Real-Time Gross Settlement", "Rapid Transaction Gross Settlement", "Real-Time Gross System", "Regular Transaction Gross Settlement"],
+      "a": "Real-Time Gross Settlement",
+      "mode": "FLIP"
+    },
+    {
+      "id": 780,
+      "category": "Banking",
+      "type": "MCQ",
+      "q": "Define 'Non-Performing Asset' (NPA).",
+      "options": ["A loan or advance for which the principal or interest is overdue", "A performing loan", "A high-interest loan", "A secured loan"],
+      "a": "A loan or advance for which the principal or interest is overdue",
+      "mode": "FLIP"
+    },
