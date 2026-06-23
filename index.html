@@ -161,7 +161,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 </head>
 <body>
 
-<!-- INTERACTIVE TOUCH TO OPEN WELCOME NOTE ENGINE OVERLAY -->
+<!-- INTERACTIVE TOUCH TO OPEN WELCOME NOTE ENGINE OVERLAY (Referencing structure from 1782186366726.jpeg) -->
 <div id="abst-welcome-overlay">
   <div class="glow-welcome-text">WELCOME TO ABST</div>
   <div id="welcome-id-display">SOVEREIGN ID: INDIAN.001</div>
@@ -376,6 +376,7 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 <script>
 let deferredAppInstallPrompt = null;
 let isAppInstalled = false;
+let dashboardUnlocked = false; // Persistent memory lock layer
 
 function openM(id){
   document.querySelectorAll('.modal').forEach(function(modal) { modal.style.display = 'none'; });
@@ -407,6 +408,8 @@ function unlockDashboard() {
   if(overlay) {
     overlay.style.opacity = '0';
     overlay.style.transform = 'scale(1.1)';
+    dashboardUnlocked = true; // Welcome lock safe confirmation log
+    
     setTimeout(function(){
       overlay.style.display = 'none';
       
@@ -487,9 +490,11 @@ function triggerPwaInstallation() {
 }
 
 window.addEventListener('DOMContentLoaded', function(){
-  // Force Welcome Note Overlay to ALWAYS trigger on load/refresh
+  // Force Welcome Note Overlay rendering logic only on pure initial page loads
   var overlay = document.getElementById('abst-welcome-overlay');
-  if(overlay) overlay.style.display = 'flex';
+  if(overlay && !dashboardUnlocked) {
+     overlay.style.display = 'flex';
+  }
   
   loadSavedIdentityData();
   
