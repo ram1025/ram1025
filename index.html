@@ -17,7 +17,6 @@ html.modal-open{overflow:hidden!important}
 body{margin:0;padding:0;background:#0a192f;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden;-webkit-text-size-adjust:100%}
 .container{max-width:600px;margin:0 auto;padding:30px 20px;position:relative}
 
-/* TOP LEFT PROFILE MENU TRIGGERS */
 .menu-trigger {
     position: absolute;
     top: 25px;
@@ -38,7 +37,6 @@ h3{color:#ffd700;font-size:14px;margin:0 8px 0;text-align:center}
 .status{color:#8892b0;font-size:11px;margin-top:25px;line-height:1.6;text-align:center}
 img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border-radius:50%;border:3px solid #64ffda;box-shadow:0 0 20px rgba(100,255,218,0.3)}
 
-/* MODAL ENGINE SYSTEM ARCHITECTURE */
 .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:9999;overflow:auto;padding:20px}
 .modal-inner{max-width:900px;margin:40px auto;background:#112240;border-radius:12px;padding:25px;position:relative;border:1px solid #233554}
 .modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
@@ -47,7 +45,6 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 .modal-body h4{color:#64ffda;margin-top:15px}
 .modal-body ul{padding-left:20px}
 
-/* PROFILE MODAL INPUT CONFIGS */
 .profile-label {
     color:#8892b0;
     display:block;
@@ -69,18 +66,29 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 }
 .profile-input:focus, .profile-select:focus { border-color: #64ffda; outline: none; }
 
+.photo-upload-wrapper { text-align: center; margin-bottom: 25px; }
 .profile-photo-preview {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 2px solid #64ffda;
+    border: 3px solid #64ffda;
     margin: 0 auto 15px;
     display: block;
     object-fit: cover;
-    box-shadow: 0 0 15px rgba(100,255,218,0.3);
+    box-shadow: 0 0 20px rgba(100,255,218,0.3);
+    cursor: pointer;
+    transition: 0.3s;
 }
+.profile-photo-preview:active { transform: scale(0.95); }
+.photo-upload-btns { display: flex; gap: 10px; justify-content: center; }
+.photo-btn {
+    flex: 1; padding: 10px; background: #112240; border: 1px solid #233554;
+    border-radius: 8px; color: #64ffda; font-size: 13px; font-weight: bold;
+    cursor: pointer; transition: 0.2s;
+}
+.photo-btn:active { background: #1a2f4a; transform: scale(0.97); }
+input[type="file"] { display: none; }
 
-/* SCREENSHOT BUTTON STANDARD DESIGN */
 .modal-btn-action {
     width: 100%;
     margin-top: 20px;
@@ -97,7 +105,6 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 }
 .modal-btn-action:active { transform: scale(0.98); background: #4cd4b7; }
 
-/* WELCOME NOTE OVERLAY SYSTEM LAYERS */
 #abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s ease;transform:scale(1)}
 .glow-welcome-text{color:#64ffda;font-size:32px;font-weight:bold;text-align:center;letter-spacing:3px;text-shadow:0 0 12px rgba(100,255,218,0.3);margin-bottom:10px}
 #abst-welcome-sub{color:#FFD700;font-size:16px;letter-spacing:4px;font-weight:bold;text-align:center;margin-bottom:15px}
@@ -107,7 +114,6 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
     border-radius:8px;border:1px solid #233554;
 }
 
-/* INTERACTIVE WATER DROPLET / SEAL ENTRY NODE */
 .droplet-gateway {
     width: 140px;
     height: 140px;
@@ -150,12 +156,11 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 
 @keyframes floatDroplet {
     0%, 100% { transform: translateY(0); filter: drop-shadow(0 15px rgba(100,255,218,0.5)); }
-    50% { transform: translateY(-12px); filter: drop-shadow(0 0 25px rgba(100,255,218,0.8)); }
+    50% { transform: translateY(-12px); filter: drop-shadow(0 25px rgba(100,255,218,0.8)); }
 }
 @keyframes rotateRing { 100% { transform: rotate(360deg); } }
 @keyframes textBlink { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; text-shadow: 0 0 8px #64ffda; } }
 
-/* INTERACTIVE GRID STRUCTURE */
 .icon-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 0 20px;max-width:100%;margin:20px auto 0}
 .icon-card{
     background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;
@@ -172,7 +177,6 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 .icon-card:active .icon{transform:scale(1.2)}
 .icon-card span{color:#64ffda;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;display:block}
 
-/* SWIRL INTERACTIVE ANIMATION GRID NODES */
 @keyframes swirlIn {
   0% {opacity:0; transform:scale(0) rotate(-720deg);}
   70% {opacity:1; transform:scale(1.1) rotate(20deg);}
@@ -197,7 +201,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
   </div>
   
   <div class="droplet-gateway" onclick="unlockDashboard()">
-    <img id="welcome-seal-img" src="seal.png" onerror="this.src='icon-192.png'; this.onerror=function(){this.src='https://img.icons8.com/plasma/120/00FF88/water-droplet.png';};" alt="ABST Security Seal Node">
+    <img id="welcome-seal-img" src="seal.png" alt="ABST Security Seal Node">
   </div>
   
   <div class="touch-prompt" onclick="unlockDashboard()">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
@@ -207,7 +211,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 <div class="container">
 <div class="menu-trigger" onclick="openM('profileModal')">☰</div>
 
-<img id="main-seal-img" src="icon-192.png" onerror="this.src='seal.png';" alt="Seal" width="90" height="90" class="main-seal">
+<img id="main-seal-img" src="seal.png" alt="Seal" width="90" height="90" class="main-seal">
 <h1>My Jeevandhara</h1>
 <h3>Akanda Bharat Sovereign Township</h3>
 <p class="tagline" id="dash-bio-display">Building Tomorrow's Sovereign Cities</p>
@@ -273,25 +277,40 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 </div>
 <div class="modal-body" style="background:#112240;padding:20px 15px">
 
+<div class="photo-upload-wrapper">
 <img id="profile-photo-preview" src="icon-192.png" class="profile-photo-preview" alt="Profile Photo">
-<label class="profile-label">PROFILE PHOTO (UPLOAD)</label>
-<input type="file" id="inputProfilePhotoFile" accept="image/*" class="profile-input" onchange="previewImage(this)">
-<input type="hidden" id="inputProfilePhotoBase64">
+<div class="photo-upload-btns">
+<label for="inputProfileCamera" class="photo-btn">📷 CAMERA</label>
+<label for="inputProfileGallery" class="photo-btn">🖼️ GALLERY</label>
+</div>
+<input type="file" id="inputProfileCamera" accept="image/*" capture="user">
+<input type="file" id="inputProfileGallery" accept="image/*">
+</div>
 
 <label class="profile-label">MASTER VISIONARY NAME</label>
 <input type="text" id="inputMasterName" class="profile-input" placeholder="RAM GANESH MAKINA">
+
+<label class="profile-label">SOVEREIGN ID CONFIG</label>
+<input type="text" id="inputSovereignID" class="profile-input" placeholder="INDIAN.001">
 
 <label class="profile-label">EMAIL ADDRESS</label>
 <input type="email" id="inputEmail" class="profile-input" placeholder="master@abst.com">
 
 <label class="profile-label">PHONE NUMBER</label>
-<input type="tel" id="inputPhone" class="profile-input" placeholder="+91 XXX XXX XXXX">
+<input type="tel" id="inputPhone" class="profile-input" placeholder="+91 XXXX">
 
 <label class="profile-label">BLOOD GROUP</label>
-<input type="text" id="inputBlood" class="profile-input" placeholder="e.g., O+">
-
-<label class="profile-label">SOVEREIGN ID CONFIG</label>
-<input type="text" id="inputSovereignID" class="profile-input" placeholder="INDIAN.001">
+<select id="inputBlood" class="profile-select">
+  <option value="">Select Blood Group</option>
+  <option value="A+">A+</option>
+  <option value="A-">A-</option>
+  <option value="B+">B+</option>
+  <option value="B-">B-</option>
+  <option value="AB+">AB+</option>
+  <option value="AB-">AB-</option>
+  <option value="O+">O+</option>
+  <option value="O-">O-</option>
+</select>
 
 <label class="profile-label">DESIGNATION / ROLE</label>
 <select id="inputDesignation" class="profile-select">
@@ -315,6 +334,8 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 
 <label class="profile-label">CUSTOM TAGLINE / BIO</label>
 <input type="text" id="inputBio" class="profile-input" placeholder="Building Tomorrow's Sovereign Cities">
+
+<p style="color:#8892b0;font-size:12px;line-height:1.5;margin:10px 0 0">Photo saves to device only. Email/Phone/Blood saved locally.</p>
 </div>
 <button onclick="saveProfileConfigurationData()" class="modal-btn-action" style="background:#5effde;color:#0a192f;font-size:16px">💾 SAVE & REFRESH RECOGNITION</button>
 </div>
@@ -452,17 +473,6 @@ function closeM(id){
   }
 }
 
-function previewImage(input) {
-  if (input.files && input.files[0]) {
-    var reader = new FileReader();
-    reader.onload = function(e) {
-      document.getElementById('profile-photo-preview').src = e.target.result;
-      document.getElementById('inputProfilePhotoBase64').value = e.target.result;
-    };
-    reader.readAsDataURL(input.files[0]);
-  }
-}
-
 function unlockDashboard() {
   var overlay = document.getElementById('abst-welcome-overlay');
   var cards = document.querySelectorAll('.icon-card');
@@ -477,75 +487,106 @@ function unlockDashboard() {
   }
 }
 
+/* STORAGE RETRIEVAL - SEAL.PNG FOR HOME/WELCOME, PROFILE PHOTO ONLY IN MODAL */
 function loadSavedIdentityData() {
-  var fields = {
-    name: 'abst_visionary_name', id: 'abst_sovereign_id', desig: 'abst_designation', 
-    loc: 'abst_location', sec: 'abst_security', bio: 'abst_bio', 
-    email: 'abst_email', phone: 'abst_phone', blood: 'abst_blood', photo: 'abst_photo'
-  };
+  var storedName = localStorage.getItem('abst_visionary_name') || "RAM GANESH MAKINA";
+  var storedID = localStorage.getItem('abst_sovereign_id') || "INDIAN.001";
+  var storedDesignation = localStorage.getItem('abst_designation') || "Chief Architect";
+  var storedLocation = localStorage.getItem('abst_location') || "Vizag Mother Hub";
+  var storedSecurity = localStorage.getItem('abst_security') || "7";
+  var storedBio = localStorage.getItem('abst_bio') || "Building Tomorrow's Sovereign Cities";
+  var storedPhoto = localStorage.getItem('abst_photo') || "icon-192.png";
   
-  var name = localStorage.getItem(fields.name) || "RAM GANESH MAKINA";
-  var id = localStorage.getItem(fields.id) || "INDIAN.001";
-  var desig = localStorage.getItem(fields.desig) || "Chief Architect";
-  var loc = localStorage.getItem(fields.loc) || "Vizag Mother Hub";
-  var sec = localStorage.getItem(fields.sec) || "7";
-  var bio = localStorage.getItem(fields.bio) || "Building Tomorrow's Sovereign Cities";
-  var email = localStorage.getItem(fields.email) || "";
-  var phone = localStorage.getItem(fields.phone) || "";
-  var blood = localStorage.getItem(fields.blood) || "";
-  var photo = localStorage.getItem(fields.photo) || "icon-192.png";
+  // NEW FIELDS
+  var storedEmail = localStorage.getItem('abst_email') || "";
+  var storedPhone = localStorage.getItem('abst_phone') || "";
+  var storedBloodGroup = localStorage.getItem('abst_bloodgroup') || "";
   
-  document.getElementById('dash-visionary-display').innerText = "Master Visionary: " + id + " " + name;
-  document.getElementById('dash-designation-display').innerText = desig + " | " + loc + " | Security Layer " + sec;
-  document.getElementById('dash-status-string').innerHTML = "Status: Operational | Jarvis AI Core Layer " + sec + " | 36 Pillars Complete<br>Master: " + id + " " + name + " | P36 Active";
-  document.getElementById('main-seal-img').src = photo;
-  document.getElementById('dash-bio-display').innerText = bio;
+  // 1. Main Page - ALWAYS USE seal.png, NOT PROFILE PHOTO
+  document.getElementById('dash-visionary-display').innerText = "Master Visionary: " + storedID + " " + storedName;
+  document.getElementById('dash-designation-display').innerText = storedDesignation + " | " + storedLocation + " | Security Layer " + storedSecurity;
+  document.getElementById('dash-status-string').innerHTML = "Status: Operational | Jarvis AI Core Layer " + storedSecurity + " | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
+  document.getElementById('main-seal-img').src = "seal.png";
+  document.getElementById('dash-bio-display').innerText = storedBio;
   
-  document.getElementById('welcome-id-display').innerText = id;
-  document.getElementById('welcome-visionary-name').innerText = name;
-  document.getElementById('welcome-designation').innerText = desig;
-  document.getElementById('welcome-location').innerText = loc;
-  document.getElementById('welcome-security').innerText = sec;
-  document.getElementById('welcome-seal-img').src = photo;
+  // 2. Welcome Screen - ALWAYS USE seal.png
+  document.getElementById('welcome-id-display').innerText = storedID;
+  document.getElementById('welcome-visionary-name').innerText = storedName;
+  document.getElementById('welcome-designation').innerText = storedDesignation;
+  document.getElementById('welcome-location').innerText = storedLocation;
+  document.getElementById('welcome-security').innerText = storedSecurity;
+  document.getElementById('welcome-seal-img').src = "seal.png";
   
-  document.getElementById('inputMasterName').value = name;
-  document.getElementById('inputSovereignID').value = id;
-  document.getElementById('inputDesignation').value = desig;
-  document.getElementById('inputLocation').value = loc;
-  document.getElementById('inputSecurity').value = sec;
-  document.getElementById('inputBio').value = bio;
-  document.getElementById('inputEmail').value = email;
-  document.getElementById('inputPhone').value = phone;
-  document.getElementById('inputBlood').value = blood;
-  document.getElementById('profile-photo-preview').src = photo;
+  // 3. Profile Modal Inputs
+  document.getElementById('inputMasterName').value = storedName;
+  document.getElementById('inputSovereignID').value = storedID;
+  document.getElementById('inputDesignation').value = storedDesignation;
+  document.getElementById('inputLocation').value = storedLocation;
+  document.getElementById('inputSecurity').value = storedSecurity;
+  document.getElementById('inputBio').value = storedBio;
+  document.getElementById('profile-photo-preview').src = storedPhoto;
+  
+  // NEW FIELD INPUTS
+  document.getElementById('inputEmail').value = storedEmail;
+  document.getElementById('inputPhone').value = storedPhone;
+  document.getElementById('inputBlood').value = storedBloodGroup;
 }
 
 function saveProfileConfigurationData() {
-  localStorage.setItem('abst_visionary_name', document.getElementById('inputMasterName').value);
-  localStorage.setItem('abst_sovereign_id', document.getElementById('inputSovereignID').value);
-  localStorage.setItem('abst_designation', document.getElementById('inputDesignation').value);
-  localStorage.setItem('abst_location', document.getElementById('inputLocation').value);
-  localStorage.setItem('abst_security', document.getElementById('inputSecurity').value);
-  localStorage.setItem('abst_bio', document.getElementById('inputBio').value);
-  localStorage.setItem('abst_email', document.getElementById('inputEmail').value);
-  localStorage.setItem('abst_phone', document.getElementById('inputPhone').value);
-  localStorage.setItem('abst_blood', document.getElementById('inputBlood').value);
-  
-  var newPhoto = document.getElementById('inputProfilePhotoBase64').value;
-  if(newPhoto) localStorage.setItem('abst_photo', newPhoto);
-  
+function saveProfileConfigurationData() {
+  var varName = document.getElementById('inputMasterName').value.trim();
+  var varID = document.getElementById('inputSovereignID').value.trim();
+  var varDesignation = document.getElementById('inputDesignation').value;
+  var varLocation = document.getElementById('inputLocation').value.trim();  // Fixed
+  var varSecurity = document.getElementById('inputSecurity').value;  // Fixed
+  var varBio = document.getElementById('inputBio').value.trim();
+
+  // NEW FIELDS SAVE
+  var varEmail = document.getElementById('inputEmail').value.trim();
+  var varPhone = document.getElementById('inputPhone').value.trim();
+  var varBloodGroup = document.getElementById('inputBlood').value;
+
+  if(varName!== "") localStorage.setItem('abst_visionary_name', varName);
+  if(varID!== "") localStorage.setItem('abst_sovereign_id', varID);
+  if(varDesignation!== "") localStorage.setItem('abst_designation', varDesignation);
+  if(varLocation!== "") localStorage.setItem('abst_location', varLocation);
+  if(varSecurity!== "") localStorage.setItem('abst_security', varSecurity);
+  if(varBio!== "") localStorage.setItem('abst_bio', varBio);
+
+  // NEW FIELDS localStorage
+  localStorage.setItem('abst_email', varEmail);
+  localStorage.setItem('abst_phone', varPhone);
+  localStorage.setItem('abst_bloodgroup', varBloodGroup);
+
   loadSavedIdentityData();
   closeM('profileModal');
 }
 
+/* PHOTO UPLOAD FROM GALLERY/CAMERA */
+function handlePhotoUpload(file) {
+  if(!file) return;
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    var dataURL = e.target.result;
+    localStorage.setItem('abst_photo', dataURL);
+    document.getElementById('profile-photo-preview').src = dataURL;
+    loadSavedIdentityData();
+  };
+  reader.readAsDataURL(file);
+}
+
+/* PWA INSTALL */
 window.addEventListener('beforeinstallprompt', function(e) {
   e.preventDefault();
   deferredAppInstallPrompt = e;
   var installCardNode = document.getElementById('pwaInstallCard');
-  if(installCardNode && !window.matchMedia('(display-mode: standalone)').matches && !isAppInstalled) installCardNode.style.display = 'grid';
+  if(installCardNode &&!window.matchMedia('(display-mode: standalone)').matches &&!isAppInstalled) {
+     installCardNode.style.display = 'grid';
+  }
 });
 
 function triggerPwaInstallation() {
+  var installCardNode = document.getElementById('pwaInstallCard');
   if(!deferredAppInstallPrompt) {
     alert('📲 To install:\n\nAndroid: Chrome menu → Install App\n\niPhone: Safari Share → Add to Home Screen\n\nDesktop: Chrome address bar → Install icon');
     return;
@@ -553,20 +594,67 @@ function triggerPwaInstallation() {
   deferredAppInstallPrompt.prompt();
   deferredAppInstallPrompt.userChoice.then(function(choiceResult) {
     if (choiceResult.outcome === 'accepted') {
-      document.getElementById('pwaInstallCard').style.display = 'none';
+      if(installCardNode) installCardNode.style.display = 'none';
       isAppInstalled = true;
+      localStorage.setItem('abst_installed', 'true');
     }
+    deferredAppInstallPrompt = null;
   });
 }
 
+window.addEventListener('appinstalled', () => {
+  var installCardNode = document.getElementById('pwaInstallCard');
+  if(installCardNode) installCardNode.style.display = 'none';
+  isAppInstalled = true;
+  localStorage.setItem('abst_installed', 'true');
+});
+
 window.addEventListener('DOMContentLoaded', function(){
+  var overlay = document.getElementById('abst-welcome-overlay');
+  var cards = document.querySelectorAll('.icon-card');
+
   loadSavedIdentityData();
+
+  // Photo upload event listeners
+  document.getElementById('inputProfileCamera').addEventListener('change', function(e) {
+    handlePhotoUpload(e.target.files[0]);
+  });
+
+  document.getElementById('inputProfileGallery').addEventListener('change', function(e) {
+    handlePhotoUpload(e.target.files[0]);
+  });
+
   if (sessionStorage.getItem('dashboard_direct_unlock_token') === 'true') {
-    var overlay = document.getElementById('abst-welcome-overlay');
-    if(overlay) overlay.style.display = 'none';
-    document.querySelectorAll('.icon-card').forEach((card) => { card.classList.add('swirl'); });
+    if(overlay) {
+      overlay.style.display = 'none';
+    }
+    cards.forEach((card) => {
+      card.classList.add('swirl');
+    });
+  } else {
+    if(overlay) {
+      overlay.style.display = 'flex';
+    }
+  }
+
+  if(window.matchMedia('(display-mode: standalone)').matches || localStorage.getItem('abst_installed') === 'true') {
+     var installCardNode = document.getElementById('pwaInstallCard');
+     if(installCardNode) installCardNode.style.display = 'none';
+     isAppInstalled = true;
   }
 });
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){
+    document.querySelectorAll('.modal').forEach(function(m){m.style.display='none'});
+    document.documentElement.classList.remove('modal-open');
+  }
+});
+
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
+.catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
+}
 </script>
 </body>
 </html>
