@@ -6,52 +6,51 @@
     <title>ABST BRAIN - Adaptive Sovereign Matrix Runtime</title>
     <style>
         :root { --bg-dark: #070c1e; --card-bg: #121b36; --accent-cyan: #00f5d4; --accent-gold: #ffb703; --border-color: #1b264f; }
-        body { background-color: #020617; color: #fff; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .phone-container { width: 400px; background: #09132b; border: 2px solid var(--border-color); border-radius: 20px; padding: 20px; }
-        .db-file-input { display: block; width: 100%; margin: 10px 0; padding: 10px; background: #020617; color: #fff; border: 1px solid var(--border-color); }
-        .btn-action { width: 100%; padding: 15px; background: var(--accent-cyan); color: #000; font-weight: bold; border: none; border-radius: 10px; cursor: pointer; }
+        body { background-color: #020617; color: #fff; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        .phone-container { width: 100%; max-width: 400px; background: var(--card-bg); border: 2px solid var(--border-color); border-radius: 20px; padding: 20px; }
+        .db-file-input { display: block; width: 100%; margin: 10px 0; padding: 12px; background: #020617; border: 1px dashed var(--border-color); color: #fff; border-radius: 8px; }
+        .btn-action { width: 100%; padding: 15px; background: var(--accent-cyan); color: #000; font-weight: bold; border: none; border-radius: 10px; cursor: pointer; margin-top: 10px; }
     </style>
 </head>
 <body>
 <div class="phone-container">
     <h3>Sovereign Deck File Sync</h3>
+    <label style="font-size: 12px; color: #aaa;">36-Pillars-108.db</label>
     <input type="file" id="upload-raw-36" class="db-file-input">
+    
+    <label style="font-size: 12px; color: #aaa;">Education-1000.db</label>
     <input type="file" id="upload-raw-edu" class="db-file-input">
-    <button class="btn-action" onclick="processDataFiles()">Mount Array Matrices</button>
+    
+    <button class="btn-action" onclick="initializeLocalFileBufferSync()">Mount Array Matrices</button>
 </div>
 
 <script>
-    function processDataFiles() {
-        const file36 = document.getElementById('upload-raw-36').files[0];
-        const fileEdu = document.getElementById('upload-raw-edu').files[0];
+    let memoryVaultStorage = { "36-pillars": [], "education": [] };
 
-        if (!file36 || !fileEdu) { alert("Please select both files."); return; }
+    async function initializeLocalFileBufferSync() {
+        const h36 = document.getElementById('upload-raw-36').files[0];
+        const hEdu = document.getElementById('upload-raw-edu').files[0];
 
-        let loadedData = { "36-pillars": null, "education": null };
-        let filesProcessed = 0;
+        if (!h36 || !hEdu) { alert("Daya chesi rendu files select cheyyandi."); return; }
 
-        function readFile(file, key) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                try {
-                    loadedData[key] = JSON.parse(e.target.result);
-                    filesProcessed++;
-                    if (filesProcessed === 2) finalizeSync(loadedData);
-                } catch (err) {
-                    alert("Error parsing " + file.name + ": Check if it is a valid JSON array.");
-                }
-            };
-            reader.readAsText(file);
+        try {
+            // Process 36 Pillars
+            const text36 = await h36.text();
+            memoryVaultStorage["36-pillars"] = JSON.parse(text36.replace(/^\uFEFF/, ""));
+
+            // Process Education (Async load to prevent crash)
+            const textEdu = await hEdu.text();
+            await new Promise(resolve => setTimeout(resolve, 300)); // UI breathing time
+            memoryVaultStorage["education"] = JSON.parse(textEdu.replace(/^\uFEFF/, ""));
+
+            localStorage.setItem('abst_memory_vault', JSON.stringify(memoryVaultStorage));
+            alert("Success: Matrix Mounted Successfully!");
+            window.location.reload(); 
+
+        } catch (err) {
+            console.error(err);
+            alert("Sync Error: File structure check cheyyandi (JSON format).");
         }
-
-        readFile(file36, "36-pillars");
-        readFile(fileEdu, "education");
-    }
-
-    function finalizeSync(data) {
-        localStorage.setItem('abst_memory_vault', JSON.stringify(data));
-        alert("Success: Matrix Mounted! Redirecting...");
-        window.location.reload();
     }
 </script>
 </body>
