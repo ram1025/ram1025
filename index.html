@@ -18,7 +18,7 @@ h3{color:#ffd700;font-size:14px;margin:0 8px 0;text-align:center}
 .tagline{color:#8892b0;font-size:13px;margin:0 0 5px 0;text-align:center}
 .visionary{color:#ffd700;font-size:12px;margin:0 0 20px 0;text-align:center;font-weight:bold}
 .status{color:#8892b0;font-size:11px;margin-top:25px;line-height:1.6;text-align:center}
-img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
+img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 
 /* MODAL ENGINE SYSTEM ARCHITECTURE */
 .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:9999;overflow:auto;padding:20px}
@@ -27,7 +27,6 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 .modal-close{font-size:28px;cursor:pointer;line-height:1;color:#64ffda}
 .modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:13px;line-height:1.8;text-align:left;max-height:70vh;overflow-y:auto}
 .modal-body h4{color:#64ffda;margin-top:15px}
-.modal-body ul{padding-left:20px}
 
 /* SCREENSHOT BUTTON STANDARD DESIGN */
 .modal-btn-action {
@@ -44,45 +43,89 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
     text-align: center;
     transition: 0.2s;
 }
-.modal-btn-action:active {
-    transform: scale(0.98);
-    background: #4cd4b7;
+.modal-btn-action:active { transform: scale(0.98); background: #4cd4b7; }
+
+/* INTERACTIVE GATEWAY OVERLAY - TOUCH TO OPEN */
+#abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s ease;transform:scale(1)}
+.glow-welcome-text{color:#64ffda;font-size:32px;font-weight:bold;text-align:center;letter-spacing:3px;text-shadow:0 0 12px rgba(100,255,218,0.3);margin-bottom:10px}
+#abst-welcome-sub{color:#FFD700;font-size:16px;letter-spacing:4px;font-weight:bold;text-align:center}
+
+/* INTERACTIVE WATER DROPLET / SEAL ENTRY NODE */
+.droplet-gateway {
+    width: 120px;
+    height: 120px;
+    margin: 40px auto 25px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.droplet-gateway img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 15px rgba(100,255,218,0.6));
+    animation: floatDroplet 3s ease-in-out infinite;
+}
+.droplet-gateway::after {
+    content: '';
+    position: absolute;
+    top: -10px; left: -10px; right: -10px; bottom: -10px;
+    border-radius: 50%;
+    border: 2px dashed rgba(100,255,218,0.4);
+    animation: rotateRing 8s linear infinite;
+}
+.droplet-gateway:active { transform: scale(0.92); }
+
+.touch-prompt {
+    color: #64ffda;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    animation: textBlink 1.5s ease-in-out infinite;
+    text-align: center;
+    cursor: pointer;
 }
 
-/* HIGH-TECH INTERACTIVE GLOW WELCOME OVERLAY */
-#abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity 0.5s ease-out}
-.glow-welcome-text{color:#64ffda;font-size:32px;font-weight:bold;text-align:center;letter-spacing:3px;text-shadow:0 0 10px rgba(100,255,218,0.3), 0 0 20px rgba(100,255,218,0.2);animation:neonPulse 2s ease-in-out infinite}
-#abst-welcome-sub{color:#FFD700;font-size:16px;margin-top:12px;letter-spacing:4px;font-weight:bold;text-shadow:0 0 8px rgba(255,215,0,0.4)}
-@keyframes neonPulse{
-  0%, 100%{text-shadow:0 0 12px rgba(100,255,218,0.6), 0 0 25px rgba(100,255,218,0.4), 0 0 40px rgba(100,255,218,0.2);color:#64ffda}
-  50%{text-shadow:0 0 6px rgba(100,255,218,0.3), 0 0 12px rgba(100,255,218,0.1);color:#a2fff0}
+@keyframes floatDroplet {
+    0%, 100% { transform: translateY(0); filter: drop-shadow(0 0 15px rgba(100,255,218,0.5)); }
+    50% { transform: translateY(-10px); filter: drop-shadow(0 0 25px rgba(100,255,218,0.8)); }
 }
+@keyframes rotateRing { 100% { transform: rotate(360deg); } }
+@keyframes textBlink { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; text-shadow: 0 0 8px #64ffda; } }
 
 .icon-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 0 20px;max-width:100%;margin:20px auto 0}
 .icon-card{background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;transition:transform 0.1s ease}
 .icon-card:active{background:#1a2f4a;transform:scale(0.97)}
-.icon-card.jarvis{border-color:#64ffda;box-shadow:0 0 20px rgba(100,255,218,0.3)}
+.icon-card.jarvis{border-color:#64ffda;box-shadow:0 0 20px rgba(100,255,218,0.1)}
 .icon-card .icon{font-size:1.8rem;margin-bottom:5px}
 .icon-card span{color:#64ffda;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;display:block}
 </style>
 </head>
 <body>
 
-<!-- AUTO-ADVANCING WELCOME SCREEN -->
+<!-- INTERACTIVE TOUCH TO OPEN WELCOME ENGINE -->
 <div id="abst-welcome-overlay">
   <div class="glow-welcome-text">WELCOME TO ABST</div>
   <div id="abst-welcome-sub">SOVEREIGN ID: INDIAN.001</div>
-  <div style="color:#8892b0;font-size:13px;margin-top:25px;letter-spacing:1px">Master Visionary: RAM GANESH MAKINA</div>
-  <div style="color:#64ffda;font-size:11px;margin-top:40px;opacity:0.7;">INITIALIZING CORE INTERFACES...</div>
+  
+  <!-- Touch Active Hub Target -->
+  <div class="droplet-gateway" onclick="unlockDashboard()">
+    <!-- Looks for seal.png or water drop graphic -->
+    <img src="icon-192.png" onerror="this.src='seal.png'; this.onerror=function(){this.src='https://img.icons8.com/plasma/120/00FF88/water-droplet.png';};" alt="ABST Security Seal Node">
+  </div>
+  
+  <div class="touch-prompt" onclick="unlockDashboard()">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
+  <div style="color:#8892b0;font-size:11px;margin-top:40px;letter-spacing:1px;opacity:0.6">Jarvis AI Security Layer 7 Network Secured</div>
 </div>
 
 <div class="container">
-<img src="icon-192.png" alt="Seal" width="90" height="90" style="border-radius:50%">
+<img src="icon-192.png" alt="Seal" width="90" height="90" style="border-radius:50%" class="main-seal">
 <h1>My Jeevandhara</h1>
 <h3>Akanda Bharat Sovereign Township</h3>
 <p class="tagline">A 36-Pillar Ecosystem of Total Independence</p>
 <p class="visionary">Master Visionary: INDIAN.001 RAM GANESH MAKINA</p>
 
+<!-- ALL DASHBOARD ICONS RENDERED INSIDE -->
 <div class="icon-dashboard">
   <div class="icon-card" onclick="openM('dpr36Modal')">
     <div class="icon">🏛️</div><span>MASTERPLAN</span>
@@ -131,13 +174,10 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 <p class="status">Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: INDIAN.001 RAM GANESH MAKINA | P36 Active</p>
 </div>
 
-<!-- 36 PILLARS LIST MODAL - FULL DATA -->
+<!-- 36 PILLARS LIST MODAL -->
 <div id="pillars36Modal" class="modal">
 <div class="modal-inner">
-<div class="modal-head">
-<h2 style="color:#64ffda;margin:0">📋 ABST 36 PILLARS - COMPLETE LIST</h2>
-<span onclick="closeM('pillars36Modal')" class="modal-close">&times;</span>
-</div>
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📋 ABST 36 PILLARS - COMPLETE LIST</h2><span onclick="closeM('pillars36Modal')" class="modal-close">&times;</span></div>
 <div class="modal-body">
 <div style="background:#112240;border:1px solid #1a2a4a;border-radius:12px;padding:20px;margin:15px 0">
 <div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector I: Energy & Industrial Core P1-P9</div>
@@ -168,13 +208,10 @@ P36: MD Agni-Pariksha Leadership Mandate
 </div>
 </div>
 
-<!-- LICENSE MODAL - FULL TEXT RESTORED -->
+<!-- LICENSE MODAL -->
 <div id="licenseModal" class="modal">
 <div class="modal-inner">
-<div class="modal-head">
-<h2 style="color:#64ffda;margin:0">📜 ABST SOVEREIGN LICENSE</h2>
-<span onclick="closeM('licenseModal')" class="modal-close">&times;</span>
-</div>
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📜 ABST SOVEREIGN LICENSE</h2><span onclick="closeM('licenseModal')" class="modal-close">&times;</span></div>
 <div class="modal-body">
 <b>Master Visionary Lock v1.0 - ABST</b><br><br>
 Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
@@ -188,13 +225,10 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 </div>
 
-<!-- README MODAL - FULL TEXT RESTORED -->
+<!-- README MODAL -->
 <div id="readmeModal" class="modal">
 <div class="modal-inner">
-<div class="modal-head">
-<h2 style="color:#2e7d32;margin:0">📖 ABST README</h2>
-<span onclick="closeM('readmeModal')" class="modal-close">&times;</span>
-</div>
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📖 ABST README</h2><span onclick="closeM('readmeModal')" class="modal-close">&times;</span></div>
 <div class="modal-body">
 <b>ABST - Akanda Bharat Sovereign Township</b><br><br>
 <b>Master Visionary:</b> INDIAN.001 RAM GANESH MAKINA<br>
@@ -207,13 +241,10 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 </div>
 
-<!-- MASTERPLAN MODAL - IMAGES RESTORED -->
+<!-- MASTERPLAN MODAL -->
 <div id="dpr36Modal" class="modal">
 <div class="modal-inner">
-<div class="modal-head">
-<h2 style="color:#64ffda;margin:0">🏛️ ABST-MASTERPLAN - INDIAN.001</h2>
-<span onclick="closeM('dpr36Modal')" class="modal-close">&times;</span>
-</div>
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">🏛️ ABST-MASTERPLAN - INDIAN.001</h2><span onclick="closeM('dpr36Modal')" class="modal-close">&times;</span></div>
 <div class="modal-body">
 <h1 style="color:#64ffda;text-align:left;font-size:22px">ABST 36-PILLAR SOVEREIGN DPR</h1>
 <h2 style="color:#ffd700;text-align:left;font-size:16px">Master Visionary: INDIAN.001 RAM GANESH MAKINA</h2>
@@ -230,40 +261,25 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 </div>
 
-<!-- 10 STEP BLUEPRINT MODAL - FULL DATA -->
+<!-- 10 STEP BLUEPRINT MODAL -->
 <div id="blueprintModal" class="modal">
 <div class="modal-inner">
-<div class="modal-head">
-<h2 style="color:#FFD700;margin:0">🌐 DPR FRAMEWORK - 10 STEP BLUEPRINT</h2>
-<span onclick="closeM('blueprintModal')" class="modal-close">&times;</span>
-</div>
+<div class="modal-head"><h2 style="color:#FFD700;margin:0">🌐 DPR FRAMEWORK - 10 STEP BLUEPRINT</h2><span onclick="closeM('blueprintModal')" class="modal-close">&times;</span></div>
 <div class="modal-body">
 <h1 style="color:#64ffda;text-align:left;font-size:22px">AKANDA BHARAT SMART ENERGY & EV ECOSYSTEM</h1>
 <h3 style="color:#64ffda">🛣️ SECTION 1: MOBILITY & DIRECT HARVESTING</h3>
-<h4>STEP 1: BHARAT DHARA EV LANE (Dynamic Charging Network)</h4>
-<p>A high-efficiency, dedicated 2-lane smart corridor designed for non-stop electric vehicle transit and continuous energy replenishment.</p>
-<h4>STEP 2: SMART ENERGY SPEED BUMPS (Kinetic Harvesting Zones)</h4>
-<p>Positioned strategically at critical traffic calming points to convert vehicular momentum directly into high-yield electrical current.</p>
-<h4>STEP 3: INTEGRATED SOLAR WIND BARRIERS</h4>
-<p>Transforms crosswind drafts generated by heavy transit lines into active power nodes.</p>
-
+<h4>STEP 1: BHARAT DHARA EV LANE</h4><p>A high-efficiency smart corridor designed for non-stop electric vehicle transit.</p>
+<h4>STEP 2: SMART ENERGY SPEED BUMPS</h4><p>Positioned strategically to convert vehicular momentum directly into high-yield electrical current.</p>
+<h4>STEP 3: INTEGRATED SOLAR WIND BARRIERS</h4><p>Transforms crosswind drafts generated by heavy transit lines into active power nodes.</p>
 <h3 style="color:#64ffda;margin-top:20px">⚡ SECTION 2: INDEPENDENT PRODUCTION & THERMAL CORE</h3>
-<h4>STEP 4: PLASMA ENERGY CO-GENERATION</h4>
-<p>Deployment of plasma arc thermal engines processing raw municipal residue output direct into inert structural slag-bricks.</p>
-<h4>STEP 5: ATMOSPHERIC RAIN HARVESTING MATRIX (TENG)</h4>
-<p>Triboelectric Nanogenerators embedded across smart roofing shields converting precipitation force into storage.</p>
-<h4>STEP 6: MOON-RAY PHOTOVOLTAIC LAYERS</h4>
-<p>Specialized high-sensitivity optical capture arrays tracking secondary luminescence configurations.</p>
-
+<h4>STEP 4: PLASMA ENERGY CO-GENERATION</h4><p>Deployment of plasma arc thermal engines processing raw municipal residue output into slag-bricks.</p>
+<h4>STEP 5: ATMOSPHERIC RAIN HARVESTING MATRIX (TENG)</h4><p>Triboelectric Nanogenerators embedded across smart roofing shields converting precipitation force into storage.</p>
+<h4>STEP 6: MOON-RAY PHOTOVOLTAIC LAYERS</h4><p>Specialized high-sensitivity optical capture arrays tracking secondary luminescence configurations.</p>
 <h3 style="color:#64ffda;margin-top:20px">🛡️ SECTION 3: RECYCLING, GRID MANAGEMENT & STORAGE</h3>
-<h4>STEP 7: rPET & CRITICAL METAL PROCESSING SHIELDS</h4>
-<p>Automated closed-loop separation lines converting processing polymers, glass elements, and structural aluminium scrap.</p>
-<h4>STEP 8: THE SECURE BIO-VAULT RECOVERY ENGINE</h4>
-<p>Air-gapped mechanical storage facilities housing localized grid controllers away from external network linkages.</p>
-<h4>STEP 9: TRIVARNA BHARAT METRICS NODE</h4>
-<p>A distributed database layer logging public resource recycling transactions, rewarding citizens with infrastructure credits.</p>
-<h4>STEP 10: MD AGNI-PARIKSHA LEADERSHIP MANDATE</h4>
-<p>Final systemic structural protocol forcing local state operational management heads into raw rural deployment checkouts.</p>
+<h4>STEP 7: rPET & CRITICAL METAL PROCESSING SHIELDS</h4><p>Automated closed-loop separation lines converting polymers, glass elements, and structural aluminium scrap.</p>
+<h4>STEP 8: THE SECURE BIO-VAULT RECOVERY ENGINE</h4><p>Air-gapped mechanical storage facilities housing localized grid controllers.</p>
+<h4>STEP 9: TRIVARNA BHARAT METRICS NODE</h4><p>A distributed database layer logging transactions and rewarding infrastructure credits.</p>
+<h4>STEP 10: MD AGNI-PARIKSHA LEADERSHIP MANDATE</h4><p>Final systemic structural protocol forcing local state operational management heads into raw rural deployment checkouts.</p>
 </div>
 <button onclick="closeM('blueprintModal')" class="modal-btn-action" style="background:#ffd700;">🏢 CLOSE & RETURN</button>
 </div>
@@ -271,11 +287,7 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 
 <script>
 function openM(id){
-  var activeModals = document.querySelectorAll('.modal');
-  activeModals.forEach(function(modal) {
-     modal.style.display = 'none';
-  });
-
+  document.querySelectorAll('.modal').forEach(function(modal) { modal.style.display = 'none'; });
   var m=document.getElementById(id);
   if(!m) return;
   m.style.display='block';
@@ -296,28 +308,31 @@ function closeM(id){
   }
 }
 
+/* HIGH TECH ENTRY ACTION TRIGGERS BACKDOOR UNLOCK */
+function unlockDashboard() {
+  var overlay = document.getElementById('abst-welcome-overlay');
+  if(overlay) {
+    overlay.style.opacity = '0';
+    overlay.style.transform = 'scale(1.1)';
+    setTimeout(function(){
+      overlay.style.display = 'none';
+      sessionStorage.setItem('welcomeOpenedThisSession', 'true');
+    }, 600);
+  }
+}
+
+window.addEventListener('DOMContentLoaded', function(){
+  var overlay = document.getElementById('abst-welcome-overlay');
+  // If already unlocked in this session, don't block the user again
+  if (sessionStorage.getItem('welcomeOpenedThisSession') === 'true') {
+     if(overlay) overlay.style.display = 'none';
+  }
+});
+
 document.addEventListener('keydown',function(e){
   if(e.key==='Escape'){
     document.querySelectorAll('.modal').forEach(function(m){m.style.display='none'});
     document.documentElement.classList.remove('modal-open');
-  }
-});
-
-// SMART ENGINE CONTROLLER: ONCE PER SESSION WELCOME VERIFICATION
-window.addEventListener('DOMContentLoaded', function(){
-  var overlay = document.getElementById('abst-welcome-overlay');
-  if (overlay) {
-    if (sessionStorage.getItem('welcomeExecuted') === 'true') {
-      overlay.style.display = 'none';
-    } else {
-      setTimeout(function(){
-        overlay.style.opacity = '0';
-        setTimeout(function(){
-          overlay.style.display = 'none';
-          sessionStorage.setItem('welcomeExecuted', 'true');
-        }, 500);
-      }, 4500);
-    }
   }
 });
 
@@ -326,4 +341,4 @@ if('serviceWorker' in navigator){
 }
 </script>
 </body>
-    </html>
+</html>
