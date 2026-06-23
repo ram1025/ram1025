@@ -19,52 +19,58 @@ h3{color:#ffd700;font-size:14px;margin:0 8px 0;text-align:center}
 .visionary{color:#ffd700;font-size:12px;margin:0 0 20px 0;text-align:center;font-weight:bold}
 .status{color:#8892b0;font-size:11px;margin-top:25px;line-height:1.6;text-align:center}
 img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
-.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;overflow:auto;padding:20px}
-.modal-inner{max-width:900px;margin:40px auto;background:#112240;border-radius:12px;padding:25px;position:relative}
+
+/* MODAL ENGINE SYSTEM ARCHITECTURE */
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:9999;overflow:auto;padding:20px}
+.modal-inner{max-width:900px;margin:40px auto;background:#112240;border-radius:12px;padding:25px;position:relative;border:1px solid #233554}
 .modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
 .modal-close{font-size:28px;cursor:pointer;line-height:1;color:#64ffda}
 .modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:13px;line-height:1.8;text-align:left;max-height:70vh;overflow-y:auto}
 .modal-body h4{color:#ffd700;margin-top:15px}
 .modal-body ul{padding-left:20px}
 
-#abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center}
+/* HIGH-TECH INTERACTIVE GLOW WELCOME OVERLAY */
+#abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center;cursor:pointer}
 #abst-welcome-overlay.hidden{display:none}
-#abst-welcome-text{color:#64ffda;font-size:28px;font-weight:bold;text-align:center}
-#abst-welcome-sub{color:#FFD700;font-size:16px;margin-top:12px;letter-spacing:2px}
 
-/* BIOMETRIC SIMULATION SCANNER CSS */
-.scanner-container{width:70px;height:70px;margin:25px auto 0;position:relative;border:2px dashed #64ffda;border-radius:50%;display:flex;justify-content:center;align-items:center;cursor:pointer}
-.scanner-line{position:absolute;width:100%;height:2px;background:#64ffda;top:0;box-shadow:0 0 8px #64ffda;animation:scan 2s linear infinite}
-@keyframes scan{0%{top:0%}50%{top:100%}100%{top:0%}}
+.glow-welcome-text{color:#64ffda;font-size:32px;font-weight:bold;text-align:center;letter-spacing:3px;text-shadow:0 0 10px rgba(100,255,218,0.3), 0 0 20px rgba(100,255,218,0.2);animation:neonPulse 2s ease-in-out infinite}
+#abst-welcome-sub{color:#FFD700;font-size:16px;margin-top:12px;letter-spacing:4px;font-weight:bold;text-shadow:0 0 8px rgba(255,215,0,0.4)}
 
-/* DYNAMIC WIDGET CORE LAYOUT */
+@keyframes neonPulse{
+  0%, 100%{text-shadow:0 0 12px rgba(100,255,218,0.6), 0 0 25px rgba(100,255,218,0.4), 0 0 40px rgba(100,255,218,0.2);color:#64ffda}
+  50%{text-shadow:0 0 6px rgba(100,255,218,0.3), 0 0 12px rgba(100,255,218,0.1);color:#a2fff0}
+}
+
+/* INTERACTIVE ACTION TRACKER CARDS ELEMENTS */
+.interactive-phase-box{background:#112240;border:2px solid #233554;border-radius:8px;padding:15px;margin-bottom:15px;cursor:pointer;transition:all 0.2s ease-in-out}
+.interactive-phase-box:hover, .interactive-phase-box:active{background:#162c50;border-color:#ffd700;box-shadow:0 0 12px rgba(255,215,0,0.15)}
+
+/* LIVE INTEL STATUS DISPLAY */
 .live-intel-bar{background:#112240;border:1px dashed #233554;border-radius:12px;padding:10px 15px;margin:15px 0;display:flex;justify-content:space-between;font-family:monospace;font-size:11px}
 .intel-node{color:#64ffda}
 .intel-val{color:#ffd700;font-weight:bold}
 
 .icon-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 0 20px;max-width:100%;margin:20px auto 0}
-.icon-card{background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer}
-.icon-card:active{background:#1a2f4a}
+.icon-card{background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;transition:transform 0.1s ease}
+.icon-card:active{background:#1a2f4a;transform:scale(0.97)}
 .icon-card.jarvis{border-color:#64ffda;box-shadow:0 0 20px rgba(100,255,218,0.3)}
 .icon-card.tracker-highlight{border-color:#ffd700;box-shadow:0 0 15px rgba(255,215,0,0.2)}
 .icon-card .icon{font-size:1.8rem;margin-bottom:5px}
 .icon-card span{color:#64ffda;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;display:block}
 
-.tracker-badge{background:#1e3a8a;color:#64ffda;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:bold}
+.tracker-badge{padding:3px 8px;border-radius:4px;font-size:11px;font-weight:bold}
 .tracker-badge.success{background:#065f46;color:#34d399}
 .tracker-badge.process{background:#78350f;color:#fbbf24}
 </style>
 </head>
 <body>
-<div id="abst-welcome-overlay">
-  <div id="abst-welcome-text">WELCOME TO ABST</div>
+
+<!-- WELCOME SCREEN (CLICK TO ENTER) -->
+<div id="abst-welcome-overlay" onclick="bypassWelcome()">
+  <div class="glow-welcome-text">WELCOME TO ABST</div>
   <div id="abst-welcome-sub">SOVEREIGN ID: INDIAN.001</div>
-  <div style="color:#8892b0;font-size:12px;margin-top:25px">Master Visionary: RAM GANESH MAKINA</div>
-  <div class="scanner-container" onclick="bypassWelcome()">
-    <span style="font-size:24px;z-index:2">🧬</span>
-    <div class="scanner-line"></div>
-  </div>
-  <div style="color:#8892b0;font-size:10px;margin-top:10px;letter-spacing:1px">BIOMETRIC SIMULATION SCAN</div>
+  <div style="color:#8892b0;font-size:13px;margin-top:25px;letter-spacing:1px">Master Visionary: RAM GANESH MAKINA</div>
+  <div style="color:#64ffda;font-size:11px;margin-top:40px;opacity:0.7;animation:pulse 1.5s infinite">▶ TAP ON SCREEN TO ENTER SYSTEM ◀</div>
 </div>
 
 <div class="container">
@@ -76,8 +82,8 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 
 <!-- PITCH REALITY METRICS WIDGET BAR -->
 <div class="live-intel-bar">
-  <div class="intel-node">💧 AMRUTAVARSHA: <span class="intel-val" id="waterCounter">42,500 L</span></div>
-  <div class="intel-node">🌱 CARBON OFFSET: <span class="intel-val" id="carbonCounter">184.22 T</span></div>
+  <div class="intel-node">💧 AMRUTAVARSHA: <span class="intel-val" id="waterCounter">42,503 L</span></div>
+  <div class="intel-node">🌱 CARBON OFFSET: <span class="intel-val" id="carbonCounter">184.24 T</span></div>
 </div>
 
 <div class="icon-dashboard">
@@ -140,8 +146,8 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 </div>
 <div class="modal-body">
 <h1 style="color:#64ffda;text-align:left;font-size:20px;border-bottom:1px solid #233554;padding-bottom:5px;margin-bottom:15px">EIA AUDIT & STRATEGIC BLUEPRINT VALIDATION</h1>
+
 <h4 style="color:#64ffda;margin-top:0">🛡️ SECTION 1: THE CORE SCALABILITY DISCHARGE (4-WAY MATRIX)</h4>
-<p>By mapping out high-efficiency cross-seasonal thermodynamic equations, our infrastructure layout systematically satisfies all municipal and central clearances:</p>
 <div style="background:#112240;border-left:4px solid #34d399;padding:12px;margin-bottom:15px;border-radius:0 8px 8px 0">
   <ul style="margin:0;padding-left:15px;list-style-type:square">
     <li><strong>Water Shield (Zero Tables Depletion):</strong> Complete zero-groundwater baseline. Uses seasonal free-condensation to sustain cooling networks with absolute zero active water input across 120 days of winter.</li>
@@ -150,15 +156,17 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
     <li><strong>Sovereign Compliance Match:</strong> Fully meets global ASHRAE standard operating thermal parameters (18°C - 27°C) alongside MoEFCC and APPCB regulations.</li>
   </ul>
 </div>
+
 <h4 style="color:#64ffda">📋 SECTION 2: REGULATORY ASSURANCE CRITERIA (EIA HEARING SCRUTINY)</h4>
-<div style="background:#112240;border:1px solid #233554;border-radius:8px;padding:15px;margin-bottom:15px">
+<div class="interactive-phase-box">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
     <span style="color:#ffd700;font-weight:bold;font-size:14px">A. Monsoon Backup Isolation Strategy</span>
     <span class="tracker-badge success">READY</span>
   </div>
   <p style="margin:0;font-size:12px;color:#8892b0;font-style:italic">"During periods of heavy monsoon downpours or sustained high-humidity windows where open-air thermal condensation limits stabilize, the computational cooling system automatically shifts into an advanced closed-loop chiller configuration utilizing treated Sewage Treatment Plant (STP) greywater loops. This configuration completely isolates the infrastructure from local municipal water bodies, maintaining absolute zero groundwater dependency across all seasons, weather conditions, or environmental extremes."</p>
 </div>
-<div style="background:#112240;border:1px solid #233554;border-radius:8px;padding:15px;margin-bottom:15px">
+
+<div class="interactive-phase-box">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
     <span style="color:#ffd700;font-weight:bold;font-size:14px">B. Automated SCADA Compliance Metering Network</span>
     <span class="tracker-badge success">READY</span>
@@ -167,29 +175,31 @@ img{max-width:100%;height:auto;display:block;margin:0 auto 20px}
 </div>
 
 <h4 style="color:#64ffda">📊 SECTION 3: TURNKEY CIVIL ROADMAP & LEGACY OVERVIEW</h4>
-<div style="background:#112240;border:1px solid #233554;border-radius:8px;padding:15px;margin-bottom:15px">
+<!-- INSTALLED CLICK ACCELERATORS -->
+<div class="interactive-phase-box" onclick="closeM('executionTrackerModal'); openM('dpr36Modal');">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
     <span style="color:#ffd700;font-weight:bold;font-size:14px">Phase I: Digital Twin Construction Timeline</span>
-    <span class="tracker-badge process">SIMULATION MODEL ACTIVE</span>
+    <span class="tracker-badge process">VIEW ARCHITECTURE MODEL</span>
   </div>
   <p style="margin:5px 0 0 0;font-size:12px;color:#8892b0">24-Month Parallel Modular Structural Matrix. Baseline structural bones tracking deployment of high-tier pre-fabricated Lego-style modular walls built directly via the <strong>P17 Slag-Brick Factory</strong> right after core Plasma installation layers clear standard speed targets.</p>
 </div>
 
-<div style="background:#112240;border:1px solid #233554;border-radius:8px;padding:15px;margin-bottom:15px">
+<div class="interactive-phase-box" onclick="alert('System Core Integration Pending: The Revenue Trade Portal unlocks upon Mother Hub Vizag Field Initialization Phase.')">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
     <span style="color:#ffd700;font-weight:bold;font-size:14px">Phase II: "Our Amrutavarsha" Revenue Trade Portal</span>
-    <span class="tracker-badge process">LEDGER CONNECT DISCONNECTED</span>
+    <span class="tracker-badge process">LEDGER DISCONNECTED</span>
   </div>
   <p style="margin:5px 0 0 0;font-size:12px;color:#8892b0">Commercial corporate trade hub node setup framework. Monitors decentralized global retail volume tracking loops, wholesale distribution networks, and supply allocations ledger queues dynamically upon regional field activation.</p>
 </div>
 
-<div style="background:#112240;border:1px solid #233554;border-radius:8px;padding:15px;margin-bottom:0">
+<div class="interactive-phase-box" onclick="closeM('executionTrackerModal'); openM('pillars36Modal');">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
     <span style="color:#ffd700;font-weight:bold;font-size:14px">Phase III: P36 "MD Agni-Pariksha" Governance Matrix</span>
     <span class="tracker-badge success">COMPLIANCE PROTOCOL LOCKED</span>
   </div>
   <p style="margin:5px 0 0 0;font-size:12px;color:#8892b0">Mandatory core asset distribution tracking system layout. Enforces zero-greed constitutional mandates by verifying each state Managing Director's 6-month rural field rotation service validation logs automatically.</p>
 </div>
+
 </div>
 <button onclick="closeM('executionTrackerModal')" style="width:100%;margin-top:15px;background:#ffd700;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer">🏠 BACK TO HOME</button>
 </div>
@@ -371,7 +381,7 @@ See LICENSE for terms.
 <li><strong>100% Uptime Guarantee:</strong> Supplies backup current to critical infrastructure, water filtration plants, and the EV lane at night or during sudden weather changes.</li>
 </ul>
 <h4>STEP 9: OUR AMRUTAVARSHA WATER TOWER (Hydro-Sovereignty Node)</h4>
-<p> A vital civic installation securing complete water self-reliance through advanced extraction and purification technologies.</p>
+<p>A vital civic installation securing complete water self-reliance through advanced extraction and purification technologies.</p>
 <ul>
 <li><strong>Atmospheric Generation:</strong> Combines massive commercial atmospheric water generators (AWG) to pull pure water moisture straight from the coastal air.</li>
 <li><strong>Dual-Ion Ionization Shield:</strong> Utilizes a signature pharmaceutical-grade copper and silver ionization process to destroy pathogens and maintain crystalline purity.</li>
@@ -388,11 +398,19 @@ See LICENSE for terms.
 </div>
 
 <script>
+// CLEAN ENGINE MODAL TRIGGERS
 function openM(id){
+  // Close any active open modal instantly before rendering target framework to avoid overlap assets
+  var activeModals = document.querySelectorAll('.modal');
+  activeModals.forEach(function(modal) {
+     modal.style.display = 'none';
+  });
+
   var m=document.getElementById(id);
-  if(!m)return;
+  if(!m) return;
   m.style.display='block';
   document.documentElement.classList.add('modal-open');
+  
   if(id==='dpr36Modal'){
     document.getElementById('modelImg').src='miniature-model.jpg';
     document.getElementById('dayImg').src='day-mode.jpg';
@@ -408,15 +426,16 @@ function closeM(id){
   }
 }
 
-/* Simulated Dynamic UI Counters logic for pitch presentation look */
 function runSimulatedCounters() {
-  var waterBase = 42500;
-  var carbonBase = 184.22;
+  var waterBase = 42503;
+  var carbonBase = 184.24;
   setInterval(function() {
-    waterBase += Math.floor(Math.random() * 3) + 1;
-    carbonBase += (Math.random() * 0.02);
-    document.getElementById('waterCounter').innerText = waterBase.toLocaleString() + " L";
-    document.getElementById('carbonCounter').innerText = carbonBase.toFixed(2) + " T";
+    waterBase += Math.floor(Math.random() * 2) + 1;
+    carbonBase += (Math.random() * 0.01);
+    var waterElem = document.getElementById('waterCounter');
+    var carbonElem = document.getElementById('carbonCounter');
+    if(waterElem) waterElem.innerText = waterBase.toLocaleString() + " L";
+    if(carbonElem) carbonElem.innerText = carbonBase.toFixed(2) + " T";
   }, 3000);
 }
 
@@ -436,10 +455,10 @@ window.addEventListener('load',function(){
   runSimulatedCounters();
   var o=document.getElementById('abst-welcome-overlay');
   if(sessionStorage.getItem('abst_welcome_shown')){
-    o.style.display='none';
+    if(o) o.style.display='none';
   }else{
     sessionStorage.setItem('abst_welcome_shown','true');
-    setTimeout(function(){if(o) o.style.display='none'},5000);
+    // Removed legacy timeout so it forces interactions or stays crisp clean
   }
 });
 
@@ -448,5 +467,4 @@ if('serviceWorker' in navigator){
 }
 </script>
 </body>
-    </html>
-  
+</html>
