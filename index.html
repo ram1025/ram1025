@@ -200,18 +200,18 @@ input[type="file"] { display: none; }
     Jarvis AI Core Security Layer <span id="welcome-security">7</span> Activated
   </div>
   
-  <div class="droplet-gateway" onclick="unlockDashboard()">
-    <img id="welcome-seal-img" src="seal.png" alt="ABST Security Seal Node">
+  <div class="droplet-gateway" id="seal-btn">
+    <img id="welcome-seal-img" src="seal.png" onerror="this.style.display='none';this.parentElement.innerHTML='🛡️';" alt="ABST Security Seal Node">
   </div>
   
-  <div class="touch-prompt" onclick="unlockDashboard()">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
+  <div class="touch-prompt" id="touch-btn">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
   <div style="color:#8892b0;font-size:11px;margin-top:30px;letter-spacing:1px;opacity:0.6">Jarvis AI Security Layer 7 Network Secured</div>
 </div>
 
 <div class="container">
 <div class="menu-trigger" onclick="openM('profileModal')">☰</div>
 
-<img id="main-seal-img" src="seal.png" alt="Seal" width="90" height="90" class="main-seal">
+<img id="main-seal-img" src="seal.png" onerror="this.src='icon-192.png';" alt="Seal" width="90" height="90" class="main-seal">
 <h1>My Jeevandhara</h1>
 <h3>Akanda Bharat Sovereign Township</h3>
 <p class="tagline" id="dash-bio-display">Building Tomorrow's Sovereign Cities</p>
@@ -340,7 +340,6 @@ input[type="file"] { display: none; }
 <button onclick="saveProfileConfigurationData()" class="modal-btn-action" style="background:#5effde;color:#0a192f;font-size:16px">💾 SAVE & REFRESH RECOGNITION</button>
 </div>
 </div>
-
 <div id="pillars36Modal" class="modal">
 <div class="modal-inner">
 <div class="modal-head"><h2 style="color:#64ffda;margin:0">📋 ABST 36 PILLARS - COMPLETE LIST</h2><span onclick="closeM('pillars36Modal')" class="modal-close">&times;</span></div>
@@ -368,7 +367,6 @@ P30: RVM Network | P31: Indian.00X ID System | P32: Our Amrutavarsha Vendor Netw
 <div style="background:#112240;border:2px solid #FFD700;border-radius:12px;padding:20px;margin:15px 0">
 <div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector VI: Governance & Legacy P36</div>
 P36: MD Agni-Pariksha Leadership Mandate
-</div>
 </div>
 <button onclick="closeM('pillars36Modal')" class="modal-btn-action">🏠 BACK TO HOME</button>
 </div>
@@ -445,7 +443,6 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 <button onclick="closeM('blueprintModal')" class="modal-btn-action" style="background:#ffd700;">🏢 CLOSE & RETURN</button>
 </div>
-</div>
 
 <script>
 let deferredAppInstallPrompt = null;
@@ -457,7 +454,7 @@ function openM(id){
   if(!m) return;
   m.style.display='block';
   document.documentElement.classList.add('modal-open');
-  
+
   if(id==='dpr36Modal'){
     document.getElementById('modelImg').src='miniature-model.jpg';
     document.getElementById('dayImg').src='day-mode.jpg';
@@ -487,7 +484,6 @@ function unlockDashboard() {
   }
 }
 
-/* STORAGE RETRIEVAL - SEAL.PNG FOR HOME/WELCOME, PROFILE PHOTO ONLY IN MODAL */
 function loadSavedIdentityData() {
   var storedName = localStorage.getItem('abst_visionary_name') || "RAM GANESH MAKINA";
   var storedID = localStorage.getItem('abst_sovereign_id') || "INDIAN.001";
@@ -496,28 +492,24 @@ function loadSavedIdentityData() {
   var storedSecurity = localStorage.getItem('abst_security') || "7";
   var storedBio = localStorage.getItem('abst_bio') || "Building Tomorrow's Sovereign Cities";
   var storedPhoto = localStorage.getItem('abst_photo') || "icon-192.png";
-  
-  // NEW FIELDS
+
   var storedEmail = localStorage.getItem('abst_email') || "";
   var storedPhone = localStorage.getItem('abst_phone') || "";
   var storedBloodGroup = localStorage.getItem('abst_bloodgroup') || "";
-  
-  // 1. Main Page - ALWAYS USE seal.png, NOT PROFILE PHOTO
+
   document.getElementById('dash-visionary-display').innerText = "Master Visionary: " + storedID + " " + storedName;
   document.getElementById('dash-designation-display').innerText = storedDesignation + " | " + storedLocation + " | Security Layer " + storedSecurity;
   document.getElementById('dash-status-string').innerHTML = "Status: Operational | Jarvis AI Core Layer " + storedSecurity + " | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
   document.getElementById('main-seal-img').src = "seal.png";
   document.getElementById('dash-bio-display').innerText = storedBio;
-  
-  // 2. Welcome Screen - ALWAYS USE seal.png
+
   document.getElementById('welcome-id-display').innerText = storedID;
   document.getElementById('welcome-visionary-name').innerText = storedName;
   document.getElementById('welcome-designation').innerText = storedDesignation;
   document.getElementById('welcome-location').innerText = storedLocation;
   document.getElementById('welcome-security').innerText = storedSecurity;
   document.getElementById('welcome-seal-img').src = "seal.png";
-  
-  // 3. Profile Modal Inputs
+
   document.getElementById('inputMasterName').value = storedName;
   document.getElementById('inputSovereignID').value = storedID;
   document.getElementById('inputDesignation').value = storedDesignation;
@@ -525,23 +517,20 @@ function loadSavedIdentityData() {
   document.getElementById('inputSecurity').value = storedSecurity;
   document.getElementById('inputBio').value = storedBio;
   document.getElementById('profile-photo-preview').src = storedPhoto;
-  
-  // NEW FIELD INPUTS
+
   document.getElementById('inputEmail').value = storedEmail;
   document.getElementById('inputPhone').value = storedPhone;
   document.getElementById('inputBlood').value = storedBloodGroup;
 }
 
 function saveProfileConfigurationData() {
-function saveProfileConfigurationData() {
   var varName = document.getElementById('inputMasterName').value.trim();
   var varID = document.getElementById('inputSovereignID').value.trim();
   var varDesignation = document.getElementById('inputDesignation').value;
-  var varLocation = document.getElementById('inputLocation').value.trim();  // Fixed
-  var varSecurity = document.getElementById('inputSecurity').value;  // Fixed
+  var varLocation = document.getElementById('inputLocation').value.trim();
+  var varSecurity = document.getElementById('inputSecurity').value;
   var varBio = document.getElementById('inputBio').value.trim();
 
-  // NEW FIELDS SAVE
   var varEmail = document.getElementById('inputEmail').value.trim();
   var varPhone = document.getElementById('inputPhone').value.trim();
   var varBloodGroup = document.getElementById('inputBlood').value;
@@ -553,7 +542,6 @@ function saveProfileConfigurationData() {
   if(varSecurity!== "") localStorage.setItem('abst_security', varSecurity);
   if(varBio!== "") localStorage.setItem('abst_bio', varBio);
 
-  // NEW FIELDS localStorage
   localStorage.setItem('abst_email', varEmail);
   localStorage.setItem('abst_phone', varPhone);
   localStorage.setItem('abst_bloodgroup', varBloodGroup);
@@ -562,7 +550,6 @@ function saveProfileConfigurationData() {
   closeM('profileModal');
 }
 
-/* PHOTO UPLOAD FROM GALLERY/CAMERA */
 function handlePhotoUpload(file) {
   if(!file) return;
   var reader = new FileReader();
@@ -575,7 +562,6 @@ function handlePhotoUpload(file) {
   reader.readAsDataURL(file);
 }
 
-/* PWA INSTALL */
 window.addEventListener('beforeinstallprompt', function(e) {
   e.preventDefault();
   deferredAppInstallPrompt = e;
@@ -588,7 +574,7 @@ window.addEventListener('beforeinstallprompt', function(e) {
 function triggerPwaInstallation() {
   var installCardNode = document.getElementById('pwaInstallCard');
   if(!deferredAppInstallPrompt) {
-    alert('📲 To install:\n\nAndroid: Chrome menu → Install App\n\niPhone: Safari Share → Add to Home Screen\n\nDesktop: Chrome address bar → Install icon');
+    alert('📲 To install:\n\nAndroid: Chrome menu → Install App\n\niPhone: Safari Share → Add to Home Screen\nDesktop: Chrome address bar → Install icon');
     return;
   }
   deferredAppInstallPrompt.prompt();
@@ -615,7 +601,6 @@ window.addEventListener('DOMContentLoaded', function(){
 
   loadSavedIdentityData();
 
-  // Photo upload event listeners
   document.getElementById('inputProfileCamera').addEventListener('change', function(e) {
     handlePhotoUpload(e.target.files[0]);
   });
@@ -623,6 +608,9 @@ window.addEventListener('DOMContentLoaded', function(){
   document.getElementById('inputProfileGallery').addEventListener('change', function(e) {
     handlePhotoUpload(e.target.files[0]);
   });
+
+  document.getElementById('seal-btn').addEventListener('click', unlockDashboard);
+  document.getElementById('touch-btn').addEventListener('click', unlockDashboard);
 
   if (sessionStorage.getItem('dashboard_direct_unlock_token') === 'true') {
     if(overlay) {
@@ -657,4 +645,5 @@ if('serviceWorker' in navigator){
 }
 </script>
 </body>
-</html>
+    </html>
+    
