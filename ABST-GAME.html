@@ -8,15 +8,7 @@
   <style>
     * { margin:0; padding:0; box-sizing:border-box }
     html { scroll-behavior: smooth; font-size: 16px; }
-    body {
-      background:#0a0a2f;
-      color:#ff00aa;
-      font-family:system-ui,-apple-system,sans-serif;
-      padding:20px;
-      text-align:center;
-      min-height:100vh;
-      transition: all 0.5s;
-    }
+    body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,-apple-system,sans-serif; padding:20px; text-align:center; min-height:100vh; transition: all 0.5s; }
     body.level-1 { background:#0a0a2f; color:#ff00aa }
     body.level-2 { background:#0a1a2f; color:#00aaff }
     body.level-3 { background:#1a0a2f; color:#aa00ff }
@@ -27,37 +19,37 @@
     body.level-8 { background:#2f0a2f; color:#ff00ff }
     body.level-9 { background:#1f1f1f; color:#ffffff }
     body.level-10 { background:linear-gradient(45deg,#ff00aa,#00aaff); color:#fff }
-   .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
-   .header h1 { font-size:34px; text-shadow:0 0 15px currentColor; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
-   .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
-   .back-btn { position:absolute; left:0; top:5px; background:#1a1a32; color:currentColor; border:1px solid currentColor; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
-   .game-toggle { background:#112240; border:1px solid currentColor; padding:10px; border-radius:10px; margin:15px auto; max-width:600px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap }
-   .mode-btn { background:#1a1a32; color:#8892b0; border:none; padding:8px 16px; border-radius:8px; cursor:pointer; font-weight:700; font-size:12px }
-   .mode-btn.active { background:currentColor; color:#0a0a2f }
-   .game-area { background:linear-gradient(145deg,#1a1a32,#0f0f23); padding:35px; border-radius:24px; border:2px solid currentColor; min-height:450px; margin:20px auto; max-width:600px; box-shadow:0 0 40px currentColor20; position:relative; }
-   .score-board { display:flex; justify-content:space-around; margin:20px auto; max-width:600px; background:#1a1a32; padding:15px; border-radius:16px; border:1px solid currentColor40 }
-   .score-board b { color:#fff; font-size:24px; display:block; margin-top:5px }
-   .level-info { background:#00000040; padding:12px; border-radius:12px; margin:15px auto; max-width:600px; border:1px solid currentColor40 }
-   .level-info span { color:#ffaa00; font-weight:900 }
-   .btn { background:currentColor; color:#0a0a2f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer; transition:all 0.2s }
-   .btn:hover { transform:scale(1.05); box-shadow:0 0 20px currentColor80 }
-   .btn:disabled { opacity:0.4; cursor:not-allowed; transform:scale(1) }
-   .btn-start { background:#00ffaa; color:#0a0a2f }
-   .target { width:80px; height:80px; background:currentColor; position:absolute; cursor:pointer; box-shadow:0 0 30px currentColor; display:none; transition: all 0.3s; display:flex; align-items:center; justify-content:center; font-size:40px; font-weight:900; color:#0a0a2f; }
+    .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
+    .header h1 { font-size:34px; text-shadow:0 0 15px currentColor; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
+    .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
+    .back-btn { position:absolute; left:0; top:5px; background:#1a1a32; color:currentColor; border:1px solid currentColor; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
+    .game-toggle { background:#112240; border:1px solid currentColor; padding:10px; border-radius:10px; margin:15px auto; max-width:600px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap }
+    .mode-btn { background:#1a1a32; color:#8892b0; border:none; padding:8px 16px; border-radius:8px; cursor:pointer; font-weight:700; font-size:12px }
+    .mode-btn.active { background:currentColor; color:#0a0a2f }
+    .game-area { background:linear-gradient(145deg,#1a1a32,#0f0f23); padding:35px; border-radius:24px; border:2px solid currentColor; min-height:450px; margin:20px auto; max-width:600px; box-shadow:0 0 40px currentColor20; position:relative; overflow:hidden; }
+    .score-board { display:flex; justify-content:space-around; margin:20px auto; max-width:600px; background:#1a1a32; padding:15px; border-radius:16px; border:1px solid currentColor40 }
+    .score-board b { color:#fff; font-size:24px; display:block; margin-top:5px }
+    .level-info { background:#00000040; padding:12px; border-radius:12px; margin:15px auto; max-width:600px; border:1px solid currentColor40 }
+    .level-info span { color:#ffaa00; font-weight:900 }
+    .btn { background:currentColor; color:#0a0a2f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer; transition:all 0.2s }
+    .btn:hover { transform:scale(1.05); box-shadow:0 0 20px currentColor80 }
+    .btn:disabled { opacity:0.4; cursor:not-allowed; transform:scale(1) }
+    .btn-start { background:#00ffaa; color:#0a0a2f }
+    .target { position:absolute; cursor:pointer; box-shadow:0 0 30px currentColor; display:none; transition: all 0.3s; display:flex; align-items:center; justify-content:center; font-weight:900; color:#0a0a2f; z-index:5; }
     @keyframes pulse { 0%,100% { transform:scale(1); } 50% { transform:scale(1.1); } }
     @keyframes spin { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
     @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-20px)} }
     @keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-10px)} 75%{transform:translateX(10px)} }
     @keyframes glow { 0%,100%{box-shadow:0 0 30px currentColor} 50%{box-shadow:0 0 60px currentColor} }
-   .timer-display { font-size:48px; font-weight:900; color:#ffaa00; text-shadow:0 0 20px #ffaa00; margin:20px 0 }
-   .scramble-word { font-size:42px; font-weight:900; letter-spacing:8px; color:#fff; margin:25px 0; text-shadow:0 0 15px currentColor }
-   .scramble-hint { color:#ffaa00; font-size:16px; margin:10px 0; min-height:40px }
-   .wisdom-text { font-size:20px; line-height:1.6; color:#fff; margin:20px 0; padding:20px; background:#00000040; border-radius:12px; border-left:4px solid currentColor }
-   .answer-input { width:100%; padding:14px; background:#0a0a2f; border:2px solid currentColor; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
-   .feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
-   .footer { margin-top:50px; font-size:12px; opacity:0.6 }
-   .badge { position:absolute; top:-12px; right:20px; background:#ffaa00; color:#0a0a2f; padding:6px 12px; border-radius:20px; font-size:11px; font-weight:900 }
-   .level-name { font-size:18px; color:#ffaa00; margin:10px 0; font-weight:900; text-transform:uppercase }
+    .timer-display { font-size:48px; font-weight:900; color:#ffaa00; text-shadow:0 0 20px #ffaa00; margin:20px 0 }
+    .scramble-word { font-size:42px; font-weight:900; letter-spacing:8px; color:#fff; margin:25px 0; text-shadow:0 0 15px currentColor }
+    .scramble-hint { color:#ffaa00; font-size:16px; margin:10px 0; min-height:40px }
+    .wisdom-text { font-size:20px; line-height:1.6; color:#fff; margin:20px 0; padding:20px; background:#00000040; border-radius:12px; border-left:4px solid currentColor }
+    .answer-input { width:100%; padding:14px; background:#0a0a2f; border:2px solid currentColor; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
+    .feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
+    .footer { margin-top:50px; font-size:12px; opacity:0.6 }
+    .badge { position:absolute; top:-12px; right:20px; background:#ffaa00; color:#0a0a2f; padding:6px 12px; border-radius:20px; font-size:11px; font-weight:900 }
+    .level-name { font-size:18px; color:#ffaa00; margin:10px 0; font-weight:900; text-transform:uppercase }
   </style>
 </head>
 <body>
@@ -66,33 +58,28 @@
     <h1>ABST GAME</h1>
     <p>SOVEREIGN ID: INDIAN.001 | LEVEL MASTER</p>
   </div>
-
   <div class="game-toggle">
     <button class="mode-btn active" id="speedMode">⚡ SPEED</button>
     <button class="mode-btn" id="scrambleMode">🔤 SCRAMBLE</button>
     <button class="mode-btn" id="wisdomMode">🧠 WISDOM</button>
   </div>
-
   <div class="score-board">
     <div>Score<b id="score">0</b></div>
     <div>Hints<b id="hintCount">10</b></div>
     <div>High Score<b id="highScore">0</b></div>
     <div>Level<b id="level">1</b></div>
   </div>
-
   <div class="level-info" id="levelInfo">
     <div class="level-name" id="levelName">CIRCLE MASTER</div>
     <div>Target: <span id="targetScore">50</span> | Time: <span id="targetTime">30s</span></div>
     <div style="font-size:12px; margin-top:5px">Beat target = Next Level +1 Hint 🎁</div>
   </div>
-
   <div class="game-area" id="gameArea">
     <div id="speedGame">
       <div class="timer-display" id="timerDisplay">Ready?</div>
       <button class="btn btn-start" id="startBtn">START GAME</button>
       <div class="target" id="target"></div>
     </div>
-
     <div id="scrambleGame" style="display:none">
       <div class="badge" id="scrambleLevelBadge">LKG</div>
       <div class="scramble-word" id="scrambleWord">READY?</div>
@@ -102,7 +89,6 @@
       <button class="btn btn-start" id="scrambleBtn">START</button>
       <div class="feedback-msg" id="scrambleFeedback"></div>
     </div>
-
     <div id="wisdomGame" style="display:none">
       <div class="wisdom-text" id="wisdomText">Press START to forge wisdom</div>
       <input type="text" class="answer-input" id="wisdomInput" placeholder="What is the key lesson?" autocomplete="off" style="display:none">
@@ -111,10 +97,8 @@
       <div class="feedback-msg" id="wisdomFeedback"></div>
     </div>
   </div>
-
   <div class="footer">ABST P24 Civilization OS | Mind + Character Training</div>
-
-<script>
+  <script>
     let score = 0;
     let highScore = parseInt(localStorage.getItem('abst_game_high') || '0');
     let level = 1;
@@ -126,6 +110,7 @@
     let hints = 10;
     let correctStreak = 0;
     let wisdomCorrectStreak = 0;
+    let askedWisdom = [];
 
     const levelConfig = {
       speed: {
@@ -150,20 +135,65 @@
     };
 
     const scrambleData = {
-      lkg: [{word:"CAT", hint:"Meow animal", lesson:"Cats teach independence"}, {word:"SUN", hint:"Gives us light", lesson:"Be like sun - give without expecting"}],
-      class2: [{word:"HELP", hint:"Support others", lesson:"Helping others helps yourself"}, {word:"SHARE", hint:"Give to others", lesson:"Sharing multiplies happiness"}],
-      class5: [{word:"HONEST", hint:"Always tell truth", lesson:"Honesty is first chapter of wisdom"}, {word:"FOCUS", hint:"Key to success", lesson:"Where focus goes, energy flows"}],
-      class8: [{word:"COURAGE", hint:"Face your fears", lesson:"Courage is not absence of fear"}, {word:"DREAM", hint:"Vision of future", lesson:"Dreams don't work unless you do"}],
-      class10: [{word:"DISCIPLINE", hint:"Bridge between goals & success", lesson:"Discipline is choosing what you want most"}, {word:"PERSISTENCE", hint:"Never give up", lesson:"Persistence beats resistance"}]
+      lkg: [
+        {word:"CAT", hint:"Meow animal", lesson:"Cats teach independence"},
+        {word:"SUN", hint:"Gives us light", lesson:"Be like sun - give without expecting"},
+        {word:"DOG", hint:"Barks loudly", lesson:"Loyalty is everything"},
+        {word:"BALL", hint:"Round toy", lesson:"Life goes up and down like a ball"},
+        {word:"TREE", hint:"Gives oxygen", lesson:"Stand tall like a tree"},
+        {word:"FISH", hint:"Swims in water", lesson:"Go with the flow"},
+        {word:"BIRD", hint:"Flies in sky", lesson:"Freedom needs wings of courage"},
+        {word:"STAR", hint:"Twinkles at night", lesson:"You are a star, shine bright"},
+        {word:"MOON", hint:"Night light", lesson:"Even in darkness, you can glow"},
+        {word:"BOOK", hint:"We read it", lesson:"Books are doors to new worlds"}
+      ],
+      class2: [
+        {word:"HELP", hint:"Support others", lesson:"Helping others helps yourself"},
+        {word:"SHARE", hint:"Give to others", lesson:"Sharing multiplies happiness"},
+        {word:"SMILE", hint:"Happy face", lesson:"Smile is the best makeup"},
+        {word:"PEACE", hint:"No fighting", lesson:"Peace begins with a smile"},
+        {word:"BRAVE", hint:"No fear", lesson:"Courage is not absence of fear"},
+        {word:"HONEST", hint:"Tell truth", lesson:"Honesty is the best policy"},
+        {word:"THANK", hint:"Gratitude word", lesson:"Thank you is magic"},
+        {word:"DREAM", hint:"Sleep vision", lesson:"Dreams are goals with wings"}
+      ],
+      class5: [
+        {word:"FOCUS", hint:"Key to success", lesson:"Where focus goes, energy flows"},
+        {word:"DREAM", hint:"Vision of future", lesson:"Dreams don't work unless you do"},
+        {word:"LEARN", hint:"Gain knowledge", lesson:"Learning never exhausts the mind"},
+        {word:"CREATE", hint:"Make something new", lesson:"Creativity is intelligence having fun"},
+        {word:"RESPECT", hint:"Honor others", lesson:"Respect is earned, not given"},
+        {word:"KINDNESS", hint:"Being nice", lesson:"Kindness costs nothing but means everything"}
+      ],
+      class8: [
+        {word:"COURAGE", hint:"Face your fears", lesson:"Courage is grace under pressure"},
+        {word:"PASSION", hint:"Strong love for work", lesson:"Passion is energy of success"},
+        {word:"VISION", hint:"See future clearly", lesson:"Vision without action is daydream"},
+        {word:"GRATITUDE", hint:"Thankful feeling", lesson:"Gratitude turns what we have into enough"},
+        {word:"PATIENCE", hint:"Wait calmly", lesson:"Patience is bitter but fruit is sweet"}
+      ],
+      class10: [
+        {word:"DISCIPLINE", hint:"Bridge between goals & success", lesson:"Discipline is choosing what you want most"},
+        {word:"PERSISTENCE", hint:"Never give up", lesson:"Persistence beats resistance"},
+        {word:"INTEGRITY", hint:"Do right when nobody watches", lesson:"Integrity is doing right thing"},
+        {word:"LEADERSHIP", hint:"Guide others", lesson:"Leader is one who knows the way"},
+        {word:"EXCELLENCE", hint:"Best quality", lesson:"Excellence is not a skill, it's an attitude"}
+      ]
     };
 
     const wisdomData = [
-      {q:"A person who never made a mistake never tried anything new. Who said this?", a:"Einstein", lesson:"Failure is proof you are trying. Embrace it.", hint:"Theory of Relativity"},
+      {q:"A person who never made a mistake never tried anything new. Who said this?", a:"Einstein", lesson:"Failure is proof you are trying. Embrace it.", hint:"E=mc²"},
       {q:"What habit makes you 1% better daily?", a:"Reading", lesson:"Small daily improvements = 37x better in 1 year", hint:"Books"},
-      {q:"Rich vs Wealthy: Rich has money. Wealthy has ___?", a:"Time", lesson:"Build assets that buy you freedom", hint:"Money tho konalem"},
-      {q:"If you help 1000 people get what they want, you get ___?", a:"Everything", lesson:"Zig Ziglar Law: Service creates abundance", hint:"Zig Ziglar quote"},
-      {q:"Compound interest is the 8th wonder. What compounds fastest?", a:"Knowledge", lesson:"Invest in learning. It pays best interest", hint:"School/College"},
-      {q:"Why do most people fail?", a:"Quit", lesson:"Success is not final, failure is not fatal", hint:"Success ki opposite"}
+      {q:"Rich vs Wealthy: Rich has money. Wealthy has ___?", a:"Time", lesson:"Build assets that buy you freedom", hint:"Can't buy with money"},
+      {q:"If you help 1000 people get what they want, you get ___?", a:"Everything", lesson:"Zig Ziglar Law: Service creates abundance", hint:"Zig Ziglar"},
+      {q:"Compound interest is the 8th wonder. What compounds fastest?", a:"Knowledge", lesson:"Invest in learning. It pays best interest", hint:"School"},
+      {q:"Why do most people fail?", a:"Quit", lesson:"Success is not final, failure is not fatal", hint:"Opposite of continue"},
+      {q:"Your network is your ___?", a:"Networth", lesson:"You are average of 5 people you spend time with", hint:"Money value"},
+      {q:"What is more powerful than knowledge?", a:"Action", lesson:"Knowledge without action is useless", hint:"Doing"},
+      {q:"Early bird gets the worm. Second mouse gets the ___?", a:"Cheese", lesson:"Timing matters. Don't be first or last, be smart", hint:"Mouse food"},
+      {q:"What is the best investment?", a:"Yourself", lesson:"Invest in yourself, it pays the best interest", hint:"You"},
+      {q:"What do you call fear + excitement?", a:"Growth", lesson:"If it doesn't challenge you, it won't change you", hint:"Personal development"},
+      {q:"Success leaves ___?", a:"Clues", lesson:"Model what works. Don't reinvent the wheel", hint:"Detective term"}
     ];
 
     let currentScramble = null;
@@ -192,6 +222,11 @@
       clearTimeout(targetTimer);
       score = 0;
       level = 1;
+      document.getElementById('target').style.display = 'none';
+      document.getElementById('startBtn').style.display = 'block';
+      document.getElementById('scrambleBtn').style.display = 'block';
+      document.getElementById('wisdomBtn').style.display = 'block';
+      document.getElementById('timerDisplay').innerText = 'Ready?';
       updateUI();
     }
 
@@ -223,18 +258,19 @@
       }
     }
 
-    // SPEED GAME - SHAPES CHANGING
+    // SPEED GAME - FIXED
     function getShapeStyle(shape, size) {
+      const bg = 'currentColor';
       const styles = {
-        circle: `border-radius:50%; width:${size}px; height:${size}px;`,
-        square: `border-radius:8px; width:${size}px; height:${size}px;`,
-        triangle: `width:0; height:0; border-left:${size/2}px solid transparent; border-right:${size/2}px solid transparent; border-bottom:${size}px solid currentColor; background:transparent;`,
-        star: `clip-path:polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); width:${size}px; height:${size}px;`,
-        diamond: `clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); width:${size}px; height:${size}px;`,
-        hexagon: `clip-path:polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); width:${size}px; height:${size}px;`,
-        heart: `clip-path:path('M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'); width:${size}px; height:${size}px;`,
-        pentagon: `clip-path:polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); width:${size}px; height:${size}px;`,
-        octagon: `clip-path:polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); width:${size}px; height:${size}px;`
+        circle: `border-radius:50%; width:${size}px; height:${size}px; background:${bg};`,
+        square: `border-radius:8px; width:${size}px; height:${size}px; background:${bg};`,
+        triangle: `width:0; height:0; border-left:${size/2}px solid transparent; border-right:${size/2}px solid transparent; border-bottom:${size}px solid ${bg}; background:transparent;`,
+        star: `clip-path:polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); width:${size}px; height:${size}px; background:${bg};`,
+        diamond: `clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); width:${size}px; height:${size}px; background:${bg};`,
+        hexagon: `clip-path:polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); width:${size}px; height:${size}px; background:${bg};`,
+        heart: `clip-path:path('M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'); width:${size}px; height:${size}px; background:${bg};`,
+        pentagon: `clip-path:polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); width:${size}px; height:${size}px; background:${bg};`,
+        octagon: `clip-path:polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); width:${size}px; height:${size}px; background:${bg};`
       };
       return styles[shape] || styles.circle;
     }
@@ -248,17 +284,13 @@
       updateUI();
       updateLevelInfo();
       document.getElementById('startBtn').style.display = 'none';
-      updateTimer();
+      document.getElementById('timerDisplay').innerText = timeLeft + 's';
       spawnTarget();
       gameTimer = setInterval(() => {
         timeLeft--;
-        updateTimer();
+        document.getElementById('timerDisplay').innerText = timeLeft + 's';
         if(timeLeft <= 0) endSpeedGame();
       }, 1000);
-    }
-
-    function updateTimer() {
-      document.getElementById('timerDisplay').innerText = timeLeft + 's';
     }
 
     function spawnTarget() {
@@ -270,10 +302,11 @@
       target.style.animation = config.animation + ' 1s infinite';
       target.innerText = config.text || '';
       target.style.fontSize = (config.targetSize * 0.5) + 'px';
-      const maxX = gameArea.offsetWidth - config.targetSize;
-      const maxY = gameArea.offsetHeight - config.targetSize;
-      target.style.left = Math.random() * maxX + 'px';
-      target.style.top = Math.random() * maxY + 'px';
+      target.style.lineHeight = config.targetSize + 'px';
+      const maxX = gameArea.offsetWidth - config.targetSize - 40;
+      const maxY = gameArea.offsetHeight - config.targetSize - 100;
+      target.style.left = Math.random() * maxX + 20 + 'px';
+      target.style.top = (Math.random() * maxY + 50) + 'px';
       target.style.display = 'flex';
       clearTimeout(targetTimer);
       targetTimer = setTimeout(() => {
@@ -286,12 +319,12 @@
 
     document.getElementById('target').onclick = () => {
       if(!gameActive) return;
-      score += level;
+      score += level * 2;
       updateUI();
       const config = levelConfig.speed[level];
       if(score >= config.target) {
         level++;
-        hints++; // +1 free hint
+        hints++;
         if(levelConfig.speed[level]) {
           const newConfig = levelConfig.speed[level];
           timeLeft = newConfig.time;
@@ -325,8 +358,7 @@
         alert('🎉 New High Score: ' + score);
       }
     }
-
-    // SCRAMBLE GAME - TARGET + TIME + HINT
+        // SCRAMBLE GAME - FIXED MORE WORDS
     function startScrambleGame() {
       score = 0;
       level = 1;
@@ -337,6 +369,8 @@
       updateUI();
       updateLevelInfo();
       document.getElementById('scrambleBtn').style.display = 'none';
+      document.getElementById('scrambleInput').style.display = 'block';
+      document.getElementById('hintBtn').style.display = 'inline-block';
       buildScrambleList();
       nextScramble();
       startScrambleTimer();
@@ -385,7 +419,7 @@
       if(!gameActive) return;
       const ans = document.getElementById('scrambleInput').value.trim().toUpperCase();
       if(ans === currentScramble.word) {
-        score += level * 5;
+        score += level * 10;
         correctStreak++;
         if(correctStreak % 5 === 0) {
           hints += 2;
@@ -397,7 +431,7 @@
         const config = levelConfig.scramble[level];
         if(score >= config.target) {
           level++;
-          hints++; // +1 free hint
+          hints++;
           if(levelConfig.scramble[level]) {
             const newConfig = levelConfig.scramble[level];
             timeLeft = newConfig.time;
@@ -423,6 +457,8 @@
       document.getElementById('scrambleWord').innerText = won? 'ALL LEVELS CLEARED! 🎉' : 'Time Up!';
       document.getElementById('scrambleBtn').style.display = 'block';
       document.getElementById('scrambleBtn').innerText = 'PLAY AGAIN';
+      document.getElementById('scrambleInput').style.display = 'none';
+      document.getElementById('hintBtn').style.display = 'none';
       if(score > highScore) {
         highScore = score;
         localStorage.setItem('abst_game_high', highScore);
@@ -431,22 +467,30 @@
       }
     }
 
-    // WISDOM GAME - 10 HINTS, 5 CORRECT = +2 HINTS
+    // WISDOM GAME - NO REPEATS FIXED
     function startWisdomGame() {
       score = 0;
       level = 1;
       gameActive = true;
       wisdomCorrectStreak = 0;
+      askedWisdom = [];
       updateUI();
       document.getElementById('wisdomBtn').style.display = 'none';
       document.getElementById('wisdomInput').style.display = 'block';
-      document.getElementById('wisdomHintBtn').style.display = 'block';
+      document.getElementById('wisdomHintBtn').style.display = 'inline-block';
       nextWisdom();
     }
 
     function nextWisdom() {
-      const idx = Math.floor(Math.random() * wisdomData.length);
-      currentWisdom = wisdomData[idx];
+      let available = wisdomData.filter((_, i) =>!askedWisdom.includes(i));
+      if(available.length === 0) {
+        askedWisdom = [];
+        available = wisdomData;
+      }
+      const idx = Math.floor(Math.random() * available.length);
+      const realIdx = wisdomData.indexOf(available[idx]);
+      askedWisdom.push(realIdx);
+      currentWisdom = wisdomData[realIdx];
       document.getElementById('wisdomText').innerText = currentWisdom.q;
       document.getElementById('wisdomInput').value = '';
       document.getElementById('wisdomInput').focus();
