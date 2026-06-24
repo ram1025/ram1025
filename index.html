@@ -271,7 +271,7 @@ input[type="file"] { display: none; }
 <p class="status" id="dash-status-string">Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: INDIAN.001 RAM GANESH MAKINA | P36 Active</p>
 </div>
 
-<!-- PROFILE MODAL WITH CAMERA/GALLERY -->
+<!-- PROFILE MODAL -->
 <div id="profileModal" class="modal">
 <div class="modal-inner" style="max-width:550px;">
 <div class="modal-head">
@@ -338,13 +338,13 @@ input[type="file"] { display: none; }
 <label class="profile-label">CUSTOM TAGLINE / BIO</label>
 <input type="text" id="inputBio" class="profile-input" placeholder="Building Tomorrow's Sovereign Cities">
 
-<p style="color:#8892b0;font-size:12px;line-height:1.5;margin:10px 0 0">Photo saves to device only. Email/Phone/Blood saved locally.</p>
+<p style="color:#8892b0;font-size:12px;line-height:1.5;margin:10px 0 0">Photo saves to device only. Profile data saved locally.</p>
 </div>
 <button onclick="saveProfileConfigurationData()" class="modal-btn-action" style="background:#5effde;color:#0a192f;font-size:16px">💾 SAVE & REFRESH RECOGNITION</button>
 </div>
 </div>
 
-<!-- ALL OTHER MODALS -->
+<!-- ALL MODALS -->
 <div id="jarvisModal" class="modal">
 <div class="modal-inner" style="max-width:500px;">
 <div class="modal-head"><h2 style="color:#64ffda;margin:0">🟢 JARVIS AI CORE</h2><span onclick="closeM('jarvisModal')" class="modal-close">&times;</span></div>
@@ -359,6 +359,7 @@ input[type="file"] { display: none; }
 </div>
 <button onclick="closeM('jarvisModal')" class="modal-btn-action">CLOSE</button>
 </div>
+</div>
 
 <div id="investorModal" class="modal">
 <div class="modal-inner">
@@ -369,7 +370,6 @@ input[type="file"] { display: none; }
 <p><b>Sectors:</b> Energy, Water, Food, Housing, Education, Digital</p>
 <p><b>Master Visionary:</b> INDIAN.001 RAM GANESH MAKINA</p>
 <p><b>Status:</b> Phase 1 Operational | Mother Hub: Vizag</p>
-<p style="color:#8892b0;margin-top:20px;font-size:12px;">Full PDF: MyJeevandhara_Investor_Note.pdf</p>
 </div>
 <button onclick="closeM('investorModal')" class="modal-btn-action">CLOSE</button>
 </div>
@@ -381,12 +381,12 @@ input[type="file"] { display: none; }
 <div class="modal-body">
 <h1 style="color:#64ffda;text-align:left;font-size:22px">ABST DETAILED PROJECT REPORT</h1>
 <h2 style="color:#ffd700;text-align:left;font-size:16px">Version 2.0 - 2026</h2>
-<p><b>Sector I:</b> Energy & Industrial Core - Plasma, Solar, Moon-Ray, AWT systems integrated for total power independence.</p>
-<p><b>Sector II:</b> Water & Earth Sovereignty - AWG Plants, Dual-Ion Shield, Waste-to-Trash Command ensuring resource security.</p>
-<p><b>Sector III:</b> Infrastructure - Utility Tunnels, HDD Pipeline, Footstep Energy, Bio-Vault, Matru-Shakti Housing.</p>
-<p><b>Sector IV:</b> Social Capital - KG to PhD Education, Hospital, Bank, Food Malls, Simulation Game, Innovators Wall.</p>
-<p><b>Sector V:</b> Digital Nervous System - RVM Network, ID System, Transparency Hub, CCTV, Jarvis AI Core.</p>
-<p><b>Sector VI:</b> Governance - MD Agni-Pariksha Leadership Mandate for ethical sovereignty.</p>
+<p><b>Sector I:</b> Energy & Industrial Core - Plasma, Solar, Moon-Ray, AWT systems integrated.</p>
+<p><b>Sector II:</b> Water & Earth Sovereignty - AWG Plants, Dual-Ion Shield, Waste-to-Trash Command.</p>
+<p><b>Sector III:</b> Infrastructure - Utility Tunnels, HDD Pipeline, Footstep Energy, Bio-Vault.</p>
+<p><b>Sector IV:</b> Social Capital - KG to PhD Education, Hospital, Bank, Food Malls.</p>
+<p><b>Sector V:</b> Digital Nervous System - RVM Network, ID System, Transparency Hub, CCTV, Jarvis AI.</p>
+<p><b>Sector VI:</b> Governance - MD Agni-Pariksha Leadership Mandate.</p>
 </div>
 <button onclick="closeM('dprTextModal')" class="modal-btn-action">CLOSE</button>
 </div>
@@ -430,7 +430,6 @@ input[type="file"] { display: none; }
 <p><b>Chapter 4:</b> Infrastructure - Utility Tunnels & Walkways</p>
 <p><b>Chapter 5:</b> Education - KG to PhD Building</p>
 <p><b>Chapter 6:</b> Governance - Agni-Pariksha Mandate</p>
-<p style="color:#8892b0;margin-top:20px;font-size:12px;">Full book available in DPR PDF section</p>
 </div>
 <button onclick="closeM('bookModal')" class="modal-btn-action">CLOSE</button>
 </div>
@@ -500,6 +499,7 @@ P36: MD Agni-Pariksha Leadership Mandate
 <button onclick="closeM('constitutionModal')" class="modal-btn-action">CLOSE</button>
 </div>
 </div>
+
 <div id="licenseModal" class="modal">
 <div class="modal-inner">
 <div class="modal-head"><h2 style="color:#64ffda;margin:0">📜 ABST SOVEREIGN LICENSE</h2><span onclick="closeM('licenseModal')" class="modal-close">&times;</span></div>
@@ -644,6 +644,7 @@ function loadSavedIdentityData() {
   var storedPhone = localStorage.getItem('abst_phone') || "";
   var storedBlood = localStorage.getItem('abst_blood') || "";
 
+  // Main Page Updates
   var dashVision = document.getElementById('dash-visionary-display');
   if(dashVision) dashVision.innerText = "Master Visionary: " + storedID + " " + storedName;
 
@@ -653,12 +654,17 @@ function loadSavedIdentityData() {
   var dashStatus = document.getElementById('dash-status-string');
   if(dashStatus) dashStatus.innerHTML = "Status: Operational | Jarvis AI Core Layer " + storedSecurity + " | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
 
-  var mainSeal = document.getElementById('main-seal-img');
-  if(mainSeal) mainSeal.src = storedPhoto;
-
   var dashBio = document.getElementById('dash-bio-display');
   if(dashBio) dashBio.innerText = storedBio;
 
+  // Seal images always use icon-192.png, NOT profile photo
+  var mainSeal = document.getElementById('main-seal-img');
+  if(mainSeal) mainSeal.src = "icon-192.png";
+
+  var welcomeSeal = document.getElementById('welcome-seal-img');
+  if(welcomeSeal) welcomeSeal.src = "icon-192.png";
+
+  // Welcome Note Updates
   var welcomeID = document.getElementById('welcome-id-display');
   if(welcomeID) welcomeID.innerText = storedID;
 
@@ -674,9 +680,7 @@ function loadSavedIdentityData() {
   var welcomeSecurity = document.getElementById('welcome-security');
   if(welcomeSecurity) welcomeSecurity.innerText = storedSecurity;
 
-  var welcomeSeal = document.getElementById('welcome-seal-img');
-  if(welcomeSeal) welcomeSeal.src = storedPhoto;
-
+  // Profile Form Updates
   var inputName = document.getElementById('inputMasterName');
   var inputID = document.getElementById('inputSovereignID');
   var inputDesig = document.getElementById('inputDesignation');
@@ -733,7 +737,6 @@ function handlePhotoUpload(event) {
       var photoData = e.target.result;
       localStorage.setItem('abst_photo', photoData);
       document.getElementById('profile-photo-preview').src = photoData;
-      loadSavedIdentityData();
     };
     reader.readAsDataURL(file);
   }
@@ -816,3 +819,4 @@ if('serviceWorker' in navigator){
 </script>
 </body>
 </html>
+
