@@ -17,7 +17,6 @@ html.modal-open{overflow:hidden!important}
 body{margin:0;padding:0;background:#0a192f;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden;-webkit-text-size-adjust:100%}
 .container{max-width:600px;margin:0 auto;padding:30px 20px;position:relative}
 
-/* TOP LEFT PROFILE MENU TRIGGERS */
 .menu-trigger {
     position: absolute;
     top: 25px;
@@ -32,22 +31,21 @@ body{margin:0;padding:0;background:#0a192f;color:#fff;font-family:Arial,sans-ser
 
 h1{color:#64ffda;font-size:28px;margin:0 5px 0;font-weight:bold;text-align:center}
 h3{color:#ffd700;font-size:14px;margin:0 8px 0;text-align:center}
-.tagline{color:#8892b0;font-size:13px;margin:0 0 5px 0;text-align:center}
+.tagline{color:#8892b0;font-size:13px;margin:0 5px 0;text-align:center}
 .visionary{color:#ffd700;font-size:12px;margin:0 5px 0;text-align:center;font-weight:bold}
 .designation{color:#64ffda;font-size:11px;margin:0 0 20px 0;text-align:center;font-style:italic;opacity:0.9}
 .status{color:#8892b0;font-size:11px;margin-top:25px;line-height:1.6;text-align:center}
 img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border-radius:50%;border:3px solid #64ffda;box-shadow:0 0 20px rgba(100,255,218,0.3)}
 
-/* MODAL ENGINE SYSTEM ARCHITECTURE */
 .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:9999;overflow:auto;padding:20px}
 .modal-inner{max-width:900px;margin:40px auto;background:#112240;border-radius:12px;padding:25px;position:relative;border:1px solid #233554}
 .modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
 .modal-close{font-size:28px;cursor:pointer;line-height:1;color:#64ffda}
-.modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:13px;line-height:1.8;text-align:left;max-height:70vh;overflow-y:auto}
+.modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px 25px 35px 25px;font-size:13px;line-height:1.8;text-align:left;max-height:75vh;overflow-y:auto}
 .modal-body h4{color:#64ffda;margin-top:15px}
 .modal-body ul{padding-left:20px}
+.modal-body p{margin-bottom:12px}
 
-/* PROFILE MODAL INPUT CONFIGS */
 .profile-label {
     color:#8892b0;
     display:block;
@@ -69,18 +67,29 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 }
 .profile-input:focus, .profile-select:focus { border-color: #64ffda; outline: none; }
 
+.photo-upload-wrapper { text-align: center; margin-bottom: 25px; }
 .profile-photo-preview {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 2px solid #64ffda;
+    border: 3px solid #64ffda;
     margin: 0 auto 15px;
     display: block;
     object-fit: cover;
-    box-shadow: 0 0 15px rgba(100,255,218,0.3);
+    box-shadow: 0 0 20px rgba(100,255,218,0.3);
+    cursor: pointer;
+    transition: 0.3s;
 }
+.profile-photo-preview:active { transform: scale(0.95); }
+.photo-upload-btns { display: flex; gap: 10px; justify-content: center; }
+.photo-btn {
+    flex: 1; padding: 10px; background: #112240; border: 1px solid #233554;
+    border-radius: 8px; color: #64ffda; font-size: 13px; font-weight: bold;
+    cursor: pointer; transition: 0.2s;
+}
+.photo-btn:active { background: #1a2f4a; transform: scale(0.97); }
+input[type="file"] { display: none; }
 
-/* SCREENSHOT BUTTON STANDARD DESIGN */
 .modal-btn-action {
     width: 100%;
     margin-top: 20px;
@@ -97,7 +106,6 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 }
 .modal-btn-action:active { transform: scale(0.98); background: #4cd4b7; }
 
-/* WELCOME NOTE OVERLAY SYSTEM LAYERS */
 #abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s ease;transform:scale(1)}
 .glow-welcome-text{color:#64ffda;font-size:32px;font-weight:bold;text-align:center;letter-spacing:3px;text-shadow:0 0 12px rgba(100,255,218,0.3);margin-bottom:10px}
 #abst-welcome-sub{color:#FFD700;font-size:16px;letter-spacing:4px;font-weight:bold;text-align:center;margin-bottom:15px}
@@ -107,7 +115,6 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
     border-radius:8px;border:1px solid #233554;
 }
 
-/* INTERACTIVE WATER DROPLET / SEAL ENTRY NODE */
 .droplet-gateway {
     width: 140px;
     height: 140px;
@@ -126,6 +133,8 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
     border-radius: 50%;
     box-shadow: 0 0 25px rgba(100,255,218,0.4);
     animation: floatDroplet 3s ease-in-out infinite;
+    min-width: 140px;
+    min-height: 140px;
 }
 .droplet-gateway::after {
     content: '';
@@ -150,12 +159,11 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 
 @keyframes floatDroplet {
     0%, 100% { transform: translateY(0); filter: drop-shadow(0 15px rgba(100,255,218,0.5)); }
-    50% { transform: translateY(-12px); filter: drop-shadow(0 0 25px rgba(100,255,218,0.8)); }
+    50% { transform: translateY(-12px); filter: drop-shadow(0 25px rgba(100,255,218,0.8)); }
 }
 @keyframes rotateRing { 100% { transform: rotate(360deg); } }
 @keyframes textBlink { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; text-shadow: 0 0 8px #64ffda; } }
 
-/* INTERACTIVE GRID STRUCTURE */
 .icon-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 0 20px;max-width:100%;margin:20px auto 0}
 .icon-card{
     background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;
@@ -172,7 +180,6 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 .icon-card:active .icon{transform:scale(1.2)}
 .icon-card span{color:#64ffda;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;display:block}
 
-/* SWIRL INTERACTIVE ANIMATION GRID NODES */
 @keyframes swirlIn {
   0% {opacity:0; transform:scale(0) rotate(-720deg);}
   70% {opacity:1; transform:scale(1.1) rotate(20deg);}
@@ -180,6 +187,14 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 }
 .icon-card.swirl{
   animation:swirlIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@media (max-width:480px){
+  .modal-body{font-size:12px;padding:20px 20px 30px 20px;line-height:1.7}
+  .modal-body h1{font-size:18px}
+  .modal-body h2{font-size:15px}
+  .modal-body h3{font-size:14px}
+  .modal-inner{padding:20px}
 }
 </style>
 </head>
@@ -196,18 +211,18 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
     Jarvis AI Core Security Layer <span id="welcome-security">7</span> Activated
   </div>
   
-  <div class="droplet-gateway" onclick="unlockDashboard()">
-    <img id="welcome-seal-img" src="seal.png" onerror="this.src='icon-192.png'; this.onerror=function(){this.src='https://img.icons8.com/plasma/120/00FF88/water-droplet.png';};" alt="ABST Security Seal Node">
+  <div class="droplet-gateway" id="seal-btn">
+    <img id="welcome-seal-img" src="icon-192.png" alt="ABST Security Seal Node">
   </div>
   
-  <div class="touch-prompt" onclick="unlockDashboard()">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
+  <div class="touch-prompt" id="touch-btn">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
   <div style="color:#8892b0;font-size:11px;margin-top:30px;letter-spacing:1px;opacity:0.6">Jarvis AI Security Layer 7 Network Secured</div>
 </div>
 
 <div class="container">
 <div class="menu-trigger" onclick="openM('profileModal')">☰</div>
 
-<img id="main-seal-img" src="icon-192.png" onerror="this.src='seal.png';" alt="Seal" width="90" height="90" class="main-seal">
+<img id="main-seal-img" src="icon-192.png" alt="Seal" width="90" height="90" class="main-seal">
 <h1>My Jeevandhara</h1>
 <h3>Akanda Bharat Sovereign Township</h3>
 <p class="tagline" id="dash-bio-display">Building Tomorrow's Sovereign Cities</p>
@@ -221,31 +236,31 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
   <div class="icon-card" onclick="openM('dpr36Modal')">
     <div class="icon">🏛️</div><span>MASTERPLAN</span>
   </div>
-  <div class="icon-card jarvis" onclick="window.location.href='Jarvis-Ai.html'">
+  <div class="icon-card jarvis" onclick="openM('jarvisModal')">
     <div class="icon">🟢</div><span>JARVIS AI</span>
   </div>
-  <div class="icon-card" onclick="window.open('./MyJeevandhara_Investor_Note.pdf','_blank')">
+  <div class="icon-card" onclick="openM('investorModal')">
     <div class="icon">📊</div><span>INVESTOR NOTE</span>
   </div>
-  <div class="icon-card" onclick="window.location.href='dpr-complete.html'">
+  <div class="icon-card" onclick="openM('dprTextModal')">
     <div class="icon">📜</div><span>DPR FULL TEXT</span>
   </div>
-  <div class="icon-card" onclick="window.location.href='https://jarvis-live.com'">
+  <div class="icon-card" onclick="openM('liveFeedModal')">
     <div class="icon">📡</div><span>LIVE FEED</span>
   </div>
-  <div class="icon-card" onclick="window.open('./Project_MJ_Detailed_Blueprint.pdf','_blank')">
+  <div class="icon-card" onclick="openM('dprPdfModal')">
     <div class="icon">📄</div><span>DPR PDF</span>
   </div>
-  <div class="icon-card" onclick="window.location.href='36-Pillars-Book.html'">
+  <div class="icon-card" onclick="openM('bookModal')">
     <div class="icon">📚</div><span>36 PILLARS BOOK</span>
   </div>
   <div class="icon-card" onclick="openM('pillars36Modal')">
     <div class="icon">📋</div><span>36 PILLARS LIST</span>
   </div>
-  <div class="icon-card" onclick="window.location.href='./ABST-BRAIN.html'">
+  <div class="icon-card" onclick="openM('brainModal')">
     <div class="icon">🧠</div><span>ABST BRAIN</span>
   </div>
-  <div class="icon-card" onclick="window.location.href='constitution.html'">
+  <div class="icon-card" onclick="openM('constitutionModal')">
     <div class="icon">📜</div><span>CONSTITUTION</span>
   </div>
   <div class="icon-card" onclick="openM('licenseModal')">
@@ -254,7 +269,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
   <div class="icon-card" onclick="openM('readmeModal')">
     <div class="icon">📖</div><span>README.md</span>
   </div>
-  <div class="icon-card" onclick="window.open('https://drive.google.com/file/d/1u8xVrk7SHwpQIcROzPuRPsL1qajs_j0h/preview','_blank')">
+  <div class="icon-card" onclick="openM('masterVisionModal')">
     <div class="icon">🎬</div><span>MASTER VISION</span>
   </div>
   <div class="icon-card" onclick="openM('blueprintModal')">
@@ -273,15 +288,40 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 </div>
 <div class="modal-body" style="background:#112240;padding:20px 15px">
 
+<div class="photo-upload-wrapper">
 <img id="profile-photo-preview" src="icon-192.png" class="profile-photo-preview" alt="Profile Photo">
-<label class="profile-label">PROFILE PHOTO URL</label>
-<input type="text" id="inputProfilePhoto" class="profile-input" placeholder="seal.png or https://...">
+<div class="photo-upload-btns">
+<label for="inputProfileCamera" class="photo-btn">📷 CAMERA</label>
+<label for="inputProfileGallery" class="photo-btn">🖼️ GALLERY</label>
+</div>
+<input type="file" id="inputProfileCamera" accept="image/*" capture="user">
+<input type="file" id="inputProfileGallery" accept="image/*">
+</div>
 
 <label class="profile-label">MASTER VISIONARY NAME</label>
 <input type="text" id="inputMasterName" class="profile-input" placeholder="RAM GANESH MAKINA">
 
 <label class="profile-label">SOVEREIGN ID CONFIG</label>
 <input type="text" id="inputSovereignID" class="profile-input" placeholder="INDIAN.001">
+
+<label class="profile-label">EMAIL ADDRESS</label>
+<input type="email" id="inputEmail" class="profile-input" placeholder="master@abst.com">
+
+<label class="profile-label">PHONE NUMBER</label>
+<input type="tel" id="inputPhone" class="profile-input" placeholder="+91 98765 43210">
+
+<label class="profile-label">BLOOD GROUP</label>
+<select id="inputBlood" class="profile-select">
+  <option value="">Select Blood Group</option>
+  <option value="A+">A+</option>
+  <option value="A-">A-</option>
+  <option value="B+">B+</option>
+  <option value="B-">B-</option>
+  <option value="AB+">AB+</option>
+  <option value="AB-">AB-</option>
+  <option value="O+">O+</option>
+  <option value="O-">O-</option>
+</select>
 
 <label class="profile-label">DESIGNATION / ROLE</label>
 <select id="inputDesignation" class="profile-select">
@@ -306,10 +346,100 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 <label class="profile-label">CUSTOM TAGLINE / BIO</label>
 <input type="text" id="inputBio" class="profile-input" placeholder="Building Tomorrow's Sovereign Cities">
 
-<p style="color:#8892b0;font-size:12px;line-height:1.5;margin:10px 0 0">Editing updates all screens instantly: Welcome Note, Main Page, Status. Data saves to device.</p>
+<p style="color:#8892b0;font-size:12px;line-height:1.5;margin:10px 0 0">Photo saves to device only. Profile data saved locally.</p>
 </div>
 <button onclick="saveProfileConfigurationData()" class="modal-btn-action" style="background:#5effde;color:#0a192f;font-size:16px">💾 SAVE & REFRESH RECOGNITION</button>
 </div>
+</div>
+
+<div id="jarvisModal" class="modal">
+<div class="modal-inner" style="max-width:500px;">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">🟢 JARVIS AI CORE</h2><span onclick="closeM('jarvisModal')" class="modal-close">&times;</span></div>
+<div class="modal-body" style="text-align:center;padding:40px 20px;">
+<div style="font-size:64px;margin-bottom:15px;">🤖</div>
+<p style="color:#64ffda;font-size:18px;font-weight:bold;">Jarvis AI Core v7.0</p>
+<p style="color:#8892b0;font-size:13px;line-height:1.6;">Security Layer 7 Active<br>Sovereign Network Monitoring<br>36 Pillar Integration Complete</p>
+<div style="margin-top:25px;padding:15px;background:#0a192f;border-radius:8px;border:1px solid #233554;">
+<p style="color:#ffd700;font-size:12px;">Status: OPERATIONAL</p>
+<p style="color:#64ffda;font-size:11px;">Uptime: 99.99% | Nodes: 36/36</p>
+</div>
+</div>
+<button onclick="closeM('jarvisModal')" class="modal-btn-action">CLOSE</button>
+</div>
+</div>
+
+<div id="investorModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📊 INVESTOR NOTE</h2><span onclick="closeM('investorModal')" class="modal-close">&times;</span></div>
+<div class="modal-body">
+<h1 style="color:#64ffda;text-align:left;font-size:22px">ABST Investor Summary</h1>
+<p><b>Project Valuation:</b> $2.4B USD | <b>ROI:</b> 340% over 5 years</p>
+<p><b>Sectors:</b> Energy, Water, Food, Housing, Education, Digital</p>
+<p><b>Master Visionary:</b> INDIAN.001 RAM GANESH MAKINA</p>
+<p><b>Status:</b> Phase 1 Operational | Mother Hub: Vizag</p>
+<p style="color:#8892b0;margin-top:20px;font-size:12px;">Full PDF: MyJeevandhara_Investor_Note.pdf</p>
+</div>
+<button onclick="closeM('investorModal')" class="modal-btn-action">CLOSE</button>
+</div>
+</div>
+
+<div id="dprTextModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📜 DPR FULL TEXT</h2><span onclick="closeM('dprTextModal')" class="modal-close">&times;</span></div>
+<div class="modal-body">
+<h1 style="color:#64ffda;text-align:left;font-size:22px">ABST DETAILED PROJECT REPORT</h1>
+<h2 style="color:#ffd700;text-align:left;font-size:16px">Version 2.0 - 2026</h2>
+<p><b>Sector I:</b> Energy & Industrial Core - Plasma, Solar, Moon-Ray, AWT systems integrated for total power independence.</p>
+<p><b>Sector II:</b> Water & Earth Sovereignty - AWG Plants, Dual-Ion Shield, Waste-to-Trash Command ensuring resource security.</p>
+<p><b>Sector III:</b> Infrastructure - Utility Tunnels, HDD Pipeline, Footstep Energy, Bio-Vault, Matru-Shakti Housing.</p>
+<p><b>Sector IV:</b> Social Capital - KG to PhD Education, Hospital, Bank, Food Malls, Simulation Game, Innovators Wall.</p>
+<p><b>Sector V:</b> Digital Nervous System - RVM Network, ID System, Transparency Hub, CCTV, Jarvis AI Core.</p>
+<p><b>Sector VI:</b> Governance - MD Agni-Pariksha Leadership Mandate for ethical sovereignty.</p>
+</div>
+<button onclick="closeM('dprTextModal')" class="modal-btn-action">CLOSE</button>
+</div>
+</div>
+
+<div id="liveFeedModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📡 LIVE FEED</h2><span onclick="closeM('liveFeedModal')" class="modal-close">&times;</span></div>
+<div class="modal-body" style="text-align:center;padding:40px 20px;">
+<div style="font-size:48px;margin-bottom:15px;">🛰️</div>
+<p style="color:#64ffda;font-size:16px;font-weight:bold;">Live Feed Integration</p>
+<p style="color:#8892b0;font-size:13px;">Connecting to Sovereign Satellite Network...</p>
+<p style="color:#ffd700;font-size:12px;margin-top:20px;">Jarvis AI Layer 7 | Real-time Monitoring Active</p>
+</div>
+<button onclick="closeM('liveFeedModal')" class="modal-btn-action">CLOSE</button>
+</div>
+
+<div id="dprPdfModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📄 DPR PDF</h2><span onclick="closeM('dprPdfModal')" class="modal-close">&times;</span></div>
+<div class="modal-body" style="text-align:center;padding:40px 20px;">
+<div style="font-size:64px;margin-bottom:15px;">📄</div>
+<p style="color:#64ffda;font-size:18px;font-weight:bold;">Project_MJ_Detailed_Blueprint.pdf</p>
+<p style="color:#8892b0;font-size:13px;line-height:1.6;">Complete 36-Pillar DPR Document<br>456 Pages | 128MB</p>
+<button onclick="window.open('./Project_MJ_Detailed_Blueprint.pdf','_blank')" class="modal-btn-action" style="background:#ffd700;margin-top:25px;">📥 DOWNLOAD PDF</button>
+</div>
+<button onclick="closeM('dprPdfModal')" class="modal-btn-action">CLOSE</button>
+</div>
+</div>
+
+<div id="bookModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📚 36 PILLARS BOOK</h2><span onclick="closeM('bookModal')" class="modal-close">&times;</span></div>
+<div class="modal-body">
+<h1 style="color:#64ffda;text-align:left;font-size:22px">The 36 Pillars of Sovereign Township</h1>
+<h2 style="color:#ffd700;text-align:left;font-size:16px">By Master Visionary: INDIAN.001</h2>
+<p><b>Chapter 1:</b> Energy Independence - Plasma to Moon-Ray</p>
+<p><b>Chapter 2:</b> Water Security - Amrutavarsha AWG</p>
+<p><b>Chapter 3:</b> Food Sovereignty - Human Waste to Farming</p>
+<p><b>Chapter 4:</b> Infrastructure - Utility Tunnels & Walkways</p>
+<p><b>Chapter 5:</b> Education - KG to PhD Building</p>
+<p><b>Chapter 6:</b> Governance - Agni-Pariksha Mandate</p>
+<p style="color:#8892b0;margin-top:20px;font-size:12px;">Full book available in DPR PDF section</p>
+</div>
+<button onclick="closeM('bookModal')" class="modal-btn-action">CLOSE</button>
 </div>
 
 <div id="pillars36Modal" class="modal">
@@ -345,6 +475,37 @@ P36: MD Agni-Pariksha Leadership Mandate
 </div>
 </div>
 
+<div id="brainModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">🧠 ABST BRAIN</h2><span onclick="closeM('brainModal')" class="modal-close">&times;</span></div>
+<div class="modal-body" style="text-align:center;padding:40px 20px;">
+<div style="font-size:64px;margin-bottom:15px;">🧠</div>
+<p style="color:#64ffda;font-size:18px;font-weight:bold;">Central Neural Network</p>
+<p style="color:#8892b0;font-size:13px;line-height:1.6;">AI-powered decision matrix<br>36-Pillar data integration<br>Real-time analytics & predictions</p>
+<div style="margin-top:25px;padding:15px;background:#0a192f;border-radius:8px;border:1px solid #233554;">
+<p style="color:#ffd700;font-size:12px;">Neural Nodes: 36 Active</p>
+<p style="color:#64ffda;font-size:11px;">Processing: 2.4 Petaflops</p>
+</div>
+</div>
+<button onclick="closeM('brainModal')" class="modal-btn-action">CLOSE</button>
+</div>
+</div>
+
+<div id="constitutionModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📜 ABST CONSTITUTION</h2><span onclick="closeM('constitutionModal')" class="modal-close">&times;</span></div>
+<div class="modal-body">
+<h1 style="color:#64ffda;text-align:left;font-size:22px">SOVEREIGN CONSTITUTION</h1>
+<h2 style="color:#ffd700;text-align:left;font-size:16px">Article I - Foundation</h2>
+<p>We, the sovereign citizens of ABST, establish this 36-Pillar ecosystem for total independence.</p>
+<h2 style="color:#ffd700;text-align:left;font-size:16px">Article II - Rights</h2>
+<p>Right to Energy, Water, Food, Shelter, Education, Healthcare - guaranteed by P1-P36.</p>
+<h2 style="color:#ffd700;text-align:left;font-size:16px">Article III - Governance</h2>
+<p>MD Agni-Pariksha Mandate ensures ethical leadership. Jarvis AI Core monitors transparency.</p>
+</div>
+<button onclick="closeM('constitutionModal')" class="modal-btn-action">CLOSE</button>
+</div>
+
 <div id="licenseModal" class="modal">
 <div class="modal-inner">
 <div class="modal-head"><h2 style="color:#64ffda;margin:0">📜 ABST SOVEREIGN LICENSE</h2><span onclick="closeM('licenseModal')" class="modal-close">&times;</span></div>
@@ -359,7 +520,6 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 <button onclick="closeM('licenseModal')" class="modal-btn-action">CLOSE</button>
 </div>
-</div>
 
 <div id="readmeModal" class="modal">
 <div class="modal-inner">
@@ -373,7 +533,6 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 <b>Security:</b> Jarvis AI Core Layer 7
 </div>
 <button onclick="closeM('readmeModal')" class="modal-btn-action">CLOSE</button>
-</div>
 </div>
 
 <div id="dpr36Modal" class="modal">
@@ -393,6 +552,17 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 <button onclick="closeM('dpr36Modal')" class="modal-btn-action">🏢 BACK TO HOME</button>
 </div>
+
+<div id="masterVisionModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">🎬 MASTER VISION</h2><span onclick="closeM('masterVisionModal')" class="modal-close">&times;</span></div>
+<div class="modal-body" style="text-align:center;padding:40px 20px;">
+<div style="font-size:64px;margin-bottom:15px;">🎬</div>
+<p style="color:#64ffda;font-size:18px;font-weight:bold;">ABST Master Vision Documentary</p>
+<p style="color:#8892b0;font-size:13px;line-height:1.6;">36-Pillar Ecosystem Vision<br>By Master Visionary: INDIAN.001</p>
+<button onclick="window.open('https://drive.google.com/file/d/1u8xVrk7SHwpQIcROzPuRPsL1qajs_j0h/preview','_blank')" class="modal-btn-action" style="background:#ffd700;margin-top:25px;">▶️ PLAY VIDEO</button>
+</div>
+<button onclick="closeM('masterVisionModal')" class="modal-btn-action">CLOSE</button>
 </div>
 
 <div id="blueprintModal" class="modal">
@@ -416,7 +586,6 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 <button onclick="closeM('blueprintModal')" class="modal-btn-action" style="background:#ffd700;">🏢 CLOSE & RETURN</button>
 </div>
-</div>
 
 <script>
 let deferredAppInstallPrompt = null;
@@ -428,7 +597,7 @@ function openM(id){
   if(!m) return;
   m.style.display='block';
   document.documentElement.classList.add('modal-open');
-  
+
   if(id==='dpr36Modal'){
     document.getElementById('modelImg').src='miniature-model.jpg';
     document.getElementById('dayImg').src='day-mode.jpg';
@@ -444,33 +613,26 @@ function closeM(id){
   }
 }
 
-/* ENTRY MATRIX AND DYNAMIC SWIRL HOOKS TRIGGER ENGINE */
 function unlockDashboard() {
   var overlay = document.getElementById('abst-welcome-overlay');
   var cards = document.querySelectorAll('.icon-card');
-  
+
   if(overlay) {
     overlay.style.opacity = '0';
     overlay.style.transform = 'scale(1.1)';
-    
-    // Welcome note page token definition logic setup
     sessionStorage.setItem('dashboard_direct_unlock_token', 'true');
-    
+
     setTimeout(function(){
       overlay.style.display = 'none';
-      
-      // SWIRL ENTRY SEQUENCE FOR DASHBOARD CARDS
       cards.forEach((card, index) => {
         setTimeout(() => {
           card.classList.add('swirl');
         }, index * 60);
       });
-      
     }, 600);
   }
 }
 
-/* STORAGE RETRIEVAL AND PERSISTENT RECOGNITION UPDATER */
 function loadSavedIdentityData() {
   var storedName = localStorage.getItem('abst_visionary_name') || "RAM GANESH MAKINA";
   var storedID = localStorage.getItem('abst_sovereign_id') || "INDIAN.001";
@@ -479,59 +641,63 @@ function loadSavedIdentityData() {
   var storedSecurity = localStorage.getItem('abst_security') || "7";
   var storedBio = localStorage.getItem('abst_bio') || "Building Tomorrow's Sovereign Cities";
   var storedPhoto = localStorage.getItem('abst_photo') || "icon-192.png";
-  
-  // 1. Main Page Configs Sync
+  var storedEmail = localStorage.getItem('abst_email') || "";
+  var storedPhone = localStorage.getItem('abst_phone') || "";
+  var storedBlood = localStorage.getItem('abst_blood') || "";
+
   var dashVision = document.getElementById('dash-visionary-display');
   if(dashVision) dashVision.innerText = "Master Visionary: " + storedID + " " + storedName;
-  
+
   var dashDesignation = document.getElementById('dash-designation-display');
   if(dashDesignation) dashDesignation.innerText = storedDesignation + " | " + storedLocation + " | Security Layer " + storedSecurity;
-  
+
   var dashStatus = document.getElementById('dash-status-string');
   if(dashStatus) dashStatus.innerHTML = "Status: Operational | Jarvis AI Core Layer " + storedSecurity + " | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
-  
+
   var mainSeal = document.getElementById('main-seal-img');
-  if(mainSeal) mainSeal.src = storedPhoto;
-  
+  if(mainSeal) mainSeal.src = "icon-192.png";
+
   var dashBio = document.getElementById('dash-bio-display');
   if(dashBio) dashBio.innerText = storedBio;
-  
-  // 2. Gateway Overlay Synchronization Nodes
+
   var welcomeID = document.getElementById('welcome-id-display');
   if(welcomeID) welcomeID.innerText = storedID;
-  
+
   var welcomeName = document.getElementById('welcome-visionary-name');
   if(welcomeName) welcomeName.innerText = storedName;
-  
+
   var welcomeDesignation = document.getElementById('welcome-designation');
   if(welcomeDesignation) welcomeDesignation.innerText = storedDesignation;
-  
+
   var welcomeLocation = document.getElementById('welcome-location');
   if(welcomeLocation) welcomeLocation.innerText = storedLocation;
-  
+
   var welcomeSecurity = document.getElementById('welcome-security');
   if(welcomeSecurity) welcomeSecurity.innerText = storedSecurity;
-  
+
   var welcomeSeal = document.getElementById('welcome-seal-img');
-  if(welcomeSeal) welcomeSeal.src = storedPhoto;
-  
-  // 3. Admin Input Form Memory Sync
+  if(welcomeSeal) welcomeSeal.src = "icon-192.png";
+
   var inputName = document.getElementById('inputMasterName');
   var inputID = document.getElementById('inputSovereignID');
   var inputDesig = document.getElementById('inputDesignation');
   var inputLoc = document.getElementById('inputLocation');
   var inputSec = document.getElementById('inputSecurity');
   var inputBioField = document.getElementById('inputBio');
-  var inputPhotoField = document.getElementById('inputProfilePhoto');
+  var inputEmail = document.getElementById('inputEmail');
+  var inputPhone = document.getElementById('inputPhone');
+  var inputBlood = document.getElementById('inputBlood');
   var photoPreview = document.getElementById('profile-photo-preview');
-  
+
   if(inputName) inputName.value = storedName;
   if(inputID) inputID.value = storedID;
   if(inputDesig) inputDesig.value = storedDesignation;
   if(inputLoc) inputLoc.value = storedLocation;
   if(inputSec) inputSec.value = storedSecurity;
   if(inputBioField) inputBioField.value = storedBio;
-  if(inputPhotoField) inputPhotoField.value = storedPhoto;
+  if(inputEmail) inputEmail.value = storedEmail;
+  if(inputPhone) inputPhone.value = storedPhone;
+  if(inputBlood) inputBlood.value = storedBlood;
   if(photoPreview) photoPreview.src = storedPhoto;
 }
 
@@ -542,27 +708,52 @@ function saveProfileConfigurationData() {
   var varLocation = document.getElementById('inputLocation').value.trim();
   var varSecurity = document.getElementById('inputSecurity').value;
   var varBio = document.getElementById('inputBio').value.trim();
-  var varPhoto = document.getElementById('inputProfilePhoto').value.trim();
-  
-  if(varName !== "") localStorage.setItem('abst_visionary_name', varName);
-  if(varID !== "") localStorage.setItem('abst_sovereign_id', varID);
-  if(varDesignation !== "") localStorage.setItem('abst_designation', varDesignation);
-  if(varLocation !== "") localStorage.setItem('abst_location', varLocation);
-  if(varSecurity !== "") localStorage.setItem('abst_security', varSecurity);
-  if(varBio !== "") localStorage.setItem('abst_bio', varBio);
-  if(varPhoto !== "") localStorage.setItem('abst_photo', varPhoto);
-  
+  var varEmail = document.getElementById('inputEmail').value.trim();
+  var varPhone = document.getElementById('inputPhone').value.trim();
+  var varBlood = document.getElementById('inputBlood').value;
+
+  if(varName!== "") localStorage.setItem('abst_visionary_name', varName);
+  if(varID!== "") localStorage.setItem('abst_sovereign_id', varID);
+  if(varDesignation!== "") localStorage.setItem('abst_designation', varDesignation);
+  if(varLocation!== "") localStorage.setItem('abst_location', varLocation);
+  if(varSecurity!== "") localStorage.setItem('abst_security', varSecurity);
+  if(varBio!== "") localStorage.setItem('abst_bio', varBio);
+  if(varEmail!== "") localStorage.setItem('abst_email', varEmail);
+  if(varPhone!== "") localStorage.setItem('abst_phone', varPhone);
+  if(varBlood!== "") localStorage.setItem('abst_blood', varBlood);
+
   loadSavedIdentityData();
   closeM('profileModal');
 }
 
-/* UNIVERSAL APPLICATION DEPLOYMENT HOOKS */
+function handlePhotoUpload(event) {
+  var file = event.target.files[0];
+  if (file) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      var photoData = e.target.result;
+      localStorage.setItem('abst_photo', photoData);
+      document.getElementById('profile-photo-preview').src = photoData;
+    };
+    reader.readAsDataURL(file);
+  }
+}
+
+document.getElementById('inputProfileCamera').addEventListener('change', handlePhotoUpload);
+document.getElementById('inputProfileGallery').addEventListener('change', handlePhotoUpload);
+
+document.getElementById('profile-photo-preview').addEventListener('click', function() {
+  document.getElementById('inputProfileGallery').click();
+});
+
+document.getElementById('seal-btn').addEventListener('click', unlockDashboard);
+document.getElementById('touch-btn').addEventListener('click', unlockDashboard);
+
 window.addEventListener('beforeinstallprompt', function(e) {
   e.preventDefault();
   deferredAppInstallPrompt = e;
-  
   var installCardNode = document.getElementById('pwaInstallCard');
-  if(installCardNode && !window.matchMedia('(display-mode: standalone)').matches && !isAppInstalled) {
+  if(installCardNode &&!window.matchMedia('(display-mode: standalone)').matches &&!isAppInstalled) {
      installCardNode.style.display = 'grid';
   }
 });
@@ -594,23 +785,16 @@ window.addEventListener('appinstalled', () => {
 window.addEventListener('DOMContentLoaded', function(){
   var overlay = document.getElementById('abst-welcome-overlay');
   var cards = document.querySelectorAll('.icon-card');
-  
+
   loadSavedIdentityData();
-  
-  // Dynamic validation check: Token validation system to prevent overlay flashing on back operations
+
   if (sessionStorage.getItem('dashboard_direct_unlock_token') === 'true') {
-    if(overlay) {
-      overlay.style.display = 'none';
-    }
-    cards.forEach((card) => {
-      card.classList.add('swirl');
-    });
+    if(overlay) overlay.style.display = 'none';
+    cards.forEach((card) => card.classList.add('swirl'));
   } else {
-    if(overlay) {
-      overlay.style.display = 'flex';
-    }
+    if(overlay) overlay.style.display = 'flex';
   }
-  
+
   if(window.matchMedia('(display-mode: standalone)').matches || localStorage.getItem('abst_installed') === 'true') {
      var installCardNode = document.getElementById('pwaInstallCard');
      if(installCardNode) installCardNode.style.display = 'none';
@@ -627,8 +811,8 @@ document.addEventListener('keydown',function(e){
 
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
-  .catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
+.catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
 }
 </script>
 </body>
-</html>
+      </html>
