@@ -22,7 +22,7 @@ body{margin:0;padding:0;background:#0a192f;color:#fff;font-family:Arial,sans-ser
 
 h1{color:#64ffda;font-size:28px;margin:0 5px 0;font-weight:bold;text-align:center}
 h3{color:#ffd700;font-size:14px;margin:0 8px 0;text-align:center}
-.tagline{color:#8892b0;font-size:13px;margin:0 5px 0;text-align:center}
+.tagline{color:#8892b0;font-size:13px;margin:0 0 5px 0;text-align:center}
 .visionary{color:#ffd700;font-size:12px;margin:0 5px 0;text-align:center;font-weight:bold}
 .designation{color:#64ffda;font-size:11px;margin:0 0 20px 0;text-align:center;font-style:italic;opacity:0.9}
 .status{color:#8892b0;font-size:11px;margin-top:25px;line-height:1.6;text-align:center}
@@ -32,7 +32,7 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 .modal-inner{max-width:900px;margin:40px auto;background:#112240;border-radius:12px;padding:25px;position:relative;border:1px solid #233554}
 .modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
 .modal-close{font-size:28px;cursor:pointer;line-height:1;color:#64ffda}
-.modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px 25px 35px 25px;font-size:13px;line-height:1.8;text-align:left;max-height:75vh;overflow-y:auto}
+.modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:13px;line-height:1.8;text-align:left;max-height:75vh;overflow-y:auto}
 .modal-body h4{color:#64ffda;margin-top:15px}
 .modal-body ul{padding-left:20px}
 .modal-body p{margin-bottom:12px}
@@ -64,7 +64,7 @@ input[type="file"]{display:none}
 
 .touch-prompt{color:#64ffda;font-size:12px;letter-spacing:2px;font-weight:bold;animation:textBlink 1.5s ease-in-out infinite;text-align:center;cursor:pointer}
 
-@keyframes floatDroplet{0%,100%{transform:translateY(0);filter:drop-shadow(0 15px rgba(100,255,218,0.5))}50%{transform:translateY(-12px);filter:drop-shadow(0 25px rgba(100,255,218,0.8))}}
+@keyframes floatDroplet{0%,100%{transform:translateY(0);filter:drop-shadow(0 15px rgba(100,255,218,0.5))}50%{transform:translateY(-12px);filter:drop-shadow(0 0 25px rgba(100,255,218,0.8))}}
 @keyframes rotateRing{100%{transform:rotate(360deg)}}
 @keyframes textBlink{0%,100%{opacity:0.4}50%{opacity:1;text-shadow:0 0 8px #64ffda}}
 
@@ -82,7 +82,7 @@ input[type="file"]{display:none}
 .icon-card.swirl{animation:swirlIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards}
 
 @media (max-width:480px){
-  .modal-body{font-size:12px;padding:20px 20px 30px 20px;line-height:1.7}
+  .modal-body{font-size:12px;padding:20px 30px 20px;line-height:1.7}
   .modal-body h1{font-size:18px}
   .modal-body h2{font-size:15px}
   .modal-body h3{font-size:14px}
@@ -95,15 +95,18 @@ input[type="file"]{display:none}
 <div id="abst-welcome-overlay">
   <div class="glow-welcome-text">WELCOME TO ABST</div>
   <div id="abst-welcome-sub">SOVEREIGN ID: <span id="welcome-id-display">INDIAN.001</span></div>
+  
   <div class="welcome-note-text">
     Akanda Bharat Sovereign Township - A 36-Pillar Ecosystem of Total Independence.<br>
     <b style="color:#64ffda">Master Visionary: <span id="welcome-visionary-name">RAM GANESH MAKINA</span></b><br>
     <span id="welcome-designation">Chief Architect</span> | <span id="welcome-location">Vizag Mother Hub</span><br>
     Jarvis AI Core Security Layer <span id="welcome-security">7</span> Activated
   </div>
+  
   <div class="droplet-gateway" id="seal-btn">
     <img id="welcome-seal-img" src="icon-192.png" alt="ABST Security Seal Node">
   </div>
+  
   <div class="touch-prompt" id="touch-btn">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
   <div style="color:#8892b0;font-size:11px;margin-top:30px;letter-spacing:1px;opacity:0.6">Jarvis AI Security Layer 7 Network Secured</div>
 </div>
@@ -125,31 +128,31 @@ input[type="file"]{display:none}
   <div class="icon-card" onclick="openM('dpr36Modal')">
     <div class="icon">🏛️</div><span>MASTERPLAN</span>
   </div>
-  <div class="icon-card jarvis" onclick="openM('jarvisModal')">
+  <div class="icon-card jarvis" onclick="window.location.href='Jarvis-Ai.html'">
     <div class="icon">🟢</div><span>JARVIS AI</span>
   </div>
-  <div class="icon-card" onclick="openM('investorModal')">
+  <div class="icon-card" onclick="window.open('./MyJeevandhara_Investor_Note.pdf','_blank')">
     <div class="icon">📊</div><span>INVESTOR NOTE</span>
   </div>
-  <div class="icon-card" onclick="openM('dprTextModal')">
+  <div class="icon-card" onclick="window.location.href='dpr-complete.html'">
     <div class="icon">📜</div><span>DPR FULL TEXT</span>
   </div>
-  <div class="icon-card" onclick="openM('liveFeedModal')">
+  <div class="icon-card" onclick="window.location.href='https://jarvis-live.com'">
     <div class="icon">📡</div><span>LIVE FEED</span>
   </div>
-  <div class="icon-card" onclick="openM('dprPdfModal')">
+  <div class="icon-card" onclick="window.open('./Project_MJ_Detailed_Blueprint.pdf','_blank')">
     <div class="icon">📄</div><span>DPR PDF</span>
   </div>
-  <div class="icon-card" onclick="openM('bookModal')">
+  <div class="icon-card" onclick="window.location.href='36-Pillars-Book.html'">
     <div class="icon">📚</div><span>36 PILLARS BOOK</span>
   </div>
   <div class="icon-card" onclick="openM('pillars36Modal')">
     <div class="icon">📋</div><span>36 PILLARS LIST</span>
   </div>
-  <div class="icon-card" onclick="openM('brainModal')">
+  <div class="icon-card" onclick="window.location.href='./ABST-BRAIN.html'">
     <div class="icon">🧠</div><span>ABST BRAIN</span>
   </div>
-  <div class="icon-card" onclick="openM('constitutionModal')">
+  <div class="icon-card" onclick="window.location.href='constitution.html'">
     <div class="icon">📜</div><span>CONSTITUTION</span>
   </div>
   <div class="icon-card" onclick="openM('licenseModal')">
@@ -158,7 +161,7 @@ input[type="file"]{display:none}
   <div class="icon-card" onclick="openM('readmeModal')">
     <div class="icon">📖</div><span>README.md</span>
   </div>
-  <div class="icon-card" onclick="openM('masterVisionModal')">
+  <div class="icon-card" onclick="window.open('https://drive.google.com/file/d/1u8xVrk7SHwpQIcROzPuRPsL1qajs_j0h/preview','_blank')">
     <div class="icon">🎬</div><span>MASTER VISION</span>
   </div>
   <div class="icon-card" onclick="openM('blueprintModal')">
@@ -176,6 +179,7 @@ input[type="file"]{display:none}
 <span onclick="closeM('profileModal')" class="modal-close">&times;</span>
 </div>
 <div class="modal-body" style="background:#112240;padding:20px 15px">
+
 <div class="photo-upload-wrapper">
 <img id="profile-photo-preview" src="icon-192.png" class="profile-photo-preview" alt="Profile Photo">
 <div class="photo-upload-btns">
@@ -185,20 +189,26 @@ input[type="file"]{display:none}
 <input type="file" id="inputProfileCamera" accept="image/*" capture="user">
 <input type="file" id="inputProfileGallery" accept="image/*">
 </div>
+
 <label class="profile-label">MASTER VISIONARY NAME</label>
 <input type="text" id="inputMasterName" class="profile-input" placeholder="RAM GANESH MAKINA">
+
 <label class="profile-label">SOVEREIGN ID CONFIG</label>
 <input type="text" id="inputSovereignID" class="profile-input" placeholder="INDIAN.001">
+
 <label class="profile-label">EMAIL ADDRESS</label>
 <input type="email" id="inputEmail" class="profile-input" placeholder="master@abst.com">
+
 <label class="profile-label">PHONE NUMBER</label>
 <input type="tel" id="inputPhone" class="profile-input" placeholder="+91 98765 43210">
+
 <label class="profile-label">BLOOD GROUP</label>
 <select id="inputBlood" class="profile-select">
   <option value="">Select Blood Group</option>
   <option value="A+">A+</option><option value="A-">A-</option><option value="B+">B+</option><option value="B-">B-</option>
   <option value="AB+">AB+</option><option value="AB-">AB-</option><option value="O+">O+</option><option value="O-">O-</option>
 </select>
+
 <label class="profile-label">DESIGNATION / ROLE</label>
 <select id="inputDesignation" class="profile-select">
   <option value="Chief Architect">Chief Architect</option>
@@ -208,111 +218,23 @@ input[type="file"]{display:none}
   <option value="Digital Security Head">Digital Security Head</option>
   <option value="Governance Lead">Governance Lead</option>
 </select>
+
 <label class="profile-label">MOTHER HUB LOCATION</label>
 <input type="text" id="inputLocation" class="profile-input" placeholder="Vizag Mother Hub">
+
 <label class="profile-label">SECURITY CLEARANCE LEVEL</label>
 <select id="inputSecurity" class="profile-select">
   <option value="7">Layer 7 - Core Access</option>
   <option value="8">Layer 8 - Command Access</option>
   <option value="9">Layer 9 - Sovereign Access</option>
 </select>
+
 <label class="profile-label">CUSTOM TAGLINE / BIO</label>
 <input type="text" id="inputBio" class="profile-input" placeholder="Building Tomorrow's Sovereign Cities">
-<p style="color:#8892b0;font-size:12px;line-height:1.5;margin:10px 0 0">Photo saves to device only. Profile data saved locally.</p>
+
+<p style="color:#8892b0;font-size:12px;line-height:1.5;margin:10px 0 0">Editing updates all screens instantly: Welcome Note, Main Page, Status. Data saves to device.</p>
 </div>
 <button onclick="saveProfileConfigurationData()" class="modal-btn-action" style="background:#5effde;color:#0a192f;font-size:16px">💾 SAVE & REFRESH RECOGNITION</button>
-</div>
-</div>
-
-<div id="jarvisModal" class="modal">
-<div class="modal-inner" style="max-width:500px;">
-<div class="modal-head"><h2 style="color:#64ffda;margin:0">🟢 JARVIS AI CORE</h2><span onclick="closeM('jarvisModal')" class="modal-close">&times;</span></div>
-<div class="modal-body" style="text-align:center;padding:40px 20px;">
-<div style="font-size:64px;margin-bottom:15px;">🤖</div>
-<p style="color:#64ffda;font-size:18px;font-weight:bold;">Jarvis AI Core v7.0</p>
-<p style="color:#8892b0;font-size:13px;line-height:1.6;">Security Layer 7 Active<br>Sovereign Network Monitoring<br>36 Pillar Integration Complete</p>
-<div style="margin-top:25px;padding:15px;background:#0a192f;border-radius:8px;border:1px solid #233554;">
-<p style="color:#ffd700;font-size:12px;">Status: OPERATIONAL</p>
-<p style="color:#64ffda;font-size:11px;">Uptime: 99.99% | Nodes: 36/36</p>
-</div>
-</div>
-<button onclick="closeM('jarvisModal')" class="modal-btn-action">CLOSE</button>
-</div>
-</div>
-
-<div id="investorModal" class="modal">
-<div class="modal-inner">
-<div class="modal-head"><h2 style="color:#64ffda;margin:0">📊 INVESTOR NOTE</h2><span onclick="closeM('investorModal')" class="modal-close">&times;</span></div>
-<div class="modal-body">
-<h1 style="color:#64ffda;text-align:left;font-size:22px">ABST Investor Summary</h1>
-<p><b>Project Valuation:</b> $2.4B USD | <b>ROI:</b> 340% over 5 years</p>
-<p><b>Sectors:</b> Energy, Water, Food, Housing, Education, Digital</p>
-<p><b>Master Visionary:</b> INDIAN.001 RAM GANESH MAKINA</p>
-<p><b>Status:</b> Phase 1 Operational | Mother Hub: Vizag</p>
-<p style="color:#8892b0;margin-top:20px;font-size:12px;">Full PDF: MyJeevandhara_Investor_Note.pdf</p>
-</div>
-<button onclick="closeM('investorModal')" class="modal-btn-action">CLOSE</button>
-</div>
-</div>
-
-<div id="dprTextModal" class="modal">
-<div class="modal-inner">
-<div class="modal-head"><h2 style="color:#64ffda;margin:0">📜 DPR FULL TEXT</h2><span onclick="closeM('dprTextModal')" class="modal-close">&times;</span></div>
-<div class="modal-body">
-<h1 style="color:#64ffda;text-align:left;font-size:22px">ABST DETAILED PROJECT REPORT</h1>
-<h2 style="color:#ffd700;text-align:left;font-size:16px">Version 2.0 - 2026</h2>
-<p><b>Sector I:</b> Energy & Industrial Core - Plasma, Solar, Moon-Ray, AWT systems integrated for total power independence.</p>
-<p><b>Sector II:</b> Water & Earth Sovereignty - AWG Plants, Dual-Ion Shield, Waste-to-Trash Command ensuring resource security.</p>
-<p><b>Sector III:</b> Infrastructure - Utility Tunnels, HDD Pipeline, Footstep Energy, Bio-Vault, Matru-Shakti Housing.</p>
-<p><b>Sector IV:</b> Social Capital - KG to PhD Education, Hospital, Bank, Food Malls, Simulation Game, Innovators Wall.</p>
-<p><b>Sector V:</b> Digital Nervous System - RVM Network, ID System, Transparency Hub, CCTV, Jarvis AI Core.</p>
-<p><b>Sector VI:</b> Governance - MD Agni-Pariksha Leadership Mandate for ethical sovereignty.</p>
-</div>
-<button onclick="closeM('dprTextModal')" class="modal-btn-action">CLOSE</button>
-</div>
-</div>
-
-<div id="liveFeedModal" class="modal">
-<div class="modal-inner">
-<div class="modal-head"><h2 style="color:#64ffda;margin:0">📡 LIVE FEED</h2><span onclick="closeM('liveFeedModal')" class="modal-close">&times;</span></div>
-<div class="modal-body" style="text-align:center;padding:40px 20px;">
-<div style="font-size:48px;margin-bottom:15px;">🛰️</div>
-<p style="color:#64ffda;font-size:16px;font-weight:bold;">Live Feed Integration</p>
-<p style="color:#8892b0;font-size:13px;">Connecting to Sovereign Satellite Network...</p>
-<p style="color:#ffd700;font-size:12px;margin-top:20px;">Jarvis AI Layer 7 | Real-time Monitoring Active</p>
-</div>
-<button onclick="closeM('liveFeedModal')" class="modal-btn-action">CLOSE</button>
-</div>
-</div>
-
-<div id="dprPdfModal" class="modal">
-<div class="modal-inner">
-<div class="modal-head"><h2 style="color:#64ffda;margin:0">📄 DPR PDF</h2><span onclick="closeM('dprPdfModal')" class="modal-close">&times;</span></div>
-<div class="modal-body" style="text-align:center;padding:40px 20px;">
-<div style="font-size:64px;margin-bottom:15px;">📄</div>
-<p style="color:#64ffda;font-size:18px;font-weight:bold;">Project_MJ_Detailed_Blueprint.pdf</p>
-<p style="color:#8892b0;font-size:13px;line-height:1.6;">Complete 36-Pillar DPR Document<br>456 Pages | 128MB</p>
-<button onclick="window.open('./Project_MJ_Detailed_Blueprint.pdf','_blank')" class="modal-btn-action" style="background:#ffd700;margin-top:25px;">📥 DOWNLOAD PDF</button>
-</div>
-<button onclick="closeM('dprPdfModal')" class="modal-btn-action">CLOSE</button>
-</div>
-</div>
-
-<div id="bookModal" class="modal">
-<div class="modal-inner">
-<div class="modal-head"><h2 style="color:#64ffda;margin:0">📚 36 PILLARS BOOK</h2><span onclick="closeM('bookModal')" class="modal-close">&times;</span></div>
-<div class="modal-body">
-<h1 style="color:#64ffda;text-align:left;font-size:22px">The 36 Pillars of Sovereign Township</h1>
-<h2 style="color:#ffd700;text-align:left;font-size:16px">By Master Visionary: INDIAN.001</h2>
-<p><b>Chapter 1:</b> Energy Independence - Plasma to Moon-Ray</p>
-<p><b>Chapter 2:</b> Water Security - Amrutavarsha AWG</p>
-<p><b>Chapter 3:</b> Food Sovereignty - Human Waste to Farming</p>
-<p><b>Chapter 4:</b> Infrastructure - Utility Tunnels & Walkways</p>
-<p><b>Chapter 5:</b> Education - KG to PhD Building</p>
-<p><b>Chapter 6:</b> Governance - Agni-Pariksha Mandate</p>
-<p style="color:#8892b0;margin-top:20px;font-size:12px;">Full book available in DPR PDF section</p>
-</div>
-<button onclick="closeM('bookModal')" class="modal-btn-action">CLOSE</button>
 </div>
 </div>
 
@@ -346,38 +268,6 @@ P36: MD Agni-Pariksha Leadership Mandate
 </div>
 </div>
 <button onclick="closeM('pillars36Modal')" class="modal-btn-action">🏠 BACK TO HOME</button>
-</div>
-</div>
-
-<div id="brainModal" class="modal">
-<div class="modal-inner">
-<div class="modal-head"><h2 style="color:#64ffda;margin:0">🧠 ABST BRAIN</h2><span onclick="closeM('brainModal')" class="modal-close">&times;</span></div>
-<div class="modal-body" style="text-align:center;padding:40px 20px;">
-<div style="font-size:64px;margin-bottom:15px;">🧠</div>
-<p style="color:#64ffda;font-size:18px;font-weight:bold;">Central Neural Network</p>
-<p style="color:#8892b0;font-size:13px;line-height:1.6;">AI-powered decision matrix<br>36-Pillar data integration<br>Real-time analytics & predictions</p>
-<div style="margin-top:25px;padding:15px;background:#0a192f;border-radius:8px;border:1px solid #233554;">
-<p style="color:#ffd700;font-size:12px;">Neural Nodes: 36 Active</p>
-<p style="color:#64ffda;font-size:11px;">Processing: 2.4 Petaflops</p>
-</div>
-</div>
-<button onclick="closeM('brainModal')" class="modal-btn-action">CLOSE</button>
-</div>
-</div>
-
-<div id="constitutionModal" class="modal">
-<div class="modal-inner">
-<div class="modal-head"><h2 style="color:#64ffda;margin:0">📜 ABST CONSTITUTION</h2><span onclick="closeM('constitutionModal')" class="modal-close">&times;</span></div>
-<div class="modal-body">
-<h1 style="color:#64ffda;text-align:left;font-size:22px">SOVEREIGN CONSTITUTION</h1>
-<h2 style="color:#ffd700;text-align:left;font-size:16px">Article I - Foundation</h2>
-<p>We, the sovereign citizens of ABST, establish this 36-Pillar ecosystem for total independence.</p>
-<h2 style="color:#ffd700;text-align:left;font-size:16px">Article II - Rights</h2>
-<p>Right to Energy, Water, Food, Shelter, Education, Healthcare - guaranteed by P1-P36.</p>
-<h2 style="color:#ffd700;text-align:left;font-size:16px">Article III - Governance</h2>
-<p>MD Agni-Pariksha Mandate ensures ethical leadership. Jarvis AI Core monitors transparency.</p>
-</div>
-<button onclick="closeM('constitutionModal')" class="modal-btn-action">CLOSE</button>
 </div>
 </div>
 
@@ -426,20 +316,8 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 <h3 style="color:#64ffda;margin-bottom:10px">🌙 MASTER PLAN - NIGHT VIEW</h3>
 <img id="nightImg" alt="ABST Master Plan Night Mode" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #FFD700;background:#112240;min-height:200px">
 </div>
+</div>
 <button onclick="closeM('dpr36Modal')" class="modal-btn-action">🏢 BACK TO HOME</button>
-</div>
-</div>
-
-<div id="masterVisionModal" class="modal">
-<div class="modal-inner">
-<div class="modal-head"><h2 style="color:#64ffda;margin:0">🎬 MASTER VISION</h2><span onclick="closeM('masterVisionModal')" class="modal-close">&times;</span></div>
-<div class="modal-body" style="text-align:center;padding:40px 20px;">
-<div style="font-size:64px;margin-bottom:15px;">🎬</div>
-<p style="color:#64ffda;font-size:18px;font-weight:bold;">ABST Master Vision Documentary</p>
-<p style="color:#8892b0;font-size:13px;line-height:1.6;">36-Pillar Ecosystem Vision<br>By Master Visionary: INDIAN.001</p>
-<button onclick="window.open('https://drive.google.com/file/d/1u8xVrk7SHwpQIcROzPuRPsL1qajs_j0h/preview','_blank')" class="modal-btn-action" style="background:#ffd700;margin-top:25px;">▶️ PLAY VIDEO</button>
-</div>
-<button onclick="closeM('masterVisionModal')" class="modal-btn-action">CLOSE</button>
 </div>
 </div>
 
@@ -476,7 +354,7 @@ function openM(id){
   if(!m) return;
   m.style.display='block';
   document.documentElement.classList.add('modal-open');
-
+  
   if(id==='dpr36Modal'){
     document.getElementById('modelImg').src='miniature-model.jpg';
     document.getElementById('dayImg').src='day-mode.jpg';
@@ -495,12 +373,12 @@ function closeM(id){
 function unlockDashboard() {
   var overlay = document.getElementById('abst-welcome-overlay');
   var cards = document.querySelectorAll('.icon-card');
-
+  
   if(overlay) {
     overlay.style.opacity = '0';
     overlay.style.transform = 'scale(1.1)';
     sessionStorage.setItem('dashboard_direct_unlock_token', 'true');
-
+    
     setTimeout(function(){
       overlay.style.display = 'none';
       cards.forEach((card, index) => {
@@ -523,40 +401,40 @@ function loadSavedIdentityData() {
   var storedEmail = localStorage.getItem('abst_email') || "";
   var storedPhone = localStorage.getItem('abst_phone') || "";
   var storedBlood = localStorage.getItem('abst_blood') || "";
-
+  
   var dashVision = document.getElementById('dash-visionary-display');
   if(dashVision) dashVision.innerText = "Master Visionary: " + storedID + " " + storedName;
-
+  
   var dashDesignation = document.getElementById('dash-designation-display');
   if(dashDesignation) dashDesignation.innerText = storedDesignation + " | " + storedLocation + " | Security Layer " + storedSecurity;
-
+  
   var dashStatus = document.getElementById('dash-status-string');
   if(dashStatus) dashStatus.innerHTML = "Status: Operational | Jarvis AI Core Layer " + storedSecurity + " | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
-
+  
   var mainSeal = document.getElementById('main-seal-img');
   if(mainSeal) mainSeal.src = "icon-192.png";
-
+  
   var dashBio = document.getElementById('dash-bio-display');
   if(dashBio) dashBio.innerText = storedBio;
-
+  
   var welcomeID = document.getElementById('welcome-id-display');
   if(welcomeID) welcomeID.innerText = storedID;
-
+  
   var welcomeName = document.getElementById('welcome-visionary-name');
   if(welcomeName) welcomeName.innerText = storedName;
-
+  
   var welcomeDesignation = document.getElementById('welcome-designation');
   if(welcomeDesignation) welcomeDesignation.innerText = storedDesignation;
-
+  
   var welcomeLocation = document.getElementById('welcome-location');
   if(welcomeLocation) welcomeLocation.innerText = storedLocation;
-
+  
   var welcomeSecurity = document.getElementById('welcome-security');
   if(welcomeSecurity) welcomeSecurity.innerText = storedSecurity;
-
+  
   var welcomeSeal = document.getElementById('welcome-seal-img');
   if(welcomeSeal) welcomeSeal.src = "icon-192.png";
-
+  
   var inputName = document.getElementById('inputMasterName');
   var inputID = document.getElementById('inputSovereignID');
   var inputDesig = document.getElementById('inputDesignation');
@@ -567,7 +445,7 @@ function loadSavedIdentityData() {
   var inputPhone = document.getElementById('inputPhone');
   var inputBlood = document.getElementById('inputBlood');
   var photoPreview = document.getElementById('profile-photo-preview');
-
+  
   if(inputName) inputName.value = storedName;
   if(inputID) inputID.value = storedID;
   if(inputDesig) inputDesig.value = storedDesignation;
@@ -668,10 +546,16 @@ window.addEventListener('DOMContentLoaded', function(){
   loadSavedIdentityData();
 
   if (sessionStorage.getItem('dashboard_direct_unlock_token') === 'true') {
-    if(overlay) overlay.style.display = 'none';
-    cards.forEach((card) => card.classList.add('swirl'));
+    if(overlay) {
+      overlay.style.display = 'none';
+    }
+    cards.forEach((card) => {
+      card.classList.add('swirl');
+    });
   } else {
-    if(overlay) overlay.style.display = 'flex';
+    if(overlay) {
+      overlay.style.display = 'flex';
+    }
   }
 
   if(window.matchMedia('(display-mode: standalone)').matches || localStorage.getItem('abst_installed') === 'true') {
@@ -690,8 +574,8 @@ document.addEventListener('keydown',function(e){
 
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
-.catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
+ .catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
 }
 </script>
 </body>
-    </html>
+</html>
