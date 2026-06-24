@@ -17,21 +17,12 @@ html.modal-open{overflow:hidden!important}
 body{margin:0;padding:0;background:#0a192f;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden;-webkit-text-size-adjust:100%}
 .container{max-width:600px;margin:0 auto;padding:30px 20px;position:relative}
 
-.menu-trigger {
-    position: absolute;
-    top: 25px;
-    left: 20px;
-    font-size: 28px;
-    color: #64ffda;
-    cursor: pointer;
-    z-index: 100;
-    transition: 0.2s;
-}
-.menu-trigger:active { transform: scale(0.9); }
+.menu-trigger{position:absolute;top:25px;left:20px;font-size:28px;color:#64ffda;cursor:pointer;z-index:100;transition:0.2s}
+.menu-trigger:active{transform:scale(0.9)}
 
 h1{color:#64ffda;font-size:28px;margin:0 5px 0;font-weight:bold;text-align:center}
 h3{color:#ffd700;font-size:14px;margin:0 8px 0;text-align:center}
-.tagline{color:#8892b0;font-size:13px;margin:0 0 5px 0;text-align:center}
+.tagline{color:#8892b0;font-size:13px;margin:0 5px 0;text-align:center}
 .visionary{color:#ffd700;font-size:12px;margin:0 5px 0;text-align:center;font-weight:bold}
 .designation{color:#64ffda;font-size:11px;margin:0 0 20px 0;text-align:center;font-style:italic;opacity:0.9}
 .status{color:#8892b0;font-size:11px;margin-top:25px;line-height:1.6;text-align:center}
@@ -46,148 +37,49 @@ img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border
 .modal-body ul{padding-left:20px}
 .modal-body p{margin-bottom:12px}
 
-.profile-label {
-    color:#8892b0;
-    display:block;
-    margin-bottom:8px;
-    font-weight:bold;
-    font-size:12px;
-    letter-spacing:1px;
-}
-.profile-input, .profile-select {
-    width: 100%;
-    padding: 14px;
-    background: #0a192f;
-    border: 1px solid #233554;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 15px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-.profile-input:focus, .profile-select:focus { border-color: #64ffda; outline: none; }
+.profile-label{color:#8892b0;display:block;margin-bottom:8px;font-weight:bold;font-size:12px;letter-spacing:1px}
+.profile-input,.profile-select{width:100%;padding:14px;background:#0a192f;border:1px solid #233554;border-radius:8px;color:#fff;font-size:15px;margin-bottom:20px;font-weight:bold}
+.profile-input:focus,.profile-select:focus{border-color:#64ffda;outline:none}
 
-.photo-upload-wrapper { text-align: center; margin-bottom: 25px; }
-.profile-photo-preview {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 3px solid #64ffda;
-    margin: 0 auto 15px;
-    display: block;
-    object-fit: cover;
-    box-shadow: 0 0 20px rgba(100,255,218,0.3);
-    cursor: pointer;
-    transition: 0.3s;
-}
-.profile-photo-preview:active { transform: scale(0.95); }
-.photo-upload-btns { display: flex; gap: 10px; justify-content: center; }
-.photo-btn {
-    flex: 1; padding: 10px; background: #112240; border: 1px solid #233554;
-    border-radius: 8px; color: #64ffda; font-size: 13px; font-weight: bold;
-    cursor: pointer; transition: 0.2s;
-}
-.photo-btn:active { background: #1a2f4a; transform: scale(0.97); }
-input[type="file"] { display: none; }
+.photo-upload-wrapper{text-align:center;margin-bottom:25px}
+.profile-photo-preview{width:100px;height:100px;border-radius:50%;border:3px solid #64ffda;margin:0 auto 15px;display:block;object-fit:cover;box-shadow:0 0 20px rgba(100,255,218,0.3);cursor:pointer;transition:0.3s}
+.profile-photo-preview:active{transform:scale(0.95)}
+.photo-upload-btns{display:flex;gap:10px;justify-content:center}
+.photo-btn{flex:1;padding:10px;background:#112240;border:1px solid #233554;border-radius:8px;color:#64ffda;font-size:13px;font-weight:bold;cursor:pointer;transition:0.2s}
+.photo-btn:active{background:#1a2f4a;transform:scale(0.97)}
+input[type="file"]{display:none}
 
-.modal-btn-action {
-    width: 100%;
-    margin-top: 20px;
-    background: #5effde;
-    color: #0a192f;
-    border: none;
-    border-radius: 8px;
-    padding: 14px;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-    text-align: center;
-    transition: 0.2s;
-}
-.modal-btn-action:active { transform: scale(0.98); background: #4cd4b7; }
+.modal-btn-action{width:100%;margin-top:20px;background:#5effde;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer;text-align:center;transition:0.2s}
+.modal-btn-action:active{transform:scale(0.98);background:#4cd4b7}
 
 #abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s ease;transform:scale(1)}
 .glow-welcome-text{color:#64ffda;font-size:32px;font-weight:bold;text-align:center;letter-spacing:3px;text-shadow:0 0 12px rgba(100,255,218,0.3);margin-bottom:10px}
 #abst-welcome-sub{color:#FFD700;font-size:16px;letter-spacing:4px;font-weight:bold;text-align:center;margin-bottom:15px}
-.welcome-note-text{
-    color:#8892b0;font-size:13px;text-align:center;max-width:400px;line-height:1.6;
-    margin:0 20px 20px;padding:15px;background:rgba(17,34,64,0.6);
-    border-radius:8px;border:1px solid #233554;
-}
+.welcome-note-text{color:#8892b0;font-size:13px;text-align:center;max-width:400px;line-height:1.6;margin:0 20px 20px;padding:15px;background:rgba(17,34,64,0.6);border-radius:8px;border:1px solid #233554}
 
-.droplet-gateway {
-    width: 140px;
-    height: 140px;
-    margin: 20px auto 25px;
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-.droplet-gateway img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 50%;
-    box-shadow: 0 0 25px rgba(100,255,218,0.4);
-    animation: floatDroplet 3s ease-in-out infinite;
-    min-width: 140px;
-    min-height: 140px;
-}
-.droplet-gateway::after {
-    content: '';
-    position: absolute;
-    top: -8px; left: -8px; right: -8px; bottom: -8px;
-    border-radius: 50%;
-    border: 2px dashed #64ffda;
-    opacity: 0.6;
-    animation: rotateRing 12s linear infinite;
-}
-.droplet-gateway:active { transform: scale(0.92); }
+.droplet-gateway{width:140px;height:140px;margin:20px auto 25px;position:relative;cursor:pointer;display:flex;justify-content:center;align-items:center;transition:transform 0.3s ease}
+.droplet-gateway img{width:100%;height:100%;object-fit:contain;border-radius:50%;box-shadow:0 0 25px rgba(100,255,218,0.4);animation:floatDroplet 3s ease-in-out infinite;min-width:140px;min-height:140px}
+.droplet-gateway::after{content:'';position:absolute;top:-8px;left:-8px;right:-8px;bottom:-8px;border-radius:50%;border:2px dashed #64ffda;opacity:0.6;animation:rotateRing 12s linear infinite}
+.droplet-gateway:active{transform:scale(0.92)}
 
-.touch-prompt {
-    color: #64ffda;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    animation: textBlink 1.5s ease-in-out infinite;
-    text-align: center;
-    cursor: pointer;
-}
+.touch-prompt{color:#64ffda;font-size:12px;letter-spacing:2px;font-weight:bold;animation:textBlink 1.5s ease-in-out infinite;text-align:center;cursor:pointer}
 
-@keyframes floatDroplet {
-    0%, 100% { transform: translateY(0); filter: drop-shadow(0 15px rgba(100,255,218,0.5)); }
-    50% { transform: translateY(-12px); filter: drop-shadow(0 25px rgba(100,255,218,0.8)); }
-}
-@keyframes rotateRing { 100% { transform: rotate(360deg); } }
-@keyframes textBlink { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; text-shadow: 0 0 8px #64ffda; } }
+@keyframes floatDroplet{0%,100%{transform:translateY(0);filter:drop-shadow(0 15px rgba(100,255,218,0.5))}50%{transform:translateY(-12px);filter:drop-shadow(0 25px rgba(100,255,218,0.8))}}
+@keyframes rotateRing{100%{transform:rotate(360deg)}}
+@keyframes textBlink{0%,100%{opacity:0.4}50%{opacity:1;text-shadow:0 0 8px #64ffda}}
 
 .icon-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 0 20px;max-width:100%;margin:20px auto 0}
-.icon-card{
-    background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;
-    opacity:0;transform:scale(0) rotate(0deg);
-    transition:transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, background 0.2s;
-}
-.icon-card.show{
-    opacity:1;transform:scale(1) rotate(0deg);
-}
+.icon-card{background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;opacity:0;transform:scale(0) rotate(0deg);transition:transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, background 0.2s}
+.icon-card.show{opacity:1;transform:scale(1) rotate(0deg)}
 .icon-card:active{background:#1a2f4a;transform:scale(0.85) rotate(360deg);border-color:#64ffda}
 .icon-card.jarvis{border-color:#64ffda;box-shadow:0 0 20px rgba(100,255,218,0.1)}
-.icon-card.install-btn-node{border-color:#ffd700;box-shadow:0 0 15px rgba(255,215,0,0.2);display:none} 
+.icon-card.install-btn-node{border-color:#ffd700;box-shadow:0 0 15px rgba(255,215,0,0.2);display:none}
 .icon-card .icon{font-size:1.8rem;margin-bottom:5px;transition:transform 0.3s ease}
 .icon-card:active .icon{transform:scale(1.2)}
 .icon-card span{color:#64ffda;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;display:block}
 
-@keyframes swirlIn {
-  0% {opacity:0; transform:scale(0) rotate(-720deg);}
-  70% {opacity:1; transform:scale(1.1) rotate(20deg);}
-  100% {opacity:1; transform:scale(1) rotate(0deg);}
-}
-.icon-card.swirl{
-  animation:swirlIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-}
+@keyframes swirlIn{0%{opacity:0;transform:scale(0) rotate(-720deg)}70%{opacity:1;transform:scale(1.1) rotate(20deg)}100%{opacity:1;transform:scale(1) rotate(0deg)}}
+.icon-card.swirl{animation:swirlIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards}
 
 @media (max-width:480px){
   .modal-body{font-size:12px;padding:20px 20px 30px 20px;line-height:1.7}
@@ -203,18 +95,15 @@ input[type="file"] { display: none; }
 <div id="abst-welcome-overlay">
   <div class="glow-welcome-text">WELCOME TO ABST</div>
   <div id="abst-welcome-sub">SOVEREIGN ID: <span id="welcome-id-display">INDIAN.001</span></div>
-  
   <div class="welcome-note-text">
     Akanda Bharat Sovereign Township - A 36-Pillar Ecosystem of Total Independence.<br>
     <b style="color:#64ffda">Master Visionary: <span id="welcome-visionary-name">RAM GANESH MAKINA</span></b><br>
     <span id="welcome-designation">Chief Architect</span> | <span id="welcome-location">Vizag Mother Hub</span><br>
     Jarvis AI Core Security Layer <span id="welcome-security">7</span> Activated
   </div>
-  
   <div class="droplet-gateway" id="seal-btn">
     <img id="welcome-seal-img" src="icon-192.png" alt="ABST Security Seal Node">
   </div>
-  
   <div class="touch-prompt" id="touch-btn">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
   <div style="color:#8892b0;font-size:11px;margin-top:30px;letter-spacing:1px;opacity:0.6">Jarvis AI Security Layer 7 Network Secured</div>
 </div>
@@ -287,7 +176,6 @@ input[type="file"] { display: none; }
 <span onclick="closeM('profileModal')" class="modal-close">&times;</span>
 </div>
 <div class="modal-body" style="background:#112240;padding:20px 15px">
-
 <div class="photo-upload-wrapper">
 <img id="profile-photo-preview" src="icon-192.png" class="profile-photo-preview" alt="Profile Photo">
 <div class="photo-upload-btns">
@@ -297,32 +185,20 @@ input[type="file"] { display: none; }
 <input type="file" id="inputProfileCamera" accept="image/*" capture="user">
 <input type="file" id="inputProfileGallery" accept="image/*">
 </div>
-
 <label class="profile-label">MASTER VISIONARY NAME</label>
 <input type="text" id="inputMasterName" class="profile-input" placeholder="RAM GANESH MAKINA">
-
 <label class="profile-label">SOVEREIGN ID CONFIG</label>
 <input type="text" id="inputSovereignID" class="profile-input" placeholder="INDIAN.001">
-
 <label class="profile-label">EMAIL ADDRESS</label>
 <input type="email" id="inputEmail" class="profile-input" placeholder="master@abst.com">
-
 <label class="profile-label">PHONE NUMBER</label>
 <input type="tel" id="inputPhone" class="profile-input" placeholder="+91 98765 43210">
-
 <label class="profile-label">BLOOD GROUP</label>
 <select id="inputBlood" class="profile-select">
   <option value="">Select Blood Group</option>
-  <option value="A+">A+</option>
-  <option value="A-">A-</option>
-  <option value="B+">B+</option>
-  <option value="B-">B-</option>
-  <option value="AB+">AB+</option>
-  <option value="AB-">AB-</option>
-  <option value="O+">O+</option>
-  <option value="O-">O-</option>
+  <option value="A+">A+</option><option value="A-">A-</option><option value="B+">B+</option><option value="B-">B-</option>
+  <option value="AB+">AB+</option><option value="AB-">AB-</option><option value="O+">O+</option><option value="O-">O-</option>
 </select>
-
 <label class="profile-label">DESIGNATION / ROLE</label>
 <select id="inputDesignation" class="profile-select">
   <option value="Chief Architect">Chief Architect</option>
@@ -332,20 +208,16 @@ input[type="file"] { display: none; }
   <option value="Digital Security Head">Digital Security Head</option>
   <option value="Governance Lead">Governance Lead</option>
 </select>
-
 <label class="profile-label">MOTHER HUB LOCATION</label>
 <input type="text" id="inputLocation" class="profile-input" placeholder="Vizag Mother Hub">
-
 <label class="profile-label">SECURITY CLEARANCE LEVEL</label>
 <select id="inputSecurity" class="profile-select">
   <option value="7">Layer 7 - Core Access</option>
   <option value="8">Layer 8 - Command Access</option>
   <option value="9">Layer 9 - Sovereign Access</option>
 </select>
-
 <label class="profile-label">CUSTOM TAGLINE / BIO</label>
 <input type="text" id="inputBio" class="profile-input" placeholder="Building Tomorrow's Sovereign Cities">
-
 <p style="color:#8892b0;font-size:12px;line-height:1.5;margin:10px 0 0">Photo saves to device only. Profile data saved locally.</p>
 </div>
 <button onclick="saveProfileConfigurationData()" class="modal-btn-action" style="background:#5effde;color:#0a192f;font-size:16px">💾 SAVE & REFRESH RECOGNITION</button>
@@ -381,6 +253,7 @@ input[type="file"] { display: none; }
 </div>
 <button onclick="closeM('investorModal')" class="modal-btn-action">CLOSE</button>
 </div>
+</div>
 
 <div id="dprTextModal" class="modal">
 <div class="modal-inner">
@@ -410,6 +283,7 @@ input[type="file"] { display: none; }
 </div>
 <button onclick="closeM('liveFeedModal')" class="modal-btn-action">CLOSE</button>
 </div>
+</div>
 
 <div id="dprPdfModal" class="modal">
 <div class="modal-inner">
@@ -421,6 +295,7 @@ input[type="file"] { display: none; }
 <button onclick="window.open('./Project_MJ_Detailed_Blueprint.pdf','_blank')" class="modal-btn-action" style="background:#ffd700;margin-top:25px;">📥 DOWNLOAD PDF</button>
 </div>
 <button onclick="closeM('dprPdfModal')" class="modal-btn-action">CLOSE</button>
+</div>
 </div>
 
 <div id="bookModal" class="modal">
@@ -438,6 +313,7 @@ input[type="file"] { display: none; }
 <p style="color:#8892b0;margin-top:20px;font-size:12px;">Full book available in DPR PDF section</p>
 </div>
 <button onclick="closeM('bookModal')" class="modal-btn-action">CLOSE</button>
+</div>
 </div>
 
 <div id="pillars36Modal" class="modal">
@@ -471,6 +347,7 @@ P36: MD Agni-Pariksha Leadership Mandate
 </div>
 <button onclick="closeM('pillars36Modal')" class="modal-btn-action">🏠 BACK TO HOME</button>
 </div>
+</div>
 
 <div id="brainModal" class="modal">
 <div class="modal-inner">
@@ -482,6 +359,7 @@ P36: MD Agni-Pariksha Leadership Mandate
 <div style="margin-top:25px;padding:15px;background:#0a192f;border-radius:8px;border:1px solid #233554;">
 <p style="color:#ffd700;font-size:12px;">Neural Nodes: 36 Active</p>
 <p style="color:#64ffda;font-size:11px;">Processing: 2.4 Petaflops</p>
+</div>
 </div>
 <button onclick="closeM('brainModal')" class="modal-btn-action">CLOSE</button>
 </div>
@@ -517,6 +395,7 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 <button onclick="closeM('licenseModal')" class="modal-btn-action">CLOSE</button>
 </div>
+</div>
 
 <div id="readmeModal" class="modal">
 <div class="modal-inner">
@@ -530,6 +409,7 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 <b>Security:</b> Jarvis AI Core Layer 7
 </div>
 <button onclick="closeM('readmeModal')" class="modal-btn-action">CLOSE</button>
+</div>
 </div>
 
 <div id="dpr36Modal" class="modal">
@@ -547,6 +427,7 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 <img id="nightImg" alt="ABST Master Plan Night Mode" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #FFD700;background:#112240;min-height:200px">
 </div>
 <button onclick="closeM('dpr36Modal')" class="modal-btn-action">🏢 BACK TO HOME</button>
+</div>
 </div>
 
 <div id="masterVisionModal" class="modal">
@@ -582,6 +463,7 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 <h4>STEP 10: MD AGNI-PARIKSHA LEADERSHIP MANDATE</h4><p>Final systemic structural protocol forcing local state operational management heads into raw rural deployment checkouts.</p>
 </div>
 <button onclick="closeM('blueprintModal')" class="modal-btn-action" style="background:#ffd700;">🏢 CLOSE & RETURN</button>
+</div>
 </div>
 
 <script>
@@ -812,5 +694,4 @@ if('serviceWorker' in navigator){
 }
 </script>
 </body>
-</html>
-
+    </html>
