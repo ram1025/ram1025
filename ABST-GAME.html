@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABST GAME | P24 | INDIAN.001</title>
+  <meta name="theme-color" content="#ff00aa">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { 
+      background:#0a0a2f; 
+      color:#ff00aa; 
+      font-family:system-ui,-apple-system,sans-serif; 
+      padding:20px; 
+      text-align:center; 
+      min-height:100vh 
+    }
+   .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
+   .header h1 { font-size:34px; text-shadow:0 0 15px #ff00aa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
+   .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
+   .back-btn { position:absolute; left:0; top:5px; background:#1a1a32; color:#ff00aa; border:1px solid #ff00aa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
+   .game-area { 
+     background:linear-gradient(145deg,#1a1a32,#0f0f23); 
+     padding:35px; 
+     border-radius:24px; 
+     border:2px solid #ff00aa; 
+     min-height:400px; 
+     margin:20px auto; 
+     max-width:600px; 
+     box-shadow:0 0 40px #ff00aa20; 
+     position:relative;
+   }
+   .score-board { display:flex; justify-content:space-around; margin:20px auto; max-width:600px; background:#1a1a32; padding:15px; border-radius:16px; border:1px solid #ff00aa40 }
+   .score-board b { color:#fff; font-size:24px; display:block; margin-top:5px }
+   .btn { background:#ff00aa; color:#0a0a2f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer; transition:all 0.2s }
+   .btn:hover { transform:scale(1.05); box-shadow:0 0 20px #ff00aa80 }
+   .btn-start { background:#00ffaa; color:#0a0a2f }
+   .target { 
+     width:80px; height:80px; 
+     background:#ff00aa; 
+     border-radius:50%; 
+     position:absolute; 
+     cursor:pointer; 
+     box-shadow:0 0 30px #ff00aa; 
+     animation:pulse 0.5s infinite;
+     display:none;
+   }
+   @keyframes pulse {
+     0%,100% { transform:scale(1); }
+     50% { transform:scale(1.1); }
+   }
+   .timer-display { font-size:48px; font-weight:900; color:#ffaa00; text-shadow:0 0 20px #ffaa00; margin:20px 0 }
+   .footer { margin-top:50px; font-size:12px; opacity:0.6 }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <button class="back-btn" onclick="window.location.href='./index.html'">← CLOSE</button>
+    <h1>ABST GAME</h1>
+    <p>SOVEREIGN ID: INDIAN.001 | MIND SPEED TEST</p>
+  </div>
+
+  <div class="score-board">
+    <div>Score<b id="score">0</b></div>
+    <div>High Score<b id="highScore">0</b></div>
+    <div>Level<b id="level">1</b></div>
+  </div>
+
+  <div class="game-area" id="gameArea">
+    <div class="timer-display" id="timerDisplay">Ready?</div>
+    <button class="btn btn-start" id="startBtn">START GAME</button>
+    <div class="target" id="target"></div>
+  </div>
+
+  <div class="footer">ABST P24 Civilization OS | Reaction Speed Training</div>
+
+  <script>
+    let score = 0;
+    let highScore = parseInt(localStorage.getItem('abst_game_high') || '0');
+    let level = 1;
+    let timeLeft = 30;
+    let gameTimer = null;
+    let targetTimer = null;
+    let gameActive = false;
+
+    document.getElementById('highScore').innerText = highScore;
+
+    function startGame() {
+      score = 0;
+      level = 1;
+      timeLeft = 30;
+      gameActive = true;
+      document.getElementById('score').innerText = score;
+      document.getElementById('level').innerText = level;
+      document.getElementById('startBtn').style.display = 'none';
+      updateTimer();
+      spawnTarget();
+      
+      gameTimer = setInterval(() => {
+        timeLeft--;
+        updateTimer();
+        if(timeLeft <= 0) endGame();
+      }, 1000);
+    }
+
+    function updateTimer() {
+      document.getElementById('timerDisplay').innerText = timeLeft + 's';
+    }
+
+    function spawnTarget() {
+      if(!gameActive) return;
+      const target = document.getElementById('target');
+      const gameArea = document.getElementById('gameArea');
+      const maxX = gameArea.offsetWidth - 80;
+      const maxY = gameArea.offsetHeight - 80;
+      
+      target.style.left = Math.random() * maxX + 'px';
+      target.style.top = Math.random() * maxY + 'px';
+      target.style.display = 'block';
+      
+      const speed = Math.max(800 - (level * 50), 300);
+      
+      clearTimeout(targetTimer);
+      targetTimer = setTimeout(() => {
+        if(gameActive) {
+          target.style.display = 'none';
+          setTimeout(spawnTarget, 200);
+        }
+      }, speed);
+    }
+
+    document.getElementById('target').onclick = () => {
+      if(!gameActive) return;
+      score += level;
+      document.getElementById('score').innerText = score;
+      
+      if(score % 10 === 0) {
+        level++;
+        document.getElementById('level').innerText = level;
+      }
+      
+      document.getElementById('target').style.display = 'none';
+      spawnTarget();
+    };
+
+    function endGame() {
+      gameActive = false;
+      clearInterval(gameTimer);
+      clearTimeout(targetTimer);
+      document.getElementById('target').style.display = 'none';
+      document.getElementById('timerDisplay').innerText = 'Game Over!';
+      document.getElementById('startBtn').style.display = 'block';
+      document.getElementById('startBtn').innerText = 'PLAY AGAIN';
+      
+      if(score > highScore) {
+        highScore = score;
+        localStorage.setItem('abst_game_high', highScore);
+        document.getElementById('highScore').innerText = highScore;
+        alert('🎉 New High Score: ' + score);
+      }
+    }
+
+    document.getElementById('startBtn').onclick = startGame;
+  </script>
+</body>
+</html>
