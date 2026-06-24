@@ -322,14 +322,16 @@
       nextWisdom();
     }
 
-    function nextWisdom() {
-      const idx = Math.floor(Math.random() * wisdomData.length);
-      currentWisdom = wisdomData;
-      document.getElementById('wisdomText').innerText = currentWisdom.q;
-      document.getElementById('wisdomInput').value = '';
-      document.getElementById('wisdomInput').focus();
-      document.getElementById('wisdomFeedback').innerText = '';
-    }
+   function nextWisdom() {
+  const idx = Math.floor(Math.random() * wisdomData.length);
+  currentWisdom = wisdomData[idx]; // FIXED
+  document.getElementById('wisdomText').innerText = currentWisdom.q;
+  document.getElementById('wisdomInput').value = '';
+  document.getElementById('wisdomInput').style.display = 'block';
+  document.getElementById('wisdomInput').focus();
+  document.getElementById('wisdomFeedback').innerText = '';
+  document.getElementById('wisdomBtn').style.display = 'none';
+}
 
     document.getElementById('wisdomBtn').onclick = startWisdomGame;
     document.getElementById('wisdomInput').addEventListener('keypress', e => {
