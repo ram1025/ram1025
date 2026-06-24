@@ -4,20 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABST GAME | P24 | INDIAN.001</title>
-  <meta name="theme-color" content="#ff00aa">
   <style>
     * { margin:0; padding:0; box-sizing:border-box }
-    html { scroll-behavior: smooth; font-size: 16px; }
-    body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,-apple-system,sans-serif; padding:20px; text-align:center; min-height:100vh; transition: all 0.5s; }
-    .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
-    .header h1 { font-size:34px; text-shadow:0 0 15px currentColor; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
-    .game-toggle { background:#112240; border:1px solid currentColor; padding:10px; border-radius:10px; margin:15px auto; max-width:600px; display:flex; justify-content:center; gap:10px; flex-wrap:wrap }
+    body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif; padding:20px; text-align:center; min-height:100vh; }
+    .header { margin-bottom:20px }
+    .header h1 { font-size:34px; text-shadow:0 0 15px currentColor; letter-spacing:2px }
+    .game-toggle { background:#112240; border:1px solid currentColor; padding:10px; border-radius:10px; margin:15px auto; max-width:600px; display:flex; justify-content:center; gap:10px }
     .mode-btn { background:#1a1a32; color:#8892b0; border:none; padding:8px 16px; border-radius:8px; cursor:pointer; font-weight:700; font-size:12px }
     .mode-btn.active { background:currentColor; color:#0a0a2f }
-    .game-area { background:linear-gradient(145deg,#1a1a32,#0f0f23); padding:35px; border-radius:24px; border:2px solid currentColor; min-height:450px; margin:20px auto; max-width:600px; box-shadow:0 0 40px currentColor20; position:relative; overflow:hidden; }
-    .score-board { display:flex; justify-content:space-around; margin:20px auto; max-width:600px; background:#1a1a32; padding:15px; border-radius:16px; border:1px solid currentColor40 }
+    .game-area { background:linear-gradient(145deg,#1a1a32,#0f0f23); padding:35px; border-radius:24px; border:2px solid currentColor; min-height:450px; margin:20px auto; max-width:600px; position:relative; overflow:hidden; }
+    .score-board { display:flex; justify-content:space-around; margin:20px auto; max-width:600px; background:#1a1a32; padding:15px; border-radius:16px }
     .score-board b { color:#fff; font-size:24px; display:block; margin-top:5px }
-    .target { position:absolute; cursor:pointer; box-shadow:0 0 30px currentColor; display:none; transition: all 0.3s; display:flex; align-items:center; justify-content:center; font-weight:900; color:#0a0a2f; z-index:5; }
+    .level-info { background:#00000040; padding:12px; border-radius:12px; margin:15px auto; max-width:600px }
+    .level-info span { color:#ffaa00; font-weight:900 }
+    .btn { background:currentColor; color:#0a0a2f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer }
+    .target { position:absolute; cursor:pointer; box-shadow:0 0 30px currentColor; display:none; display:flex; align-items:center; justify-content:center; font-weight:900; color:#fff; z-index:5; border-radius:50%; text-shadow:0 0 10px #000; }
+    .timer-display { font-size:48px; font-weight:900; color:#ffaa00; text-shadow:0 0 20px #ffaa00; margin:20px 0 }
+    .scramble-word { font-size:42px; font-weight:900; letter-spacing:8px; color:#fff; margin:25px 0 }
+    .scramble-hint { color:#ffaa00; font-size:16px; margin:10px 0; min-height:40px }
+    .wisdom-text { font-size:20px; line-height:1.6; color:#fff; margin:20px 0; padding:20px; background:#00000040; border-radius:12px }
+    .answer-input { width:100%; padding:14px; background:#0a0a2f; border:2px solid currentColor; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
+    .feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
     @keyframes pulse { 0%,100% { transform:scale(1); } 50% { transform:scale(1.1); } }
   </style>
 </head>
@@ -36,59 +43,461 @@
     <div>Hints<b id="hintCount">10</b></div>
     <div>Level<b id="level">1</b></div>
   </div>
+  <div class="level-info" id="levelInfo">
+    <div>Target: <span id="targetScore">50</span> | Time: <span id="targetTime">30s</span></div>
+  </div>
   <div class="game-area" id="gameArea">
     <div id="speedGame">
+      <div class="timer-display" id="timerDisplay">Ready?</div>
       <div class="target" id="target"></div>
-      <button class="btn btn-start" id="startBtn">START GAME</button>
+      <button class="btn" id="startBtn">START GAME</button>
     </div>
     <div id="scrambleGame" style="display:none">
-      <div id="scrambleWord"></div>
-      <input id="scrambleInput">
-      <button id="scrambleBtn">Submit</button>
+      <div class="scramble-word" id="scrambleWord">READY?</div>
+      <div class="scramble-hint" id="scrambleHint">Unscramble the word</div>
+      <input class="answer-input" id="scrambleInput" placeholder="Type answer..." style="display:none">
+      <div class="feedback-msg" id="scrambleFeedback"></div>
+      <button class="btn" id="scrambleStartBtn">START SCRAMBLE</button>
+      <button class="btn" id="hintBtn" style="display:none">Use Hint (-1)</button>
     </div>
     <div id="wisdomGame" style="display:none">
-      <div id="wisdomQ"></div>
-      <input id="wisdomInput">
-      <button id="wisdomBtn">Submit</button>
+      <div class="wisdom-text" id="wisdomText">Ready for Wisdom?</div>
+      <input class="answer-input" id="wisdomInput" placeholder="Your answer..." style="display:none">
+      <div class="feedback-msg" id="wisdomFeedback"></div>
+      <button class="btn" id="wisdomStartBtn">START WISDOM</button>
+      <button class="btn" id="wisdomHintBtn" style="display:none">Use Hint (-1)</button>
     </div>
   </div>
-
   <script>
-    let score = 0, level = 1, hints = 10, gameActive = false;
-    let currentTarget = null, gameTimer = null, timeLeft = 30;
-    const levelConfig = {
-      speed: [
-        {shape:'🟢', color:'#ff0000', size:80, time:30}, // CIRCLE
-        {shape:'🔵', color:'#0000ff', size:80, time:28}, // SQUARE
-        {shape:'🔺', color:'#ffff00', size:80, time:26}, // TRIANGLE
-        {shape:'⭐', color:'#ff69b4', size:80, time:24}, // STAR
-        {shape:'💎', color:'#00ff00', size:80, time:22}, // DIAMOND
-        {shape:'A', color:'#ffa500', size:60, time:20}, // A
-        {shape:'❤', color:'#ff0000', size:80, time:20}, // HEART
-        {shape:'B', color:'#00ffff', size:60, time:18}, // B
-        {shape:'2', color:'#ff00ff', size:60, time:18}, // 2
-        {shape:'∞', color:'#ffd700', size:80, time:16}, // INFINITY
-        // ... add levels 11-60
-      ],
-      scramble: {
-        1: {difficulty:'easy', time:60, target:50},
-        2: {difficulty:'medium', time:45, target:100},
-        3: {difficulty:'hard', time:30, target:150},
-      },
-      wisdom: [
-        {q:"What has keys but can't open locks?", a:"piano", hint:"You can play it"},
-        {q:"What starts with E, ends with E, but only contains one letter?", a:"envelope", hint:"You can send it"},
-        // ... 28 more
-      ]
-    };
+let score = 0, level = 1, hints = 10, gameActive = false, currentMode = 'speed';
+let currentTarget = null, gameTimer = null, timeLeft = 30;
+let wisdomCorrectCount = 0, wisdomAsked = [], currentWisdom = null;
+let scrambleScore = 0, scrambleAsked = [], currentScramble = null;
 
-    document.getElementById('startBtn').onclick = startSpeedGame;
-    document.getElementById('scrambleMode').onclick = startScrambleGame;
-    document.getElementById('wisdomMode').onclick = startWisdomGame;
+// SPEED GAME: 60 LEVELS - 10 shapes + 26 alphabets + 20 numbers = 56. Adding 4 bonus for 60
+const speedLevels = [
+  // 1-10: SHAPES - BIG & COLORFUL for kids
+  {shape:'●', name:'CIRCLE', color:'#ff0000', size:120, time:30, target:50}, // Red
+  {shape:'■', name:'SQUARE', color:'#0000ff', size:120, time:28, target:55}, // Blue  
+  {shape:'▲', name:'TRIANGLE', color:'#ffff00', size:120, time:26, target:60}, // Yellow
+  {shape:'★', name:'STAR', color:'#ff69b4', size:120, time:24, target:65}, // Pink
+  {shape:'◆', name:'DIAMOND', color:'#00ff00', size:120, time:22, target:70}, // Green
+  {shape:'⬡', name:'HEXAGON', color:'#ffa500', size:120, time:22, target:75}, // Orange
+  {shape:'♥', name:'HEART', color:'#ff0000', size:120, time:20, target:80}, // Red
+  {shape:'⬣', name:'OCTAGON', color:'#00ffff', size:120, time:20, target:85}, // Cyan
+  {shape:'⬟', name:'PENTAGON', color:'#ff00ff', size:120, time:18, target:90}, // Magenta
+  {shape:'∞', name:'INFINITY', color:'#ffd700', size:120, time:18, target:95}, // Gold
+  // 11-36: ALPHABETS A-Z - COLORFUL
+  {shape:'A', name:'ALPHABET A', color:'#ff4757', size:100, time:16, target:100},
+  {shape:'B', name:'ALPHABET B', color:'#5352ed', size:100, time:16, target:105},
+  {shape:'C', name:'ALPHABET C', color:'#2ed573', size:100, time:15, target:110},
+  {shape:'D', name:'ALPHABET D', color:'#ffa502', size:100, time:15, target:115},
+  {shape:'E', name:'ALPHABET E', color:'#ff6348', size:100, time:15, target:120},
+  {shape:'F', name:'ALPHABET F', color:'#1e90ff', size:100, time:15, target:125},
+  {shape:'G', name:'ALPHABET G', color:'#32ff7e', size:100, time:15, target:130},
+  {shape:'H', name:'ALPHABET H', color:'#ff3838', size:100, time:14, target:135},
+  {shape:'I', name:'ALPHABET I', color:'#7d5fff', size:100, time:14, target:140},
+  {shape:'J', name:'ALPHABET J', color:'#18dcff', size:100, time:14, target:145},
+  {shape:'K', name:'ALPHABET K', color:'#ff9f1a', size:100, time:14, target:150},
+  {shape:'L', name:'ALPHABET L', color:'#3ae374', size:100, time:14, target:155},
+  {shape:'M', name:'ALPHABET M', color:'#ff5e57', size:100, time:13, target:160},
+  {shape:'N', name:'ALPHABET N', color:'#5758bb', size:100, time:13, target:165},
+  {shape:'O', name:'ALPHABET O', color:'#17c0eb', size:100, time:13, target:170},
+  {shape:'P', name:'ALPHABET P', color:'#ffda79', size:100, time:13, target:175},
+  {shape:'Q', name:'ALPHABET Q', color:'#7158e2', size:100, time:13, target:180},
+  {shape:'R', name:'ALPHABET R', color:'#3d3d3d', size:100, time:12, target:185},
+  {shape:'S', name:'ALPHABET S', color:'#ff3838', size:100, time:12, target:190},
+  {shape:'T', name:'ALPHABET T', color:'#17c0eb', size:100, time:12, target:195},
+  {shape:'U', name:'ALPHABET U', color:'#3ae374', size:100, time:12, target:200},
+  {shape:'V', name:'ALPHABET V', color:'#ff9f1a', size:100, time:12, target:205},
+  {shape:'W', name:'ALPHABET W', color:'#7d5fff', size:100, time:11, target:210},
+  {shape:'X', name:'ALPHABET X', color:'#ff6348', size:100, time:11, target:215},
+  {shape:'Y', name:'ALPHABET Y', color:'#2ed573', size:100, time:11, target:220},
+  {shape:'Z', name:'ALPHABET Z', color:'#5352ed', size:100, time:11, target:225},
+  // 37-56: NUMBERS 1-20 - COLORFUL  
+  {shape:'1', name:'NUMBER 1', color:'#ff4757', size:100, time:11, target:230},
+  {shape:'2', name:'NUMBER 2', color:'#5352ed', size:100, time:11, target:235},
+  {shape:'3', name:'NUMBER 3', color:'#2ed573', size:100, time:10, target:240},
+  {shape:'4', name:'NUMBER 4', color:'#ffa502', size:100, time:10, target:245},
+  {shape:'5', name:'NUMBER 5', color:'#ff6348', size:100, time:10, target:250},
+  {shape:'6', name:'NUMBER 6', color:'#1e90ff', size:100, time:10, target:255},
+  {shape:'7', name:'NUMBER 7', color:'#32ff7e', size:100, time:10, target:260},
+  {shape:'8', name:'NUMBER 8', color:'#ff3838', size:100, time:9, target:265},
+  {shape:'9', name:'NUMBER 9', color:'#7d5fff', size:100, time:9, target:270},
+  {shape:'10', name:'NUMBER 10', color:'#18dcff', size:100, time:9, target:275},
+  {shape:'11', name:'NUMBER 11', color:'#ff9f1a', size:100, time:9, target:280},
+  {shape:'12', name:'NUMBER 12', color:'#3ae374', size:100, time:9, target:285},
+  {shape:'13', name:'NUMBER 13', color:'#ff5e57', size:100, time:8, target:290},
+  {shape:'14', name:'NUMBER 14', color:'#5758bb', size:100, time:8, target:295},
+  {shape:'15', name:'NUMBER 15', color:'#17c0eb', size:100, time:8, target:300},
+  {shape:'16', name:'NUMBER 16', color:'#ffda79', size:100, time:8, target:305},
+  {shape:'17', name:'NUMBER 17', color:'#7158e2', size:100, time:8, target:310},
+  {shape:'18', name:'NUMBER 18', color:'#3d3d3d', size:100, time:7, target:315},
+  {shape:'19', name:'NUMBER 19', color:'#ff3838', size:100, time:7, target:320},
+  {shape:'20', name:'NUMBER 20', color:'#17c0eb', size:100, time:7, target:325},
+  // 57-60: BONUS MIXED
+  {shape:'⚡', name:'LIGHTNING', color:'#ffff00', size:120, time:7, target:330},
+  {shape:'☀', name:'SUN', color:'#ffa500', size:120, time:6, target:335},
+  {shape:'☾', name:'MOON', color:'#c0c0c0', size:120, time:6, target:340},
+  {shape:'⚜', name:'ROYAL', color:'#ffd700', size:120, time:5, target:350}
+];
 
-    function startSpeedGame() { /* logic */ }
-    function startScrambleGame() { /* logic */ }
-    function startWisdomGame() { /* logic */ }
-  </script>
+// SCRAMBLE: 50+ WORDS - KIDS TO ADULTS
+const scrambleWords = [
+  // Easy - 3-4 letters
+  {word:'CAT', hint:'A pet that says meow'},
+  {word:'DOG', hint:'A loyal pet'},
+  {word:'SUN', hint:'Bright in the sky'},
+  {word:'CAR', hint:'You drive it'},
+  {word:'BALL', hint:'Round toy'},
+  {word:'BOOK', hint:'You read it'},
+  {word:'TREE', hint:'Has leaves'},
+  {word:'FISH', hint:'Lives in water'},
+  {word:'STAR', hint:'Twinkles at night'},
+  {word:'CAKE', hint:'Birthday dessert'},
+  // Medium - 5-6 letters
+  {word:'APPLE', hint:'Keeps doctor away'},
+  {word:'TIGER', hint:'Striped big cat'},
+  {word:'HOUSE', hint:'You live in it'},
+  {word:'WATER', hint:'You drink it'},
+  {word:'MOUSE', hint:'Computer or animal'},
+  {word:'PHONE', hint:'You call with it'},
+  {word:'SCHOOL', hint:'Kids study here'},
+  {word:'FLOWER', hint:'Smells good'},
+  {word:'PLANET', hint:'Earth is one'},
+  {word:'FRIEND', hint:'Someone you like'},
+  {word:'MARKET', hint:'Buy things here'},
+  {word:'BRIDGE', hint:'Cross a river'},
+  {word:'CASTLE', hint:'Kings lived here'},
+  {word:'ROCKET', hint:'Goes to space'},
+  {word:'MONKEY', hint:'Loves bananas'},
+  // Hard - 7+ letters
+  {word:'ELEPHANT', hint:'Biggest land animal'},
+  {word:'COMPUTER', hint:'You work on it'},
+  {word:'BIRTHDAY', hint:'Your special day'},
+  {word:'RAINBOW', hint:'7 colors in sky'},
+  {word:'CHICKEN', hint:'Lays eggs'},
+  {word:'UMBRELLA', hint:'Used in rain'},
+  {word:'DIAMOND', hint:'Shiny gem'},
+  {word:'HOLIDAY', hint:'No school/work'},
+  {word:'PICTURE', hint:'You click it'},
+  {word:'BUTTERFLY', hint:'Colorful insect'},
+  {word:'CHOCOLATE', hint:'Sweet brown treat'},
+  {word:'ADVENTURE', hint:'Exciting journey'},
+  {word:'DINOSAUR', hint:'Ancient giant'},
+  {word:'TELEPHONE', hint:'Old way to call'},
+  {word:'WATERFALL', hint:'River falls down'},
+  {word:'SUPERHERO', hint:'Saves people'},
+  {word:'KEYBOARD', hint:'Type on it'},
+  {word:'NOTEBOOK', hint:'Write in it'},
+  {word:'FOOTBALL', hint:'Kick this sport'},
+  {word:'TELESCOPE', hint:'See stars'},
+  {word:'HELICOPTER', hint:'Flies without wings'},
+  {word:'STRAWBERRY', hint:'Red fruit'},
+  {word:'GRASSHOPPER', hint:'Jumping insect'},
+  {word:'CROCODILE', hint:'Lives in river'},
+  {word:'UNIVERSE', hint:'Everything exists in it'}
+];
+
+// WISDOM: 30 UNIQUE QUESTIONS - NO REPEATS
+const wisdomQuestions = [
+  {q:"What has keys but can't open locks?", a:"piano", hint:"You can play music"},
+  {q:"What starts with E, ends with E, but only contains one letter?", a:"envelope", hint:"Send letters"},
+  {q:"What gets wetter the more it dries?", a:"towel", hint:"Use after bath"},
+  {q:"What has hands but can't clap?", a:"clock", hint:"Tells time"},
+  {q:"What can you catch but not throw?", a:"cold", hint:"You get sick"},
+  {q:"What has a head and tail but no body?", a:"coin", hint:"Money"},
+  {q:"What goes up but never comes down?", a:"age", hint:"Every birthday"},
+  {q:"What has one eye but can't see?", a:"needle", hint:"Sewing tool"},
+  {q:"What has teeth but can't bite?", a:"comb", hint:"For your hair"},
+  {q:"What belongs to you but others use it more?", a:"name", hint:"People call you"},
+  {q:"What is full of holes but holds water?", a:"sponge", hint:"Clean dishes"},
+  {q:"What runs but never walks?", a:"river", hint:"Flows between banks"},
+  {q:"What has a neck but no head?", a:"bottle", hint:"Drink from it"},
+  {q:"What gets bigger the more you take away?", a:"hole", hint:"Dig in ground"},
+  {q:"What can travel around the world while staying in a corner?", a:"stamp", hint:"On envelope"},
+  {q:"What has words but never speaks?", a:"book", hint:"Read stories"},
+  {q:"What can you break without touching?", a:"promise", hint:"Keep your word"},
+  {q:"What goes up and down but doesn't move?", a:"stairs", hint:"Climb them"},
+  {q:"What has 4 wheels and flies?", a:"garbage truck", hint:"Takes trash"},
+  {q:"What is always in front of you but can't be seen?", a:"future", hint:"Tomorrow"},
+  {q:"What has many keys but can't open a door?", a:"keyboard", hint:"Type on it"},
+  {q:"What gets sharper the more you use it?", a:"brain", hint:"Think with it"},
+  {q:"What can fill a room but takes no space?", a:"light", hint:"Turn on switch"},
+  {q:"What has a bottom at the top?", a:"legs", hint:"You walk with them"},
+  {q:"What kind of room has no doors or windows?", a:"mushroom", hint:"Fungus"},
+  {q:"What is light as a feather, yet hardest to hold?", a:"breath", hint:"You inhale"},
+  {q:"What comes once in a minute, twice in a moment, never in a thousand years?", a:"m", hint:"It's a letter"},
+  {q:"What has cities but no houses, rivers but no water?", a:"map", hint:"Find places"},
+  {q:"What is taken before you get it?", a:"photo", hint:"Camera click"},
+  {q:"What can you keep after giving it to someone?", a:"word", hint:"You speak it"}
+];
+
+const scrambleConfig = {
+  1: {time:60, target:50}, 2: {time:55, target:100}, 3: {time:50, target:150},
+  4: {time:45, target:200}, 5: {time:40, target:250}, 6: {time:35, target:300},
+  7: {time:30, target:350}, 8: {time:25, target:400}, 9: {time:20, target:450}, 10: {time:15, target:500}
+};
+    // SPEED GAME FUNCTIONS
+function startSpeedGame() {
+  document.getElementById('speedGame').style.display = 'block';
+  document.getElementById('scrambleGame').style.display = 'none';
+  document.getElementById('wisdomGame').style.display = 'none';
+  currentMode = 'speed';
+  resetGame();
+  level = 1;
+  updateUI();
+  startLevel();
+}
+
+function startLevel() {
+  if (level > speedLevels.length) {
+    endGame("🎉 CONGRATULATIONS! YOU COMPLETED ALL LEVELS! 🎉");
+    return;
+  }
+  const cfg = speedLevels[level-1];
+  timeLeft = cfg.time;
+  document.getElementById('timerDisplay').textContent = timeLeft;
+  document.getElementById('targetScore').textContent = cfg.target;
+  document.getElementById('targetTime').textContent = cfg.time + 's';
+  document.getElementById('levelInfo').style.display = 'block';
+  createTarget(cfg);
+  gameActive = true;
+  gameTimer = setInterval(() => {
+    timeLeft--;
+    document.getElementById('timerDisplay').textContent = timeLeft;
+    if (timeLeft <= 0) {
+      gameActive = false;
+      clearInterval(gameTimer);
+      if (score >= cfg.target) nextLevel();
+      else endGame("💔 Time's up! Target: " + cfg.target);
+    }
+  }, 1000);
+}
+
+function createTarget(cfg) {
+  const target = document.getElementById('target');
+  target.textContent = cfg.shape;
+  target.style.backgroundColor = cfg.color;
+  target.style.color = '#fff';
+  target.style.fontSize = cfg.size + 'px';
+  target.style.width = (cfg.size * 1.2) + 'px';
+  target.style.height = (cfg.size * 1.2) + 'px';
+  target.style.borderRadius = '50%';
+  target.style.display = 'flex';
+  const x = Math.random() * (window.innerWidth - cfg.size * 2);
+  const y = Math.random() * (window.innerHeight - cfg.size * 2);
+  target.style.left = x + 'px';
+  target.style.top = y + 'px';
+  target.onclick = () => {
+    if (gameActive) {
+      score++;
+      document.getElementById('score').textContent = score;
+      moveTarget();
+    }
+  };
+}
+
+function moveTarget() {
+  const target = document.getElementById('target');
+  const cfg = speedLevels[level-1];
+  const x = Math.random() * (window.innerWidth - cfg.size * 2);
+  const y = Math.random() * (window.innerHeight - cfg.size * 2);
+  target.style.left = x + 'px';
+  target.style.top = y + 'px';
+  if (score >= cfg.target) {
+    clearInterval(gameTimer);
+    nextLevel();
+  }
+}
+
+function nextLevel() {
+  level++;
+  score = 0;
+  updateUI();
+  startLevel();
+}
+
+// SCRAMBLE GAME FUNCTIONS
+function startScrambleGame() {
+  document.getElementById('speedGame').style.display = 'none';
+  document.getElementById('scrambleGame').style.display = 'block';
+  document.getElementById('wisdomGame').style.display = 'none';
+  currentMode = 'scramble';
+  resetGame();
+  level = 1;
+  scrambleScore = 0;
+  updateUI();
+  startScrambleLevel();
+}
+
+function startScrambleLevel() {
+  if (level > 10) {
+    endGame("🎉 SCRAMBLE MASTER! 🎉 Score: " + scrambleScore);
+    return;
+  }
+  const cfg = scrambleConfig[level];
+  timeLeft = cfg.time;
+  document.getElementById('timerDisplay').textContent = timeLeft;
+  document.getElementById('targetScore').textContent = cfg.target;
+  document.getElementById('targetTime').textContent = cfg.time + 's';
+  document.getElementById('levelInfo').style.display = 'block';
+  nextScrambleWord();
+  gameActive = true;
+  gameTimer = setInterval(() => {
+    timeLeft--;
+    document.getElementById('timerDisplay').textContent = timeLeft;
+    if (timeLeft <= 0) {
+      gameActive = false;
+      clearInterval(gameTimer);
+      if (scrambleScore >= cfg.target) nextScrambleLevel();
+      else endGame("💔 Time's up! Target: " + cfg.target);
+    }
+  }, 1000);
+}
+
+function nextScrambleWord() {
+  if (!currentScramble || scrambleAsked.length >= scrambleWords.length) {
+    endGame("🎉 SCRAMBLE COMPLETE! 🎉 Score: " + scrambleScore);
+    return;
+  }
+  let wordObj = scrambleWords[Math.floor(Math.random() * scrambleWords.length)];
+  while (scrambleAsked.includes(wordObj.word)) {
+    wordObj = scrambleWords[Math.floor(Math.random() * scrambleWords.length)];
+  }
+  scrambleAsked.push(wordObj.word);
+  currentScramble = wordObj;
+  const scrambled = scramble(wordObj.word);
+  document.getElementById('scrambleWord').textContent = scrambled;
+  document.getElementById('scrambleHint').textContent = wordObj.hint;
+  document.getElementById('scrambleInput').value = '';
+  document.getElementById('scrambleInput').style.display = 'block';
+  document.getElementById('scrambleBtn').style.display = 'block';
+  document.getElementById('scrambleBtn').onclick = checkScramble;
+}
+
+function scramble(word) {
+  let array = word.split('');
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array.join('');
+}
+
+function checkScramble() {
+  const answer = document.getElementById('scrambleInput').value.toLowerCase();
+  if (answer === currentScramble.word.toLowerCase()) {
+    scrambleScore++;
+    document.getElementById('score').textContent = scrambleScore;
+    nextScrambleWord();
+  } else {
+    document.getElementById('scrambleFeedback').textContent = '❌ Try again!';
+  }
+}
+
+function nextScrambleLevel() {
+  level++;
+  scrambleScore = 0;
+  updateUI();
+  startScrambleLevel();
+}
+
+// WISDOM GAME FUNCTIONS
+function startWisdomGame() {
+  document.getElementById('speedGame').style.display = 'none';
+  document.getElementById('scrambleGame').style.display = 'none';
+  document.getElementById('wisdomGame').style.display = 'block';
+  currentMode = 'wisdom';
+  resetGame();
+  wisdomCorrectCount = 0;
+  wisdomAsked = [];
+  updateUI();
+  nextWisdomQuestion();
+}
+
+function nextWisdomQuestion() {
+  if (wisdomAsked.length >= wisdomQuestions.length) {
+    endGame("🎉 WISDOM MASTER! 🎉 Score: " + score);
+    return;
+  }
+  let qObj = wisdomQuestions[Math.floor(Math.random() * wisdomQuestions.length)];
+  while (wisdomAsked.includes(qObj.q)) {
+    qObj = wisdomQuestions[Math.floor(Math.random() * wisdomQuestions.length)];
+  }
+  wisdomAsked.push(qObj.q);
+  currentWisdom = qObj;
+  document.getElementById('wisdomText').textContent = qObj.q;
+  document.getElementById('wisdomInput').value = '';
+  document.getElementById('wisdomInput').style.display = 'block';
+  document.getElementById('wisdomHintBtn').style.display = 'block';
+  document.getElementById('wisdomHintBtn').onclick = () => {
+    alert('Hint: ' + qObj.hint);
+    hints--;
+    updateUI();
+  };
+}
+
+function checkWisdom() {
+  const answer = document.getElementById('wisdomInput').value.toLowerCase();
+  if (answer === currentWisdom.a) {
+    score += 10;
+    wisdomCorrectCount++;
+    updateUI();
+    if (wisdomCorrectCount % 5 === 0) {
+      hints += 2;
+      alert('🎉 +2 Hints! 🎉');
+      updateUI();
+    }
+    nextWisdomQuestion();
+  } else {
+    document.getElementById('wisdomFeedback').textContent = '❌ Try again!';
+  }
+}
+
+// COMMON FUNCTIONS
+function resetGame() {
+  clearInterval(gameTimer);
+  score = 0;
+  level = 1;
+  timeLeft = 30;
+  gameActive = false;
+  currentTarget = null;
+  document.getElementById('target').style.display = 'none';
+  document.getElementById('levelInfo').style.display = 'none';
+  document.getElementById('scrambleInput').style.display = 'none';
+  document.getElementById('wisdomInput').style.display = 'none';
+}
+
+function updateUI() {
+  document.getElementById('score').textContent = score;
+  document.getElementById('hintCount').textContent = hints;
+  document.getElementById('level').textContent = level;
+}
+
+function endGame(msg) {
+  clearInterval(gameTimer);
+  alert(msg);
+  resetGame();
+  document.getElementById('speedGame').style
+  // EVENT LISTENERS
+document.getElementById('startBtn').onclick = startSpeedGame;
+document.getElementById('speedMode').onclick = startSpeedGame;
+document.getElementById('scrambleMode').onclick = startScrambleGame;
+document.getElementById('wisdomMode').onclick = startWisdomGame;
+document.getElementById('scrambleStartBtn').onclick = startScrambleLevel;
+document.getElementById('wisdomStartBtn').onclick = nextWisdomQuestion;
+document.getElementById('scrambleInput').onkeypress = (e) => { if (e.key === 'Enter') checkScramble(); };
+document.getElementById('wisdomInput').onkeypress = (e) => { if (e.key === 'Enter') checkWisdom(); };
+
+// INIT
+updateUI();
+document.getElementById('speedMode').classList.add('active');
+document.getElementById('scrambleMode').classList.remove('active');
+document.getElementById('wisdomMode').classList.remove('active');
+document.getElementById('speedGame').style.display = 'block';
+document.getElementById('scrambleGame').style.display = 'none';
+document.getElementById('wisdomGame').style.display = 'none';
+</script>
 </body>
 </html>
