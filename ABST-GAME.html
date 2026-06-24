@@ -41,8 +41,18 @@
       <div class="target" id="target"></div>
       <button class="btn btn-start" id="startBtn">START GAME</button>
     </div>
-    <!-- SCRAMBLE & WISDOM GAME DIVS HERE -->
-   </div>
+    <div id="scrambleGame" style="display:none">
+      <div id="scrambleWord"></div>
+      <input id="scrambleInput">
+      <button id="scrambleBtn">Submit</button>
+    </div>
+    <div id="wisdomGame" style="display:none">
+      <div id="wisdomQ"></div>
+      <input id="wisdomInput">
+      <button id="wisdomBtn">Submit</button>
+    </div>
+  </div>
+
   <script>
     let score = 0, level = 1, hints = 10, gameActive = false;
     let currentTarget = null, gameTimer = null, timeLeft = 30;
@@ -58,7 +68,7 @@
         {shape:'B', color:'#00ffff', size:60, time:18}, // B
         {shape:'2', color:'#ff00ff', size:60, time:18}, // 2
         {shape:'∞', color:'#ffd700', size:80, time:16}, // INFINITY
-        // ... levels 11-60 (alphabets + numbers)
+        // ... add levels 11-60
       ],
       scramble: {
         1: {difficulty:'easy', time:60, target:50},
@@ -68,29 +78,17 @@
       wisdom: [
         {q:"What has keys but can't open locks?", a:"piano", hint:"You can play it"},
         {q:"What starts with E, ends with E, but only contains one letter?", a:"envelope", hint:"You can send it"},
-        // ... 28 more questions
+        // ... 28 more
       ]
     };
-    let wisdomAsked = [], scrambleList = [], currentScramble = null, currentWisdom = null;
-        // SPEED GAME
-    function startSpeedGame() { /* speed game logic */ }
-    function createTarget() { /* create target logic */ }
-    function checkTarget() { /* check target logic */ }
 
-    // SCRAMBLE GAME
-    function startScrambleGame() { /* scramble game logic */ }
-    function nextScramble() { /* next scramble logic */ }
-    function checkScramble() { /* check scramble logic */ }
+    document.getElementById('startBtn').onclick = startSpeedGame;
+    document.getElementById('scrambleMode').onclick = startScrambleGame;
+    document.getElementById('wisdomMode').onclick = startWisdomGame;
 
-    // WISDOM GAME
-    function startWisdomGame() { /* wisdom game logic */ }
-    function nextWisdom() { /* next wisdom logic */ }
-    function checkWisdom() { /* check wisdom logic */ }
-        document.getElementById('startBtn').onclick = startSpeedGame;
-    document.getElementById('scrambleBtn').onclick = startScrambleGame;
-    document.getElementById('wisdomBtn').onclick = startWisdomGame;
-    // ... other listeners
+    function startSpeedGame() { /* logic */ }
+    function startScrambleGame() { /* logic */ }
+    function startWisdomGame() { /* logic */ }
   </script>
 </body>
 </html>
-  
