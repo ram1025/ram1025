@@ -132,6 +132,8 @@ input[type="file"] { display: none; }
     border-radius: 50%;
     box-shadow: 0 0 25px rgba(100,255,218,0.4);
     animation: floatDroplet 3s ease-in-out infinite;
+    min-width: 140px;
+    min-height: 140px;
 }
 .droplet-gateway::after {
     content: '';
@@ -201,7 +203,7 @@ input[type="file"] { display: none; }
   </div>
   
   <div class="droplet-gateway" id="seal-btn">
-    <img id="welcome-seal-img" src="seal.png" onerror="this.style.display='none';this.parentElement.innerHTML='🛡️';" alt="ABST Security Seal Node">
+    <img id="welcome-seal-img" src="seal.png" alt="ABST Security Seal Node">
   </div>
   
   <div class="touch-prompt" id="touch-btn">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
@@ -225,31 +227,31 @@ input[type="file"] { display: none; }
   <div class="icon-card" onclick="openM('dpr36Modal')">
     <div class="icon">🏛️</div><span>MASTERPLAN</span>
   </div>
-  <div class="icon-card jarvis" onclick="window.location.href='Jarvis-Ai.html'">
+  <div class="icon-card jarvis" onclick="openM('jarvisModal')">
     <div class="icon">🟢</div><span>JARVIS AI</span>
   </div>
   <div class="icon-card" onclick="window.open('./MyJeevandhara_Investor_Note.pdf','_blank')">
     <div class="icon">📊</div><span>INVESTOR NOTE</span>
   </div>
-  <div class="icon-card" onclick="window.location.href='dpr-complete.html'">
+  <div class="icon-card" onclick="openM('dprTextModal')">
     <div class="icon">📜</div><span>DPR FULL TEXT</span>
   </div>
-  <div class="icon-card" onclick="window.location.href='https://jarvis-live.com'">
+  <div class="icon-card" onclick="openM('liveFeedModal')">
     <div class="icon">📡</div><span>LIVE FEED</span>
   </div>
   <div class="icon-card" onclick="window.open('./Project_MJ_Detailed_Blueprint.pdf','_blank')">
     <div class="icon">📄</div><span>DPR PDF</span>
   </div>
-  <div class="icon-card" onclick="window.location.href='36-Pillars-Book.html'">
+  <div class="icon-card" onclick="openM('bookModal')">
     <div class="icon">📚</div><span>36 PILLARS BOOK</span>
   </div>
   <div class="icon-card" onclick="openM('pillars36Modal')">
     <div class="icon">📋</div><span>36 PILLARS LIST</span>
   </div>
-  <div class="icon-card" onclick="window.location.href='./ABST-BRAIN.html'">
+  <div class="icon-card" onclick="openM('brainModal')">
     <div class="icon">🧠</div><span>ABST BRAIN</span>
   </div>
-  <div class="icon-card" onclick="window.location.href='constitution.html'">
+  <div class="icon-card" onclick="openM('constitutionModal')">
     <div class="icon">📜</div><span>CONSTITUTION</span>
   </div>
   <div class="icon-card" onclick="openM('licenseModal')">
@@ -340,6 +342,99 @@ input[type="file"] { display: none; }
 <button onclick="saveProfileConfigurationData()" class="modal-btn-action" style="background:#5effde;color:#0a192f;font-size:16px">💾 SAVE & REFRESH RECOGNITION</button>
 </div>
 </div>
+
+<div id="jarvisModal" class="modal">
+<div class="modal-inner" style="max-width:500px;">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">🟢 JARVIS AI CORE</h2><span onclick="closeM('jarvisModal')" class="modal-close">&times;</span></div>
+<div class="modal-body" style="text-align:center;padding:40px 20px;">
+<div style="font-size:64px;margin-bottom:15px;">🤖</div>
+<p style="color:#64ffda;font-size:18px;font-weight:bold;">Jarvis AI Core v7.0</p>
+<p style="color:#8892b0;font-size:13px;line-height:1.6;">Security Layer 7 Active<br>Sovereign Network Monitoring<br>36 Pillar Integration Complete</p>
+<div style="margin-top:25px;padding:15px;background:#0a192f;border-radius:8px;border:1px solid #233554;">
+<p style="color:#ffd700;font-size:12px;">Status: OPERATIONAL</p>
+<p style="color:#64ffda;font-size:11px;">Uptime: 99.99% | Nodes: 36/36</p>
+</div>
+<button onclick="closeM('jarvisModal')" class="modal-btn-action">CLOSE</button>
+</div>
+</div>
+
+<div id="dprTextModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📜 DPR FULL TEXT</h2><span onclick="closeM('dprTextModal')" class="modal-close">&times;</span></div>
+<div class="modal-body">
+<h1 style="color:#64ffda;text-align:left;font-size:22px">ABST DETAILED PROJECT REPORT</h1>
+<h2 style="color:#ffd700;text-align:left;font-size:16px">Version 2.0 - 2026</h2>
+<p><b>Sector I:</b> Energy & Industrial Core - Plasma, Solar, Moon-Ray, AWT systems integrated for total power independence.</p>
+<p><b>Sector II:</b> Water & Earth Sovereignty - AWG Plants, Dual-Ion Shield, Waste-to-Trash Command ensuring resource security.</p>
+<p><b>Sector III:</b> Infrastructure - Utility Tunnels, HDD Pipeline, Footstep Energy, Bio-Vault, Matru-Shakti Housing.</p>
+<p><b>Sector IV:</b> Social Capital - KG to PhD Education, Hospital, Bank, Food Malls, Simulation Game, Innovators Wall.</p>
+<p><b>Sector V:</b> Digital Nervous System - RVM Network, ID System, Transparency Hub, CCTV, Jarvis AI Core.</p>
+<p><b>Sector VI:</b> Governance - MD Agni-Pariksha Leadership Mandate for ethical sovereignty.</p>
+</div>
+<button onclick="closeM('dprTextModal')" class="modal-btn-action">CLOSE</button>
+</div>
+</div>
+
+<div id="liveFeedModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📡 LIVE FEED</h2><span onclick="closeM('liveFeedModal')" class="modal-close">&times;</span></div>
+<div class="modal-body" style="text-align:center;padding:40px 20px;">
+<div style="font-size:48px;margin-bottom:15px;">🛰️</div>
+<p style="color:#64ffda;font-size:16px;font-weight:bold;">Live Feed Integration</p>
+<p style="color:#8892b0;font-size:13px;">Connecting to Sovereign Satellite Network...</p>
+<p style="color:#ffd700;font-size:12px;margin-top:20px;">Jarvis AI Layer 7 | Real-time Monitoring Active</p>
+</div>
+<button onclick="closeM('liveFeedModal')" class="modal-btn-action">CLOSE</button>
+</div>
+
+<div id="bookModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📚 36 PILLARS BOOK</h2><span onclick="closeM('bookModal')" class="modal-close">&times;</span></div>
+<div class="modal-body">
+<h1 style="color:#64ffda;text-align:left;font-size:22px">The 36 Pillars of Sovereign Township</h1>
+<h2 style="color:#ffd700;text-align:left;font-size:16px">By Master Visionary: INDIAN.001</h2>
+<p><b>Chapter 1:</b> Energy Independence - Plasma to Moon-Ray</p>
+<p><b>Chapter 2:</b> Water Security - Amrutavarsha AWG</p>
+<p><b>Chapter 3:</b> Food Sovereignty - Human Waste to Farming</p>
+<p><b>Chapter 4:</b> Infrastructure - Utility Tunnels & Walkways</p>
+<p><b>Chapter 5:</b> Education - KG to PhD Building</p>
+<p><b>Chapter 6:</b> Governance - Agni-Pariksha Mandate</p>
+<p style="color:#8892b0;margin-top:20px;font-size:12px;">Full book available in DPR PDF section</p>
+</div>
+<button onclick="closeM('bookModal')" class="modal-btn-action">CLOSE</button>
+</div>
+</div>
+
+<div id="brainModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">🧠 ABST BRAIN</h2><span onclick="closeM('brainModal')" class="modal-close">&times;</span></div>
+<div class="modal-body" style="text-align:center;padding:40px 20px;">
+<div style="font-size:64px;margin-bottom:15px;">🧠</div>
+<p style="color:#64ffda;font-size:18px;font-weight:bold;">Central Neural Network</p>
+<p style="color:#8892b0;font-size:13px;line-height:1.6;">AI-powered decision matrix<br>36-Pillar data integration<br>Real-time analytics & predictions</p>
+<div style="margin-top:25px;padding:15px;background:#0a192f;border-radius:8px;border:1px solid #233554;">
+<p style="color:#ffd700;font-size:12px;">Neural Nodes: 36 Active</p>
+<p style="color:#64ffda;font-size:11px;">Processing: 2.4 Petaflops</p>
+</div>
+<button onclick="closeM('brainModal')" class="modal-btn-action">CLOSE</button>
+</div>
+
+<div id="constitutionModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📜 ABST CONSTITUTION</h2><span onclick="closeM('constitutionModal')" class="modal-close">&times;</span></div>
+<div class="modal-body">
+<h1 style="color:#64ffda;text-align:left;font-size:22px">SOVEREIGN CONSTITUTION</h1>
+<h2 style="color:#ffd700;text-align:left;font-size:16px">Article I - Foundation</h2>
+<p>We, the sovereign citizens of ABST, establish this 36-Pillar ecosystem for total independence.</p>
+<h2 style="color:#ffd700;text-align:left;font-size:16px">Article II - Rights</h2>
+<p>Right to Energy, Water, Food, Shelter, Education, Healthcare - guaranteed by P1-P36.</p>
+<h2 style="color:#ffd700;text-align:left;font-size:16px">Article III - Governance</h2>
+<p>MD Agni-Pariksha Mandate ensures ethical leadership. Jarvis AI Core monitors transparency.</p>
+</div>
+<button onclick="closeM('constitutionModal')" class="modal-btn-action">CLOSE</button>
+</div>
+</div>
+
 <div id="pillars36Modal" class="modal">
 <div class="modal-inner">
 <div class="modal-head"><h2 style="color:#64ffda;margin:0">📋 ABST 36 PILLARS - COMPLETE LIST</h2><span onclick="closeM('pillars36Modal')" class="modal-close">&times;</span></div>
@@ -368,6 +463,7 @@ P30: RVM Network | P31: Indian.00X ID System | P32: Our Amrutavarsha Vendor Netw
 <div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector VI: Governance & Legacy P36</div>
 P36: MD Agni-Pariksha Leadership Mandate
 </div>
+</div>
 <button onclick="closeM('pillars36Modal')" class="modal-btn-action">🏠 BACK TO HOME</button>
 </div>
 </div>
@@ -386,7 +482,6 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 <button onclick="closeM('licenseModal')" class="modal-btn-action">CLOSE</button>
 </div>
-</div>
 
 <div id="readmeModal" class="modal">
 <div class="modal-inner">
@@ -403,6 +498,9 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 </div>
 
+<div id="dpr36Modal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0
 <div id="dpr36Modal" class="modal">
 <div class="modal-inner">
 <div class="modal-head"><h2 style="color:#64ffda;margin:0">🏛️ ABST-MASTERPLAN - INDIAN.001</h2><span onclick="closeM('dpr36Modal')" class="modal-close">&times;</span></div>
@@ -443,6 +541,7 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 <button onclick="closeM('blueprintModal')" class="modal-btn-action" style="background:#ffd700;">🏢 CLOSE & RETURN</button>
 </div>
+</div>
 
 <script>
 let deferredAppInstallPrompt = null;
@@ -454,7 +553,7 @@ function openM(id){
   if(!m) return;
   m.style.display='block';
   document.documentElement.classList.add('modal-open');
-
+  
   if(id==='dpr36Modal'){
     document.getElementById('modelImg').src='miniature-model.jpg';
     document.getElementById('dayImg').src='day-mode.jpg';
@@ -473,13 +572,19 @@ function closeM(id){
 function unlockDashboard() {
   var overlay = document.getElementById('abst-welcome-overlay');
   var cards = document.querySelectorAll('.icon-card');
+  
   if(overlay) {
     overlay.style.opacity = '0';
     overlay.style.transform = 'scale(1.1)';
     sessionStorage.setItem('dashboard_direct_unlock_token', 'true');
+    
     setTimeout(function(){
       overlay.style.display = 'none';
-      cards.forEach((card, index) => { setTimeout(() => { card.classList.add('swirl'); }, index * 60); });
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add('swirl');
+        }, index * 60);
+      });
     }, 600);
   }
 }
@@ -492,35 +597,64 @@ function loadSavedIdentityData() {
   var storedSecurity = localStorage.getItem('abst_security') || "7";
   var storedBio = localStorage.getItem('abst_bio') || "Building Tomorrow's Sovereign Cities";
   var storedPhoto = localStorage.getItem('abst_photo') || "icon-192.png";
-
   var storedEmail = localStorage.getItem('abst_email') || "";
   var storedPhone = localStorage.getItem('abst_phone') || "";
-  var storedBloodGroup = localStorage.getItem('abst_bloodgroup') || "";
-
-  document.getElementById('dash-visionary-display').innerText = "Master Visionary: " + storedID + " " + storedName;
-  document.getElementById('dash-designation-display').innerText = storedDesignation + " | " + storedLocation + " | Security Layer " + storedSecurity;
-  document.getElementById('dash-status-string').innerHTML = "Status: Operational | Jarvis AI Core Layer " + storedSecurity + " | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
-  document.getElementById('main-seal-img').src = "seal.png";
-  document.getElementById('dash-bio-display').innerText = storedBio;
-
-  document.getElementById('welcome-id-display').innerText = storedID;
-  document.getElementById('welcome-visionary-name').innerText = storedName;
-  document.getElementById('welcome-designation').innerText = storedDesignation;
-  document.getElementById('welcome-location').innerText = storedLocation;
-  document.getElementById('welcome-security').innerText = storedSecurity;
-  document.getElementById('welcome-seal-img').src = "seal.png";
-
-  document.getElementById('inputMasterName').value = storedName;
-  document.getElementById('inputSovereignID').value = storedID;
-  document.getElementById('inputDesignation').value = storedDesignation;
-  document.getElementById('inputLocation').value = storedLocation;
-  document.getElementById('inputSecurity').value = storedSecurity;
-  document.getElementById('inputBio').value = storedBio;
-  document.getElementById('profile-photo-preview').src = storedPhoto;
-
-  document.getElementById('inputEmail').value = storedEmail;
-  document.getElementById('inputPhone').value = storedPhone;
-  document.getElementById('inputBlood').value = storedBloodGroup;
+  var storedBlood = localStorage.getItem('abst_blood') || "";
+  
+  var dashVision = document.getElementById('dash-visionary-display');
+  if(dashVision) dashVision.innerText = "Master Visionary: " + storedID + " " + storedName;
+  
+  var dashDesignation = document.getElementById('dash-designation-display');
+  if(dashDesignation) dashDesignation.innerText = storedDesignation + " | " + storedLocation + " | Security Layer " + storedSecurity;
+  
+  var dashStatus = document.getElementById('dash-status-string');
+  if(dashStatus) dashStatus.innerHTML = "Status: Operational | Jarvis AI Core Layer " + storedSecurity + " | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
+  
+  var mainSeal = document.getElementById('main-seal-img');
+  if(mainSeal) mainSeal.src = storedPhoto;
+  
+  var dashBio = document.getElementById('dash-bio-display');
+  if(dashBio) dashBio.innerText = storedBio;
+  
+  var welcomeID = document.getElementById('welcome-id-display');
+  if(welcomeID) welcomeID.innerText = storedID;
+  
+  var welcomeName = document.getElementById('welcome-visionary-name');
+  if(welcomeName) welcomeName.innerText = storedName;
+  
+  var welcomeDesignation = document.getElementById('welcome-designation');
+  if(welcomeDesignation) welcomeDesignation.innerText = storedDesignation;
+  
+  var welcomeLocation = document.getElementById('welcome-location');
+  if(welcomeLocation) welcomeLocation.innerText = storedLocation;
+  
+  var welcomeSecurity = document.getElementById('welcome-security');
+  if(welcomeSecurity) welcomeSecurity.innerText = storedSecurity;
+  
+  var welcomeSeal = document.getElementById('welcome-seal-img');
+  if(welcomeSeal) welcomeSeal.src = "seal.png";
+  
+  var inputName = document.getElementById('inputMasterName');
+  var inputID = document.getElementById('inputSovereignID');
+  var inputDesig = document.getElementById('inputDesignation');
+  var inputLoc = document.getElementById('inputLocation');
+  var inputSec = document.getElementById('inputSecurity');
+  var inputBioField = document.getElementById('inputBio');
+  var inputEmail = document.getElementById('inputEmail');
+  var inputPhone = document.getElementById('inputPhone');
+  var inputBlood = document.getElementById('inputBlood');
+  var photoPreview = document.getElementById('profile-photo-preview');
+  
+  if(inputName) inputName.value = storedName;
+  if(inputID) inputID.value = storedID;
+  if(inputDesig) inputDesig.value = storedDesignation;
+  if(inputLoc) inputLoc.value = storedLocation;
+  if(inputSec) inputSec.value = storedSecurity;
+  if(inputBioField) inputBioField.value = storedBio;
+  if(inputEmail) inputEmail.value = storedEmail;
+  if(inputPhone) inputPhone.value = storedPhone;
+  if(inputBlood) inputBlood.value = storedBlood;
+  if(photoPreview) photoPreview.src = storedPhoto;
 }
 
 function saveProfileConfigurationData() {
@@ -530,37 +664,47 @@ function saveProfileConfigurationData() {
   var varLocation = document.getElementById('inputLocation').value.trim();
   var varSecurity = document.getElementById('inputSecurity').value;
   var varBio = document.getElementById('inputBio').value.trim();
-
   var varEmail = document.getElementById('inputEmail').value.trim();
   var varPhone = document.getElementById('inputPhone').value.trim();
-  var varBloodGroup = document.getElementById('inputBlood').value;
-
+  var varBlood = document.getElementById('inputBlood').value;
+  
   if(varName!== "") localStorage.setItem('abst_visionary_name', varName);
   if(varID!== "") localStorage.setItem('abst_sovereign_id', varID);
   if(varDesignation!== "") localStorage.setItem('abst_designation', varDesignation);
   if(varLocation!== "") localStorage.setItem('abst_location', varLocation);
   if(varSecurity!== "") localStorage.setItem('abst_security', varSecurity);
   if(varBio!== "") localStorage.setItem('abst_bio', varBio);
-
-  localStorage.setItem('abst_email', varEmail);
-  localStorage.setItem('abst_phone', varPhone);
-  localStorage.setItem('abst_bloodgroup', varBloodGroup);
-
+  if(varEmail!== "") localStorage.setItem('abst_email', varEmail);
+  if(varPhone!== "") localStorage.setItem('abst_phone', varPhone);
+  if(varBlood!== "") localStorage.setItem('abst_blood', varBlood);
+  
   loadSavedIdentityData();
   closeM('profileModal');
 }
 
-function handlePhotoUpload(file) {
-  if(!file) return;
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    var dataURL = e.target.result;
-    localStorage.setItem('abst_photo', dataURL);
-    document.getElementById('profile-photo-preview').src = dataURL;
-    loadSavedIdentityData();
-  };
-  reader.readAsDataURL(file);
+function handlePhotoUpload(event) {
+  var file = event.target.files[0];
+  if (file) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      var photoData = e.target.result;
+      localStorage.setItem('abst_photo', photoData);
+      document.getElementById('profile-photo-preview').src = photoData;
+      loadSavedIdentityData();
+    };
+    reader.readAsDataURL(file);
+  }
 }
+
+document.getElementById('inputProfileCamera').addEventListener('change', handlePhotoUpload);
+document.getElementById('inputProfileGallery').addEventListener('change', handlePhotoUpload);
+
+document.getElementById('profile-photo-preview').addEventListener('click', function() {
+  document.getElementById('inputProfileGallery').click();
+});
+
+document.getElementById('seal-btn').addEventListener('click', unlockDashboard);
+document.getElementById('touch-btn').addEventListener('click', unlockDashboard);
 
 window.addEventListener('beforeinstallprompt', function(e) {
   e.preventDefault();
@@ -574,7 +718,7 @@ window.addEventListener('beforeinstallprompt', function(e) {
 function triggerPwaInstallation() {
   var installCardNode = document.getElementById('pwaInstallCard');
   if(!deferredAppInstallPrompt) {
-    alert('📲 To install:\n\nAndroid: Chrome menu → Install App\n\niPhone: Safari Share → Add to Home Screen\nDesktop: Chrome address bar → Install icon');
+    alert('📲 To install:\n\nAndroid: Chrome menu → Install App\n\niPhone: Safari Share → Add to Home Screen\n\nDesktop: Chrome address bar → Install icon');
     return;
   }
   deferredAppInstallPrompt.prompt();
@@ -598,33 +742,16 @@ window.addEventListener('appinstalled', () => {
 window.addEventListener('DOMContentLoaded', function(){
   var overlay = document.getElementById('abst-welcome-overlay');
   var cards = document.querySelectorAll('.icon-card');
-
+  
   loadSavedIdentityData();
-
-  document.getElementById('inputProfileCamera').addEventListener('change', function(e) {
-    handlePhotoUpload(e.target.files[0]);
-  });
-
-  document.getElementById('inputProfileGallery').addEventListener('change', function(e) {
-    handlePhotoUpload(e.target.files[0]);
-  });
-
-  document.getElementById('seal-btn').addEventListener('click', unlockDashboard);
-  document.getElementById('touch-btn').addEventListener('click', unlockDashboard);
-
+  
   if (sessionStorage.getItem('dashboard_direct_unlock_token') === 'true') {
-    if(overlay) {
-      overlay.style.display = 'none';
-    }
-    cards.forEach((card) => {
-      card.classList.add('swirl');
-    });
+    if(overlay) overlay.style.display = 'none';
+    cards.forEach((card) => card.classList.add('swirl'));
   } else {
-    if(overlay) {
-      overlay.style.display = 'flex';
-    }
+    if(overlay) overlay.style.display = 'flex';
   }
-
+  
   if(window.matchMedia('(display-mode: standalone)').matches || localStorage.getItem('abst_installed') === 'true') {
      var installCardNode = document.getElementById('pwaInstallCard');
      if(installCardNode) installCardNode.style.display = 'none';
@@ -641,9 +768,8 @@ document.addEventListener('keydown',function(e){
 
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
-.catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
+ .catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
 }
 </script>
 </body>
     </html>
-    
