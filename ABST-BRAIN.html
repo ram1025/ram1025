@@ -405,18 +405,24 @@
       }
     };
 
-    document.getElementById('abstMode').onclick = () => {
-      currentMode = 'abst';
-      document.getElementById('abstMode').classList.add('active');
-      document.getElementById('eduMode').classList.remove('active');
-      initBrain();
-    };
-    document.getElementById('eduMode').onclick = () => {
-      currentMode = 'edu';
-      document.getElementById('eduMode').classList.add('active');
-      document.getElementById('abstMode').classList.remove('active');
-      initBrain();
-    };
+    document.getElementById('pillarsMode').onclick = () => {
+  currentMode = 'pillars';
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('pillarsMode').classList.add('active');
+  initBrain();
+};
+document.getElementById('kgUgMode').onclick = () => {
+  currentMode = 'kgug';
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('kgUgMode').classList.add('active');
+  initBrain();
+};
+document.getElementById('engGkMode').onclick = () => {
+  currentMode = 'enggk';
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('engGkMode').classList.add('active');
+  initBrain();
+};
 
     document.getElementById('typeMode').onclick = () => {
       answerMode = 'type';
