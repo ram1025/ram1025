@@ -155,7 +155,7 @@
     let timeLeft = 10;
     let allCards = [];
     let allEducationCards = [];
-
+let matrix = [];
     // ===== AUTO LOAD FROM GITHUB =====
 async function loadMatrixFromGitHub() {
   try {
@@ -164,13 +164,13 @@ async function loadMatrixFromGitHub() {
     else if(currentMode === 'kgug') fileName = 'Education-kgtoug-465.json';
     else if(currentMode === 'enggk') fileName = 'Education-engtogk-535.json';
 
-    document.getElementById('question').innerHTML = `<div class="loading">Loading ${fileName}...</div>`;
-    const url = `https://raw.githubusercontent.com/ram1025/ram1025/main/${fileName}`;
+    document.getElementById('card').innerHTML = `<div class="loading">Loading ${fileName}...</div>`;
+
+    const url = `https://raw.githubusercontent.com/ram1025/${REPO_NAME}/main/${fileName}`;
     const response = await fetch(url);
     if (!response.ok) throw new Error(`${fileName} not found`);
     matrix = await response.json();
 
-    // Local storage sync
     const saved = localStorage.getItem('abst_brain_cards');
     if(saved) {
       const parsed = JSON.parse(saved);
@@ -183,9 +183,8 @@ async function loadMatrixFromGitHub() {
     initBrain();
   } catch(err) {
     console.error(err);
-    document.getElementById('question').innerHTML = 
-      `<div style="color:#ff4444">Error: ${err.message}<br><small>Check GitHub repo name & files</small></div>`;
-    document.getElementById('pillarTag').innerText = 'LOAD FAILED';
+    document.getElementById('card').innerHTML =
+      `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><small>Check GitHub repo name & files</small></div>`;
   }
 }
 
@@ -271,149 +270,20 @@ else if(currentMode === 'enggk') {
   content += `</div>`;
   document.getElementById('card').innerHTML = content;
 }
-
-// MCQ CHECK FUNCTION - IDI KUDA ADD CHEY
-function checkMCQ(selected) {
-  const card = dueCards[currentIndex];
-  const correct = selected === card.answer;
-
-  let feedback = correct?
-    `<div style="color:#0f0;margin:20px 0;">✅ Correct!</div>` :
-    `<div style="color:#f00;margin:20px 0;">❌ Wrong! Correct: ${card.answer}</div>`;
-
-  document.getElementById('card').innerHTML += feedback + `
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;">
-      <button class="btn btn-danger" onclick="gradeCard(${correct? 2 : 0})">AGAIN 1d</button>
-      <button class="btn btn-warning" onclick="gradeCard(${correct? 2 : 1})">HARD 1d</button>
-      <button class="btn btn-success" onclick="gradeCard(${correct? 2 : 2})">GOOD 6d</button>
-      <button class="btn btn-info" onclick="gradeCard(${correct? 3 : 3})">EASY 15d</button>
-    </div>`;
+    function gradeCard(quality) {
+  currentCard = window.ABST_SM2.calc(currentCard, quality);
+  const idx = matrix.findIndex(c => c.id === currentCard.id);
+  if(idx >= 0) matrix[idx] = currentCard;
+  localStorage.setItem('abst_brain_cards', JSON.stringify(matrix));
+  currentIndex++;
+  updateStats();
+  showCard();
 }
-    function generateMCQ() {
-      const grid = document.getElementById('mcqGrid');
-      grid.innerHTML = '';
-      const correct = currentCard.a || currentCard.answer;
-      let options = [correct];
-      let pool = dueCards.filter(c => (c.a || c.answer)!== correct).map(c => c.a || c.answer);
-      pool = [...new Set(pool)];
-      while(options.length < 4 && pool.length > 0) {
-        const idx = Math.floor(Math.random() * pool.length);
-        options.push(pool.splice(idx, 1)[0]);
-      }
-      options.sort(() => Math.random() - 0.5);
-      options.forEach(opt => {
-        const btn = document.createElement('button');
-        btn.className = 'mcq-btn';
-        btn.innerText = opt;
-        btn.onclick = () => checkMCQ(opt === correct, btn);
-        grid.appendChild(btn);
-      });
-    }
-
-    function checkMCQ(isCorrect, btn) {
-      clearInterval(timer);
-      document.querySelectorAll('.mcq-btn').forEach(b => b.disabled = true);
-      const correctAns = currentCard.a || currentCard.answer;
-      if(isCorrect) {
-        btn.classList.add('correct');
-        document.getElementById('feedbackMsg').innerText = '✅ Correct!';
-        document.getElementById('feedbackMsg').style.color = '#44ff88';
-        document.getElementById('cardBox').classList.add('correct');
-        streak++;
-        localStorage.setItem('abst_streak', streak);
-        updateCard(4);
-      } else {
-        btn.classList.add('wrong');
-        document.querySelectorAll('.mcq-btn').forEach(b => {
-          if(b.innerText === correctAns) b.classList.add('correct');
-        });
-        document.getElementById('feedbackMsg').innerText = '❌ Wrong! Correct: ' + correctAns;
-        document.getElementById('feedbackMsg').style.color = '#ff4444';
-        document.getElementById('cardBox').classList.add('wrong');
-        streak = 0;
-        localStorage.setItem('abst_streak', 0);
-        updateCard(1);
-      }
-      updateStats();
-      setTimeout(() => { currentIndex++; showCard(); }, 2000);
-    }
-
-    function checkAnswer() {
-      clearInterval(timer);
-      const userAns = document.getElementById('userAnswer').value.trim().toLowerCase();
-      const correctAns = (currentCard.a || currentCard.answer).toLowerCase();
-      const isCorrect = userAns === correctAns || correctAns.includes(userAns) || userAns.includes(correctAns);
-
-      if(isCorrect) {
-        document.getElementById('feedbackMsg').innerText = '✅ Correct!';
-        document.getElementById('feedbackMsg').style.color = '#44ff88';
-        document.getElementById('cardBox').classList.add('correct');
-        document.getElementById('userAnswer').classList.add('correct');
-        streak++;
-        localStorage.setItem('abst_streak', streak);
-        updateCard(4);
-      } else {
-        document.getElementById('feedbackMsg').innerText = '❌ Wrong! Correct: ' + (currentCard.a || currentCard.answer);
-        document.getElementById('feedbackMsg').style.color = '#ff4444';
-        document.getElementById('cardBox').classList.add('wrong');
-        document.getElementById('userAnswer').classList.add('wrong');
-        streak = 0;
-        localStorage.setItem('abst_streak', 0);
-        updateCard(1);
-      }
-      updateStats();
-      setTimeout(() => { currentIndex++; showCard(); }, 2000);
-    }
-
-    function showAnswer() {
-      clearInterval(timer);
-      document.getElementById('answer').innerText = currentCard.a || currentCard.answer;
-      document.getElementById('answerBox').style.display = 'block';
-      document.getElementById('qualityBtns').style.display = 'flex';
-      document.getElementById('showBtn').style.display = 'none';
-    }
-
-    function updateCard(quality) {
-      currentCard = window.ABST_SM2.calc(currentCard, quality);
-      const idx1 = allCards.findIndex(c => c.id === currentCard.id);
-      if(idx1 >= 0) allCards[idx1] = currentCard;
-      const idx2 = allEducationCards.findIndex(c => c.id === currentCard.id);
-      if(idx2 >= 0) allEducationCards[idx2] = currentCard;
-      const allSave = [...allCards,...allEducationCards];
-      localStorage.setItem('abst_brain_cards', JSON.stringify(allSave));
-    }
-
     function updateStats() {
-      document.getElementById('dueCount').innerText = dueCards.length;
-      document.getElementById('streakCount').innerHTML = streak + '<br>days';
-      document.getElementById('totalCount').innerHTML = (allCards.length + allEducationCards.length) + '<br>/1108';
-    }
-
-    function startTimer() {
-      timeLeft = 10;
-      document.getElementById('timer').style.display = 'block';
-      document.getElementById('timer').innerText = timeLeft + 's';
-      document.getElementById('timer').classList.remove('warning');
-      clearInterval(timer);
-      timer = setInterval(() => {
-        timeLeft--;
-        document.getElementById('timer').innerText = timeLeft + 's';
-        if(timeLeft <= 3) document.getElementById('timer').classList.add('warning');
-        if(timeLeft <= 0) {
-          clearInterval(timer);
-          if(answerMode === 'type') checkAnswer();
-          else if(answerMode === 'flip') showAnswer();
-        }
-      }, 1000);
-    }
-
-    // Event Listeners
-    document.getElementById('checkBtn').onclick = checkAnswer;
-    document.getElementById('showBtn').onclick = showAnswer;
-    document.getElementById('userAnswer').addEventListener('keypress', e => {
-      if(e.key === 'Enter') checkAnswer();
-    });
-
+  document.getElementById('dueCount').innerText = dueCards.length;
+  document.getElementById('streakCount').innerHTML = streak + '<br>days';
+  document.getElementById('totalCount').innerHTML = matrix.length + '<br>/1108';
+}
     // 👈 FIX 5: Close button fix
     document.getElementById('homeBtn').onclick = () => {
       if(window.parent!== window && window.parent.closeM) {
