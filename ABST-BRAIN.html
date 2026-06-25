@@ -216,57 +216,37 @@ else if(currentMode === 'enggk') {
 
     function showCard() {
   if (currentIndex >= dueCards.length) {
-    document.getElementById('card').innerHTML = `<div style="padding: 40px; text-align: center;">
-      <h3>All done! 🎉</h3>
-    </div>`;
+    document.getElementById('card').innerHTML = `<div style="padding: 40px; text-align: center;"> <h3>All done! 🎉</h3> </div>`;
     document.getElementById('cardCounter').textContent = `${dueCards.length}/${dueCards.length}`;
     return;
   }
-
   const card = dueCards[currentIndex];
   document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
-
-  let content = `<div class="card-content">
-    <div class="question" style="font-size: 1.2rem; margin-bottom: 20px;">${card.question}</div>`;
+  let content = `<div class="card-content"> <div class="question" style="font-size: 1.2rem; margin-bottom: 20px;">${card.q || card.question}</div>`;
 
   // TYPE MODE
   if(answerMode === 'type') {
-    content += `<input type="text" id="typeAnswerBox" placeholder="Type your answer here..."
-      style="width:100%;padding:12px;margin:10px 0;border-radius:8px;border:1px solid #0ff;background:#001122;color:#fff;font-size:1rem;">
-      <button class="btn" onclick="checkAnswer()" style="margin-top:10px;">CHECK ANSWER</button>`;
+    content += `<input type="text" id="typeAnswerBox" placeholder="Type your answer here..." style="width:100%;padding:12px;margin:10px 0;border-radius:8px;border:1px solid #0ff;background:#001122;color:#fff;font-size:1rem;"> <button class="btn" onclick="checkAnswer()" style="margin-top:10px;">CHECK ANSWER</button>`;
   }
-
-  // MCQ MODE - 4 OPTIONS GENERATE CHESTADI
+  // MCQ MODE
   else if(answerMode === 'mcq') {
-    let options = [card.answer]; // Correct answer
-
-    // 3 wrong options random ga teesuko
-    let wrongOptions = matrix.filter(c => c.answer!== card.answer)
-     .sort(() => 0.5 - Math.random())
-     .slice(0, 3)
-     .map(c => c.answer);
-
-    options = [...options,...wrongOptions].sort(() => 0.5 - Math.random()); // Shuffle
-
+    let correctAns = card.a || card.answer;
+    let options = [correctAns];
+    let wrongOptions = matrix.filter(c => (c.a || c.answer)!== correctAns)
+   .sort(() => 0.5 - Math.random())
+   .slice(0, 3)
+   .map(c => (c.a || c.answer));
+    options = [...options,...wrongOptions].sort(() => 0.5 - Math.random());
     content += `<div id="mcqOptions" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;">`;
     options.forEach(opt => {
-      content += `<button class="btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}')"
-        style="padding:15px;text-align:left;">${opt}</button>`;
+      content += `<button class="btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}')" style="padding:15px;text-align:left;">${opt}</button>`;
     });
     content += `</div>`;
   }
-
-  // FLIP MODE - Direct answer chupistadi
+  // FLIP MODE
   else if(answerMode === 'flip') {
-    content += `<div class="answer" style="color:#0f0;margin:20px 0;padding:15px;background:#001100;border-radius:8px;">${card.answer}</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;">
-        <button class="btn btn-danger" onclick="gradeCard(0)">AGAIN 1d</button>
-        <button class="btn btn-warning" onclick="gradeCard(1)">HARD 1d</button>
-        <button class="btn btn-success" onclick="gradeCard(2)">GOOD 6d</button>
-        <button class="btn btn-info" onclick="gradeCard(3)">EASY 15d</button>
-      </div>`;
+    content += `<div class="answer" style="color:#0f0;margin:20px 0;padding:15px;background:#001100;border-radius:8px;">${card.a || card.answer}</div> <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;"> <button class="btn btn-danger" onclick="gradeCard(0)">AGAIN 1d</button> <button class="btn btn-warning" onclick="gradeCard(1)">HARD 1d</button> <button class="btn btn-success" onclick="gradeCard(2)">GOOD 6d</button> <button class="btn btn-info" onclick="gradeCard(3)">EASY 15d</button> </div>`;
   }
-
   content += `</div>`;
   document.getElementById('card').innerHTML = content;
 }
