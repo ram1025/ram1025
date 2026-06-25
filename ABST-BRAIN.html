@@ -463,11 +463,12 @@ document.getElementById('userClass').onchange = function() {
 };
 
     document.getElementById('saveAgeBtn').onclick = () => {
-      userClass = document.getElementById('userClass').value;
-      localStorage.setItem('abst_user_class', userClass);
-      document.getElementById('ageModal').style.display = 'none';
-      loadMatrixFromGitHub();
-    };
+  userClass = document.getElementById('userClass').value;
+  localStorage.setItem('abst_user_class', userClass);
+  document.getElementById('ageModal').style.display = 'none';
+  currentMode = 'pillars'; // 👈 IDI ADD CHEY - Default ga 36 PILLARS load chey
+  loadMatrixFromGitHub();
+};
 
     const savedClass = localStorage.getItem('abst_user_class');
     if(savedClass) {
