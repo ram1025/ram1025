@@ -108,31 +108,8 @@
     <button class="mode-btn" id="mcqMode">⚪ MCQ</button>
     <button class="mode-btn" id="flipMode">🔁 FLIP</button>
   </div>
-  <div class="card" id="cardBox">
-    <div class="timer" id="timer">10s</div>
-    <div class="badge" id="cardCount">0/0</div>
-    <div class="pillar" id="pillarTag">Loading...</div>
-    <h2 class="question" id="question"><div class="loading">Loading Matrix...</div></h2>
-    <div id="typeAnswerBox" style="display:none">
-      <input type="text" class="answer-input" id="userAnswer" placeholder="Type your answer here..." autocomplete="off">
-      <button class="btn btn-check" id="checkBtn">CHECK ANSWER</button>
-    </div>
-    <div id="mcqAnswerBox" style="display:none">
-      <div class="mcq-grid" id="mcqGrid"></div>
-    </div>
-    <button class="btn" id="showBtn" style="display:none">SHOW ANSWER</button>
-    <div class="feedback-msg" id="feedbackMsg"></div>
-    <div id="answerBox" style="display:none">
-      <hr style="border-color:#00ffaa; margin:30px 0; opacity:0.2">
-      <h3 id="answer" style="color:#44ff88"></h3>
-      <div class="quality-btns" id="qualityBtns">
-        <button class="btn btn-again" data-quality="1">AGAIN<br><small>1d</small></button>
-        <button class="btn btn-hard" data-quality="2">HARD<br><small>1d</small></button>
-        <button class="btn btn-good" data-quality="3">GOOD<br><small>6d</small></button>
-        <button class="btn btn-easy" data-quality="4">EASY<br><small>15d</small></button>
-      </div>
-    </div>
-  </div>
+  <div id="cardCounter" style="text-align:center;margin:15px;color:#00ffaa;font-weight:bold;font-size:18px;">0/0</div>
+  <div id="card" style="min-height:320px;padding:35px;border:2px solid #00ffaa;border-radius:24px;margin:20px auto;max-width:550px;background:linear-gradient(145deg,#1a2332,#0f1723);box-shadow:0 0 40px #00ffaa20;"></div>
   <div class="stats">
     <div>Due Now<b id="dueCount">0</b></div>
     <div>Streak<b id="streakCount">0<br>days</b></div>
