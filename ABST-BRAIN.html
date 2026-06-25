@@ -159,18 +159,17 @@ let matrix = [];
     // ===== AUTO LOAD FROM GITHUB =====
 async function loadMatrixFromGitHub() {
   try {
-    document.getElementById('card').innerHTML = `<div class="loading">Loading...</div>`;
-
-    if(currentMode === 'pillars') {
-      matrix = [{"id":"ABST-P01-Q1","pillar":"1","q":"What is the 1st Pillar of ABST / Project AURA?","a":"P1: Plasma Plant running"},{"id":"ABST-P01-Q2","pillar":"1","q":"What core cycle does the Plasma Plant establish?","a":"A high-temperature thermal cycle"},{"id":"ABST-P01-Q3","pillar":"1","q":"Where does the Plasma Plant feed its processed solid byproduct residues?","a":"To Pillar 4: Materials Lab"}]; // Motham 108 questions ikkada paste chey
-    }
-    else if(currentMode === 'kgug') {
-      matrix = []; // 465 questions ikkada paste chey
-    }
-    else if(currentMode === 'enggk') {
-      matrix = []; // 535 questions ikkada paste chey
-    }
-
+    let fileName = '';
+    if(currentMode === 'pillars') fileName = '36-pillars-108.json';
+    else if(currentMode === 'kgug') fileName = 'Education-kgtoug-465.json';
+    else if(currentMode === 'enggk') fileName = 'Education-engtogk-535.json';
+    
+    document.getElementById('card').innerHTML = `<div class="loading">Loading ${fileName}...</div>`;
+    const url = `https://raw.githubusercontent.com/ram1025/ram1025/main/${fileName}`;
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`${fileName} not found`);
+    matrix = await response.json();
+    
     const saved = localStorage.getItem('abst_brain_cards');
     if(saved) {
       const parsed = JSON.parse(saved);
@@ -185,33 +184,11 @@ async function loadMatrixFromGitHub() {
     document.getElementById('card').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}</div>`;
   }
 }
-
     function initBrain() {
       loadCards();
       updateStats();
       showCard();
     }
-
-    function loadCards() {
-      let cards = [];
-if(currentMode === 'pillars') {
-  cards = matrix.filter(c => c.category === 'pillars' || c.type === 'pillars');
-} 
-else if(currentMode === 'kgug') {
-  const cls = userClass.replace('class', ''); // "9" or "12" etc
-  cards = matrix.filter(c => {
-    const cat = (c.category || '').toLowerCase();
-    return cat.includes('kgug') && (cat.includes(cls) || cat.includes('general'));
-  });
-} 
-else if(currentMode === 'enggk') {
-  cards = matrix.filter(c => c.category === 'enggk' || c.type === 'enggk');
-}
-      dueCards = cards.filter(c =>!c.due || c.due <= Date.now());
-      if(dueCards.length === 0) dueCards = [...cards];
-      currentIndex = 0;
-    }
-
     function showCard() {
   if (currentIndex >= dueCards.length) {
     document.getElementById('card').innerHTML = `<div style="padding: 40px; text-align: center;"> <h3>All done! 🎉</h3> </div>`;
