@@ -102,6 +102,7 @@
   <button class="mode-btn active" id="pillarsMode">🏛 36 PILLARS - 108</button>
   <button class="mode-btn" id="kgUgMode">📚 KG to UG - 465</button>
   <button class="mode-btn" id="engGkMode">📚 ENG to GK - 535</button>
+  <button class="mode-btn" id="allMode">📚 ALL - 1108</button>
 </div>
   <div class="answer-mode-toggle">
     <button class="mode-btn active" id="typeMode">✏️ TYPE</button>
@@ -163,13 +164,26 @@ async function loadMatrixFromGitHub() {
     if(currentMode === 'pillars') fileName = '36-pillars-108.json';
     else if(currentMode === 'kgug') fileName = 'Education-kgtoug-465.json';
     else if(currentMode === 'enggk') fileName = 'Education-engtogk-535.json';
-    
+    else if(currentMode === 'all') {
+      document.getElementById('card').innerHTML = `<div class="loading">Loading ALL 1108 cards...</div>`;
+      const urls = [
+        'https://raw.githubusercontent.com/ram1025/ram1025/main/36-pillars-108.json',
+        'https://raw.githubusercontent.com/ram1025/ram1025/main/Education-kgtoug-465.json',
+        'https://raw.githubusercontent.com/ram1025/main/Education-engtogk-535.json'
+      ];
+      const responses = await Promise.all(urls.map(u => fetch(u)));
+      const data = await Promise.all(responses.map(r => r.json()));
+      matrix = [...data[0],...data[1],...data[2]];
+      initBrain();
+      return;
+    }
+
     document.getElementById('card').innerHTML = `<div class="loading">Loading ${fileName}...</div>`;
     const url = `https://raw.githubusercontent.com/ram1025/ram1025/main/${fileName}`;
     const response = await fetch(url);
     if (!response.ok) throw new Error(`${fileName} not found`);
     matrix = await response.json();
-    
+
     const saved = localStorage.getItem('abst_brain_cards');
     if(saved) {
       const parsed = JSON.parse(saved);
@@ -268,7 +282,12 @@ document.getElementById('engGkMode').onclick = () => {
   document.getElementById('engGkMode').classList.add('active');
   loadMatrixFromGitHub();
 };
-
+document.getElementById('allMode').onclick = () => {
+  currentMode = 'all';
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('allMode').classList.add('active');
+  loadMatrixFromGitHub();
+};
     document.getElementById('typeMode').onclick = () => {
       answerMode = 'type';
       document.getElementById('typeMode').classList.add('active');
