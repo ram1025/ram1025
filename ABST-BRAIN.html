@@ -448,6 +448,10 @@
         nextCard();
       };
     });
+document.getElementById('userClass').onchange = function() {
+    userClass = this.value;
+    console.log('Selected:', userClass);
+};
 
     document.getElementById('saveAgeBtn').onclick = () => {
       userClass = document.getElementById('userClass').value;
