@@ -160,34 +160,51 @@
     }
 
     function checkAnswer() {
-      const input = document.getElementById('typeAnswerBox');
-      const userAns = input.value.trim().toLowerCase();
-      const correctAns = (currentCard.a || currentCard.answer).trim().toLowerCase();
-      const cardEl = document.getElementById('card');
-
-      if (userAns === correctAns) {
-        cardEl.classList.add('correct');
-        input.classList.add('correct');
-        setTimeout(() => gradeCard(3), 800);
-      } else {
-        cardEl.classList.add('wrong');
-        input.classList.add('wrong');
-        input.value = currentCard.a || currentCard.answer;
-        setTimeout(() => gradeCard(1), 2000);
-      }
-    }
+  const input = document.getElementById('typeAnswerBox');
+  const userAns = input.value.trim().toLowerCase();
+  const correctAns = (currentCard.a || currentCard.answer).trim().toLowerCase();
+  const cardEl = document.getElementById('card');
+  
+  if (userAns === correctAns) {
+    cardEl.classList.add('correct');
+    input.classList.add('correct');
+    input.disabled = true;
+    showQualityBtns(); // Auto grade cheyakunda buttons chupistam
+  } else {
+    cardEl.classList.add('wrong');
+    input.classList.add('wrong');
+    input.value = currentCard.a || currentCard.answer;
+    input.disabled = true;
+    showQualityBtns(); // Wrong ayina kuda user grade chesukovali
+  }
+}
 
     function checkMCQ(selected) {
-      const correctAns = currentCard.a || currentCard.answer;
-      const buttons = document.querySelectorAll('#mcqOptions button');
-      buttons.forEach(btn => {
-        btn.disabled = true;
-        if (btn.textContent === correctAns) {
-          btn.classList.add('correct');
-        } else if (btn.textContent === selected) {
-          btn.classList.add('wrong');
-        }
-      });
+  const correctAns = currentCard.a || currentCard.answer;
+  const buttons = document.querySelectorAll('#mcqOptions button');
+  buttons.forEach(btn => {
+    btn.disabled = true;
+    if (btn.textContent === correctAns) {
+      btn.classList.add('correct');
+    } else if (btn.textContent === selected) {
+      btn.classList.add('wrong');
+    }
+  });
+  showQualityBtns(); // Answer check ayyaka buttons chupistam
+}
+    function showQualityBtns() {
+  const qualityDiv = document.createElement('div');
+  qualityDiv.className = 'quality-btns';
+  qualityDiv.style.display = 'flex';
+  qualityDiv.innerHTML = `
+    <button class="btn btn-again" onclick="gradeCard(0)">AGAIN 1d</button>
+    <button class="btn btn-hard" onclick="gradeCard(1)">HARD 1d</button>
+    <button class="btn btn-good" onclick="gradeCard(2)">GOOD 6d</button>
+    <button class="btn btn-easy" onclick="gradeCard(3)">EASY 15d</button>
+  `;
+  document.querySelector('.card-content').appendChild(qualityDiv);
+  document.querySelector('.btn-check')?.remove(); // CHECK ANSWER button remove chey
+}
 
       if (selected === correctAns) {
         setTimeout(() => gradeCard(3), 800);
@@ -292,15 +309,10 @@
         });
         content += `</div>`;
       }
-      else if(answerMode === 'flip') {
-        content += `<div class="answer" style="color:#0f0;margin:20px 0;padding:15px;background:#001100;border-radius:8px;">${currentCard.a || currentCard.answer}</div>
-          <div class="quality-btns" style="display:flex;">
-            <button class="btn btn-again" onclick="gradeCard(0)">AGAIN 1d</button>
-            <button class="btn btn-hard" onclick="gradeCard(1)">HARD 1d</button>
-            <button class="btn btn-good" onclick="gradeCard(2)">GOOD 6d</button>
-            <button class="btn btn-easy" onclick="gradeCard(3)">EASY 15d</button>
-          </div>`;
-      }
+     } else if(answerMode === 'flip') {
+  content += `<div class="answer" style="color:#0f0;margin:20px 0;padding:15px;background:#001100;border-radius:8px;">${currentCard.a || currentCard.answer}</div>
+  <button class="btn" onclick="gradeCard(3)">NEXT</button>`;
+}
       content += `</div>`;
       document.getElementById('card').innerHTML = content;
     }
