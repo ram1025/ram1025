@@ -199,6 +199,7 @@
     // ===== FIX 2: FIXED JSON URLS - using.json not.db =====
     async function loadMatrixFromGitHub() {
       try {
+        document.getElementById('card').innerHTML = `<div class="loading">Loading cards... <br>🔄</div>`;
         let fileName = '';
         if(currentMode === 'pillars') fileName = '36-pillars-108.json';
         else if(currentMode === 'kgug') fileName = 'Education-kgtoug-465.json';
