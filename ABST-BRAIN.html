@@ -410,19 +410,21 @@ else if(currentMode === 'enggk') {
   currentMode = 'pillars';
   document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('pillarsMode').classList.add('active');
-  initBrain();
+  loadMatrixFromGitHub();
 };
+
 document.getElementById('kgUgMode').onclick = () => {
   currentMode = 'kgug';
   document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('kgUgMode').classList.add('active');
-  initBrain();
+  loadMatrixFromGitHub();
 };
+
 document.getElementById('engGkMode').onclick = () => {
   currentMode = 'enggk';
   document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('engGkMode').classList.add('active');
-  initBrain();
+  loadMatrixFromGitHub();
 };
 
     document.getElementById('typeMode').onclick = () => {
