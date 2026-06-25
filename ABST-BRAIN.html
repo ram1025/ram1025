@@ -215,7 +215,7 @@ async function loadMatrixFromGitHub() {
     function initBrain() {
       loadCards();
       updateStats();
-      nextCard();
+      showcard();
     }
 
     function loadCards() {
@@ -472,21 +472,21 @@ document.getElementById('engGkMode').onclick = () => {
       document.getElementById('typeMode').classList.add('active');
       document.getElementById('mcqMode').classList.remove('active');
       document.getElementById('flipMode').classList.remove('active');
-      nextCard();
+      showcard();
     };
     document.getElementById('mcqMode').onclick = () => {
       answerMode = 'mcq';
       document.getElementById('mcqMode').classList.add('active');
       document.getElementById('typeMode').classList.remove('active');
       document.getElementById('flipMode').classList.remove('active');
-      nextCard();
+      showcard();
     };
     document.getElementById('flipMode').onclick = () => {
       answerMode = 'flip';
       document.getElementById('flipMode').classList.add('active');
       document.getElementById('typeMode').classList.remove('active');
       document.getElementById('mcqMode').classList.remove('active');
-      nextCard();
+      showcard();
     };
 
     document.querySelectorAll('[data-quality]').forEach(btn => {
@@ -494,7 +494,7 @@ document.getElementById('engGkMode').onclick = () => {
         const quality = parseInt(btn.dataset.quality);
         updateCard(quality);
         currentIndex++;
-        nextCard();
+        showcard();
       };
     });
 document.getElementById('userClass').onchange = function() {
