@@ -224,14 +224,20 @@
     }
 
     function loadCards() {
-      let cards = currentMode === 'abst'? allCards : allEducationCards;
-      if(currentMode === 'edu') {
-        const cls = userClass.replace('class','');
-        cards = cards.filter(c => {
-          const cat = (c.category || '').toLowerCase();
-          return cat.includes(cls) || cat.includes(userClass) || cat.includes('gk') || cat.includes('general');
-        });
-      }
+      let cards = [];
+if(currentMode === 'pillars') {
+  cards = matrix.filter(c => c.category === 'pillars' || c.type === 'pillars');
+} 
+else if(currentMode === 'kgug') {
+  const cls = userClass.replace('class', ''); // "9" or "12" etc
+  cards = matrix.filter(c => {
+    const cat = (c.category || '').toLowerCase();
+    return cat.includes('kgug') && (cat.includes(cls) || cat.includes('general'));
+  });
+} 
+else if(currentMode === 'enggk') {
+  cards = matrix.filter(c => c.category === 'enggk' || c.type === 'enggk');
+}
       dueCards = cards.filter(c =>!c.due || c.due <= Date.now());
       if(dueCards.length === 0) dueCards = [...cards];
       currentIndex = 0;
