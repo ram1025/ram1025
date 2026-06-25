@@ -316,27 +316,30 @@
     }
 
     function createTarget(cfg) {
-        const target = document.getElementById('target');
-        target.textContent = cfg.shape;
-        target.style.color = cfg.color;
-        target.style.background = 'transparent';
-        target.style.fontSize = cfg.size + 'px';
-        target.style.width = 'auto';
-        target.style.height = 'auto';
-        target.style.textShadow = '0 0 30px ' + cfg.color + ', 0 0 60px ' + cfg.color;
-        moveTarget();
-        target.onclick = () => {
-            if (gameActive) {
-                score++;
-                updateUI();
-                moveTarget();
-                if (score >= cfg.target) {
-                    clearInterval(gameTimer);
-                    nextLevel();
-                }
+    const target = document.getElementById('target');
+    target.textContent = cfg.shape;
+    target.style.color = cfg.color;
+    target.style.background = 'transparent';
+    target.style.fontSize = cfg.size + 'px';
+    target.style.width = 'auto';
+    target.style.height = 'auto';
+    target.style.textShadow = '0 0 30px ' + cfg.color + ', 0 0 60px ' + cfg.color;
+    target.style.border = 'none'; // ADD THIS
+    target.style.outline = 'none'; // ADD THIS
+    target.style.boxShadow = 'none'; // ADD THIS
+    moveTarget();
+    target.onclick = () => {
+        if (gameActive) {
+            score++;
+            updateUI();
+            moveTarget();
+            if (score >= cfg.target) {
+                clearInterval(gameTimer);
+                nextLevel();
             }
-        };
-    }
+        }
+    };
+            }
 
     function moveTarget() {
         const target = document.getElementById('target');
@@ -375,33 +378,34 @@
     }
 
     function startScrambleLevel() {
-        if (level > 50) {
-            endGame("🎉 SCRAMBLE MASTER! 🎉 Score: " + scrambleScore);
-            return;
-        }
-        const cfg = scrambleConfig[level] || {time:15, target:100};
-        timeLeft = cfg.time;
-        document.getElementById('scrambleStartBtn').style.display = 'none';
-        document.getElementById('scrambleInput').style.display = 'block';
-        document.getElementById('hintBtn').style.display = 'inline-block';
-        document.getElementById('scrambleNextBtn').style.display = 'inline-block';
+    if (level > 50) {
+        endGame("🎉 SCRAMBLE MASTER! 🎉 Score: " + scrambleScore);
+        return;
+    }
+    const cfg = scrambleConfig[level] || {time:15, target:100};
+    timeLeft = cfg.time;
+    document.getElementById('scrambleStartBtn').style.display = 'none';
+    document.getElementById('scrambleInput').style.display = 'block';
+    document.getElementById('hintBtn').style.display = 'inline-block'; // FIX
+    document.getElementById('scrambleNextBtn').style.display = 'inline-block'; // FIX
+    document.getElementById('timerDisplay').textContent = timeLeft;
+    document.getElementById('targetScore').textContent = cfg.target;
+    document.getElementById('targetTime').textContent = cfg.time + 's';
+    document.getElementById('levelInfo').style.display = 'block';
+    updateUI();
+    nextScrambleWord();
+    gameActive = true;
+    gameTimer = setInterval(() => {
+        timeLeft--;
         document.getElementById('timerDisplay').textContent = timeLeft;
-        document.getElementById('targetScore').textContent = cfg.target;
-        document.getElementById('targetTime').textContent = cfg.time + 's';
-        document.getElementById('levelInfo').style.display = 'block';
-        updateUI();
-        nextScrambleWord();
-        gameActive = true;
-        gameTimer = setInterval(() => {
-            timeLeft--;
-            document.getElementById('timerDisplay').textContent = timeLeft;
-            if (timeLeft <= 0) {
-                gameActive = false;
-                clearInterval(gameTimer);
-                if (scrambleScore >= cfg.target) nextScrambleLevel();
-                else endGame("💔 Time's up! Target: " + cfg.target);
-            }
-        }, 1000);
+        if (timeLeft <= 0) {
+            gameActive = false;
+            clearInterval(gameTimer);
+            if (scrambleScore >= cfg.target) nextScrambleLevel();
+            else endGame("💔 Time's up! Target: " + cfg.target);
+        }
+    }, 1000);
+        
     }
 
     function nextScrambleWord() {
@@ -485,27 +489,27 @@
     }
 
     function nextWisdomQuestion() {
-        if (wisdomAsked.length >= 50) {
-            endGame("🎉 WISDOM MASTER! 🎉 Score: " + score);
-            return;
-        }
-        document.getElementById('wisdomStartBtn').style.display = 'none';
-        document.getElementById('wisdomInput').style.display = 'block';
-        document.getElementById('wisdomHintBtn').style.display = 'inline-block';
-        document.getElementById('wisdomNextBtn').style.display = 'inline-block';
+    if (wisdomAsked.length >= 50) {
+        endGame("🎉 WISDOM MASTER! 🎉 Score: " + score);
+        return;
+    }
+    document.getElementById('wisdomStartBtn').style.display = 'none';
+    document.getElementById('wisdomInput').style.display = 'block';
+    document.getElementById('wisdomHintBtn').style.display = 'inline-block'; // FIX
+    document.getElementById('wisdomNextBtn').style.display = 'inline-block'; // FIX
 
-        let qObj = wisdomQuestions[Math.floor(Math.random() * wisdomQuestions.length)];
-        while (wisdomAsked.includes(qObj.q)) {
-            qObj = wisdomQuestions[Math.floor(Math.random() * wisdomQuestions.length)];
-        }
-        wisdomAsked.push(qObj.q);
-        currentWisdom = qObj;
-        document.getElementById('wisdomText').textContent = qObj.q;
-        document.getElementById('wisdomInput').value = '';
-        document.getElementById('wisdomFeedback').textContent = '';
-        document.getElementById('wisdomInput').focus();
-        level = wisdomAsked.length;
-        updateUI();
+    let qObj = wisdomQuestions[Math.floor(Math.random() * wisdomQuestions.length)];
+    while (wisdomAsked.includes(qObj.q)) {
+        qObj = wisdomQuestions[Math.floor(Math.random() * wisdomQuestions.length)];
+    }
+    wisdomAsked.push(qObj.q);
+    currentWisdom = qObj;
+    document.getElementById('wisdomText').textContent = qObj.q;
+    document.getElementById('wisdomInput').value = '';
+    document.getElementById('wisdomFeedback').textContent = '';
+    document.getElementById('wisdomInput').focus();
+    level = wisdomAsked.length;
+    updateUI();
     }
 
     function checkWisdom() {
