@@ -321,77 +321,63 @@
     }
 
     // ===== EVENT LISTENERS =====
-    document.getElementById('homeBtn').onclick = () => {
-      if(window.parent!== window && window.parent.closeM) {
-        window.parent.closeM('abstBrainModal');
-      } else {
-        window.location.href = './index.html';
-      }
-    };
+document.getElementById('homeBtn').onclick = () => {
+  if(window.parent!== window && window.parent.closeM) {
+    window.parent.closeM('abstBrainModal');
+  } else {
+    window.location.href = './index.html';
+  }
+};
 
-    document.getElementById('pillarsMode').onclick = () => {
-      currentMode = 'pillars';
-      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('pillarsMode').classList.add('active');
-      loadMatrixFromGitHub();
-    };
+document.getElementById('pillarsMode').onclick = () => {
+  currentMode = 'pillars';
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('pillarsMode').classList.add('active');
+  loadMatrixFromGitHub();
+};
 
-    document.getElementById('kgUgMode').onclick = () => {
-      currentMode = 'kgug';
-      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('kgUgMode').classList.add('active');
-      loadMatrixFromGitHub();
-    };
+document.getElementById('kgUgMode').onclick = () => {
+  currentMode = 'kgug';
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('kgUgMode').classList.add('active');
+  loadMatrixFromGitHub();
+};
 
-    document.getElementById('engGkMode').onclick = () => {
-      currentMode = 'enggk';
-      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('engGkMode').classList.add('active');
-      loadMatrixFromGitHub();
-    };
+document.getElementById('engGkMode').onclick = () => {
+  currentMode = 'enggk';
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('engGkMode').classList.add('active');
+  loadMatrixFromGitHub();
+};
 
-    document.getElementById('allMode').onclick = () => {
-      currentMode = 'all';
-      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('allMode').classList.add('active');
-      loadMatrixFromGitHub();
-    };
+document.getElementById('allMode').onclick = () => {
+  currentMode = 'all';
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('allMode').classList.add('active');
+  loadMatrixFromGitHub();
+};
 
-    document.getElementById('typeMode').onclick = () => {
-      answerMode = 'type';
-      document.getElementById('typeMode').classList.add('active');
-      document.getElementById('mcqMode').classList.remove('active');
-      document.getElementById('flipMode').classList.remove('active');
-      showCard();
-    };
+// ===== ADD THIS CODE HERE =====
+document.getElementById('typeMode').onclick = () => {
+  answerMode = 'type';
+  document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('typeMode').classList.add('active');
+  showCard();
+};
 
-    document.getElementById('mcqMode').onclick = () => {
-      answerMode = 'mcq';
-      document.getElementById('mcqMode').classList.add('active');
-      document.getElementById('typeMode').classList.remove('active');
-      document.getElementById('flipMode').classList.remove('active');
-      showCard();
-    };
+document.getElementById('mcqMode').onclick = () => {
+  answerMode = 'mcq';
+  document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('mcqMode').classList.add('active');
+  showCard();
+};
 
-    document.getElementById('flipMode').onclick = () => {
-      answerMode = 'flip';
-      document.getElementById('flipMode').classList.add('active');
-      document.getElementById('typeMode').classList.remove('active');
-      document.getElementById('mcqMode').classList.remove('active');
-      showCard();
-    };
-
-    document.getElementById('userClass').onchange = function() {
-      userClass = this.value;
-    };
-
-    document.getElementById('saveAgeBtn').onclick = () => {
-      userClass = document.getElementById('userClass').value;
-      localStorage.setItem('abst_user_class', userClass);
-      document.getElementById('ageModal').style.display = 'none';
-      currentMode = 'pillars';
-      loadMatrixFromGitHub();
-    };
+document.getElementById('flipMode').onclick = () => {
+  answerMode = 'flip';
+  document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('flipMode').classList.add('active');
+  showCard();
+};
 
     // ===== AUTO START =====
     const savedClass = localStorage.getItem('abst_user_class');
