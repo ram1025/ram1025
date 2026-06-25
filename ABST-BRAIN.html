@@ -238,40 +238,80 @@ else if(currentMode === 'enggk') {
       currentIndex = 0;
     }
 
-    function nextCard() {
-      if(dueCards.length === 0) {
-        document.getElementById('question').innerText = 'All done! 🎉';
-        document.getElementById('pillarTag').innerText = 'COMPLETE';
-        document.getElementById('timer').style.display = 'none';
-        return;
-      }
-      currentCard = dueCards[currentIndex % dueCards.length];
-      document.getElementById('question').innerText = currentCard.q || currentCard.question;
-      document.getElementById('pillarTag').innerText = currentCard.pillar || currentCard.category || 'GENERAL';
-      document.getElementById('cardCount').innerText = `${currentIndex + 1}/${dueCards.length}`;
-      document.getElementById('answerBox').style.display = 'none';
-      document.getElementById('feedbackMsg').innerText = '';
-      document.getElementById('cardBox').className = 'card';
-      document.getElementById('userAnswer').className = 'answer-input';
-      document.getElementById('userAnswer').value = '';
+    function showCard() {
+  if (currentIndex >= dueCards.length) {
+    document.getElementById('card').innerHTML = `<div style="padding: 40px; text-align: center;">
+      <h3>All done! 🎉</h3>
+    </div>`;
+    document.getElementById('cardCounter').textContent = `${dueCards.length}/${dueCards.length}`;
+    return;
+  }
 
-      if(answerMode === 'type') {
-        document.getElementById('typeAnswerBox').style.display = 'block';
-        document.getElementById('mcqAnswerBox').style.display = 'none';
-        document.getElementById('showBtn').style.display = 'none';
-      } else if(answerMode === 'mcq') {
-        document.getElementById('typeAnswerBox').style.display = 'none';
-        document.getElementById('mcqAnswerBox').style.display = 'block';
-        document.getElementById('showBtn').style.display = 'none';
-        generateMCQ();
-      } else {
-        document.getElementById('typeAnswerBox').style.display = 'none';
-        document.getElementById('mcqAnswerBox').style.display = 'none';
-        document.getElementById('showBtn').style.display = 'block';
-      }
-      startTimer();
-    } // 👈 FIX 4: Extra }, tesesa
+  const card = dueCards[currentIndex];
+  document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
 
+  let content = `<div class="card-content">
+    <div class="question" style="font-size: 1.2rem; margin-bottom: 20px;">${card.question}</div>`;
+
+  // TYPE MODE
+  if(answerMode === 'type') {
+    content += `<input type="text" id="typeAnswerBox" placeholder="Type your answer here..."
+      style="width:100%;padding:12px;margin:10px 0;border-radius:8px;border:1px solid #0ff;background:#001122;color:#fff;font-size:1rem;">
+      <button class="btn" onclick="checkAnswer()" style="margin-top:10px;">CHECK ANSWER</button>`;
+  }
+
+  // MCQ MODE - 4 OPTIONS GENERATE CHESTADI
+  else if(answerMode === 'mcq') {
+    let options = [card.answer]; // Correct answer
+
+    // 3 wrong options random ga teesuko
+    let wrongOptions = matrix.filter(c => c.answer!== card.answer)
+     .sort(() => 0.5 - Math.random())
+     .slice(0, 3)
+     .map(c => c.answer);
+
+    options = [...options,...wrongOptions].sort(() => 0.5 - Math.random()); // Shuffle
+
+    content += `<div id="mcqOptions" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;">`;
+    options.forEach(opt => {
+      content += `<button class="btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}')"
+        style="padding:15px;text-align:left;">${opt}</button>`;
+    });
+    content += `</div>`;
+  }
+
+  // FLIP MODE - Direct answer chupistadi
+  else if(answerMode === 'flip') {
+    content += `<div class="answer" style="color:#0f0;margin:20px 0;padding:15px;background:#001100;border-radius:8px;">${card.answer}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;">
+        <button class="btn btn-danger" onclick="gradeCard(0)">AGAIN 1d</button>
+        <button class="btn btn-warning" onclick="gradeCard(1)">HARD 1d</button>
+        <button class="btn btn-success" onclick="gradeCard(2)">GOOD 6d</button>
+        <button class="btn btn-info" onclick="gradeCard(3)">EASY 15d</button>
+      </div>`;
+  }
+
+  content += `</div>`;
+  document.getElementById('card').innerHTML = content;
+}
+
+// MCQ CHECK FUNCTION - IDI KUDA ADD CHEY
+function checkMCQ(selected) {
+  const card = dueCards[currentIndex];
+  const correct = selected === card.answer;
+
+  let feedback = correct?
+    `<div style="color:#0f0;margin:20px 0;">✅ Correct!</div>` :
+    `<div style="color:#f00;margin:20px 0;">❌ Wrong! Correct: ${card.answer}</div>`;
+
+  document.getElementById('card').innerHTML += feedback + `
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px;">
+      <button class="btn btn-danger" onclick="gradeCard(${correct? 2 : 0})">AGAIN 1d</button>
+      <button class="btn btn-warning" onclick="gradeCard(${correct? 2 : 1})">HARD 1d</button>
+      <button class="btn btn-success" onclick="gradeCard(${correct? 2 : 2})">GOOD 6d</button>
+      <button class="btn btn-info" onclick="gradeCard(${correct? 3 : 3})">EASY 15d</button>
+    </div>`;
+}
     function generateMCQ() {
       const grid = document.getElementById('mcqGrid');
       grid.innerHTML = '';
