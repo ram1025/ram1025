@@ -379,14 +379,14 @@ document.getElementById('flipMode').onclick = () => {
   showCard();
 };
 
-    // ===== AUTO START =====
-    const savedClass = localStorage.getItem('abst_user_class');
-    if(savedClass) {
-      userClass = savedClass;
-      document.getElementById('userClass').value = savedClass;
-      document.getElementById('ageModal').style.display = 'none';
-      loadMatrixFromGitHub();
-    }
-  </script>
+   // ===== AUTO START =====
+const savedClass = localStorage.getItem('abst_user_class');
+if(savedClass) {
+  userClass = savedClass;
+  document.getElementById('userClass').value = savedClass;
+  document.getElementById('ageModal').style.display = 'none';
+  loadMatrixFromGitHub();
+}
+</script>
 </body>
 </html>
