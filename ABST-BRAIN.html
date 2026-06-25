@@ -215,7 +215,7 @@ async function loadMatrixFromGitHub() {
     function initBrain() {
       loadCards();
       updateStats();
-      showcard();
+      showCard();
     }
 
     function loadCards() {
@@ -358,7 +358,7 @@ function checkMCQ(selected) {
         updateCard(1);
       }
       updateStats();
-      setTimeout(() => { currentIndex++; nextCard(); }, 2000);
+      setTimeout(() => { currentIndex++; showCard(); }, 2000);
     }
 
     function checkAnswer() {
@@ -385,7 +385,7 @@ function checkMCQ(selected) {
         updateCard(1);
       }
       updateStats();
-      setTimeout(() => { currentIndex++; nextCard(); }, 2000);
+      setTimeout(() => { currentIndex++; showCard(); }, 2000);
     }
 
     function showAnswer() {
@@ -472,21 +472,21 @@ document.getElementById('engGkMode').onclick = () => {
       document.getElementById('typeMode').classList.add('active');
       document.getElementById('mcqMode').classList.remove('active');
       document.getElementById('flipMode').classList.remove('active');
-      showcard();
+      showCard();
     };
     document.getElementById('mcqMode').onclick = () => {
       answerMode = 'mcq';
       document.getElementById('mcqMode').classList.add('active');
       document.getElementById('typeMode').classList.remove('active');
       document.getElementById('flipMode').classList.remove('active');
-      showcard();
+      showCard();
     };
     document.getElementById('flipMode').onclick = () => {
       answerMode = 'flip';
       document.getElementById('flipMode').classList.add('active');
       document.getElementById('typeMode').classList.remove('active');
       document.getElementById('mcqMode').classList.remove('active');
-      showcard();
+      showCard();
     };
 
     document.querySelectorAll('[data-quality]').forEach(btn => {
@@ -494,7 +494,7 @@ document.getElementById('engGkMode').onclick = () => {
         const quality = parseInt(btn.dataset.quality);
         updateCard(quality);
         currentIndex++;
-        showcard();
+        showCard();
       };
     });
 document.getElementById('userClass').onchange = function() {
