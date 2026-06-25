@@ -205,14 +205,6 @@
   document.querySelector('.card-content').appendChild(qualityDiv);
   document.querySelector('.btn-check')?.remove(); // CHECK ANSWER button remove chey
 }
-
-      if (selected === correctAns) {
-        setTimeout(() => gradeCard(3), 800);
-      } else {
-        setTimeout(() => gradeCard(1), 2000);
-      }
-    }
-
     // ===== FIX 2: FIXED JSON URLS - using.json not.db =====
     async function loadMatrixFromGitHub() {
       try {
@@ -273,49 +265,44 @@
       updateStats();
       showCard();
     }
+function showCard() {
+  if (currentIndex >= dueCards.length) {
+    document.getElementById('card').innerHTML = `<div style="padding: 40px; text-align: center;">
+      <h3>All done! 🎉</h3>
+      <p>Come back tomorrow for more cards</p>
+    </div>`;
+    document.getElementById('cardCounter').textContent = `${dueCards.length}/${dueCards.length}`;
+    return;
+  }
+  currentCard = dueCards[currentIndex];
+  document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
+  let content = `<div class="card-content">
+    <div class="question">${currentCard.q || currentCard.question}</div>`;
 
-    function showCard() {
-      if (currentIndex >= dueCards.length) {
-        document.getElementById('card').innerHTML = `<div style="padding: 40px; text-align: center;">
-          <h3>All done! 🎉</h3>
-          <p>Come back tomorrow for more cards</p>
-        </div>`;
-        document.getElementById('cardCounter').textContent = `${dueCards.length}/${dueCards.length}`;
-        return;
-      }
+  if(answerMode === 'type') {
+    content += `<input type="text" id="typeAnswerBox" class="answer-input" placeholder="Type your answer here..." onkeypress="if(event.key==='Enter') checkAnswer()">
+    <button class="btn btn-check" onclick="checkAnswer()">CHECK ANSWER</button>`;
+  } else if(answerMode === 'mcq') {
+    let correctAns = currentCard.a || currentCard.answer;
+    let options = [correctAns];
+    let wrongOptions = matrix.filter(c => (c.a || c.answer)!== correctAns)
+     .sort(() => 0.5 - Math.random())
+     .slice(0, 3)
+     .map(c => (c.a || c.answer));
+    options = [...options,...wrongOptions].sort(() => 0.5 - Math.random());
+    content += `<div id="mcqOptions" class="mcq-grid">`;
+    options.forEach(opt => {
+      content += `<button class="mcq-btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}')">${opt}</button>`;
+    });
+    content += `</div>`;
+  } else if(answerMode === 'flip') {
+    content += `<div class="answer" style="color:#0f0;margin:20px 0;padding:15px;background:#001100;border-radius:8px;">${currentCard.a || currentCard.answer}</div>
+    <button class="btn" onclick="gradeCard(3)">NEXT</button>`;
+  } // ← EE BRACKET MUNDU UNDALI
 
-      currentCard = dueCards[currentIndex];
-      document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
-
-      let content = `<div class="card-content">
-        <div class="question">${currentCard.q || currentCard.question}</div>`;
-
-      if(answerMode === 'type') {
-        content += `<input type="text" id="typeAnswerBox" class="answer-input" placeholder="Type your answer here..." onkeypress="if(event.key==='Enter') checkAnswer()">
-          <button class="btn btn-check" onclick="checkAnswer()">CHECK ANSWER</button>`;
-      }
-      else if(answerMode === 'mcq') {
-        let correctAns = currentCard.a || currentCard.answer;
-        let options = [correctAns];
-        let wrongOptions = matrix.filter(c => (c.a || c.answer)!== correctAns)
-         .sort(() => 0.5 - Math.random())
-         .slice(0, 3)
-         .map(c => (c.a || c.answer));
-        options = [...options,...wrongOptions].sort(() => 0.5 - Math.random());
-
-        content += `<div id="mcqOptions" class="mcq-grid">`;
-        options.forEach(opt => {
-          content += `<button class="mcq-btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}')">${opt}</button>`;
-        });
-        content += `</div>`;
-      }
-     } else if(answerMode === 'flip') {
-  content += `<div class="answer" style="color:#0f0;margin:20px 0;padding:15px;background:#001100;border-radius:8px;">${currentCard.a || currentCard.answer}</div>
-  <button class="btn" onclick="gradeCard(3)">NEXT</button>`;
+  content += `</div>`;
+  document.getElementById('card').innerHTML = content;
 }
-      content += `</div>`;
-      document.getElementById('card').innerHTML = content;
-    }
 
     function gradeCard(quality) {
       currentCard = window.ABST_SM2.calc(currentCard, quality);
