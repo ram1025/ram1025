@@ -236,30 +236,28 @@
 
     async function loadMatrixFromGitHub() {
   try {
-    document.getElementById('card').innerHTML = `<div class="loading">Loading ${currentFile}... <br>🔄</div>`;
     const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${currentFile}?t=${Date.now()}`;
-    console.log('Fetching URL:', url); // ← idi add chey
-    
     const response = await fetch(url);
-    const textData = await response.text(); // ← idi add chey
-    console.log('First 200 chars:', textData.substring(0, 200)); // ← idi add chey
-    console.log('Last 200 chars:', textData.slice(-200)); // ← idi add chey
+    let textData = await response.text();
     
-    if (!response.ok) throw new Error(`${currentFile} not found`);
-    matrix = JSON.parse(textData); // ← response.json() badulu idi
+    // STEP 1: Clean chey
+    textData = textData.trim(); // Start & End lo spaces/newlines remove
+    textData = textData.replace(/^\uFEFF/, ''); // BOM remove
     
-    const saved = localStorage.getItem(`abst_brain_${currentFile}`);
-    if(saved) {
-      const parsed = JSON.parse(saved);
-      parsed.forEach(savedCard => {
-        const idx = matrix.findIndex(c => c.id === savedCard.id);
-        if(idx >= 0) matrix[idx] = savedCard;
-      });
+    // STEP 2: Debug - exact error position lo em undi
+    if(currentFile === 'Education-school-280.json') {
+      console.log('Char at 56983:', textData[56982]); // 0-indexed
+      console.log('Chars 56980-56990:', textData.substring(56979, 56990));
     }
+    
+    matrix = JSON.parse(textData);
+    console.log('SCHOOL Total Loaded:', matrix.length);
     initBrain();
+    
   } catch(err) {
-    console.error('Full Error:', err);
-    document.getElementById('card').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check if ${currentFile} exists in GitHub repo</div>`;
+    console.error('JSON Error:', err);
+    console.error('Error at position:', err.message.match(/position (\d+)/)?.[1]);
+    document.getElementById('card').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}</div>`;
   }
 }
 
