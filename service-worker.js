@@ -1,9 +1,10 @@
-const CACHE_NAME = 'ram1025-v10-20251004'; // v9 → v10 ki marchu - constitution.html 'a' fix kosam
+const CACHE_NAME = 'ram1025-v11-20251004'; // v10 → v11 ki marchu - ABST-BRAIN.html cache fix
 const BASE_PATH = '/ram1025/';
 
 const urlsToCache = [
   BASE_PATH,
   BASE_PATH + 'index.html',
+  BASE_PATH + 'ABST-BRAIN.html',  // NEW LINE
   BASE_PATH + 'dpr.html',
   BASE_PATH + 'constitution.html',
   BASE_PATH + 'manifest.json',
