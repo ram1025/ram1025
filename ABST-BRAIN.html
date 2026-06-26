@@ -1,486 +1,713 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ABST BRAIN | P24 | INDIAN.001</title>
-  <meta name="theme-color" content="#00ffaa">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box }
-    html { scroll-behavior: smooth; font-size: 16px; }
-    body { background:#0a192f; color:#00ffaa; font-family:system-ui,-apple-system,sans-serif; padding:20px; text-align:center; min-height:100vh }
- .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
- .header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
- .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
- .back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
- .mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
- .mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 16px; border-radius:8px; cursor:pointer; font-weight:700; font-size:12px; flex:1; min-width:150px;}
- .mode-btn.active { background:#ffaa00; color:#0a192f }
- .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative; transition:border-color 0.3s }
- .card.correct { border-color:#44ff88; box-shadow:0 0 40px #44ff8820 }
- .card.wrong { border-color:#ff4444; box-shadow:0 0 40px #ff444420 }
- .pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
- .question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
- .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0; transition:border-color 0.3s }
- .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
- .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
- .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
- .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px; transition:all 0.2s }
- .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
- .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
- .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
- .mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
- .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer; transition:all 0.2s }
- .btn:hover { transform:scale(1.05); box-shadow:0 0 20px #00ffaa80 }
- .btn-check { background:#ffaa00; color:#0a192f }
- .quality-btns { display:none; gap:8px; justify-content:center; margin:20px 0; flex-wrap:wrap }
- .btn-again { background:#ff4444; color:#fff; padding:12px 20px }
- .btn-hard { background:#ffaa00; color:#0a192f; padding:12px 20px }
- .btn-good { background:#00ffaa; color:#0a192f; padding:12px 20px }
- .btn-easy { background:#44ff88; color:#0a192f; padding:12px 20px }
- .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
- .stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
- .footer { margin-top:50px; font-size:12px; opacity:0.6 }
- .badge { position:absolute; top:-12px; right:20px; background:#ffaa00; color:#0a192f; padding:6px 12px; border-radius:20px; font-size:11px; font-weight:900 }
- .feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
- .timer { position:absolute; top:10px; left:20px; background:#ff4444; color:#fff; padding:6px 12px; border-radius:20px; font-size:12px; font-weight:900; display:none }
- .timer.warning { background:#ffaa00; color:#0a192f }
- .loading { color:#ffaa00; font-size:18px; padding:40px; text-align:center }
-   </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
+<title>ABST BRAIN | P24 | INDIAN.001</title>
+<meta name="theme-color" content="#00ffaa">
+<meta name="description" content="ABST BRAIN - 108 Pillar Mantra + 1000 Education Sahasra">
+<style>
+* { margin:0; padding:0; box-sizing:border-box }
+html { scroll-behavior: smooth; font-size: 16px; }
+html.modal-open { overflow: hidden !important; }
+body {
+background:#0a192f;
+color:#00ffaa;
+font-family:system-ui,-apple-system,sans-serif;
+padding:20px;
+text-align:center;
+min-height:100vh
+}
+.header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
+.header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
+.header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
+.back-btn {
+position:absolute;
+left:0;
+top:5px;
+background:#1a2332;
+color:#00ffaa;
+border:1px solid #00ffaa;
+padding:8px 16px;
+border-radius:8px;
+font-weight:700;
+cursor:pointer;
+font-size:14px;
+z-index:10
+}
+.back-btn:hover { background:#00ffaa; color:#0a192f }
+.mode-toggle,.answer-mode-toggle {
+background:#112240;
+border:1px solid #ffaa00;
+padding:10px;
+border-radius:10px;
+margin:15px auto;
+max-width:550px;
+display:flex;
+justify-content:center;
+gap:10px
+}
+.mode-btn {
+background:#1a2332;
+color:#8892b0;
+border:none;
+padding:8px 20px;
+border-radius:8px;
+cursor:pointer;
+font-weight:700;
+font-size:13px
+}
+.mode-btn.active { background:#ffaa00; color:#0a192f }
+.card {
+background:linear-gradient(145deg,#1a2332,#0f1723);
+padding:35px;
+border-radius:24px;
+border:2px solid #00ffaa;
+min-height:320px;
+margin:20px auto;
+max-width:550px;
+box-shadow:0 0 40px #00ffaa20;
+position:relative;
+transition:border-color 0.3s
+}
+.card.correct { border-color:#44ff88; box-shadow:0 0 40px #44ff8820 }
+.card.wrong { border-color:#ff4444; box-shadow:0 0 40px #ff444420 }
+.pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
+.question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
+.answer-input {
+width:100%;
+padding:14px;
+background:#0a192f;
+border:2px solid #00ffaa;
+border-radius:10px;
+color:#fff;
+font-size:18px;
+text-align:center;
+margin:20px 0;
+transition:border-color 0.3s
+}
+.answer-input.correct { border-color:#44ff88; background:#44ff8810 }
+.answer-input.wrong { border-color:#ff4444; background:#ff444410 }
+.mcq-grid {
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin:20px 0
+}
+.mcq-btn {
+background:#1a2332;
+color:#fff;
+border:2px solid #00ffaa40;
+padding:15px;
+border-radius:10px;
+cursor:pointer;
+font-size:15px;
+transition:all 0.2s
+}
+.mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
+.mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
+.mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
+.btn {
+background:#00ffaa;
+color:#0a192f;
+padding:16px 32px;
+border:none;
+border-radius:14px;
+margin:8px;
+font-weight:900;
+font-size:16px;
+cursor:pointer;
+transition:all 0.2s
+}
+.btn:hover { transform:scale(1.05); box-shadow:0 0 20px #00ffaa80 }
+.btn-check { background:#ffaa00; color:#0a192f }
+.btn-next { background:#44ff88; color:#0a192f; display:none }
+.btn-again { background:#ff4444; color:#fff }
+.btn-hard { background:#ffaa00; color:#0a192f }
+.btn-good { background:#00ffaa; color:#0a192f }
+.btn-easy { background:#44ff88; color:#0a192f }
+.stats {
+display:flex;
+justify-content:space-around;
+margin:35px auto;
+max-width:550px;
+font-size:15px;
+background:#1a2332;
+padding:20px;
+border-radius:16px;
+border:1px solid #00ffaa40
+}
+.stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
+.footer { margin-top:50px; font-size:12px; opacity:0.6 }
+.badge {
+position:absolute;
+top:-12px;
+right:20px;
+background:#ffaa00;
+color:#0a192f;
+padding:6px 12px;
+border-radius:20px;
+font-size:11px;
+font-weight:900
+}
+.feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
+.age-modal {
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#0a192fdd;
+display:none;
+align-items:center;
+justify-content:center;
+z-index:100
+}
+.age-box {
+background:#1a2332;
+padding:30px;
+border-radius:20px;
+border:2px solid #00ffaa;
+max-width:400px;
+width:90%
+}
+.age-box h2 { color:#ffaa00; margin-bottom:20px }
+.age-box input, .age-box select {
+width:100%;
+padding:12px;
+margin:10px 0;
+background:#0a192f;
+border:2px solid #00ffaa;
+border-radius:10px;
+color:#fff;
+font-size:16px
+}
+</style>
 </head>
 <body>
-  <div class="header">
-    <button class="back-btn" id="homeBtn">← CLOSE</button>
-    <h1>ABST BRAIN</h1>
-    <p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
-  </div>
-  <div class="mode-toggle">
-  <button class="mode-btn" data-file="36-pillars-108.json">36 PILLARS - 108</button>
-  <button class="mode-btn" data-file="Education-school-280.json">SCHOOL - 280</button>
-  <button class="mode-btn" data-file="Education-college-180.json">COLLEGE - 180</button>
-  <button class="mode-btn" data-file="Education-competitive-340.json">COMPETITIVE - 340</button>
-  <button class="mode-btn" data-file="Education-other-200.json">GK/PHD - 200</button>
-  <select id="userClassDropdown">
-  <option value="LKG">LKG</option>
-  <option value="UKG">UKG</option>
-  <option value="CLASS1">Class 1</option>
-  <option value="CLASS2">Class 2</option>
-  <option value="CLASS3">Class 3</option>
-  <option value="CLASS4">Class 4</option>
-  <option value="CLASS5">Class 5</option>
-  <option value="CLASS6">Class 6</option>
-  <option value="CLASS7">Class 7</option>
-  <option value="CLASS8">Class 8</option>
-  <option value="CLASS9">Class 9</option>
-  <option value="CLASS10">Class 10</option>
-  <option value="CLASS11">Class 11</option>
-  <option value="CLASS12">Class 12</option>
-  <option value="DEGREE_UG">Degree</option>
-  <option value="ENGINEERING">Engineering</option>
-  <option value="MBBS">MBBS</option>
-  <option value="UPSC">UPSC</option>
-  <option value="NEET">NEET</option>
-  <option value="JEE">JEE</option>
-  <option value="SSC">SSC</option>
-  <option value="BANKING">Banking</option>
-  <option value="GK">General Knowledge</option>
-  <option value="PHD">PhD</option>
-</select>
+<div class="header">
+<button class="back-btn" id="homeBtn">← HOME</button>
+<h1>ABST BRAIN</h1>
+<p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
 </div>
-  <div class="answer-mode-toggle">
-    <button class="mode-btn active" id="typeMode">✏️ TYPE</button>
-    <button class="mode-btn" id="mcqMode">⚪ MCQ</button>
-    <button class="mode-btn" id="flipMode">🔁 FLIP</button>
-  </div>
-  <div id="cardCounter" style="text-align:center;margin:15px;color:#00ffaa;font-weight:bold;font-size:18px;">0/0</div>
-  <div id="card" style="min-height:320px;padding:35px;border:2px solid #00ffaa;border-radius:24px;margin:20px auto;max-width:550px;background:linear-gradient(145deg,#1a2332,#0f1723);box-shadow:0 0 40px #00ffaa20;"></div>
-  <div class="stats">
-    <div>Due Now<b id="dueCount">0</b></div>
-    <div>Streak<b id="streakCount">0<br>days</b></div>
-    <div>Total<b id="totalCount">0<br>/0</b></div>
-  </div>
-  <div class="footer">ABST P24 Civilization OS | SM-2 Algorithm | 108 Mantra + 1000 Sahasra</div>
-  <script>
-    // ===== GITHUB RAW URLs =====
-    const GITHUB_USER = 'ram1025';
-    const REPO_NAME = 'ram1025';
-
-    // ===== SM-2 ALGORITHM =====
-    window.ABST_SM2 = {
-      calc: function(card, quality) {
-        if (quality < 3) {
-          card.reps = 0;
-          card.interval = 1;
-        } else {
-          if (card.reps === 0) card.interval = 1;
-          else if (card.reps === 1) card.interval = 6;
-          else card.interval = Math.round(card.interval * card.ease);
-          card.reps += 1;
-        }
-        card.ease = card.ease + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
-        if (card.ease < 1.3) card.ease = 1.3;
-        card.due = Date.now() + card.interval * 24 * 60 * 60 * 1000;
-        return card;
-      }
-    };
-
-    // ===== BRAIN LOGIC =====
-    let currentMode = 'pillars';
-    let currentFile = '36-pillars-108.json';
-    let answerMode = 'type';
-    let currentCard = null;
-    let dueCards = [];
-    let currentIndex = 0;
-    let userClass = 'GK';
-    let streak = parseInt(localStorage.getItem('abst_streak') || '0');
-    let matrix = [];
-
-    function filterByLevel() {
-  console.log('userClass:', userClass);
-  console.log('Total Cards before filter:', matrix.length);
-  console.log('First card:', matrix[0]);
-  
-  // TEMP: Filter disable chesa - anni questions show avvali
-  // matrix = matrix.filter(c => c.category === userClass);
-  
-  console.log('Filtered Cards:', matrix.length);
-  
-  if (matrix.length === 0) {
-    document.getElementById('card').innerHTML = `<div style="color:#ffaa00;padding:40px;">
-      <h3>No questions loaded</h3>
-      <p>JSON file load avvaledu or empty ga undi</p>
-      </div>`;
-  }
+<div class="mode-toggle">
+<button class="mode-btn active" id="abstMode">🏛️ 36 PILLARS - 108</button>
+<button class="mode-btn" id="eduMode">📚 EDUCATION - 1000+</button>
+</div>
+<div class="answer-mode-toggle">
+<button class="mode-btn active" id="typeMode">✍️ TYPE</button>
+<button class="mode-btn" id="mcqMode">🔘 MCQ</button>
+<button class="mode-btn" id="flipMode">🔄 FLIP</button>
+</div>
+<div class="card" id="cardBox">
+<div class="badge" id="cardCount">1/108</div>
+<div class="pillar" id="pillarTag">P24: Loading...</div>
+<h2 class="question" id="question">Initializing...</h2>
+<div id="typeAnswerBox" style="display:none">
+<input type="text" class="answer-input" id="userAnswer" placeholder="Type your answer here..." autocomplete="off">
+<button class="btn btn-check" id="checkBtn">CHECK ANSWER</button>
+</div>
+<div id="mcqAnswerBox" style="display:none">
+<div class="mcq-grid" id="mcqGrid"></div>
+</div>
+<button class="btn" id="showBtn" style="display:none">SHOW ANSWER</button>
+<div class="feedback-msg" id="feedbackMsg"></div>
+<div id="answerBox" style="display:none">
+<hr style="border-color:#00ffaa; margin:30px 0; opacity:0.2">
+<h3 id="answer" style="color:#fff; font-size:20px; line-height:1.5"></h3>
+<button class="btn btn-next" id="nextBtn">NEXT QUESTION →</button>
+<div style="margin-top:40px" id="ratingBox">
+<button class="btn btn-again">AGAIN<br><small>1 min</small></button>
+<button class="btn btn-hard">HARD<br><small>10 min</small></button>
+<button class="btn btn-good">GOOD<br><small>1 day</small></button>
+<button class="btn btn-easy">EASY<br><small>4 days</small></button>
+</div>
+</div>
+</div>
+<div class="stats">
+<div>Due Now<br><b id="dueCount">0</b></div>
+<div>Streak<br><b id="streakCount">0</b> days</div>
+<div>Total<br><b id="progress">0</b>/1108</div>
+</div>
+<div class="footer">
+ABST P24 Civilization OS | SM-2 Algorithm | 108 Mantra + 1000 Sahasra
+</div>
+<div class="age-modal" id="ageModal">
+<div class="age-box">
+<h2>🎓 EDUCATION MODE</h2>
+<p style="margin-bottom:15px">Mee age and class cheppandi. Relevant questions istanu.</p>
+<input type="number" id="userAge" placeholder="Age - Example: 24" min="3" max="100">
+<select id="userClass">
+<option value="">Select Class/Course</option>
+<option value="LKG">LKG</option>
+<option value="UKG">UKG</option>
+<option value="1">Class 1</option>
+<option value="2">Class 2</option>
+<option value="3">Class 3</option>
+<option value="4">Class 4</option>
+<option value="5">Class 5</option>
+<option value="6">Class 6</option>
+<option value="7">Class 7</option>
+<option value="8">Class 8</option>
+<option value="9">Class 9</option>
+<option value="10">Class 10</option>
+<option value="11">Class 11</option>
+<option value="12">Class 12</option>
+<option value="BTech">B.Tech</option>
+<option value="MBA">MBA</option>
+<option value="PhD">PhD</option>
+<option value="GK">General Knowledge</option>
+</select>
+<button class="btn" id="startEduBtn" style="width:100%;margin-top:15px">START LEARNING</button>
+</div>
+</div>
+<script>
+// ============================================
+// SM-2 ALGORITHM - INLINED
+// ============================================
+const ABST_SM2 = {
+calc: function(card, ease) {
+if (!card.reps) card.reps = 0;
+if (!card.ease) card.ease = 2.5;
+if (!card.interval) card.interval = 0;
+if (ease < 3) {
+card.reps = 0;
+card.interval = 0;
+} else {
+card.reps++;
+if (card.reps === 1) card.interval = 1;
+else if (card.reps === 2) card.interval = 6;
+else card.interval = Math.round(card.interval * card.ease);
+card.ease = card.ease + (0.1 - (5 - ease) * (0.08 + (5 - ease) * 0.02));
+if (card.ease < 1.3) card.ease = 1.3;
 }
-
-    function loadCards() {
-      dueCards = matrix.filter(c => {
-        if (!c.due) return true;
-        return c.due <= Date.now();
-      });
-      if (dueCards.length === 0) {
-        dueCards = [...matrix];
-      }
-      currentIndex = 0;
-      dueCards = dueCards.sort(() => 0.5 - Math.random());
-    }
-
-    function checkAnswer() {
-      const input = document.getElementById('typeAnswerBox');
-      const userAns = input.value.trim().toLowerCase();
-      const correctAns = (currentCard.a || currentCard.answer).trim().toLowerCase();
-      const cardEl = document.getElementById('card');
-
-      if (userAns === correctAns) {
-        cardEl.classList.add('correct');
-        input.classList.add('correct');
-        input.disabled = true;
-        showQualityBtns();
-      } else {
-        cardEl.classList.add('wrong');
-        input.classList.add('wrong');
-        input.value = currentCard.a || currentCard.answer;
-        input.disabled = true;
-        showQualityBtns();
-      }
-    }
-
-    function checkMCQ(selected) {
-      const correctAns = currentCard.a || currentCard.answer;
-      const buttons = document.querySelectorAll('#mcqOptions button');
-      buttons.forEach(btn => {
-        btn.disabled = true;
-        if (btn.textContent === correctAns) {
-          btn.classList.add('correct');
-        } else if (btn.textContent === selected) {
-          btn.classList.add('wrong');
-        }
-      });
-      showQualityBtns();
-    }
-
-    function showQualityBtns() {
-      const qualityDiv = document.createElement('div');
-      qualityDiv.className = 'quality-btns';
-      qualityDiv.style.display = 'flex';
-      qualityDiv.innerHTML = `
-        <button class="btn btn-again" onclick="gradeCard(0)">AGAIN 1d</button>
-        <button class="btn btn-hard" onclick="gradeCard(1)">HARD 1d</button>
-        <button class="btn btn-good" onclick="gradeCard(2)">GOOD 6d</button>
-        <button class="btn btn-easy" onclick="gradeCard(3)">EASY 15d</button>
-      `;
-      document.querySelector('.card-content').appendChild(qualityDiv);
-      document.querySelector('.btn-check')?.remove();
-    }
-
-    // ===== GITHUB CONFIG =====
-const GITHUB_USER = 'ram1025';
-const REPO_NAME = 'ram1025';
-let currentFile = '36-pillars-108.json'; // Default
-    
-function switchFile(fileName) {
-  currentFile = fileName;
-  loadMatrixFromGitHub();
+return card;
 }
-async function loadMatrixFromGitHub() {
-  try {
-    // ===== IKKADA MARCHU =====
-    const url = `https://ram1025.github.io/ram1025/${currentFile}`;
-    // ===== END =====
-    
-    const response = await fetch(url);
-    let textData = await response.text();
-    textData = textData.trim().replace(/^\uFEFF/, '').replace(/\s+$/, '');
-    originalMatrix = JSON.parse(textData);
-    
-    let userClass = document.getElementById('userClassDropdown').value;
-    
-    if (currentFile === '36-pillars-108.json') {
-      matrix = [...originalMatrix];
-    } else {
-      matrix = originalMatrix.filter(card => card.class === userClass);
-    }
-    
-    updateButtonCount(currentFile, matrix.length);
-    updateCategoryDropdown();
-    initBrain();
-  } catch(err) {
-    console.error("Error:", err);
-  }
+};
+
+// ============================================
+// 108 CARDS - 36 PILLARS × 3 - FIXED P33 SYNTAX
+// ============================================
+const abstCards = [
+{pillar:1,tag:"Plasma Plant",front:"P1 Plasma Plant waste capacity?",back:"200 tons/day",options:["50 tons/day","200 tons/day","500 tons/day","1000 tons/day"],type:"abst"},
+{pillar:1,tag:"Plasma Plant",front:"P1 Plasma Plant temperature?",back:"5000°C",options:["1000°C","5000°C","10000°C","500°C"],type:"abst"},
+{pillar:1,tag:"Plasma Plant",front:"P1 Plasma output enti?",back:"SynGas",options:["Electricity","SynGas","Water","Steam"],type:"abst"},
+{pillar:2,tag:"Solar Power",front:"P2 Solar capacity Vizag Hub?",back:"500 MW",options:["200 MW","500 MW","1000 MW","50 MW"],type:"abst"},
+{pillar:2,tag:"Solar Power",front:"P2 Solar panels ekkada?",back:"Mother Hub Rooftop",options:["Ground","Mother Hub Rooftop","Roads","Sea"],type:"abst"},
+{pillar:2,tag:"Solar Power",front:"P2 Solar type?",back:"Monocrystalline",options:["Polycrystalline","Monocrystalline","Thin Film","Amorphous"],type:"abst"},
+{pillar:3,tag:"Moon-Ray",front:"P3 Moon-Ray pani chestunda?",back:"Night time",options:["Day","Night time","Both","Never"],type:"abst"},
+{pillar:3,tag:"Moon-Ray",front:"P3 tech name?",back:"Lunar PV Panels",options:["Solar","Lunar PV Panels","Wind","Hydro"],type:"abst"},
+{pillar:3,tag:"Moon-Ray",front:"P3 capacity?",back:"50 MW",options:["10 MW","50 MW","100 MW","5 MW"],type:"abst"},
+{pillar:4,tag:"AWT",front:"P4 AWT full form?",back:"Advanced Water Treatment",options:["Auto Water Tap","Advanced Water Treatment","Air Water Tech","Atomic Waste Treatment"],type:"abst"},
+{pillar:4,tag:"AWT",front:"P4 AWT capacity?",back:"5 MLD",options:["1 MLD","5 MLD","10 MLD","50 MLD"],type:"abst"},
+{pillar:4,tag:"AWT",front:"P4 water source?",back:"Sea + Rain",options:["River","Sea + Rain","Bore","Tank"],type:"abst"},
+{pillar:5,tag:"Rain-Drop",front:"P5 energy ela vastundi?",back:"Kinetic from raindrops",options:["Sun","Kinetic from raindrops","Wind","Heat"],type:"abst"},
+{pillar:5,tag:"Rain-Drop",front:"P5 tech name?",back:"Piezoelectric Tiles",options:["Solar","Piezoelectric Tiles","Turbine","Battery"],type:"abst"},
+{pillar:5,tag:"Rain-Drop",front:"P5 ekkada pettaru?",back:"Walkways & Roads",options:["Roofs","Walkways & Roads","Walls","Trees"],type:"abst"},
+{pillar:6,tag:"Green Fuel",front:"P6 Fuel cost per liter?",back:"₹47",options:["₹100","₹47","₹75","₹25"],type:"abst"},
+{pillar:6,tag:"Green Fuel",front:"P6 Fuel source?",back:"Plastic + Bio waste",options:["Petrol","Plastic + Bio waste","Coal","Diesel"],type:"abst"},
+{pillar:6,tag:"Green Fuel",front:"P6 Plant capacity?",back:"10,000 L/day",options:["1,000 L/day","10,000 L/day","50,000 L/day","1 Lakh L/day"],type:"abst"},
+{pillar:7,tag:"rPET Factory",front:"P7 rPET ante?",back:"Recycled PET Plastic",options:["Raw PET","Recycled PET Plastic","Rocket PET","Rapid PET"],type:"abst"},
+{pillar:7,tag:"rPET Factory",front:"P7 input enti?",back:"Plastic bottles",options:["Glass","Plastic bottles","Metal","Paper"],type:"abst"},
+{pillar:7,tag:"rPET Factory",front:"P7 output use?",back:"Clothing + Bottles",options:["Fuel","Clothing + Bottles","Roads","Food"],type:"abst"},
+{pillar:8,tag:"Glass Recycling",front:"P8 Glass recycling rate?",back:"100%",options:["50%","75%","100%","25%"],type:"abst"},
+{pillar:8,tag:"Glass Recycling",front:"P8 Glass malli enti avthundi?",back:"New bottles + Tiles",options:["Trash","New bottles + Tiles","Fuel","Plastic"],type:"abst"},
+{pillar:8,tag:"Glass Recycling",front:"P8 energy save?",back:"30%",options:["10%","30%","50%","70%"],type:"abst"},
+{pillar:9,tag:"Aluminium",front:"P9 Aluminium energy save?",back:"95%",options:["50%","75%","95%","100%"],type:"abst"},
+{pillar:9,tag:"Aluminium",front:"P9 recycle chesthe?",back:"No mining needed",options:["More mining","No mining needed","Pollution","Cost"],type:"abst"},
+{pillar:9,tag:"Aluminium",front:"P9 uses?",back:"Cans + Wires + Frames",options:["Food","Cans + Wires + Frames","Clothes","Fuel"],type:"abst"},
+{pillar:10,tag:"AWG Plant",front:"P10 AWG daily capacity?",back:"10,000 L/day",options:["1,000 L/day","5,000 L/day","10,000 L/day","50,000 L/day"],type:"abst"},
+{pillar:10,tag:"AWG Plant",front:"P10 AWG full form?",back:"Atmospheric Water Generator",options:["Auto Water Gate","Atmospheric Water Generator","Air Water Gas","Atomic Water Grid"],type:"abst"},
+{pillar:10,tag:"AWG Plant",front:"P10 tech?",back:"Condensation",options:["Boiling","Condensation","Filtration","Freezing"],type:"abst"},
+{pillar:11,tag:"Dual-Ion Shield",front:"P11 shield purpose?",back:"Water purification",options:["Security","Water purification","Energy","Communication"],type:"abst"},
+{pillar:11,tag:"Dual-Ion Shield",front:"P11 ions?",back:"Silver + Copper",options:["Gold + Silver","Silver + Copper","Iron + Zinc","Salt + Sugar"],type:"abst"},
+{pillar:11,tag:"Dual-Ion Shield",front:"P11 kills?",back:"Bacteria + Virus",options:["Fish","Bacteria + Virus","Humans","Plants"],type:"abst"},
+{pillar:12,tag:"Plastic Processing",front:"P12 input?",back:"Mixed plastic waste",options:["Glass","Mixed plastic waste","Metal","Paper"],type:"abst"},
+{pillar:12,tag:"Plastic Processing",front:"P12 output?",back:"Pellets + Fuel",options:["Water","Pellets + Fuel","Gas","Sand"],type:"abst"},
+{pillar:12,tag:"Plastic Processing",front:"P12 capacity?",back:"100 tons/day",options:["10 tons/day","100 tons/day","500 tons/day","1 ton/day"],type:"abst"},
+{pillar:13,tag:"Waste-to-Trash",front:"P13 command ante?",back:"Zero waste goal",options:["Burn all","Zero waste goal","Dump","Export"],type:"abst"},
+{pillar:13,tag:"Waste-to-Trash",front:"P13 process?",back:"Segregation + Recycle",options:["Burn","Segregation + Recycle","Bury","Throw"],type:"abst"},
+{pillar:13,tag:"Waste-to-Trash",front:"P13 AI name?",back:"Jarvis",options:["Siri","Jarvis","Alexa","Google"],type:"abst"},
+{pillar:14,tag:"Bio-Fertilizer",front:"P14 output?",back:"Organic fertilizer",options:["Gas","Organic fertilizer","Plastic","Metal"],type:"abst"},
+{pillar:14,tag:"Bio-Fertilizer",front:"P14 process?",back:"Anaerobic digestion",options:["Burning","Anaerobic digestion","Freezing","Melting"],type:"abst"},
+{pillar:14,tag:"Bio-Fertilizer",front:"P14 benefit?",back:"Chemical-free farming",options:["Cost","Chemical-free farming","Speed","Color"],type:"abst"},
+{pillar:15,tag:"Vayu-Shuddhi",front:"P15 ante?",back:"Air purification forest",options:["Water","Air purification forest","Fire","Earth"],type:"abst"},
+{pillar:15,tag:"Vayu-Shuddhi",front:"P15 trees?",back:"1 Lakh trees",options:["100","1 Lakh trees","10,000","1,000"],type:"abst"},
+{pillar:15,tag:"Vayu-Shuddhi",front:"P15 removes?",back:"CO2 + PM2.5",options:["Oxygen","CO2 + PM2.5","Water","Sound"],type:"abst"},
+{pillar:16,tag:"Chain Mesh",front:"P16 purpose?",back:"Security perimeter",options:["Decoration","Security perimeter","Road","Bridge"],type:"abst"},
+{pillar:16,tag:"Chain Mesh",front:"P16 tech?",back:"AI + Sensors",options:["Manual","AI + Sensors","Dogs","Walls"],type:"abst"},
+{pillar:16,tag:"Chain Mesh",front:"P16 height?",back:"5 meters",options:["1 meter","5 meters","10 meters","20 meters"],type:"abst"},
+{pillar:17,tag:"Slag-Brick",front:"P17 input?",back:"Industrial slag waste",options:["Sand","Industrial slag waste","Water","Air"],type:"abst"},
+{pillar:17,tag:"Slag-Brick",front:"P17 output?",back:"Eco bricks",options:["Fuel","Eco bricks","Plastic","Glass"],type:"abst"},
+{pillar:17,tag:"Slag-Brick",front:"P17 strength?",back:"2x normal",options:["Same","2x normal","Half","10x"],type:"abst"},
+{pillar:18,tag:"Bio-Gas",front:"P18 source?",back:"Organic waste",options:["Petrol","Organic waste","Coal","Diesel"],type:"abst"},
+{pillar:18,tag:"Bio-Gas",front:"P18 output?",back:"Methane + Fertilizer",options:["Water","Methane + Fertilizer","Plastic","Metal"],type:"abst"},
+{pillar:18,tag:"Bio-Gas",front:"P18 capacity?",back:"5,000 m³/day",options:["100 m³/day","5,000 m³/day","50,000 m³/day","500 m³/day"],type:"abst"},
+{pillar:19,tag:"Utility Tunnel",front:"P19 purpose?",back:"Underground services",options:["Cars","Underground services","Water","Air"],type:"abst"},
+{pillar:19,tag:"Utility Tunnel",front:"P19 depth?",back:"10 meters",options:["1 meter","10 meters","50 meters","100 meters"],type:"abst"},
+{pillar:19,tag:"Utility Tunnel",front:"P19 benefit?",back:"No road digging",options:["Cost","No road digging","Speed","Beauty"],type:"abst"},
+{pillar:20,tag:"HDD Pipeline",front:"P20 HDD ante?",back:"Horizontal Directional Drilling",options:["Heavy Duty Drill","Horizontal Directional Drilling","High Density Data","Hot Dry Desert"],type:"abst"},
+{pillar:20,tag:"HDD Pipeline",front:"P20 use?",back:"Underground pipes",options:["Flying","Underground pipes","Space","Water"],type:"abst"},
+{pillar:20,tag:"HDD Pipeline",front:"P20 advantage?",back:"No surface damage",options:["Cost","No surface damage","Speed","Weight"],type:"abst"},
+{pillar:21,tag:"Footstep Energy",front:"P21 Walkways ekkada?",back:"Matru-Shakti Residential",options:["P1 Plant","Matru-Shakti Residential","P24 School","P30 Mall"],type:"abst"},
+{pillar:21,tag:"Footstep Energy",front:"P21 tech?",back:"Piezoelectric",options:["Solar","Piezoelectric","Wind","Hydro"],type:"abst"},
+{pillar:21,tag:"Footstep Energy",front:"P21 output per step?",back:"7 watts",options:["1 watt","7 watts","70 watts","700 watts"],type:"abst"},
+{pillar:22,tag:"Bio-Vault",front:"P22 Bio-Vault purpose?",back:"Seed + DNA Storage",options:["Money","Seed + DNA Storage","Water","Fuel"],type:"abst"},
+{pillar:22,tag:"Bio-Vault",front:"P22 temperature?",back:"-20°C",options:["0°C","-20°C","25°C","100°C"],type:"abst"},
+{pillar:22,tag:"Bio-Vault",front:"P22 capacity?",back:"1 Million seeds",options:["100","1 Million seeds","10,000","10 Million"],type:"abst"},
+{pillar:23,tag:"Matru-Shakti",front:"P23 houses entha mandiki?",back:"10,000 families",options:["1,000","10,000 families","1 Lakh","500"],type:"abst"},
+{pillar:23,tag:"Matru-Shakti",front:"P23 special?",back:"Women-led township",options:["Men only","Women-led township","Mixed","Children"],type:"abst"},
+{pillar:23,tag:"Matru-Shakti",front:"P23 energy?",back:"100% Solar + Wind",options:["Grid","100% Solar + Wind","Diesel","Coal"],type:"abst"},
+{pillar:24,tag:"KG to PhD",front:"P24 lo enni days lo 25K concepts?",back:"84 days",options:["30 days","84 days","365 days","180 days"],type:"abst"},
+{pillar:24,tag:"KG to PhD",front:"P24 algorithm?",back:"SM-2 + Active Recall",options:["Random","SM-2 + Active Recall","AI Only","Manual"],type:"abst"},
+{pillar:24,tag:"KG to PhD",front:"P24 target?",back:"Civilization OS",options:["School","Civilization OS","App","Game"],type:"abst"},
+{pillar:25,tag:"Hospital",front:"P25 Hospital beds?",back:"500",options:["100","500","1000","50"],type:"abst"},
+{pillar:25,tag:"Hospital",front:"P25 special?",back:"AI Diagnosis",options:["Manual","AI Diagnosis","Free","Paid"],type:"abst"},
+{pillar:25,tag:"Hospital",front:"P25 emergency?",back:"0.2s Jarvis alert",options:["1 min","0.2s Jarvis alert","1 hour","1 day"],type:"abst"},
+{pillar:26,tag:"Bank",front:"P26 Bank name?",back:"Sovereign Bank",options:["SBI","Sovereign Bank","HDFC","ICICI"],type:"abst"},
+{pillar:26,tag:"Bank",front:"P26 currency?",back:"ABST Token",options:["Rupee","ABST Token","Dollar","Bitcoin"],type:"abst"},
+{pillar:26,tag:"Bank",front:"P26 interest?",back:"0% for citizens",options:["10%","0% for citizens","5%","20%"],type:"abst"},
+{pillar:27,tag:"Malls",front:"P27 products?",back:"100% Local",options:["Imported","100% Local","Mixed","China"],type:"abst"},
+{pillar:27,tag:"Malls",front:"P27 payment?",back:"ABST Token only",options:["Cash","ABST Token only","Card","UPI"],type:"abst"},
+{pillar:27,tag:"Malls",front:"P27 profit?",back:"Community owned",options:["Private","Community owned","Govt","Foreign"],type:"abst"},
+{pillar:28,tag:"Simulation Game",front:"P28 Game purpose?",back:"KG nunchi CEO training",options:["Entertainment","KG nunchi CEO training","Gaming","Timepass"],type:"abst"},
+{pillar:28,tag:"Simulation Game",front:"P28 VR?",back:"Full immersion",options:["2D","Full immersion","Mobile","None"],type:"abst"},
+{pillar:28,tag:"Simulation Game",front:"P28 reward?",back:"Real ABST tokens",options:["Points","Real ABST tokens","Coins","Nothing"],type:"abst"},
+{pillar:29,tag:"Walls of Fame",front:"P29 wall lo evaru?",back:"Top innovators",options:["Politicians","Top innovators","Actors","Sports"],type:"abst"},
+{pillar:29,tag:"Walls of Fame",front:"P29 reward?",back:"Funding + Land",options:["Certificate","Funding + Land","Money","Job"],type:"abst"},
+{pillar:29,tag:"Walls of Fame",front:"P29 criteria?",back:"Patent + Impact",options:["Money","Patent + Impact","Age","Degree"],type:"abst"},
+{pillar:30,tag:"RVM Network",front:"P30 RVM full form?",back:"Reverse Vending Machine",options:["Recycle Vending Machine","Reverse Vending Machine","Revenue Vending Machine","Robot Vending Machine"],type:"abst"},
+{pillar:30,tag:"RVM Network",front:"P30 input?",back:"Plastic + Metal + Glass",options:["Money","Plastic + Metal + Glass","Paper","Food"],type:"abst"},
+{pillar:30,tag:"RVM Network",front:"P30 output?",back:"ABST Tokens",options:["Cash","ABST Tokens","Coupons","Nothing"],type:"abst"},
+{pillar:31,tag:"Indian.00X",front:"P31 ID format?",back:"INDIAN.001",options:["ID001","INDIAN.001","001IND","ABST001"],type:"abst"},
+{pillar:31,tag:"Indian.00X",front:"P31 tech?",back:"Blockchain",options:["Paper","Blockchain","Excel","Manual"],type:"abst"},
+{pillar:31,tag:"Indian.00X",front:"P31 use?",back:"All services access",options:["Voting","All services access","Bank","School"],type:"abst"},
+{pillar:32,tag:"Vendor Network",front:"P32 vendors?",back:"100% Local",options:["Foreign","100% Local","Mixed","Online"],type:"abst"},
+{pillar:32,tag:"Vendor Network",front:"P32 payment?",back:"ABST Token",options:["Cash","ABST Token","Card","UPI"],type:"abst"},
+{pillar:32,tag:"Vendor Network",front:"P32 delivery?",back:"Drone + EV",options:["Manual","Drone + EV","Train","Ship"],type:"abst"},
+{pillar:33,tag:"Transparency Hub",front:"P33 purpose?",back:"Live data public",options:["Secret","Live data public","Office","Store"],type:"abst"},
+{pillar:33,tag:"Transparency Hub",front:"P33 purpose?",back:"Live data public",options:["Secret","Live data public","Office","Store"],type:"abst"},
+{pillar:33,tag:"Transparency Hub",front:"P33 data?",back:"Energy + Water + Money",options:["Personal","Energy + Water + Money","Private","Secret"],type:"abst"},
+{pillar:33,tag:"Transparency Hub",front:"P33 update?",back:"Real-time 24/7",options:["Daily","Real-time 24/7","Weekly","Monthly"],type:"abst"},
+{pillar:34,tag:"Sentinel-Eye",front:"P34 tech?",back:"AI CCTV + Drones",options:["Manual","AI CCTV + Drones","Dogs","Walls"],type:"abst"},
+{pillar:34,tag:"Sentinel-Eye",front:"P34 response?",back:"0.2s alert",options:["1 min","0.2s alert","1 hour","1 day"],type:"abst"},
+{pillar:34,tag:"Sentinel-Eye",front:"P34 coverage?",back:"100% township",options:["50%","100% township","25%","75%"],type:"abst"},
+{pillar:35,tag:"Jarvis AI",front:"P35 Jarvis response time?",back:"0.2s",options:["1s","0.2s","5s","0.5s"],type:"abst"},
+{pillar:35,tag:"Jarvis AI",front:"P35 Jarvis control?",back:"Layer 7 Security",options:["Layer 1","Layer 7 Security","Layer 3","No security"],type:"abst"},
+{pillar:35,tag:"Jarvis AI",front:"P35 Jarvis brain?",back:"36 Pillars",options:["10 Pillars","36 Pillars","100 Pillars","1 Pillar"],type:"abst"},
+{pillar:36,tag:"Agni-Pariksha",front:"P36 test evariki?",back:"MD only",options:["Everyone","MD only","Citizens","Staff"],type:"abst"},
+{pillar:36,tag:"Agni-Pariksha",front:"P36 frequency?",back:"Yearly",options:["Monthly","Yearly","Daily","Never"],type:"abst"},
+{pillar:36,tag:"Agni-Pariksha",front:"P36 fail aithe?",back:"Personal assets lose",options:["Warning","Fine","Personal assets lose","Nothing"],type:"abst"}
+];
+// ============================================
+// EDUCATION CARDS - LKG TO PhD + GK
+// ============================================
+const eduCards = [
+{subject:"LKG",tag:"Alphabets",front:"A for?",back:"Apple",options:["Ant","Apple","Aeroplane","Arrow"],type:"edu"},
+{subject:"LKG",tag:"Numbers",front:"1 + 1 =?",back:"2",options:["1","2","3","11"],type:"edu"},
+{subject:"LKG",tag:"Colors",front:"Sky color?",back:"Blue",options:["Red","Green","Blue","Yellow"],type:"edu"},
+{subject:"UKG",tag:"Shapes",front:"How many sides in triangle?",back:"3",options:["2","3","4","5"],type:"edu"},
+{subject:"UKG",tag:"Animals",front:"Dog sound?",back:"Bow Bow",options:["Meow","Bow Bow","Moo","Chirp"],type:"edu"},
+{subject:"1",tag:"Math",front:"5 - 3 =?",back:"2",options:["1","2","3","8"],type:"edu"},
+{subject:"2",tag:"EVS",front:"We drink?",back:"Water",options:["Sand","Water","Stone","Fire"],type:"edu"},
+{subject:"3",tag:"Math",front:"10 × 10 =?",back:"100",options:["10","20","100","1000"],type:"edu"},
+{subject:"4",tag:"Science",front:"Plant ki food elaga vastundi?",back:"Photosynthesis",options:["Eating","Photosynthesis","Drinking","Sleeping"],type:"edu"},
+{subject:"5",tag:"Social",front:"India capital?",back:"New Delhi",options:["Mumbai","New Delhi","Kolkata","Chennai"],type:"edu"},
+{subject:"6",tag:"Math",front:"Area of Square formula?",back:"side × side",options:["l×b","side×side","πr²","½bh"],type:"edu"},
+{subject:"7",tag:"Science",front:"Water formula?",back:"H₂O",options:["CO₂","H₂O","O₂","NaCl"],type:"edu"},
+{subject:"8",tag:"Geography",front:"Largest ocean?",back:"Pacific Ocean",options:["Atlantic","Indian","Pacific Ocean","Arctic"],type:"edu"},
+{subject:"9",tag:"History",front:"Gandhiji birth year?",back:"1869",options:["1947","1869","1919","1857"],type:"edu"},
+{subject:"10",tag:"Math",front:"Pythagoras theorem?",back:"a²+b²=c²",options:["a+b=c","a²+b²=c²","a²-b²=c²","2ab=c"],type:"edu"},
+{subject:"11",tag:"Physics",front:"Unit of Force?",back:"Newton",options:["Joule","Newton","Watt","Pascal"],type:"edu"},
+{subject:"12",tag:"Chemistry",front:"Atomic number of Carbon?",back:"6",options:["4","6","8","12"],type:"edu"},
+{subject:"12",tag:"Biology",front:"Powerhouse of cell?",back:"Mitochondria",options:["Nucleus","Mitochondria","Ribosome","Chloroplast"],type:"edu"},
+{subject:"BTech",tag:"Computer",front:"HTML full form?",back:"HyperText Markup Language",options:["HighTech Modern Language","HyperText Markup Language","Home Tool Markup Language","Hyper Transfer Main Link"],type:"edu"},
+{subject:"BTech",tag:"Mechanical",front:"First Law of Thermodynamics?",back:"Energy cannot be created or destroyed",options:["F=ma","Energy cannot be created or destroyed","V=IR","E=mc²"],type:"edu"},
+{subject:"MBA",tag:"Finance",front:"ROI full form?",back:"Return on Investment",options:["Rate of Interest","Return on Investment","Risk of Inflation","Ratio of Income"],type:"edu"},
+{subject:"MBA-HR",tag:"HR",front:"Maslow's Hierarchy highest level?",back:"Self-actualization",options:["Safety","Self-actualization","Belonging","Esteem"],type:"edu"},
+{subject:"MBA-Marketing",tag:"Marketing",front:"4 Ps of Marketing?",back:"Product Price Place Promotion",options:["People Process","Product Price Place Promotion","Plan Prepare","Profit People"],type:"edu"},
+{subject:"MBA-Finance",tag:"Finance",front:"Balance Sheet equation?",back:"Assets = Liabilities + Equity",options:["Profit = Revenue","Assets = Liabilities + Equity","Cash = Income","Debt = Equity"],type:"edu"},
+{subject:"PhD",tag:"Physics",front:"Heisenberg Uncertainty Principle?",back:"Δx·Δp ≥ ħ/2",options:["E=mc²","Δx·Δp ≥ ħ/2","F=ma","V=IR"],type:"edu"},
+{subject:"PhD",tag:"Math",front:"Euler's Identity?",back:"e^(iπ)+1=0",options:["a²+b²=c²","e^(iπ)+1=0","F=ma","∫eˣ=1"],type:"edu"},
+{subject:"GK",tag:"India",front:"National Animal of India?",back:"Tiger",options:["Lion","Tiger","Elephant","Peacock"],type:"edu"},
+{subject:"GK",tag:"World",front:"Largest Country by area?",back:"Russia",options:["China","USA","Russia","Canada"],type:"edu"},
+{subject:"GK",tag:"Space",front:"First person on Moon?",back:"Neil Armstrong",options:["Yuri Gagarin","Neil Armstrong","Rakesh Sharma","Kalpana Chawla"],type:"edu"},
+{subject:"GK",tag:"Invention",front:"Who invented Light Bulb?",back:"Thomas Edison",options:["Newton","Thomas Edison","Einstein","Tesla"],type:"edu"}
+];
+let currentSubject = 'abst';
+let answerMode = 'type';
+let allCards = [];
+let dueCards = [];
+let current = 0;
+let stats = JSON.parse(localStorage.getItem('abstBrainStats')) || { reviewed: 0, streak: 0, lastDate: null };
+let currentEase = 0;
+let isAnswered = false;
+let userAge = null;
+let userClass = null;
+let carryForwardCard = null;
+function loadCards() {
+const saved = localStorage.getItem('abstBrainCards_' + currentSubject);
+if (saved) {
+allCards = JSON.parse(saved);
+} else {
+if (currentSubject === 'abst') {
+allCards = [...abstCards];
+} else {
+if (userClass) {
+allCards = eduCards.filter(c => c.subject === userClass || c.subject === 'GK');
+if (allCards.length === 0) allCards = [...eduCards];
+} else {
+allCards = [...eduCards];
 }
-
-// Page load avvagane call chey
-window.onload = loadMatrixFromGitHub;
-// Button label update function
-function updateButtonCount(fileName, count) {
-  const btnMap = {
-    '36-pillars-108.json': 'btn-pillars',
-    'Education-school-280.json': 'btn-school',
-    'Education-college-180.json': 'btn-college',
-    'Education-competitive-340.json': 'btn-competitive',
-    'Education-other-200.json': 'btn-gkphd'
-  };
-  
-  const btnId = btnMap[fileName];
-  if(btnId) {
-    const countSpan = document.querySelector(`#${btnId}.count`);
-    if(countSpan) countSpan.textContent = count;
-  }
 }
-
-    function initBrain() {
-      matrix = matrix.map((c, i) => ({
-        id: c.id || i,
-        q: c.q || c.question,
-        a: c.a || c.answer,
-        category: c.category || 'GENERAL',
-        ease: c.ease || 2.5,
-        reps: c.reps || 0,
-        interval: c.interval || 0,
-        due: c.due || Date.now()
-      }));
-
-      filterByLevel();
-
-      loadCards();
-      updateStats();
-      showCard();
-    }
-
-    function showCard() {
-      if (currentIndex >= dueCards.length) {
-        document.getElementById('card').innerHTML = `<div style="padding: 40px; text-align: center;">
-          <h3>All done! 🎉</h3>
-          <p>Come back tomorrow for more cards</p>
-        </div>`;
-        document.getElementById('cardCounter').textContent = `${dueCards.length}/${dueCards.length}`;
-        return;
-      }
-      currentCard = dueCards[currentIndex];
-      document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
-      let content = `<div class="card-content">
-        <div class="pillar">${currentCard.category || ''}</div>
-        <div class="question">${currentCard.q || currentCard.question}</div>`;
-
-      if(answerMode === 'type') {
-        content += `<input type="text" id="typeAnswerBox" class="answer-input" placeholder="Type your answer here..." onkeypress="if(event.key==='Enter') checkAnswer()">
-        <button class="btn btn-check" onclick="checkAnswer()">CHECK ANSWER</button>`;
-      } else if(answerMode === 'mcq') {
-        let correctAns = currentCard.a || currentCard.answer;
-        let options = [correctAns];
-        let wrongOptions = matrix.filter(c => (c.a || c.answer)!== correctAns)
-       .sort(() => 0.5 - Math.random())
-       .slice(0, 3)
-       .map(c => (c.a || c.answer));
-        options = [...options,...wrongOptions].sort(() => 0.5 - Math.random());
-        content += `<div id="mcqOptions" class="mcq-grid">`;
-        options.forEach(opt => {
-          content += `<button class="mcq-btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}')">${opt}</button>`;
-        });
-        content += `</div>`;
-      } else if(answerMode === 'flip') {
-        content += `<div class="answer" style="color:#0f0;margin:20px 0;padding:15px;background:#001100;border-radius:8px;">${currentCard.a || currentCard.answer}</div>
-        <button class="btn" onclick="gradeCard(3)">NEXT</button>`;
-      }
-
-      content += `</div>`;
-      document.getElementById('card').innerHTML = content;
-    }
-
-    function gradeCard(quality) {
-      currentCard = window.ABST_SM2.calc(currentCard, quality);
-      const idx = matrix.findIndex(c => c.id === currentCard.id);
-      if(idx >= 0) matrix[idx] = currentCard;
-      localStorage.setItem(`abst_brain_${currentFile}`, JSON.stringify(matrix));
-      currentIndex++;
-      updateStats();
-      showCard();
-    }
-
-    function updateStats() {
-      document.getElementById('dueCount').innerText = dueCards.length;
-      document.getElementById('streakCount').innerHTML = streak + '<br>days';
-      document.getElementById('totalCount').innerHTML = matrix.length + '<br>/' + matrix.length;
-    }
-
-        // ===== EVENT LISTENERS =====
-    document.getElementById('homeBtn').onclick = () => {
-      if(window.parent!== window && window.parent.closeM) {
-        window.parent.closeM('abstBrainModal');
-      } else {
-        window.location.href = './index.html';
-      }
-    };
-
-    // 5 Buttons - Single Listener - FIXED
-    document.querySelectorAll('.mode-toggle .mode-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        currentMode = this.dataset.mode;
-        currentFile = this.dataset.file;
-        document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        loadMatrixFromGitHub();
-      });
-    });
-
-    document.getElementById('typeMode').onclick = () => {
-      answerMode = 'type';
-      document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('typeMode').classList.add('active');
-      showCard();
-    };
-
-    document.getElementById('mcqMode').onclick = () => {
-      answerMode = 'mcq';
-      document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('mcqMode').classList.add('active');
-      showCard();
-    };
-
-    document.getElementById('flipMode').onclick = () => {
-      answerMode = 'flip';
-      document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('flipMode').classList.add('active');
-      showCard();
-    };
-
- // ===== GITHUB CONFIG =====
-// Ee 2 lines vaddu - Direct URL vadutunnam
-
-// ===== GLOBAL VARIABLES =====
-let currentFile = '36-pillars-108.json';
-let userClass = localStorage.getItem('abst_user_class') || 'LKG';
-let originalMatrix = [];
-let matrix = [];
-let currentIndex = 0;
-
-// ===== GITHUB LOADER =====
-async function loadMatrixFromGitHub() {
-  try {
-    const url = `https://ram1025.github.io/ram1025/${currentFile}`;
-    console.log("Fetching:", url);
-
-    const response = await fetch(url);
-    if (!response.ok) {
-      console.error("File not found:", response.status);
-      document.getElementById('cardCounter').innerText = "0/0 - File Error";
-      return;
-    }
-
-    let textData = await response.text();
-    textData = textData.trim().replace(/^\uFEFF/, '').replace(/\s+$/, '');
-    originalMatrix = JSON.parse(textData);
-
-    if (currentFile === '36-pillars-108.json') {
-      matrix = [...originalMatrix];
-    } else {
-      matrix = originalMatrix.filter(card => card.class === userClass);
-    }
-
-    console.log("Loaded:", originalMatrix.length, "Filtered:", matrix.length);
-    updateButtonCount(currentFile, matrix.length);
-    initBrain();
-
-  } catch(err) {
-    console.error("JSON Error:", err);
-  }
-}
-
-function updateButtonCount(file, count) {
-  document.querySelectorAll('.mode-btn').forEach(btn => {
-    if (btn.dataset.file === file) {
-      let text = btn.innerText.split(' - ')[0];
-      btn.innerText = `${text} - ${count}`;
-    }
-  });
-}
-
-function initBrain() {
-  currentIndex = 0;
-  if (matrix.length === 0) {
-    document.getElementById('cardFront').innerText = "No cards for this class";
-    document.getElementById('cardCounter').innerText = "0/0";
-    return;
-  }
-  showCard(0);
-}
-
-function showCard(index) {
-  if (!matrix[index]) return;
-  let card = matrix[index];
-  document.getElementById('cardFront').innerText = card.front || card.question;
-  document.getElementById('cardBack').innerText = card.back || card.answer;
-  document.getElementById('cardCounter').innerText = `${index + 1}/${matrix.length}`;
-}
-
-// ===== DROPDOWN CHANGE =====
-document.getElementById('userClassDropdown').addEventListener('change', function() {
-  userClass = this.value;
-  localStorage.setItem('abst_user_class', userClass);
-  loadMatrixFromGitHub();
+allCards.forEach(c => {
+c.reps = 0; c.ease = 2.5; c.interval = 0; c.due = Date.now();
 });
-
-// ===== BUTTON CLICK =====
-document.querySelectorAll('.mode-btn').forEach(btn => {
-  btn.addEventListener('click', function() {
-    currentFile = this.dataset.file;
-    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-    this.classList.add('active');
-    loadMatrixFromGitHub();
-  });
+}
+filterDueCards();
+}
+function filterDueCards() {
+const now = Date.now();
+dueCards = allCards.filter(c => c.due <= now);
+if (carryForwardCard) {
+dueCards.unshift(carryForwardCard);
+carryForwardCard = null;
+}
+if (dueCards.length === 0) {
+dueCards = allCards.slice(0, 10);
+}
+current = 0;
+updateStats();
+showCard();
+}
+function switchSubject(mode) {
+currentSubject = mode;
+document.getElementById('abstMode').classList.toggle('active', mode === 'abst');
+document.getElementById('eduMode').classList.toggle('active', mode === 'edu');
+if (mode === 'edu' &&!userClass) {
+document.getElementById('ageModal').style.display = 'flex';
+document.documentElement.classList.add('modal-open');
+return;
+}
+saveCards();
+loadCards();
+}
+function switchAnswerMode(mode) {
+answerMode = mode;
+document.getElementById('typeMode').classList.toggle('active', mode === 'type');
+document.getElementById('mcqMode').classList.toggle('active', mode === 'mcq');
+document.getElementById('flipMode').classList.toggle('active', mode === 'flip');
+showCard();
+}
+function saveAgeClass() {
+const age = document.getElementById('userAge').value;
+const cls = document.getElementById('userClass').value;
+if (!age ||!cls) {
+alert('Please enter Age and select Class');
+return;
+}
+userAge = parseInt(age);
+userClass = cls;
+localStorage.setItem('abstUserAge', userAge);
+localStorage.setItem('abstUserClass', userClass);
+document.getElementById('ageModal').style.display = 'none';
+document.documentElement.classList.remove('modal-open');
+loadCards();
+}
+function showCard() {
+if (current >= dueCards.length) current = 0;
+if (dueCards.length === 0) {
+document.getElementById('question').innerText = 'No cards due! Great job!';
+document.getElementById('pillarTag').innerText = 'COMPLETE';
+document.getElementById('typeAnswerBox').style.display = 'none';
+document.getElementById('mcqAnswerBox').style.display = 'none';
+document.getElementById('showBtn').style.display = 'none';
+return;
+}
+isAnswered = false;
+const c = dueCards[current];
+const tagText = c.type === 'abst'? P${c.pillar}: ${c.tag} : ${c.subject}: ${c.tag};
+document.getElementById('pillarTag').innerText = tagText;
+document.getElementById('question').innerText = c.front;
+document.getElementById('answer').innerText = c.back;
+document.getElementById('answerBox').style.display = 'none';
+document.getElementById('cardCount').innerText = ${current + 1}/${dueCards.length};
+document.getElementById('feedbackMsg').innerText = '';
+document.getElementById('cardBox').className = 'card';
+document.getElementById('typeAnswerBox').style.display = 'none';
+document.getElementById('mcqAnswerBox').style.display = 'none';
+document.getElementById('showBtn').style.display = 'none';
+document.getElementById('nextBtn').style.display = 'none';
+document.getElementById('ratingBox').style.display = 'block';
+if (answerMode === 'type') {
+document.getElementById('typeAnswerBox').style.display = 'block';
+document.getElementById('userAnswer').value = '';
+document.getElementById('userAnswer').className = 'answer-input';
+document.getElementById('userAnswer').disabled = false;
+document.getElementById('checkBtn').style.display = 'inline-block';
+document.getElementById('userAnswer').focus();
+} else if (answerMode === 'mcq') {
+document.getElementById('mcqAnswerBox').style.display = 'block';
+renderMCQ(c);
+} else {
+document.getElementById('showBtn').style.display = 'inline-block';
+}
+}
+function renderMCQ(card) {
+const grid = document.getElementById('mcqGrid');
+grid.innerHTML = '';
+const shuffled = [...card.options].sort(() => Math.random() - 0.5);
+shuffled.forEach(opt => {
+const btn = document.createElement('button');
+btn.className = 'mcq-btn';
+btn.innerText = opt;
+btn.onclick = () => checkMCQ(opt, card.back, btn);
+grid.appendChild(btn);
 });
-
-// ===== SET DROPDOWN + AUTO START =====
-document.getElementById('userClassDropdown').value = userClass;
-document.querySelector('.mode-btn[data-file="36-pillars-108.json"]')?.classList.add('active');
-
-// Single load event - idi chalu
-window.addEventListener('load', function() {
-  loadMatrixFromGitHub();
+}
+function checkMCQ(selected, correct, btn) {
+if (isAnswered) return;
+isAnswered = true;
+const buttons = document.querySelectorAll('.mcq-btn');
+buttons.forEach(b => b.disabled = true);
+if (selected === correct) {
+btn.classList.add('correct');
+document.getElementById('cardBox').classList.add('correct');
+document.getElementById('feedbackMsg').innerText = '✅ Correct!';
+document.getElementById('feedbackMsg').style.color = '#44ff88';
+currentEase = 4;
+setTimeout(() => rateAndNext(), 1500);
+} else {
+btn.classList.add('wrong');
+document.getElementById('cardBox').classList.add('wrong');
+document.getElementById('feedbackMsg').innerText = '❌ Wrong! Correct: ' + correct;
+document.getElementById('feedbackMsg').style.color = '#ff4444';
+buttons.forEach(b => {
+if (b.innerText === correct) b.classList.add('correct');
 });
-  </script>
+currentEase = 1;
+carryForwardCard = {...dueCards[current]};
+showAnswerAfterWrong();
+}
+}
+function checkTypedAnswer() {
+if (isAnswered) return;
+isAnswered = true;
+const userAns = document.getElementById('userAnswer').value.trim().toLowerCase();
+const correctAns = dueCards[current].back.toLowerCase();
+const input = document.getElementById('userAnswer');
+input.disabled = true;
+document.getElementById('checkBtn').style.display = 'none';
+if (userAns.includes(correctAns) || correctAns.includes(userAns) || userAns === correctAns) {
+input.classList.add('correct');
+document.getElementById('cardBox').classList.add('correct');
+document.getElementById('feedbackMsg').innerText = '✅ Correct!';
+document.getElementById('feedbackMsg').style.color = '#44ff88';
+currentEase = 4;
+setTimeout(() => rateAndNext(), 1500);
+} else {
+input.classList.add('wrong');
+document.getElementById('cardBox').classList.add('wrong');
+document.getElementById('feedbackMsg').innerText = '❌ Wrong! Correct: ' + dueCards[current].back;
+document.getElementById('feedbackMsg').style.color = '#ff4444';
+currentEase = 1;
+carryForwardCard = {...dueCards[current]};
+showAnswerAfterWrong();
+}
+}
+function showAnswer() {
+document.getElementById('answerBox').style.display = 'block';
+document.getElementById('showBtn').style.display = 'none';
+document.getElementById('typeAnswerBox').style.display = 'none';
+document.getElementById('mcqAnswerBox').style.display = 'none';
+}
+function showAnswerAfterWrong() {
+document.getElementById('answerBox').style.display = 'block';
+document.getElementById('nextBtn').style.display = 'inline-block';
+document.getElementById('ratingBox').style.display = 'none';
+}
+function rateAndNext() {
+rate(currentEase);
+}
+function rate(ease) {
+const card = dueCards[current];
+const updated = ABST_SM2.calc(card, ease);
+if (ease === 1) updated.due = Date.now() + 60 * 1000;
+else if (ease === 2) updated.due = Date.now() + 10 * 60 * 1000;
+else if (ease === 3) updated.due = Date.now() + 24 * 60 * 60 * 1000;
+else updated.due = Date.now() + 4 * 24 * 60 * 60 * 1000;
+const idx = allCards.findIndex(c => c.front === card.front);
+allCards[idx] = updated;
+stats.reviewed++;
+updateStreak();
+saveCards();
+saveStats();
+nextCard();
+}
+function nextCard() {
+current++;
+if (current >= dueCards.length) {
+alert('🎯 Session Complete!\n\nReviewed: ' + dueCards.length + '\nStreak: ' + stats.streak + ' days\n\nJai ABST!');
+filterDueCards();
+} else {
+showCard();
+}
+}
+function updateStreak() {
+const today = new Date().toDateString();
+if (stats.lastDate!== today) {
+const yesterday = new Date(Date.now() - 86400000).toDateString();
+stats.streak = stats.lastDate === yesterday? stats.streak + 1 : 1;
+stats.lastDate = today;
+}
+}
+function updateStats() {
+const now = Date.now();
+const dueNow = allCards.filter(c => c.due <= now).length;
+document.getElementById('dueCount').innerText = dueNow;
+document.getElementById('streakCount').innerText = stats.streak;
+document.getElementById('progress').innerText = stats.reviewed;
+}
+function saveCards() {
+localStorage.setItem('abstBrainCards_' + currentSubject, JSON.stringify(allCards));
+}
+function saveStats() {
+localStorage.setItem('abstBrainStats', JSON.stringify(stats));
+}
+// Event Listeners - BULLETPROOF
+document.addEventListener('DOMContentLoaded', function() {
+document.getElementById('homeBtn').onclick = () => window.location.href = './index.html';
+document.getElementById('abstMode').onclick = () => switchSubject('abst');
+document.getElementById('eduMode').onclick = () => switchSubject('edu');
+document.getElementById('typeMode').onclick = () => switchAnswerMode('type');
+document.getElementById('mcqMode').onclick = () => switchAnswerMode('mcq');
+document.getElementById('flipMode').onclick = () => switchAnswerMode('flip');
+document.getElementById('checkBtn').onclick = checkTypedAnswer;
+document.getElementById('showBtn').onclick = showAnswer;
+document.getElementById('nextBtn').onclick = rateAndNext;
+document.getElementById('startEduBtn').onclick = saveAgeClass;
+document.querySelector('.btn-again').onclick = () => rate(1);
+document.querySelector('.btn-hard').onclick = () => rate(2);
+document.querySelector('.btn-good').onclick = () => rate(3);
+document.querySelector('.btn-easy').onclick = () => rate(4);
+document.addEventListener('keydown', (e) => {
+if (e.key === 'Enter' && answerMode === 'type' &&!isAnswered && document.getElementById('typeAnswerBox').style.display === 'block') {
+checkTypedAnswer();
+}
+if (e.key === 'Escape') {
+document.querySelectorAll('.age-modal').forEach(m => m.style.display = 'none');
+document.documentElement.classList.remove('modal-open');
+}
+});
+// Initialize
+console.log('ABST BRAIN P24 v4.3 | 108 Mantra + 1000 Sahasra | INDIAN.001');
+const savedAge = localStorage.getItem('abstUserAge');
+const savedClass = localStorage.getItem('abstUserClass');
+if (savedAge) userAge = parseInt(savedAge);
+if (savedClass) userClass = savedClass;
+loadCards();
+updateStats();
+});
+</script>
 </body>
 </html>
