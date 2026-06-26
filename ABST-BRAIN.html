@@ -63,16 +63,32 @@
     <button class="mode-btn" data-file="Education-college-180.json">🎓 COLLEGE - <span class="count">180</span></button>
     <button class="mode-btn" data-file="Education-competitive-340.json">🎯 COMPETITIVE - <span class="count">340</span></button>
     <button class="mode-btn" data-file="Education-other-200.json">📚 GK/PHD - <span class="count">200</span></button>
-    <select id="userClassDropdown" style="margin-left: 15px; padding: 8px 12px; border-radius: 8px; background: #1a2332; color: #0ff; border: 1px solid #0ff; font-weight: bold;">
-        <option value="GK">General Knowledge</option>
-        <option value="6">Class 6</option>
-        <option value="7">Class 7</option>
-        <option value="8">Class 8</option>
-        <option value="9">Class 9</option>
-        <option value="10">Class 10</option>
-        <option value="INTER">Intermediate</option>
-        <option value="UPSC">UPSC</option>
-    </select>
+    <select id="userClassDropdown" style="margin-left: 15px; padding: 8px 12px; background: #1a2332; color: #00ffff; border: 1px solid #00ffff; border-radius: 8px;">
+  <option value="LKG">LKG</option>
+  <option value="UKG">UKG</option>
+  <option value="CLASS1">Class 1</option>
+  <option value="CLASS2">Class 2</option>
+  <option value="CLASS3">Class 3</option>
+  <option value="CLASS4">Class 4</option>
+  <option value="CLASS5">Class 5</option>
+  <option value="CLASS6">Class 6</option>
+  <option value="CLASS7">Class 7</option>
+  <option value="CLASS8">Class 8</option>
+  <option value="CLASS9">Class 9</option>
+  <option value="CLASS10">Class 10</option>
+  <option value="CLASS11">Class 11</option>
+  <option value="CLASS12">Class 12</option>
+  <option value="DEGREE_UG">Degree</option>
+  <option value="ENGINEERING">Engineering</option>
+  <option value="MBBS">MBBS</option>
+  <option value="UPSC">UPSC</option>
+  <option value="NEET">NEET</option>
+  <option value="JEE">JEE</option>
+  <option value="SSC">SSC</option>
+  <option value="BANKING">Banking</option>
+  <option value="GK">General Knowledge</option>
+  <option value="PHD">PhD</option>
+</select>
 </div>
   <div class="answer-mode-toggle">
     <button class="mode-btn active" id="typeMode">✏️ TYPE</button>
@@ -206,17 +222,25 @@ const REPO_NAME = 'ram1025';
 let currentFile = '36-pillars-108.json'; // Default
 
 async function loadMatrixFromGitHub() {
-    try {
-        const url = `https://cdn.jsdelivr.net/gh/${GITHUB_USER}/${REPO_NAME}/${currentFile}?t=${Date.now()}`;
-        const response = await fetch(url);
-        let textData = await response.text();
-        textData = textData.trim().replace(/^\uFEFF/, '').replace(/\s+$/, '');
-        originalMatrix = JSON.parse(textData);
-        matrix = [...originalMatrix];
-        console.log(`${currentFile} Total Loaded:`, matrix.length);
-        updateButtonCount(currentFile, matrix.length);
-        updateCategoryDropdown();
-        initBrain();
+  try {
+    const url = `https://cdn.jsdelivr.net/gh/${GITHUB_USER}/${REPO_NAME}/${currentFile}`;
+    const response = await fetch(url);
+    let textData = await response.text();
+    textData = textData.trim().replace(/^\uFEFF/, '').replace(/\s+$/, '');
+    originalMatrix = JSON.parse(textData);
+
+    let userClass = document.getElementById('userClassDropdown').value;
+
+    if (currentFile === '36-pillars-108.json') {
+      matrix = [...originalMatrix];
+    } else {
+      matrix = originalMatrix.filter(card => card.class === userClass || userClass === 'GK');
+    }
+
+    console.log(`${currentFile} Total Loaded:`, matrix.length);
+    updateButtonCount(currentFile, matrix.length);
+    updateCategoryDropdown();
+    initBrain();
     } catch(err) {
         console.error('JSON PARSE FAILED:', err);
     }
