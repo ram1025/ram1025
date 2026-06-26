@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ram1025-v11-20251004'; // v10 → v11 ki marchu - ABST-BRAIN.html cache fix
+const CACHE_NAME = 'ram1025-v14-20251004'; // v13 → v14
 const BASE_PATH = '/ram1025/';
 
 const urlsToCache = [
