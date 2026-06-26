@@ -157,22 +157,22 @@
     let matrix = [];
 
     function filterByLevel() {
-  console.log('Selected Level:', userClass);
+  console.log('userClass:', userClass);
   console.log('Total Cards before filter:', matrix.length);
-
-  // Direct CAPS match - JSON lo anni CAPS lo unnayi
-  matrix = matrix.filter(c => c.category === userClass);
-
+  console.log('First card:', matrix[0]);
+  
+  // TEMP: Filter disable chesa - anni questions show avvali
+  // matrix = matrix.filter(c => c.category === userClass);
+  
   console.log('Filtered Cards:', matrix.length);
-
+  
   if (matrix.length === 0) {
-    document.getElementById('card').innerHTML = `<div style="color:#ffaa00;padding:40px;text-align:center;">
-      <h3>No questions found for ${userClass}</h3>
-      <p>JSON file lo category: "${userClass}" check chey</p>
-      <p style="font-size:14px;margin-top:10px;">Available: LKG, UKG, CLASS1-CLASS12, GK, PHD, UPSC, NEET, JEE, SSC, BANKING, DEGREE_UG, ENGINEERING, MBBS</p>
-    </div>`;
+    document.getElementById('card').innerHTML = `<div style="color:#ffaa00;padding:40px;">
+      <h3>No questions loaded</h3>
+      <p>JSON file load avvaledu or empty ga undi</p>
+      </div>`;
   }
-    }
+}
 
     function loadCards() {
       dueCards = matrix.filter(c => {
@@ -237,10 +237,17 @@
     async function loadMatrixFromGitHub() {
   try {
     document.getElementById('card').innerHTML = `<div class="loading">Loading ${currentFile}... <br>🔄</div>`;
-    const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${currentFile}?t=${Date.now()}`; // ← idi add chey
+    const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${currentFile}?t=${Date.now()}`;
+    console.log('Fetching URL:', url); // ← idi add chey
+    
     const response = await fetch(url);
+    const textData = await response.text(); // ← idi add chey
+    console.log('First 200 chars:', textData.substring(0, 200)); // ← idi add chey
+    console.log('Last 200 chars:', textData.slice(-200)); // ← idi add chey
+    
     if (!response.ok) throw new Error(`${currentFile} not found`);
-    matrix = await response.json();
+    matrix = JSON.parse(textData); // ← response.json() badulu idi
+    
     const saved = localStorage.getItem(`abst_brain_${currentFile}`);
     if(saved) {
       const parsed = JSON.parse(saved);
@@ -251,9 +258,8 @@
     }
     initBrain();
   } catch(err) {
-    console.error(err);
-    document.getElementById('card').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check if ${currentFile} exists in GitHub repo</
-    div>`;
+    console.error('Full Error:', err);
+    document.getElementById('card').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check if ${currentFile} exists in GitHub repo</div>`;
   }
 }
 
