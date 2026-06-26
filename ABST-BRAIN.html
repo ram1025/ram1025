@@ -234,26 +234,27 @@
       document.querySelector('.btn-check')?.remove();
     }
 
-    async function loadMatrixFromGitHub() {
-  try {
-    const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${currentFile}?t=${Date.now()}`;
-    const response = await fetch(url);
-    let textData = await response.text();
-    textData = textData.trim().replace(/^\uFEFF/, '');
-    
-    originalMatrix = JSON.parse(textData);
-    matrix = [...originalMatrix];
-    
-    // Button count update chey
-    updateButtonCount(currentFile, matrix.length);
-    
-    updateCategoryDropdown();
-    initBrain();
-  } catch(err) {
-    console.error('JSON PARSE FAILED:', err);
-  }
-}
+    // ===== GITHUB CONFIG =====
+const GITHUB_USER = 'ram1025';
+const REPO_NAME = 'ram1025';
+let currentFile = '36-pillars-108.json'; // Default
 
+async function loadMatrixFromGitHub() {
+    try {
+        const url = `https://cdn.jsdelivr.net/gh/${GITHUB_USER}/${REPO_NAME}/${currentFile}?t=${Date.now()}`;
+        const response = await fetch(url);
+        let textData = await response.text();
+        textData = textData.trim().replace(/^\uFEFF/, '').replace(/\s+$/, '');
+        originalMatrix = JSON.parse(textData);
+        matrix = [...originalMatrix];
+        console.log(`${currentFile} Total Loaded:`, matrix.length);
+        updateButtonCount(currentFile, matrix.length);
+        updateCategoryDropdown();
+        initBrain();
+    } catch(err) {
+        console.error('JSON PARSE FAILED:', err);
+    }
+}
 // Button label update function
 function updateButtonCount(fileName, count) {
   const btnMap = {
@@ -394,17 +395,17 @@ function updateButtonCount(fileName, count) {
       loadMatrixFromGitHub();
     };
 
-    // ===== AUTO START =====
-    window.addEventListener('load', function() {
-      const savedClass = localStorage.getItem('abst_user_class');
-      if(!savedClass) {
+   // ===== AUTO START =====
+window.addEventListener('load', function() {
+    const savedClass = localStorage.getItem('abst_user_class');
+    if(!savedClass) {
         document.getElementById('ageModal').style.display = 'flex';
-      } else {
+    } else {
         userClass = savedClass;
         document.getElementById('ageModal').style.display = 'none';
-        loadMatrixFromGitHub();
-      }
-    });
+        loadMatrixFromGitHub(); // Line 405 lo idi chalu
+    }
+});
   </script>
 </body>
 </html>
