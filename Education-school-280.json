@@ -2516,8 +2516,8 @@
     "category": "EXTRAS",
     "type": "MCQ",
     "q": "National Youth Day is celebrated on?",
-    "options": ["12 January", "15 January", "26 January", "30 January"],
+    "options": ["12 January", "15 January"],
     "a": "12 January",
     "mode": "FLIP"
   }
-    ]
+  ]
