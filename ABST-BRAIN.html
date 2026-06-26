@@ -85,7 +85,7 @@
         </optgroup>
         <optgroup label="Other">
           <option value="gk" selected>General Knowledge</option>
-          <option value="phd">PhD Level</option>
+          <option value="PhDleve">PhD Level</option>
         </optgroup>
       </select>
       <button class="btn" id="saveAgeBtn">START LEARNING</button>
@@ -372,19 +372,41 @@ document.getElementById('flipMode').onclick = () => {
   showCard();
 };
 
-    // ===== AUTO START =====
-    window.addEventListener('load', function() {
-      const savedClass = localStorage.getItem('abst_user_class');
-      if(!savedClass) {
-        localStorage.setItem('abst_user_class', 'gk');
-        document.getElementById('userClass').value = 'gk';
-        userClass = 'gk';
-      } else {
-        userClass = savedClass;
-      }
+    // ===== MODE BUTTON LOGIC =====
+document.querySelectorAll('.mode-btn[data-file]').forEach(btn => {
+  btn.onclick = function() {
+    document.querySelectorAll('.mode-btn[data-file]').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    currentMode = this.dataset.mode;
+    currentFile = this.dataset.file;
+    if (currentMode === 'pillars') {
+      selectedLevel = 'all';
       document.getElementById('ageModal').style.display = 'none';
       loadMatrixFromGitHub();
-    });
+    } else {
+      document.getElementById('ageModal').style.display = 'flex';
+    }
+  };
+});
+
+// ===== START LEARNING BUTTON FIX =====
+document.getElementById('saveAgeBtn').onclick = function() {
+  selectedLevel = document.getElementById('userClass').value;
+  document.getElementById('ageModal').style.display = 'none';
+  localStorage.setItem('abst_user_level', selectedLevel);
+  loadMatrixFromGitHub();
+};
+
+    // ===== AUTO START =====
+window.addEventListener('load', function() {
+  const savedLevel = localStorage.getItem('abst_user_level'); // abst_user_class → abst_user_level
+  if(!savedLevel) {
+    document.getElementById('ageModal').style.display = 'flex';
+  } else {
+    selectedLevel = savedLevel; // userClass → selectedLevel
+    loadMatrixFromGitHub();
+  }
+});
   </script>
 </body>
 </html>
