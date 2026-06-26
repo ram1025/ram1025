@@ -382,14 +382,22 @@ document.getElementById('flipMode').onclick = () => {
   showCard();
 };
 
-   // ===== AUTO START =====
-const savedClass = localStorage.getItem('abst_user_class');
-if(savedClass) {
-  userClass = savedClass;
-  document.getElementById('userClass').value = savedClass;
+// ===== AUTO START - Skip modal for all users =====
+window.addEventListener('load', function() {
+  const savedClass = localStorage.getItem('abst_user_class');
+  if(!savedClass) {
+    // First time user - auto set to GK
+    localStorage.setItem('abst_user_class', 'gk');
+    document.getElementById('userClass').value = 'gk';
+    userClass = 'gk';
+  } else {
+    userClass = savedClass;
+  }
+  // Modal ni force ga hide chey for everyone
   document.getElementById('ageModal').style.display = 'none';
+  // Direct ga cards load chey
   loadMatrixFromGitHub();
-}
+});
 </script>
 </body>
 </html>
