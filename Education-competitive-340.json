@@ -1,9 +1,10 @@
+  [
   {
     "id": 495,
     "category": "UPSC",
     "type": "MCQ",
     "q": "First General Elections held in?",
-    "options": ["1950-51", "1951-52", "1952-53", "1953-54"],
+    "options": ["1950-51", "1951-52", "1952-53"],
     "a": "1951-52",
     "mode": "FLIP"
   },
