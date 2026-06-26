@@ -58,12 +58,12 @@
     <p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
   </div>
   <div class="mode-toggle">
-    <button class="mode-btn active" data-file="36-pillars-108.json">🏛 36 PILLARS - <span class="count">108</span></button>
-    <button class="mode-btn" data-file="Education-school-280.json">🏫 SCHOOL - <span class="count">280</span></button>
-    <button class="mode-btn" data-file="Education-college-180.json">🎓 COLLEGE - <span class="count">180</span></button>
-    <button class="mode-btn" data-file="Education-competitive-340.json">🎯 COMPETITIVE - <span class="count">340</span></button>
-    <button class="mode-btn" data-file="Education-other-200.json">📚 GK/PHD - <span class="count">200</span></button>
-    <select id="userClassDropdown" style="margin-left: 15px; padding: 8px 12px; background: #1a2332; color: #00ffff; border: 1px solid #00ffff; border-radius: 8px;">
+    <button onclick="switchFile('36-pillars-108.json')">36 PILLARS - 108</button>
+<button onclick="switchFile('school-280.json')">SCHOOL - 280</button>
+<button onclick="switchFile('college-180.json')">COLLEGE - 180</button>
+<button onclick="switchFile('competitive-340.json')">COMPETITIVE - 340</button>
+<button onclick="switchFile('gk-phd-200.json')">GK/PHD - 200</button>
+<select id="userClassDropdown" onchange="loadMatrixFromGitHub()">
   <option value="LKG">LKG</option>
   <option value="UKG">UKG</option>
   <option value="CLASS1">Class 1</option>
@@ -220,7 +220,11 @@
 const GITHUB_USER = 'ram1025';
 const REPO_NAME = 'ram1025';
 let currentFile = '36-pillars-108.json'; // Default
-
+    
+function switchFile(fileName) {
+  currentFile = fileName;
+  loadMatrixFromGitHub();
+}
 async function loadMatrixFromGitHub() {
   try {
     const url = `https://cdn.jsdelivr.net/gh/${GITHUB_USER}/${REPO_NAME}/${currentFile}`;
