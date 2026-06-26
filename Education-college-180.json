@@ -646,7 +646,7 @@
     "options": ["Diesel Cycle", "Otto Cycle", "Rankine Cycle", "Brayton Cycle"],
     "a": "Otto Cycle",
     "mode": "FLIP"
-  }
+  },
     {
     "id": 353,
     "category": "ENGINEERING",
