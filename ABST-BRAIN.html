@@ -388,38 +388,99 @@ function updateButtonCount(fileName, count) {
     };
 
  // ===== GITHUB CONFIG =====
-const GITHUB_USER = 'ram1025';
-const REPO_NAME = 'ram1025';
-let currentFile = '36-pillars-108.json'; // Default
-let userClass = localStorage.getItem('abst_user_class') || 'GK'; // Default GK
+// Ee 2 lines vaddu - Direct URL vadutunnam
 
-// ===== AUTO START =====
-window.addEventListener('load', function() {
-    loadMatrixFromGitHub(); // Modal lekunda direct load
-});
-    // ===== DROPDOWN + BUTTON LOGIC =====
-// Dropdown change ayinappudu
+// ===== GLOBAL VARIABLES =====
+let currentFile = '36-pillars-108.json';
+let userClass = localStorage.getItem('abst_user_class') || 'LKG';
+let originalMatrix = [];
+let matrix = [];
+let currentIndex = 0;
+
+// ===== GITHUB LOADER =====
+async function loadMatrixFromGitHub() {
+  try {
+    const url = `https://ram1025.github.io/ram1025/${currentFile}`;
+    console.log("Fetching:", url);
+
+    const response = await fetch(url);
+    if (!response.ok) {
+      console.error("File not found:", response.status);
+      document.getElementById('cardCounter').innerText = "0/0 - File Error";
+      return;
+    }
+
+    let textData = await response.text();
+    textData = textData.trim().replace(/^\uFEFF/, '').replace(/\s+$/, '');
+    originalMatrix = JSON.parse(textData);
+
+    if (currentFile === '36-pillars-108.json') {
+      matrix = [...originalMatrix];
+    } else {
+      matrix = originalMatrix.filter(card => card.class === userClass);
+    }
+
+    console.log("Loaded:", originalMatrix.length, "Filtered:", matrix.length);
+    updateButtonCount(currentFile, matrix.length);
+    initBrain();
+
+  } catch(err) {
+    console.error("JSON Error:", err);
+  }
+}
+
+function updateButtonCount(file, count) {
+  document.querySelectorAll('.mode-btn').forEach(btn => {
+    if (btn.dataset.file === file) {
+      let text = btn.innerText.split(' - ')[0];
+      btn.innerText = `${text} - ${count}`;
+    }
+  });
+}
+
+function initBrain() {
+  currentIndex = 0;
+  if (matrix.length === 0) {
+    document.getElementById('cardFront').innerText = "No cards for this class";
+    document.getElementById('cardCounter').innerText = "0/0";
+    return;
+  }
+  showCard(0);
+}
+
+function showCard(index) {
+  if (!matrix[index]) return;
+  let card = matrix[index];
+  document.getElementById('cardFront').innerText = card.front || card.question;
+  document.getElementById('cardBack').innerText = card.back || card.answer;
+  document.getElementById('cardCounter').innerText = `${index + 1}/${matrix.length}`;
+}
+
+// ===== DROPDOWN CHANGE =====
 document.getElementById('userClassDropdown').addEventListener('change', function() {
-    userClass = this.value;
-    localStorage.setItem('abst_user_class', userClass);
-    loadMatrixFromGitHub(); 
+  userClass = this.value;
+  localStorage.setItem('abst_user_class', userClass);
+  loadMatrixFromGitHub();
 });
-// Button click logic
-document.querySelectorAll('.mode-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-        currentFile = this.dataset.file;
-        document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        loadMatrixFromGitHub();
-    });
-});
-    // Page load ayinappudu dropdown ki saved value set chey
-document.getElementById('userClassDropdown').value = userClass;
 
-// ... nee loadMatrixFromGitHub function tarvatha
-window.onload = function() {
-  loadMatrixFromGitHub(); // Page open avvagane 36-pillars load chey
-};
+// ===== BUTTON CLICK =====
+document.querySelectorAll('.mode-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    currentFile = this.dataset.file;
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    loadMatrixFromGitHub();
+  });
+});
+
+// ===== SET DROPDOWN + AUTO START =====
+document.getElementById('userClassDropdown').value = userClass;
+document.querySelector('.mode-btn[data-file="36-pillars-108.json"]')?.classList.add('active');
+
+// Single load event - idi chalu
+window.addEventListener('load', function() {
+  loadMatrixFromGitHub();
+});
   </script>
 </body>
 </html>
