@@ -147,9 +147,10 @@
     let currentCard = null;
     let dueCards = [];
     let currentIndex = 0;
-    let userClass = 'gk';
+    let selectedLevel = 'GENERAL'; // userClass badhulu idi
     let streak = parseInt(localStorage.getItem('abst_streak') || '0');
     let matrix = [];
+    let allCards = []; // idi add chesam
 
     function loadCards() {
       dueCards = matrix.filter(c => {
@@ -161,6 +162,25 @@
       }
       currentIndex = 0;
       dueCards = dueCards.sort(() => 0.5 - Math.random());
+    }
+
+    function filterByLevel() {
+      if (selectedLevel === 'all') {
+        matrix = [...allCards];
+      } else if (selectedLevel === 'GENERAL') {
+        matrix = allCards.filter(c => ['GK', 'EXTRAS', 'PhD Level'].includes(c.category));
+      } else {
+        matrix = allCards.filter(c => c.category === selectedLevel);
+      }
+
+      if (matrix.length === 0) {
+        alert(`${selectedLevel} lo questions levu. All Categories try chey.`);
+        selectedLevel = 'all';
+        matrix = [...allCards];
+      }
+      loadCards();
+      updateStats();
+      showCard();
     }
 
     function checkAnswer() {
@@ -212,27 +232,27 @@
     }
 
     async function loadMatrixFromGitHub() {
-      try {
-        document.getElementById('card').innerHTML = `<div class="loading">Loading ${currentFile}... <br>🔄</div>`;
+  try {
+    document.getElementById('card').innerHTML = `<div class="loading">Loading ${currentFile}... <br>🔄</div>`;
 
-        const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${currentFile}`;
-        const response = await fetch(url);
-        if (!response.ok) throw new Error(`${currentFile} not found`);
-        matrix = await response.json();
+    const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${currentFile}`;
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`${currentFile} not found`);
+    allCards = await response.json();
 
-        const saved = localStorage.getItem(`abst_brain_${currentFile}`);
-        if(saved) {
-          const parsed = JSON.parse(saved);
-          parsed.forEach(savedCard => {
-            const idx = matrix.findIndex(c => c.id === savedCard.id);
-            if(idx >= 0) matrix[idx] = savedCard;
-          });
-        }
-        initBrain();
-      } catch(err) {
-        console.error(err);
-        document.getElementById('card').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check if ${currentFile} exists in GitHub repo</div>`;
-      }
+    const saved = localStorage.getItem(`abst_brain_${currentFile}`);
+    if(saved) {
+      const parsed = JSON.parse(saved);
+      parsed.forEach(savedCard => {
+        const idx = allCards.findIndex(c => c.id === savedCard.id);
+        if(idx >= 0) allCards[idx] = savedCard;
+      });
+    }
+    initBrain();
+  } catch(err) {
+    console.error(err);
+    document.getElementById('card').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check if ${currentFile} exists in GitHub repo</div>`;
+  }
     }
 
     function initBrain() {
@@ -316,18 +336,22 @@
       }
     };
 
-    // 5 Buttons - Single Listener
+// 5 Buttons - Single Listener + Modal Show
 document.querySelectorAll('.mode-toggle .mode-btn').forEach(btn => {
   btn.addEventListener('click', function() {
     currentMode = this.dataset.mode;
     currentFile = this.dataset.file;
     document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
     this.classList.add('active');
+    
+    // Modal chupinchu prathi button click ki
+    document.getElementById('ageModal').style.display = 'flex';
+    
     loadMatrixFromGitHub();
   });
 });
 
-    document.getElementById('typeMode').onclick = () => {
+document.getElementById('typeMode').onclick = () => {
   answerMode = 'type';
   document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('typeMode').classList.add('active');
