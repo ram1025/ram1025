@@ -49,53 +49,9 @@
  .timer { position:absolute; top:10px; left:20px; background:#ff4444; color:#fff; padding:6px 12px; border-radius:20px; font-size:12px; font-weight:900; display:none }
  .timer.warning { background:#ffaa00; color:#0a192f }
  .loading { color:#ffaa00; font-size:18px; padding:40px; text-align:center }
- .age-modal { position:fixed; top:0; left:0; width:100%; height:100%; background:#0a192fdd; display:flex; align-items:center; justify-content:center; z-index:100 }
- .age-box { background:#1a2332; padding:30px; border-radius:20px; border:2px solid #00ffaa; max-width:400px; width:90% }
- .age-box h2 { color:#ffaa00; margin-bottom:20px }
- .age-box select { width:100%; padding:12px; margin:10px 0; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:16px; appearance:none; -webkit-appearance:none; -moz-appearance:none; background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300ffaa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"); background-repeat:no-repeat; background-position:right 12px center; background-size:20px; position:relative; z-index:101;}
-  </style>
+   </style>
 </head>
 <body>
-  <div class="age-modal" id="ageModal">
-    <div class="age-box">
-      <h2>Select Your Level</h2>
-            <select id="userClass">
-        <optgroup label="School">
-          <option value="LKG">LKG</option>
-          <option value="UKG">UKG</option>
-          <option value="CLASS1">Class 1</option>
-          <option value="CLASS2">Class 2</option>
-          <option value="CLASS3">Class 3</option>
-          <option value="CLASS4">Class 4</option>
-          <option value="CLASS5">Class 5</option>
-          <option value="CLASS6">Class 6</option>
-          <option value="CLASS7">Class 7</option>
-          <option value="CLASS8">Class 8</option>
-          <option value="CLASS9">Class 9</option>
-          <option value="CLASS10">Class 10</option>
-          <option value="CLASS11">Class 11</option>
-          <option value="CLASS12">Class 12</option>
-        </optgroup>
-        <optgroup label="College">
-          <option value="DEGREE_UG">Degree UG</option>
-          <option value="ENGINEERING">Engineering</option>
-          <option value="MBBS">MBBS</option>
-        </optgroup>
-        <optgroup label="Competitive">
-          <option value="UPSC">UPSC</option>
-          <option value="NEET">NEET</option>
-          <option value="JEE">JEE</option>
-          <option value="SSC">SSC</option>
-          <option value="BANKING">Banking</option>
-        </optgroup>
-        <optgroup label="Other">
-          <option value="GK" selected>General Knowledge</option>
-          <option value="PHD">PhD Level</option>
-        </optgroup>
-            </select>
-      <button class="btn" id="saveAgeBtn">START LEARNING</button>
-    </div>
-  </div>
   <div class="header">
     <button class="back-btn" id="homeBtn">← CLOSE</button>
     <h1>ABST BRAIN</h1>
@@ -396,13 +352,6 @@ function updateButtonCount(fileName, count) {
       document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
       document.getElementById('flipMode').classList.add('active');
       showCard();
-    };
-
-    document.getElementById('saveAgeBtn').onclick = function() {
-      userClass = document.getElementById('userClass').value;
-      localStorage.setItem('abst_user_class', userClass);
-      document.getElementById('ageModal').style.display = 'none';
-      loadMatrixFromGitHub();
     };
 
  // ===== GITHUB CONFIG =====
