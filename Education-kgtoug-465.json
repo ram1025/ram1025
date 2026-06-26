@@ -12,134 +12,134 @@
     "id": 2,
     "category": "LKG",
     "type": "MCQ",
-    "q": "How many fingers do you have on one hand?",
-    "options": ["2", "5", "10", "4"],
-    "a": "5",
+    "q": "B for?",
+    "options": ["Ball", "Apple", "Cat", "Dog"],
+    "a": "Ball",
     "mode": "FLIP"
   },
   {
     "id": 3,
     "category": "LKG",
     "type": "MCQ",
-    "q": "What is the color of the sky on a clear day?",
-    "options": ["Red", "Green", "Blue", "Yellow"],
-    "a": "Blue",
+    "q": "Which animal says Meow?",
+    "options": ["Cat", "Dog", "Cow", "Lion"],
+    "a": "Cat",
     "mode": "FLIP"
   },
   {
     "id": 4,
     "category": "LKG",
     "type": "MCQ",
-    "q": "Which animal says 'Meow'?",
-    "options": ["Dog", "Cat", "Cow", "Lion"],
-    "a": "Cat",
+    "q": "1 + 1 = ?",
+    "options": ["1", "2", "3", "4"],
+    "a": "2",
     "mode": "FLIP"
   },
   {
     "id": 5,
     "category": "LKG",
     "type": "MCQ",
-    "q": "What comes after the letter 'A'?",
-    "options": ["C", "D", "B", "M"],
-    "a": "B",
+    "q": "How many fingers are there in one hand?",
+    "options": ["3", "4", "5", "6"],
+    "a": "5",
     "mode": "FLIP"
   },
   {
     "id": 6,
     "category": "LKG",
     "type": "MCQ",
-    "q": "Which shape looks like a round ring?",
-    "options": ["Square", "Triangle", "Circle", "Star"],
-    "a": "Circle",
+    "q": "What is the color of the sky?",
+    "options": ["Blue", "Red", "Green", "Yellow"],
+    "a": "Blue",
     "mode": "FLIP"
   },
   {
     "id": 7,
     "category": "LKG",
     "type": "MCQ",
-    "q": "What is the color of milk?",
-    "options": ["White", "Black", "Pink", "Blue"],
-    "a": "White",
+    "q": "Which animal says Bow Bow?",
+    "options": ["Dog", "Cat", "Cow", "Goat"],
+    "a": "Dog",
     "mode": "FLIP"
   },
   {
     "id": 8,
     "category": "LKG",
     "type": "MCQ",
-    "q": "Which vehicle runs on tracks and goes 'Choo-Choo'?",
-    "options": ["Car", "Aeroplane", "Train", "Bicycle"],
-    "a": "Train",
+    "q": "Which color is Apple usually?",
+    "options": ["Red", "Blue", "Black", "White"],
+    "a": "Red",
     "mode": "FLIP"
   },
   {
     "id": 9,
     "category": "LKG",
     "type": "MCQ",
-    "q": "Which body part do you use to see things?",
-    "options": ["Ears", "Eyes", "Nose", "Hands"],
-    "a": "Eyes",
+    "q": "Red color in Telugu?",
+    "options": ["Erraga", "Pachaga", "Tellaga", "Nallaga"],
+    "a": "Erraga",
     "mode": "FLIP"
   },
   {
     "id": 10,
     "category": "LKG",
     "type": "MCQ",
-    "q": "What number comes before 3?",
-    "options": ["1", "4", "2", "5"],
-    "a": "2",
+    "q": "Green color in Telugu?",
+    "options": ["Pachaga", "Erraga", "Tellaga", "Nallaga"],
+    "a": "Pachaga",
     "mode": "FLIP"
   },
   {
     "id": 11,
     "category": "LKG",
     "type": "MCQ",
-    "q": "Which animal is known as the King of the Jungle?",
-    "options": ["Monkey", "Lion", "Rabbit", "Deer"],
-    "a": "Lion",
+    "q": "Sun rises in which direction?",
+    "options": ["East", "West", "North", "South"],
+    "a": "East",
     "mode": "FLIP"
   },
   {
     "id": 12,
     "category": "LKG",
     "type": "MCQ",
-    "q": "What is the color of grass?",
-    "options": ["Green", "Yellow", "Red", "Purple"],
-    "a": "Green",
+    "q": "What do we drink when thirsty?",
+    "options": ["Water", "Stone", "Sand", "Wood"],
+    "a": "Water",
     "mode": "FLIP"
   },
   {
     "id": 13,
     "category": "LKG",
     "type": "MCQ",
-    "q": "Which body part do you use to smell a flower?",
-    "options": ["Tongue", "Ears", "Nose", "Feet"],
-    "a": "Nose",
+    "q": "What is the shape of a ball?",
+    "options": ["Round", "Square", "Triangle", "Rectangle"],
+    "a": "Round",
     "mode": "FLIP"
   },
   {
     "id": 14,
     "category": "LKG",
     "type": "MCQ",
-    "q": "Which of these can fly in the sky?",
-    "options": ["Fish", "Bird", "Dog", "Turtle"],
-    "a": "Bird",
+    "q": "2 + 2 = ?",
+    "options": ["2", "3", "4", "5"],
+    "a": "4",
     "mode": "FLIP"
   },
   {
     "id": 15,
     "category": "LKG",
     "type": "MCQ",
-    "q": "What is the opposite of 'Hot'?",
-    "options": ["Warm", "Cold", "Dry", "Big"],
-    "a": "Cold",
+    "q": "Which animal gives us milk?",
+    "options": ["Cow", "Dog", "Cat", "Lion"],
+    "a": "Cow",
     "mode": "FLIP"
   },
   {
     "id": 16,
     "category": "LKG",
     "type": "MCQ",
-    "q": "How many legs does a duck have?",
-    "options": ["4", "2", "0", "6"],
+    "q": "How many eyes do we have?",
+    "options": ["1", "2", "3", "4"],
     "a": "2",
     "mode": "FLIP"
   },
@@ -147,4041 +147,2376 @@
     "id": 17,
     "category": "LKG",
     "type": "MCQ",
-    "q": "Which letter comes next in the sequence: X, Y, __?",
-    "options": ["A", "Z", "W", "B"],
-    "a": "Z",
+    "q": "D for?",
+    "options": ["Dog", "Cat", "Apple", "Ball"],
+    "a": "Dog",
     "mode": "FLIP"
   },
   {
     "id": 18,
     "category": "LKG",
     "type": "MCQ",
-    "q": "What color is a ripe banana?",
-    "options": ["Blue", "Yellow", "Black", "Pink"],
-    "a": "Yellow",
+    "q": "E for?",
+    "options": ["Elephant", "Dog", "Cat", "Apple"],
+    "a": "Elephant",
     "mode": "FLIP"
   },
   {
     "id": 19,
     "category": "LKG",
     "type": "MCQ",
-    "q": "Which shape has three sides?",
-    "options": ["Square", "Circle", "Triangle", "Oval"],
-    "a": "Triangle",
+    "q": "We see with our?",
+    "options": ["Eyes", "Ears", "Nose", "Mouth"],
+    "a": "Eyes",
     "mode": "FLIP"
   },
   {
     "id": 20,
     "category": "LKG",
     "type": "MCQ",
-    "q": "What do we say when we receive a gift?",
-    "options": ["Sorry", "Thank You", "Goodbye", "Please"],
-    "a": "Thank You",
+    "q": "We hear with our?",
+    "options": ["Ears", "Eyes", "Nose", "Mouth"],
+    "a": "Ears",
     "mode": "FLIP"
   },
+  [
   {
     "id": 21,
     "category": "UKG",
     "type": "MCQ",
-    "q": "What is a baby dog called?",
-    "options": ["Kitten", "Cub", "Puppy", "Ca"],
-    "a": "Puppy",
+    "q": "5 - 2 = ?",
+    "options": ["2", "3", "4", "5"],
+    "a": "3",
     "mode": "FLIP"
   },
   {
     "id": 22,
     "category": "UKG",
     "type": "MCQ",
-    "q": "Which is the biggest animal on land?",
-    "options": ["Elephant", "Lion", "Giraffe", "Tiger"],
-    "a": "Elephant",
+    "q": "Which is the biggest number?",
+    "options": ["5", "8", "3", "1"],
+    "a": "8",
     "mode": "FLIP"
   },
   {
     "id": 23,
     "category": "UKG",
     "type": "MCQ",
-    "q": "Solve this simple sum: 2 + 3 = ?",
-    "options": ["4", "5", "6", "3"],
-    "a": "5",
+    "q": "F for?",
+    "options": ["Fish", "Dog", "Cat", "Apple"],
+    "a": "Fish",
     "mode": "FLIP"
   },
   {
     "id": 24,
     "category": "UKG",
     "type": "MCQ",
-    "q": "Which celestial object shines brightly during the day?",
-    "options": ["Moon", "Sun", "Star", "Mars"],
-    "a": "Sun",
+    "q": "G for?",
+    "options": ["Goat", "Fish", "Dog", "Cat"],
+    "a": "Goat",
     "mode": "FLIP"
   },
   {
     "id": 25,
     "category": "UKG",
     "type": "MCQ",
-    "q": "Identify the vowel among these letters:",
-    "options": ["B", "M", "E", "T"],
-    "a": "E",
+    "q": "How many days in a week?",
+    "options": ["5", "6", "7", "8"],
+    "a": "7",
     "mode": "FLIP"
   },
   {
     "id": 26,
     "category": "UKG",
     "type": "MCQ",
-    "q": "How many days are there in a single week?",
-    "options": ["5", "6", "7", "30"],
-    "a": "7",
+    "q": "Which season has rain?",
+    "options": ["Summer", "Winter", "Rainy", "Spring"],
+    "a": "Rainy",
     "mode": "FLIP"
   },
   {
     "id": 27,
     "category": "UKG",
     "type": "MCQ",
-    "q": "Which of these animals lives under water?",
-    "options": ["Cat", "Fish", "Horse", "Goat"],
-    "a": "Fish",
+    "q": "What is the color of a leaf?",
+    "options": ["Green", "Red", "Blue", "Yellow"],
+    "a": "Green",
     "mode": "FLIP"
   },
   {
     "id": 28,
     "category": "UKG",
     "type": "MCQ",
-    "q": "What is the opposite of the word 'Tall'?",
-    "options": ["Big", "Short", "High", "Long"],
-    "a": "Short",
+    "q": "3 + 4 = ?",
+    "options": ["5", "6", "7", "8"],
+    "a": "7",
     "mode": "FLIP"
   },
   {
     "id": 29,
     "category": "UKG",
     "type": "MCQ",
-    "q": "Which seasonal phenomenon gives water to our plants?",
-    "options": ["Wind", "Rain", "Sun", "Snow"],
-    "a": "Rain",
+    "q": "Which animal is called King of Jungle?",
+    "options": ["Tiger", "Lion", "Elephant", "Bear"],
+    "a": "Lion",
     "mode": "FLIP"
   },
   {
     "id": 30,
     "category": "UKG",
     "type": "MCQ",
-    "q": "What shape has four equal sides?",
-    "options": ["Triangle", "Circle", "Square", "Star"],
-    "a": "Square",
+    "q": "How many wheels does a car have?",
+    "options": ["2", "3", "4", "5"],
+    "a": "4",
     "mode": "FLIP"
   },
   {
     "id": 31,
     "category": "UKG",
     "type": "MCQ",
-    "q": "What do we use to cut paper safely?",
-    "options": ["Spoon", "Scissors", "Hammer", "Brush"],
-    "a": "Scissors",
+    "q": "H for?",
+    "options": ["Hat", "Goat", "Fish", "Dog"],
+    "a": "Hat",
     "mode": "FLIP"
   },
   {
     "id": 32,
     "category": "UKG",
     "type": "MCQ",
-    "q": "Which domestic animal gives us milk?",
-    "options": ["Dog", "Cat", "Cow", "Lion"],
-    "a": "Cow",
+    "q": "I for?",
+    "options": ["Ice", "Hat", "Goat", "Fish"],
+    "a": "Ice",
     "mode": "FLIP"
   },
   {
     "id": 33,
     "category": "UKG",
     "type": "MCQ",
-    "q": "What color do you get when you mix Red and Yellow?",
-    "options": ["Green", "Blue", "Orange", "Purple"],
-    "a": "Orange",
+    "q": "Which comes after Monday?",
+    "options": ["Sunday", "Tuesday", "Wednesday", "Friday"],
+    "a": "Tuesday",
     "mode": "FLIP"
   },
   {
     "id": 34,
     "category": "UKG",
     "type": "MCQ",
-    "q": "Which part of a plant grows deep under the soil?",
-    "options": ["Leaf", "Flower", "Root", "Fruit"],
-    "a": "Root",
+    "q": "10 - 5 = ?",
+    "options": ["3", "4", "5", "6"],
+    "a": "5",
     "mode": "FLIP"
   },
   {
     "id": 35,
     "category": "UKG",
     "type": "MCQ",
-    "q": "Which number comes directly after 9?",
-    "options": ["8", "10", "11", "12"],
-    "a": "10",
+    "q": "Which fruit is yellow and long?",
+    "options": ["Apple", "Banana", "Orange", "Grapes"],
+    "a": "Banana",
     "mode": "FLIP"
   },
   {
     "id": 36,
     "category": "UKG",
     "type": "MCQ",
-    "q": "What do we use an umbrella for?",
-    "options": ["To eat", "To stay dry in rain", "To sleep", "To play"],
-    "a": "To stay dry in rain",
+    "q": "We smell with our?",
+    "options": ["Eyes", "Ears", "Nose", "Mouth"],
+    "a": "Nose",
     "mode": "FLIP"
   },
   {
     "id": 37,
     "category": "UKG",
     "type": "MCQ",
-    "q": "Which insect makes honey?",
-    "options": ["Ant", "Butterfly", "Honeybee", "Mosquito"],
-    "a": "Honeybee",
+    "q": "J for?",
+    "options": ["Jug", "Ice", "Hat", "Goat"],
+    "a": "Jug",
     "mode": "FLIP"
   },
   {
     "id": 38,
     "category": "UKG",
     "type": "MCQ",
-    "q": "What is the name of our home planet?",
-    "options": ["Mars", "Earth", "Sun", "Moon"],
-    "a": "Earth",
+    "q": "Which bird can fly?",
+    "options": ["Crow", "Penguin", "Ostrich", "Hen"],
+    "a": "Crow",
     "mode": "FLIP"
   },
   {
     "id": 39,
     "category": "UKG",
     "type": "MCQ",
-    "q": "How many wheels does a bicycle have?",
-    "options": ["1", "3", "2", "4"],
-    "a": "2",
+    "q": "What is the shape of a book?",
+    "options": ["Circle", "Square", "Rectangle", "Triangle"],
+    "a": "Rectangle",
     "mode": "FLIP"
   },
   {
     "id": 40,
     "category": "UKG",
     "type": "MCQ",
-    "q": "Which body part do you use to hear a song?",
-    "options": ["Eyes", "Nose", "Ears", "Mouth"],
-    "a": "Ears",
+    "q": "6 + 3 = ?",
+    "options": ["7", "8", "9", "10"],
+    "a": "9",
     "mode": "FLIP"
   },
-  {
+    {
     "id": 41,
-    "category": "Class 1",
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "What is 10 plus 5?",
-    "options": ["12", "15", "20", "14"],
-    "a": "15",
-    "mode": "FLIP"
-  },
-  {
-    "id": 42,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "Which of these is a living thing?",
-    "options": ["Stone", "Tree", "Toy Car", "Book"],
-    "a": "Tree",
-    "mode": "FLIP"
-  },
-  {
-    "id": 43,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "What is the national animal of India?",
-    "options": ["Lion", "Elephant", "Tiger", "Leopard"],
+    "q": "Our National Animal?",
+    "options": ["Tiger", "Lion", "Elephant", "Peacock"],
     "a": "Tiger",
     "mode": "FLIP"
   },
   {
-    "id": 44,
-    "category": "Class 1",
+    "id": 42,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "Which word is a naming word (Noun)?",
-    "options": ["Run", "Happy", "Delhi", "Fast"],
-    "a": "Delhi",
-    "mode": "FLIP"
-  },
-  {
-    "id": 45,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "How many months are there in one year?",
-    "options": ["7", "10", "12", "365"],
-    "a": "12",
-    "mode": "FLIP"
-  },
-  {
-    "id": 46,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "Which sense organ helps us taste our food?",
-    "options": ["Skin", "Tongue", "Nose", "Eyes"],
-    "a": "Tongue",
-    "mode": "FLIP"
-  },
-  {
-    "id": 47,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "What is the opposite of the word 'Heavy'?",
-    "options": ["Soft", "Light", "Hard", "Small"],
-    "a": "Light",
-    "mode": "FLIP"
-  },
-  {
-    "id": 48,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "What gas do humans need to breathe in to survive?",
-    "options": ["Carbon Dioxide", "Nitrogen", "Oxygen", "Hydrogen"],
-    "a": "Oxygen",
-    "mode": "FLIP"
-  },
-  {
-    "id": 49,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "Which number is the smallest?",
-    "options": ["15", "29", "8", "42"],
-    "a": "8",
-    "mode": "FLIP"
-  },
-  {
-    "id": 50,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "Which bird spreads its beautiful feathers during rain?",
-    "options": ["Crow", "Peacock", "Sparrow", "Parrot"],
+    "q": "Our National Bird?",
+    "options": ["Crow", "Parrot", "Peacock", "Sparrow"],
     "a": "Peacock",
     "mode": "FLIP"
   },
   {
-    "id": 51,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "Where does the sun rise?",
-    "options": ["West", "North", "South", "East"],
-    "a": "East",
-    "mode": "FLIP"
-  },
-  {
-    "id": 52,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "What do we call a large area filled with many trees?",
-    "options": ["Desert", "Forest", "Ocean", "Sky"],
-    "a": "Forest",
-    "mode": "FLIP"
-  },
-  {
-    "id": 53,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "How many primary colors are there?",
-    "options": ["2", "3", "5", "7"],
-    "a": "3",
-    "mode": "FLIP"
-  },
-  {
-    "id": 54,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "Which shape looks like an egg?",
-    "options": ["Circle", "Square", "Oval", "Rectangle"],
-    "a": "Oval",
-    "mode": "FLIP"
-  },
-  {
-    "id": 55,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "What do bees collect from flowers to make honey?",
-    "options": ["Water", "Nectar", "Leaves", "Mud"],
-    "a": "Nectar",
-    "mode": "FLIP"
-  },
-  {
-    "id": 56,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "What is the standard plural form of the word 'Child'?",
-    "options": ["Childs", "Children", "Childrens", "Childes"],
-    "a": "Children",
-    "mode": "FLIP"
-  },
-  {
-    "id": 57,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "Which mathematical symbol is used for subtraction?",
-    "options": ["+", "-", "x", "/"],
-    "a": "-",
-    "mode": "FLIP"
-  },
-  {
-    "id": 58,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "Which animal can live both on land and in water?",
-    "options": ["Fish", "Frog", "Cow", "Cat"],
-    "a": "Frog",
-    "mode": "FLIP"
-  },
-  {
-    "id": 59,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "What is 20 minus 7?",
-    "options": ["11", "12", "13", "14"],
-    "a": "13",
-    "mode": "FLIP"
-  },
-  {
-    "id": 60,
-    "category": "Class 1",
-    "type": "MCQ",
-    "q": "What do we use to clean our dirty teeth?",
-    "options": ["Soap", "Comb", "Toothbrush", "Spoon"],
-    "a": "Toothbrush",
-    "mode": "FLIP"
-  },
-  {
-    "id": 61,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "What is the place value of 5 in the number 254?",
-    "options": ["Ones", "Tens", "Hundreds", "Thousands"],
-    "a": "Tens",
-    "mode": "FLIP"
-  },
-  {
-    "id": 62,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "Which of these animals is a herbivore (eats plants)?",
-    "options": ["Lion", "Cow", "Tiger", "Wo"],
-    "a": "Cow",
-    "mode": "FLIP"
-  },
-  {
-    "id": 63,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "What do we call a period of 366 days in a year?",
-    "options": ["Long Year", "Leap Year", "Full Year", "Solar Year"],
-    "a": "Leap Year",
-    "mode": "FLIP"
-  },
-  {
-    "id": 64,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "Which word is an action word (Verb)?",
-    "options": ["Beautiful", "Table", "Swimming", "Softly"],
-    "a": "Swimming",
-    "mode": "FLIP"
-  },
-  {
-    "id": 65,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "How many straight sides does a rectangle have?",
-    "options": ["3", "4", "5", "6"],
-    "a": "4",
-    "mode": "FLIP"
-  },
-  {
-    "id": 66,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "Which part of the plant prepares food using sunlight?",
-    "options": ["Root", "Stem", "Leaf", "Flower"],
-    "a": "Leaf",
-    "mode": "FLIP"
-  },
-  {
-    "id": 67,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "What is the capital city of India?",
-    "options": ["Mumbai", "Kolkata", "New Delhi", "Chennai"],
-    "a": "New Delhi",
-    "mode": "FLIP"
-  },
-  {
-    "id": 68,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "What type of clothes keep us warm during winters?",
-    "options": ["Cotton", "Woollen", "Silk", "Nylon"],
-    "a": "Woollen",
-    "mode": "FLIP"
-  },
-  {
-    "id": 69,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "Solve this equation: 5 multiplied by 4 is equal to?",
-    "options": ["9", "25", "20", "15"],
-    "a": "20",
-    "mode": "FLIP"
-  },
-  {
-    "id": 70,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "Which of these is a non-living domestic item?",
-    "options": ["Cat", "Chair", "Rose Plant", "Goldfish"],
-    "a": "Chair",
-    "mode": "FLIP"
-  },
-  {
-    "id": 71,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "What do we call the model of the Earth that is round?",
-    "options": ["Map", "Globe", "Chart", "Compass"],
-    "a": "Globe",
-    "mode": "FLIP"
-  },
-  {
-    "id": 72,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "Which animal is called the Ship of the Desert?",
-    "options": ["Horse", "Camel", "Donkey", "Elephant"],
-    "a": "Camel",
-    "mode": "FLIP"
-  },
-  {
-    "id": 73,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "What is the opposite of the word 'Beautiful'?",
-    "options": ["Pretty", "Ugly", "Nice", "Clean"],
-    "a": "Ugly",
-    "mode": "FLIP"
-  },
-  {
-    "id": 74,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "How many minutes make up one full hour?",
-    "options": ["30", "50", "60", "100"],
-    "a": "60",
-    "mode": "FLIP"
-  },
-  {
-    "id": 75,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "Which internal organ helps us pump blood to the body?",
-    "options": ["Lungs", "Stomach", "Heart", "Brain"],
-    "a": "Heart",
-    "mode": "FLIP"
-  },
-  {
-    "id": 76,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "What is the sum of the largest 1-digit number and 1?",
-    "options": ["9", "10", "11", "100"],
-    "a": "10",
-    "mode": "FLIP"
-  },
-  {
-    "id": 77,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "Which vehicle runs on water?",
-    "options": ["Train", "Car", "Ship", "Aeroplane"],
-    "a": "Ship",
-    "mode": "FLIP"
-  },
-  {
-    "id": 78,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "What is the national fruit of India?",
-    "options": ["Apple", "Mango", "Orange", "Banana"],
-    "a": "Mango",
-    "mode": "FLIP"
-  },
-  {
-    "id": 79,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "Which of these words is a pronoun?",
-    "options": ["Ram", "He", "Running", "Book"],
-    "a": "He",
-    "mode": "FLIP"
-  },
-  {
-    "id": 80,
-    "category": "Class 2",
-    "type": "MCQ",
-    "q": "What do we call a baby cat?",
-    "options": ["Puppy", "Kitten", "Cub", "Chick"],
-    "a": "Kitten",
-    "mode": "FLIP"
-  },
-  {
-    "id": 81,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "What state of matter is water when it is frozen into ice?",
-    "options": ["Gas", "Liquid", "Solid", "Plasma"],
-    "a": "Solid",
-    "mode": "FLIP"
-  },
-  {
-    "id": 82,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "If a triangle has three equal sides, what is it called?",
-    "options": ["Isosceles", "Scalene", "Equilateral", "Right-angled"],
-    "a": "Equilateral",
-    "mode": "FLIP"
-  },
-  {
-    "id": 83,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "Which processing system acts as the 'brain' of a computer?",
-    "options": ["Monitor", "CPU", "Keyboard", "Mouse"],
-    "a": "CPU",
-    "mode": "FLIP"
-  },
-  {
-    "id": 84,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "What is the product of 12 multiplied by 5?",
-    "options": ["50", "55", "60", "65"],
-    "a": "60",
-    "mode": "FLIP"
-  },
-  {
-    "id": 85,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "Which green pigment gives leaves their green color?",
-    "options": ["Carotene", "Hemoglobin", "Chlorophyll", "Xanthophyll"],
-    "a": "Chlorophyll",
-    "mode": "FLIP"
-  },
-  {
-    "id": 86,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "What do we call a person who travels into outer space?",
-    "options": ["Pilot", "Sailor", "Astronaut", "Scientist"],
-    "a": "Astronaut",
-    "mode": "FLIP"
-  },
-  {
-    "id": 87,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "Identify the conjunction in this sentence: 'I ran fast, but I missed the bus.'",
-    "options": ["I", "ran", "but", "missed"],
-    "a": "but",
-    "mode": "FLIP"
-  },
-  {
-    "id": 88,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "Which layer of soil is the most fertile for agricultural planting?",
-    "options": ["Subsoil", "Topsoil", "Bedrock", "Parent Rock"],
-    "a": "Topsoil",
-    "mode": "FLIP"
-  },
-  {
-    "id": 89,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "What is the main source of light and energy for our solar system?",
-    "options": ["Moon", "Sun", "Jupiter", "Alpha Centauri"],
-    "a": "Sun",
-    "mode": "FLIP"
-  },
-  {
-    "id": 90,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "What is the mathematical result of 81 divided by 9?",
-    "options": ["7", "8", "9", "11"],
-    "a": "9",
-    "mode": "FLIP"
-  },
-  {
-    "id": 91,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "Which organ protects our inner body parts and lets us feel touch?",
-    "options": ["Liver", "Skin", "Lungs", "Heart"],
-    "a": "Skin",
-    "mode": "FLIP"
-  },
-  {
-    "id": 92,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "Which of these resources is a renewable source of energy?",
-    "options": ["Coal", "Petroleum", "Solar Energy", "Natural Gas"],
-    "a": "Solar Energy",
-    "mode": "FLIP"
-  },
-  {
-    "id": 93,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "What is the standard singular form of the word 'Geese'?",
-    "options": ["Gander", "Gooses", "Goose", "Geeses"],
-    "a": "Goose",
-    "mode": "FLIP"
-  },
-  {
-    "id": 94,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "How many days are in a standard non-leap calendar year?",
-    "options": ["360", "364", "365", "366"],
-    "a": "365",
-    "mode": "FLIP"
-  },
-  {
-    "id": 95,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "Which planet is known as the Red Planet?",
-    "options": ["Venus", "Mars", "Mercury", "Saturn"],
-    "a": "Mars",
-    "mode": "FLIP"
-  },
-  {
-    "id": 96,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "What do we call animals that eat both plants and meat?",
-    "options": ["Herbivores", "Carnivores", "Omnivores", "Parasites"],
-    "a": "Omnivores",
-    "mode": "FLIP"
-  },
-  {
-    "id": 97,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "What is the perimeter of a square with a side length of 5 cm?",
-    "options": ["10 cm", "15 cm", "20 cm", "25 cm"],
-    "a": "20 cm",
-    "mode": "FLIP"
-  },
-  {
-    "id": 98,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "Who was India's first Prime Minister?",
-    "options": ["Mahatma Gandhi", "Jawaharlal Nehru", "Dr. B.R. Ambedkar", "Subhas Chandra Bose"],
-    "a": "Jawaharlal Nehru",
-    "mode": "FLIP"
-  },
-  {
-    "id": 99,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "Which direction is directly opposite to North?",
-    "options": ["East", "West", "South", "North-East"],
-    "a": "South",
-    "mode": "FLIP"
-  },
-  {
-    "id": 100,
-    "category": "Class 3",
-    "type": "MCQ",
-    "q": "What form of precipitation falls as solid icy flakes?",
-    "options": ["Rain", "Snow", "Dew", "Fog"],
-    "a": "Snow",
-    "mode": "FLIP"
-  },
-  {
-    "id": 101,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "What process do plants use to make food from carbon dioxide, water, and sunlight?",
-    "options": ["Respiration", "Photosynthesis", "Transpiration", "Germination"],
-    "a": "Photosynthesis",
-    "mode": "FLIP"
-  },
-  {
-    "id": 102,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "What type of angle measures exactly 90 degrees?",
-    "options": ["Acute Angle", "Obtuse Angle", "Right Angle", "Straight Angle"],
-    "a": "Right Angle",
-    "mode": "FLIP"
-  },
-  {
-    "id": 103,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "Which internal organ processes food and breaks it down using acids?",
-    "options": ["Lungs", "Kidneys", "Stomach", "Heart"],
-    "a": "Stomach",
-    "mode": "FLIP"
-  },
-  {
-    "id": 104,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "What is the equivalent fraction value for 0.5?",
-    "options": ["1/4", "1/2", "3/4", "1/5"],
-    "a": "1/2",
-    "mode": "FLIP"
-  },
-  {
-    "id": 105,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "Which historic monument in Agra was built by Emperor Shah Jahan?",
-    "options": ["Qutub Minar", "Red Fort", "Taj Mahal", "Hawa Mahal"],
-    "a": "Taj Mahal",
-    "mode": "FLIP"
-  },
-  {
-    "id": 106,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "What force pulls objects down toward the center of the Earth?",
-    "options": ["Friction", "Magnetism", "Gravity", "Elastic Force"],
-    "a": "Gravity",
-    "mode": "FLIP"
-  },
-  {
-    "id": 107,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "Identify the adjective in this sentence: 'The large elephant walked slowly.'",
-    "options": ["elephant", "walked", "large", "slowly"],
-    "a": "large",
-    "mode": "FLIP"
-  },
-  {
-    "id": 108,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "What is the largest internal organ in the human body?",
-    "options": ["Brain", "Liver", "Heart", "Pancreas"],
-    "a": "Liver",
-    "mode": "FLIP"
-  },
-  {
-    "id": 109,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "How many centimeters are there in exactly 2.5 meters?",
-    "options": ["25 cm", "250 cm", "2500 cm", "0.25 cm"],
-    "a": "250 cm",
-    "mode": "FLIP"
-  },
-  {
-    "id": 110,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "Which state is a gas changing into a liquid state?",
-    "options": ["Evaporation", "Condensation", "Freezing", "Melting"],
-    "a": "Condensation",
-    "mode": "FLIP"
-  },
-  {
-    "id": 111,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "Who wrote India's national anthem, 'Jana Gana Mana'?",
-    "options": ["Bankim Chandra Chatterjee", "Rabindranath Tagore", "Swami Vivekananda", "Sri Aurobindo"],
-    "a": "Rabindranath Tagore",
-    "mode": "FLIP"
-  },
-  {
-    "id": 112,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "What structural system of bones supports and protects our body?",
-    "options": ["Muscular System", "Nervous System", "Skeletal System", "Digestive System"],
-    "a": "Skeletal System",
-    "mode": "FLIP"
-  },
-  {
-    "id": 113,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "What do we call a path where one space object travels around another?",
-    "options": ["Axis", "Orbit", "Rotation", "Galaxy"],
-    "a": "Orbit",
-    "mode": "FLIP"
-  },
-  {
-    "id": 114,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "What is the value of 15 multiplied by 6?",
-    "options": ["80", "85", "90", "95"],
-    "a": "90",
-    "mode": "FLIP"
-  },
-  {
-    "id": 115,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "Which landform is an elevated flat area of land?",
-    "options": ["Mountain", "Valley", "Plateau", "Plain"],
-    "a": "Plateau",
-    "mode": "FLIP"
-  },
-  {
-    "id": 116,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "Which of these elements is required to build strong bones and teeth?",
-    "options": ["Iron", "Calcium", "Sodium", "Potassium"],
-    "a": "Calcium",
-    "mode": "FLIP"
-  },
-  {
-    "id": 117,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "Identify the abstract noun representing an internal state:",
-    "options": ["Honesty", "Teacher", "Gold", "City"],
-    "a": "Honesty",
-    "mode": "FLIP"
-  },
-  {
-    "id": 118,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "What type of map features landforms like rivers and mountains?",
-    "options": ["Political Map", "Physical Map", "Thematic Map", "Climate Map"],
-    "a": "Physical Map",
-    "mode": "FLIP"
-  },
-  {
-    "id": 119,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "What is the Roman Numeral value for the number 50?",
-    "options": ["X", "L", "C", "D"],
-    "a": "L",
-    "mode": "FLIP"
-  },
-  {
-    "id": 120,
-    "category": "Class 4",
-    "type": "MCQ",
-    "q": "What tool uses a magnetized needle to point toward magnetic North?",
-    "options": ["Thermometer", "Barometer", "Compass", "Telescope"],
-    "a": "Compass",
-    "mode": "FLIP"
-  },
-  {
-    "id": 121,
-    "category": "Class 5",
-    "type": "MCQ",
-    "q": "What gas makes up about 78% of Earth's atmosphere?",
-    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Argon"],
-    "a": "Nitrogen",
-    "mode": "FLIP"
-  },
-  {
-    "id": 122,
-    "category": "Class 5",
-    "type": "MCQ",
-    "q": "Calculate the Lowest Common Multiple (LCM) of 4 and 6:",
-    "options": ["2", "12", "24", "18"],
+    "id": 43,
+    "category": "CLASS1",
+    "type": "MCQ",
+    "q": "How many months in a year?",
+    "options": ["10", "11", "12", "13"],
     "a": "12",
     "mode": "FLIP"
   },
   {
-    "id": 123,
-    "category": "Class 5",
+    "id": 44,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "Which deficiency causes the disease known as Anemia?",
-    "options": ["Vitamin A", "Vitamin C", "Calcium", "Iron"],
-    "a": "Iron",
+    "q": "8 + 7 = ?",
+    "options": ["14", "15", "16", "17"],
+    "a": "15",
     "mode": "FLIP"
   },
   {
-    "id": 124,
-    "category": "Class 5",
+    "id": 45,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "Who is known as the Father of the Indian Constitution?",
-    "options": ["Dr. B.R. Ambedkar", "Mahatma Gandhi", "Dr. Rajendra Prasad", "Sardar Patel"],
-    "a": "Dr. B.R. Ambedkar",
+    "q": "Which comes after 19?",
+    "options": ["18", "20", "21", "22"],
+    "a": "20",
     "mode": "FLIP"
   },
   {
-    "id": 125,
-    "category": "Class 5",
+    "id": 46,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "What do we call the process of water vapor rising into the sky from plants?",
-    "options": ["Evaporation", "Transpiration", "Precipitation", "Infiltration"],
-    "a": "Transpiration",
+    "q": "First month of the year?",
+    "options": ["January", "February", "March", "December"],
+    "a": "January",
     "mode": "FLIP"
   },
   {
-    "id": 126,
-    "category": "Class 5",
+    "id": 47,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "What is the name of the structural line that divides Earth into Northern and Southern hemispheres?",
-    "options": ["Prime Meridian", "Tropic of Cancer", "Equator", "Tropic of Capricorn"],
-    "a": "Equator",
+    "q": "What is the color of milk?",
+    "options": ["Blue", "Red", "White", "Black"],
+    "a": "White",
     "mode": "FLIP"
   },
   {
-    "id": 127,
-    "category": "Class 5",
+    "id": 48,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "Find the average value of these four figures: 10, 20, 30, and 40.",
-    "options": ["20", "25", "30", "35"],
-    "a": "25",
+    "q": "15 - 6 = ?",
+    "options": ["7", "8", "9", "10"],
+    "a": "9",
     "mode": "FLIP"
   },
   {
-    "id": 128,
-    "category": "Class 5",
+    "id": 49,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "Which body system runs electrical signals between the brain and nerves?",
-    "options": ["Circulatory System", "Nervous System", "Respiratory System", "Excretory System"],
-    "a": "Nervous System",
+    "q": "Which is a fruit?",
+    "options": ["Potato", "Tomato", "Mango", "Onion"],
+    "a": "Mango",
     "mode": "FLIP"
   },
   {
-    "id": 129,
-    "category": "Class 5",
+    "id": 50,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "What is the standard unit of measurement for liquid volume?",
-    "options": ["Meter", "Gram", "Liter", "Second"],
-    "a": "Liter",
+    "q": "How many legs does a spider have?",
+    "options": ["6", "8", "10", "4"],
+    "a": "8",
     "mode": "FLIP"
   },
   {
-    "id": 130,
-    "category": "Class 5",
+    "id": 51,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "Which historical movement was launched by Mahatma Gandhi in 1942?",
-    "options": ["Non-Cooperation Movement", "Civil Disobedience Movement", "Quit India Movement", "Swadeshi Movement"],
-    "a": "Quit India Movement",
+    "q": "K for?",
+    "options": ["Kite", "Jug", "Ice", "Hat"],
+    "a": "Kite",
     "mode": "FLIP"
   },
   {
-    "id": 131,
-    "category": "Class 5",
+    "id": 52,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "What structural feature keeps fish stable and lets them steer under water?",
-    "options": ["Gills", "Scales", "Fins", "Lungs"],
-    "a": "Fins",
+    "q": "L for?",
+    "options": ["Lion", "Kite", "Jug", "Ice"],
+    "a": "Lion",
     "mode": "FLIP"
   },
   {
-    "id": 132,
-    "category": "Class 5",
+    "id": 53,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "What is the area of a rectangle with a length of 8 cm and a width of 5 cm?",
-    "options": ["13 sq cm", "26 sq cm", "40 sq cm", "35 sq cm"],
-    "a": "40 sq cm",
+    "q": "Which day comes after Friday?",
+    "options": ["Thursday", "Saturday", "Sunday", "Monday"],
+    "a": "Saturday",
     "mode": "FLIP"
   },
   {
-    "id": 133,
-    "category": "Class 5",
+    "id": 54,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "What dynamic weather patterns occur in India due to seasonal winds?",
-    "options": ["Cyclones", "Monsoons", "Tornadoes", "Blizzards"],
-    "a": "Monsoons",
-    "mode": "FLIP"
-  },
-  {
-    "id": 134,
-    "category": "Class 5",
-    "type": "MCQ",
-    "q": "Which blood component helps fight off foreign infections?",
-    "options": ["Red Blood Cells", "White Blood Cells", "Platelets", "Plasma"],
-    "a": "White Blood Cells",
-    "mode": "FLIP"
-  },
-  {
-    "id": 135,
-    "category": "Class 5",
-    "type": "MCQ",
-    "q": "What type of sentence makes a direct statement or fact?",
-    "options": ["Interrogative", "Imperative", "Exclamatory", "Assertive"],
-    "a": "Assertive",
-    "mode": "FLIP"
-  },
-  {
-    "id": 136,
-    "category": "Class 5",
-    "type": "MCQ",
-    "q": "Which of these numbers is a prime number?",
-    "options": ["4", "9", "11", "15"],
-    "a": "11",
-    "mode": "FLIP"
-  },
-  {
-    "id": 137,
-    "category": "Class 5",
-    "type": "MCQ",
-    "q": "What is the outermost layer of our planet Earth called?",
-    "options": ["Crust", "Mantle", "Outer Core", "Inner Core"],
-    "a": "Crust",
-    "mode": "FLIP"
-  },
-  {
-    "id": 138,
-    "category": "Class 5",
-    "type": "MCQ",
-    "q": "What compound is made by combining two or more different elements?",
-    "options": ["Atom", "Mixture", "Compound", "Isotope"],
-    "a": "Compound",
-    "mode": "FLIP"
-  },
-  {
-    "id": 139,
-    "category": "Class 5",
-    "type": "MCQ",
-    "q": "What is the decimal equivalent value of 3/5?",
-    "options": ["0.3", "0.5", "0.6", "0.75"],
-    "a": "0.6",
-    "mode": "FLIP"
-  },
-  {
-    "id": 140,
-    "category": "Class 5",
-    "type": "MCQ",
-    "q": "Which environmental issue describes a long period without rain?",
-    "options": ["Flood", "Drought", "Earthquake", "Tsunami"],
-    "a": "Drought",
-    "mode": "FLIP"
-  },
-  {
-    "id": 141,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "Which historical site from the Indus Valley Civilization features the Great Bath?",
-    "options": ["Harappa", "Mohenjo-daro", "Lothal", "Kalibangan"],
-    "a": "Mohenjo-daro",
-    "mode": "FLIP"
-  },
-  {
-    "id": 142,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "What structural components serve as the basic functional blocks of all living things?",
-    "options": ["Tissues", "Organs", "Cells", "Atoms"],
-    "a": "Cells",
-    "mode": "FLIP"
-  },
-  {
-    "id": 143,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "Solve this integer equation: (-15) + (+8) = ?",
-    "options": ["-23", "-7", "7", "23"],
-    "a": "-7",
-    "mode": "FLIP"
-  },
-  {
-    "id": 144,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "What type of rock forms when molten magma cools and solidifies?",
-    "options": ["Sedimentary", "Metamorphic", "Igneous", "Fossil"],
-    "a": "Igneous",
-    "mode": "FLIP"
-  },
-  {
-    "id": 145,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "Which tier of government functions at the local level in rural areas?",
-    "options": ["State Government", "Central Government", "Panchayati Raj", "Municipal Corporation"],
-    "a": "Panchayati Raj",
-    "mode": "FLIP"
-  },
-  {
-    "id": 146,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "What separation technique is used to separate mud from water?",
-    "options": ["Threshing", "Winnowing", "Filtration", "Handpicking"],
-    "a": "Filtration",
-    "mode": "FLIP"
-  },
-  {
-    "id": 147,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "Find the value of x if: 2x + 5 = 15.",
-    "options": ["5", "10", "7.5", "3"],
-    "a": "5",
-    "mode": "FLIP"
-  },
-  {
-    "id": 148,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "What structural connection attaches a muscle to a bone?",
-    "options": ["Ligament", "Tendon", "Cartilage", "Joint"],
-    "a": "Tendon",
-    "mode": "FLIP"
-  },
-  {
-    "id": 149,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "Which planetary body has a highly visible system of rings around it?",
-    "options": ["Mars", "Jupiter", "Saturn", "Neptune"],
-    "a": "Saturn",
-    "mode": "FLIP"
-  },
-  {
-    "id": 150,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "What type of nutrient is primary used for body growth and tissue repair?",
-    "options": ["Carbohydrates", "Fats", "Proteins", "Vitamins"],
-    "a": "Proteins",
-    "mode": "FLIP"
-  },
-  {
-    "id": 151,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "What basic materials allow electricity to pass through them easily?",
-    "options": ["Insulators", "Conductors", "Plastics", "Rubbers"],
-    "a": "Conductors",
-    "mode": "FLIP"
-  },
-  {
-    "id": 152,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "What long-term atmospheric patterns define a region over decades?",
-    "options": ["Weather", "Climate", "Season", "Humidity"],
-    "a": "Climate",
-    "mode": "FLIP"
-  },
-  {
-    "id": 153,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "What is the ratio of 40 minutes to 2 hours in simplest form?",
-    "options": ["20:1", "1:3", "2:1", "1:5"],
-    "a": "1:3",
-    "mode": "FLIP"
-  },
-  {
-    "id": 154,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "Which prominent king carved his messages on stone pillars across ancient India?",
-    "options": ["Chandragupta Maurya", "Ashoka", "Samudragupta", "Harsha"],
-    "a": "Ashoka",
-    "mode": "FLIP"
-  },
-  {
-    "id": 155,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "What process involves a seed growing into a young seedling?",
-    "options": ["Pollination", "Fertilization", "Germination", "Dispersal"],
-    "a": "Germination",
-    "mode": "FLIP"
-  },
-  {
-    "id": 156,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "What lines run north-south to measure position relative to the Prime Meridian?",
-    "options": ["Latitudes", "Longitudes", "Contours", "Isobars"],
-    "a": "Longitudes",
-    "mode": "FLIP"
-  },
-  {
-    "id": 157,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "Which vitamin deficiency causes the bleeding gum disease known as Scurvy?",
-    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-    "a": "Vitamin C",
-    "mode": "FLIP"
-  },
-  {
-    "id": 158,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "What is the total sum of all three angles inside any triangle?",
-    "options": [90, 180, 270, 360],
-    "a": 180,
-    "mode": "FLIP"
-  },
-  {
-    "id": 159,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "Which of these components is a non-living (abiotic) part of an ecosystem?",
-    "options": ["Plants", "Bacteria", "Soil", "Insects"],
-    "a": "Soil",
-    "mode": "FLIP"
-  },
-  {
-    "id": 160,
-    "category": "Class 6",
-    "type": "MCQ",
-    "q": "What punctuation mark introduces a list or an explanation?",
-    "options": ["Comma", "Semicolon", "Colon", "Hyphen"],
-    "a": "Colon",
-    "mode": "FLIP"
-  },
-  {
-    "id": 161,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "What feeding process allows a plant to consume organic matter trapped inside its leaves?",
-    "options": ["Autotrophic nutrition", "Saprotrophic nutrition", "Insectivorous nutrition", "Parasitic nutrition"],
-    "a": "Insectivorous nutrition",
-    "mode": "FLIP"
-  },
-  {
-    "id": 162,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "Which dynamic ruler founded the Maratha Kingdom in western India?",
-    "options": ["Chhatrapati Shivaji", "Maharana Pratap", "Akbar", "Prithviraj Chauhan"],
-    "a": "Chhatrapati Shivaji",
-    "mode": "FLIP"
-  },
-  {
-    "id": 163,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "Simplify the algebraic expression: 3x + 5y - x + 2y.",
-    "options": ["4x + 7y", "2x + 7y", "2x + 3y", "4x + 3y"],
-    "a": "2x + 7y",
-    "mode": "FLIP"
-  },
-  {
-    "id": 164,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "What scale measures the acidity or alkalinity of chemical solutions?",
-    "options": ["Celsius Scale", "pH Scale", "Richter Scale", "Kelvin Scale"],
-    "a": "pH Scale",
-    "mode": "FLIP"
-  },
-  {
-    "id": 165,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "What type of mirror curves inward and can magnify close images?",
-    "options": ["Plane Mirror", "Convex Mirror", "Concave Mirror", "Cylindrical Mirror"],
-    "a": "Concave Mirror",
-    "mode": "FLIP"
-  },
-  {
-    "id": 166,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "Which layer of the atmosphere contains the ozone layer that blocks ultraviolet radiation?",
-    "options": ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
-    "a": "Stratosphere",
-    "mode": "FLIP"
-  },
-  {
-    "id": 167,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "If two angles are complementary, what is the sum of their measures?",
-    "options": [45, 90, 180, 360],
-    "a": 90,
-    "mode": "FLIP"
-  },
-  {
-    "id": 168,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "What acid is naturally present inside the human stomach to help digest food?",
-    "options": ["Sulphuric Acid", "Hydrochloric Acid", "Nitric Acid", "Acetic Acid"],
-    "a": "Hydrochloric Acid",
-    "mode": "FLIP"
-  },
-  {
-    "id": 169,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "Which state document outlines fundamental guidelines for state policy in India?",
-    "options": ["Fundamental Rights", "Preamble", "Directive Principles of State Policy", "Fundamental Duties"],
-    "a": "Directive Principles of State Policy",
-    "mode": "FLIP"
-  },
-  {
-    "id": 170,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "What heat transfer mechanism moves thermal energy through a boiling liquid?",
-    "options": ["Conduction", "Convection", "Radiation", "Insulation"],
-    "a": "Convection",
-    "mode": "FLIP"
-  },
-  {
-    "id": 171,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "What is the exponential simplified value of: 2 cubed multiplied by 2 square?",
-    "options": ["2 to power 5", "2 to power 6", "4 to power 5", "4 to power 6"],
-    "a": "2 to power 5",
-    "mode": "FLIP"
-  },
-  {
-    "id": 172,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "What blood vessels carry oxygenated blood away from the heart to the body?",
-    "options": ["Veins", "Arteries", "Capillaries", "Venucles"],
-    "a": "Arteries",
-    "mode": "FLIP"
-  },
-  {
-    "id": 173,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "What historical traveler from Morocco visited India during Muhammad bin Tughluq's reign?",
-    "options": ["Marco Polo", "Ibn Battuta", "Fa-Hien", "Al-Biruni"],
-    "a": "Ibn Battuta",
-    "mode": "FLIP"
-  },
-  {
-    "id": 174,
-    "category": "Class 7",
-    "type": "MCQ",
-    "q": "What value do you get when you calculate 25% of 120?",
+    "q": "20 + 10 = ?",
     "options": ["20", "25", "30", "40"],
     "a": "30",
     "mode": "FLIP"
   },
   {
-    "id": 175,
-    "category": "Class 7",
+    "id": 55,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "What type of reproduction involves new plants growing from roots, stems, or leaves?",
-    "options": ["Sexual Reproduction", "Vegetative Propagation", "Budding", "Spore Formation"],
-    "a": "Vegetative Propagation",
+    "q": "Our National Flower?",
+    "options": ["Rose", "Lotus", "Sunflower", "Jasmine"],
+    "a": "Lotus",
     "mode": "FLIP"
   },
   {
-    "id": 176,
-    "category": "Class 7",
+    "id": 56,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "Which biome is known as the 'orchard of the world' due to its fruit cultivation?",
-    "options": ["Coniferous Forests", "Mediterranean Region", "Tropical Rainforests", "Savanna Grasslands"],
-    "a": "Mediterranean Region",
+    "q": "How many sides does a triangle have?",
+    "options": ["2", "3", "4", "5"],
+    "a": "3",
     "mode": "FLIP"
   },
   {
-    "id": 177,
-    "category": "Class 7",
+    "id": 57,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "What type of change occurs when a piece of wood is burned into ash?",
-    "options": ["Physical Change", "Chemical Change", "Reversible Change", "Periodic Change"],
-    "a": "Chemical Change",
+    "q": "Which is a vegetable?",
+    "options": ["Apple", "Banana", "Carrot", "Mango"],
+    "a": "Carrot",
     "mode": "FLIP"
   },
   {
-    "id": 178,
-    "category": "Class 7",
+    "id": 58,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "Calculate the simple interest on Rs 1000 at a 10% annual rate for 2 years.",
-    "options": ["Rs 100", "Rs 200", "Rs 150", "Rs 50"],
-    "a": "Rs 200",
+    "q": "M for?",
+    "options": ["Monkey", "Lion", "Kite", "Jug"],
+    "a": "Monkey",
     "mode": "FLIP"
   },
   {
-    "id": 179,
-    "category": "Class 7",
+    "id": 59,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "What structural feature inside the small intestine absorbs nutrients into the blood?",
-    "options": ["Villi", "Alveoli", "Nephrons", "Stomata"],
-    "a": "Villi",
+    "q": "12 - 4 = ?",
+    "options": ["6", "7", "8", "9"],
+    "a": "8",
     "mode": "FLIP"
   },
   {
-    "id": 180,
-    "category": "Class 7",
+    "id": 60,
+    "category": "CLASS1",
     "type": "MCQ",
-    "q": "Which active element in an electric circuit melts to break the loop during an overload?",
-    "options": ["Switch", "Battery", "Fuse", "Resistor"],
-    "a": "Fuse",
+    "q": "Which season is very hot?",
+    "options": ["Winter", "Summer", "Rainy", "Spring"],
+    "a": "Summer",
+    "mode": "FLIP"
+  },
+    {
+    "id": 61,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "N for?",
+    "options": ["Nest", "Monkey", "Lion", "Kite"],
+    "a": "Nest",
     "mode": "FLIP"
   },
   {
-    "id": 181,
-    "category": "Class 8",
+    "id": 62,
+    "category": "CLASS2",
     "type": "MCQ",
-    "q": "What non-metal element is highly reactive and stored underwater to prevent fire?",
-    "options": ["Sodium", "Phosphorus", "Suur", "Carbon"],
-    "a": "Phosphorus",
+    "q": "O for?",
+    "options": ["Orange", "Nest", "Monkey", "Lion"],
+    "a": "Orange",
     "mode": "FLIP"
   },
   {
-    "id": 182,
-    "category": "Class 8",
+    "id": 63,
+    "category": "CLASS2",
     "type": "MCQ",
-    "q": "In what historical year did the British East India Company win the Battle of Plassey?",
-    "options": ["1757", "1764", "1857", "1600"],
+    "q": "25 + 15 = ?",
+    "options": ["30", "35", "40", "45"],
+    "a": "40",
+    "mode": "FLIP"
+  },
+  {
+    "id": 64,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "How many hours in a day?",
+    "options": ["12", "24", "36", "48"],
+    "a": "24",
+    "mode": "FLIP"
+  },
+  {
+    "id": 65,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "Which is the largest planet?",
+    "options": ["Earth", "Mars", "Jupiter", "Venus"],
+    "a": "Jupiter",
+    "mode": "FLIP"
+  },
+  {
+    "id": 66,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "50 - 20 = ?",
+    "options": ["20", "25", "30", "40"],
+    "a": "30",
+    "mode": "FLIP"
+  },
+  {
+    "id": 67,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "Which animal lives in water?",
+    "options": ["Lion", "Tiger", "Fish", "Monkey"],
+    "a": "Fish",
+    "mode": "FLIP"
+  },
+  {
+    "id": 68,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "How many sides does a square have?",
+    "options": ["2", "3", "4", "5"],
+    "a": "4",
+    "mode": "FLIP"
+  },
+  {
+    "id": 69,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "P for?",
+    "options": ["Parrot", "Orange", "Nest", "Monkey"],
+    "a": "Parrot",
+    "mode": "FLIP"
+  },
+  {
+    "id": 70,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "Q for?",
+    "options": ["Queen", "Parrot", "Orange", "Nest"],
+    "a": "Queen",
+    "mode": "FLIP"
+  },
+  {
+    "id": 71,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "11 × 2 = ?",
+    "options": ["20", "21", "22", "23"],
+    "a": "22",
+    "mode": "FLIP"
+  },
+  {
+    "id": 72,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "Our National Fruit?",
+    "options": ["Apple", "Banana", "Mango", "Orange"],
+    "a": "Mango",
+    "mode": "FLIP"
+  },
+  {
+    "id": 73,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "Which is a source of water?",
+    "options": ["River", "Mountain", "Tree", "Road"],
+    "a": "River",
+    "mode": "FLIP"
+  },
+  {
+    "id": 74,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "35 + 15 = ?",
+    "options": ["40", "45", "50", "55"],
+    "a": "50",
+    "mode": "FLIP"
+  },
+  {
+    "id": 75,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "Which sense organ helps us to taste?",
+    "options": ["Nose", "Tongue", "Ears", "Eyes"],
+    "a": "Tongue",
+    "mode": "FLIP"
+  },
+  {
+    "id": 76,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "R for?",
+    "options": ["Rabbit", "Queen", "Parrot", "Orange"],
+    "a": "Rabbit",
+    "mode": "FLIP"
+  },
+  {
+    "id": 77,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "S for?",
+    "options": ["Sun", "Rabbit", "Queen", "Parrot"],
+    "a": "Sun",
+    "mode": "FLIP"
+  },
+  {
+    "id": 78,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "100 - 25 = ?",
+    "options": ["65", "70", "75", "80"],
+    "a": "75",
+    "mode": "FLIP"
+  },
+  {
+    "id": 79,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "Which planet is called Red Planet?",
+    "options": ["Earth", "Mars", "Venus", "Jupiter"],
+    "a": "Mars",
+    "mode": "FLIP"
+  },
+  {
+    "id": 80,
+    "category": "CLASS2",
+    "type": "MCQ",
+    "q": "How many minutes in one hour?",
+    "options": ["30", "45", "60", "90"],
+    "a": "60",
+    "mode": "FLIP"
+  },
+    {
+    "id": 81,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "T for?",
+    "options": ["Tiger", "Sun", "Rabbit", "Queen"],
+    "a": "Tiger",
+    "mode": "FLIP"
+  },
+  {
+    "id": 82,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "U for?",
+    "options": ["Umbrella", "Tiger", "Sun", "Rabbit"],
+    "a": "Umbrella",
+    "mode": "FLIP"
+  },
+  {
+    "id": 83,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "9 × 3 = ?",
+    "options": ["18", "21", "27", "36"],
+    "a": "27",
+    "mode": "FLIP"
+  },
+  {
+    "id": 84,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "Which is the smallest 3-digit number?",
+    "options": ["100", "101", "111", "999"],
+    "a": "100",
+    "mode": "FLIP"
+  },
+  {
+    "id": 85,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "Capital of India?",
+    "options": ["Mumbai", "Kolkata", "New Delhi", "Chennai"],
+    "a": "New Delhi",
+    "mode": "FLIP"
+  },
+  {
+    "id": 86,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "45 ÷ 5 = ?",
+    "options": ["7", "8", "9", "10"],
+    "a": "9",
+    "mode": "FLIP"
+  },
+  {
+    "id": 87,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "Which organ pumps blood?",
+    "options": ["Brain", "Lungs", "Heart", "Liver"],
+    "a": "Heart",
+    "mode": "FLIP"
+  },
+  {
+    "id": 88,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "V for?",
+    "options": ["Van", "Umbrella", "Tiger", "Sun"],
+    "a": "Van",
+    "mode": "FLIP"
+  },
+  {
+    "id": 89,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "W for?",
+    "options": ["Watch", "Van", "Umbrella", "Tiger"],
+    "a": "Watch",
+    "mode": "FLIP"
+  },
+  {
+    "id": 90,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "125 + 75 = ?",
+    "options": ["150", "175", "200", "225"],
+    "a": "200",
+    "mode": "FLIP"
+  },
+  {
+    "id": 91,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "How many states in India?",
+    "options": ["27", "28", "29", "30"],
+    "a": "28",
+    "mode": "FLIP"
+  },
+  {
+    "id": 92,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "Which gas do we breathe in?",
+    "options": ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+    "a": "Oxygen",
+    "mode": "FLIP"
+  },
+  {
+    "id": 93,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "X for?",
+    "options": ["X-ray", "Watch", "Van", "Umbrella"],
+    "a": "X-ray",
+    "mode": "FLIP"
+  },
+  {
+    "id": 94,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "Y for?",
+    "options": ["Yak", "X-ray", "Watch", "Van"],
+    "a": "Yak",
+    "mode": "FLIP"
+  },
+  {
+    "id": 95,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "7 × 8 = ?",
+    "options": ["54", "56", "64", "48"],
+    "a": "56",
+    "mode": "FLIP"
+  },
+  {
+    "id": 96,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "Z for?",
+    "options": ["Zebra", "Yak", "X-ray", "Watch"],
+    "a": "Zebra",
+    "mode": "FLIP"
+  },
+  {
+    "id": 97,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "Which festival is called festival of lights?",
+    "options": ["Holi", "Diwali", "Eid", "Christmas"],
+    "a": "Diwali",
+    "mode": "FLIP"
+  },
+  {
+    "id": 98,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "500 - 150 = ?",
+    "options": ["250", "300", "350", "400"],
+    "a": "350",
+    "mode": "FLIP"
+  },
+  {
+    "id": 99,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "How many continents are there?",
+    "options": ["5", "6", "7", "8"],
+    "a": "7",
+    "mode": "FLIP"
+  },
+  {
+    "id": 100,
+    "category": "CLASS3",
+    "type": "MCQ",
+    "q": "Which bird cannot fly?",
+    "options": ["Eagle", "Parrot", "Ostrich", "Crow"],
+    "a": "Ostrich",
+    "mode": "FLIP"
+  },
+    {
+    "id": 101,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "12 × 12 = ?",
+    "options": ["124", "134", "144", "154"],
+    "a": "144",
+    "mode": "FLIP"
+  },
+  {
+    "id": 102,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Which is the longest river in India?",
+    "options": ["Yamuna", "Godavari", "Ganga", "Krishna"],
+    "a": "Ganga",
+    "mode": "FLIP"
+  },
+  {
+    "id": 103,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "How many bones in human body?",
+    "options": ["206", "208", "210", "212"],
+    "a": "206",
+    "mode": "FLIP"
+  },
+  {
+    "id": 104,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "144 ÷ 12 = ?",
+    "options": ["10", "11", "12", "13"],
+    "a": "12",
+    "mode": "FLIP"
+  },
+  {
+    "id": 105,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Which planet is closest to Sun?",
+    "options": ["Venus", "Earth", "Mercury", "Mars"],
+    "a": "Mercury",
+    "mode": "FLIP"
+  },
+  {
+    "id": 106,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Perimeter of square with side 5cm?",
+    "options": ["10cm", "15cm", "20cm", "25cm"],
+    "a": "20cm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 107,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Who is called Father of Nation?",
+    "options": ["Nehru", "Gandhi", "Patel", "Ambedkar"],
+    "a": "Gandhi",
+    "mode": "FLIP"
+  },
+  {
+    "id": 108,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Which gas do plants release?",
+    "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+    "a": "Oxygen",
+    "mode": "FLIP"
+  },
+  {
+    "id": 109,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "250 × 4 = ?",
+    "options": ["800", "900", "1000", "1100"],
+    "a": "1000",
+    "mode": "FLIP"
+  },
+  {
+    "id": 110,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Largest ocean in the world?",
+    "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+    "a": "Pacific",
+    "mode": "FLIP"
+  },
+  {
+    "id": 111,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "How many seconds in 1 minute?",
+    "options": ["50", "60", "70", "100"],
+    "a": "60",
+    "mode": "FLIP"
+  },
+  {
+    "id": 112,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Which state is called God's Own Country?",
+    "options": ["Goa", "Kerala", "Karnataka", "Tamil Nadu"],
+    "a": "Kerala",
+    "mode": "FLIP"
+  },
+  {
+    "id": 113,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "625 ÷ 25 = ?",
+    "options": ["15", "20", "25", "30"],
+    "a": "25",
+    "mode": "FLIP"
+  },
+  {
+    "id": 114,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Which organ helps in digestion?",
+    "options": ["Heart", "Lungs", "Stomach", "Brain"],
+    "a": "Stomach",
+    "mode": "FLIP"
+  },
+  {
+    "id": 115,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Area of rectangle 8cm × 5cm?",
+    "options": ["13 sq cm", "26 sq cm", "40 sq cm", "45 sq cm"],
+    "a": "40 sq cm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 116,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Tallest mountain in the world?",
+    "options": ["K2", "Kanchenjunga", "Mount Everest", "Nanda Devi"],
+    "a": "Mount Everest",
+    "mode": "FLIP"
+  },
+  {
+    "id": 117,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "15 × 6 = ?",
+    "options": ["80", "85", "90", "95"],
+    "a": "90",
+    "mode": "FLIP"
+  },
+  {
+    "id": 118,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Which city is called Pink City?",
+    "options": ["Jodhpur", "Jaipur", "Udaipur", "Bikaner"],
+    "a": "Jaipur",
+    "mode": "FLIP"
+  },
+  {
+    "id": 119,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Smallest prime number?",
+    "options": ["0", "1", "2", "3"],
+    "a": "2",
+    "mode": "FLIP"
+  },
+  {
+    "id": 120,
+    "category": "CLASS4",
+    "type": "MCQ",
+    "q": "Which festival is festival of colors?",
+    "options": ["Diwali", "Holi", "Navratri", "Pongal"],
+    "a": "Holi",
+    "mode": "FLIP"
+  },
+    {
+    "id": 121,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "LCM of 12 and 18?",
+    "options": ["24", "36", "48", "72"],
+    "a": "36",
+    "mode": "FLIP"
+  },
+  {
+    "id": 122,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Which is the largest desert in India?",
+    "options": ["Thar", "Sahara", "Gobi", "Kalahari"],
+    "a": "Thar",
+    "mode": "FLIP"
+  },
+  {
+    "id": 123,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "HCF of 24 and 36?",
+    "options": ["6", "8", "12", "18"],
+    "a": "12",
+    "mode": "FLIP"
+  },
+  {
+    "id": 124,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Who wrote Ramayana?",
+    "options": ["Tulsidas", "Valmiki", "Vyasa", "Kalidasa"],
+    "a": "Valmiki",
+    "mode": "FLIP"
+  },
+  {
+    "id": 125,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "13² = ?",
+    "options": ["149", "159", "169", "179"],
+    "a": "169",
+    "mode": "FLIP"
+  },
+  {
+    "id": 126,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Which blood group is universal donor?",
+    "options": ["A", "B", "AB", "O"],
+    "a": "O",
+    "mode": "FLIP"
+  },
+  {
+    "id": 127,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Capital of Andhra Pradesh?",
+    "options": ["Hyderabad", "Vijayawada", "Amaravati", "Visakhapatnam"],
+    "a": "Amaravati",
+    "mode": "FLIP"
+  },
+  {
+    "id": 128,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "0.5 + 0.25 = ?",
+    "options": ["0.30", "0.75", "0.80", "1.25"],
+    "a": "0.75",
+    "mode": "FLIP"
+  },
+  {
+    "id": 129,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Which planet has rings?",
+    "options": ["Mars", "Venus", "Saturn", "Mercury"],
+    "a": "Saturn",
+    "mode": "FLIP"
+  },
+  {
+    "id": 130,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Square root of 225?",
+    "options": ["13", "14", "15", "16"],
+    "a": "15",
+    "mode": "FLIP"
+  },
+  {
+    "id": 131,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Which Mughal emperor built Taj Mahal?",
+    "options": ["Akbar", "Shah Jahan", "Aurangzeb", "Babur"],
+    "a": "Shah Jahan",
+    "mode": "FLIP"
+  },
+  {
+    "id": 132,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "3/4 + 1/4 = ?",
+    "options": ["1/2", "1", "4/8", "2/4"],
+    "a": "1",
+    "mode": "FLIP"
+  },
+  {
+    "id": 133,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Which vitamin we get from sunlight?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "a": "Vitamin D",
+    "mode": "FLIP"
+  },
+  {
+    "id": 134,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Cube of 5?",
+    "options": ["25", "75", "125", "625"],
+    "a": "125",
+    "mode": "FLIP"
+  },
+  {
+    "id": 135,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Which is the highest dam in India?",
+    "options": ["Bhakra Nangal", "Tehri", "Sardar Sarovar", "Hirakud"],
+    "a": "Tehri",
+    "mode": "FLIP"
+  },
+  {
+    "id": 136,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "18% of 200 = ?",
+    "options": ["18", "24", "36", "40"],
+    "a": "36",
+    "mode": "FLIP"
+  },
+  {
+    "id": 137,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Who discovered gravity?",
+    "options": ["Newton", "Einstein", "Galileo", "Edison"],
+    "a": "Newton",
+    "mode": "FLIP"
+  },
+  {
+    "id": 138,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "1 km = how many meters?",
+    "options": ["10", "100", "1000", "10000"],
+    "a": "1000",
+    "mode": "FLIP"
+  },
+  {
+    "id": 139,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Which is the national song of India?",
+    "options": ["Jana Gana Mana", "Vande Mataram", "Saare Jahan Se", "Ae Mere Watan"],
+    "a": "Vande Mataram",
+    "mode": "FLIP"
+  },
+  {
+    "id": 140,
+    "category": "CLASS5",
+    "type": "MCQ",
+    "q": "Angle in a straight line?",
+    "options": ["90°", "180°", "270°", "360°"],
+    "a": "180°",
+    "mode": "FLIP"
+  },
+    {
+    "id": 141,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Prime numbers between 10 and 20?",
+    "options": ["11, 13, 17, 19", "11, 15, 17, 19", "13, 15, 17, 19", "11, 13, 15, 17"],
+    "a": "11, 13, 17, 19",
+    "mode": "FLIP"
+  },
+  {
+    "id": 142,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Which is the longest bone in human body?",
+    "options": ["Tibia", "Fibula", "Femur", "Humerus"],
+    "a": "Femur",
+    "mode": "FLIP"
+  },
+  {
+    "id": 143,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "(-5) + (-3) = ?",
+    "options": ["-8", "-2", "2", "8"],
+    "a": "-8",
+    "mode": "FLIP"
+  },
+  {
+    "id": 144,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Who is called Missle Man of India?",
+    "options": ["Homi Bhabha", "Vikram Sarabhai", "APJ Abdul Kalam", "CV Raman"],
+    "a": "APJ Abdul Kalam",
+    "mode": "FLIP"
+  },
+  {
+    "id": 145,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "What is 25% of 80?",
+    "options": ["15", "20", "25", "30"],
+    "a": "20",
+    "mode": "FLIP"
+  },
+  {
+    "id": 146,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Which layer of earth is liquid?",
+    "options": ["Crust", "Mantle", "Outer Core", "Inner Core"],
+    "a": "Outer Core",
+    "mode": "FLIP"
+  },
+  {
+    "id": 147,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Simplest form of 12/18?",
+    "options": ["2/3", "3/4", "4/6", "6/9"],
+    "a": "2/3",
+    "mode": "FLIP"
+  },
+  {
+    "id": 148,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Which is the hardest natural substance?",
+    "options": ["Gold", "Iron", "Diamond", "Platinum"],
+    "a": "Diamond",
+    "mode": "FLIP"
+  },
+  {
+    "id": 149,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Perimeter of rectangle 12cm × 8cm?",
+    "options": ["20cm", "32cm", "40cm", "96cm"],
+    "a": "40cm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 150,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "First battle of Panipat year?",
+    "options": ["1526", "1556", "1761", "1857"],
+    "a": "1526",
+    "mode": "FLIP"
+  },
+  {
+    "id": 151,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "(-12) ÷ 3 = ?",
+    "options": ["-4", "-3", "4", "9"],
+    "a": "-4",
+    "mode": "FLIP"
+  },
+  {
+    "id": 152,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Which organ purifies blood?",
+    "options": ["Heart", "Lungs", "Kidney", "Liver"],
+    "a": "Kidney",
+    "mode": "FLIP"
+  },
+  {
+    "id": 153,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "2.5 × 4 = ?",
+    "options": ["8", "9", "10", "12"],
+    "a": "10",
+    "mode": "FLIP"
+  },
+  {
+    "id": 154,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Which state has highest population in India?",
+    "options": ["Maharashtra", "Bihar", "Uttar Pradesh", "West Bengal"],
+    "a": "Uttar Pradesh",
+    "mode": "FLIP"
+  },
+  {
+    "id": 155,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Value of π (pi) approximately?",
+    "options": ["2.14", "3.14", "4.14", "5.14"],
+    "a": "3.14",
+    "mode": "FLIP"
+  },
+  {
+    "id": 156,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Which gas is used in balloons?",
+    "options": ["Oxygen", "Nitrogen", "Helium", "Carbon dioxide"],
+    "a": "Helium",
+    "mode": "FLIP"
+  },
+  {
+    "id": 157,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "7/8 as decimal?",
+    "options": ["0.75", "0.85", "0.875", "0.95"],
+    "a": "0.875",
+    "mode": "FLIP"
+  },
+  {
+    "id": 158,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Who founded Maurya Empire?",
+    "options": ["Ashoka", "Chandragupta Maurya", "Bindusara", "Bimbisara"],
+    "a": "Chandragupta Maurya",
+    "mode": "FLIP"
+  },
+  {
+    "id": 159,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Area of square with side 9cm?",
+    "options": ["18 sq cm", "36 sq cm", "81 sq cm", "90 sq cm"],
+    "a": "81 sq cm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 160,
+    "category": "CLASS6",
+    "type": "MCQ",
+    "q": "Which mirror is used in vehicles?",
+    "options": ["Plane", "Concave", "Convex", "All"],
+    "a": "Convex",
+    "mode": "FLIP"
+  },
+    {
+    "id": 161,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Solve: 2x + 5 = 15",
+    "options": ["x = 3", "x = 5", "x = 10", "x = 7"],
+    "a": "x = 5",
+    "mode": "FLIP"
+  },
+  {
+    "id": 162,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Which acid is present in lemon?",
+    "options": ["Acetic acid", "Citric acid", "Tartaric acid", "Lactic acid"],
+    "a": "Citric acid",
+    "mode": "FLIP"
+  },
+  {
+    "id": 163,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Complement of 35°?",
+    "options": ["45°", "55°", "65°", "145°"],
+    "a": "55°",
+    "mode": "FLIP"
+  },
+  {
+    "id": 164,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Who started Non-Cooperation Movement?",
+    "options": ["Nehru", "Tilak", "Gandhi", "Patel"],
+    "a": "Gandhi",
+    "mode": "FLIP"
+  },
+  {
+    "id": 165,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Simple interest on ₹1000 at 5% for 2 years?",
+    "options": ["₹50", "₹100", "₹150", "₹200"],
+    "a": "₹100",
+    "mode": "FLIP"
+  },
+  {
+    "id": 166,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Which tissue transports water in plants?",
+    "options": ["Phloem", "Xylem", "Cambium", "Epidermis"],
+    "a": "Xylem",
+    "mode": "FLIP"
+  },
+  {
+    "id": 167,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Ratio of 15 to 25 in simplest form?",
+    "options": ["3:5", "5:3", "15:25", "1:5"],
+    "a": "3:5",
+    "mode": "FLIP"
+  },
+  {
+    "id": 168,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Which Mughal ruler was called Zinda Pir?",
+    "options": ["Akbar", "Shah Jahan", "Aurangzeb", "Humayun"],
+    "a": "Aurangzeb",
+    "mode": "FLIP"
+  },
+  {
+    "id": 169,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Area of triangle: base 10cm, height 6cm?",
+    "options": ["30 sq cm", "60 sq cm", "16 sq cm", "32 sq cm"],
+    "a": "30 sq cm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 170,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Which instrument measures temperature?",
+    "options": ["Barometer", "Thermometer", "Hygrometer", "Anemometer"],
+    "a": "Thermometer",
+    "mode": "FLIP"
+  },
+  {
+    "id": 171,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "If CP = ₹200, SP = ₹250, Profit %?",
+    "options": ["20%", "25%", "30%", "50%"],
+    "a": "25%",
+    "mode": "FLIP"
+  },
+  {
+    "id": 172,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Which gas causes acid rain?",
+    "options": ["Oxygen", "Sulphur dioxide", "Nitrogen", "Helium"],
+    "a": "Sulphur dioxide",
+    "mode": "FLIP"
+  },
+  {
+    "id": 173,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Supplement of 120°?",
+    "options": ["30°", "60°", "90°", "60°"],
+    "a": "60°",
+    "mode": "FLIP"
+  },
+  {
+    "id": 174,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Battle of Plassey year?",
+    "options": ["1757", "1764", "1857", "1947"],
     "a": "1757",
     "mode": "FLIP"
   },
   {
-    "id": 183,
-    "category": "Class 8",
+    "id": 175,
+    "category": "CLASS7",
     "type": "MCQ",
-    "q": "Solve for x in this expression: x/3 + 5 = 9.",
-    "options": ["x=4", "x=12", "x=6", "x=15"],
-    "a": "x=12",
+    "q": "Mean of 10, 20, 30, 40?",
+    "options": ["20", "25", "30", "100"],
+    "a": "25",
+    "mode": "FLIP"
+  },
+  {
+    "id": 176,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Which part of brain controls thinking?",
+    "options": ["Cerebellum", "Medulla", "Cerebrum", "Spinal cord"],
+    "a": "Cerebrum",
+    "mode": "FLIP"
+  },
+  {
+    "id": 177,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "If 3 pens cost ₹45, cost of 5 pens?",
+    "options": ["₹60", "₹70", "₹75", "₹80"],
+    "a": "₹75",
+    "mode": "FLIP"
+  },
+  {
+    "id": 178,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Which planet is called Morning Star?",
+    "options": ["Mars", "Venus", "Mercury", "Jupiter"],
+    "a": "Venus",
+    "mode": "FLIP"
+  },
+  {
+    "id": 179,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "(-8) × (-2) = ?",
+    "options": ["-16", "-10", "10", "16"],
+    "a": "16",
+    "mode": "FLIP"
+  },
+  {
+    "id": 180,
+    "category": "CLASS7",
+    "type": "MCQ",
+    "q": "Which ruler built Red Fort?",
+    "options": ["Akbar", "Shah Jahan", "Aurangzeb", "Humayun"],
+    "a": "Shah Jahan",
+    "mode": "FLIP"
+  },
+    {
+    "id": 181,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "(a + b)² = ?",
+    "options": ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "2a + 2b"],
+    "a": "a² + 2ab + b²",
+    "mode": "FLIP"
+  },
+  {
+    "id": 182,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Which metal is liquid at room temperature?",
+    "options": ["Iron", "Mercury", "Gold", "Silver"],
+    "a": "Mercury",
+    "mode": "FLIP"
+  },
+  {
+    "id": 183,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Cube root of 343?",
+    "options": ["5", "6", "7", "8"],
+    "a": "7",
     "mode": "FLIP"
   },
   {
     "id": 184,
-    "category": "Class 8",
+    "category": "CLASS8",
     "type": "MCQ",
-    "q": "What cellular structure contains genes and controls activities inside a cell?",
-    "options": ["Cytoplasm", "Cell Membrane", "Nucleus", "Vacuole"],
-    "a": "Nucleus",
+    "q": "Who was the first Governor-General of India?",
+    "options": ["Lord Mountbatten", "Warren Hastings", "Lord Dalhousie", "Lord Canning"],
+    "a": "Warren Hastings",
     "mode": "FLIP"
   },
   {
     "id": 185,
-    "category": "Class 8",
+    "category": "CLASS8",
     "type": "MCQ",
-    "q": "What term describes the force exerted per unit area on a surface?",
-    "options": ["Friction", "Pressure", "Work", "Torque"],
-    "a": "Pressure",
+    "q": "If 15% of a number is 45, the number is?",
+    "options": ["200", "250", "300", "350"],
+    "a": "300",
     "mode": "FLIP"
   },
   {
     "id": 186,
-    "category": "Class 8",
+    "category": "CLASS8",
     "type": "MCQ",
-    "q": "Which mineral resource is often called 'Black Gold' due to its high value?",
-    "options": ["Coal", "Petroleum", "Iron Ore", "Bauxite"],
-    "a": "Petroleum",
+    "q": "Which law states Force = Mass × Acceleration?",
+    "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Gravitation"],
+    "a": "Newton's Second Law",
     "mode": "FLIP"
   },
   {
     "id": 187,
-    "category": "Class 8",
+    "category": "CLASS8",
     "type": "MCQ",
-    "q": "How many faces does a standard 3D solid cube have?",
+    "q": "Area of circle with radius 7cm? Use π = 22/7",
+    "options": ["44 sq cm", "88 sq cm", "154 sq cm", "308 sq cm"],
+    "a": "154 sq cm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 188,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Which article abolished untouchability?",
+    "options": ["Article 14", "Article 15", "Article 17", "Article 19"],
+    "a": "Article 17",
+    "mode": "FLIP"
+  },
+  {
+    "id": 189,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Exponents: 2³ × 2⁴ = ?",
+    "options": ["2⁷", "2¹²", "4⁷", "2⁹"],
+    "a": "2⁷",
+    "mode": "FLIP"
+  },
+  {
+    "id": 190,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Which disease is caused by Vitamin C deficiency?",
+    "options": ["Rickets", "Scurvy", "Night Blindness", "Beri-Beri"],
+    "a": "Scurvy",
+    "mode": "FLIP"
+  },
+  {
+    "id": 191,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Compound interest formula?",
+    "options": ["P × R × T / 100", "P(1 + R/100)ⁿ", "SI × T", "P + SI"],
+    "a": "P(1 + R/100)ⁿ",
+    "mode": "FLIP"
+  },
+  {
+    "id": 192,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Which type of coal has highest carbon content?",
+    "options": ["Peat", "Lignite", "Bituminous", "Anthracite"],
+    "a": "Anthracite",
+    "mode": "FLIP"
+  },
+  {
+    "id": 193,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Factorize: x² - 9",
+    "options": ["(x-3)(x-3)", "(x+3)(x+3)", "(x-3)(x+3)", "(x-9)(x+1)"],
+    "a": "(x-3)(x+3)",
+    "mode": "FLIP"
+  },
+  {
+    "id": 194,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Who gave the slogan 'Do or Die'?",
+    "options": ["Nehru", "Subhash Chandra Bose", "Gandhi", "Tilak"],
+    "a": "Gandhi",
+    "mode": "FLIP"
+  },
+  {
+    "id": 195,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Volume of cube with side 4cm?",
+    "options": ["16 cu cm", "48 cu cm", "64 cu cm", "12 cu cm"],
+    "a": "64 cu cm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 196,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Which cell organelle is called powerhouse?",
+    "options": ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
+    "a": "Mitochondria",
+    "mode": "FLIP"
+  },
+  {
+    "id": 197,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Probability of getting head in a coin toss?",
+    "options": ["0", "1/4", "1/2", "1"],
+    "a": "1/2",
+    "mode": "FLIP"
+  },
+  {
+    "id": 198,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Which is the largest gland in human body?",
+    "options": ["Pancreas", "Liver", "Thyroid", "Pituitary"],
+    "a": "Liver",
+    "mode": "FLIP"
+  },
+  {
+    "id": 199,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Square of 25?",
+    "options": ["525", "625", "725", "425"],
+    "a": "625",
+    "mode": "FLIP"
+  },
+  {
+    "id": 200,
+    "category": "CLASS8",
+    "type": "MCQ",
+    "q": "Which movement was led by Sardar Patel?",
+    "options": ["Dandi March", "Bardoli Satyagraha", "Quit India", "Non-Cooperation"],
+    "a": "Bardoli Satyagraha",
+    "mode": "FLIP"
+  },
+    {
+    "id": 201,
+    "category": "CLASS9",
+    "type": "MCQ",
+    "q": "√2 is which type of number?",
+    "options": ["Natural", "Integer", "Rational", "Irrational"],
+    "a": "Irrational",
+    "mode": "FLIP"
+  },
+  {
+    "id": 202,
+    "category": "CLASS9",
+    "type": "MCQ",
+    "q": "Who discovered cell?",
+    "options": ["Robert Hooke", "Schleiden", "Schwann", "Leeuwenhoek"],
+    "a": "Robert Hooke",
+    "mode": "FLIP"
+  },
+  {
+    "id": 203,
+    "category": "CLASS9",
+    "type": "MCQ",
+    "q": "If (x + 1) is a factor of p(x) = x³ + x² + x + 1, then p(-1) = ?",
+    "options": ["0", "1", "-1", "2"],
+    "a": "0",
+    "mode": "FLIP"
+  },
+  {
+    "id": 204,
+    "category": "CLASS9",
+    "type": "MCQ",
+    "q": "Which event marked beginning of French Revolution?",
+    "options": ["Fall of Bastille", "Execution of Louis XVI", "Tennis Court Oath", "Reign of Terror"],
+    "a": "Fall of Bastille",
+    "mode": "FLIP"
+  },
+  {
+    "id": 205,
+    "category": "CLASS9",
+    "type": "MCQ",
+    "q": "Heron's formula is used for?",
+    "options": ["Circle area", "Triangle area", "Rectangle area", "Square area"],
+    "a": "Triangle area",
+    "mode": "FLIP"
+  },
+  {
+    "id": 206,
+    "category": "CLASS9",
+    "type": "MCQ",
+    "q": "SI unit of force?",
+    "options": ["Joule", "Watt", "Newton", "Pascal"],
+    "a": "Newton",
+    "mode": "FLIP"
+  },
+  {
+    "id": 207,
+    "category": "CLASS9",
+    "type": "MCQ",
+    "q": "Which quadrant has x negative, y positive?",
+    "options": ["I", "II", "III", "IV"],
+    "a": "II",
+    "mode": "FLIP"
+  },
+  {
+    "id": 208,
+    "category": "CLASS9",
+    "type": "MCQ",
+    "q": "Which tissue makes up husk of coconut?",
+    "options": ["Parenchyma", "Collenchyma", "Sclerenchyma", "Xylem"],
+    "a": "Sclerenchyma",
+    "mode": "FLIP"
+  },
+  {
+    "id": 209,
+    "category": "CLASS9",
+    "type": "MCQ",
+    "q": "Angle sum property of triangle?",
+    "options": ["90°", "180°", "270°", "360°"],
+    "a": "180°",
+    "mode": "FLIP"
+  },
+  {
+    "id": 210,
+    "category": "CLASS9",
+    "type": "MCQ",
+    "q": "Who was the last Viceroy of India?",
+    "options": ["Lord Wavell", "Lord Mountbatten", "Lord Linlithgow", "Lord Irwin"],
+    "a": "Lord Mountbatten",
+    "mode": "FLIP"
+  },
+  {
+    "id": 211,
+    "category": "CLASS9",
+    "type": "MCQ",
+    "q": "Atomic number of Carbon?",
     "options": ["4", "6", "8", "12"],
     "a": "6",
     "mode": "FLIP"
   },
   {
-    "id": 188,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "Which human hormone triggers the flight-or-fight response during an emergency?",
-    "options": ["Insulin", "Thyroxin", "Adrenaline", "Estrogen"],
-    "a": "Adrenaline",
-    "mode": "FLIP"
-  },
-  {
-    "id": 189,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "Which constitutional right allows citizens to move court if their rights are violated?",
-    "options": ["Right to Equality", "Right to Freedom", "Right to Constitutional Remedies", "Cultural Rights"],
-    "a": "Right to Constitutional Remedies",
-    "mode": "FLIP"
-  },
-  {
-    "id": 190,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "What chemical process describes the slow breakdown of iron due to moisture and air?",
-    "options": ["Galvanization", "Rusting", "Combustion", "Neutralization"],
-    "a": "Rusting",
-    "mode": "FLIP"
-  },
-  {
-    "id": 191,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "Find the value of the expression: square root of 144 plus square root of 25.",
-    "options": ["13", "17", "19", "25"],
-    "a": "17",
-    "mode": "FLIP"
-  },
-  {
-    "id": 192,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "What protozoan parasite causes malaria and is carried by mosquitoes?",
-    "options": ["Amoeba", "Plasmodium", "Paramecium", "Virus"],
-    "a": "Plasmodium",
-    "mode": "FLIP"
-  },
-  {
-    "id": 193,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "Which system of agriculture involves growing crops on cleared forest plots and then moving away?",
-    "options": ["Intensive Farming", "Shifting Cultivation", "Commercial Farming", "Plantation"],
-    "a": "Shifting Cultivation",
-    "mode": "FLIP"
-  },
-  {
-    "id": 194,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "What audible sound frequency range can a healthy human ear detect?",
-    "options": ["0 to 20 Hz", "20 Hz to 20,000 Hz", "Above 20,000 Hz", "10 to 10,000 Hz"],
-    "a": "20 Hz to 20,000 Hz",
-    "mode": "FLIP"
-  },
-  {
-    "id": 195,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "Identify the passive voice for: 'Sam wrote a letter.'",
-    "options": ["A letter is written by Sam", "A letter was written by Sam", "Sam was writing a letter", "A letter had been written by Sam"],
-    "a": "A letter was written by Sam",
-    "mode": "FLIP"
-  },
-  {
-    "id": 196,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "What is the sum of all interior angles of a convex quadrilateral?",
-    "options": [180, 270, 360, 540],
-    "a": 360,
-    "mode": "FLIP"
-  },
-  {
-    "id": 197,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "What process adds a layer of zinc on iron to protect it from rusting?",
-    "options": ["Electroplating", "Galvanization", "Anodizing", "Alloying"],
-    "a": "Galvanization",
-    "mode": "FLIP"
-  },
-  {
-    "id": 198,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "Who led the historic 1857 revolt against British forces from Jhansi?",
-    "options": ["Rani Lakshmibai", "Begum Hazrat Mahal", "Nana Saheb", "Kunwar Singh"],
-    "a": "Rani Lakshmibai",
-    "mode": "FLIP"
-  },
-  {
-    "id": 199,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "What metric measures the population density of a geographical region?",
-    "options": ["Total population", "People per square kilometer", "Birth rate", "Urban migration rate"],
-    "a": "People per square kilometer",
-    "mode": "FLIP"
-  },
-  {
-    "id": 200,
-    "category": "Class 8",
-    "type": "MCQ",
-    "q": "What structural coating allows non-stick cookware to resist heat?",
-    "options": ["PVC", "Rayon", "Teflon", "Bakelite"],
-    "a": "Teflon",
-    "mode": "FLIP"
-  },
-  {
-    "id": 201,
-    "category": "Class 9",
-    "type": "MCQ",
-    "q": "Which cell organelle is widely referred to as the 'Powerhouse of the Cell'?",
-    "options": ["Golgi Apparatus", "Mitochondria", "Ribosomes", "Lysosomes"],
-    "a": "Mitochondria",
-    "mode": "FLIP"
-  },
-  {
-    "id": 202,
-    "category": "Class 9",
-    "type": "MCQ",
-    "q": "What value represents the acceleration due to gravity (g) near Earth's surface?",
-    "options": ["9.8 m/s^2", "8.9 m/s^2", "10.5 m/s^2", "11.2 m/s^2"],
-    "a": "9.8 m/s^2",
-    "mode": "FLIP"
-  },
-  {
-    "id": 203,
-    "category": "Class 9",
-    "type": "MCQ",
-    "q": "Which algebraic identity matches the expansion of (a^2 - b^2)?",
-    "options": ["(a-b)^2", "(a+b)^2", "(a+b)(a-b)", "(a^2+b^2)"],
-    "a": "(a+b)(a-b)",
-    "mode": "FLIP"
-  },
-  {
-    "id": 204,
-    "category": "Class 9",
-    "type": "MCQ",
-    "q": "What historic event officially triggered the French Revolution in 1789?",
-    "options": ["Execution of Louis XVI", "Storming of the Bastille", "Tennis Court Oath", "Reign of Terror"],
-    "a": "Storming of the Bastille",
-    "mode": "FLIP"
-  },
-  {
-    "id": 205,
-    "category": "Class 9",
-    "type": "MCQ",
-    "q": "Which constitutional system ensures that no branch of government becomes absolute?",
-    "options": ["Federalism", "Checks and Balances", "Coalition Government", "Unitary System"],
-    "a": "Checks and Balances",
-    "mode": "FLIP"
-  },
-  {
-    "id": 206,
-    "category": "Class 9",
-    "type": "MCQ",
-    "q": "What physical state change describes a solid turning directly into gas?",
-    "options": ["Evaporation", "Sublimation", "Deposition", "Fusion"],
-    "a": "Sublimation",
-    "mode": "FLIP"
-  },
-  {
-    "id": 207,
-    "category": "Class 9",
-    "type": "MCQ",
-    "q": "What is the mathematical value of a non-zero number raised to the power of zero?",
-    "options": ["0", "1", "The number itse", "Infinity"],
-    "a": "1",
-    "mode": "FLIP"
-  },
-  {
-    "id": 208,
-    "category": "Class 9",
-    "type": "MCQ",
-    "q": "Which biological tissue connects bone to another bone at joints?",
-    "options": ["Tendon", "Ligament", "Areolar Tissue", "Adipose Tissue"],
-    "a": "Ligament",
-    "mode": "FLIP"
-  },
-  {
-    "id": 209,
-    "category": "Class 9",
-    "type": "MCQ",
-    "q": "What thermodynamic law describes an object resisting structural change in its state of motion?",
-    "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Gravitation"],
-    "a": "Newton's First Law",
-    "mode": "FLIP"
-  },
-  {
-    "id": 210,
-    "category": "Class 9",
-    "type": "MCQ",
-    "q": "Which mountain peak stands as the highest point in the Himalayan range within India?",
-    "options": ["K2", "Kanchenjunga", "Nanda Devi", "Mount Everest"],
-    "a": "Kanchenjunga",
-    "mode": "FLIP"
-  },
-  {
-    "id": 211,
-    "category": "Class 9",
-    "type": "MCQ",
-    "q": "What chemical law states that mass cannot be created or destroyed during a reaction?",
-    "options": ["Law of Constant Proportions", "Law of Conservation of Mass", "Law of Multiple Proportions", "Avogadro's Law"],
-    "a": "Law of Conservation of Mass",
-    "mode": "FLIP"
-  },
-  {
     "id": 212,
-    "category": "Class 9",
+    "category": "CLASS9",
     "type": "MCQ",
-    "q": "What is the total coordinates value of the origin point in a Cartesian plane?",
-    "options": ["(1,1)", "(0,1)", "(1,0)", "(0,0)"],
-    "a": "(0,0)",
+    "q": "Surface area of sphere formula?",
+    "options": ["πr²", "2πr²", "4πr²", "4/3πr³"],
+    "a": "4πr²",
     "mode": "FLIP"
   },
   {
     "id": 213,
-    "category": "Class 9",
+    "category": "CLASS9",
     "type": "MCQ",
-    "q": "Which type of plant tissue is responsible for transporting water from roots?",
-    "options": ["Phloem", "Xylem", "Parenchyma", "Sclerenchyma"],
-    "a": "Xylem",
+    "q": "Which gas is called laughing gas?",
+    "options": ["CO₂", "N₂O", "NO₂", "SO₂"],
+    "a": "N₂O",
     "mode": "FLIP"
   },
   {
     "id": 214,
-    "category": "Class 9",
+    "category": "CLASS9",
     "type": "MCQ",
-    "q": "What metric calculates the total work done per unit time?",
-    "options": ["Energy", "Power", "Force", "Momentum"],
-    "a": "Power",
+    "q": "Mean, Median, Mode relation in symmetric data?",
+    "options": ["Mean > Median", "Mean = Median = Mode", "Mode > Mean", "Median > Mode"],
+    "a": "Mean = Median = Mode",
     "mode": "FLIP"
   },
   {
     "id": 215,
-    "category": "Class 9",
+    "category": "CLASS9",
     "type": "MCQ",
-    "q": "Which Indian river flows westward through a rift valley into the Arabian Sea?",
-    "options": ["Ganga", "Godavari", "Narmada", "Krishna"],
-    "a": "Narmada",
+    "q": "Who wrote 'The Social Contract'?",
+    "options": ["Voltaire", "Montesquieu", "Rousseau", "John Locke"],
+    "a": "Rousseau",
     "mode": "FLIP"
   },
   {
     "id": 216,
-    "category": "Class 9",
+    "category": "CLASS9",
     "type": "MCQ",
-    "q": "What type of mixture contains particles that remain suspended without settling down?",
-    "options": ["True Solution", "Suspension", "Colloid", "Saturated Solution"],
-    "a": "Colloid",
+    "q": "Linear equation in two variables has how many solutions?",
+    "options": ["One", "Two", "Finite", "Infinite"],
+    "a": "Infinite",
     "mode": "FLIP"
   },
   {
     "id": 217,
-    "category": "Class 9",
+    "category": "CLASS9",
     "type": "MCQ",
-    "q": "If two geometric triangles are congruent, their matching areas must be:",
-    "options": ["Double", "Ha", "Equal", "Proportional"],
-    "a": "Equal",
+    "q": "Which is a communicable disease?",
+    "options": ["Diabetes", "Cancer", "Tuberculosis", "Hypertension"],
+    "a": "Tuberculosis",
     "mode": "FLIP"
   },
   {
     "id": 218,
-    "category": "Class 9",
+    "category": "CLASS9",
     "type": "MCQ",
-    "q": "What specific institutional organ holds the ultimate authority to interpret the Constitution of India?",
-    "options": ["Parliament", "President", "Supreme Court", "Prime Minister"],
-    "a": "Supreme Court",
+    "q": "Euclid's fifth postulate is about?",
+    "options": ["Line segment", "Right angles", "Parallel lines", "Circles"],
+    "a": "Parallel lines",
     "mode": "FLIP"
   },
   {
     "id": 219,
-    "category": "Class 9",
+    "category": "CLASS9",
     "type": "MCQ",
-    "q": "What economic index calculates the number of births per thousand individuals annually?",
-    "options": ["Mortality Rate", "Birth Rate", "Growth Index", "Life Expectancy"],
-    "a": "Birth Rate",
-    "mode": "FLIP"
-  },
-  {
-    "id": 220,
-    "category": "Class 9",
-    "type": "MCQ",
-    "q": "What type of wave requires a physical material medium to travel through?",
-    "options": ["Light Wave", "Radio Wave", "Mechanical Wave", "X-Rays"],
-    "a": "Mechanical Wave",
-    "mode": "FLIP"
-  },
-  {
-    "id": 221,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What product is formed at the anode during the electrolysis of brine?",
-    "options": ["Hydrogen Gas", "Oxygen Gas", "Chlorine Gas", "Sodium Metal"],
-    "a": "Chlorine Gas",
-    "mode": "FLIP"
-  },
-  {
-    "id": 222,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What value represents the mathematical discriminant (D) of a standard quadratic equation?",
-    "options": ["b^2 - 4ac", "4ac - b^2", "b - 4ac", "b^2 + 4ac"],
-    "a": "b^2 - 4ac",
-    "mode": "FLIP"
-  },
-  {
-    "id": 223,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "Which photoreceptor cells inside the human eye help detect colors under bright light?",
-    "options": ["Rod cells", "Cone cells", "Optic disk", "Pupil cells"],
-    "a": "Cone cells",
-    "mode": "FLIP"
-  },
-  {
-    "id": 224,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What physical law correlates electrical current to voltage drop across a fixed conductor?",
-    "options": ["Joule's Law", "Ohm's Law", "Faraday's Law", "Ampere's Law"],
-    "a": "Ohm's Law",
-    "mode": "FLIP"
-  },
-  {
-    "id": 225,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "In what historical year did Mahatma Gandhi launch the Non-Cooperation Movement?",
-    "options": ["1915", "1920", "1930", "1942"],
-    "a": "1920",
-    "mode": "FLIP"
-  },
-  {
-    "id": 226,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "Which type of chemical bonding involves sharing electron pairs between non-metals?",
-    "options": ["Ionic Bond", "Covalent Bond", "Metallic Bond", "Hydrogen Bond"],
-    "a": "Covalent Bond",
-    "mode": "FLIP"
-  },
-  {
-    "id": 227,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "Find the 10th term of an Arithmetic Progression starting with 2, 4, 6, 8...",
-    "options": ["18", "20", "22", "24"],
-    "a": "20",
-    "mode": "FLIP"
-  },
-  {
-    "id": 228,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What biochemical catalyst breaks down complex starch into sugars in our mouth?",
-    "options": ["Pepsin", "Trypsin", "Salivary Amylase", "Lipase"],
-    "a": "Salivary Amylase",
-    "mode": "FLIP"
-  },
-  {
-    "id": 229,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What optical lens structure corrects the vision defect known as Myopia?",
-    "options": ["Convex Lens", "Concave Lens", "Bifocal Lens", "Cylindrical Lens"],
-    "a": "Concave Lens",
-    "mode": "FLIP"
-  },
-  {
-    "id": 230,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "Which soil type expands significantly when wet and is excellent for growing cotton?",
-    "options": ["Alluvial Soil", "Black Soil", "Red Soil", "Laterite Soil"],
-    "a": "Black Soil",
-    "mode": "FLIP"
-  },
-  {
-    "id": 231,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What happens to the properties of elements as you move left to right across a periodic table period?",
-    "options": ["Metallic character increases", "Non-metallic character increases", "Atomic size increases", "Valence electrons decrease"],
-    "a": "Non-metallic character increases",
-    "mode": "FLIP"
-  },
-  {
-    "id": 232,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What is the value of trigonometry expression: sin square theta plus cos square theta?",
-    "options": ["0", "1", "2", "-1"],
-    "a": "1",
-    "mode": "FLIP"
-  },
-  {
-    "id": 233,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What hormone regulates blood glucose levels and is produced by the pancreas?",
-    "options": ["Thyroxin", "Adrenaline", "Insulin", "Growth Hormone"],
-    "a": "Insulin",
-    "mode": "FLIP"
-  },
-  {
-    "id": 234,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What magnetic rule determines the direction of induced current in a generator?",
-    "options": ["Fleming's Left-Hand Rule", "Fleming's Right-Hand Rule", "Right-Hand Thumb Rule", "Maxwell's Screw Rule"],
-    "a": "Fleming's Right-Hand Rule",
-    "mode": "FLIP"
-  },
-  {
-    "id": 235,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "Which sector of the economy drives farming, forestry, and mining operations?",
-    "options": ["Primary Sector", "Secondary Sector", "Tertiary Sector", "Quaternary Sector"],
-    "a": "Primary Sector",
-    "mode": "FLIP"
-  },
-  {
-    "id": 236,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What gas compound is primarily responsible for turning lime water milky?",
-    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen Dioxide", "Suur Dioxide"],
-    "a": "Carbon Dioxide",
-    "mode": "FLIP"
-  },
-  {
-    "id": 237,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What is the maximum probability score possible for any statistical event?",
-    "options": ["0.5", "1", "100", "Infinite"],
-    "a": "1",
-    "mode": "FLIP"
-  },
-  {
-    "id": 238,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "Which biological structural system filters waste to form urine inside kidneys?",
-    "options": ["Nephrons", "Neurons", "Alveoli", "Villi"],
-    "a": "Nephrons",
-    "mode": "FLIP"
-  },
-  {
-    "id": 239,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What term describes power shared between a central authority and provincial units?",
-    "options": ["Dictatorship", "Federalism", "Monarchy", "Anarchy"],
-    "a": "Federalism",
-    "mode": "FLIP"
-  },
-  {
-    "id": 240,
-    "category": "Class 10",
-    "type": "MCQ",
-    "q": "What optical index tracks the bending of light as it moves between mediums?",
-    "options": ["Reflective Index", "Refractive Index", "Focal Length", "Magnification Factor"],
-    "a": "Refractive Index",
-    "mode": "FLIP"
-  },
-  {
-    "id": 241,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "MPC: What is the derivative of x squared with respect to x?",
-    "options": ["x", "2x", "x^2", "2"],
-    "a": "2x",
-    "mode": "FLIP"
-  },
-  {
-    "id": 242,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "MPC: Which vector operation results in a scalar quantity?",
-    "options": ["Cross Product", "Dot Product", "Vector Addition", "Curl"],
-    "a": "Dot Product",
-    "mode": "FLIP"
-  },
-  {
-    "id": 243,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "MPC: What is the value of log base 10 of 100?",
-    "options": ["1", "2", "10", "100"],
+    "q": "What is the valency of Oxygen?",
+    "options": ["1", "2", "3", "4"],
     "a": "2",
     "mode": "FLIP"
   },
   {
-    "id": 244,
-    "category": "Class 11",
+    "id": 220,
+    "category": "CLASS9",
     "type": "MCQ",
-    "q": "MPC: What type of collision conserves both kinetic energy and momentum?",
-    "options": ["Inelastic", "Elastic", "Perfectly Inelastic", "Explosive"],
-    "a": "Elastic",
+    "q": "Which river is called Sorrow of Bihar?",
+    "options": ["Ganga", "Yamuna", "Kosi", "Gandak"],
+    "a": "Kosi",
+    "mode": "FLIP"
+  },
+    {
+    "id": 221,
+    "category": "CLASS10",
+    "type": "MCQ",
+    "q": "Quadratic equation ax² + bx + c = 0 has equal roots if?",
+    "options": ["b² > 4ac", "b² < 4ac", "b² = 4ac", "b² = 0"],
+    "a": "b² = 4ac",
     "mode": "FLIP"
   },
   {
-    "id": 245,
-    "category": "Class 11",
+    "id": 222,
+    "category": "CLASS10",
     "type": "MCQ",
-    "q": "MPC: What is the value of the universal gravitational constant G?",
-    "options": ["6.67 x 10^-11 N m^2/kg^2", "9.8 m/s^2", "6.02 x 10^23", "3 x 10^8 m/s"],
-    "a": "6.67 x 10^-11 N m^2/kg^2",
+    "q": "Which reaction is used in white washing walls?",
+    "options": ["CaO + H₂O → Ca(OH)₂", "CaCO₃ → CaO + CO₂", "Ca(OH)₂ + CO₂ → CaCO₃ + H₂O", "Both A and C"],
+    "a": "Both A and C",
     "mode": "FLIP"
   },
   {
-    "id": 246,
-    "category": "Class 11",
+    "id": 223,
+    "category": "CLASS10",
     "type": "MCQ",
-    "q": "MPC: What is the hybridisation of carbon in methane (CH4)?",
-    "options": ["sp", "sp2", "sp3", "dsp2"],
-    "a": "sp3",
+    "q": "AP: 3, 8, 13... Common difference?",
+    "options": ["3", "4", "5", "8"],
+    "a": "5",
     "mode": "FLIP"
   },
   {
-    "id": 247,
-    "category": "Class 11",
+    "id": 224,
+    "category": "CLASS10",
     "type": "MCQ",
-    "q": "MPC: Which gas law states that volume is directly proportional to temperature at constant pressure?",
-    "options": ["Boyle's Law", "Charles's Law", "Gay-Lussac's Law", "Avogadro's Law"],
-    "a": "Charles's Law",
+    "q": "Power house of European Union?",
+    "options": ["France", "Germany", "Italy", "Spain"],
+    "a": "Germany",
     "mode": "FLIP"
   },
   {
-    "id": 248,
-    "category": "Class 11",
+    "id": 225,
+    "category": "CLASS10",
     "type": "MCQ",
-    "q": "MPC: What is the value of sin(90 degrees)?",
-    "options": ["0", "0.5", "1", "-1"],
+    "q": "sin²θ + cos²θ = ?",
+    "options": ["0", "1", "2", "tan²θ"],
     "a": "1",
     "mode": "FLIP"
   },
   {
-    "id": 249,
-    "category": "Class 12",
+    "id": 226,
+    "category": "CLASS10",
     "type": "MCQ",
-    "q": "MPC: What is the value of the integral of 1/x with respect to x?",
-    "options": ["x", "ln(x)", "e^x", "-1/x^2"],
-    "a": "ln(x)",
-    "mode": "FLIP"
-  },
-  {
-    "id": 250,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What device stores electric charge in an electrical circuit?",
-    "options": ["Resistor", "Inductor", "Capacitor", "Diode"],
-    "a": "Capacitor",
-    "mode": "FLIP"
-  },
-  {
-    "id": 251,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What is the unit of magnetic flux density?",
-    "options": ["Weber", "Tesla", "Henry", "Farad"],
-    "a": "Tesla",
-    "mode": "FLIP"
-  },
-  {
-    "id": 252,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: Which rule determines the direction of a magnetic field around a straight current-carrying wire?",
-    "options": ["Right-Hand Thumb Rule", "Fleming's Left-Hand Rule", "Fleming's Right-Hand Rule", "Lenz's Law"],
-    "a": "Right-Hand Thumb Rule",
-    "mode": "FLIP"
-  },
-  {
-    "id": 253,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What type of semiconductor is formed by doping silicon with arsenic?",
-    "options": ["p-type", "n-type", "Intrinsic", "Insulator"],
-    "a": "n-type",
-    "mode": "FLIP"
-  },
-  {
-    "id": 254,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What order of reaction has a rate independent of reactant concentration?",
-    "options": ["First Order", "Second Order", "Zero Order", "Pseudo First Order"],
-    "a": "Zero Order",
-    "mode": "FLIP"
-  },
-  {
-    "id": 255,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: Which functional group characterizes aldehydes?",
-    "options": ["-COOH", "-CHO", "-OH", "-CO-"],
-    "a": "-CHO",
-    "mode": "FLIP"
-  },
-  {
-    "id": 256,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What property causes light to bend when moving from one medium to another?",
-    "options": ["Reflection", "Refraction", "Diffraction", "Polarization"],
-    "a": "Refraction",
-    "mode": "FLIP"
-  },
-  {
-    "id": 257,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What is the determinant of an identity matrix?",
-    "options": ["0", "1", "-1", "Undefined"],
-    "a": "1",
-    "mode": "FLIP"
-  },
-  {
-    "id": 258,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What phenomenon demonstrates the particle nature of light?",
-    "options": ["Interference", "Diffraction", "Photoelectric Effect", "Polarization"],
-    "a": "Photoelectric Effect",
-    "mode": "FLIP"
-  },
-  {
-    "id": 259,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What is the standard SI unit of electric potential?",
-    "options": ["Ampere", "Ohm", "Volt", "Coulomb"],
-    "a": "Volt",
-    "mode": "FLIP"
-  },
-  {
-    "id": 260,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What mineral ore is refined to produce Aluminium?",
-    "options": ["Hematite", "Bauxite", "Galena", "Magnetite"],
-    "a": "Bauxite",
-    "mode": "FLIP"
-  },
-  {
-    "id": 261,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: If a matrix commutes under multiplication with another, then AB equals:",
-    "options": ["BA", "-BA", "I", "0"],
-    "a": "BA",
-    "mode": "FLIP"
-  },
-  {
-    "id": 262,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What law relates the total electric flux through a closed surface to the enclosed charge?",
-    "options": ["Gauss's Law", "Ampere's Law", "Coulomb's Law", "Faraday's Law"],
-    "a": "Gauss's Law",
-    "mode": "FLIP"
-  },
-  {
-    "id": 263,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What is the name of the process used to manufacture Ammonia industrially?",
-    "options": ["Haber Process", "Ostwald Process", "Contact Process", "Solvay Process"],
-    "a": "Haber Process",
-    "mode": "FLIP"
-  },
-  {
-    "id": 264,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What are the roots of the equation x^2 + 1 = 0?",
-    "options": ["1, -1", "0", "i, -i", "Real numbers"],
-    "a": "i, -i",
-    "mode": "FLIP"
-  },
-  {
-    "id": 265,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "MPC: What kind of lens is used to correct Hypermetropia?",
-    "options": ["Concave", "Convex", "Cylindrical", "Bifocal"],
+    "q": "Which mirror forms virtual, erect, diminished image?",
+    "options": ["Plane", "Concave", "Convex", "All"],
     "a": "Convex",
     "mode": "FLIP"
   },
   {
-    "id": 266,
-    "category": "Class 11",
+    "id": 227,
+    "category": "CLASS10",
     "type": "MCQ",
-    "q": "BiPC: Which powerhouse plant organelle converts sugar into ATP?",
-    "options": ["Chloroplast", "Mitochondria", "Golgi Body", "Ribosome"],
-    "a": "Mitochondria",
+    "q": "Distance of point (3,4) from origin?",
+    "options": ["3", "4", "5", "7"],
+    "a": "5",
     "mode": "FLIP"
   },
   {
-    "id": 267,
-    "category": "Class 11",
+    "id": 228,
+    "category": "CLASS10",
     "type": "MCQ",
-    "q": "BiPC: What tissue transports manufactured food from leaves to other plant parts?",
-    "options": ["Xylem", "Phloem", "Parenchyma", "Cambium"],
-    "a": "Phloem",
+    "q": "Which hormone regulates blood sugar?",
+    "options": ["Thyroxine", "Adrenaline", "Insulin", "Growth hormone"],
+    "a": "Insulin",
     "mode": "FLIP"
   },
   {
-    "id": 268,
-    "category": "Class 11",
+    "id": 229,
+    "category": "CLASS10",
     "type": "MCQ",
-    "q": "BiPC: Who is universally recognized as the Father of Botany?",
-    "options": ["Aristotle", "Theophrastus", "Gregor Mendel", "Linnaeus"],
-    "a": "Theophrastus",
+    "q": "Tangent to circle is perpendicular to?",
+    "options": ["Chord", "Radius at point of contact", "Diameter", "Secant"],
+    "a": "Radius at point of contact",
     "mode": "FLIP"
   },
   {
-    "id": 269,
-    "category": "Class 11",
+    "id": 230,
+    "category": "CLASS10",
     "type": "MCQ",
-    "q": "BiPC: What major human organ filters urea out of the bloodstream?",
-    "options": ["Liver", "Kidney", "Lungs", "Heart"],
+    "q": "Which party system exists in China?",
+    "options": ["One-party", "Two-party", "Multi-party", "No party"],
+    "a": "One-party",
+    "mode": "FLIP"
+  },
+  {
+    "id": 231,
+    "category": "CLASS10",
+    "type": "MCQ",
+    "q": "Probability of impossible event?",
+    "options": ["-1", "0", "1", "0.5"],
+    "a": "0",
+    "mode": "FLIP"
+  },
+  {
+    "id": 232,
+    "category": "CLASS10",
+    "type": "MCQ",
+    "q": "Which process is used for concentration of sulphide ore?",
+    "options": ["Gravity separation", "Froth floatation", "Magnetic separation", "Leaching"],
+    "a": "Froth floatation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 233,
+    "category": "CLASS10",
+    "type": "MCQ",
+    "q": "Mode of data: 2, 3, 5, 3, 4, 3, 6?",
+    "options": ["2", "3", "4", "5"],
+    "a": "3",
+    "mode": "FLIP"
+  },
+  {
+    "id": 234,
+    "category": "CLASS10",
+    "type": "MCQ",
+    "q": "Which lens is used to correct myopia?",
+    "options": ["Convex", "Concave", "Bifocal", "Cylindrical"],
+    "a": "Concave",
+    "mode": "FLIP"
+  },
+  {
+    "id": 235,
+    "category": "CLASS10",
+    "type": "MCQ",
+    "q": "GST full form?",
+    "options": ["General Sales Tax", "Goods and Services Tax", "Government Service Tax", "Goods Sales Tax"],
+    "a": "Goods and Services Tax",
+    "mode": "FLIP"
+  },
+  {
+    "id": 236,
+    "category": "CLASS10",
+    "type": "MCQ",
+    "q": "Which gas is evolved when metal reacts with acid?",
+    "options": ["O₂", "H₂", "CO₂", "N₂"],
+    "a": "H₂",
+    "mode": "FLIP"
+  },
+  {
+    "id": 237,
+    "category": "CLASS10",
+    "type": "MCQ",
+    "q": "Area of sector with angle 60° in circle of radius 7cm? π=22/7",
+    "options": ["25.67 sq cm", "77/3 sq cm", "154 sq cm", "49 sq cm"],
+    "a": "77/3 sq cm",
+    "mode": "FLIP"
+  },
+  {
+    "id": 238,
+    "category": "CLASS10",
+    "type": "MCQ",
+    "q": "Which blood vessel carries oxygenated blood from lungs?",
+    "options": ["Pulmonary artery", "Pulmonary vein", "Aorta", "Vena cava"],
+    "a": "Pulmonary vein",
+    "mode": "FLIP"
+  },
+  {
+    "id": 239,
+    "category": "CLASS10",
+    "type": "MCQ",
+    "q": "Which is not a step of resource planning?",
+    "options": ["Identification", "Mapping", "Exploitation", "Matching with development plans"],
+    "a": "Exploitation",
+    "mode": "FLIP"
+  },
+  {
+    "id": 240,
+    "category": "CLASS10",
+    "type": "MCQ",
+    "q": "Which element has electronic configuration 2, 8, 2?",
+    "options": ["Carbon", "Oxygen", "Magnesium", "Calcium"],
+    "a": "Magnesium",
+    "mode": "FLIP"
+  },
+    {
+    "id": 241,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which is the smallest country in the world?",
+    "options": ["Monaco", "Vatican City", "Maldives", "Nauru"],
+    "a": "Vatican City",
+    "mode": "FLIP"
+  },
+  {
+    "id": 242,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Who invented Computer?",
+    "options": ["Charles Babbage", "Alan Turing", "Bill Gates", "Steve Jobs"],
+    "a": "Charles Babbage",
+    "mode": "FLIP"
+  },
+  {
+    "id": 243,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which sport is called Gentleman's Game?",
+    "options": ["Football", "Cricket", "Tennis", "Golf"],
+    "a": "Cricket",
+    "mode": "FLIP"
+  },
+  {
+    "id": 244,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "How many players in a volleyball team?",
+    "options": ["5", "6", "7", "11"],
+    "a": "6",
+    "mode": "FLIP"
+  },
+  {
+    "id": 245,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which is the largest animal on earth?",
+    "options": ["African Elephant", "Blue Whale", "Giraffe", "White Shark"],
+    "a": "Blue Whale",
+    "mode": "FLIP"
+  },
+  {
+    "id": 246,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "First woman Prime Minister of India?",
+    "options": ["Sonia Gandhi", "Indira Gandhi", "Pratibha Patil", "Sarojini Naidu"],
+    "a": "Indira Gandhi",
+    "mode": "FLIP"
+  },
+  {
+    "id": 247,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which is the fastest land animal?",
+    "options": ["Lion", "Tiger", "Cheetah", "Horse"],
+    "a": "Cheetah",
+    "mode": "FLIP"
+  },
+  {
+    "id": 248,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Nobel Prize was started in which year?",
+    "options": ["1895", "1901", "1914", "1945"],
+    "a": "1901",
+    "mode": "FLIP"
+  },
+  {
+    "id": 249,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which is the highest civilian award in India?",
+    "options": ["Padma Shri", "Padma Bhushan", "Padma Vibhushan", "Bharat Ratna"],
+    "a": "Bharat Ratna",
+    "mode": "FLIP"
+  },
+  {
+    "id": 250,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which planet is known as Red Planet?",
+    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "a": "Mars",
+    "mode": "FLIP"
+  },
+  {
+    "id": 251,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "How many strings does a guitar have?",
+    "options": ["4", "5", "6", "7"],
+    "a": "6",
+    "mode": "FLIP"
+  },
+  {
+    "id": 252,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which is the national game of India?",
+    "options": ["Cricket", "Hockey", "Kabaddi", "Football"],
+    "a": "Hockey",
+    "mode": "FLIP"
+  },
+  {
+    "id": 253,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "First man to walk on Moon?",
+    "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Rakesh Sharma"],
+    "a": "Neil Armstrong",
+    "mode": "FLIP"
+  },
+  {
+    "id": 254,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which organ purifies blood in human body?",
+    "options": ["Heart", "Lungs", "Kidney", "Liver"],
     "a": "Kidney",
     "mode": "FLIP"
   },
   {
-    "id": 270,
-    "category": "Class 11",
+    "id": 255,
+    "category": "EXTRAS",
     "type": "MCQ",
-    "q": "BiPC: What chemical compound acts as the primary oxygen carrier in human blood?",
-    "options": ["Hemocyanin", "Hemoglobin", "Myoglobin", "Albumin"],
-    "a": "Hemoglobin",
+    "q": "Olympics are held every how many years?",
+    "options": ["2", "3", "4", "5"],
+    "a": "4",
+    "mode": "FLIP"
+  },
+  {
+    "id": 256,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which is the largest democracy in the world?",
+    "options": ["USA", "India", "UK", "Canada"],
+    "a": "India",
+    "mode": "FLIP"
+  },
+  {
+    "id": 257,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Who painted Mona Lisa?",
+    "options": ["Picasso", "Van Gogh", "Leonardo da Vinci", "Michelangelo"],
+    "a": "Leonardo da Vinci",
+    "mode": "FLIP"
+  },
+  {
+    "id": 258,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which is the longest wall in the world?",
+    "options": ["Berlin Wall", "Great Wall of China", "Hadrian's Wall", "Western Wall"],
+    "a": "Great Wall of China",
+    "mode": "FLIP"
+  },
+  {
+    "id": 259,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "WWW stands for?",
+    "options": ["World Wide Web", "World Wide Weather", "Web World Wide", "World Web Wide"],
+    "a": "World Wide Web",
+    "mode": "FLIP"
+  },
+  {
+    "id": 260,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which vitamin is produced in skin by sunlight?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "a": "Vitamin D",
+    "mode": "FLIP"
+    },
+      {
+    "id": 261,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which is the largest internal organ in human body?",
+    "options": ["Brain", "Lungs", "Liver", "Heart"],
+    "a": "Liver",
+    "mode": "FLIP"
+  },
+  {
+    "id": 262,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Who is known as Father of Computer Science?",
+    "options": ["Charles Babbage", "Alan Turing", "John von Neumann", "Tim Berners-Lee"],
+    "a": "Alan Turing",
+    "mode": "FLIP"
+  },
+  {
+    "id": 263,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which country gifted Statue of Liberty to USA?",
+    "options": ["UK", "France", "Spain", "Germany"],
+    "a": "France",
+    "mode": "FLIP"
+  },
+  {
+    "id": 264,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "How many sides does a hexagon have?",
+    "options": ["5", "6", "7", "8"],
+    "a": "6",
+    "mode": "FLIP"
+  },
+  {
+    "id": 265,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which is the coldest place on Earth?",
+    "options": ["Siberia", "Antarctica", "Alaska", "Greenland"],
+    "a": "Antarctica",
+    "mode": "FLIP"
+  },
+  {
+    "id": 266,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "First Indian to win Nobel Prize?",
+    "options": ["CV Raman", "Rabindranath Tagore", "Mother Teresa", "Amartya Sen"],
+    "a": "Rabindranath Tagore",
+    "mode": "FLIP"
+  },
+  {
+    "id": 267,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which gas is most abundant in Earth's atmosphere?",
+    "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"],
+    "a": "Nitrogen",
+    "mode": "FLIP"
+  },
+  {
+    "id": 268,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which chess piece moves in L shape?",
+    "options": ["Bishop", "Knight", "Rook", "Queen"],
+    "a": "Knight",
+    "mode": "FLIP"
+  },
+  {
+    "id": 269,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "Which Indian city is called Silicon Valley of India?",
+    "options": ["Hyderabad", "Pune", "Bangalore", "Chennai"],
+    "a": "Bangalore",
+    "mode": "FLIP"
+  },
+  {
+    "id": 270,
+    "category": "EXTRAS",
+    "type": "MCQ",
+    "q": "How many teeth does an adult human have?",
+    "options": ["28", "30", "32", "34"],
+    "a": "32",
     "mode": "FLIP"
   },
   {
     "id": 271,
-    "category": "Class 11",
+    "category": "EXTRAS",
     "type": "MCQ",
-    "q": "BiPC: Which vitamin deficiency leads to impaired night vision?",
-    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-    "a": "Vitamin A",
+    "q": "Which is the deepest point in oceans?",
+    "options": ["Puerto Rico Trench", "Java Trench", "Mariana Trench", "Peru-Chile Trench"],
+    "a": "Mariana Trench",
     "mode": "FLIP"
   },
   {
     "id": 272,
-    "category": "Class 11",
+    "category": "EXTRAS",
     "type": "MCQ",
-    "q": "BiPC: What structural bone framework protects the human brain?",
-    "options": ["Ribcage", "Sternum", "Cranium", "Pelvis"],
-    "a": "Cranium",
+    "q": "Who wrote 'Wings of Fire'?",
+    "options": ["APJ Abdul Kalam", "Jawaharlal Nehru", "Mahatma Gandhi", "Narendra Modi"],
+    "a": "APJ Abdul Kalam",
     "mode": "FLIP"
   },
   {
     "id": 273,
-    "category": "Class 11",
+    "category": "EXTRAS",
     "type": "MCQ",
-    "q": "BiPC: What type of animal nutrition involves enguing solid organic food items?",
-    "options": ["Saprozoic", "Holozoic", "Parasitic", "Symbiotic"],
-    "a": "Holozoic",
+    "q": "Which is the national tree of India?",
+    "options": ["Neem", "Banyan", "Peepal", "Mango"],
+    "a": "Banyan",
     "mode": "FLIP"
   },
   {
     "id": 274,
-    "category": "Class 12",
+    "category": "EXTRAS",
     "type": "MCQ",
-    "q": "BiPC: Who formulated the fundamental laws of genetic inheritance?",
-    "options": ["Charles Darwin", "Gregor Mendel", "Jean Lamarck", "Watson and Crick"],
-    "a": "Gregor Mendel",
+    "q": "ISRO full form?",
+    "options": ["Indian Space Research Organisation", "International Space Research Org", "Indian Scientific Research Org", "Indian Satellite Research Org"],
+    "a": "Indian Space Research Organisation",
     "mode": "FLIP"
   },
   {
     "id": 275,
-    "category": "Class 12",
+    "category": "EXTRAS",
     "type": "MCQ",
-    "q": "BiPC: What structural spiral geometry describes the double helix blueprint of DNA?",
-    "options": ["Single Helix", "Double Helix", "Triple Strand", "Linear"],
-    "a": "Double Helix",
+    "q": "Which instrument is used to see stars?",
+    "options": ["Microscope", "Telescope", "Periscope", "Stethoscope"],
+    "a": "Telescope",
     "mode": "FLIP"
   },
   {
     "id": 276,
-    "category": "Class 12",
+    "category": "EXTRAS",
     "type": "MCQ",
-    "q": "BiPC: What hormone drops trigger the condition known as Diabetes Mellitus?",
-    "options": ["Glucagon", "Insulin", "Thyroxin", "Adrenaline"],
-    "a": "Insulin",
-    "mode": "FLIP"
-  },
-  {
-    "id": 277,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: What protective viral envelope shell encapsulates genetic RNA or DNA strands?",
-    "options": ["Capsid", "Cell Wall", "Plasma Membrane", "Endospore"],
-    "a": "Capsid",
-    "mode": "FLIP"
-  },
-  {
-    "id": 278,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: What structure develops into a botanical seed after successful plant fertilization?",
-    "options": ["Ovary", "Ovule", "Stigma", "Anther"],
-    "a": "Ovule",
-    "mode": "FLIP"
-  },
-  {
-    "id": 279,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: What unique target cells are specifically destroyed by the HIV virus?",
-    "options": ["Red Blood Cells", "B-cells", "Helper T-cells", "Blood Platelets"],
-    "a": "Helper T-cells",
-    "mode": "FLIP"
-  },
-  {
-    "id": 280,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: What graphical diagram charts ecological hierarchies from producers to apex predators?",
-    "options": ["Food Web", "Ecological Pyramid", "Phylogenetic Tree", "Cladogram"],
-    "a": "Ecological Pyramid",
-    "mode": "FLIP"
-  },
-  {
-    "id": 281,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: What is the primary gaseous plant hormone responsible for fruit ripening?",
-    "options": ["Auxin", "Gibberellin", "Ethylene", "Abscisic Acid"],
-    "a": "Ethylene",
-    "mode": "FLIP"
-  },
-  {
-    "id": 282,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: Which human organ secretes bile juice to emulsify dietary fats?",
-    "options": ["Pancreas", "Stomach", "Liver", "Gallbladder"],
-    "a": "Liver",
-    "mode": "FLIP"
-  },
-  {
-    "id": 283,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: What structural functional units filter systemic fluids within human kidneys?",
-    "options": ["Neurons", "Nephrons", "Alveoli", "Villi"],
-    "a": "Nephrons",
-    "mode": "FLIP"
-  },
-  {
-    "id": 284,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: What baseline stage describes a stable biological community capping ecological succession?",
-    "options": ["Seral Stage", "Pioneer Community", "Climax Community", "Ecotone"],
-    "a": "Climax Community",
-    "mode": "FLIP"
-  },
-  {
-    "id": 285,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: What cell division mechanism preserves standard chromosome numbers across daughters?",
-    "options": ["Mitosis", "Meiosis", "Amitosis", "Binary Fission"],
-    "a": "Mitosis",
-    "mode": "FLIP"
-  },
-  {
-    "id": 286,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: What process involves transcribing encoded DNA sequences into functional mRNA patterns?",
-    "options": ["Translation", "Transcription", "Replication", "Mutation"],
-    "a": "Transcription",
-    "mode": "FLIP"
-  },
-  {
-    "id": 287,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: Which interactive symbiosis benefits one species while leaving the other completely unaffected?",
-    "options": ["Mutualism", "Parasitism", "Commensalism", "Amensalism"],
-    "a": "Commensalism",
-    "mode": "FLIP"
-  },
-  {
-    "id": 288,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: What specific base component pairs exclusively with Adenine inside RNA structures?",
-    "options": ["Thymine", "Uracil", "Cytosine", "Guanine"],
-    "a": "Uracil",
-    "mode": "FLIP"
-  },
-  {
-    "id": 289,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: What standard antibody class dominates early human immune responses?",
-    "options": ["IgG", "IgA", "IgM", "IgE"],
-    "a": "IgM",
-    "mode": "FLIP"
-  },
-  {
-    "id": 290,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "BiPC: What standard vector transmits structural DNA loops inside genetic engineering projects?",
-    "options": ["Plasmid", "Ribosome", "Chromosome", "Histone"],
-    "a": "Plasmid",
-    "mode": "FLIP"
-  },
-  {
-    "id": 291,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "CEC: What economic baseline tracking defines the core science of managing scarce resources?",
-    "options": ["Accounting", "Economics", "Commerce", "Management"],
-    "a": "Economics",
-    "mode": "FLIP"
-  },
-  {
-    "id": 292,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "CEC: What primary book captures everyday financial exchanges in chronological sequence?",
-    "options": ["Ledger", "Journal", "Balance Sheet", "Trial Balance"],
-    "a": "Journal",
-    "mode": "FLIP"
-  },
-  {
-    "id": 293,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "CEC: Who is universally acclaimed as the historic Father of Economics?",
-    "options": ["John Maynard Keynes", "Adam Smith", "Ared Marshall", "Karl Marx"],
-    "a": "Adam Smith",
-    "mode": "FLIP"
-  },
-  {
-    "id": 294,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "CEC: What core asset class can be quickly liquidated into standard cash parameters?",
-    "options": ["Fixed Assets", "Liquid Assets", "Intangible Assets", "Fictitious Assets"],
-    "a": "Liquid Assets",
-    "mode": "FLIP"
-  },
-  {
-    "id": 295,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "CEC: What microeconomic principle shows consumer demand falling as product prices rise?",
-    "options": ["Law of Supply", "Law of Demand", "Law of Diminishing Utility", "Law of Substitution"],
-    "a": "Law of Demand",
-    "mode": "FLIP"
-  },
-  {
-    "id": 296,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "CEC: What primary side of a standard ledger account logs incoming asset value gains?",
-    "options": ["Debit Side", "Credit Side", "Asset Side", "Liability Side"],
-    "a": "Debit Side",
-    "mode": "FLIP"
-  },
-  {
-    "id": 297,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "CEC: What corporate structure runs operations owned jointly by multiple shared partners?",
-    "options": ["Sole Proprietorship", "Partnership", "Joint Stock Company", "Cooperative"],
-    "a": "Partnership",
-    "mode": "FLIP"
-  },
-  {
-    "id": 298,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "CEC: What accounting rule demands capturing operations from a separate company lens rather than the owner's?",
-    "options": ["Going Concern Concept", "Business Entity Concept", "Money Measurement Concept", "Dual Aspect Concept"],
-    "a": "Business Entity Concept",
-    "mode": "FLIP"
-  },
-  {
-    "id": 299,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What final ledger sheet tracks structural balances across enterprise asset and debt blocks?",
-    "options": ["Trading Account", "Profit & Loss Account", "Balance Sheet", "Cash Flow Statement"],
-    "a": "Balance Sheet",
-    "mode": "FLIP"
-  },
-  {
-    "id": 300,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What market structure features a single enterprise controlling an entire product supply loop?",
-    "options": ["Perfect Competition", "Monopoly", "Oligopoly", "Monopolistic Competition"],
-    "a": "Monopoly",
-    "mode": "FLIP"
-  },
-  {
-    "id": 301,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: Which institutional bank controls currency design and systemic cash reserves in India?",
-    "options": ["State Bank of India", "Reserve Bank of India", "HDFC Bank", "Punjab National Bank"],
-    "a": "Reserve Bank of India",
-    "mode": "FLIP"
-  },
-  {
-    "id": 302,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What specific financial entry tracks gradual value degradation across operating fixed assets?",
-    "options": ["Appreciation", "Depreciation", "Amortization", "Bad Debts"],
-    "a": "Depreciation",
-    "mode": "FLIP"
-  },
-  {
-    "id": 303,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What macroeconomic category calculates total internal output valuations produced inside a country's boundaries?",
-    "options": ["Gross Domestic Product", "Gross National Product", "Net National Product", "Per Capita Income"],
-    "a": "Gross Domestic Product",
-    "mode": "FLIP"
-  },
-  {
-    "id": 304,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What internal management function steers teams toward strategic institutional milestones?",
-    "options": ["Planning", "Organizing", "Staffing", "Directing"],
-    "a": "Directing",
-    "mode": "FLIP"
-  },
-  {
-    "id": 305,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What structural accounting system double checks mathematical accuracy across all ledger balances?",
-    "options": ["Balance Sheet", "Trial Balance", "Bank Reconciliation Statement", "Ledger Summary"],
-    "a": "Trial Balance",
-    "mode": "FLIP"
-  },
-  {
-    "id": 306,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What premium is paid to safeguard corporate assets from sudden accidental loss parameters?",
-    "options": ["Interest", "Dividend", "Insurance Premium", "Tax"],
-    "a": "Insurance Premium",
-    "mode": "FLIP"
-  },
-  {
-    "id": 307,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What economic environment features persistent upward trends in universal market price sheets?",
-    "options": ["Deflation", "Stagflation", "Inflation", "Depression"],
-    "a": "Inflation",
-    "mode": "FLIP"
-  },
-  {
-    "id": 308,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What financial metric reveals the absolute relationship between operating net profit and sales?",
-    "options": ["Current Ratio", "Gross Profit Ratio", "Net Profit Ratio", "Debt Equity Ratio"],
-    "a": "Net Profit Ratio",
-    "mode": "FLIP"
-  },
-  {
-    "id": 309,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: Which regulatory authority supervises Indian stock exchanges and capital markets?",
-    "options": ["RBI", "SEBI", "IRDAI", "CCI"],
-    "a": "SEBI",
-    "mode": "FLIP"
-  },
-  {
-    "id": 310,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What primary channel coordinates physical stock shipments directly from production hubs to end markets?",
-    "options": ["Wholesaler", "Retailer", "Broker", "Distributor"],
-    "a": "Distributor",
-    "mode": "FLIP"
-  },
-  {
-    "id": 311,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What document invites the general public to subscribe to a company's shares?",
-    "options": ["Prospectus", "Articles of Association", "Memorandum of Association", "Share Certificate"],
-    "a": "Prospectus",
-    "mode": "FLIP"
-  },
-  {
-    "id": 312,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What type of partner does not actively manage operations but shares in corporate profits?",
-    "options": ["Active Partner", "Sleeping Partner", "Nominal Partner", "Partner by Estoppel"],
-    "a": "Sleeping Partner",
-    "mode": "FLIP"
-  },
-  {
-    "id": 313,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What accounting error occurs when an entry is made on the correct side but in the wrong account?",
-    "options": ["Error of Omission", "Error of Commission", "Error of Principle", "Compensating Error"],
-    "a": "Error of Commission",
-    "mode": "FLIP"
-  },
-  {
-    "id": 314,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What type of cost does not vary with a change in the level of production output?",
-    "options": ["Variable Cost", "Fixed Cost", "Marginal Cost", "Opportunity Cost"],
-    "a": "Fixed Cost",
-    "mode": "FLIP"
-  },
-  {
-    "id": 315,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "CEC: What budget strategy charts equal projections across estimated state revenue and operational spend cycles?",
-    "options": ["Surplus Budget", "Deficit Budget", "Balanced Budget", "Capital Budget"],
-    "a": "Balanced Budget",
-    "mode": "FLIP"
-  },
-  {
-    "id": 316,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "HEC: What specific academic line focuses on systematic reviews covering past human events?",
-    "options": ["Sociology", "History", "Civics", "Geography"],
-    "a": "History",
-    "mode": "FLIP"
-  },
-  {
-    "id": 317,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "HEC: What administrative structure governs local civic programs across towns and major cities?",
-    "options": ["Panchayat Samiti", "Municipal Corporation", "Zilla Parishad", "Gram Sabha"],
-    "a": "Municipal Corporation",
-    "mode": "FLIP"
-  },
-  {
-    "id": 318,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "HEC: Which historic internal ruler set up centralized tax structures across the Delhi Sultanate?",
-    "options": ["Alauddin Khalji", "Iltutmish", "Balban", "Firoz Shah Tughlaq"],
-    "a": "Alauddin Khalji",
-    "mode": "FLIP"
-  },
-  {
-    "id": 319,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "HEC: What standard map projections chart equal elevation layers over rugged mountain landscapes?",
-    "options": ["Isobars", "Contours", "Isotherms", "Isomeasured lines"],
-    "a": "Contours",
-    "mode": "FLIP"
-  },
-  {
-    "id": 320,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "HEC: Which core collection of historic scriptures contains the early foundations of Indian philosophy?",
-    "options": ["The Puranas", "The Vedas", "The Epics", "The Jatakas"],
-    "a": "The Vedas",
-    "mode": "FLIP"
-  },
-  {
-    "id": 321,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "HEC: What architectural rock pillars display Mauryan administrative codes across ancient India?",
-    "options": ["Gupta pillars", "Ashokan Pillars", "Chalukya edicts", "Satavahana structures"],
-    "a": "Ashokan Pillars",
-    "mode": "FLIP"
-  },
-  {
-    "id": 322,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "HEC: What dynamic geographic shift details massive population moves from farming grids to metro centers?",
-    "options": ["Emigration", "Urbanization", "Industrialization", "Localization"],
-    "a": "Urbanization",
-    "mode": "FLIP"
-  },
-  {
-    "id": 323,
-    "category": "Class 11",
-    "type": "MCQ",
-    "q": "HEC: Which baseline organ holds the structural administrative core of a modern democratic state?",
-    "options": ["The Judiciary", "The Legislature", "The Executive", "All of the above"],
-    "a": "All of the above",
-    "mode": "FLIP"
-  },
-  {
-    "id": 324,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: In what year did Indian citizens officially adopt the sovereign Constitution of India?",
-    "options": ["1947", "1950", "1949", "1952"],
-    "a": "1950",
-    "mode": "FLIP"
-  },
-  {
-    "id": 325,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: What administrative body runs supreme judicial reviews under the Indian constitutional system?",
-    "options": ["High Court", "Supreme Court", "District Court", "Lok Adalat"],
-    "a": "Supreme Court",
-    "mode": "FLIP"
-  },
-  {
-    "id": 326,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: Which historic Indian leader organized internal integration programs across princely states?",
-    "options": ["Jawaharlal Nehru", "Sardar Vallabhbhai Patel", "Mahatma Gandhi", "Dr. B.R. Ambedkar"],
-    "a": "Sardar Vallabhbhai Patel",
-    "mode": "FLIP"
-  },
-  {
-    "id": 327,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: Which Indian state first executed a localized execution of the Panchayati Raj system?",
-    "options": ["Andhra Pradesh", "Rajasthan", "Madhya Pradesh", "Gujarat"],
+    "q": "Largest state in India by area?",
+    "options": ["Madhya Pradesh", "Uttar Pradesh", "Rajasthan", "Maharashtra"],
     "a": "Rajasthan",
     "mode": "FLIP"
   },
   {
-    "id": 328,
-    "category": "Class 12",
+    "id": 277,
+    "category": "EXTRAS",
     "type": "MCQ",
-    "q": "HEC: What structural index maps total child births counted across 1,000 citizens annually?",
-    "options": ["Fertility rate", "Crude Birth Rate", "Growth index", "Mortality index"],
-    "a": "Crude Birth Rate",
+    "q": "Which blood vessels carry blood away from heart?",
+    "options": ["Veins", "Arteries", "Capillaries", "All"],
+    "a": "Arteries",
     "mode": "FLIP"
   },
   {
-    "id": 329,
-    "category": "Class 12",
+    "id": 278,
+    "category": "EXTRAS",
     "type": "MCQ",
-    "q": "HEC: Which major internal battle sealed British administrative rule over Bengal in 1764?",
-    "options": ["Battle of Plassey", "Battle of Buxar", "Third Battle of Panipat", "Anglo-Mysore Battle"],
-    "a": "Battle of Buxar",
+    "q": "Who invented the telephone?",
+    "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Marconi"],
+    "a": "Alexander Graham Bell",
     "mode": "FLIP"
   },
   {
-    "id": 330,
-    "category": "Class 12",
+    "id": 279,
+    "category": "EXTRAS",
     "type": "MCQ",
-    "q": "HEC: What specific geographic line tracks zero-degree position values across global map coordinates?",
-    "options": ["Equator", "Prime Meridian", "Tropic of Cancer", "International Date Line"],
-    "a": "Equator",
+    "q": "Which is the driest place on Earth?",
+    "options": ["Sahara Desert", "Atacama Desert", "Thar Desert", "Gobi Desert"],
+    "a": "Atacama Desert",
     "mode": "FLIP"
   },
   {
-    "id": 331,
-    "category": "Class 12",
+    "id": 280,
+    "category": "EXTRAS",
     "type": "MCQ",
-    "q": "HEC: What standard constitutional article guarantees equal treatment under law to all Indian citizens?",
-    "options": ["Article 14", "Article 19", "Article 21", "Article 32"],
-    "a": "Article 14",
-    "mode": "FLIP"
-  },
-  {
-    "id": 332,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: Who founded the highly centralizing Maurya Dynasty in ancient India?",
-    "options": ["Ashoka", "Chandragupta Maurya", "Bindusara", "Samudragupta"],
-    "a": "Chandragupta Maurya",
-    "mode": "FLIP"
-  },
-  {
-    "id": 333,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: What physical phenomenon describes long-term changes in planetary weather parameters over decades?",
-    "options": ["Global warming", "Climate Change", "Greenhouse effect", "El Nino"],
-    "a": "Climate Change",
-    "mode": "FLIP"
-  },
-  {
-    "id": 334,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: Which social system details layered divisions of human populations into ancestral classes?",
-    "options": ["Class system", "Caste system", "Tribal system", "Guild system"],
-    "a": "Caste system",
-    "mode": "FLIP"
-  },
-  {
-    "id": 335,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: What standard fundamental right inside the Indian Constitution protects free speech and assembly?",
-    "options": ["Right to Equality", "Right to Freedom", "Right against Exploitation", "Right to Privacy"],
-    "a": "Right to Freedom",
-    "mode": "FLIP"
-  },
-  {
-    "id": 336,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: What ancient university stood as a legendary global center for higher learning in Bihar?",
-    "options": ["Taxila", "Nalanda", "Vikramashila", "Valabhi"],
-    "a": "Nalanda",
-    "mode": "FLIP"
-  },
-  {
-    "id": 337,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: What natural resource layer provides fertile ground matrices supporting global farming systems?",
-    "options": ["Bedrock", "Subsoil", "Topsoil", "Regolith"],
-    "a": "Topsoil",
-    "mode": "FLIP"
-  },
-  {
-    "id": 338,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: Which historic system tracking details the foundational source codes of town planning in India?",
-    "options": ["Vedic Period", "Indus Valley Civilization", "Gupta Empire", "Mughal Period"],
-    "a": "Indus Valley Civilization",
-    "mode": "FLIP"
-  },
-  {
-    "id": 339,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: What form of governance structures authority across traditional absolute bloodline dynamics?",
-    "options": ["Democracy", "Monarchy", "Oligarchy", "Anarchy"],
-    "a": "Monarchy",
-    "mode": "FLIP"
-  },
-  {
-    "id": 340,
-    "category": "Class 12",
-    "type": "MCQ",
-    "q": "HEC: What tracking branch assesses global changes across shifting earth surface structures?",
-    "options": ["Geology", "Geomorphology", "Meteorology", "Cartography"],
-    "a": "Geomorphology",
-    "mode": "FLIP"
-  },
-  {
-    "id": 341,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Sc: Which chemical element is the primary component of organic molecules?",
-    "options": ["Hydrogen", "Oxygen", "Carbon", "Nitrogen"],
-    "a": "Carbon",
-    "mode": "FLIP"
-  },
-  {
-    "id": 342,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Sc: What is the pH value of pure, neutral water at room temperature?",
-    "options": ["0", "5", "7", "14"],
-    "a": "7",
-    "mode": "FLIP"
-  },
-  {
-    "id": 343,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Sc: What acceleration does an object experience in free fall near Earth's surface?",
-    "options": ["5.5 m/s^2", "9.8 m/s^2", "12.1 m/s^2", "0 m/s^2"],
-    "a": "9.8 m/s^2",
-    "mode": "FLIP"
-  },
-  {
-    "id": 344,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Sc: What are the base building blocks that link together to build functional proteins?",
-    "options": ["Fatty Acids", "Amino Acids", "Monosaccharides", "Nucleotides"],
-    "a": "Amino Acids",
-    "mode": "FLIP"
-  },
-  {
-    "id": 345,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Sc: What specific biological process allows plants to synthesize nutrients using sunlight?",
-    "options": ["Respiration", "Photosynthesis", "Transpiration", "Fermentation"],
-    "a": "Photosynthesis",
-    "mode": "FLIP"
-  },
-  {
-    "id": 346,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Com: What basic accounting equation balances enterprise assets with owner funding streams?",
-    "options": ["Assets = Liabilities - Equity", "Assets = Liabilities + Equity", "Liabilities = Assets + Equity", "Equity = Assets + Liabilities"],
-    "a": "Assets = Liabilities + Equity",
-    "mode": "FLIP"
-  },
-  {
-    "id": 347,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Com: What operational ledger documents daily raw economic updates before secondary posting?",
-    "options": ["Ledger Book", "Journal", "Trial Balance", "Profit Sheet"],
-    "a": "Journal",
-    "mode": "FLIP"
-  },
-  {
-    "id": 348,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Com: What financial ledger documents the net tracking relationship between sales margins and basic operations?",
-    "options": ["Trading Account", "Profit & Loss Account", "Balance Sheet", "Cash Flow Index"],
-    "a": "Profit & Loss Account",
-    "mode": "FLIP"
-  },
-  {
-    "id": 349,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Com: What economic situation reflects consistent premium pricing hikes tracking across core markets?",
-    "options": ["Deflation", "Stagflation", "Inflation", "Depression"],
-    "a": "Inflation",
-    "mode": "FLIP"
-  },
-  {
-    "id": 350,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Com: Which institutional bank coordinates fiscal frameworks and monetary reserves across India?",
-    "options": ["State Bank of India", "Reserve Bank of India", "ICICI Bank", "Punjab National Bank"],
-    "a": "Reserve Bank of India",
-    "mode": "FLIP"
-  },
-  {
-    "id": 351,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.A: Which core academic domain evaluates classic systemic chronicles covering human past timelines?",
-    "options": ["Sociology", "History", "Civics", "Anthropology"],
-    "a": "History",
-    "mode": "FLIP"
-  },
-  {
-    "id": 352,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.A: What dynamic governance framework yields absolute state choice power to the general voting populace?",
-    "options": ["Monarchy", "Oligarchy", "Democracy", "Autocracy"],
-    "a": "Democracy",
-    "mode": "FLIP"
-  },
-  {
-    "id": 353,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.A: What baseline constitutional guide details core human protections across the Indian framework?",
-    "options": ["Directive Principles", "Fundamental Rights", "Preamble", "Fundamental Duties"],
-    "a": "Fundamental Rights",
-    "mode": "FLIP"
-  },
-  {
-    "id": 354,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.A: Which legendary Greek thinker remains recognized as the historic grandfather of Political Science?",
-    "options": ["Plato", "Aristotle", "Socrates", "Herodotus"],
-    "a": "Aristotle",
-    "mode": "FLIP"
-  },
-  {
-    "id": 355,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.A: What geographical structural study targets localized physical earth changes over shifting epochs?",
-    "options": ["Meteorology", "Geomorphology", "Cartography", "Demography"],
-    "a": "Geomorphology",
-    "mode": "FLIP"
-  },
-  {
-    "id": 356,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BBA: Which foundational management step builds initial tactical frameworks prior to deployment?",
-    "options": ["Organizing", "Staffing", "Planning", "Controlling"],
-    "a": "Planning",
-    "mode": "FLIP"
-  },
-  {
-    "id": 357,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BBA: What marketing dimension focuses directly on distributing products from hubs to market shelves?",
-    "options": ["Price", "Product", "Place", "Promotion"],
-    "a": "Place",
-    "mode": "FLIP"
-  },
-  {
-    "id": 358,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BBA: What organizational branch addresses internal recruitment and human resource pipelines?",
-    "options": ["PR Department", "HR Department", "R&D Wing", "Logistics Division"],
-    "a": "HR Department",
-    "mode": "FLIP"
-  },
-  {
-    "id": 359,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BBA: What organizational tool matches business Strengths and Weaknesses with external market pathways?",
-    "options": ["BCG Matrix", "SWOT Analysis", "PESTLE Review", "Value Chain"],
-    "a": "SWOT Analysis",
-    "mode": "FLIP"
-  },
-  {
-    "id": 360,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BBA: What structural concept measures the price responsiveness of consumer purchases against baseline shifts?",
-    "options": ["Elasticity of Demand", "Law of Supply", "Equilibrium Pricing", "Marginal Utility"],
-    "a": "Elasticity of Demand",
-    "mode": "FLIP"
-  },
-  {
-    "id": 361,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BCA: What primary logical unit acts as the core mathematical computational block inside CPUs?",
-    "options": ["Control Unit", "ALU", "RAM Module", "BIOS Chip"],
-    "a": "ALU",
-    "mode": "FLIP"
-  },
-  {
-    "id": 362,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BCA: What volatile hardware module provides high-speed, temporary workspace during operational execution?",
-    "options": ["Hard Drive", "ROM", "RAM", "Solid State Disk"],
-    "a": "RAM",
-    "mode": "FLIP"
-  },
-  {
-    "id": 363,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BCA: What operational software serves as the base logical bridge linking human inputs to bare computer systems?",
-    "options": ["Web Browser", "Operating System", "Database Server", "Compiler Engine"],
-    "a": "Operating System",
-    "mode": "FLIP"
-  },
-  {
-    "id": 364,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BCA: Which structural language tool leverages standardized OOP paradigms across modular class layouts?",
-    "options": ["C Language", "Assembly", "Java", "Basic HTML"],
-    "a": "Java",
-    "mode": "FLIP"
-  },
-  {
-    "id": 365,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BCA: What specialized protocol uses structural tables to format and query relational database configurations?",
-    "options": ["HTTP", "SQL", "FTP", "SMTP"],
-    "a": "SQL",
-    "mode": "FLIP"
-  },
-  {
-    "id": 366,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Mechanical: What operational thermodynamic cycle guides standard automotive internal combustion engines?",
-    "options": ["Carnot Cycle", "Otto Cycle", "Rankine Cycle", "Diesel Cycle"],
-    "a": "Otto Cycle",
-    "mode": "FLIP"
-  },
-  {
-    "id": 367,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Mechanical: What structural material metric tracks a component's capacity to counter permanent deformation shapes?",
-    "options": ["Ductility", "Hardness", "Malleability", "Elasticity"],
-    "a": "Hardness",
-    "mode": "FLIP"
-  },
-  {
-    "id": 368,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Mechanical: What physical value scales the dynamic fluid friction opposing standard pipe flow lines?",
-    "options": ["Viscosity", "Surface Tension", "Density", "Buoyancy"],
-    "a": "Viscosity",
-    "mode": "FLIP"
-  },
-  {
-    "id": 369,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Mechanical: Which specific structural stress exerts perpendicular pulling tension across a load face?",
-    "options": ["Shear Stress", "Tensile Stress", "Compressive Stress", "Torsional Stress"],
-    "a": "Tensile Stress",
-    "mode": "FLIP"
-  },
-  {
-    "id": 370,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Mechanical: What governor component leverages centrifugal rotation forces to scale down fuel input volumes?",
-    "options": ["Flywheel", "Centrifugal Governor", "Camshaft", "Piston Ring"],
-    "a": "Centrifugal Governor",
-    "mode": "FLIP"
-  },
-  {
-    "id": 371,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Electrical: What fundamental law asserts that voltage changes directly scale electric currents across target resistors?",
-    "options": ["Kirchhoff's Law", "Ohm's Law", "Faraday's Law", "Lenz's Law"],
-    "a": "Ohm's Law",
-    "mode": "FLIP"
-  },
-  {
-    "id": 372,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Electrical: What basic unit tracks the absolute measure of magnetic flux values passing a target surface?",
-    "options": ["Tesla", "Weber", "Henry", "Farad"],
-    "a": "Weber",
-    "mode": "FLIP"
-  },
-  {
-    "id": 373,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Electrical: What induction device converts voltage parameters up or down without altering baseline frequency scales?",
-    "options": ["Alternator", "Transformer", "DC Motor", "Rectifier Unit"],
-    "a": "Transformer",
-    "mode": "FLIP"
-  },
-  {
-    "id": 374,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Electrical: Which structural component converts alternating current lines into smooth direct current paths?",
-    "options": ["Inverter", "Rectifier", "Amplifier", "Oscillator"],
-    "a": "Rectifier",
-    "mode": "FLIP"
-  },
-  {
-    "id": 375,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Electrical: What specific passive circuit loop component opposes abrupt current changes through induction profiles?",
-    "options": ["Resistor", "Capacitor", "Inductor", "Zener Diode"],
-    "a": "Inductor",
-    "mode": "FLIP"
-  },
-  {
-    "id": 376,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Civil: What fundamental structural testing system measures subsoil weight capacity prior to setting foundation lines?",
-    "options": ["Slump Test", "Plate Load Test", "Proctor Test", "Core Test"],
-    "a": "Plate Load Test",
-    "mode": "FLIP"
-  },
-  {
-    "id": 377,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Civil: What physical concrete property evaluation tracks fresh mixture fluidity states using a standard cone mold?",
-    "options": ["Tensile Check", "Slump Test", "Compaction Factor", "Vee-Bee Test"],
-    "a": "Slump Test",
-    "mode": "FLIP"
-  },
-  {
-    "id": 378,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Civil: What specific surveying technique maps elevation layout changes relative to a stable base point?",
-    "options": ["Levelling", "Triangulation", "Traversing", "Contouring"],
-    "a": "Levelling",
-    "mode": "FLIP"
-  },
-  {
-    "id": 379,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Civil: Which architectural foundation structure uses deep columns to anchor loads directly into stable bedrock layers?",
-    "options": ["Strip Footing", "Raft Foundation", "Pile Foundation", "Strap Footing"],
-    "a": "Pile Foundation",
-    "mode": "FLIP"
-  },
-  {
-    "id": 380,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Civil: What structural structural cross member provides horizontal floor reinforcement across supporting vertical pillars?",
-    "options": ["Column", "Lintel", "Beam", "Truss Assembly"],
-    "a": "Beam",
-    "mode": "FLIP"
-  },
-  {
-    "id": 381,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Chemical: What specific dimension tracks flow profile shifts across a fluid using a standard dimensionless scaling ratio?",
-    "options": ["Nusselt Number", "Reynolds Number", "Prandtl Number", "Prandtl Ratio"],
-    "a": "Reynolds Number",
-    "mode": "FLIP"
-  },
-  {
-    "id": 382,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Chemical: What thermal separation unit separates crude feed components based on individual boiling point ranges?",
-    "options": ["Absorption Column", "Fractional Distillation", "Liquid Extraction", "Crystallizer"],
-    "a": "Fractional Distillation",
-    "mode": "FLIP"
-  },
-  {
-    "id": 383,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Chemical: What energetic reaction system absorbs environmental heat to complete internal transformation loops?",
-    "options": ["Exothermic", "Endothermic", "Adiabatic", "Isothermal"],
-    "a": "Endothermic",
-    "mode": "FLIP"
-  },
-  {
-    "id": 384,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Chemical: What active material accelerates chemical transformation lines without altering its own composition?",
-    "options": ["Reactant", "Catalyst", "Solvent", "Inhibitor"],
-    "a": "Catalyst",
-    "mode": "FLIP"
-  },
-  {
-    "id": 385,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Chemical: What thermodynamic system features zero mass transfer or energy interactions across its boundaries?",
-    "options": ["Open System", "Closed System", "Isolated System", "Steady State System"],
-    "a": "Isolated System",
-    "mode": "FLIP"
-  },
-  {
-    "id": 386,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Aerospace: What fundamental aerodynamic force opposes forward flight momentum through air friction profiles?",
-    "options": ["Lift", "Thrust", "Drag", "Weight"],
-    "a": "Drag",
-    "mode": "FLIP"
-  },
-  {
-    "id": 387,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Aerospace: What dimensionless ratio compares an aircraft's airspeed directly to the local speed of sound?",
-    "options": ["Reynolds Number", "Mach Number", "Froude Number", "Weber Index"],
-    "a": "Mach Number",
-    "mode": "FLIP"
-  },
-  {
-    "id": 388,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Aerospace: Which active wing assembly surface guides an aircraft's banking maneuvers along its roll axis?",
-    "options": ["Rudder", "Elevator", "Aileron", "Flap System"],
-    "a": "Aileron",
-    "mode": "FLIP"
-  },
-  {
-    "id": 389,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Aerospace: What physics theorem dictates that velocity surges within a fluid stream cause local pressure drops?",
-    "options": ["Pascal's Law", "Bernoulli's Principle", "Archimedes' Law", "Stokes' Equation"],
-    "a": "Bernoulli's Principle",
-    "mode": "FLIP"
-  },
-  {
-    "id": 390,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Aerospace: What specific structural tail surface manages an aircraft's directional yaw adjustments?",
-    "options": ["Horizontal Stabilizer", "Rudder", "Main Wing Spar", "Winglet Extension"],
-    "a": "Rudder",
-    "mode": "FLIP"
-  },
-  {
-    "id": 391,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Software: What design approach organizes functional code blocks within interactive, data-carrying object structures?",
-    "options": ["Procedural Coding", "Object-Oriented Programming", "Functional Framework", "Linear Scripting"],
-    "a": "Object-Oriented Programming",
-    "mode": "FLIP"
-  },
-  {
-    "id": 392,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Software: What agile framework tracks project execution loops through brief, structured production sprints?",
-    "options": ["Waterfall Model", "Scrum Framework", "V-Model Plan", "Spiral Protocol"],
-    "a": "Scrum Framework",
-    "mode": "FLIP"
-  },
-  {
-    "id": 393,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Software: What structural index gauges the mutual interdependence linking two distinct code modules?",
-    "options": ["Cohesion", "Coupling", "Inheritance", "Polymorphism"],
-    "a": "Coupling",
-    "mode": "FLIP"
-  },
-  {
-    "id": 394,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Software: What basic data tracking network routes elements under a strict Last-In, First-Out sequence?",
-    "options": ["Queue Array", "Stack", "Linked List", "Binary Tree"],
-    "a": "Stack",
-    "mode": "FLIP"
-  },
-  {
-    "id": 395,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Software: What operational process translates target system code strings to uncover logic errors prior to release?",
-    "options": ["Deployment", "Debugging", "Refactoring", "Minification"],
-    "a": "Debugging",
-    "mode": "FLIP"
-  },
-  {
-    "id": 396,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Biomedical: What diagnostic system tracks internal body profiles by reading radiofrequency responses from atomic nuclei?",
-    "options": ["X-Ray Scan", "CT Scanner", "MRI", "Ultrasound System"],
-    "a": "MRI",
-    "mode": "FLIP"
-  },
-  {
-    "id": 397,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Biomedical: What monitoring device uses skin electrodes to track the heart's electrical rhythms?",
-    "options": ["Electroencephalogram", "Electrocardiogram", "Electromyogram", "Pulse Oximeter"],
-    "a": "Electrocardiogram",
-    "mode": "FLIP"
-  },
-  {
-    "id": 398,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Biomedical: What biocompatible material properties minimize negative systemic tissue interactions?",
-    "options": ["Bioavailability", "Biocompatibility", "Biodegradability", "Biofluency"],
-    "a": "Biocompatibility",
-    "mode": "FLIP"
-  },
-  {
-    "id": 399,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Biomedical: What mechanical support framework keeps blocked coronary arteries patent after deployment?",
-    "options": ["Pacemaker", "Stent", "Artificial Valve", "Dialyzer Module"],
-    "a": "Stent",
-    "mode": "FLIP"
-  },
-  {
-    "id": 400,
-    "category": "Engineering",
-    "type": "MCQ",
-    "q": "Biomedical: What biomedical device filters metabolic waste from blood when renal function fails?",
-    "options": ["Ventilator", "Dialyzer", "Infusion Pump", "Defibrillator Unit"],
-    "a": "Dialyzer",
-    "mode": "FLIP"
-  },
-  {
-    "id": 401,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Anatomy: What is the longest and strongest bone in the human body?",
-    "options": ["Humerus", "Femur", "Tibia", "Fibula"],
-    "a": "Femur",
-    "mode": "FLIP"
-  },
-  {
-    "id": 402,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Anatomy: Which cranial nerve is primarily responsible for the sense of vision?",
-    "options": ["CN I", "CN II", "CN III", "CN IV"],
-    "a": "CN II",
-    "mode": "FLIP"
-  },
-  {
-    "id": 403,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Anatomy: What anatomical valve guards the exit path linking the left ventricle to the systemic circulation?",
-    "options": ["Tricuspid Valve", "Mitral Valve", "Aortic Valve", "Pulmonary Valve"],
-    "a": "Aortic Valve",
-    "mode": "FLIP"
-  },
-  {
-    "id": 404,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Anatomy: What muscle serves as the primary driver for human respiratory lung expansion?",
-    "options": ["Intercostal Muscle", "Pectoralis Major", "Diaphragm", "Latissimus Dorsi"],
-    "a": "Diaphragm",
-    "mode": "FLIP"
-  },
-  {
-    "id": 405,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Anatomy: What organ stores and concentrates bile produced by the liver?",
-    "options": ["Pancreas", "Duodenum", "Gallbladder", "Spleen"],
-    "a": "Gallbladder",
-    "mode": "FLIP"
-  },
-  {
-    "id": 406,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Physiology: What is the primary functional unit of the human kidney responsible for urine formation?",
-    "options": ["Neuron", "Nephron", "Alveolus", "Hepatocyte"],
-    "a": "Nephron",
-    "mode": "FLIP"
-  },
-  {
-    "id": 407,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Physiology: Which hormone, produced by pancreatic beta cells, lowers blood glucose levels?",
-    "options": ["Glucagon", "Insulin", "Somatostatin", "Cortisol"],
-    "a": "Insulin",
-    "mode": "FLIP"
-  },
-  {
-    "id": 408,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Physiology: Where is the primary respiratory control center located in the human brain?",
-    "options": ["Cerebellum", "Medulla Oblongata", "Cerebrum", "Thalamus"],
-    "a": "Medulla Oblongata",
-    "mode": "FLIP"
-  },
-  {
-    "id": 409,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Physiology: What protein molecule acts as the primary oxygen carrier within red blood cells?",
-    "options": ["Myoglobin", "Hemoglobin", "Albumin", "Fibrinogen"],
-    "a": "Hemoglobin",
-    "mode": "FLIP"
-  },
-  {
-    "id": 410,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Physiology: What term defines the maintenance of a stable internal environment despite external changes?",
-    "options": ["Metabolism", "Homeostasis", "Osmosis", "Hemostasis"],
-    "a": "Homeostasis",
-    "mode": "FLIP"
-  },
-  {
-    "id": 411,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Biochemistry: Which metabolic pathway breaks down glucose into pyruvate to yield initial ATP?",
-    "options": ["Krebs Cycle", "Glycolysis", "Gluconeogenesis", "Glycogenolysis"],
-    "a": "Glycolysis",
-    "mode": "FLIP"
-  },
-  {
-    "id": 412,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Biochemistry: What structural spiral geometry describes the double helix blueprint of DNA?",
-    "options": ["Single Strand", "Triple Strand", "Double Helix", "Beta Sheet"],
-    "a": "Double Helix",
-    "mode": "FLIP"
-  },
-  {
-    "id": 413,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Biochemistry: Which vitamin serves as an essential cofactor for structural collagen synthesis?",
-    "options": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
-    "a": "Vitamin C",
-    "mode": "FLIP"
-  },
-  {
-    "id": 414,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Biochemistry: Elevated blood levels of which metabolic breakdown product cause gout?",
-    "options": ["Urea", "Creatinine", "Uric Acid", "Lactic Acid"],
-    "a": "Uric Acid",
-    "mode": "FLIP"
-  },
-  {
-    "id": 415,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Biochemistry: Which intracellular organelle houses the enzymes for the citric acid cycle?",
-    "options": ["Ribosome", "Mitochondrion", "Lysosome", "Golgi Apparatus"],
-    "a": "Mitochondrion",
-    "mode": "FLIP"
-  },
-  {
-    "id": 416,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Pathology: What type of cellular adaptation involves an increase in cell size, leading to larger organs?",
-    "options": ["Hyperplasia", "Hypertrophy", "Atrophy", "Metaplasia"],
-    "a": "Hypertrophy",
-    "mode": "FLIP"
-  },
-  {
-    "id": 417,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Pathology: What core hallmark signs define acute localized tissue inflammation?",
-    "options": ["Pain only", "Heat and Swelling", "Redness, Heat, Swelling, Pain, Loss of function", "Necrosis and Fibrosis"],
-    "a": "Redness, Heat, Swelling, Pain, Loss of function",
-    "mode": "FLIP"
-  },
-  {
-    "id": 418,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Pathology: What mechanism describes programmed, energy-dependent cell death?",
-    "options": ["Necrosis", "Apoptosis", "Autolysis", "Infarction"],
-    "a": "Apoptosis",
-    "mode": "FLIP"
-  },
-  {
-    "id": 419,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Pathology: What pattern of tissue necrosis is classically associated with tuberculosis infections?",
-    "options": ["Coagulative Necrosis", "Liquefactive Necrosis", "Caseous Necrosis", "Fat Necrosis"],
-    "a": "Caseous Necrosis",
-    "mode": "FLIP"
-  },
-  {
-    "id": 420,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Pathology: What term describes a wandering intravascular mass that lodges in a vessel and occludes it?",
-    "options": ["Thrombus", "Embolus", "Atheroma", "Aneurysm"],
-    "a": "Embolus",
-    "mode": "FLIP"
-  },
-  {
-    "id": 421,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Microbiology: Which bacterial pathogen is the primary causative agent of tuberculosis?",
-    "options": ["Staphylococcus aureus", "Mycobacterium tuberculosis", "Escherichia coli", "Streptococcus pneumoniae"],
-    "a": "Mycobacterium tuberculosis",
-    "mode": "FLIP"
-  },
-  {
-    "id": 422,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Microbiology: What cell wall component is target-stained to differentiate Gram-positive from Gram-negative bacteria?",
-    "options": ["Chitin", "Peptidoglycan", "Lipopolysaccharide", "Cholesterol"],
-    "a": "Peptidoglycan",
-    "mode": "FLIP"
-  },
-  {
-    "id": 423,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Microbiology: Which virus causes shingles upon reactivation from latency in dorsal root ganglia?",
-    "options": ["Epstein-Barr Virus", "Varicella-Zoster Virus", "Cytomegalovirus", "Herpes Simplex Virus 1"],
-    "a": "Varicella-Zoster Virus",
-    "mode": "FLIP"
-  },
-  {
-    "id": 424,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Microbiology: Which protozoan parasite is responsible for causing malignant tertian malaria?",
-    "options": ["Plasmodium vivax", "Plasmodium falciparum", "Plasmodium malariae", "Plasmodium ovale"],
-    "a": "Plasmodium falciparum",
-    "mode": "FLIP"
-  },
-  {
-    "id": 425,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Microbiology: What structure allows certain bacteria to survive harsh conditions like heat or desiccation?",
-    "options": ["Flagella", "Capsule", "Endospore", "Pili"],
-    "a": "Endospore",
-    "mode": "FLIP"
-  },
-  {
-    "id": 426,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Pharmacology: What term describes the study of what the body does to a drug?",
-    "options": ["Pharmacodynamics", "Pharmacokinetics", "Pharmacogenomics", "Toxicology"],
-    "a": "Pharmacokinetics",
-    "mode": "FLIP"
-  },
-  {
-    "id": 427,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Pharmacology: Which organ serves as the primary site for drug metabolism in the human body?",
-    "options": ["Kidney", "Liver", "Lungs", "Small Intestine"],
-    "a": "Liver",
-    "mode": "FLIP"
-  },
-  {
-    "id": 428,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Pharmacology: What drug class treats bacterial infections by inhibiting cell wall synthesis?",
-    "options": ["Aminoglycosides", "Macrolides", "Beta-lactam Antibiotics", "Fluoroquinolones"],
-    "a": "Beta-lactam Antibiotics",
-    "mode": "FLIP"
-  },
-  {
-    "id": 429,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Pharmacology: What specific drug serves as the first-line emergency treatment for anaphylactic shock?",
-    "options": ["Atropine", "Epinephrine", "Hydrocortisone", "Dopamine"],
-    "a": "Epinephrine",
-    "mode": "FLIP"
-  },
-  {
-    "id": 430,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Pharmacology: What metric tracks the safety margin of a drug by comparing toxic dose to effective dose?",
-    "options": ["Bioavailability", "Therapeutic Index", "Ha-life", "Clearance Rate"],
-    "a": "Therapeutic Index",
-    "mode": "FLIP"
-  },
-  {
-    "id": 431,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Forensic Medicine: What sign of death refers to the post-mortem cooling of the body temperature?",
-    "options": ["Algor Mortis", "Livor Mortis", "Rigor Mortis", "Putrefaction"],
-    "a": "Algor Mortis",
-    "mode": "FLIP"
-  },
-  {
-    "id": 432,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Forensic Medicine: What finding confirm a victim was alive before drowning?",
-    "options": ["Cadaveric Spasm", "Diatoms in bone marrow", "Post-mortem lividity", "Putrefactive gas"],
-    "a": "Diatoms in bone marrow",
-    "mode": "FLIP"
-  },
-  {
-    "id": 433,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Medicine: What hallmark clinical feature is characterized by a classic 'teardrop on rose petal' appearance?",
-    "options": ["Smallpox", "Chickenpox", "Measles", "Rubella"],
-    "a": "Chickenpox",
-    "mode": "FLIP"
-  },
-  {
-    "id": 434,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Medicine: Which biomarker is most sensitive for diagnosing acute myocardial infarction?",
-    "options": ["CK-MB", "Cardiac Troponin", "LDH", "Myoglobin"],
-    "a": "Cardiac Troponin",
-    "mode": "FLIP"
-  },
-  {
-    "id": 435,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Medicine: What primary endocrine disorder is characterized by a chronic deficiency of thyroid hormone?",
-    "options": ["Hyperthyroidism", "Hypothyroidism", "Cushing's Syndrome", "Addison's Disease"],
-    "a": "Hypothyroidism",
-    "mode": "FLIP"
-  },
-  {
-    "id": 436,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Surgery: What localized abdominal point shows maximum tenderness in acute appendicitis?",
-    "options": ["Murphy's Point", "McBurney's Point", "Boas's Point", "Cullen's Point"],
-    "a": "McBurney's Point",
-    "mode": "FLIP"
-  },
-  {
-    "id": 437,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Surgery: What immediate critical maneuver stabilizes a tension pneumothorax in the field?",
-    "options": ["Tracheostomy", "Needle Decompression", "Thoracotomy", "Endotracheal Intubation"],
-    "a": "Needle Decompression",
-    "mode": "FLIP"
-  },
-  {
-    "id": 438,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "Surgery: What type of shock is caused by massive, rapid intravascular blood loss?",
-    "options": ["Cardiogenic Shock", "Septic Shock", "Hypovolemic Shock", "Neurogenic Shock"],
-    "a": "Hypovolemic Shock",
-    "mode": "FLIP"
-  },
-  {
-    "id": 439,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "OBG: What term defines an abnormal pregnancy occurring outside the uterine cavity?",
-    "options": ["Molar Pregnancy", "Ectopic Pregnancy", "Placenta Previa", "Abruptio Placentae"],
-    "a": "Ectopic Pregnancy",
-    "mode": "FLIP"
-  },
-  {
-    "id": 440,
-    "category": "Medical MBBS",
-    "type": "MCQ",
-    "q": "OBG: What score evaluates a newborn's physical condition exactly 1 and 5 minutes after birth?",
-    "options": ["Glasgow Coma Scale", "APGAR Score", "Silverman Score", "Bishop Score"],
-    "a": "APGAR Score",
-    "mode": "FLIP"
-  },
-  {
-    "id": 441,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Sc: What fundamental rule dictates that a chemical system shifts to counteract stress?",
-    "options": ["Henry's Law", "Le Chatelier's Principle", "Raoult's Law", "Dalton's Law"],
-    "a": "Le Chatelier's Principle",
-    "mode": "FLIP"
-  },
-  {
-    "id": 442,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Sc: What form of cell division yields four genetically diverse haploid daughter cells?",
-    "options": ["Mitosis", "Meiosis", "Binary Fission", "Budding"],
-    "a": "Meiosis",
-    "mode": "FLIP"
-  },
-  {
-    "id": 443,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Sc: What physical metric describes the average kinetic energy of molecules within a system?",
-    "options": ["Heat", "Temperature", "Entropy", "Enthalpy"],
-    "a": "Temperature",
-    "mode": "FLIP"
-  },
-  {
-    "id": 444,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Sc: What unique organelle houses hydrolytic enzymes to break down cellular waste materials?",
-    "options": ["Peroxisome", "Lysosome", "Centrosome", "Glyoxysome"],
-    "a": "Lysosome",
-    "mode": "FLIP"
-  },
-  {
-    "id": 445,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Sc: What fundamental physical constant defines the exact velocity of light in a vacuum?",
-    "options": ["3 x 10^8 m/s", "9.81 m/s^2", "6.67 x 10^-11", "1.6 x 10^-19"],
-    "a": "3 x 10^8 m/s",
-    "mode": "FLIP"
-  },
-  {
-    "id": 446,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Com: What basic accounting concept assumes an enterprise will operate indefinitely?",
-    "options": ["Business Entity", "Going Concern", "Money Measurement", "Dual Aspect"],
-    "a": "Going Concern",
-    "mode": "FLIP"
-  },
-  {
-    "id": 447,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Com: What final summary sheet cross-verifies the arithmetical accuracy of ledger accounts?",
-    "options": ["Balance Sheet", "Trial Balance", "Bank Reconciliation", "Cash Flow Index"],
-    "a": "Trial Balance",
-    "mode": "FLIP"
-  },
-  {
-    "id": 448,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Com: What system tracking captures value depreciation across enterprise fixed operating assets?",
-    "options": ["Appreciation", "Depreciation", "Amortization", "Revaluation"],
-    "a": "Depreciation",
-    "mode": "FLIP"
-  },
-  {
-    "id": 449,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Com: What market dynamic features a singular enterprise controlling an entire product loop?",
-    "options": ["Perfect Competition", "Monopoly", "Oligopoly", "Duopoly"],
-    "a": "Monopoly",
-    "mode": "FLIP"
-  },
-  {
-    "id": 450,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.Com: What indicator tracks total finished production value output inside domestic boundaries?",
-    "options": ["Gross National Product", "Gross Domestic Product", "Net National Product", "Per Capita Output"],
-    "a": "Gross Domestic Product",
-    "mode": "FLIP"
-  },
-  {
-    "id": 451,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.A: What social domain explores human community interactions, groups, and institutional networks?",
-    "options": ["Psychology", "Sociology", "Archeology", "Philology"],
-    "a": "Sociology",
-    "mode": "FLIP"
-  },
-  {
-    "id": 452,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.A: Which foundational system provides supreme legal and governance boundaries across India?",
-    "options": ["Indian Penal Code", "Constitution of India", "Parliamentary Code", "Judicial Register"],
-    "a": "Constitution of India",
-    "mode": "FLIP"
-  },
-  {
-    "id": 453,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.A: What macro tracking index captures total child birth rates per thousand citizens annually?",
-    "options": ["Fertility Matrix", "Crude Birth Rate", "Growth Parameter", "Mortality Scale"],
-    "a": "Crude Birth Rate",
-    "mode": "FLIP"
-  },
-  {
-    "id": 454,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.A: What classic economic model explores pricing shifts guided by supply and demand?",
-    "options": ["Microeconomics", "Macroeconomics", "Behavioral Economics", "Econometrics"],
-    "a": "Microeconomics",
-    "mode": "FLIP"
-  },
-  {
-    "id": 455,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "B.A: What ancient urban civilization laid the earliest groundwork for structural planning in India?",
-    "options": ["Vedic Settlement", "Indus Valley Civilization", "Mauryan Network", "Gupta Domain"],
-    "a": "Indus Valley Civilization",
-    "mode": "FLIP"
-  },
-  {
-    "id": 456,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BBA: What operational metric reflects the true relationship between total sales revenue and net profits?",
-    "options": ["Current Ratio", "Gross Profit Margin", "Net Profit Ratio", "Debt Ratio"],
-    "a": "Net Profit Ratio",
-    "mode": "FLIP"
-  },
-  {
-    "id": 457,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BBA: Which oversight entity monitors and regulates Indian stock market parameters?",
-    "options": ["RBI", "SEBI", "IRDA", "NABARD"],
-    "a": "SEBI",
-    "mode": "FLIP"
-  },
-  {
-    "id": 458,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BBA: What internal corporate document invites public subscription offers for asset share pools?",
-    "options": ["Articles of Association", "Prospectus", "Memorandum of Scope", "Share Ledger"],
-    "a": "Prospectus",
-    "mode": "FLIP"
-  },
-  {
-    "id": 459,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BBA: What operational cost profile shows zero fluctuation despite manufacturing capacity updates?",
-    "options": ["Variable Cost", "Fixed Cost", "Marginal Expense", "Direct Overhead"],
-    "a": "Fixed Cost",
-    "mode": "FLIP"
-  },
-  {
-    "id": 460,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BBA: What fiscal setup matches estimated government revenues evenly against operating costs?",
-    "options": ["Surplus Budget", "Deficit Plan", "Balanced Budget", "Capital Ledger"],
-    "a": "Balanced Budget",
-    "mode": "FLIP"
-  },
-  {
-    "id": 461,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BCA: What architectural data format leverages structured nodes to align relational data tables?",
-    "options": ["Flat File", "RDBMS", "Hierarchical Grid", "Network Array"],
-    "a": "RDBMS",
-    "mode": "FLIP"
-  },
-  {
-    "id": 462,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BCA: What networking node bridges local local networks safely to internet communication lines?",
-    "options": ["Hub Switch", "Repeater", "Router", "Bridge Connector"],
-    "a": "Router",
-    "mode": "FLIP"
-  },
-  {
-    "id": 463,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BCA: What network security wall monitors external traffic loops using customizable rules?",
-    "options": ["Antivirus Software", "Firewall", "Proxy Node", "Inbound Filter"],
-    "a": "Firewall",
-    "mode": "FLIP"
-  },
-  {
-    "id": 464,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BCA: What core property inside web formatting scripts specifies hypertext layout definitions?",
-    "options": ["HTTP", "HTML", "URL Script", "FTP Protocol"],
-    "a": "HTML",
-    "mode": "FLIP"
-  },
-  {
-    "id": 465,
-    "category": "Degree UG",
-    "type": "MCQ",
-    "q": "BCA: What cloud computing architecture hosts application infrastructure over shared internet grids?",
-    "options": ["Local Hosting", "Cloud Computing", "Mainframe Grid", "Client-Server System"],
-    "a": "Cloud Computing",
+    "q": "National Youth Day is celebrated on?",
+    "options": ["12 January", "15 January", "26 January", "30 January"],
+    "a": "12 January",
     "mode": "FLIP"
   }
-]
