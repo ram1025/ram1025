@@ -85,7 +85,7 @@
         </optgroup>
         <optgroup label="Other">
           <option value="gk" selected>General Knowledge</option>
-          <option value="PhDleve">PhD Level</option>
+          <option value="phd">PhD Level</option>
         </optgroup>
       </select>
       <button class="btn" id="saveAgeBtn">START LEARNING</button>
@@ -97,7 +97,7 @@
     <p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
   </div>
   <div class="mode-toggle">
-    <button class="mode-btn active" data-mode="pillars" data-file="36-pillars-108.json">🏛 36 PILLARS - 108</button>
+    <button class="mode-btn active" data-mode="pillars" data-file="36-pillars-108.json">🏛️ 36 PILLARS - 108</button>
     <button class="mode-btn" data-mode="school" data-file="Education-school-280.json">📚 SCHOOL - 280</button>
     <button class="mode-btn" data-mode="college" data-file="Education-college-180.json">🎓 COLLEGE - 180</button>
     <button class="mode-btn" data-mode="competitive" data-file="Education-competitive-340.json">🎯 COMPETITIVE - 340</button>
@@ -147,10 +147,9 @@
     let currentCard = null;
     let dueCards = [];
     let currentIndex = 0;
-    let selectedLevel = 'GENERAL'; // userClass badhulu idi
+    let userClass = 'gk';
     let streak = parseInt(localStorage.getItem('abst_streak') || '0');
     let matrix = [];
-    let allCards = []; // idi add chesam
 
     function loadCards() {
       dueCards = matrix.filter(c => {
@@ -162,25 +161,6 @@
       }
       currentIndex = 0;
       dueCards = dueCards.sort(() => 0.5 - Math.random());
-    }
-
-    function filterByLevel() {
-      if (selectedLevel === 'all') {
-        matrix = [...allCards];
-      } else if (selectedLevel === 'GENERAL') {
-        matrix = allCards.filter(c => ['GK', 'EXTRAS', 'PhD Level'].includes(c.category));
-      } else {
-        matrix = allCards.filter(c => c.category === selectedLevel);
-      }
-
-      if (matrix.length === 0) {
-        alert(`${selectedLevel} lo questions levu. All Categories try chey.`);
-        selectedLevel = 'all';
-        matrix = [...allCards];
-      }
-      loadCards();
-      updateStats();
-      showCard();
     }
 
     function checkAnswer() {
@@ -232,37 +212,28 @@
     }
 
     async function loadMatrixFromGitHub() {
-  try {
-    document.getElementById('card').innerHTML = '<div style="color:#00ff88">Loading...</div>';
-    
-    const url = `https://raw.githubusercontent.com/ram1004/ABST-BRAIN/main/${currentFile}`;
-    const response = await fetch(url);
-    if (!response.ok) throw new Error(`${currentFile} not found`);
-    allCards = await response.json();
-    
-    // ===== DEBUG LOGS =====
-    console.log('File:', currentFile);
-    console.log('Total Cards:', allCards.length);
-    console.log('Selected Level:', selectedLevel);
-    console.log('First 3 Categories:', allCards.slice(0,3).map(c => c.category));
-    // =======================
-    
-    const saved = localStorage.getItem(`abst_brain_${currentFile}`);
-    if(saved) {
-      const parsed = JSON.parse(saved);
-      parsed.forEach(savedCard => {
-        const idx = allCards.findIndex(c => c.id === savedCard.id);
-        if(idx >= 0) allCards[idx] = savedCard;
-      });
+      try {
+        document.getElementById('card').innerHTML = <div class="loading">Loading ${currentFile}... <br>🔄</div>;
+
+        const url = https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${currentFile};
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(${currentFile} not found);
+        matrix = await response.json();
+
+        const saved = localStorage.getItem(abst_brain_${currentFile});
+        if(saved) {
+          const parsed = JSON.parse(saved);
+          parsed.forEach(savedCard => {
+            const idx = matrix.findIndex(c => c.id === savedCard.id);
+            if(idx >= 0) matrix[idx] = savedCard;
+          });
+        }
+        initBrain();
+      } catch(err) {
+        console.error(err);
+        document.getElementById('card').innerHTML = <div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check if ${currentFile} exists in GitHub repo</div>;
+      }
     }
-    
-    filterByLevel(); // initBrain() badulu idi pettu
-    
-  } catch(err) {
-    console.error(err);
-    document.getElementById('card').innerHTML = `<div style="color:red">Error: ${err.message}<br>Check ${currentFile} in GitHub</div>`;
-  }
-}
 
     function initBrain() {
       matrix = matrix.map((c, i) => ({
@@ -286,11 +257,11 @@
           <h3>All done! 🎉</h3>
           <p>Come back tomorrow for more cards</p>
         </div>`;
-        document.getElementById('cardCounter').textContent = `${dueCards.length}/${dueCards.length}`;
+        document.getElementById('cardCounter').textContent = ${dueCards.length}/${dueCards.length};
         return;
       }
       currentCard = dueCards[currentIndex];
-      document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
+      document.getElementById('cardCounter').textContent = ${currentIndex + 1}/${dueCards.length};
       let content = `<div class="card-content">
         <div class="pillar">${currentCard.category || ''}</div>
         <div class="question">${currentCard.q || currentCard.question}</div>`;
@@ -306,17 +277,17 @@
         .slice(0, 3)
         .map(c => (c.a || c.answer));
         options = [...options,...wrongOptions].sort(() => 0.5 - Math.random());
-        content += `<div id="mcqOptions" class="mcq-grid">`;
+        content += <div id="mcqOptions" class="mcq-grid">;
         options.forEach(opt => {
-          content += `<button class="mcq-btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}')">${opt}</button>`;
+          content += <button class="mcq-btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}')">${opt}</button>;
         });
-        content += `</div>`;
+        content += </div>;
       } else if(answerMode === 'flip') {
         content += `<div class="answer" style="color:#0f0;margin:20px 0;padding:15px;background:#001100;border-radius:8px;">${currentCard.a || currentCard.answer}</div>
         <button class="btn" onclick="gradeCard(3)">NEXT</button>`;
       }
 
-      content += `</div>`;
+      content += </div>;
       document.getElementById('card').innerHTML = content;
     }
 
@@ -324,7 +295,7 @@
       currentCard = window.ABST_SM2.calc(currentCard, quality);
       const idx = matrix.findIndex(c => c.id === currentCard.id);
       if(idx >= 0) matrix[idx] = currentCard;
-      localStorage.setItem(`abst_brain_${currentFile}`, JSON.stringify(matrix));
+      localStorage.setItem(abst_brain_${currentFile}, JSON.stringify(matrix));
       currentIndex++;
       updateStats();
       showCard();
@@ -345,22 +316,18 @@
       }
     };
 
-// 5 Buttons - Single Listener + Modal Show
+    // 5 Buttons - Single Listener
 document.querySelectorAll('.mode-toggle .mode-btn').forEach(btn => {
   btn.addEventListener('click', function() {
     currentMode = this.dataset.mode;
     currentFile = this.dataset.file;
     document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
     this.classList.add('active');
-    
-    // Modal chupinchu prathi button click ki
-    document.getElementById('ageModal').style.display = 'flex';
-    
     loadMatrixFromGitHub();
   });
 });
 
-document.getElementById('typeMode').onclick = () => {
+    document.getElementById('typeMode').onclick = () => {
   answerMode = 'type';
   document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('typeMode').classList.add('active');
@@ -381,41 +348,19 @@ document.getElementById('flipMode').onclick = () => {
   showCard();
 };
 
-    // ===== MODE BUTTON LOGIC =====
-document.querySelectorAll('.mode-btn[data-file]').forEach(btn => {
-  btn.onclick = function() {
-    document.querySelectorAll('.mode-btn[data-file]').forEach(b => b.classList.remove('active'));
-    this.classList.add('active');
-    currentMode = this.dataset.mode;
-    currentFile = this.dataset.file;
-    if (currentMode === 'pillars') {
-      selectedLevel = 'all';
+    // ===== AUTO START =====
+    window.addEventListener('load', function() {
+      const savedClass = localStorage.getItem('abst_user_class');
+      if(!savedClass) {
+        localStorage.setItem('abst_user_class', 'gk');
+        document.getElementById('userClass').value = 'gk';
+        userClass = 'gk';
+      } else {
+        userClass = savedClass;
+      }
       document.getElementById('ageModal').style.display = 'none';
       loadMatrixFromGitHub();
-    } else {
-      document.getElementById('ageModal').style.display = 'flex';
-    }
-  };
-});
-
-// ===== START LEARNING BUTTON FIX =====
-document.getElementById('saveAgeBtn').onclick = function() {
-  selectedLevel = document.getElementById('userClass').value;
-  document.getElementById('ageModal').style.display = 'none';
-  localStorage.setItem('abst_user_level', selectedLevel);
-  loadMatrixFromGitHub();
-};
-
-    // ===== AUTO START =====
-window.addEventListener('load', function() {
-  const savedLevel = localStorage.getItem('abst_user_level'); // abst_user_class → abst_user_level
-  if(!savedLevel) {
-    document.getElementById('ageModal').style.display = 'flex';
-  } else {
-    selectedLevel = savedLevel; // userClass → selectedLevel
-    loadMatrixFromGitHub();
-  }
-});
+    });
   </script>
 </body>
 </html>
