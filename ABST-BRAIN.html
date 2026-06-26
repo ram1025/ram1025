@@ -376,20 +376,6 @@ document.getElementById('flipMode').onclick = () => {
   document.getElementById('flipMode').classList.add('active');
   showCard();
 };
-
-    // ===== AUTO START =====
-    window.addEventListener('load', function() {
-      const savedClass = localStorage.getItem('abst_user_class');
-      if(!savedClass) {
-        localStorage.setItem('abst_user_class', 'gk');
-        document.getElementById('userClass').value = 'gk';
-        userClass = 'gk';
-      } else {
-        userClass = savedClass;
-      }
-      document.getElementById('ageModal').style.display = 'none';
-      loadMatrixFromGitHub();
-    });
   </script>
 </body>
 </html>
