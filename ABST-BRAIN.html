@@ -227,31 +227,28 @@ function switchFile(fileName) {
 }
 async function loadMatrixFromGitHub() {
   try {
-    console.log("Loading file:", currentFile); // Debug 1
-    const url = `https://cdn.jsdelivr.net/gh/${GITHUB_USER}/${REPO_NAME}/${currentFile}`;
+    // ===== IKKADA MARCHU =====
+    const url = `https://ram1025.github.io/ram1025/${currentFile}`;
+    // ===== END =====
+    
     const response = await fetch(url);
     let textData = await response.text();
     textData = textData.trim().replace(/^\uFEFF/, '').replace(/\s+$/, '');
     originalMatrix = JSON.parse(textData);
     
-    console.log("Total from GitHub:", originalMatrix.length); // Debug 2
-    
     let userClass = document.getElementById('userClassDropdown').value;
-    console.log("Selected Class:", userClass); // Debug 3
     
     if (currentFile === '36-pillars-108.json') {
       matrix = [...originalMatrix];
     } else {
-      matrix = originalMatrix.filter(card => card.class === userClass || userClass === 'GK');
+      matrix = originalMatrix.filter(card => card.class === userClass);
     }
-    
-    console.log("Final Loaded:", matrix.length); // Debug 4
     
     updateButtonCount(currentFile, matrix.length);
     updateCategoryDropdown();
     initBrain();
   } catch(err) {
-    console.error("Error:", err); // Error kanipistundi
+    console.error("Error:", err);
   }
 }
 
