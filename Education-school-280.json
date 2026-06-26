@@ -2162,7 +2162,7 @@
   },
     {
     "id": 241,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Which is the smallest country in the world?",
     "options": ["Monaco", "Vatican City", "Maldives", "Nauru"],
@@ -2171,7 +2171,7 @@
   },
   {
     "id": 242,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Who invented Computer?",
     "options": ["Charles Babbage", "Alan Turing", "Bill Gates", "Steve Jobs"],
@@ -2180,7 +2180,7 @@
   },
   {
     "id": 243,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Which sport is called Gentleman's Game?",
     "options": ["Football", "Cricket", "Tennis", "Golf"],
@@ -2189,7 +2189,7 @@
   },
   {
     "id": 244,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "How many players in a volleyball team?",
     "options": ["5", "6", "7", "11"],
@@ -2198,7 +2198,7 @@
   },
   {
     "id": 245,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Which is the largest animal on earth?",
     "options": ["African Elephant", "Blue Whale", "Giraffe", "White Shark"],
@@ -2207,7 +2207,7 @@
   },
   {
     "id": 246,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "First woman Prime Minister of India?",
     "options": ["Sonia Gandhi", "Indira Gandhi", "Pratibha Patil", "Sarojini Naidu"],
@@ -2216,7 +2216,7 @@
   },
   {
     "id": 247,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Which is the fastest land animal?",
     "options": ["Lion", "Tiger", "Cheetah", "Horse"],
@@ -2225,7 +2225,7 @@
   },
   {
     "id": 248,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Nobel Prize was started in which year?",
     "options": ["1895", "1901", "1914", "1945"],
@@ -2234,7 +2234,7 @@
   },
   {
     "id": 249,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Which is the highest civilian award in India?",
     "options": ["Padma Shri", "Padma Bhushan", "Padma Vibhushan", "Bharat Ratna"],
@@ -2243,7 +2243,7 @@
   },
   {
     "id": 250,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Which planet is known as Red Planet?",
     "options": ["Venus", "Mars", "Jupiter", "Saturn"],
@@ -2252,7 +2252,7 @@
   },
   {
     "id": 251,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "How many strings does a guitar have?",
     "options": ["4", "5", "6", "7"],
@@ -2261,7 +2261,7 @@
   },
   {
     "id": 252,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Which is the national game of India?",
     "options": ["Cricket", "Hockey", "Kabaddi", "Football"],
@@ -2270,7 +2270,7 @@
   },
   {
     "id": 253,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "First man to walk on Moon?",
     "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Rakesh Sharma"],
@@ -2279,7 +2279,7 @@
   },
   {
     "id": 254,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Which organ purifies blood in human body?",
     "options": ["Heart", "Lungs", "Kidney", "Liver"],
@@ -2288,7 +2288,7 @@
   },
   {
     "id": 255,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Olympics are held every how many years?",
     "options": ["2", "3", "4", "5"],
@@ -2297,7 +2297,7 @@
   },
   {
     "id": 256,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Which is the largest democracy in the world?",
     "options": ["USA", "India", "UK", "Canada"],
@@ -2306,7 +2306,7 @@
   },
   {
     "id": 257,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Who painted Mona Lisa?",
     "options": ["Picasso", "Van Gogh", "Leonardo da Vinci", "Michelangelo"],
@@ -2315,7 +2315,7 @@
   },
   {
     "id": 258,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Which is the longest wall in the world?",
     "options": ["Berlin Wall", "Great Wall of China", "Hadrian's Wall", "Western Wall"],
@@ -2324,7 +2324,7 @@
   },
   {
     "id": 259,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "WWW stands for?",
     "options": ["World Wide Web", "World Wide Weather", "Web World Wide", "World Web Wide"],
@@ -2333,7 +2333,7 @@
   },
   {
     "id": 260,
-    "category": "EXTRAS",
+    "category": "CLASS11",
     "type": "MCQ",
     "q": "Which vitamin is produced in skin by sunlight?",
     "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
@@ -2342,7 +2342,7 @@
     },
       {
     "id": 261,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Which is the largest internal organ in human body?",
     "options": ["Brain", "Lungs", "Liver", "Heart"],
@@ -2351,7 +2351,7 @@
   },
   {
     "id": 262,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Who is known as Father of Computer Science?",
     "options": ["Charles Babbage", "Alan Turing", "John von Neumann", "Tim Berners-Lee"],
@@ -2360,7 +2360,7 @@
   },
   {
     "id": 263,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Which country gifted Statue of Liberty to USA?",
     "options": ["UK", "France", "Spain", "Germany"],
@@ -2369,7 +2369,7 @@
   },
   {
     "id": 264,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "How many sides does a hexagon have?",
     "options": ["5", "6", "7", "8"],
@@ -2378,7 +2378,7 @@
   },
   {
     "id": 265,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Which is the coldest place on Earth?",
     "options": ["Siberia", "Antarctica", "Alaska", "Greenland"],
@@ -2387,7 +2387,7 @@
   },
   {
     "id": 266,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "First Indian to win Nobel Prize?",
     "options": ["CV Raman", "Rabindranath Tagore", "Mother Teresa", "Amartya Sen"],
@@ -2396,7 +2396,7 @@
   },
   {
     "id": 267,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Which gas is most abundant in Earth's atmosphere?",
     "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"],
@@ -2405,7 +2405,7 @@
   },
   {
     "id": 268,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Which chess piece moves in L shape?",
     "options": ["Bishop", "Knight", "Rook", "Queen"],
@@ -2414,7 +2414,7 @@
   },
   {
     "id": 269,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Which Indian city is called Silicon Valley of India?",
     "options": ["Hyderabad", "Pune", "Bangalore", "Chennai"],
@@ -2423,7 +2423,7 @@
   },
   {
     "id": 270,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "How many teeth does an adult human have?",
     "options": ["28", "30", "32", "34"],
@@ -2432,7 +2432,7 @@
   },
   {
     "id": 271,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Which is the deepest point in oceans?",
     "options": ["Puerto Rico Trench", "Java Trench", "Mariana Trench", "Peru-Chile Trench"],
@@ -2441,7 +2441,7 @@
   },
   {
     "id": 272,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Who wrote 'Wings of Fire'?",
     "options": ["APJ Abdul Kalam", "Jawaharlal Nehru", "Mahatma Gandhi", "Narendra Modi"],
@@ -2450,7 +2450,7 @@
   },
   {
     "id": 273,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Which is the national tree of India?",
     "options": ["Neem", "Banyan", "Peepal", "Mango"],
@@ -2459,7 +2459,7 @@
   },
   {
     "id": 274,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "ISRO full form?",
     "options": ["Indian Space Research Organisation", "International Space Research Org", "Indian Scientific Research Org", "Indian Satellite Research Org"],
@@ -2468,7 +2468,7 @@
   },
   {
     "id": 275,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Which instrument is used to see stars?",
     "options": ["Microscope", "Telescope", "Periscope", "Stethoscope"],
@@ -2477,7 +2477,7 @@
   },
   {
     "id": 276,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Largest state in India by area?",
     "options": ["Madhya Pradesh", "Uttar Pradesh", "Rajasthan", "Maharashtra"],
@@ -2486,7 +2486,7 @@
   },
   {
     "id": 277,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Which blood vessels carry blood away from heart?",
     "options": ["Veins", "Arteries", "Capillaries", "All"],
@@ -2495,7 +2495,7 @@
   },
   {
     "id": 278,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Who invented the telephone?",
     "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Marconi"],
@@ -2504,7 +2504,7 @@
   },
   {
     "id": 279,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "Which is the driest place on Earth?",
     "options": ["Sahara Desert", "Atacama Desert", "Thar Desert", "Gobi Desert"],
@@ -2513,7 +2513,7 @@
   },
   {
     "id": 280,
-    "category": "EXTRAS",
+    "category": "CLASS12",
     "type": "MCQ",
     "q": "National Youth Day is celebrated on?",
     "options": ["12 January", "15 January"],
