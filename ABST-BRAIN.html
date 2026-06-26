@@ -338,7 +338,7 @@
       document.getElementById('totalCount').innerHTML = matrix.length + '<br>/' + matrix.length;
     }
 
-    // ===== EVENT LISTENERS =====
+        // ===== EVENT LISTENERS =====
     document.getElementById('homeBtn').onclick = () => {
       if(window.parent!== window && window.parent.closeM) {
         window.parent.closeM('abstBrainModal');
@@ -347,12 +347,12 @@
       }
     };
 
-    // 5 Buttons - Single Listener
-    document.querySelectorAll('.mode-toggle.mode-btn').forEach(btn => {
+    // 5 Buttons - Single Listener - FIXED
+    document.querySelectorAll('.mode-toggle .mode-btn').forEach(btn => {
       btn.addEventListener('click', function() {
         currentMode = this.dataset.mode;
         currentFile = this.dataset.file;
-        document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
         this.classList.add('active');
         loadMatrixFromGitHub();
       });
@@ -360,43 +360,43 @@
 
     document.getElementById('typeMode').onclick = () => {
       answerMode = 'type';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
       document.getElementById('typeMode').classList.add('active');
       showCard();
     };
 
     document.getElementById('mcqMode').onclick = () => {
       answerMode = 'mcq';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
       document.getElementById('mcqMode').classList.add('active');
       showCard();
     };
 
     document.getElementById('flipMode').onclick = () => {
       answerMode = 'flip';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
       document.getElementById('flipMode').classList.add('active');
       showCard();
     };
 
     document.getElementById('saveAgeBtn').onclick = function() {
-  userClass = document.getElementById('userClass').value;
-  localStorage.setItem('abst_user_class', userClass);
-  document.getElementById('ageModal').style.display = 'none';
-  loadMatrixFromGitHub();
-};
+      userClass = document.getElementById('userClass').value;
+      localStorage.setItem('abst_user_class', userClass);
+      document.getElementById('ageModal').style.display = 'none';
+      loadMatrixFromGitHub();
+    };
 
-// ===== AUTO START =====
-window.addEventListener('load', function() {
-  const savedClass = localStorage.getItem('abst_user_class');
-  if(!savedClass) {
-    document.getElementById('ageModal').style.display = 'block';
-  } else {
-    userClass = savedClass;
-    document.getElementById('ageModal').style.display = 'none';
-    loadMatrixFromGitHub();
-  }
-});
+    // ===== AUTO START =====
+    window.addEventListener('load', function() {
+      const savedClass = localStorage.getItem('abst_user_class');
+      if(!savedClass) {
+        document.getElementById('ageModal').style.display = 'flex';
+      } else {
+        userClass = savedClass;
+        document.getElementById('ageModal').style.display = 'none';
+        loadMatrixFromGitHub();
+      }
+    });
   </script>
 </body>
 </html>
