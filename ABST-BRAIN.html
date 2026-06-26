@@ -102,11 +102,21 @@
     <p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
   </div>
   <div class="mode-toggle">
-  <button class="mode-btn active" data-mode="pillars" data-file="36-pillars-108.json" id="btn-pillars">🏛️ 36 PILLARS - <span class="count">108</span></button>
-  <button class="mode-btn" data-mode="school" data-file="Education-school-280.json" id="btn-school">🏫 SCHOOL - <span class="count">280</span></button>
-  <button class="mode-btn" data-mode="college" data-file="Education-college-180.json" id="btn-college">🎓 COLLEGE - <span class="count">180</span></button>
-  <button class="mode-btn" data-mode="competitive" data-file="Education-competitive-340.json" id="btn-competitive">🎯 COMPETITIVE - <span class="count">340</span></button>
-  <button class="mode-btn" data-file="Education-other-200.json" id="btn-gkphd">📚 GK/PHD - <span class="count">200</span></button>
+    <button class="mode-btn active" data-file="36-pillars-108.json">🏛 36 PILLARS - <span class="count">108</span></button>
+    <button class="mode-btn" data-file="Education-school-280.json">🏫 SCHOOL - <span class="count">280</span></button>
+    <button class="mode-btn" data-file="Education-college-180.json">🎓 COLLEGE - <span class="count">180</span></button>
+    <button class="mode-btn" data-file="Education-competitive-340.json">🎯 COMPETITIVE - <span class="count">340</span></button>
+    <button class="mode-btn" data-file="Education-other-200.json">📚 GK/PHD - <span class="count">200</span></button>
+    <select id="userClassDropdown" style="margin-left: 15px; padding: 8px 12px; border-radius: 8px; background: #1a2332; color: #0ff; border: 1px solid #0ff; font-weight: bold;">
+        <option value="GK">General Knowledge</option>
+        <option value="6">Class 6</option>
+        <option value="7">Class 7</option>
+        <option value="8">Class 8</option>
+        <option value="9">Class 9</option>
+        <option value="10">Class 10</option>
+        <option value="INTER">Intermediate</option>
+        <option value="UPSC">UPSC</option>
+    </select>
 </div>
   <div class="answer-mode-toggle">
     <button class="mode-btn active" id="typeMode">✏️ TYPE</button>
@@ -395,17 +405,34 @@ function updateButtonCount(fileName, count) {
       loadMatrixFromGitHub();
     };
 
-   // ===== AUTO START =====
+ // ===== GITHUB CONFIG =====
+const GITHUB_USER = 'ram1025';
+const REPO_NAME = 'ram1025';
+let currentFile = '36-pillars-108.json'; // Default
+let userClass = localStorage.getItem('abst_user_class') || 'GK'; // Default GK
+
+// ===== AUTO START =====
 window.addEventListener('load', function() {
-    const savedClass = localStorage.getItem('abst_user_class');
-    if(!savedClass) {
-        document.getElementById('ageModal').style.display = 'flex';
-    } else {
-        userClass = savedClass;
-        document.getElementById('ageModal').style.display = 'none';
-        loadMatrixFromGitHub(); // Line 405 lo idi chalu
-    }
+    loadMatrixFromGitHub(); // Modal lekunda direct load
 });
+    // ===== DROPDOWN + BUTTON LOGIC =====
+// Dropdown change ayinappudu
+document.getElementById('userClassDropdown').addEventListener('change', function() {
+    userClass = this.value;
+    localStorage.setItem('abst_user_class', userClass);
+    loadMatrixFromGitHub(); 
+});
+// Button click logic
+document.querySelectorAll('.mode-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        currentFile = this.dataset.file;
+        document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        loadMatrixFromGitHub();
+    });
+});
+    // Page load ayinappudu dropdown ki saved value set chey
+document.getElementById('userClassDropdown').value = userClass;
   </script>
 </body>
 </html>
