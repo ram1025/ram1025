@@ -33,7 +33,7 @@
    .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer; transition:all 0.2s }
    .btn:hover { transform:scale(1.05); box-shadow:0 0 20px #00ffaa80 }
    .btn-check { background:#ffaa00; color:#0a192f }
-   .quality-btns { display:flex; gap:8px; justify-content:center; margin:20px 0; flex-wrap:wrap }
+   .quality-btns { display:none; gap:8px; justify-content:center; margin:20px 0; flex-wrap:wrap }
    .btn-again { background:#ff4444; color:#fff; padding:12px 20px }
    .btn-hard { background:#ffaa00; color:#0a192f; padding:12px 20px }
    .btn-good { background:#00ffaa; color:#0a192f; padding:12px 20px }
@@ -41,46 +41,63 @@
    .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
    .stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
    .footer { margin-top:50px; font-size:12px; opacity:0.6 }
+   .badge { position:absolute; top:-12px; right:20px; background:#ffaa00; color:#0a192f; padding:6px 12px; border-radius:20px; font-size:11px; font-weight:900 }
+   .feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
+   .timer { position:absolute; top:10px; left:20px; background:#ff4444; color:#fff; padding:6px 12px; border-radius:20px; font-size:12px; font-weight:900; display:none }
+   .timer.warning { background:#ffaa00; color:#0a192f }
+   .loading { color:#ffaa00; font-size:18px; padding:40px; text-align:center }
+   .age-modal { position:fixed; top:0; left:0; width:100%; height:100%; background:#0a192fdd; display:flex; align-items:center; justify-content:center; z-index:100 }
+   .age-box { background:#1a2332; padding:30px; border-radius:20px; border:2px solid #00ffaa; max-width:400px; width:90% }
+   .age-box h2 { color:#ffaa00; margin-bottom:20px }
+   .age-box select { width:100%; padding:12px; margin:10px 0; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:16px; appearance:none; -webkit-appearance:none; -moz-appearance:none; background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300ffaa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"); background-repeat:no-repeat; background-position:right 12px center; background-size:20px; position:relative; z-index:101;}
   </style>
 </head>
 <body>
+  <div class="age-modal" id="ageModal">
+    <div class="age-box">
+      <h2>Select Your Level</h2>
+      <select id="userClass">
+        <optgroup label="School">
+          <option value="lkg">LKG</option>
+          <option value="ukg">UKG</option>
+          <option value="class1">Class 1</option>
+          <option value="class2">Class 2</option>
+          <option value="class3">Class 3</option>
+          <option value="class4">Class 4</option>
+          <option value="class5">Class 5</option>
+          <option value="class6">Class 6</option>
+          <option value="class7">Class 7</option>
+          <option value="class8">Class 8</option>
+          <option value="class9">Class 9</option>
+          <option value="class10">Class 10</option>
+          <option value="class11">Class 11</option>
+          <option value="class12">Class 12</option>
+        </optgroup>
+        <optgroup label="Competitive">
+          <option value="upsc">UPSC</option>
+          <option value="neet">NEET</option>
+          <option value="jee">JEE</option>
+          <option value="ssc">SSC</option>
+          <option value="banking">Banking</option>
+        </optgroup>
+        <optgroup label="Other">
+          <option value="gk" selected>General Knowledge</option>
+          <option value="phd">PhD Level</option>
+        </optgroup>
+      </select>
+      <button class="btn" id="saveAgeBtn">START LEARNING</button>
+    </div>
+  </div>
   <div class="header">
     <button class="back-btn" id="homeBtn">← CLOSE</button>
     <h1>ABST BRAIN</h1>
     <p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
   </div>
   <div class="mode-toggle">
-    <button class="mode-btn active" data-file="36-pillars-108.json">36 PILLARS - 108</button>
-    <button class="mode-btn" data-file="Education-school-280.json">SCHOOL - 280</button>
-    <button class="mode-btn" data-file="Education-college-180.json">COLLEGE - 180</button>
-    <button class="mode-btn" data-file="Education-competitive-340.json">COMPETITIVE - 340</button>
-    <button class="mode-btn" data-file="Education-other-200.json">GK/PHD - 200</button>
-    <select id="userClassDropdown">
-      <option value="LKG">LKG</option>
-      <option value="UKG">UKG</option>
-      <option value="CLASS1">Class 1</option>
-      <option value="CLASS2">Class 2</option>
-      <option value="CLASS3">Class 3</option>
-      <option value="CLASS4">Class 4</option>
-      <option value="CLASS5">Class 5</option>
-      <option value="CLASS6">Class 6</option>
-      <option value="CLASS7">Class 7</option>
-      <option value="CLASS8">Class 8</option>
-      <option value="CLASS9">Class 9</option>
-      <option value="CLASS10">Class 10</option>
-      <option value="CLASS11">Class 11</option>
-      <option value="CLASS12">Class 12</option>
-      <option value="DEGREE_UG">Degree</option>
-      <option value="ENGINEERING">Engineering</option>
-      <option value="MBBS">MBBS</option>
-      <option value="UPSC">UPSC</option>
-      <option value="NEET">NEET</option>
-      <option value="JEE">JEE</option>
-      <option value="SSC">SSC</option>
-      <option value="BANKING">Banking</option>
-      <option value="GK">General Knowledge</option>
-      <option value="PHD">PhD</option>
-    </select>
+    <button class="mode-btn active" id="pillarsMode">🏛 36 PILLARS - 108</button>
+    <button class="mode-btn" id="kgUgMode">📚 KG to UG - 465</button>
+    <button class="mode-btn" id="engGkMode">📚 ENG to GK - 535</button>
+    <button class="mode-btn" id="allMode">📚 ALL - 1108</button>
   </div>
   <div class="answer-mode-toggle">
     <button class="mode-btn active" id="typeMode">✏️ TYPE</button>
@@ -88,19 +105,18 @@
     <button class="mode-btn" id="flipMode">🔁 FLIP</button>
   </div>
   <div id="cardCounter" style="text-align:center;margin:15px;color:#00ffaa;font-weight:bold;font-size:18px;">0/0</div>
-  <div id="card" class="card">
-    <div class="card-content">
-      <div class="loading">Loading...</div>
-    </div>
-  </div>
+  <div id="card" style="min-height:320px;padding:35px;border:2px solid #00ffaa;border-radius:24px;margin:20px auto;max-width:550px;background:linear-gradient(145deg,#1a2332,#0f1723);box-shadow:0 0 40px #00ffaa20;"></div>
   <div class="stats">
     <div>Due Now<b id="dueCount">0</b></div>
     <div>Streak<b id="streakCount">0<br>days</b></div>
     <div>Total<b id="totalCount">0<br>/0</b></div>
   </div>
   <div class="footer">ABST P24 Civilization OS | SM-2 Algorithm | 108 Mantra + 1000 Sahasra</div>
-
   <script>
+    // ===== GITHUB RAW URLs =====
+    const GITHUB_USER = 'ram1025';
+    const REPO_NAME = 'ram1025';
+
     // ===== SM-2 ALGORITHM =====
     window.ABST_SM2 = {
       calc: function(card, quality) {
@@ -120,68 +136,17 @@
       }
     };
 
-    // ===== GLOBAL VARIABLES =====
-    let currentFile = '36-pillars-108.json';
+    // ===== BRAIN LOGIC =====
+    let currentMode = 'pillars';
     let answerMode = 'type';
     let currentCard = null;
     let dueCards = [];
     let currentIndex = 0;
-    let userClass = localStorage.getItem('abst_user_class') || 'LKG';
+    let userClass = 'gk';
     let streak = parseInt(localStorage.getItem('abst_streak') || '0');
     let matrix = [];
-    let originalMatrix = [];
 
-    // ===== GITHUB LOADER =====
-    async function loadMatrixFromGitHub() {
-      try {
-        const url = `https://ram1025.github.io/ram1025/${currentFile}`;
-        document.querySelector('.card-content').innerHTML = `<div class="loading">Loading...</div>`;
-        const response = await fetch(url);
-        if (!response.ok) {
-          document.querySelector('.card-content').innerHTML = `<div style="color:#ff4444;padding:40px;"><h3>File not found</h3><p>${currentFile}</p></div>`;
-          return;
-        }
-        let textData = await response.text();
-        textData = textData.trim().replace(/^\uFEFF/, '').replace(/\s+$/, '');
-        originalMatrix = JSON.parse(textData);
-
-        if (currentFile === '36-pillars-108.json') {
-          matrix = [...originalMatrix];
-        } else {
-          matrix = originalMatrix.filter(card => card.class === userClass);
-        }
-
-        matrix = matrix.map((c, i) => ({
-          id: c.id || i,
-          q: c.q || c.question || c.front,
-          a: c.a || c.answer || c.back,
-          category: c.category || c.class || 'GENERAL',
-          class: c.class || '',
-          ease: c.ease || 2.5,
-          reps: c.reps || 0,
-          interval: c.interval || 0,
-          due: c.due || Date.now()
-        }));
-
-        updateButtonCount(currentFile, matrix.length);
-        loadCards();
-        updateStats();
-        showCard();
-      } catch(err) {
-        console.error("Error:", err);
-        document.querySelector('.card-content').innerHTML = `<div style="color:#ff4444;padding:40px;"><h3>JSON Error</h3><p>${err.message}</p></div>`;
-      }
-    }
-
-    function updateButtonCount(file, count) {
-      document.querySelectorAll('.mode-toggle.mode-btn').forEach(btn => {
-        if (btn.dataset.file === file) {
-          let text = btn.innerText.split(' - ')[0];
-          btn.innerText = `${text} - ${count}`;
-        }
-      });
-    }
-
+    // ===== FIX 1: ADDED loadCards FUNCTION =====
     function loadCards() {
       dueCards = matrix.filter(c => {
         if (!c.due) return true;
@@ -194,98 +159,156 @@
       dueCards = dueCards.sort(() => 0.5 - Math.random());
     }
 
-    function showCard() {
-      const cardEl = document.getElementById('card');
-      cardEl.classList.remove('correct', 'wrong');
-
-      if (currentIndex >= dueCards.length) {
-        document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>All done! 🎉</h3><p>Come back tomorrow for more cards</p></div>`;
-        document.getElementById('cardCounter').textContent = `${dueCards.length}/${dueCards.length}`;
-        return;
-      }
-
-      currentCard = dueCards[currentIndex];
-      document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
-
-      let content = `<div class="pillar">${currentCard.category || ''}</div>
-        <div class="question">${currentCard.q}</div>`;
-
-      if(answerMode === 'type') {
-        content += `<input type="text" id="typeAnswerBox" class="answer-input" placeholder="Type your answer here..." onkeypress="if(event.key==='Enter') checkAnswer()">
-          <button class="btn btn-check" onclick="checkAnswer()">CHECK ANSWER</button>`;
-      } else if(answerMode === 'mcq') {
-        let correctAns = currentCard.a;
-        let options = [correctAns];
-        let wrongOptions = matrix.filter(c => c.a!== correctAns)
-         .sort(() => 0.5 - Math.random())
-         .slice(0, 3)
-         .map(c => c.a);
-        options = [...options,...wrongOptions].sort(() => 0.5 - Math.random());
-        content += `<div id="mcqOptions" class="mcq-grid">`;
-        options.forEach(opt => {
-          content += `<button class="mcq-btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}')">${opt}</button>`;
-        });
-        content += `</div>`;
-      } else if(answerMode === 'flip') {
-        content += `<div class="answer" style="color:#0f0;margin:20px 0;padding:15px;background:#001100;border-radius:8px;">${currentCard.a}</div>
-          <button class="btn" onclick="gradeCard(3)">NEXT</button>`;
-      }
-
-      document.querySelector('.card-content').innerHTML = content;
-    }
-
     function checkAnswer() {
-      const input = document.getElementById('typeAnswerBox');
-      const userAns = input.value.trim().toLowerCase();
-      const correctAns = currentCard.a.trim().toLowerCase();
-      const cardEl = document.getElementById('card');
-
-      if (userAns === correctAns) {
-        cardEl.classList.add('correct');
-        input.classList.add('correct');
-        input.disabled = true;
-        showQualityBtns();
-      } else {
-        cardEl.classList.add('wrong');
-        input.classList.add('wrong');
-        input.value = currentCard.a;
-        input.disabled = true;
-        showQualityBtns();
-      }
-    }
+  const input = document.getElementById('typeAnswerBox');
+  const userAns = input.value.trim().toLowerCase();
+  const correctAns = (currentCard.a || currentCard.answer).trim().toLowerCase();
+  const cardEl = document.getElementById('card');
+  
+  if (userAns === correctAns) {
+    cardEl.classList.add('correct');
+    input.classList.add('correct');
+    input.disabled = true;
+    showQualityBtns(); // Auto grade cheyakunda buttons chupistam
+  } else {
+    cardEl.classList.add('wrong');
+    input.classList.add('wrong');
+    input.value = currentCard.a || currentCard.answer;
+    input.disabled = true;
+    showQualityBtns(); // Wrong ayina kuda user grade chesukovali
+  }
+}
 
     function checkMCQ(selected) {
-      const correctAns = currentCard.a;
-      const buttons = document.querySelectorAll('#mcqOptions button');
-      buttons.forEach(btn => {
-        btn.disabled = true;
-        if (btn.textContent === correctAns) {
-          btn.classList.add('correct');
-        } else if (btn.textContent === selected) {
-          btn.classList.add('wrong');
+  const correctAns = currentCard.a || currentCard.answer;
+  const buttons = document.querySelectorAll('#mcqOptions button');
+  buttons.forEach(btn => {
+    btn.disabled = true;
+    if (btn.textContent === correctAns) {
+      btn.classList.add('correct');
+    } else if (btn.textContent === selected) {
+      btn.classList.add('wrong');
+    }
+  });
+  showQualityBtns(); // Answer check ayyaka buttons chupistam
+}
+    function showQualityBtns() {
+  const qualityDiv = document.createElement('div');
+  qualityDiv.className = 'quality-btns';
+  qualityDiv.style.display = 'flex';
+  qualityDiv.innerHTML = `
+    <button class="btn btn-again" onclick="gradeCard(0)">AGAIN 1d</button>
+    <button class="btn btn-hard" onclick="gradeCard(1)">HARD 1d</button>
+    <button class="btn btn-good" onclick="gradeCard(2)">GOOD 6d</button>
+    <button class="btn btn-easy" onclick="gradeCard(3)">EASY 15d</button>
+  `;
+  document.querySelector('.card-content').appendChild(qualityDiv);
+  document.querySelector('.btn-check')?.remove(); // CHECK ANSWER button remove chey
+}
+    // ===== FIX 2: FIXED JSON URLS - using.json not.db =====
+    async function loadMatrixFromGitHub() {
+      try {
+        document.getElementById('card').innerHTML = `<div class="loading">Loading cards... <br>🔄</div>`;
+        let fileName = '';
+        if(currentMode === 'pillars') fileName = '36-pillars-108.json';
+        else if(currentMode === 'kgug') fileName = 'Education-kgtoug-465.json';
+        else if(currentMode === 'enggk') fileName = 'Education-engtogk-535.json';
+        else if(currentMode === 'all') {
+          document.getElementById('card').innerHTML = `<div class="loading">Loading ALL 1108 cards...</div>`;
+          const urls = [
+            `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/36-pillars-108.json`,
+            `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/Education-kgtoug-465.json`,
+            `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/Education-engtogk-535.json`
+          ];
+          const responses = await Promise.all(urls.map(u => fetch(u)));
+          for (let r of responses) {
+            if (!r.ok) throw new Error(`File not found: ${r.url}`);
+          }
+          const data = await Promise.all(responses.map(r => r.json()));
+          matrix = [...data[0],...data[1],...data[2]];
+          initBrain();
+          return;
         }
-      });
-      showQualityBtns();
+
+        document.getElementById('card').innerHTML = `<div class="loading">Loading ${fileName}...</div>`;
+        const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${fileName}`;
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`${fileName} not found`);
+        matrix = await response.json();
+
+        const saved = localStorage.getItem('abst_brain_cards');
+        if(saved) {
+          const parsed = JSON.parse(saved);
+          parsed.forEach(savedCard => {
+            const idx = matrix.findIndex(c => c.id === savedCard.id);
+            if(idx >= 0) matrix[idx] = savedCard;
+          });
+        }
+        initBrain();
+      } catch(err) {
+        console.error(err);
+        document.getElementById('card').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check if JSON files exist in GitHub repo</div>`;
+      }
     }
 
-    function showQualityBtns() {
-      const qualityDiv = document.createElement('div');
-      qualityDiv.className = 'quality-btns';
-      qualityDiv.innerHTML = `
-        <button class="btn btn-again" onclick="gradeCard(0)">AGAIN 1d</button>
-        <button class="btn btn-hard" onclick="gradeCard(1)">HARD 1d</button>
-        <button class="btn btn-good" onclick="gradeCard(2)">GOOD 6d</button>
-        <button class="btn btn-easy" onclick="gradeCard(3)">EASY 15d</button>
-      `;
-      document.querySelector('.card-content').appendChild(qualityDiv);
-      document.querySelector('.btn-check')?.remove();
+    function initBrain() {
+      matrix = matrix.map((c, i) => ({
+        id: c.id || i,
+        q: c.q || c.question,
+        a: c.a || c.answer,
+        ease: c.ease || 2.5,
+        reps: c.reps || 0,
+        interval: c.interval || 0,
+        due: c.due || Date.now()
+      }));
+      loadCards();
+      updateStats();
+      showCard();
     }
+function showCard() {
+  if (currentIndex >= dueCards.length) {
+    document.getElementById('card').innerHTML = `<div style="padding: 40px; text-align: center;">
+      <h3>All done! 🎉</h3>
+      <p>Come back tomorrow for more cards</p>
+    </div>`;
+    document.getElementById('cardCounter').textContent = `${dueCards.length}/${dueCards.length}`;
+    return;
+  }
+  currentCard = dueCards[currentIndex];
+  document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
+  let content = `<div class="card-content">
+    <div class="question">${currentCard.q || currentCard.question}</div>`;
+
+  if(answerMode === 'type') {
+    content += `<input type="text" id="typeAnswerBox" class="answer-input" placeholder="Type your answer here..." onkeypress="if(event.key==='Enter') checkAnswer()">
+    <button class="btn btn-check" onclick="checkAnswer()">CHECK ANSWER</button>`;
+  } else if(answerMode === 'mcq') {
+    let correctAns = currentCard.a || currentCard.answer;
+    let options = [correctAns];
+    let wrongOptions = matrix.filter(c => (c.a || c.answer)!== correctAns)
+     .sort(() => 0.5 - Math.random())
+     .slice(0, 3)
+     .map(c => (c.a || c.answer));
+    options = [...options,...wrongOptions].sort(() => 0.5 - Math.random());
+    content += `<div id="mcqOptions" class="mcq-grid">`;
+    options.forEach(opt => {
+      content += `<button class="mcq-btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}')">${opt}</button>`;
+    });
+    content += `</div>`;
+  } else if(answerMode === 'flip') {
+    content += `<div class="answer" style="color:#0f0;margin:20px 0;padding:15px;background:#001100;border-radius:8px;">${currentCard.a || currentCard.answer}</div>
+    <button class="btn" onclick="gradeCard(3)">NEXT</button>`;
+  } // ← EE BRACKET MUNDU UNDALI
+
+  content += `</div>`;
+  document.getElementById('card').innerHTML = content;
+}
 
     function gradeCard(quality) {
       currentCard = window.ABST_SM2.calc(currentCard, quality);
       const idx = matrix.findIndex(c => c.id === currentCard.id);
       if(idx >= 0) matrix[idx] = currentCard;
-      localStorage.setItem(`abst_brain_${currentFile}`, JSON.stringify(matrix));
+      localStorage.setItem('abst_brain_cards', JSON.stringify(matrix));
       currentIndex++;
       updateStats();
       showCard();
@@ -294,59 +317,76 @@
     function updateStats() {
       document.getElementById('dueCount').innerText = dueCards.length;
       document.getElementById('streakCount').innerHTML = streak + '<br>days';
-      document.getElementById('totalCount').innerHTML = matrix.length + '<br>/' + matrix.length;
+      document.getElementById('totalCount').innerHTML = matrix.length + '<br>/1108';
     }
 
     // ===== EVENT LISTENERS =====
-    document.getElementById('homeBtn').onclick = () => {
-      if(window.parent!== window && window.parent.closeM) {
-        window.parent.closeM('abstBrainModal');
-      } else {
-        window.location.href = './index.html';
-      }
-    };
+document.getElementById('homeBtn').onclick = () => {
+  if(window.parent!== window && window.parent.closeM) {
+    window.parent.closeM('abstBrainModal');
+  } else {
+    window.location.href = './index.html';
+  }
+};
 
-    document.querySelectorAll('.mode-toggle.mode-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        currentFile = this.dataset.file;
-        document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        loadMatrixFromGitHub();
-      });
-    });
+document.getElementById('pillarsMode').onclick = () => {
+  currentMode = 'pillars';
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('pillarsMode').classList.add('active');
+  loadMatrixFromGitHub();
+};
 
-    document.getElementById('typeMode').onclick = () => {
-      answerMode = 'type';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('typeMode').classList.add('active');
-      showCard();
-    };
+document.getElementById('kgUgMode').onclick = () => {
+  currentMode = 'kgug';
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('kgUgMode').classList.add('active');
+  loadMatrixFromGitHub();
+};
 
-    document.getElementById('mcqMode').onclick = () => {
-      answerMode = 'mcq';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('mcqMode').classList.add('active');
-      showCard();
-    };
+document.getElementById('engGkMode').onclick = () => {
+  currentMode = 'enggk';
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('engGkMode').classList.add('active');
+  loadMatrixFromGitHub();
+};
 
-    document.getElementById('flipMode').onclick = () => {
-      answerMode = 'flip';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('flipMode').classList.add('active');
-      showCard();
-    };
+document.getElementById('allMode').onclick = () => {
+  currentMode = 'all';
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('allMode').classList.add('active');
+  loadMatrixFromGitHub();
+};
 
-    document.getElementById('userClassDropdown').addEventListener('change', function() {
-      userClass = this.value;
-      localStorage.setItem('abst_user_class', userClass);
-      loadMatrixFromGitHub();
-    });
+// ===== ADD THIS CODE HERE =====
+document.getElementById('typeMode').onclick = () => {
+  answerMode = 'type';
+  document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('typeMode').classList.add('active');
+  showCard();
+};
 
-    // ===== INIT =====
-    document.getElementById('userClassDropdown').value = userClass;
-    window.addEventListener('load', function() {
-      loadMatrixFromGitHub();
-    });
-  </script>
+document.getElementById('mcqMode').onclick = () => {
+  answerMode = 'mcq';
+  document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('mcqMode').classList.add('active');
+  showCard();
+};
+
+document.getElementById('flipMode').onclick = () => {
+  answerMode = 'flip';
+  document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('flipMode').classList.add('active');
+  showCard();
+};
+
+   // ===== AUTO START =====
+const savedClass = localStorage.getItem('abst_user_class');
+if(savedClass) {
+  userClass = savedClass;
+  document.getElementById('userClass').value = savedClass;
+  document.getElementById('ageModal').style.display = 'none';
+  loadMatrixFromGitHub();
+}
+</script>
 </body>
 </html>
