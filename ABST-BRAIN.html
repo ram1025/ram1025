@@ -235,28 +235,27 @@
     }
 
     async function loadMatrixFromGitHub() {
-      try {
-        document.getElementById('card').innerHTML = `<div class="loading">Loading ${currentFile}... <br>🔄</div>`;
-
-        const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${currentFile}`;
-        const response = await fetch(url);
-        if (!response.ok) throw new Error(`${currentFile} not found`);
-        matrix = await response.json();
-
-        const saved = localStorage.getItem(`abst_brain_${currentFile}`);
-        if(saved) {
-          const parsed = JSON.parse(saved);
-          parsed.forEach(savedCard => {
-            const idx = matrix.findIndex(c => c.id === savedCard.id);
-            if(idx >= 0) matrix[idx] = savedCard;
-          });
-        }
-        initBrain();
-      } catch(err) {
-        console.error(err);
-        document.getElementById('card').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check if ${currentFile} exists in GitHub repo</div>`;
-      }
+  try {
+    document.getElementById('card').innerHTML = `<div class="loading">Loading ${currentFile}... <br>🔄</div>`;
+    const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${currentFile}?t=${Date.now()}`; // ← idi add chey
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`${currentFile} not found`);
+    matrix = await response.json();
+    const saved = localStorage.getItem(`abst_brain_${currentFile}`);
+    if(saved) {
+      const parsed = JSON.parse(saved);
+      parsed.forEach(savedCard => {
+        const idx = matrix.findIndex(c => c.id === savedCard.id);
+        if(idx >= 0) matrix[idx] = savedCard;
+      });
     }
+    initBrain();
+  } catch(err) {
+    console.error(err);
+    document.getElementById('card').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check if ${currentFile} exists in GitHub repo</
+    div>`;
+  }
+}
 
     function initBrain() {
       matrix = matrix.map((c, i) => ({
