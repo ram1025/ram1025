@@ -102,12 +102,12 @@
     <p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
   </div>
   <div class="mode-toggle">
-    <button class="mode-btn active" data-mode="pillars" data-file="36-pillars-108.json">🏛️ 36 PILLARS - 108</button>
-    <button class="mode-btn" data-mode="school" data-file="Education-school-280.json">📚 SCHOOL - 280</button>
-    <button class="mode-btn" data-mode="college" data-file="Education-college-180.json">🎓 COLLEGE - 180</button>
-    <button class="mode-btn" data-mode="competitive" data-file="Education-competitive-340.json">🎯 COMPETITIVE - 340</button>
-    <button class="mode-btn" data-mode="other" data-file="Education-other-200.json">🧠 GK & PHD - 200</button>
-  </div>
+  <button class="mode-btn active" data-mode="pillars" data-file="36-pillars-108.json" id="btn-pillars">🏛️ 36 PILLARS - <span class="count">108</span></button>
+  <button class="mode-btn" data-mode="school" data-file="Education-school-280.json" id="btn-school">🏫 SCHOOL - <span class="count">280</span></button>
+  <button class="mode-btn" data-mode="college" data-file="Education-college-180.json" id="btn-college">🎓 COLLEGE - <span class="count">180</span></button>
+  <button class="mode-btn" data-mode="competitive" data-file="Education-competitive-340.json" id="btn-competitive">🎯 COMPETITIVE - <span class="count">340</span></button>
+  <button class="mode-btn" data-file="Education-other-200.json" id="btn-gkphd">📚 GK/PHD - <span class="count">200</span></button>
+</div>
   <div class="answer-mode-toggle">
     <button class="mode-btn active" id="typeMode">✏️ TYPE</button>
     <button class="mode-btn" id="mcqMode">⚪ MCQ</button>
@@ -239,25 +239,35 @@
     const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${currentFile}?t=${Date.now()}`;
     const response = await fetch(url);
     let textData = await response.text();
+    textData = textData.trim().replace(/^\uFEFF/, '');
     
-    // STEP 1: Clean chey
-    textData = textData.trim(); // Start & End lo spaces/newlines remove
-    textData = textData.replace(/^\uFEFF/, ''); // BOM remove
+    originalMatrix = JSON.parse(textData);
+    matrix = [...originalMatrix];
     
-    // STEP 2: Debug - exact error position lo em undi
-    if(currentFile === 'Education-school-280.json') {
-      console.log('Char at 56983:', textData[56982]); // 0-indexed
-      console.log('Chars 56980-56990:', textData.substring(56979, 56990));
-    }
+    // Button count update chey
+    updateButtonCount(currentFile, matrix.length);
     
-    matrix = JSON.parse(textData);
-    console.log('SCHOOL Total Loaded:', matrix.length);
+    updateCategoryDropdown();
     initBrain();
-    
   } catch(err) {
-    console.error('JSON Error:', err);
-    console.error('Error at position:', err.message.match(/position (\d+)/)?.[1]);
-    document.getElementById('card').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}</div>`;
+    console.error('JSON PARSE FAILED:', err);
+  }
+}
+
+// Button label update function
+function updateButtonCount(fileName, count) {
+  const btnMap = {
+    '36-pillars-108.json': 'btn-pillars',
+    'Education-school-280.json': 'btn-school',
+    'Education-college-180.json': 'btn-college',
+    'Education-competitive-340.json': 'btn-competitive',
+    'Education-other-200.json': 'btn-gkphd'
+  };
+  
+  const btnId = btnMap[fileName];
+  if(btnId) {
+    const countSpan = document.querySelector(`#${btnId}.count`);
+    if(countSpan) countSpan.textContent = count;
   }
 }
 
