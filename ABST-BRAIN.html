@@ -227,28 +227,36 @@ function switchFile(fileName) {
 }
 async function loadMatrixFromGitHub() {
   try {
+    console.log("Loading file:", currentFile); // Debug 1
     const url = `https://cdn.jsdelivr.net/gh/${GITHUB_USER}/${REPO_NAME}/${currentFile}`;
     const response = await fetch(url);
     let textData = await response.text();
     textData = textData.trim().replace(/^\uFEFF/, '').replace(/\s+$/, '');
     originalMatrix = JSON.parse(textData);
-
+    
+    console.log("Total from GitHub:", originalMatrix.length); // Debug 2
+    
     let userClass = document.getElementById('userClassDropdown').value;
-
+    console.log("Selected Class:", userClass); // Debug 3
+    
     if (currentFile === '36-pillars-108.json') {
       matrix = [...originalMatrix];
     } else {
       matrix = originalMatrix.filter(card => card.class === userClass || userClass === 'GK');
     }
-
-    console.log(`${currentFile} Total Loaded:`, matrix.length);
+    
+    console.log("Final Loaded:", matrix.length); // Debug 4
+    
     updateButtonCount(currentFile, matrix.length);
     updateCategoryDropdown();
     initBrain();
-    } catch(err) {
-        console.error('JSON PARSE FAILED:', err);
-    }
+  } catch(err) {
+    console.error("Error:", err); // Error kanipistundi
+  }
 }
+
+// Page load avvagane call chey
+window.onload = loadMatrixFromGitHub;
 // Button label update function
 function updateButtonCount(fileName, count) {
   const btnMap = {
@@ -410,6 +418,11 @@ document.querySelectorAll('.mode-btn').forEach(btn => {
 });
     // Page load ayinappudu dropdown ki saved value set chey
 document.getElementById('userClassDropdown').value = userClass;
+
+// ... nee loadMatrixFromGitHub function tarvatha
+window.onload = function() {
+  loadMatrixFromGitHub(); // Page open avvagane 36-pillars load chey
+};
   </script>
 </body>
 </html>
