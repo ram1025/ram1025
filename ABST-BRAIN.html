@@ -59,35 +59,40 @@
   <div class="age-modal" id="ageModal">
     <div class="age-box">
       <h2>Select Your Level</h2>
-      <select id="userClass">
+            <select id="userClass">
         <optgroup label="School">
-          <option value="lkg">LKG</option>
-          <option value="ukg">UKG</option>
-          <option value="class1">Class 1</option>
-          <option value="class2">Class 2</option>
-          <option value="class3">Class 3</option>
-          <option value="class4">Class 4</option>
-          <option value="class5">Class 5</option>
-          <option value="class6">Class 6</option>
-          <option value="class7">Class 7</option>
-          <option value="class8">Class 8</option>
-          <option value="class9">Class 9</option>
-          <option value="class10">Class 10</option>
-          <option value="class11">Class 11</option>
-          <option value="class12">Class 12</option>
+          <option value="LKG">LKG</option>
+          <option value="UKG">UKG</option>
+          <option value="CLASS1">Class 1</option>
+          <option value="CLASS2">Class 2</option>
+          <option value="CLASS3">Class 3</option>
+          <option value="CLASS4">Class 4</option>
+          <option value="CLASS5">Class 5</option>
+          <option value="CLASS6">Class 6</option>
+          <option value="CLASS7">Class 7</option>
+          <option value="CLASS8">Class 8</option>
+          <option value="CLASS9">Class 9</option>
+          <option value="CLASS10">Class 10</option>
+          <option value="CLASS11">Class 11</option>
+          <option value="CLASS12">Class 12</option>
+        </optgroup>
+        <optgroup label="College">
+          <option value="DEGREE_UG">Degree UG</option>
+          <option value="ENGINEERING">Engineering</option>
+          <option value="MBBS">MBBS</option>
         </optgroup>
         <optgroup label="Competitive">
-          <option value="upsc">UPSC</option>
-          <option value="neet">NEET</option>
-          <option value="jee">JEE</option>
-          <option value="ssc">SSC</option>
-          <option value="banking">Banking</option>
+          <option value="UPSC">UPSC</option>
+          <option value="NEET">NEET</option>
+          <option value="JEE">JEE</option>
+          <option value="SSC">SSC</option>
+          <option value="BANKING">Banking</option>
         </optgroup>
         <optgroup label="Other">
-          <option value="gk" selected>General Knowledge</option>
-          <option value="phd">PhD Level</option>
+          <option value="GK" selected>General Knowledge</option>
+          <option value="PHD">PhD Level</option>
         </optgroup>
-      </select>
+            </select>
       <button class="btn" id="saveAgeBtn">START LEARNING</button>
     </div>
   </div>
@@ -147,36 +152,26 @@
     let currentCard = null;
     let dueCards = [];
     let currentIndex = 0;
-    let userClass = 'gk';
+    let userClass = 'GK';
     let streak = parseInt(localStorage.getItem('abst_streak') || '0');
     let matrix = [];
 
     function filterByLevel() {
-      console.log('Selected Level:', userClass);
-      console.log('Total Cards before filter:', matrix.length);
+  console.log('Selected Level:', userClass);
+  console.log('Total Cards before filter:', matrix.length);
 
-      if (currentFile === 'Education-other-200.json') {
-        if (userClass === 'gk') {
-          matrix = matrix.filter(c => c.category.toUpperCase() === 'GK');
-        } else if (userClass === 'phd') {
-          matrix = matrix.filter(c => c.category.toUpperCase() === 'PHD');
-        }
-      } else if (currentFile === 'Education-school-280.json') {
-        matrix = matrix.filter(c => c.category.toLowerCase() === userClass.toLowerCase());
-      } else if (currentFile === 'Education-competitive-340.json') {
-        matrix = matrix.filter(c => c.category.toLowerCase() === userClass.toLowerCase());
-      } else if (currentFile === 'Education-college-180.json') {
-        matrix = matrix.filter(c => c.category.toLowerCase() === userClass.toLowerCase());
-      }
+  // Direct CAPS match - JSON lo anni CAPS lo unnayi
+  matrix = matrix.filter(c => c.category === userClass);
 
-      console.log('Filtered Cards:', matrix.length);
+  console.log('Filtered Cards:', matrix.length);
 
-      if (matrix.length === 0) {
-        document.getElementById('card').innerHTML = `<div style="color:#ffaa00;padding:40px;text-align:center;">
-          <h3>No questions found for ${userClass.toUpperCase()}</h3>
-          <p>JSON file lo category: "${userClass}" undali</p>
-        </div>`;
-      }
+  if (matrix.length === 0) {
+    document.getElementById('card').innerHTML = `<div style="color:#ffaa00;padding:40px;text-align:center;">
+      <h3>No questions found for ${userClass}</h3>
+      <p>JSON file lo category: "${userClass}" check chey</p>
+      <p style="font-size:14px;margin-top:10px;">Available: LKG, UKG, CLASS1-CLASS12, GK, PHD, UPSC, NEET, JEE, SSC, BANKING, DEGREE_UG, ENGINEERING, MBBS</p>
+    </div>`;
+  }
     }
 
     function loadCards() {
