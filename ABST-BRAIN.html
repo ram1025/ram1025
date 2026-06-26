@@ -233,13 +233,20 @@
 
     async function loadMatrixFromGitHub() {
   try {
-    document.getElementById('card').innerHTML = `<div class="loading">Loading ${currentFile}... <br>🔄</div>`;
-
-    const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${currentFile}`;
+    document.getElementById('card').innerHTML = '<div style="color:#00ff88">Loading...</div>';
+    
+    const url = `https://raw.githubusercontent.com/ram1004/ABST-BRAIN/main/${currentFile}`;
     const response = await fetch(url);
     if (!response.ok) throw new Error(`${currentFile} not found`);
     allCards = await response.json();
-
+    
+    // ===== DEBUG LOGS =====
+    console.log('File:', currentFile);
+    console.log('Total Cards:', allCards.length);
+    console.log('Selected Level:', selectedLevel);
+    console.log('First 3 Categories:', allCards.slice(0,3).map(c => c.category));
+    // =======================
+    
     const saved = localStorage.getItem(`abst_brain_${currentFile}`);
     if(saved) {
       const parsed = JSON.parse(saved);
@@ -248,12 +255,14 @@
         if(idx >= 0) allCards[idx] = savedCard;
       });
     }
-    initBrain();
+    
+    filterByLevel(); // initBrain() badulu idi pettu
+    
   } catch(err) {
     console.error(err);
-    document.getElementById('card').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check if ${currentFile} exists in GitHub repo</div>`;
+    document.getElementById('card').innerHTML = `<div style="color:red">Error: ${err.message}<br>Check ${currentFile} in GitHub</div>`;
   }
-    }
+}
 
     function initBrain() {
       matrix = matrix.map((c, i) => ({
