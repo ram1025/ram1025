@@ -2096,6 +2096,304 @@
     "passCount": 0,
     "ease": 2.5
   },
+[
+  {
+    "id": 481,
+    "category": "MBA-FIN",
+    "q": "What is capital budgeting?",
+    "a": "Process of evaluating long-term investment decisions",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 482,
+    "category": "MBA-FIN",
+    "q": "What is NPV?",
+    "a": "Net Present Value - present value of cash inflows minus outflows",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 483,
+    "category": "MBA-FIN",
+    "q": "What is IRR?",
+    "a": "Internal Rate of Return - discount rate making NPV zero",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 484,
+    "category": "MBA-FIN",
+    "q": "What is working capital?",
+    "a": "Current Assets - Current Liabilities",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 485,
+    "category": "MBA-FIN",
+    "q": "What is ROE?",
+    "a": "Return on Equity = Net Income / Shareholder's Equity",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 486,
+    "category": "MBA-FIN",
+    "q": "What is CAPM?",
+    "a": "Capital Asset Pricing Model - relates risk and expected return",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 487,
+    "category": "MBA-FIN",
+    "q": "What is beta in finance?",
+    "a": "Measure of stock volatility relative to market",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 488,
+    "category": "MBA-FIN",
+    "q": "What is dividend?",
+    "a": "Portion of profit distributed to shareholders",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 489,
+    "category": "MBA-FIN",
+    "q": "What is IPO?",
+    "a": "Initial Public Offering - first sale of stock to public",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 490,
+    "category": "MBA-FIN",
+    "q": "What is WACC?",
+    "a": "Weighted Average Cost of Capital",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 491,
+    "category": "MBA-FIN",
+    "q": "What is leverage?",
+    "a": "Use of debt to increase potential return",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 492,
+    "category": "MBA-FIN",
+    "q": "What is balance sheet?",
+    "a": "Financial statement showing assets, liabilities, equity",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 493,
+    "category": "MBA-FIN",
+    "q": "What is EBIT?",
+    "a": "Earnings Before Interest and Taxes",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 494,
+    "category": "MBA-FIN",
+    "q": "What is mutual fund?",
+    "a": "Investment vehicle pooling money from many investors",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 495,
+    "category": "MBA-FIN",
+    "q": "What is debt-equity ratio?",
+    "a": "Total Debt / Total Equity - measures financial leverage",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 496,
+    "category": "MBA-FIN",
+    "q": "What is liquidity?",
+    "a": "Ease of converting assets to cash",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 497,
+    "category": "MBA-FIN",
+    "q": "What is hedging?",
+    "a": "Risk management to offset potential losses",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 498,
+    "category": "MBA-FIN",
+    "q": "What is ROI?",
+    "a": "Return on Investment = (Gain - Cost) / Cost",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 499,
+    "category": "MBA-FIN",
+    "q": "What is depreciation?",
+    "a": "Reduction in value of asset over time",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 500,
+    "category": "MBA-FIN",
+    "q": "What is SEBI?",
+    "a": "Securities and Exchange Board of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 501,
+    "category": "MBA-FIN",
+    "q": "What is break-even point?",
+    "a": "Point where total cost equals total revenue",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 502,
+    "category": "MBA-FIN",
+    "q": "What is portfolio?",
+    "a": "Collection of financial investments",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 503,
+    "category": "MBA-FIN",
+    "q": "What is bull market?",
+    "a": "Market with rising prices and optimism",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 504,
+    "category": "MBA-FIN",
+    "q": "What is bear market?",
+    "a": "Market with falling prices and pessimism",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 505,
+    "category": "MBA-FIN",
+    "q": "What is equity?",
+    "a": "Ownership interest in company",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 506,
+    "category": "MBA-FIN",
+    "q": "What is cash flow statement?",
+    "a": "Shows cash inflows and outflows",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 507,
+    "category": "MBA-FIN",
+    "q": "What is bond?",
+    "a": "Debt instrument where investor loans money",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 508,
+    "category": "MBA-FIN",
+    "q": "What is P/E ratio?",
+    "a": "Price to Earnings Ratio = Share Price / EPS",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 509,
+    "category": "MBA-FIN",
+    "q": "What is diversification?",
+    "a": "Spreading investments to reduce risk",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 510,
+    "category": "MBA-FIN",
+    "q": "What is financial risk?",
+    "a": "Risk of losing money on investment",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 511,
+    "category": "MBA-FIN",
+    "q": "What is goodwill?",
+    "a": "Intangible asset - reputation, brand value",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 512,
+    "category": "MBA-FIN",
+    "q": "What is EBITDA?",
+    "a": "Earnings Before Interest, Taxes, Depreciation, Amortization",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 513,
+    "category": "MBA-FIN",
+    "q": "What is stock split?",
+    "a": "Increasing shares by dividing existing ones",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
   {
     "id": 514,
     "category": "MBA-FIN",
@@ -2224,4 +2522,29 @@
   },
   {
     "id": 528,
-    "category": "
+    "category": "MBA-FIN",
+    "q": "What is bankruptcy?",
+    "a": "Legal status when person/company cannot repay debts",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 529,
+    "category": "MBA-FIN",
+    "q": "What is asset allocation?",
+    "a": "Distributing investments among asset classes",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 530,
+    "category": "MBA-FIN",
+    "q": "What is opportunity cost?",
+    "a": "Value of next best alternative foregone",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  }
+]
