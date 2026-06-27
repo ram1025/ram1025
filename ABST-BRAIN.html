@@ -67,13 +67,13 @@
     <p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
   </div>
 
-  <!-- TRACK BUTTONS -->
+    <!-- TRACK BUTTONS -->
   <div class="mode-toggle">
     <button class="mode-btn" id="pillarsMode">🏛 36 PILLARS - 108</button>
     <button class="mode-btn" id="schoolMode" onclick="showSchoolList()">📚 SCHOOL - 280</button>
-    <button class="mode-btn" id="collegeMode">🎓 COLLEGE - 180</button>
+    <button class="mode-btn" id="collegeMode" onclick="showCollegeList()">🎓 COLLEGE - 250</button>
     <button class="mode-btn" id="competitiveMode" onclick="showCompetitiveList()">🏆 COMPETITIVE - 340</button>
-    <button class="mode-btn" id="otherMode" onclick="showOthersList()">📖 GK/PHD - 200</button>
+    <button class="mode-btn" id="otherMode" onclick="showOthersList()">📖 GK/PHD - 130</button>
   </div>
 
   <!-- SCHOOL SUB-LIST -->
@@ -97,6 +97,18 @@
     </div>
   </div>
 
+    <!-- COLLEGE SUB-LIST -->
+  <div id="collegeList" class="sub-list" style="display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40;">
+    <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT STREAM:</div>
+    <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:8px;">
+      <button class="sub-btn" onclick="selectTrack('DEGREE')">Degree</button>
+      <button class="sub-btn" onclick="selectTrack('ENGINEERING')">Engineering</button>
+      <button class="sub-btn" onclick="selectTrack('MBBS')">MBBS</button>
+      <button class="sub-btn" onclick="selectTrack('MBA-HR')">MBA-HR</button>
+      <button class="sub-btn" onclick="selectTrack('MBA-FIN')">MBA-FIN</button>
+    </div>
+  </div>
+  
   <!-- COMPETITIVE SUB-LIST -->
   <div id="competitiveList" class="sub-list" style="display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40;">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT EXAM:</div>
@@ -209,7 +221,7 @@
   try {
     // FIX: Anni buttons nundi active teesey
     document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-    
+
     // Current selected 2 buttons ke matrame active add chey
     document.getElementById(currentMode+'Mode')?.classList.add('active');
     document.getElementById(answerMode+'Mode')?.classList.add('active');
@@ -218,9 +230,9 @@
     let fileName = '';
     if(currentMode === 'pillars') fileName = '36-pillars-108.json';
     else if(currentMode === 'school') fileName = 'Education-school-280.json';
-    else if(currentMode === 'college') fileName = 'Education-college-180.json';
+    else if(currentMode === 'college') fileName = 'Education-college-250.json';
     else if(currentMode === 'competitive') fileName = 'Education-competitive-340.json';
-    else if(currentMode === 'other') fileName = 'Education-other-200.json';
+    else if(currentMode === 'other') fileName = 'Education-others-130.json';
 
     document.querySelector('.card-content').innerHTML = `<div class="loading">Loading ${fileName}...</div>`;
     const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${fileName}?v=${Date.now()}`;
@@ -241,7 +253,7 @@
     console.error(err);
     document.querySelector('.card-content').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check JSON file in GitHub repo</div>`;
   }
-}
+    }
 
     function initBrain() {
       matrix = matrix.map((c, i) => ({
