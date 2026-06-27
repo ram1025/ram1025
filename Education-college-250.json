@@ -1,0 +1,2227 @@
+[
+  {
+    "id": 281,
+    "category": "DEGREE",
+    "q": "What is the capital of Andhra Pradesh?",
+    "a": "Amaravati",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 282,
+    "category": "DEGREE",
+    "q": "Who is known as Father of Indian Constitution?",
+    "a": "Dr. B.R. Ambedkar",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 283,
+    "category": "DEGREE",
+    "q": "What is GDP?",
+    "a": "Gross Domestic Product",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 284,
+    "category": "DEGREE",
+    "q": "Largest planet in solar system?",
+    "a": "Jupiter",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 285,
+    "category": "DEGREE",
+    "q": "Who wrote 'Wings of Fire'?",
+    "a": "Dr. A.P.J. Abdul Kalam",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 286,
+    "category": "DEGREE",
+    "q": "Chemical formula of water?",
+    "a": "H2O",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 287,
+    "category": "DEGREE",
+    "q": "What is photosynthesis?",
+    "a": "Process by which plants make food using sunlight",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 288,
+    "category": "DEGREE",
+    "q": "Currency of Japan?",
+    "a": "Yen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 289,
+    "category": "DEGREE",
+    "q": "Who discovered gravity?",
+    "a": "Isaac Newton",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 290,
+    "category": "DEGREE",
+    "q": "What is the national animal of India?",
+    "a": "Bengal Tiger",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 291,
+    "category": "DEGREE",
+    "q": "Speed of light?",
+    "a": "3 × 10^8 m/s",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 292,
+    "category": "DEGREE",
+    "q": "What is democracy?",
+    "a": "Government by the people, for the people",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 293,
+    "category": "DEGREE",
+    "q": "Largest ocean on Earth?",
+    "a": "Pacific Ocean",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 294,
+    "category": "DEGREE",
+    "q": "Who invented telephone?",
+    "a": "Alexander Graham Bell",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 295,
+    "category": "DEGREE",
+    "q": "What is inflation?",
+    "a": "General increase in prices of goods and services",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 296,
+    "category": "DEGREE",
+    "q": "Smallest country in the world?",
+    "a": "Vatican City",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 297,
+    "category": "DEGREE",
+    "q": "What is HDI?",
+    "a": "Human Development Index",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 298,
+    "category": "DEGREE",
+    "q": "First Prime Minister of India?",
+    "a": "Jawaharlal Nehru",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 299,
+    "category": "DEGREE",
+    "q": "What is osmosis?",
+    "a": "Movement of water across semi-permeable membrane",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 300,
+    "category": "DEGREE",
+    "q": "National flower of India?",
+    "a": "Lotus",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 301,
+    "category": "DEGREE",
+    "q": "What is WTO?",
+    "a": "World Trade Organization",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 302,
+    "category": "DEGREE",
+    "q": "Longest river in India?",
+    "a": "Ganga",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 303,
+    "category": "DEGREE",
+    "q": "What is acid rain?",
+    "a": "Rain with high levels of sulfuric/nitric acid",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 304,
+    "category": "DEGREE",
+    "q": "Who is RBI Governor as of 2026?",
+    "a": "Check current RBI website for latest",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 305,
+    "category": "DEGREE",
+    "q": "What is monopoly?",
+    "a": "Market with single seller",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 306,
+    "category": "DEGREE",
+    "q": "Highest mountain peak?",
+    "a": "Mount Everest",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 307,
+    "category": "DEGREE",
+    "q": "What is greenhouse effect?",
+    "a": "Trapping of heat by greenhouse gases",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 308,
+    "category": "DEGREE",
+    "q": "Father of Economics?",
+    "a": "Adam Smith",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 309,
+    "category": "DEGREE",
+    "q": "What is DNA full form?",
+    "a": "Deoxyribonucleic Acid",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 310,
+    "category": "DEGREE",
+    "q": "National bird of India?",
+    "a": "Peacock",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 311,
+    "category": "DEGREE",
+    "q": "What is GST?",
+    "a": "Goods and Services Tax",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 312,
+    "category": "DEGREE",
+    "q": "Which gas do plants absorb?",
+    "a": "Carbon Dioxide",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 313,
+    "category": "DEGREE",
+    "q": "What is UNESCO?",
+    "a": "United Nations Educational Scientific Cultural Organization",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 314,
+    "category": "DEGREE",
+    "q": "Largest desert in the world?",
+    "a": "Sahara Desert",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 315,
+    "category": "DEGREE",
+    "q": "What is fiscal deficit?",
+    "a": "Excess of govt expenditure over revenue",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 316,
+    "category": "DEGREE",
+    "q": "Who painted Mona Lisa?",
+    "a": "Leonardo da Vinci",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 317,
+    "category": "DEGREE",
+    "q": "What is biodiversity?",
+    "a": "Variety of life on Earth",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 318,
+    "category": "DEGREE",
+    "q": "National sport of India?",
+    "a": "Hockey",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 319,
+    "category": "DEGREE",
+    "q": "What is NITI Aayog?",
+    "a": "National Institution for Transforming India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 320,
+    "category": "DEGREE",
+    "q": "Hardest natural substance?",
+    "a": "Diamond",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 321,
+    "category": "DEGREE",
+    "q": "What is global warming?",
+    "a": "Long-term rise in Earth's temperature",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 322,
+    "category": "DEGREE",
+    "q": "Who is known as Iron Man of India?",
+    "a": "Sardar Vallabhbhai Patel",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 323,
+    "category": "DEGREE",
+    "q": "What is FDI?",
+    "a": "Foreign Direct Investment",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 324,
+    "category": "DEGREE",
+    "q": "Largest state in India by area?",
+    "a": "Rajasthan",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 325,
+    "category": "DEGREE",
+    "q": "What is sustainable development?",
+    "a": "Development meeting present needs without compromising future",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 326,
+    "category": "DEGREE",
+    "q": "Who invented computer?",
+    "a": "Charles Babbage",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 327,
+    "category": "DEGREE",
+    "q": "What is IMF?",
+    "a": "International Monetary Fund",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 328,
+    "category": "DEGREE",
+    "q": "Smallest planet in solar system?",
+    "a": "Mercury",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 329,
+    "category": "DEGREE",
+    "q": "What is Article 370?",
+    "a": "Special status to J&K - now revoked",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 330,
+    "category": "DEGREE",
+    "q": "Who is Miss World 2024?",
+    "a": "Check latest for 2026",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 331,
+    "category": "ENG",
+    "q": "What is Ohm's Law?",
+    "a": "V = IR, Voltage = Current × Resistance",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 332,
+    "category": "ENG",
+    "q": "SI unit of force?",
+    "a": "Newton (N)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 333,
+    "category": "ENG",
+    "q": "What does CPU stand for?",
+    "a": "Central Processing Unit",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 334,
+    "category": "ENG",
+    "q": "Formula for kinetic energy?",
+    "a": "KE = 1/2 mv²",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 335,
+    "category": "ENG",
+    "q": "What is binary number system base?",
+    "a": "2",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 336,
+    "category": "ENG",
+    "q": "Unit of electrical resistance?",
+    "a": "Ohm (Ω)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 337,
+    "category": "ENG",
+    "q": "What is CAD?",
+    "a": "Computer Aided Design",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 338,
+    "category": "ENG",
+    "q": "First law of thermodynamics?",
+    "a": "Energy cannot be created or destroyed",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 339,
+    "category": "ENG",
+    "q": "What is RAM?",
+    "a": "Random Access Memory",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 340,
+    "category": "ENG",
+    "q": "Unit of frequency?",
+    "a": "Hertz (Hz)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 341,
+    "category": "ENG",
+    "q": "What is HTML?",
+    "a": "HyperText Markup Language",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 342,
+    "category": "ENG",
+    "q": "Bernoulli's principle is used in?",
+    "a": "Airplane wings, fluid dynamics",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 343,
+    "category": "ENG",
+    "q": "What is IC?",
+    "a": "Integrated Circuit",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 344,
+    "category": "ENG",
+    "q": "Unit of power?",
+    "a": "Watt (W)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 345,
+    "category": "ENG",
+    "q": "What is SQL?",
+    "a": "Structured Query Language",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 346,
+    "category": "ENG",
+    "q": "Hooke's Law states?",
+    "a": "F = -kx, Force is proportional to extension",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 347,
+    "category": "ENG",
+    "q": "What is bandwidth?",
+    "a": "Data transfer capacity of a network",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 348,
+    "category": "ENG",
+    "q": "Unit of electric current?",
+    "a": "Ampere (A)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 349,
+    "category": "ENG",
+    "q": "What is CPU clock speed measured in?",
+    "a": "GHz - Gigahertz",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 350,
+    "category": "ENG",
+    "q": "Newton's second law?",
+    "a": "F = ma, Force = Mass × Acceleration",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 351,
+    "category": "ENG",
+    "q": "What is HTTP?",
+    "a": "HyperText Transfer Protocol",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 352,
+    "category": "ENG",
+    "q": "Unit of work?",
+    "a": "Joule (J)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 353,
+    "category": "ENG",
+    "q": "What is algorithm?",
+    "a": "Step-by-step procedure to solve a problem",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 354,
+    "category": "ENG",
+    "q": "Faraday's law is related to?",
+    "a": "Electromagnetic induction",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 355,
+    "category": "ENG",
+    "q": "What is ROM?",
+    "a": "Read Only Memory",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 356,
+    "category": "ENG",
+    "q": "Unit of capacitance?",
+    "a": "Farad (F)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 357,
+    "category": "ENG",
+    "q": "What is API?",
+    "a": "Application Programming Interface",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 358,
+    "category": "ENG",
+    "q": "Archimedes principle is about?",
+    "a": "Buoyancy, upward force on submerged object",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 359,
+    "category": "ENG",
+    "q": "What is IP address?",
+    "a": "Internet Protocol address, unique device identifier",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 360,
+    "category": "ENG",
+    "q": "Unit of magnetic field?",
+    "a": "Tesla (T)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 361,
+    "category": "ENG",
+    "q": "What is compiler?",
+    "a": "Translates high-level code to machine code",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 362,
+    "category": "ENG",
+    "q": "Kirchhoff's current law states?",
+    "a": "Sum of currents at a node is zero",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 363,
+    "category": "ENG",
+    "q": "What is URL?",
+    "a": "Uniform Resource Locator",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 364,
+    "category": "ENG",
+    "q": "Unit of inductance?",
+    "a": "Henry (H)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 365,
+    "category": "ENG",
+    "q": "What is OS?",
+    "a": "Operating System",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 366,
+    "category": "ENG",
+    "q": "Pascal's law is used in?",
+    "a": "Hydraulic press, hydraulic brakes",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 367,
+    "category": "ENG",
+    "q": "What is firewall?",
+    "a": "Network security system",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 368,
+    "category": "ENG",
+    "q": "Unit of electric charge?",
+    "a": "Coulomb (C)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 369,
+    "category": "ENG",
+    "q": "What is DNS?",
+    "a": "Domain Name System",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 370,
+    "category": "ENG",
+    "q": "Boyle's law states?",
+    "a": "P ∝ 1/V at constant temperature",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 371,
+    "category": "ENG",
+    "q": "What is VPN?",
+    "a": "Virtual Private Network",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 372,
+    "category": "ENG",
+    "q": "Unit of luminous intensity?",
+    "a": "Candela (cd)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 373,
+    "category": "ENG",
+    "q": "What is CSS?",
+    "a": "Cascading Style Sheets",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 374,
+    "category": "ENG",
+    "q": "Coulomb's law is about?",
+    "a": "Force between electric charges",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 375,
+    "category": "ENG",
+    "q": "What is SSD?",
+    "a": "Solid State Drive",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 376,
+    "category": "ENG",
+    "q": "Unit of angular velocity?",
+    "a": "radian/second",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 377,
+    "category": "ENG",
+    "q": "What is IoT?",
+    "a": "Internet of Things",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 378,
+    "category": "ENG",
+    "q": "Lenz's law states?",
+    "a": "Induced current opposes the change causing it",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 379,
+    "category": "ENG",
+    "q": "What is GPU?",
+    "a": "Graphics Processing Unit",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 380,
+    "category": "ENG",
+    "q": "Unit of pressure?",
+    "a": "Pascal (Pa)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 381,
+    "category": "MBBS",
+    "q": "How many chambers in human heart?",
+    "a": "4 - Two atria and two ventricles",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 382,
+    "category": "MBBS",
+    "q": "Normal human body temperature?",
+    "a": "98.6°F or 37°C",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 383,
+    "category": "MBBS",
+    "q": "Largest organ in human body?",
+    "a": "Skin",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 384,
+    "category": "MBBS",
+    "q": "How many bones in adult human body?",
+    "a": "206",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 385,
+    "category": "MBBS",
+    "q": "What is the universal blood donor type?",
+    "a": "O Negative",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 386,
+    "category": "MBBS",
+    "q": "Function of red blood cells?",
+    "a": "Carry oxygen using hemoglobin",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 387,
+    "category": "MBBS",
+    "q": "What is normal blood pressure?",
+    "a": "120/80 mmHg",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 388,
+    "category": "MBBS",
+    "q": "Which vitamin is produced in skin by sunlight?",
+    "a": "Vitamin D",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 389,
+    "category": "MBBS",
+    "q": "What is ECG?",
+    "a": "Electrocardiogram - records heart electrical activity",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 390,
+    "category": "MBBS",
+    "q": "Smallest bone in human body?",
+    "a": "Stapes in ear",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 391,
+    "category": "MBBS",
+    "q": "What is diabetes?",
+    "a": "High blood sugar due to insulin issues",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 392,
+    "category": "MBBS",
+    "q": "Function of liver?",
+    "a": "Detoxification, protein synthesis, bile production",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 393,
+    "category": "MBBS",
+    "q": "What is anemia?",
+    "a": "Low red blood cells or hemoglobin",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 394,
+    "category": "MBBS",
+    "q": "How many pairs of ribs?",
+    "a": "12 pairs",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 395,
+    "category": "MBBS",
+    "q": "What is BMI?",
+    "a": "Body Mass Index = weight(kg)/height(m)²",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 396,
+    "category": "MBBS",
+    "q": "Function of kidneys?",
+    "a": "Filter blood, remove waste, urine formation",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 397,
+    "category": "MBBS",
+    "q": "What is hypertension?",
+    "a": "High blood pressure",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 398,
+    "category": "MBBS",
+    "q": "Longest bone in human body?",
+    "a": "Femur - thigh bone",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 399,
+    "category": "MBBS",
+    "q": "What is MRI?",
+    "a": "Magnetic Resonance Imaging",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 400,
+    "category": "MBBS",
+    "q": "Which blood group is universal recipient?",
+    "a": "AB Positive",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 401,
+    "category": "MBBS",
+    "q": "What is pneumonia?",
+    "a": "Lung infection causing inflammation",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 402,
+    "category": "MBBS",
+    "q": "Function of pancreas?",
+    "a": "Produces insulin and digestive enzymes",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 403,
+    "category": "MBBS",
+    "q": "What is jaundice?",
+    "a": "Yellow discoloration due to bilirubin buildup",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 404,
+    "category": "MBBS",
+    "q": "How many teeth in adult human?",
+    "a": "32",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 405,
+    "category": "MBBS",
+    "q": "What is CBC test?",
+    "a": "Complete Blood Count",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 406,
+    "category": "MBBS",
+    "q": "Function of white blood cells?",
+    "a": "Fight infection, immunity",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 407,
+    "category": "MBBS",
+    "q": "What is stroke?",
+    "a": "Brain damage due to blocked blood flow",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 408,
+    "category": "MBBS",
+    "q": "Strongest muscle in human body?",
+    "a": "Masseter - jaw muscle",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 409,
+    "category": "MBBS",
+    "q": "What is CT scan?",
+    "a": "Computed Tomography - X-ray images",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 410,
+    "category": "MBBS",
+    "q": "Normal heart rate for adults?",
+    "a": "60-100 beats per minute",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 411,
+    "category": "MBBS",
+    "q": "What is asthma?",
+    "a": "Chronic airway inflammation causing breathing difficulty",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 412,
+    "category": "MBBS",
+    "q": "Function of spleen?",
+    "a": "Filters blood, immune response",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 413,
+    "category": "MBBS",
+    "q": "What is osteoporosis?",
+    "a": "Weak, brittle bones",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 414,
+    "category": "MBBS",
+    "q": "How many vertebrae in spine?",
+    "a": "33 - 7 cervical, 12 thoracic, 5 lumbar, 5 sacral, 4 coccygeal",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 415,
+    "category": "MBBS",
+    "q": "What is hemoglobin?",
+    "a": "Protein in RBCs that carries oxygen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 416,
+    "category": "MBBS",
+    "q": "Function of thyroid gland?",
+    "a": "Regulates metabolism via hormones",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 417,
+    "category": "MBBS",
+    "q": "What is appendicitis?",
+    "a": "Inflammation of appendix",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 418,
+    "category": "MBBS",
+    "q": "Normal respiratory rate for adults?",
+    "a": "12-20 breaths per minute",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 419,
+    "category": "MBBS",
+    "q": "What is dialysis?",
+    "a": "Artificial kidney function for kidney failure patients",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 420,
+    "category": "MBBS",
+    "q": "Function of platelets?",
+    "a": "Blood clotting",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 421,
+    "category": "MBBS",
+    "q": "What is arthritis?",
+    "a": "Joint inflammation causing pain",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 422,
+    "category": "MBBS",
+    "q": "Largest artery in human body?",
+    "a": "Aorta",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 423,
+    "category": "MBBS",
+    "q": "What is ECG normal interval PR?",
+    "a": "0.12-0.20 seconds",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 424,
+    "category": "MBBS",
+    "q": "Function of lungs?",
+    "a": "Gas exchange - oxygen in, CO2 out",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 425,
+    "category": "MBBS",
+    "q": "What is glaucoma?",
+    "a": "Eye disease damaging optic nerve, high eye pressure",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 426,
+    "category": "MBBS",
+    "q": "How many lobes in human brain?",
+    "a": "4 - Frontal, Parietal, Temporal, Occipital",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 427,
+    "category": "MBBS",
+    "q": "What is insulin?",
+    "a": "Hormone that regulates blood sugar",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 428,
+    "category": "MBBS",
+    "q": "Function of small intestine?",
+    "a": "Nutrient absorption",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 429,
+    "category": "MBBS",
+    "q": "What is cataract?",
+    "a": "Clouding of eye lens",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 430,
+    "category": "MBBS",
+    "q": "Normal blood sugar fasting?",
+    "a": "70-100 mg/dL",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 431,
+    "category": "MBA-HR",
+    "q": "What is HRM?",
+    "a": "Human Resource Management - managing people in organization",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 432,
+    "category": "MBA-HR",
+    "q": "Maslow's hierarchy highest need?",
+    "a": "Self-actualization",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 433,
+    "category": "MBA-HR",
+    "q": "What is attrition?",
+    "a": "Employee turnover - reduction in staff due to resignation/retirement",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 434,
+    "category": "MBA-HR",
+    "q": "What is recruitment?",
+    "a": "Process of attracting and selecting candidates for jobs",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 435,
+    "category": "MBA-HR",
+    "q": "What is job analysis?",
+    "a": "Systematic study of job duties and requirements",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 436,
+    "category": "MBA-HR",
+    "q": "Herzberg's two-factor theory?",
+    "a": "Hygiene factors and Motivators affect job satisfaction",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 437,
+    "category": "MBA-HR",
+    "q": "What is performance appraisal?",
+    "a": "Evaluation of employee job performance",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 438,
+    "category": "MBA-HR",
+    "q": "What is training?",
+    "a": "Process of teaching skills for specific job",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 439,
+    "category": "MBA-HR",
+    "q": "What is onboarding?",
+    "a": "Integrating new employees into organization",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 440,
+    "category": "MBA-HR",
+    "q": "What is 360-degree feedback?",
+    "a": "Performance review from peers, subordinates, supervisors",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 441,
+    "category": "MBA-HR",
+    "q": "What is employee engagement?",
+    "a": "Emotional commitment of employee to organization",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 442,
+    "category": "MBA-HR",
+    "q": "What is compensation?",
+    "a": "Total monetary and non-monetary rewards for employees",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 443,
+    "category": "MBA-HR",
+    "q": "What is KRA?",
+    "a": "Key Result Area - critical outcomes for job role",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 444,
+    "category": "MBA-HR",
+    "q": "What is succession planning?",
+    "a": "Identifying and developing future leaders",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 445,
+    "category": "MBA-HR",
+    "q": "What is job rotation?",
+    "a": "Moving employees between different jobs",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 446,
+    "category": "MBA-HR",
+    "q": "What is grievance?",
+    "a": "Employee complaint about work conditions",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 447,
+    "category": "MBA-HR",
+    "q": "What is organizational culture?",
+    "a": "Shared values, beliefs, behaviors in company",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 448,
+    "category": "MBA-HR",
+    "q": "What is TNA?",
+    "a": "Training Needs Analysis",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 449,
+    "category": "MBA-HR",
+    "q": "What is collective bargaining?",
+    "a": "Negotiation between employer and employee union",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 450,
+    "category": "MBA-HR",
+    "q": "What is talent acquisition?",
+    "a": "Strategic process of finding skilled candidates",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 451,
+    "category": "MBA-HR",
+    "q": "What is KPI?",
+    "a": "Key Performance Indicator - measurable value of success",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 452,
+    "category": "MBA-HR",
+    "q": "What is job description?",
+    "a": "Document outlining job roles and responsibilities",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 453,
+    "category": "MBA-HR",
+    "q": "What is diversity in workplace?",
+    "a": "Inclusion of people from different backgrounds",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 454,
+    "category": "MBA-HR",
+    "q": "What is layoff?",
+    "a": "Temporary or permanent termination due to business needs",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 455,
+    "category": "MBA-HR",
+    "q": "What is mentoring?",
+    "a": "Guidance by experienced person to junior",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 456,
+    "category": "MBA-HR",
+    "q": "What is POSH Act?",
+    "a": "Prevention of Sexual Harassment at Workplace Act",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 457,
+    "category": "MBA-HR",
+    "q": "What is job enrichment?",
+    "a": "Adding motivators to make job more rewarding",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 458,
+    "category": "MBA-HR",
+    "q": "What is absenteeism?",
+    "a": "Frequent absence from work without good reason",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 459,
+    "category": "MBA-HR",
+    "q": "What is HR audit?",
+    "a": "Systematic review of HR policies and practices",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 460,
+    "category": "MBA-HR",
+    "q": "What is ESOP?",
+    "a": "Employee Stock Ownership Plan",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 461,
+    "category": "MBA-HR",
+    "q": "What is leadership?",
+    "a": "Ability to influence and guide others",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 462,
+    "category": "MBA-HR",
+    "q": "What is job specification?",
+    "a": "Qualifications, skills needed for job",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 463,
+    "category": "MBA-HR",
+    "q": "What is PF?",
+    "a": "Provident Fund - retirement savings scheme",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 464,
+    "category": "MBA-HR",
+    "q": "What is exit interview?",
+    "a": "Interview conducted when employee leaves",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 465,
+    "category": "MBA-HR",
+    "q": "What is work-life balance?",
+    "a": "Equilibrium between work and personal life",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 466,
+    "category": "MBA-HR",
+    "q": "What is MBO?",
+    "a": "Management By Objectives",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 467,
+    "category": "MBA-HR",
+    "q": "What is induction?",
+    "a": "Introduction program for new employees",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 468,
+    "category": "MBA-HR",
+    "q": "What is conflict resolution?",
+    "a": "Process of resolving disputes at workplace",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 469,
+    "category": "MBA-HR",
+    "q": "What is CTC?",
+    "a": "Cost To Company - total employee expense",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 470,
+    "category": "MBA-HR",
+    "q": "What is job enlargement?",
+    "a": "Adding more tasks at same level",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 471,
+    "category": "MBA-HR",
+    "q": "What is HRIS?",
+    "a": "Human Resource Information System",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 472,
+    "category": "MBA-HR",
+    "q": "What is probation period?",
+    "a": "Trial period for new employees",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 473,
+    "category": "MBA-HR",
+    "q": "What is downsizing?",
+    "a": "Reducing workforce to cut costs",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 474,
+    "category": "MBA-HR",
+    "q": "What is team building?",
+    "a": "Activities to improve team performance",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 475,
+    "category": "MBA-HR",
+    "q": "What is ESI?",
+    "a": "Employee State Insurance",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 476,
+    "category": "MBA-HR",
+    "q": "What is career planning?",
+    "a": "Process of setting career goals and path",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 477,
+    "category": "MBA-HR",
+    "q": "What is incentive?",
+    "a": "Additional reward for performance",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 478,
+    "category": "MBA-HR",
+    "q": "What is job satisfaction?",
+    "a": "Contentment with job and work environment",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 479,
+    "category": "MBA-HR",
+    "q": "What is outplacement?",
+    "a": "Service helping laid-off employees find new jobs",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 480,
+    "category": "MBA-HR",
+    "q": "What is human capital?",
+    "a": "Skills, knowledge, experience of employees",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 481,
+    "category": "MBA-FIN",
+    "q": "What is capital budgeting?",
+    "a": "Process of evaluating long-term investment decisions",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 482,
+    "category": "MBA-FIN",
+    "q": "What is NPV?",
+    "a": "Net Present Value - present value of cash inflows minus outflows",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 483,
+    "category": "MBA-FIN",
+    "q": "What is IRR?",
+    "a": "Internal Rate of Return - discount rate making NPV zero",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 484,
+    "category": "MBA-FIN",
+    "q": "What is working capital?",
+    "a": "Current Assets - Current Liabilities",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 485,
+    "category": "MBA-FIN",
+    "q": "What is ROE?",
+    "a": "Return on Equity = Net Income / Shareholder's Equity",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 486,
+    "category": "MBA-FIN",
+    "q": "What is CAPM?",
+    "a": "Capital Asset Pricing Model - relates risk and expected return",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 487,
+    "category": "MBA-FIN",
+    "q": "What is beta in finance?",
+    "a": "Measure of stock volatility relative to market",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 488,
+    "category": "MBA-FIN",
+    "q": "What is dividend?",
+    "a": "Portion of profit distributed to shareholders",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 489,
+    "category": "MBA-FIN",
+    "q": "What is IPO?",
+    "a": "Initial Public Offering - first sale of stock to public",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 490,
+    "category": "MBA-FIN",
+    "q": "What is WACC?",
+    "a": "Weighted Average Cost of Capital",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 491,
+    "category": "MBA-FIN",
+    "q": "What is leverage?",
+    "a": "Use of debt to increase potential return",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 492,
+    "category": "MBA-FIN",
+    "q": "What is balance sheet?",
+    "a": "Financial statement showing assets, liabilities, equity",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 493,
+    "category": "MBA-FIN",
+    "q": "What is EBIT?",
+    "a": "Earnings Before Interest and Taxes",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 494,
+    "category": "MBA-FIN",
+    "q": "What is mutual fund?",
+    "a": "Investment vehicle pooling money from many investors",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 495,
+    "category": "MBA-FIN",
+    "q": "What is debt-equity ratio?",
+    "a": "Total Debt / Total Equity - measures financial leverage",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 496,
+    "category": "MBA-FIN",
+    "q": "What is liquidity?",
+    "a": "Ease of converting assets to cash",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 497,
+    "category": "MBA-FIN",
+    "q": "What is hedging?",
+    "a": "Risk management to offset potential losses",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 498,
+    "category": "MBA-FIN",
+    "q": "What is ROI?",
+    "a": "Return on Investment = (Gain - Cost) / Cost",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 499,
+    "category": "MBA-FIN",
+    "q": "What is depreciation?",
+    "a": "Reduction in value of asset over time",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 500,
+    "category": "MBA-FIN",
+    "q": "What is SEBI?",
+    "a": "Securities and Exchange Board of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 501,
+    "category": "MBA-FIN",
+    "q": "What is break-even point?",
+    "a": "Point where total cost equals total revenue",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 502,
+    "category": "MBA-FIN",
+    "q": "What is portfolio?",
+    "a": "Collection of financial investments",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 503,
+    "category": "MBA-FIN",
+    "q": "What is bull market?",
+    "a": "Market with rising prices and optimism",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 504,
+    "category": "MBA-FIN",
+    "q": "What is bear market?",
+    "a": "Market with falling prices and pessimism",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 505,
+    "category": "MBA-FIN",
+    "q": "What is equity?",
+    "a": "Ownership interest in company",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 506,
+    "category": "MBA-FIN",
+    "q": "What is cash flow statement?",
+    "a": "Shows cash inflows and outflows",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 507,
+    "category": "MBA-FIN",
+    "q": "What is bond?",
+    "a": "Debt instrument where investor loans money",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 508,
+    "category": "MBA-FIN",
+    "q": "What is P/E ratio?",
+    "a": "Price to Earnings Ratio = Share Price / EPS",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 509,
+    "category": "MBA-FIN",
+    "q": "What is diversification?",
+    "a": "Spreading investments to reduce risk",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 510,
+    "category": "MBA-FIN",
+    "q": "What is financial risk?",
+    "a": "Risk of losing money on investment",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 511,
+    "category": "MBA-FIN",
+    "q": "What is goodwill?",
+    "a": "Intangible asset - reputation, brand value",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 512,
+    "category": "MBA-FIN",
+    "q": "What is EBITDA?",
+    "a": "Earnings Before Interest, Taxes, Depreciation, Amortization",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 513,
+    "category": "MBA-FIN",
+    "q": "What is stock split?",
+    "a": "Increasing shares by dividing existing ones",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 514,
+    "category": "MBA-FIN",
+    "q": "What is merger?",
+    "a": "Combining two companies into one",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 515,
+    "category": "MBA-FIN",
+    "q": "What is acquisition?",
+    "a": "One company buying another company",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 516,
+    "category": "MBA-FIN",
+    "q": "What is credit rating?",
+    "a": "Assessment of borrower's creditworthiness",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 517,
+    "category": "MBA-FIN",
+    "q": "What is time value of money?",
+    "a": "Money today is worth more than same amount in future",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 518,
+    "category": "MBA-FIN",
+    "q": "What is annuity?",
+    "a": "Series of equal payments at regular intervals",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 519,
+    "category": "MBA-FIN",
+    "q": "What is derivative?",
+    "a": "Financial contract whose value depends on underlying asset",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 520,
+    "category": "MBA-FIN",
+    "q": "What is NPA?",
+    "a": "Non-Performing Asset - loan not repaid",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 521,
+    "category": "MBA-FIN",
+    "q": "What is forex?",
+    "a": "Foreign Exchange - trading currencies",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 522,
+    "category": "MBA-FIN",
+    "q": "What is current ratio?",
+    "a": "Current Assets / Current Liabilities",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 523,
+    "category": "MBA-FIN",
+    "q": "What is book value?",
+    "a": "Value of asset as per balance sheet",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 524,
+    "category": "MBA-FIN",
+    "q": "What is market capitalization?",
+    "a": "Share Price × Total Outstanding Shares",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 525,
+    "category": "MBA-FIN",
+    "q": "What is fiscal policy?",
+    "a": "Government policy on taxation and spending",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 526,
+    "category": "MBA-FIN",
+    "q": "What is monetary policy?",
+    "a": "RBI policy to control money supply and interest rates",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 527,
+    "category": "MBA-FIN",
+    "q": "What is yield?",
+    "a": "Income return on investment",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 528,
+    "category": "
