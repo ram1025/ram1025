@@ -1,0 +1,1173 @@
+[
+  {
+    "id": 871,
+    "category": "GK",
+    "q": "Who is the current President of India?",
+    "a": "Droupadi Murmu",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 872,
+    "category": "GK",
+    "q": "Who is the current Prime Minister of India?",
+    "a": "Narendra Modi",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 873,
+    "category": "GK",
+    "q": "Capital of Telangana?",
+    "a": "Hyderabad",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 874,
+    "category": "GK",
+    "q": "Capital of Andhra Pradesh?",
+    "a": "Amaravati",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 875,
+    "category": "GK",
+    "q": "Which is the largest ocean?",
+    "a": "Pacific Ocean",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 876,
+    "category": "GK",
+    "q": "Which is the smallest country?",
+    "a": "Vatican City",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 877,
+    "category": "GK",
+    "q": "Which is the largest country by area?",
+    "a": "Russia",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 878,
+    "category": "GK",
+    "q": "Which is the most populous country?",
+    "a": "India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 879,
+    "category": "GK",
+    "q": "How many continents are there?",
+    "a": "7",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 880,
+    "category": "GK",
+    "q": "Longest wall in the world?",
+    "a": "Great Wall of China",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 881,
+    "category": "GK",
+    "q": "Tallest building in the world?",
+    "a": "Burj Khalifa - Dubai",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 882,
+    "category": "GK",
+    "q": "Which city is called Silicon Valley of India?",
+    "a": "Bengaluru",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 883,
+    "category": "GK",
+    "q": "Which city is called Pink City?",
+    "a": "Jaipur",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 884,
+    "category": "GK",
+    "q": "Which city is called City of Joy?",
+    "a": "Kolkata",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 885,
+    "category": "GK",
+    "q": "Who invented telephone?",
+    "a": "Alexander Graham Bell",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 886,
+    "category": "GK",
+    "q": "Who invented light bulb?",
+    "a": "Thomas Edison",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 887,
+    "category": "GK",
+    "q": "Who discovered gravity?",
+    "a": "Isaac Newton",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 888,
+    "category": "GK",
+    "q": "Father of Nation?",
+    "a": "Mahatma Gandhi",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 889,
+    "category": "GK",
+    "q": "Who gave 'Jai Jawan Jai Kisan' slogan?",
+    "a": "Lal Bahadur Shastri",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 890,
+    "category": "GK",
+    "q": "Who wrote 'Vande Mataram'?",
+    "a": "Bankim Chandra Chatterjee",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 891,
+    "category": "GK",
+    "q": "National Song of India?",
+    "a": "Vande Mataram",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 892,
+    "category": "GK",
+    "q": "National Anthem duration?",
+    "a": "52 seconds",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 893,
+    "category": "GK",
+    "q": "How many colors in Indian flag?",
+    "a": "4 - Saffron, White, Green, Navy Blue Ashoka Chakra",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 894,
+    "category": "GK",
+    "q": "How many spokes in Ashoka Chakra?",
+    "a": "24",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 895,
+    "category": "GK",
+    "q": "When is Independence Day?",
+    "a": "15th August",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 896,
+    "category": "GK",
+    "q": "When is Republic Day?",
+    "a": "26th January",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 897,
+    "category": "GK",
+    "q": "When is Gandhi Jayanti?",
+    "a": "2nd October",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 898,
+    "category": "GK",
+    "q": "First man to walk on Moon?",
+    "a": "Neil Armstrong",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 899,
+    "category": "GK",
+    "q": "First Indian in space?",
+    "a": "Rakesh Sharma",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 900,
+    "category": "GK",
+    "q": "First woman in space?",
+    "a": "Valentina Tereshkova",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 901,
+    "category": "GK",
+    "q": "ISRO full form?",
+    "a": "Indian Space Research Organisation",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 902,
+    "category": "GK",
+    "q": "ISRO headquarters?",
+    "a": "Bengaluru",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 903,
+    "category": "GK",
+    "q": "First satellite of India?",
+    "a": "Aryabhata - 1975",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 904,
+    "category": "GK",
+    "q": "Chandrayaan-3 landing date?",
+    "a": "23 August 2023",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 905,
+    "category": "GK",
+    "q": "Mangalyaan launch year?",
+    "a": "2013",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 906,
+    "category": "GK",
+    "q": "Currency of USA?",
+    "a": "US Dollar",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 907,
+    "category": "GK",
+    "q": "Currency of UK?",
+    "a": "Pound Sterling",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 908,
+    "category": "GK",
+    "q": "Currency of China?",
+    "a": "Yuan or Renminbi",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 909,
+    "category": "GK",
+    "q": "Currency of UAE?",
+    "a": "Dirham",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 910,
+    "category": "GK",
+    "q": "How many players in football team?",
+    "a": "11",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 911,
+    "category": "GK",
+    "q": "How many players in basketball team?",
+    "a": "5",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 912,
+    "category": "GK",
+    "q": "Olympics held every?",
+    "a": "4 years",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 913,
+    "category": "GK",
+    "q": "FIFA World Cup held every?",
+    "a": "4 years",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 914,
+    "category": "GK",
+    "q": "Who is Sachin Tendulkar?",
+    "a": "Cricket legend - Master Blaster",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 915,
+    "category": "GK",
+    "q": "National Sport of India?",
+    "a": "Hockey",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 916,
+    "category": "GK",
+    "q": "Which gas do plants absorb?",
+    "a": "Carbon Dioxide",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 917,
+    "category": "GK",
+    "q": "Which gas do plants release?",
+    "a": "Oxygen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 918,
+    "category": "GK",
+    "q": "Which is the largest desert?",
+    "a": "Sahara Desert",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 919,
+    "category": "GK",
+    "q": "Which is the longest river?",
+    "a": "Nile River",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 920,
+    "category": "GK",
+    "q": "Which is the highest mountain?",
+    "a": "Mount Everest",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 921,
+    "category": "GK",
+    "q": "How many bones in human body?",
+    "a": "206",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 922,
+    "category": "GK",
+    "q": "Largest organ in human body?",
+    "a": "Skin",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 923,
+    "category": "GK",
+    "q": "Hardest substance in human body?",
+    "a": "Tooth Enamel",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 924,
+    "category": "GK",
+    "q": "Which vitamin is from sunlight?",
+    "a": "Vitamin D",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 925,
+    "category": "GK",
+    "q": "Water freezes at?",
+    "a": "0°C or 32°F",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 926,
+    "category": "GK",
+    "q": "Water boils at?",
+    "a": "100°C or 212°F",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 927,
+    "category": "GK",
+    "q": "How many minutes in a day?",
+    "a": "1440",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 928,
+    "category": "GK",
+    "q": "How many seconds in a day?",
+    "a": "86400",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 929,
+    "category": "GK",
+    "q": "Leap year comes every?",
+    "a": "4 years",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 930,
+    "category": "GK",
+    "q": "How many days in leap year?",
+    "a": "366",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 931,
+    "category": "GK",
+    "q": "Who is CEO of Google?",
+    "a": "Sundar Pichai",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 932,
+    "category": "GK",
+    "q": "Who founded Facebook?",
+    "a": "Mark Zuckerberg",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 933,
+    "category": "GK",
+    "q": "Who founded Tesla?",
+    "a": "Elon Musk",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 934,
+    "category": "GK",
+    "q": "What is WWW?",
+    "a": "World Wide Web",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 935,
+    "category": "GK",
+    "q": "What is AI?",
+    "a": "Artificial Intelligence",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  [
+  {
+    "id": 936,
+    "category": "PHD",
+    "q": "What is a PhD?",
+    "a": "Doctor of Philosophy - highest academic degree",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 937,
+    "category": "PHD",
+    "q": "What is thesis?",
+    "a": "Long research document submitted for PhD",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 938,
+    "category": "PHD",
+    "q": "What is dissertation?",
+    "a": "Formal research paper for doctoral degree",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 939,
+    "category": "PHD",
+    "q": "What is viva voce?",
+    "a": "Oral defense of thesis before examiners",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 940,
+    "category": "PHD",
+    "q": "Who is research supervisor?",
+    "a": "Guide who oversees PhD research",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 941,
+    "category": "PHD",
+    "q": "What is literature review?",
+    "a": "Survey of existing research on topic",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 942,
+    "category": "PHD",
+    "q": "What is research gap?",
+    "a": "Area not yet explored in existing studies",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 943,
+    "category": "PHD",
+    "q": "What is hypothesis?",
+    "a": "Testable statement or assumption",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 944,
+    "category": "PHD",
+    "q": "What is methodology?",
+    "a": "Systematic approach to conduct research",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 945,
+    "category": "PHD",
+    "q": "Quantitative vs Qualitative research?",
+    "a": "Quantitative uses numbers, Qualitative uses descriptions",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 946,
+    "category": "PHD",
+    "q": "What is sample size?",
+    "a": "Number of subjects in study",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 947,
+    "category": "PHD",
+    "q": "What is plagiarism?",
+    "a": "Using others' work without citation",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 948,
+    "category": "PHD",
+    "q": "What is citation?",
+    "a": "Reference to source of information",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 949,
+    "category": "PHD",
+    "q": "Popular citation styles?",
+    "a": "APA, MLA, Chicago, Harvard",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 950,
+    "category": "PHD",
+    "q": "What is peer review?",
+    "a": "Evaluation by experts in same field",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 951,
+    "category": "PHD",
+    "q": "What is impact factor?",
+    "a": "Measure of journal's citation frequency",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 952,
+    "category": "PHD",
+    "q": "What is h-index?",
+    "a": "Metric measuring researcher productivity and impact",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 953,
+    "category": "PHD",
+    "q": "What is Scopus?",
+    "a": "Abstract and citation database",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 954,
+    "category": "PHD",
+    "q": "What is Web of Science?",
+    "a": "Citation indexing service",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 955,
+    "category": "PHD",
+    "q": "What is Google Scholar?",
+    "a": "Search engine for scholarly literature",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 956,
+    "category": "PHD",
+    "q": "What is ORCID?",
+    "a": "Open Researcher and Contributor ID",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 957,
+    "category": "PHD",
+    "q": "What is DOI?",
+    "a": "Digital Object Identifier for publications",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 958,
+    "category": "PHD",
+    "q": "What is open access?",
+    "a": "Free online availability of research",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 959,
+    "category": "PHD",
+    "q": "What is predatory journal?",
+    "a": "Exploitative journal charging fees without quality review",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 960,
+    "category": "PHD",
+    "q": "What is UGC CARE?",
+    "a": "UGC approved list of journals",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 961,
+    "category": "PHD",
+    "q": "What is NET exam?",
+    "a": "National Eligibility Test for lectureship/PhD",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 962,
+    "category": "PHD",
+    "q": "What is JRF?",
+    "a": "Junior Research Fellowship",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 963,
+    "category": "PHD",
+    "q": "What is SRF?",
+    "a": "Senior Research Fellowship",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 964,
+    "category": "PHD",
+    "q": "What is postdoc?",
+    "a": "Research position after PhD",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 965,
+    "category": "PHD",
+    "q": "What is research proposal?",
+    "a": "Document outlining planned research",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 966,
+    "category": "PHD",
+    "q": "What is synopsis?",
+    "a": "Brief summary of research plan",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 967,
+    "category": "PHD",
+    "q": "What is research ethics?",
+    "a": "Principles for conducting responsible research",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 968,
+    "category": "PHD",
+    "q": "What is informed consent?",
+    "a": "Voluntary agreement by participants after understanding study",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 969,
+    "category": "PHD",
+    "q": "What is IRB?",
+    "a": "Institutional Review Board for ethics approval",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 970,
+    "category": "PHD",
+    "q": "What is data analysis?",
+    "a": "Process of inspecting and modeling data",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 971,
+    "category": "PHD",
+    "q": "Popular statistical software?",
+    "a": "SPSS, R, Stata, Python",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 972,
+    "category": "PHD",
+    "q": "What is p-value?",
+    "a": "Probability measure in hypothesis testing",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 973,
+    "category": "PHD",
+    "q": "What is correlation?",
+    "a": "Relationship between two variables",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 974,
+    "category": "PHD",
+    "q": "What is regression?",
+    "a": "Statistical method to model relationships",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 975,
+    "category": "PHD",
+    "q": "What is ANOVA?",
+    "a": "Analysis of Variance",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 976,
+    "category": "PHD",
+    "q": "What is t-test?",
+    "a": "Test to compare means of two groups",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 977,
+    "category": "PHD",
+    "q": "What is research design?",
+    "a": "Overall strategy for research",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 978,
+    "category": "PHD",
+    "q": "What is case study?",
+    "a": "In-depth study of single subject",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 979,
+    "category": "PHD",
+    "q": "What is survey method?",
+    "a": "Collecting data via questionnaires",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 980,
+    "category": "PHD",
+    "q": "What is experiment?",
+    "a": "Controlled test to establish cause-effect",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 981,
+    "category": "PHD",
+    "q": "What is control group?",
+    "a": "Group not receiving treatment for comparison",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 982,
+    "category": "PHD",
+    "q": "What is variable?",
+    "a": "Characteristic that can change",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 983,
+    "category": "PHD",
+    "q": "Independent vs Dependent variable?",
+    "a": "Independent manipulated, Dependent measured",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 984,
+    "category": "PHD",
+    "q": "What is validity?",
+    "a": "Accuracy of measurement",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 985,
+    "category": "PHD",
+    "q": "What is reliability?",
+    "a": "Consistency of measurement",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 986,
+    "category": "PHD",
+    "q": "What is bibliography?",
+    "a": "List of sources used in research",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 987,
+    "category": "PHD",
+    "q": "What is abstract?",
+    "a": "Brief summary of research paper",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 988,
+    "category": "PHD",
+    "q": "What is keywords?",
+    "a": "Terms describing research topic",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 989,
+    "category": "PHD",
+    "q": "What is conference paper?",
+    "a": "Research presented at academic conference",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 990,
+    "category": "PHD",
+    "q": "What is journal article?",
+    "a": "Research published in academic journal",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 991,
+    "category": "PHD",
+    "q": "What is book chapter?",
+    "a": "Research published as part of edited book",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 992,
+    "category": "PHD",
+    "q": "What is monograph?",
+    "a": "Detailed scholarly book on single topic",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 993,
+    "category": "PHD",
+    "q": "What is research grant?",
+    "a": "Funding for research project",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 994,
+    "category": "PHD",
+    "q": "What is PI?",
+    "a": "Principal Investigator - lead researcher",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 995,
+    "category": "PHD",
+    "q": "What is co-author?",
+    "a": "Contributor to research paper",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 996,
+    "category": "PHD",
+    "q": "What is corresponding author?",
+    "a": "Author handling communication with journal",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 997,
+    "category": "PHD",
+    "q": "What is acknowledgment?",
+    "a": "Section thanking contributors and funders",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 998,
+    "category": "PHD",
+    "q": "What is conflict of interest?",
+    "a": "Situation affecting research objectivity",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 999,
+    "category": "PHD",
+    "q": "What is embargo?",
+    "a": "Temporary restriction on publication access",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 1000,
+    "category": "PHD",
+    "q": "What is DSc degree?",
+    "a": "Doctor of Science - higher than PhD",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  }
+    ]
