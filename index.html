@@ -587,13 +587,16 @@ if('serviceWorker' in navigator){
  .catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
 }
 
-// Add here 👇
+// Force show install button after 1 sec
 setTimeout(function() {
   var welcomeInstallBox = document.getElementById('welcomeInstallContainer');
-  if(welcomeInstallBox && !window.matchMedia('(display-mode: standalone)').matches) {
+  var isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+  
+  if(welcomeInstallBox && !isStandalone) {
      welcomeInstallBox.style.display = 'block';
+     console.log('ABST Install button visible now');
   }
-}, 2000);
+}, 1000);
 
 document.getElementById('installBtnWelcome')?.addEventListener('click', triggerPwaInstallation);
 function triggerPwaInstallation() {
