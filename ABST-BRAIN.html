@@ -170,10 +170,10 @@
 
     async function loadMatrixFromGitHub() {
   try {
-    // 1. ANNI BUTTONS RESET CHEY
+    // FIX: Anni buttons nundi active teesey
     document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
     
-    // 2. CURRENT MODE KE ACTIVE ADD CHEY
+    // Current selected 2 buttons ke matrame active add chey
     document.getElementById(currentMode+'Mode')?.classList.add('active');
     document.getElementById(answerMode+'Mode')?.classList.add('active');
 
@@ -202,9 +202,9 @@
     initBrain();
   } catch(err) {
     console.error(err);
-    document.querySelector('.card-content').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check JSON line 2524 in Education-other-200.json</div>`;
+    document.querySelector('.card-content').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check JSON file in GitHub repo</div>`;
   }
-    }
+}
 
     function initBrain() {
       matrix = matrix.map((c, i) => ({
