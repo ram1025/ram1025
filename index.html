@@ -527,15 +527,14 @@ window.addEventListener('beforeinstallprompt', function(e) {
 });
 
 function triggerPwaInstallation() {
-  var installCardNode = document.getElementById('pwaInstallCard');
   if(!deferredAppInstallPrompt) {
-    alert('📲 To install:\n\nAndroid: Chrome menu → Install App\n\niPhone: Safari Share → Add to Home Screen\n\nDesktop: Chrome address bar → Install icon');
+    alert('📲 Install cheyali ante:\n\n1. Chrome menu ⋮ noku\n2. "Install app" or "Add to Home screen" select chey\n\nLedante site ni konni sarlu visit chesi 30sec wait chey, automatic prompt vastadi');
     return;
   }
   deferredAppInstallPrompt.prompt();
   deferredAppInstallPrompt.userChoice.then(function(choiceResult) {
     if (choiceResult.outcome === 'accepted') {
-      if(installCardNode) installCardNode.style.display = 'none';
+      document.getElementById('welcomeInstallContainer').style.display = 'none';
       isAppInstalled = true;
       localStorage.setItem('abst_installed', 'true');
     }
