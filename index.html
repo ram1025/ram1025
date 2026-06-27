@@ -588,6 +588,14 @@ if('serviceWorker' in navigator){
  .catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
 }
 
+// Add here 👇
+setTimeout(function() {
+  var welcomeInstallBox = document.getElementById('welcomeInstallContainer');
+  if(welcomeInstallBox && !window.matchMedia('(display-mode: standalone)').matches) {
+     welcomeInstallBox.style.display = 'block';
+  }
+}, 2000);
+
 document.getElementById('installBtnWelcome')?.addEventListener('click', triggerPwaInstallation);
 function triggerPwaInstallation() {
   if(!deferredAppInstallPrompt) {
