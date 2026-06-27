@@ -15,7 +15,7 @@
 html{font-size:16px}
 html.modal-open{overflow:hidden!important}
 body{margin:0;padding:0;background:#0a192f;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden;-webkit-text-size-adjust:100%}
-.container{max-width:600px;margin:0 auto;padding:30px 20px;position:relative}
+.container{max-width:600px;margin:0 auto;padding:30px 20px;position:relative;display:none}
 
 .menu-trigger{position:absolute;top:25px;left:20px;font-size:28px;color:#64ffda;cursor:pointer;z-index:100;transition:0.2s}
 .menu-trigger:active{transform:scale(0.9)}
@@ -108,22 +108,24 @@ input[type="file"]{display:none}
   </div>
   
   <div id="welcomeScreen">
-  <div>⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
-  <div>Jarvis AI Security Layer 9</div>
-  <!-- Install Button Start - Welcome Screen -->
- <div id="welcomeInstallContainer" style="margin-top:25px; text-align:center;">
-    <button id="installBtnWelcome" style="background:linear-gradient(135deg, #00d4ff 0%, #00ff88 100%); color:#0a192f; padding:12px 24px; border:none; border-radius:12px; font-weight:bold; font-size:16px;">
-      <img src="icon-192.png" alt="ABST" style="width:24px; height:24px; border-radius:6px; vertical-align:middle; margin-right:8px;">
-      Install ABST App
-    </button>
-    <p style="color:#7dd3fc; font-size:11px; margin-top:8px; opacity:0.8;">
-      Add to Home Screen for best experience
-    </p>
+    <div id="touch-btn" onclick="unlockDashboard()" style="cursor:pointer;">
+      <div style="color:#64ffda;font-size:16px;letter-spacing:2px;font-weight:bold;animation:textBlink 1.5s ease-in-out infinite;">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
+      <div style="font-size:14px;color:#00ffff;margin-top:5px;">Jarvis AI Security Layer 9</div>
+    </div>
+    
+    <div id="welcomeInstallContainer" style="display:block;margin-top:25px;text-align:center;">
+      <button id="installBtnWelcome" style="background:linear-gradient(135deg, #00d4ff 0%, #00ff88 100%);color:#0a192f;padding:12px 24px;border:none;border-radius:12px;font-weight:bold;font-size:16px;cursor:pointer;">
+        <img src="icon-192.png" alt="ABST" style="width:24px;height:24px;border-radius:6px;vertical-align:middle;margin-right:8px;">
+        Install ABST App
+      </button>
+      <p style="color:#7dd3fc;font-size:11px;margin-top:8px;opacity:0.8;">
+        Add to Home Screen for best experience
+      </p>
+    </div>
   </div>
-  <!-- Install Button End -->
-</div> <!-- Ikkada welcomeScreen close avvali -->
+</div>
 
-<div class="container" style="display:none;">
+<div class="container">
 <div class="menu-trigger" onclick="openM('profileModal')">☰</div>
 
 <img id="main-seal-img" src="icon-192.png" alt="Seal" width="90" height="90" class="main-seal">
@@ -182,7 +184,6 @@ input[type="file"]{display:none}
 
 <p class="status" id="dash-status-string">Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: INDIAN.001 RAM GANESH MAKINA | P36 Active</p>
 </div>
-
 <div id="profileModal" class="modal">
 <div class="modal-inner" style="max-width:550px;">
 <div class="modal-head">
@@ -365,7 +366,7 @@ function openM(id){
   if(!m) return;
   m.style.display='block';
   document.documentElement.classList.add('modal-open');
-  
+
   if(id==='dpr36Modal'){
     document.getElementById('modelImg').src='miniature-model.jpg';
     document.getElementById('dayImg').src='day-mode.jpg';
@@ -385,14 +386,14 @@ function unlockDashboard() {
   var overlay = document.getElementById('abst-welcome-overlay');
   var container = document.querySelector('.container');
   var cards = document.querySelectorAll('.icon-card');
-  
+
   if(overlay) {
     overlay.style.opacity = '0';
     overlay.style.transform = 'scale(1.1)';
     sessionStorage.setItem('dashboard_direct_unlock_token', 'true');
-    setTimeout(function(){ 
-      overlay.style.display = 'none'; 
-      container.style.display = 'block'; // Dashboard chupinchu
+    setTimeout(function(){
+      overlay.style.display = 'none';
+      container.style.display = 'block';
       cards.forEach((card, index) => {
         setTimeout(() => {
           card.classList.add('swirl');
@@ -413,40 +414,40 @@ function loadSavedIdentityData() {
   var storedEmail = localStorage.getItem('abst_email') || "";
   var storedPhone = localStorage.getItem('abst_phone') || "";
   var storedBlood = localStorage.getItem('abst_blood') || "";
-  
+
   var dashVision = document.getElementById('dash-visionary-display');
   if(dashVision) dashVision.innerText = "Master Visionary: " + storedID + " " + storedName;
-  
+
   var dashDesignation = document.getElementById('dash-designation-display');
   if(dashDesignation) dashDesignation.innerText = storedDesignation + " | " + storedLocation + " | Security Layer " + storedSecurity;
-  
+
   var dashStatus = document.getElementById('dash-status-string');
   if(dashStatus) dashStatus.innerHTML = "Status: Operational | Jarvis AI Core Layer " + storedSecurity + " | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
-  
+
   var mainSeal = document.getElementById('main-seal-img');
   if(mainSeal) mainSeal.src = "icon-192.png";
-  
+
   var dashBio = document.getElementById('dash-bio-display');
   if(dashBio) dashBio.innerText = storedBio;
-  
+
   var welcomeID = document.getElementById('welcome-id-display');
   if(welcomeID) welcomeID.innerText = storedID;
-  
+
   var welcomeName = document.getElementById('welcome-visionary-name');
   if(welcomeName) welcomeName.innerText = storedName;
-  
+
   var welcomeDesignation = document.getElementById('welcome-designation');
   if(welcomeDesignation) welcomeDesignation.innerText = storedDesignation;
-  
+
   var welcomeLocation = document.getElementById('welcome-location');
   if(welcomeLocation) welcomeLocation.innerText = storedLocation;
-  
+
   var welcomeSecurity = document.getElementById('welcome-security');
   if(welcomeSecurity) welcomeSecurity.innerText = storedSecurity;
-  
+
   var welcomeSeal = document.getElementById('welcome-seal-img');
   if(welcomeSeal) welcomeSeal.src = "icon-192.png";
-  
+
   var inputName = document.getElementById('inputMasterName');
   var inputID = document.getElementById('inputSovereignID');
   var inputDesig = document.getElementById('inputDesignation');
@@ -457,7 +458,7 @@ function loadSavedIdentityData() {
   var inputPhone = document.getElementById('inputPhone');
   var inputBlood = document.getElementById('inputBlood');
   var photoPreview = document.getElementById('profile-photo-preview');
-  
+
   if(inputName) inputName.value = storedName;
   if(inputID) inputID.value = storedID;
   if(inputDesig) inputDesig.value = storedDesignation;
@@ -516,13 +517,12 @@ document.getElementById('profile-photo-preview').addEventListener('click', funct
 });
 
 document.getElementById('seal-btn').addEventListener('click', unlockDashboard);
-document.getElementById('touch-btn').addEventListener('click', unlockDashboard);
 
 window.addEventListener('beforeinstallprompt', function(e) {
   e.preventDefault();
   deferredAppInstallPrompt = e;
   var welcomeInstallBox = document.getElementById('welcomeInstallContainer');
-  if(welcomeInstallBox && !window.matchMedia('(display-mode: standalone)').matches && !isAppInstalled) {
+  if(welcomeInstallBox &&!window.matchMedia('(display-mode: standalone)').matches &&!isAppInstalled) {
      welcomeInstallBox.style.display = 'block';
   }
 });
@@ -560,6 +560,7 @@ window.addEventListener('DOMContentLoaded', function(){
     if(overlay) {
       overlay.style.display = 'none';
     }
+    document.querySelector('.container').style.display = 'block';
     cards.forEach((card) => {
       card.classList.add('swirl');
     });
@@ -585,35 +586,19 @@ document.addEventListener('keydown',function(e){
 
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
- .catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
+.catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
 }
 
-// Welcome screen lo 1 sec tharuvatha button chupinchu
 setTimeout(function() {
   var btnBox = document.getElementById('welcomeInstallContainer');
   var isStandalone = window.matchMedia('(display-mode: standalone)').matches;
-  
-  if(btnBox && !isStandalone) {
+
+  if(btnBox &&!isStandalone) {
      btnBox.style.display = 'block';
   }
 }, 1000);
 
 document.getElementById('installBtnWelcome')?.addEventListener('click', triggerPwaInstallation);
-function triggerPwaInstallation() {
-  if(!deferredAppInstallPrompt) {
-    alert('📲 Install cheyali ante:\n\nChrome menu → Install App\n\nLekapothe browser refresh chesi 30sec wait chey');
-    return;
-  }
-  deferredAppInstallPrompt.prompt();
-  deferredAppInstallPrompt.userChoice.then(function(choiceResult) {
-    if (choiceResult.outcome === 'accepted') {
-      document.getElementById('welcomeInstallContainer').style.display = 'none';
-      isAppInstalled = true;
-      localStorage.setItem('abst_installed', 'true');
-    }
-    deferredAppInstallPrompt = null;
-  });
-}
 </script>
 </body>
 </html>
