@@ -102,17 +102,17 @@
     <p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
   </div>
   <div class="mode-toggle">
-    <button class="mode-btn active" id="pillarsMode">🏛 36 PILLARS - 108</button>
-    <button class="mode-btn" id="schoolMode">📚 SCHOOL - 280</button>
-    <button class="mode-btn" id="collegeMode">🎓 COLLEGE - 180</button>
-    <button class="mode-btn" id="competitiveMode">🏆 COMPETITIVE - 340</button>
-    <button class="mode-btn" id="otherMode">📖 GK/PHD - 200</button>
-  </div>
-  <div class="answer-mode-toggle">
-    <button class="mode-btn active" id="typeMode">✏️ TYPE</button>
-    <button class="mode-btn" id="mcqMode">⚪ MCQ</button>
-    <button class="mode-btn" id="flipMode">🔁 FLIP</button>
-  </div>
+  <button class="mode-btn" id="pillarsMode">🏛 36 PILLARS - 108</button>
+  <button class="mode-btn" id="schoolMode">📚 SCHOOL - 280</button>
+  <button class="mode-btn" id="collegeMode">🎓 COLLEGE - 180</button>
+  <button class="mode-btn" id="competitiveMode">🏆 COMPETITIVE - 340</button>
+  <button class="mode-btn" id="otherMode">📖 GK/PHD - 200</button>
+</div>
+<div class="answer-mode-toggle">
+  <button class="mode-btn" id="typeMode">✏️ TYPE</button>
+  <button class="mode-btn" id="mcqMode">⚪ MCQ</button>
+  <button class="mode-btn" id="flipMode">🔁 FLIP</button>
+</div>
   <div id="cardCounter" style="text-align:center;margin:15px;color:#00ffaa;font-weight:bold;font-size:18px;">0/0</div>
   <div id="card" class="card">
     <div class="card-content">
@@ -169,40 +169,41 @@
     }
 
     async function loadMatrixFromGitHub() {
-      try {
-        // FIX: Reset all buttons first
-        document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-        document.getElementById(currentMode+'Mode')?.classList.add('active');
-        document.getElementById(answerMode+'Mode')?.classList.add('active');
+  try {
+    // 1. ANNI BUTTONS RESET CHEY
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    
+    // 2. CURRENT MODE KE ACTIVE ADD CHEY
+    document.getElementById(currentMode+'Mode')?.classList.add('active');
+    document.getElementById(answerMode+'Mode')?.classList.add('active');
 
-        document.querySelector('.card-content').innerHTML = `<div class="loading">Loading cards... <br>🔄</div>`;
-        let fileName = '';
-        if(currentMode === 'pillars') fileName = '36-pillars-108.json';
-        else if(currentMode === 'school') fileName = 'Education-school-280.json';
-        else if(currentMode === 'college') fileName = 'Education-college-180.json';
-        else if(currentMode === 'competitive') fileName = 'Education-competitive-340.json';
-        else if(currentMode === 'other') fileName = 'Education-other-200.json';
+    document.querySelector('.card-content').innerHTML = `<div class="loading">Loading cards... <br>🔄</div>`;
+    let fileName = '';
+    if(currentMode === 'pillars') fileName = '36-pillars-108.json';
+    else if(currentMode === 'school') fileName = 'Education-school-280.json';
+    else if(currentMode === 'college') fileName = 'Education-college-180.json';
+    else if(currentMode === 'competitive') fileName = 'Education-competitive-340.json';
+    else if(currentMode === 'other') fileName = 'Education-other-200.json';
 
-        document.querySelector('.card-content').innerHTML = `<div class="loading">Loading ${fileName}...</div>`;
-        const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${fileName}`;
-        const response = await fetch(url);
-        if (!response.ok) throw new Error(`${fileName} not found`);
-        matrix = await response.json();
+    document.querySelector('.card-content').innerHTML = `<div class="loading">Loading ${fileName}...</div>`;
+    const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${fileName}`;
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`${fileName} not found`);
+    matrix = await response.json();
 
-        const saved = localStorage.getItem('abst_brain_cards');
-        if(saved) {
-          const parsed = JSON.parse(saved);
-          parsed.forEach(savedCard => {
-            const idx = matrix.findIndex(c => c.id === savedCard.id);
-            if(idx >= 0) matrix[idx] = savedCard;
-          });
-        }
-        initBrain();
-      } catch(err) {
-        console.error(err);
-        document.querySelector('.card-content').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check if JSON files exist in GitHub repo</div>`;
-      }
+    const saved = localStorage.getItem('abst_brain_cards');
+    if(saved) {
+      const parsed = JSON.parse(saved);
+      parsed.forEach(savedCard => {
+        const idx = matrix.findIndex(c => c.id === savedCard.id);
+        if(idx >= 0) matrix[idx] = savedCard;
+      });
+    }
+    initBrain();
+  } catch(err) {
+    console.error(err);
+    document.querySelector('.card-content').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check JSON line 2524 in Education-other-200.json</div>`;
+  }
     }
 
     function initBrain() {
