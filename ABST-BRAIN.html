@@ -187,20 +187,24 @@
   else if(currentMode === 'other') {
     filteredMatrix = matrix.filter(c => c.category?.trim() === userClass);
   }
-  // 'pillars' ki filter ledu - anni 108 vasthai
 
-  dueCards = filteredMatrix.filter(c => {
-    if (!c.due) return true;
-    return c.due <= Date.now();
-  });
+  // Initialize all cards first
+  filteredMatrix = filteredMatrix.map(c => window.SM2_ENGINE.initCard(c));
 
-  if (dueCards.length === 0) {
+  // Use SM2_ENGINE.isDue() instead of manual check
+  dueCards = filteredMatrix.filter(c => window.SM2_ENGINE.isDue(c));
+
+  // First time load - anni chupinchu
+  if (dueCards.length === 0 && filteredMatrix.length > 0) {
+    console.log('[BRAIN] No due cards, showing all for first session');
     dueCards = [...filteredMatrix];
   }
 
+  console.log('[BRAIN] Due cards:', dueCards.length, 'Total:', filteredMatrix.length);
+  
   currentIndex = 0;
   dueCards = dueCards.sort(() => 0.5 - Math.random());
-}
+    }
 
     async function loadMatrixFromGitHub() {
       try {
@@ -339,13 +343,13 @@
     }
 
     function gradeCard(quality) {
-      currentCard = window.ABST_SM2.calc(currentCard, quality);
-      const idx = matrix.findIndex(c => c.id === currentCard.id);
-      if(idx >= 0) matrix[idx] = currentCard;
-      localStorage.setItem('abst_brain_cards', JSON.stringify(matrix));
-      currentIndex++;
-      updateStats();
-      showCard();
+  currentCard = window.SM2_ENGINE.calculateNewState(currentCard, quality);
+  const idx = matrix.findIndex(c => c.id === currentCard.id);
+  if(idx >= 0) matrix[idx] = currentCard;
+  localStorage.setItem('abst_brain_cards', JSON.stringify(matrix));
+  currentIndex++;
+  updateStats();
+  showCard();
     }
 
     function updateStats() {
