@@ -451,7 +451,7 @@
   },
   {
     "id": 331,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is Ohm's Law?",
     "a": "V = IR, Voltage = Current × Resistance",
     "state": "new",
@@ -460,7 +460,7 @@
   },
   {
     "id": 332,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "SI unit of force?",
     "a": "Newton (N)",
     "state": "new",
@@ -469,7 +469,7 @@
   },
   {
     "id": 333,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What does CPU stand for?",
     "a": "Central Processing Unit",
     "state": "new",
@@ -478,7 +478,7 @@
   },
   {
     "id": 334,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Formula for kinetic energy?",
     "a": "KE = 1/2 mv²",
     "state": "new",
@@ -487,7 +487,7 @@
   },
   {
     "id": 335,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is binary number system base?",
     "a": "2",
     "state": "new",
@@ -496,7 +496,7 @@
   },
   {
     "id": 336,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Unit of electrical resistance?",
     "a": "Ohm (Ω)",
     "state": "new",
@@ -505,7 +505,7 @@
   },
   {
     "id": 337,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is CAD?",
     "a": "Computer Aided Design",
     "state": "new",
@@ -514,7 +514,7 @@
   },
   {
     "id": 338,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "First law of thermodynamics?",
     "a": "Energy cannot be created or destroyed",
     "state": "new",
@@ -523,7 +523,7 @@
   },
   {
     "id": 339,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is RAM?",
     "a": "Random Access Memory",
     "state": "new",
@@ -532,7 +532,7 @@
   },
   {
     "id": 340,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Unit of frequency?",
     "a": "Hertz (Hz)",
     "state": "new",
@@ -541,7 +541,7 @@
   },
   {
     "id": 341,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is HTML?",
     "a": "HyperText Markup Language",
     "state": "new",
@@ -550,7 +550,7 @@
   },
   {
     "id": 342,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Bernoulli's principle is used in?",
     "a": "Airplane wings, fluid dynamics",
     "state": "new",
@@ -559,7 +559,7 @@
   },
   {
     "id": 343,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is IC?",
     "a": "Integrated Circuit",
     "state": "new",
@@ -568,7 +568,7 @@
   },
   {
     "id": 344,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Unit of power?",
     "a": "Watt (W)",
     "state": "new",
@@ -577,7 +577,7 @@
   },
   {
     "id": 345,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is SQL?",
     "a": "Structured Query Language",
     "state": "new",
@@ -586,7 +586,7 @@
   },
   {
     "id": 346,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Hooke's Law states?",
     "a": "F = -kx, Force is proportional to extension",
     "state": "new",
@@ -595,7 +595,7 @@
   },
   {
     "id": 347,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is bandwidth?",
     "a": "Data transfer capacity of a network",
     "state": "new",
@@ -604,7 +604,7 @@
   },
   {
     "id": 348,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Unit of electric current?",
     "a": "Ampere (A)",
     "state": "new",
@@ -613,7 +613,7 @@
   },
   {
     "id": 349,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is CPU clock speed measured in?",
     "a": "GHz - Gigahertz",
     "state": "new",
@@ -622,7 +622,7 @@
   },
   {
     "id": 350,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Newton's second law?",
     "a": "F = ma, Force = Mass × Acceleration",
     "state": "new",
@@ -631,7 +631,7 @@
   },
   {
     "id": 351,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is HTTP?",
     "a": "HyperText Transfer Protocol",
     "state": "new",
@@ -640,7 +640,7 @@
   },
   {
     "id": 352,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Unit of work?",
     "a": "Joule (J)",
     "state": "new",
@@ -649,7 +649,7 @@
   },
   {
     "id": 353,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is algorithm?",
     "a": "Step-by-step procedure to solve a problem",
     "state": "new",
@@ -658,7 +658,7 @@
   },
   {
     "id": 354,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Faraday's law is related to?",
     "a": "Electromagnetic induction",
     "state": "new",
@@ -667,7 +667,7 @@
   },
   {
     "id": 355,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is ROM?",
     "a": "Read Only Memory",
     "state": "new",
@@ -676,7 +676,7 @@
   },
   {
     "id": 356,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Unit of capacitance?",
     "a": "Farad (F)",
     "state": "new",
@@ -685,7 +685,7 @@
   },
   {
     "id": 357,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is API?",
     "a": "Application Programming Interface",
     "state": "new",
@@ -694,7 +694,7 @@
   },
   {
     "id": 358,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Archimedes principle is about?",
     "a": "Buoyancy, upward force on submerged object",
     "state": "new",
@@ -703,7 +703,7 @@
   },
   {
     "id": 359,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is IP address?",
     "a": "Internet Protocol address, unique device identifier",
     "state": "new",
@@ -712,7 +712,7 @@
   },
   {
     "id": 360,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Unit of magnetic field?",
     "a": "Tesla (T)",
     "state": "new",
@@ -721,7 +721,7 @@
   },
   {
     "id": 361,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is compiler?",
     "a": "Translates high-level code to machine code",
     "state": "new",
@@ -730,7 +730,7 @@
   },
   {
     "id": 362,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Kirchhoff's current law states?",
     "a": "Sum of currents at a node is zero",
     "state": "new",
@@ -739,7 +739,7 @@
   },
   {
     "id": 363,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is URL?",
     "a": "Uniform Resource Locator",
     "state": "new",
@@ -748,7 +748,7 @@
   },
   {
     "id": 364,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Unit of inductance?",
     "a": "Henry (H)",
     "state": "new",
@@ -757,7 +757,7 @@
   },
   {
     "id": 365,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is OS?",
     "a": "Operating System",
     "state": "new",
@@ -766,7 +766,7 @@
   },
   {
     "id": 366,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Pascal's law is used in?",
     "a": "Hydraulic press, hydraulic brakes",
     "state": "new",
@@ -775,7 +775,7 @@
   },
   {
     "id": 367,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is firewall?",
     "a": "Network security system",
     "state": "new",
@@ -784,7 +784,7 @@
   },
   {
     "id": 368,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Unit of electric charge?",
     "a": "Coulomb (C)",
     "state": "new",
@@ -793,7 +793,7 @@
   },
   {
     "id": 369,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is DNS?",
     "a": "Domain Name System",
     "state": "new",
@@ -802,7 +802,7 @@
   },
   {
     "id": 370,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Boyle's law states?",
     "a": "P ∝ 1/V at constant temperature",
     "state": "new",
@@ -811,7 +811,7 @@
   },
   {
     "id": 371,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is VPN?",
     "a": "Virtual Private Network",
     "state": "new",
@@ -820,7 +820,7 @@
   },
   {
     "id": 372,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Unit of luminous intensity?",
     "a": "Candela (cd)",
     "state": "new",
@@ -829,7 +829,7 @@
   },
   {
     "id": 373,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is CSS?",
     "a": "Cascading Style Sheets",
     "state": "new",
@@ -838,7 +838,7 @@
   },
   {
     "id": 374,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Coulomb's law is about?",
     "a": "Force between electric charges",
     "state": "new",
@@ -847,7 +847,7 @@
   },
   {
     "id": 375,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is SSD?",
     "a": "Solid State Drive",
     "state": "new",
@@ -856,7 +856,7 @@
   },
   {
     "id": 376,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Unit of angular velocity?",
     "a": "radian/second",
     "state": "new",
@@ -865,7 +865,7 @@
   },
   {
     "id": 377,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is IoT?",
     "a": "Internet of Things",
     "state": "new",
@@ -874,7 +874,7 @@
   },
   {
     "id": 378,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Lenz's law states?",
     "a": "Induced current opposes the change causing it",
     "state": "new",
@@ -883,7 +883,7 @@
   },
   {
     "id": 379,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "What is GPU?",
     "a": "Graphics Processing Unit",
     "state": "new",
@@ -892,7 +892,7 @@
   },
   {
     "id": 380,
-    "category": "ENG",
+    "category": "ENGINEERING",
     "q": "Unit of pressure?",
     "a": "Pascal (Pa)",
     "state": "new",
