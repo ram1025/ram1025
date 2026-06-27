@@ -173,33 +173,34 @@
     let matrix = [];
 
     function loadCards() {
-      let filteredMatrix = matrix;
+  let filteredMatrix = matrix;
 
-      if(currentMode === 'school' && userClass!== 'GK') {
-        filteredMatrix = matrix.filter(c => c.category === userClass);
-      }
-      else if(currentMode === 'college' && userClass!== 'GK') {
-        filteredMatrix = matrix.filter(c => c.category === userClass);
-      }
-      else if(currentMode === 'competitive' && userClass!== 'GK') {
-        filteredMatrix = matrix.filter(c => c.category === userClass);
-      }
-      else if(currentMode === 'other' && userClass!== 'GK') {
-        filteredMatrix = matrix.filter(c => c.category === userClass);
-      }
+  if(currentMode === 'school') {
+    filteredMatrix = matrix.filter(c => c.category?.trim() === userClass);
+  }
+  else if(currentMode === 'college') {
+    filteredMatrix = matrix.filter(c => c.category?.trim() === userClass);
+  }
+  else if(currentMode === 'competitive') {
+    filteredMatrix = matrix.filter(c => c.category?.trim() === userClass);
+  }
+  else if(currentMode === 'other') {
+    filteredMatrix = matrix.filter(c => c.category?.trim() === userClass);
+  }
+  // 'pillars' ki filter ledu - anni 108 vasthai
 
-      dueCards = filteredMatrix.filter(c => {
-        if (!c.due) return true;
-        return c.due <= Date.now();
-      });
+  dueCards = filteredMatrix.filter(c => {
+    if (!c.due) return true;
+    return c.due <= Date.now();
+  });
 
-      if (dueCards.length === 0) {
-        dueCards = [...filteredMatrix];
-      }
+  if (dueCards.length === 0) {
+    dueCards = [...filteredMatrix];
+  }
 
-      currentIndex = 0;
-      dueCards = dueCards.sort(() => 0.5 - Math.random());
-    }
+  currentIndex = 0;
+  dueCards = dueCards.sort(() => 0.5 - Math.random());
+}
 
     async function loadMatrixFromGitHub() {
       try {
