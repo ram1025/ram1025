@@ -2,2521 +2,2521 @@
   {
     "id": 1,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "Which fruit is red and keeps the doctor away?",
-    "options": ["Apple", "Banana", "Grapes", "Papaya"],
+    "q": "A for?",
     "a": "Apple",
-    "mode": "FLIP"
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 2,
     "category": "LKG",
-    "type": "MCQ",
     "q": "B for?",
-    "options": ["Ball", "Apple", "Cat", "Dog"],
     "a": "Ball",
-    "mode": "FLIP"
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 3,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "Which animal says Meow?",
-    "options": ["Cat", "Dog", "Cow", "Lion"],
+    "q": "C for?",
     "a": "Cat",
-    "mode": "FLIP"
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 4,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "1 + 1 = ?",
-    "options": ["1", "2", "3", "4"],
-    "a": "2",
-    "mode": "FLIP"
+    "q": "D for?",
+    "a": "Dog",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 5,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "How many fingers are there in one hand?",
-    "options": ["3", "4", "5", "6"],
-    "a": "5",
-    "mode": "FLIP"
+    "q": "E for?",
+    "a": "Elephant",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 6,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "What is the color of the sky?",
-    "options": ["Blue", "Red", "Green", "Yellow"],
-    "a": "Blue",
-    "mode": "FLIP"
+    "q": "How many legs does a cat have?",
+    "a": "4",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 7,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "Which animal says Bow Bow?",
-    "options": ["Dog", "Cat", "Cow", "Goat"],
-    "a": "Dog",
-    "mode": "FLIP"
+    "q": "What color is an apple?",
+    "a": "Red",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 8,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "Which color is Apple usually?",
-    "options": ["Red", "Blue", "Black", "White"],
-    "a": "Red",
-    "mode": "FLIP"
+    "q": "2 + 1 = ?",
+    "a": "3",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 9,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "Red color in Telugu?",
-    "options": ["Erraga", "Pachaga", "Tellaga", "Nallaga"],
-    "a": "Erraga",
-    "mode": "FLIP"
+    "q": "Which animal says Meow?",
+    "a": "Cat",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 10,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "Green color in Telugu?",
-    "options": ["Pachaga", "Erraga", "Tellaga", "Nallaga"],
-    "a": "Pachaga",
-    "mode": "FLIP"
+    "q": "Sun rises in the?",
+    "a": "East",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 11,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "Sun rises in which direction?",
-    "options": ["East", "West", "North", "South"],
-    "a": "East",
-    "mode": "FLIP"
+    "q": "How many days in a week?",
+    "a": "7",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 12,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "What do we drink when thirsty?",
-    "options": ["Water", "Stone", "Sand", "Wood"],
-    "a": "Water",
-    "mode": "FLIP"
+    "q": "F for?",
+    "a": "Fish",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 13,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "What is the shape of a ball?",
-    "options": ["Round", "Square", "Triangle", "Rectangle"],
-    "a": "Round",
-    "mode": "FLIP"
+    "q": "What shape is a ball?",
+    "a": "Circle",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 14,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "2 + 2 = ?",
-    "options": ["2", "3", "4", "5"],
-    "a": "4",
-    "mode": "FLIP"
+    "q": "G for?",
+    "a": "Goat",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 15,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "Which animal gives us milk?",
-    "options": ["Cow", "Dog", "Cat", "Lion"],
-    "a": "Cow",
-    "mode": "FLIP"
+    "q": "1 + 1 = ?",
+    "a": "2",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 16,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "How many eyes do we have?",
-    "options": ["1", "2", "3", "4"],
-    "a": "2",
-    "mode": "FLIP"
+    "q": "Which fruit is yellow?",
+    "a": "Banana",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 17,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "D for?",
-    "options": ["Dog", "Cat", "Apple", "Ball"],
-    "a": "Dog",
-    "mode": "FLIP"
+    "q": "H for?",
+    "a": "Hen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 18,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "E for?",
-    "options": ["Elephant", "Dog", "Cat", "Apple"],
-    "a": "Elephant",
-    "mode": "FLIP"
+    "q": "How many fingers on one hand?",
+    "a": "5",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 19,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "We see with our?",
-    "options": ["Eyes", "Ears", "Nose", "Mouth"],
-    "a": "Eyes",
-    "mode": "FLIP"
+    "q": "I for?",
+    "a": "Ice cream",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 20,
     "category": "LKG",
-    "type": "MCQ",
-    "q": "We hear with our?",
-    "options": ["Ears", "Eyes", "Nose", "Mouth"],
-    "a": "Ears",
-    "mode": "FLIP"
+    "q": "Which animal is the king of jungle?",
+    "a": "Lion",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 21,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "5 - 2 = ?",
-    "options": ["2", "3", "4", "5"],
-    "a": "3",
-    "mode": "FLIP"
+    "q": "J for?",
+    "a": "Jug",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 22,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "Which is the biggest number?",
-    "options": ["5", "8", "3", "1"],
-    "a": "8",
-    "mode": "FLIP"
+    "q": "K for?",
+    "a": "Kite",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 23,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "F for?",
-    "options": ["Fish", "Dog", "Cat", "Apple"],
-    "a": "Fish",
-    "mode": "FLIP"
+    "q": "L for?",
+    "a": "Lion",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 24,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "G for?",
-    "options": ["Goat", "Fish", "Dog", "Cat"],
-    "a": "Goat",
-    "mode": "FLIP"
+    "q": "M for?",
+    "a": "Monkey",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 25,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "How many days in a week?",
-    "options": ["5", "6", "7", "8"],
+    "q": "5 + 2 = ?",
     "a": "7",
-    "mode": "FLIP"
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 26,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "Which season has rain?",
-    "options": ["Summer", "Winter", "Rainy", "Spring"],
-    "a": "Rainy",
-    "mode": "FLIP"
+    "q": "How many months in a year?",
+    "a": "12",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 27,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "What is the color of a leaf?",
-    "options": ["Green", "Red", "Blue", "Yellow"],
-    "a": "Green",
-    "mode": "FLIP"
+    "q": "Which shape has 3 sides?",
+    "a": "Triangle",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 28,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "3 + 4 = ?",
-    "options": ["5", "6", "7", "8"],
-    "a": "7",
-    "mode": "FLIP"
+    "q": "N for?",
+    "a": "Nest",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 29,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "Which animal is called King of Jungle?",
-    "options": ["Tiger", "Lion", "Elephant", "Bear"],
-    "a": "Lion",
-    "mode": "FLIP"
+    "q": "10 - 4 = ?",
+    "a": "6",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 30,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "How many wheels does a car have?",
-    "options": ["2", "3", "4", "5"],
-    "a": "4",
-    "mode": "FLIP"
+    "q": "O for?",
+    "a": "Orange",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 31,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "H for?",
-    "options": ["Hat", "Goat", "Fish", "Dog"],
-    "a": "Hat",
-    "mode": "FLIP"
+    "q": "What comes after Monday?",
+    "a": "Tuesday",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 32,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "I for?",
-    "options": ["Ice", "Hat", "Goat", "Fish"],
-    "a": "Ice",
-    "mode": "FLIP"
+    "q": "P for?",
+    "a": "Parrot",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 33,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "Which comes after Monday?",
-    "options": ["Sunday", "Tuesday", "Wednesday", "Friday"],
-    "a": "Tuesday",
-    "mode": "FLIP"
+    "q": "Which shape has 4 equal sides?",
+    "a": "Square",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 34,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "10 - 5 = ?",
-    "options": ["3", "4", "5", "6"],
-    "a": "5",
-    "mode": "FLIP"
+    "q": "Q for?",
+    "a": "Queen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 35,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "Which fruit is yellow and long?",
-    "options": ["Apple", "Banana", "Orange", "Grapes"],
-    "a": "Banana",
-    "mode": "FLIP"
+    "q": "8 + 1 = ?",
+    "a": "9",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 36,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "We smell with our?",
-    "options": ["Eyes", "Ears", "Nose", "Mouth"],
-    "a": "Nose",
-    "mode": "FLIP"
+    "q": "R for?",
+    "a": "Rat",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 37,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "J for?",
-    "options": ["Jug", "Ice", "Hat", "Goat"],
-    "a": "Jug",
-    "mode": "FLIP"
+    "q": "Which animal gives us milk?",
+    "a": "Cow",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 38,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "Which bird can fly?",
-    "options": ["Crow", "Penguin", "Ostrich", "Hen"],
-    "a": "Crow",
-    "mode": "FLIP"
+    "q": "S for?",
+    "a": "Sun",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 39,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "What is the shape of a book?",
-    "options": ["Circle", "Square", "Rectangle", "Triangle"],
-    "a": "Rectangle",
-    "mode": "FLIP"
+    "q": "6 - 3 = ?",
+    "a": "3",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 40,
     "category": "UKG",
-    "type": "MCQ",
-    "q": "6 + 3 = ?",
-    "options": ["7", "8", "9", "10"],
-    "a": "9",
-    "mode": "FLIP"
+    "q": "T for?",
+    "a": "Tiger",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 41,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "Our National Animal?",
-    "options": ["Tiger", "Lion", "Elephant", "Peacock"],
-    "a": "Tiger",
-    "mode": "FLIP"
+    "q": "U for?",
+    "a": "Umbrella",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 42,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "Our National Bird?",
-    "options": ["Crow", "Parrot", "Peacock", "Sparrow"],
-    "a": "Peacock",
-    "mode": "FLIP"
+    "q": "V for?",
+    "a": "Van",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 43,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "How many months in a year?",
-    "options": ["10", "11", "12", "13"],
-    "a": "12",
-    "mode": "FLIP"
+    "q": "W for?",
+    "a": "Watch",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 44,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "8 + 7 = ?",
-    "options": ["14", "15", "16", "17"],
-    "a": "15",
-    "mode": "FLIP"
+    "q": "12 + 5 = ?",
+    "a": "17",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 45,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "Which comes after 19?",
-    "options": ["18", "20", "21", "22"],
-    "a": "20",
-    "mode": "FLIP"
+    "q": "X for?",
+    "a": "X-ray",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 46,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "First month of the year?",
-    "options": ["January", "February", "March", "December"],
-    "a": "January",
-    "mode": "FLIP"
+    "q": "Y for?",
+    "a": "Yak",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 47,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "What is the color of milk?",
-    "options": ["Blue", "Red", "White", "Black"],
-    "a": "White",
-    "mode": "FLIP"
+    "q": "Z for?",
+    "a": "Zebra",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 48,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "15 - 6 = ?",
-    "options": ["7", "8", "9", "10"],
-    "a": "9",
-    "mode": "FLIP"
+    "q": "20 - 8 = ?",
+    "a": "12",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 49,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "Which is a fruit?",
-    "options": ["Potato", "Tomato", "Mango", "Onion"],
-    "a": "Mango",
-    "mode": "FLIP"
+    "q": "How many hours in a day?",
+    "a": "24",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 50,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "How many legs does a spider have?",
-    "options": ["6", "8", "10", "4"],
-    "a": "8",
-    "mode": "FLIP"
+    "q": "Name the national animal of India",
+    "a": "Tiger",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 51,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "K for?",
-    "options": ["Kite", "Jug", "Ice", "Hat"],
-    "a": "Kite",
-    "mode": "FLIP"
+    "q": "Which sense organ is used to see?",
+    "a": "Eyes",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 52,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "L for?",
-    "options": ["Lion", "Kite", "Jug", "Ice"],
-    "a": "Lion",
-    "mode": "FLIP"
+    "q": "9 + 6 = ?",
+    "a": "15",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 53,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "Which day comes after Friday?",
-    "options": ["Thursday", "Saturday", "Sunday", "Monday"],
-    "a": "Saturday",
-    "mode": "FLIP"
+    "q": "Name the national flower of India",
+    "a": "Lotus",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 54,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "20 + 10 = ?",
-    "options": ["20", "25", "30", "40"],
-    "a": "30",
-    "mode": "FLIP"
+    "q": "15 - 7 = ?",
+    "a": "8",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 55,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "Our National Flower?",
-    "options": ["Rose", "Lotus", "Sunflower", "Jasmine"],
-    "a": "Lotus",
-    "mode": "FLIP"
+    "q": "Which is the largest planet?",
+    "a": "Jupiter",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 56,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "How many sides does a triangle have?",
-    "options": ["2", "3", "4", "5"],
-    "a": "3",
-    "mode": "FLIP"
+    "q": "How many vowels are there?",
+    "a": "5",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 57,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "Which is a vegetable?",
-    "options": ["Apple", "Banana", "Carrot", "Mango"],
-    "a": "Carrot",
-    "mode": "FLIP"
+    "q": "11 + 4 = ?",
+    "a": "15",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 58,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "M for?",
-    "options": ["Monkey", "Lion", "Kite", "Jug"],
-    "a": "Monkey",
-    "mode": "FLIP"
+    "q": "Which festival is called festival of lights?",
+    "a": "Diwali",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 59,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "12 - 4 = ?",
-    "options": ["6", "7", "8", "9"],
-    "a": "8",
-    "mode": "FLIP"
+    "q": "18 - 9 = ?",
+    "a": "9",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 60,
     "category": "CLASS1",
-    "type": "MCQ",
-    "q": "Which season is very hot?",
-    "options": ["Winter", "Summer", "Rainy", "Spring"],
-    "a": "Summer",
-    "mode": "FLIP"
+    "q": "Name the national bird of India",
+    "a": "Peacock",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 61,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "N for?",
-    "options": ["Nest", "Monkey", "Lion", "Kite"],
-    "a": "Nest",
-    "mode": "FLIP"
+    "q": "25 + 14 = ?",
+    "a": "39",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 62,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "O for?",
-    "options": ["Orange", "Nest", "Monkey", "Lion"],
-    "a": "Orange",
-    "mode": "FLIP"
+    "q": "Name the capital of India",
+    "a": "New Delhi",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 63,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "25 + 15 = ?",
-    "options": ["30", "35", "40", "45"],
-    "a": "40",
-    "mode": "FLIP"
+    "q": "50 - 23 = ?",
+    "a": "27",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 64,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "How many hours in a day?",
-    "options": ["12", "24", "36", "48"],
-    "a": "24",
-    "mode": "FLIP"
+    "q": "Which gas do we breathe in?",
+    "a": "Oxygen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 65,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "Which is the largest planet?",
-    "options": ["Earth", "Mars", "Jupiter", "Venus"],
-    "a": "Jupiter",
-    "mode": "FLIP"
+    "q": "3 × 4 = ?",
+    "a": "12",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 66,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "50 - 20 = ?",
-    "options": ["20", "25", "30", "40"],
-    "a": "30",
-    "mode": "FLIP"
+    "q": "How many sides does a rectangle have?",
+    "a": "4",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 67,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "Which animal lives in water?",
-    "options": ["Lion", "Tiger", "Fish", "Monkey"],
-    "a": "Fish",
-    "mode": "FLIP"
+    "q": "Name the largest mammal",
+    "a": "Blue Whale",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 68,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "How many sides does a square have?",
-    "options": ["2", "3", "4", "5"],
-    "a": "4",
-    "mode": "FLIP"
+    "q": "30 ÷ 5 = ?",
+    "a": "6",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 69,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "P for?",
-    "options": ["Parrot", "Orange", "Nest", "Monkey"],
-    "a": "Parrot",
-    "mode": "FLIP"
+    "q": "Which planet is called the Red Planet?",
+    "a": "Mars",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 70,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "Q for?",
-    "options": ["Queen", "Parrot", "Orange", "Nest"],
-    "a": "Queen",
-    "mode": "FLIP"
+    "q": "45 + 18 = ?",
+    "a": "63",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 71,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "11 × 2 = ?",
-    "options": ["20", "21", "22", "23"],
-    "a": "22",
-    "mode": "FLIP"
+    "q": "Name the national currency of India",
+    "a": "Rupee",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 72,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "Our National Fruit?",
-    "options": ["Apple", "Banana", "Mango", "Orange"],
-    "a": "Mango",
-    "mode": "FLIP"
+    "q": "7 × 6 = ?",
+    "a": "42",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 73,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "Which is a source of water?",
-    "options": ["River", "Mountain", "Tree", "Road"],
-    "a": "River",
-    "mode": "FLIP"
+    "q": "Which part of plant makes food?",
+    "a": "Leaves",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 74,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "35 + 15 = ?",
-    "options": ["40", "45", "50", "55"],
-    "a": "50",
-    "mode": "FLIP"
+    "q": "60 - 35 = ?",
+    "a": "25",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 75,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "Which sense organ helps us to taste?",
-    "options": ["Nose", "Tongue", "Ears", "Eyes"],
-    "a": "Tongue",
-    "mode": "FLIP"
+    "q": "Name the fastest land animal",
+    "a": "Cheetah",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 76,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "R for?",
-    "options": ["Rabbit", "Queen", "Parrot", "Orange"],
-    "a": "Rabbit",
-    "mode": "FLIP"
+    "q": "40 ÷ 8 = ?",
+    "a": "5",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 77,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "S for?",
-    "options": ["Sun", "Rabbit", "Queen", "Parrot"],
-    "a": "Sun",
-    "mode": "FLIP"
+    "q": "How many colors in a rainbow?",
+    "a": "7",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 78,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "100 - 25 = ?",
-    "options": ["65", "70", "75", "80"],
-    "a": "75",
-    "mode": "FLIP"
+    "q": "9 × 3 = ?",
+    "a": "27",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 79,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "Which planet is called Red Planet?",
-    "options": ["Earth", "Mars", "Venus", "Jupiter"],
-    "a": "Mars",
-    "mode": "FLIP"
+    "q": "Which festival is called festival of colors?",
+    "a": "Holi",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 80,
     "category": "CLASS2",
-    "type": "MCQ",
-    "q": "How many minutes in one hour?",
-    "options": ["30", "45", "60", "90"],
-    "a": "60",
-    "mode": "FLIP"
+    "q": "36 + 29 = ?",
+    "a": "65",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 81,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "T for?",
-    "options": ["Tiger", "Sun", "Rabbit", "Queen"],
-    "a": "Tiger",
-    "mode": "FLIP"
+    "q": "125 + 236 = ?",
+    "a": "361",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 82,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "U for?",
-    "options": ["Umbrella", "Tiger", "Sun", "Rabbit"],
-    "a": "Umbrella",
-    "mode": "FLIP"
+    "q": "Name the three states of matter",
+    "a": "Solid, Liquid, Gas",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 83,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "9 × 3 = ?",
-    "options": ["18", "21", "27", "36"],
-    "a": "27",
-    "mode": "FLIP"
+    "q": "500 - 187 = ?",
+    "a": "313",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 84,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "Which is the smallest 3-digit number?",
-    "options": ["100", "101", "111", "999"],
-    "a": "100",
-    "mode": "FLIP"
+    "q": "12 × 8 = ?",
+    "a": "96",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 85,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "Capital of India?",
-    "options": ["Mumbai", "Kolkata", "New Delhi", "Chennai"],
-    "a": "New Delhi",
-    "mode": "FLIP"
+    "q": "Who is the Father of the Nation?",
+    "a": "Mahatma Gandhi",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 86,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "45 ÷ 5 = ?",
-    "options": ["7", "8", "9", "10"],
-    "a": "9",
-    "mode": "FLIP"
+    "q": "144 ÷ 12 = ?",
+    "a": "12",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 87,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "Which organ pumps blood?",
-    "options": ["Brain", "Lungs", "Heart", "Liver"],
-    "a": "Heart",
-    "mode": "FLIP"
+    "q": "Which is the largest ocean?",
+    "a": "Pacific Ocean",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 88,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "V for?",
-    "options": ["Van", "Umbrella", "Tiger", "Sun"],
-    "a": "Van",
-    "mode": "FLIP"
+    "q": "Name the hardest natural substance",
+    "a": "Diamond",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 89,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "W for?",
-    "options": ["Watch", "Van", "Umbrella", "Tiger"],
-    "a": "Watch",
-    "mode": "FLIP"
+    "q": "15 × 7 = ?",
+    "a": "105",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 90,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "125 + 75 = ?",
-    "options": ["150", "175", "200", "225"],
-    "a": "200",
-    "mode": "FLIP"
+    "q": "How many bones in human body?",
+    "a": "206",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 91,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "How many states in India?",
-    "options": ["27", "28", "29", "30"],
-    "a": "28",
-    "mode": "FLIP"
+    "q": "342 + 158 = ?",
+    "a": "500",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 92,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "Which gas do we breathe in?",
-    "options": ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
-    "a": "Oxygen",
-    "mode": "FLIP"
+    "q": "Name the national fruit of India",
+    "a": "Mango",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 93,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "X for?",
-    "options": ["X-ray", "Watch", "Van", "Umbrella"],
-    "a": "X-ray",
-    "mode": "FLIP"
+    "q": "600 - 245 = ?",
+    "a": "355",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 94,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "Y for?",
-    "options": ["Yak", "X-ray", "Watch", "Van"],
-    "a": "Yak",
-    "mode": "FLIP"
+    "q": "Which planet has rings?",
+    "a": "Saturn",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 95,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "7 × 8 = ?",
-    "options": ["54", "56", "64", "48"],
-    "a": "56",
-    "mode": "FLIP"
+    "q": "11 × 11 = ?",
+    "a": "121",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 96,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "Z for?",
-    "options": ["Zebra", "Yak", "X-ray", "Watch"],
-    "a": "Zebra",
-    "mode": "FLIP"
+    "q": "Name the longest river in India",
+    "a": "Ganga",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 97,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "Which festival is called festival of lights?",
-    "options": ["Holi", "Diwali", "Eid", "Christmas"],
-    "a": "Diwali",
-    "mode": "FLIP"
+    "q": "225 ÷ 15 = ?",
+    "a": "15",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 98,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "500 - 150 = ?",
-    "options": ["250", "300", "350", "400"],
-    "a": "350",
-    "mode": "FLIP"
+    "q": "Which organ pumps blood?",
+    "a": "Heart",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 99,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "How many continents are there?",
-    "options": ["5", "6", "7", "8"],
-    "a": "7",
-    "mode": "FLIP"
+    "q": "14 × 6 = ?",
+    "a": "84",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 100,
     "category": "CLASS3",
-    "type": "MCQ",
-    "q": "Which bird cannot fly?",
-    "options": ["Eagle", "Parrot", "Ostrich", "Crow"],
-    "a": "Ostrich",
-    "mode": "FLIP"
+    "q": "Name the capital of Andhra Pradesh",
+    "a": "Amaravati",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 101,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "12 × 12 = ?",
-    "options": ["124", "134", "144", "154"],
-    "a": "144",
-    "mode": "FLIP"
+    "q": "2345 + 1678 = ?",
+    "a": "4023",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 102,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Which is the longest river in India?",
-    "options": ["Yamuna", "Godavari", "Ganga", "Krishna"],
-    "a": "Ganga",
-    "mode": "FLIP"
+    "q": "Name the process by which plants make food",
+    "a": "Photosynthesis",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 103,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "How many bones in human body?",
-    "options": ["206", "208", "210", "212"],
-    "a": "206",
-    "mode": "FLIP"
+    "q": "5000 - 2347 = ?",
+    "a": "2653",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 104,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "144 ÷ 12 = ?",
-    "options": ["10", "11", "12", "13"],
-    "a": "12",
-    "mode": "FLIP"
+    "q": "23 × 15 = ?",
+    "a": "345",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 105,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Which planet is closest to Sun?",
-    "options": ["Venus", "Earth", "Mercury", "Mars"],
-    "a": "Mercury",
-    "mode": "FLIP"
+    "q": "Who wrote the National Anthem of India?",
+    "a": "Rabindranath Tagore",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 106,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Perimeter of square with side 5cm?",
-    "options": ["10cm", "15cm", "20cm", "25cm"],
-    "a": "20cm",
-    "mode": "FLIP"
+    "q": "360 ÷ 18 = ?",
+    "a": "20",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 107,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Who is called Father of Nation?",
-    "options": ["Nehru", "Gandhi", "Patel", "Ambedkar"],
-    "a": "Gandhi",
-    "mode": "FLIP"
+    "q": "Name the largest desert in India",
+    "a": "Thar Desert",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 108,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Which gas do plants release?",
-    "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+    "q": "Which gas do plants release during day?",
     "a": "Oxygen",
-    "mode": "FLIP"
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 109,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "250 × 4 = ?",
-    "options": ["800", "900", "1000", "1100"],
-    "a": "1000",
-    "mode": "FLIP"
+    "q": "18 × 12 = ?",
+    "a": "216",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 110,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Largest ocean in the world?",
-    "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
-    "a": "Pacific",
-    "mode": "FLIP"
+    "q": "How many states in India?",
+    "a": "28",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 111,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "How many seconds in 1 minute?",
-    "options": ["50", "60", "70", "100"],
-    "a": "60",
-    "mode": "FLIP"
+    "q": "4567 + 1234 = ?",
+    "a": "5801",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 112,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Which state is called God's Own Country?",
-    "options": ["Goa", "Kerala", "Karnataka", "Tamil Nadu"],
-    "a": "Kerala",
-    "mode": "FLIP"
+    "q": "Name the highest mountain peak in India",
+    "a": "Kangchenjunga",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 113,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "625 ÷ 25 = ?",
-    "options": ["15", "20", "25", "30"],
-    "a": "25",
-    "mode": "FLIP"
+    "q": "7000 - 3456 = ?",
+    "a": "3544",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 114,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Which organ helps in digestion?",
-    "options": ["Heart", "Lungs", "Stomach", "Brain"],
-    "a": "Stomach",
-    "mode": "FLIP"
+    "q": "Which is the smallest continent?",
+    "a": "Australia",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 115,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Area of rectangle 8cm × 5cm?",
-    "options": ["13 sq cm", "26 sq cm", "40 sq cm", "45 sq cm"],
-    "a": "40 sq cm",
-    "mode": "FLIP"
+    "q": "25 × 16 = ?",
+    "a": "400",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 116,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Tallest mountain in the world?",
-    "options": ["K2", "Kanchenjunga", "Mount Everest", "Nanda Devi"],
-    "a": "Mount Everest",
-    "mode": "FLIP"
+    "q": "Name the device used to measure temperature",
+    "a": "Thermometer",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 117,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "15 × 6 = ?",
-    "options": ["80", "85", "90", "95"],
-    "a": "90",
-    "mode": "FLIP"
+    "q": "484 ÷ 22 = ?",
+    "a": "22",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 118,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Which city is called Pink City?",
-    "options": ["Jodhpur", "Jaipur", "Udaipur", "Bikaner"],
-    "a": "Jaipur",
-    "mode": "FLIP"
+    "q": "Which planet is closest to Sun?",
+    "a": "Mercury",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 119,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Smallest prime number?",
-    "options": ["0", "1", "2", "3"],
-    "a": "2",
-    "mode": "FLIP"
+    "q": "19 × 13 = ?",
+    "a": "247",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 120,
     "category": "CLASS4",
-    "type": "MCQ",
-    "q": "Which festival is festival of colors?",
-    "options": ["Diwali", "Holi", "Navratri", "Pongal"],
-    "a": "Holi",
-    "mode": "FLIP"
+    "q": "Name the currency of USA",
+    "a": "Dollar",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 121,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "LCM of 12 and 18?",
-    "options": ["24", "36", "48", "72"],
-    "a": "36",
-    "mode": "FLIP"
+    "q": "12345 + 6789 = ?",
+    "a": "19134",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 122,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Which is the largest desert in India?",
-    "options": ["Thar", "Sahara", "Gobi", "Kalahari"],
-    "a": "Thar",
-    "mode": "FLIP"
+    "q": "What is the full form of CPU?",
+    "a": "Central Processing Unit",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 123,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "HCF of 24 and 36?",
-    "options": ["6", "8", "12", "18"],
-    "a": "12",
-    "mode": "FLIP"
+    "q": "20000 - 7654 = ?",
+    "a": "12346",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 124,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Who wrote Ramayana?",
-    "options": ["Tulsidas", "Valmiki", "Vyasa", "Kalidasa"],
-    "a": "Valmiki",
-    "mode": "FLIP"
+    "q": "234 × 12 = ?",
+    "a": "2808",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 125,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "13² = ?",
-    "options": ["149", "159", "169", "179"],
-    "a": "169",
-    "mode": "FLIP"
+    "q": "Who invented the telephone?",
+    "a": "Alexander Graham Bell",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 126,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Which blood group is universal donor?",
-    "options": ["A", "B", "AB", "O"],
-    "a": "O",
-    "mode": "FLIP"
+    "q": "1440 ÷ 24 = ?",
+    "a": "60",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 127,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Capital of Andhra Pradesh?",
-    "options": ["Hyderabad", "Vijayawada", "Amaravati", "Visakhapatnam"],
-    "a": "Amaravati",
-    "mode": "FLIP"
+    "q": "Name the largest lake in India",
+    "a": "Vembanad Lake",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 128,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "0.5 + 0.25 = ?",
-    "options": ["0.30", "0.75", "0.80", "1.25"],
-    "a": "0.75",
-    "mode": "FLIP"
+    "q": "Which layer protects Earth from UV rays?",
+    "a": "Ozone Layer",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 129,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Which planet has rings?",
-    "options": ["Mars", "Venus", "Saturn", "Mercury"],
-    "a": "Saturn",
-    "mode": "FLIP"
+    "q": "Square of 25 = ?",
+    "a": "625",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 130,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Square root of 225?",
-    "options": ["13", "14", "15", "16"],
-    "a": "15",
-    "mode": "FLIP"
+    "q": "How many union territories in India?",
+    "a": "8",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 131,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Which Mughal emperor built Taj Mahal?",
-    "options": ["Akbar", "Shah Jahan", "Aurangzeb", "Babur"],
-    "a": "Shah Jahan",
-    "mode": "FLIP"
+    "q": "34567 + 12345 = ?",
+    "a": "46912",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 132,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "3/4 + 1/4 = ?",
-    "options": ["1/2", "1", "4/8", "2/4"],
-    "a": "1",
-    "mode": "FLIP"
+    "q": "Name the vitamin we get from sunlight",
+    "a": "Vitamin D",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 133,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Which vitamin we get from sunlight?",
-    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-    "a": "Vitamin D",
-    "mode": "FLIP"
+    "q": "50000 - 23456 = ?",
+    "a": "26544",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 134,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Cube of 5?",
-    "options": ["25", "75", "125", "625"],
-    "a": "125",
-    "mode": "FLIP"
+    "q": "Which is the smallest prime number?",
+    "a": "2",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 135,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Which is the highest dam in India?",
-    "options": ["Bhakra Nangal", "Tehri", "Sardar Sarovar", "Hirakud"],
-    "a": "Tehri",
-    "mode": "FLIP"
+    "q": "456 × 15 = ?",
+    "a": "6840",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 136,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "18% of 200 = ?",
-    "options": ["18", "24", "36", "40"],
-    "a": "36",
-    "mode": "FLIP"
+    "q": "Name the first President of India",
+    "a": "Dr. Rajendra Prasad",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 137,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Who discovered gravity?",
-    "options": ["Newton", "Einstein", "Galileo", "Edison"],
-    "a": "Newton",
-    "mode": "FLIP"
+    "q": "2025 ÷ 45 = ?",
+    "a": "45",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 138,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "1 km = how many meters?",
-    "options": ["10", "100", "1000", "10000"],
-    "a": "1000",
-    "mode": "FLIP"
+    "q": "Which organ purifies blood?",
+    "a": "Kidney",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 139,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Which is the national song of India?",
-    "options": ["Jana Gana Mana", "Vande Mataram", "Saare Jahan Se", "Ae Mere Watan"],
-    "a": "Vande Mataram",
-    "mode": "FLIP"
+    "q": "Cube of 5 = ?",
+    "a": "125",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 140,
     "category": "CLASS5",
-    "type": "MCQ",
-    "q": "Angle in a straight line?",
-    "options": ["90°", "180°", "270°", "360°"],
-    "a": "180°",
-    "mode": "FLIP"
+    "q": "Name the highest waterfall in India",
+    "a": "Kunchikal Falls",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 141,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Prime numbers between 10 and 20?",
-    "options": ["11, 13, 17, 19", "11, 15, 17, 19", "13, 15, 17, 19", "11, 13, 15, 17"],
-    "a": "11, 13, 17, 19",
-    "mode": "FLIP"
+    "q": "What is 15% of 200?",
+    "a": "30",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 142,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Which is the longest bone in human body?",
-    "options": ["Tibia", "Fibula", "Femur", "Humerus"],
-    "a": "Femur",
-    "mode": "FLIP"
+    "q": "Name the gas used in photosynthesis",
+    "a": "Carbon dioxide",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 143,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "(-5) + (-3) = ?",
-    "options": ["-8", "-2", "2", "8"],
-    "a": "-8",
-    "mode": "FLIP"
+    "q": "Find LCM of 12 and 18",
+    "a": "36",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 144,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Who is called Missle Man of India?",
-    "options": ["Homi Bhabha", "Vikram Sarabhai", "APJ Abdul Kalam", "CV Raman"],
-    "a": "APJ Abdul Kalam",
-    "mode": "FLIP"
+    "q": "Who discovered gravity?",
+    "a": "Isaac Newton",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 145,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "What is 25% of 80?",
-    "options": ["15", "20", "25", "30"],
-    "a": "20",
-    "mode": "FLIP"
+    "q": "Convert 3/4 to decimal",
+    "a": "0.75",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 146,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Which layer of earth is liquid?",
-    "options": ["Crust", "Mantle", "Outer Core", "Inner Core"],
-    "a": "Outer Core",
-    "mode": "FLIP"
+    "q": "Name the longest bone in human body",
+    "a": "Femur",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 147,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Simplest form of 12/18?",
-    "options": ["2/3", "3/4", "4/6", "6/9"],
-    "a": "2/3",
-    "mode": "FLIP"
+    "q": "Find HCF of 24 and 36",
+    "a": "12",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 148,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Which is the hardest natural substance?",
-    "options": ["Gold", "Iron", "Diamond", "Platinum"],
-    "a": "Diamond",
-    "mode": "FLIP"
+    "q": "Which metal is liquid at room temperature?",
+    "a": "Mercury",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 149,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Perimeter of rectangle 12cm × 8cm?",
-    "options": ["20cm", "32cm", "40cm", "96cm"],
-    "a": "40cm",
-    "mode": "FLIP"
+    "q": "Perimeter of square with side 7cm?",
+    "a": "28 cm",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 150,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "First battle of Panipat year?",
-    "options": ["1526", "1556", "1761", "1857"],
-    "a": "1526",
-    "mode": "FLIP"
+    "q": "Name the capital of Australia",
+    "a": "Canberra",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 151,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "(-12) ÷ 3 = ?",
-    "options": ["-4", "-3", "4", "9"],
-    "a": "-4",
-    "mode": "FLIP"
+    "q": "What is 20% of 500?",
+    "a": "100",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 152,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Which organ purifies blood?",
-    "options": ["Heart", "Lungs", "Kidney", "Liver"],
-    "a": "Kidney",
-    "mode": "FLIP"
+    "q": "Name the process of water changing to vapor",
+    "a": "Evaporation",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 153,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "2.5 × 4 = ?",
-    "options": ["8", "9", "10", "12"],
-    "a": "10",
-    "mode": "FLIP"
+    "q": "Area of rectangle 12cm × 8cm?",
+    "a": "96 sq cm",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 154,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Which state has highest population in India?",
-    "options": ["Maharashtra", "Bihar", "Uttar Pradesh", "West Bengal"],
-    "a": "Uttar Pradesh",
-    "mode": "FLIP"
+    "q": "Which planet is called Morning Star?",
+    "a": "Venus",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 155,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Value of π (pi) approximately?",
-    "options": ["2.14", "3.14", "4.14", "5.14"],
-    "a": "3.14",
-    "mode": "FLIP"
+    "q": "Simplify: 5 + 3 × 2",
+    "a": "11",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 156,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Which gas is used in balloons?",
-    "options": ["Oxygen", "Nitrogen", "Helium", "Carbon dioxide"],
-    "a": "Helium",
-    "mode": "FLIP"
+    "q": "Name the largest gland in human body",
+    "a": "Liver",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 157,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "7/8 as decimal?",
-    "options": ["0.75", "0.85", "0.875", "0.95"],
-    "a": "0.875",
-    "mode": "FLIP"
+    "q": "What is 3/5 of 100?",
+    "a": "60",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 158,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Who founded Maurya Empire?",
-    "options": ["Ashoka", "Chandragupta Maurya", "Bindusara", "Bimbisara"],
-    "a": "Chandragupta Maurya",
-    "mode": "FLIP"
+    "q": "Name the instrument to measure earthquake",
+    "a": "Seismograph",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 159,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Area of square with side 9cm?",
-    "options": ["18 sq cm", "36 sq cm", "81 sq cm", "90 sq cm"],
-    "a": "81 sq cm",
-    "mode": "FLIP"
+    "q": "Find average of 10, 20, 30",
+    "a": "20",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 160,
     "category": "CLASS6",
-    "type": "MCQ",
-    "q": "Which mirror is used in vehicles?",
-    "options": ["Plane", "Concave", "Convex", "All"],
-    "a": "Convex",
-    "mode": "FLIP"
+    "q": "Name the deepest ocean trench",
+    "a": "Mariana Trench",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 161,
     "category": "CLASS7",
-    "type": "MCQ",
     "q": "Solve: 2x + 5 = 15",
-    "options": ["x = 3", "x = 5", "x = 10", "x = 7"],
     "a": "x = 5",
-    "mode": "FLIP"
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 162,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Which acid is present in lemon?",
-    "options": ["Acetic acid", "Citric acid", "Tartaric acid", "Lactic acid"],
+    "q": "Name the acid present in lemon",
     "a": "Citric acid",
-    "mode": "FLIP"
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 163,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Complement of 35°?",
-    "options": ["45°", "55°", "65°", "145°"],
-    "a": "55°",
-    "mode": "FLIP"
+    "q": "What is 25% of 800?",
+    "a": "200",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 164,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Who started Non-Cooperation Movement?",
-    "options": ["Nehru", "Tilak", "Gandhi", "Patel"],
-    "a": "Gandhi",
-    "mode": "FLIP"
+    "q": "Who was the first Prime Minister of India?",
+    "a": "Jawaharlal Nehru",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 165,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Simple interest on ₹1000 at 5% for 2 years?",
-    "options": ["₹50", "₹100", "₹150", "₹200"],
-    "a": "₹100",
-    "mode": "FLIP"
+    "q": "Find square root of 144",
+    "a": "12",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 166,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Which tissue transports water in plants?",
-    "options": ["Phloem", "Xylem", "Cambium", "Epidermis"],
-    "a": "Xylem",
-    "mode": "FLIP"
+    "q": "Name the process of rusting",
+    "a": "Oxidation",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 167,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Ratio of 15 to 25 in simplest form?",
-    "options": ["3:5", "5:3", "15:25", "1:5"],
-    "a": "3:5",
-    "mode": "FLIP"
+    "q": "Convert 0.5 to fraction",
+    "a": "1/2",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 168,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Which Mughal ruler was called Zinda Pir?",
-    "options": ["Akbar", "Shah Jahan", "Aurangzeb", "Humayun"],
-    "a": "Aurangzeb",
-    "mode": "FLIP"
+    "q": "Which blood group is universal donor?",
+    "a": "O negative",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 169,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Area of triangle: base 10cm, height 6cm?",
-    "options": ["30 sq cm", "60 sq cm", "16 sq cm", "32 sq cm"],
+    "q": "Area of triangle with base 10cm height 6cm?",
     "a": "30 sq cm",
-    "mode": "FLIP"
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 170,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Which instrument measures temperature?",
-    "options": ["Barometer", "Thermometer", "Hygrometer", "Anemometer"],
-    "a": "Thermometer",
-    "mode": "FLIP"
+    "q": "Name the largest plateau in India",
+    "a": "Deccan Plateau",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 171,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "If CP = ₹200, SP = ₹250, Profit %?",
-    "options": ["20%", "25%", "30%", "50%"],
-    "a": "25%",
-    "mode": "FLIP"
+    "q": "Solve: 3x - 7 = 11",
+    "a": "x = 6",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 172,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Which gas causes acid rain?",
-    "options": ["Oxygen", "Sulphur dioxide", "Nitrogen", "Helium"],
-    "a": "Sulphur dioxide",
-    "mode": "FLIP"
+    "q": "Name the hardest part of human body",
+    "a": "Tooth enamel",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 173,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Supplement of 120°?",
-    "options": ["30°", "60°", "90°", "60°"],
-    "a": "60°",
-    "mode": "FLIP"
+    "q": "Find profit if CP=200 SP=250",
+    "a": "50",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 174,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Battle of Plassey year?",
-    "options": ["1757", "1764", "1857", "1947"],
-    "a": "1757",
-    "mode": "FLIP"
+    "q": "Which gas is used in fire extinguisher?",
+    "a": "Carbon dioxide",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 175,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Mean of 10, 20, 30, 40?",
-    "options": ["20", "25", "30", "100"],
-    "a": "25",
-    "mode": "FLIP"
+    "q": "Cube root of 64?",
+    "a": "4",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 176,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Which part of brain controls thinking?",
-    "options": ["Cerebellum", "Medulla", "Cerebrum", "Spinal cord"],
-    "a": "Cerebrum",
-    "mode": "FLIP"
+    "q": "Name the unit of electric current",
+    "a": "Ampere",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 177,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "If 3 pens cost ₹45, cost of 5 pens?",
-    "options": ["₹60", "₹70", "₹75", "₹80"],
-    "a": "₹75",
-    "mode": "FLIP"
+    "q": "Simple interest on 1000 at 5% for 2 years?",
+    "a": "100",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 178,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Which planet is called Morning Star?",
-    "options": ["Mars", "Venus", "Mercury", "Jupiter"],
-    "a": "Venus",
-    "mode": "FLIP"
+    "q": "Which part of brain controls balance?",
+    "a": "Cerebellum",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 179,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "(-8) × (-2) = ?",
-    "options": ["-16", "-10", "10", "16"],
-    "a": "16",
-    "mode": "FLIP"
+    "q": "Circumference of circle radius 7cm? Use π=22/7",
+    "a": "44 cm",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 180,
     "category": "CLASS7",
-    "type": "MCQ",
-    "q": "Which ruler built Red Fort?",
-    "options": ["Akbar", "Shah Jahan", "Aurangzeb", "Humayun"],
-    "a": "Shah Jahan",
-    "mode": "FLIP"
+    "q": "Name the pigment that gives blood red color",
+    "a": "Hemoglobin",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 181,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "(a + b)² = ?",
-    "options": ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "2a + 2b"],
-    "a": "a² + 2ab + b²",
-    "mode": "FLIP"
+    "q": "Solve: 4x² = 100",
+    "a": "x = ±5",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 182,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Which metal is liquid at room temperature?",
-    "options": ["Iron", "Mercury", "Gold", "Silver"],
-    "a": "Mercury",
-    "mode": "FLIP"
+    "q": "Name the chemical formula of water",
+    "a": "H₂O",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 183,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Cube root of 343?",
-    "options": ["5", "6", "7", "8"],
-    "a": "7",
-    "mode": "FLIP"
+    "q": "Find compound interest on 1000 at 10% for 2 years",
+    "a": "210",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 184,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Who was the first Governor-General of India?",
-    "options": ["Lord Mountbatten", "Warren Hastings", "Lord Dalhousie", "Lord Canning"],
-    "a": "Warren Hastings",
-    "mode": "FLIP"
+    "q": "Who is known as Missile Man of India?",
+    "a": "Dr. A.P.J. Abdul Kalam",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 185,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "If 15% of a number is 45, the number is?",
-    "options": ["200", "250", "300", "350"],
-    "a": "300",
-    "mode": "FLIP"
+    "q": "Factorize: x² - 9",
+    "a": "(x+3)(x-3)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 186,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Which law states Force = Mass × Acceleration?",
-    "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Gravitation"],
-    "a": "Newton's Second Law",
-    "mode": "FLIP"
+    "q": "Name the SI unit of force",
+    "a": "Newton",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 187,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Area of circle with radius 7cm? Use π = 22/7",
-    "options": ["44 sq cm", "88 sq cm", "154 sq cm", "308 sq cm"],
-    "a": "154 sq cm",
-    "mode": "FLIP"
+    "q": "Volume of cube with side 5cm?",
+    "a": "125 cubic cm",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 188,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Which article abolished untouchability?",
-    "options": ["Article 14", "Article 15", "Article 17", "Article 19"],
-    "a": "Article 17",
-    "mode": "FLIP"
+    "q": "Which gas is called laughing gas?",
+    "a": "Nitrous oxide",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 189,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Exponents: 2³ × 2⁴ = ?",
-    "options": ["2⁷", "2¹²", "4⁷", "2⁹"],
-    "a": "2⁷",
-    "mode": "FLIP"
+    "q": "Solve: (x+2)(x+3) = ?",
+    "a": "x²+5x+6",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 190,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Which disease is caused by Vitamin C deficiency?",
-    "options": ["Rickets", "Scurvy", "Night Blindness", "Beri-Beri"],
-    "a": "Scurvy",
-    "mode": "FLIP"
+    "q": "Name the first woman Prime Minister of India",
+    "a": "Indira Gandhi",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 191,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Compound interest formula?",
-    "options": ["P × R × T / 100", "P(1 + R/100)ⁿ", "SI × T", "P + SI"],
-    "a": "P(1 + R/100)ⁿ",
-    "mode": "FLIP"
+    "q": "Find value of 2³ × 3²",
+    "a": "72",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 192,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Which type of coal has highest carbon content?",
-    "options": ["Peat", "Lignite", "Bituminous", "Anthracite"],
-    "a": "Anthracite",
-    "mode": "FLIP"
+    "q": "Name the law: For every action there is equal opposite reaction",
+    "a": "Newton's Third Law",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 193,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Factorize: x² - 9",
-    "options": ["(x-3)(x-3)", "(x+3)(x+3)", "(x-3)(x+3)", "(x-9)(x+1)"],
-    "a": "(x-3)(x+3)",
-    "mode": "FLIP"
+    "q": "Surface area of cube side 4cm?",
+    "a": "96 sq cm",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 194,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Who gave the slogan 'Do or Die'?",
-    "options": ["Nehru", "Subhash Chandra Bose", "Gandhi", "Tilak"],
-    "a": "Gandhi",
-    "mode": "FLIP"
+    "q": "Which cell organelle is called powerhouse?",
+    "a": "Mitochondria",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 195,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Volume of cube with side 4cm?",
-    "options": ["16 cu cm", "48 cu cm", "64 cu cm", "12 cu cm"],
-    "a": "64 cu cm",
-    "mode": "FLIP"
+    "q": "Solve: 5x + 3 = 2x + 15",
+    "a": "x = 4",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 196,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Which cell organelle is called powerhouse?",
-    "options": ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
-    "a": "Mitochondria",
-    "mode": "FLIP"
+    "q": "Name the chemical name of baking soda",
+    "a": "Sodium bicarbonate",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 197,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Probability of getting head in a coin toss?",
-    "options": ["0", "1/4", "1/2", "1"],
-    "a": "1/2",
-    "mode": "FLIP"
+    "q": "If CP=500 Loss=50, find SP",
+    "a": "450",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 198,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Which is the largest gland in human body?",
-    "options": ["Pancreas", "Liver", "Thyroid", "Pituitary"],
-    "a": "Liver",
-    "mode": "FLIP"
+    "q": "Name the phenomenon of splitting of white light",
+    "a": "Dispersion",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 199,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Square of 25?",
-    "options": ["525", "625", "725", "425"],
-    "a": "625",
-    "mode": "FLIP"
+    "q": "Find square of 1.5",
+    "a": "2.25",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 200,
     "category": "CLASS8",
-    "type": "MCQ",
-    "q": "Which movement was led by Sardar Patel?",
-    "options": ["Dandi March", "Bardoli Satyagraha", "Quit India", "Non-Cooperation"],
-    "a": "Bardoli Satyagraha",
-    "mode": "FLIP"
+    "q": "Name the tissue that connects muscle to bone",
+    "a": "Tendon",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 201,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "√2 is which type of number?",
-    "options": ["Natural", "Integer", "Rational", "Irrational"],
-    "a": "Irrational",
-    "mode": "FLIP"
+    "q": "Expand: (a+b)²",
+    "a": "a²+2ab+b²",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 202,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Who discovered cell?",
-    "options": ["Robert Hooke", "Schleiden", "Schwann", "Leeuwenhoek"],
-    "a": "Robert Hooke",
-    "mode": "FLIP"
+    "q": "Name the atomic number of Carbon",
+    "a": "6",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 203,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "If (x + 1) is a factor of p(x) = x³ + x² + x + 1, then p(-1) = ?",
-    "options": ["0", "1", "-1", "2"],
-    "a": "0",
-    "mode": "FLIP"
+    "q": "If a+b=10 and ab=21, find a²+b²",
+    "a": "58",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 204,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Which event marked beginning of French Revolution?",
-    "options": ["Fall of Bastille", "Execution of Louis XVI", "Tennis Court Oath", "Reign of Terror"],
-    "a": "Fall of Bastille",
-    "mode": "FLIP"
+    "q": "Who proposed the atomic theory?",
+    "a": "John Dalton",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 205,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Heron's formula is used for?",
-    "options": ["Circle area", "Triangle area", "Rectangle area", "Square area"],
-    "a": "Triangle area",
-    "mode": "FLIP"
+    "q": "Find distance covered in 2 hrs at 60 km/hr",
+    "a": "120 km",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 206,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "SI unit of force?",
-    "options": ["Joule", "Watt", "Newton", "Pascal"],
-    "a": "Newton",
-    "mode": "FLIP"
+    "q": "Name the functional group in alcohol",
+    "a": "Hydroxyl -OH",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 207,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Which quadrant has x negative, y positive?",
-    "options": ["I", "II", "III", "IV"],
-    "a": "II",
-    "mode": "FLIP"
+    "q": "If angle of triangle are 50°, 60°, find third angle",
+    "a": "70°",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 208,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Which tissue makes up husk of coconut?",
-    "options": ["Parenchyma", "Collenchyma", "Sclerenchyma", "Xylem"],
-    "a": "Sclerenchyma",
-    "mode": "FLIP"
+    "q": "Which tissue transports water in plants?",
+    "a": "Xylem",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 209,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Angle sum property of triangle?",
-    "options": ["90°", "180°", "270°", "360°"],
-    "a": "180°",
-    "mode": "FLIP"
+    "q": "Solve: √50",
+    "a": "5√2",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 210,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Who was the last Viceroy of India?",
-    "options": ["Lord Wavell", "Lord Mountbatten", "Lord Linlithgow", "Lord Irwin"],
-    "a": "Lord Mountbatten",
-    "mode": "FLIP"
+    "q": "Name the disease caused by deficiency of Vitamin C",
+    "a": "Scurvy",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 211,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Atomic number of Carbon?",
-    "options": ["4", "6", "8", "12"],
-    "a": "6",
-    "mode": "FLIP"
+    "q": "Find momentum if mass=5kg velocity=10m/s",
+    "a": "50 kg m/s",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 212,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Surface area of sphere formula?",
-    "options": ["πr²", "2πr²", "4πr²", "4/3πr³"],
-    "a": "4πr²",
-    "mode": "FLIP"
+    "q": "Name the SI unit of work",
+    "a": "Joule",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 213,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Which gas is called laughing gas?",
-    "options": ["CO₂", "N₂O", "NO₂", "SO₂"],
-    "a": "N₂O",
-    "mode": "FLIP"
+    "q": "Factorize: 2x² + 7x + 3",
+    "a": "(2x+1)(x+3)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 214,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Mean, Median, Mode relation in symmetric data?",
-    "options": ["Mean > Median", "Mean = Median = Mode", "Mode > Mean", "Median > Mode"],
-    "a": "Mean = Median = Mode",
-    "mode": "FLIP"
+    "q": "Which part of cell contains DNA?",
+    "a": "Nucleus",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 215,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Who wrote 'The Social Contract'?",
-    "options": ["Voltaire", "Montesquieu", "Rousseau", "John Locke"],
-    "a": "Rousseau",
-    "mode": "FLIP"
+    "q": "Find area of circle radius 14cm. Use π=22/7",
+    "a": "616 sq cm",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 216,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Linear equation in two variables has how many solutions?",
-    "options": ["One", "Two", "Finite", "Infinite"],
-    "a": "Infinite",
-    "mode": "FLIP"
+    "q": "Name the universal solvent",
+    "a": "Water",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 217,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Which is a communicable disease?",
-    "options": ["Diabetes", "Cancer", "Tuberculosis", "Hypertension"],
-    "a": "Tuberculosis",
-    "mode": "FLIP"
+    "q": "If sin θ = 3/5, find cos θ",
+    "a": "4/5",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 218,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Euclid's fifth postulate is about?",
-    "options": ["Line segment", "Right angles", "Parallel lines", "Circles"],
-    "a": "Parallel lines",
-    "mode": "FLIP"
+    "q": "Name the process of conversion of solid to gas directly",
+    "a": "Sublimation",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 219,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "What is the valency of Oxygen?",
-    "options": ["1", "2", "3", "4"],
-    "a": "2",
-    "mode": "FLIP"
+    "q": "Midpoint of (2,4) and (6,8)?",
+    "a": "(4,6)",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 220,
     "category": "CLASS9",
-    "type": "MCQ",
-    "q": "Which river is called Sorrow of Bihar?",
-    "options": ["Ganga", "Yamuna", "Kosi", "Gandak"],
-    "a": "Kosi",
-    "mode": "FLIP"
+    "q": "Name the smallest particle of an element",
+    "a": "Atom",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 221,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Quadratic equation ax² + bx + c = 0 has equal roots if?",
-    "options": ["b² > 4ac", "b² < 4ac", "b² = 4ac", "b² = 0"],
-    "a": "b² = 4ac",
-    "mode": "FLIP"
+    "q": "Find roots of x²-5x+6=0",
+    "a": "x=2, x=3",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 222,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Which reaction is used in white washing walls?",
-    "options": ["CaO + H₂O → Ca(OH)₂", "CaCO₃ → CaO + CO₂", "Ca(OH)₂ + CO₂ → CaCO₃ + H₂O", "Both A and C"],
-    "a": "Both A and C",
-    "mode": "FLIP"
+    "q": "Name the chemical formula of common salt",
+    "a": "NaCl",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 223,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "AP: 3, 8, 13... Common difference?",
-    "options": ["3", "4", "5", "8"],
-    "a": "5",
-    "mode": "FLIP"
+    "q": "If tan θ = 3/4, find sin θ",
+    "a": "3/5",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 224,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Power house of European Union?",
-    "options": ["France", "Germany", "Italy", "Spain"],
-    "a": "Germany",
-    "mode": "FLIP"
+    "q": "Who discovered electron?",
+    "a": "J.J. Thomson",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 225,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "sin²θ + cos²θ = ?",
-    "options": ["0", "1", "2", "tan²θ"],
-    "a": "1",
-    "mode": "FLIP"
+    "q": "Find AP: 2, 5, 8, __, __",
+    "a": "11, 14",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 226,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Which mirror forms virtual, erect, diminished image?",
-    "options": ["Plane", "Concave", "Convex", "All"],
-    "a": "Convex",
-    "mode": "FLIP"
+    "q": "Name the lens used to correct myopia",
+    "a": "Concave lens",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 227,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Distance of point (3,4) from origin?",
-    "options": ["3", "4", "5", "7"],
-    "a": "5",
-    "mode": "FLIP"
+    "q": "If sec θ = 13/12, find cot θ",
+    "a": "12/5",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 228,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Which hormone regulates blood sugar?",
-    "options": ["Thyroxine", "Adrenaline", "Insulin", "Growth hormone"],
-    "a": "Insulin",
-    "mode": "FLIP"
+    "q": "Name the pH value of pure water",
+    "a": "7",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 229,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Tangent to circle is perpendicular to?",
-    "options": ["Chord", "Radius at point of contact", "Diameter", "Secant"],
-    "a": "Radius at point of contact",
-    "mode": "FLIP"
+    "q": "Volume of sphere radius 3cm? Use π=22/7",
+    "a": "113.14 cubic cm",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 230,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Which party system exists in China?",
-    "options": ["One-party", "Two-party", "Multi-party", "No party"],
-    "a": "One-party",
-    "mode": "FLIP"
+    "q": "Name the gas released during photosynthesis",
+    "a": "Oxygen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 231,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Probability of impossible event?",
-    "options": ["-1", "0", "1", "0.5"],
-    "a": "0",
-    "mode": "FLIP"
+    "q": "Find discriminant of 2x²-4x+3=0",
+    "a": "-8",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 232,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Which process is used for concentration of sulphide ore?",
-    "options": ["Gravity separation", "Froth floatation", "Magnetic separation", "Leaching"],
-    "a": "Froth floatation",
-    "mode": "FLIP"
+    "q": "Name the SI unit of power",
+    "a": "Watt",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 233,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Mode of data: 2, 3, 5, 3, 4, 3, 6?",
-    "options": ["2", "3", "4", "5"],
-    "a": "3",
-    "mode": "FLIP"
+    "q": "If mean=15 median=14, find mode",
+    "a": "12",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 234,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Which lens is used to correct myopia?",
-    "options": ["Convex", "Concave", "Bifocal", "Cylindrical"],
-    "a": "Concave",
-    "mode": "FLIP"
+    "q": "Name the hormone that regulates blood sugar",
+    "a": "Insulin",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 235,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "GST full form?",
-    "options": ["General Sales Tax", "Goods and Services Tax", "Government Service Tax", "Goods Sales Tax"],
-    "a": "Goods and Services Tax",
-    "mode": "FLIP"
+    "q": "Find CSA of cylinder r=7cm h=10cm. Use π=22/7",
+    "a": "440 sq cm",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 236,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Which gas is evolved when metal reacts with acid?",
-    "options": ["O₂", "H₂", "CO₂", "N₂"],
-    "a": "H₂",
-    "mode": "FLIP"
+    "q": "Name the process of burning in presence of oxygen",
+    "a": "Combustion",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 237,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Area of sector with angle 60° in circle of radius 7cm? π=22/7",
-    "options": ["25.67 sq cm", "77/3 sq cm", "154 sq cm", "49 sq cm"],
-    "a": "77/3 sq cm",
-    "mode": "FLIP"
+    "q": "Probability of getting 7 on a die?",
+    "a": "0",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 238,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Which blood vessel carries oxygenated blood from lungs?",
-    "options": ["Pulmonary artery", "Pulmonary vein", "Aorta", "Vena cava"],
-    "a": "Pulmonary vein",
-    "mode": "FLIP"
+    "q": "Name the component of blood that carries oxygen",
+    "a": "Hemoglobin",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 239,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Which is not a step of resource planning?",
-    "options": ["Identification", "Mapping", "Exploitation", "Matching with development plans"],
-    "a": "Exploitation",
-    "mode": "FLIP"
+    "q": "Find sum of first 10 natural numbers",
+    "a": "55",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 240,
     "category": "CLASS10",
-    "type": "MCQ",
-    "q": "Which element has electronic configuration 2, 8, 2?",
-    "options": ["Carbon", "Oxygen", "Magnesium", "Calcium"],
-    "a": "Magnesium",
-    "mode": "FLIP"
+    "q": "Name the scientist who gave laws of motion",
+    "a": "Isaac Newton",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 241,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Which is the smallest country in the world?",
-    "options": ["Monaco", "Vatican City", "Maldives", "Nauru"],
-    "a": "Vatican City",
-    "mode": "FLIP"
+    "q": "Differentiate: y = x³",
+    "a": "dy/dx = 3x²",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 242,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Who invented Computer?",
-    "options": ["Charles Babbage", "Alan Turing", "Bill Gates", "Steve Jobs"],
-    "a": "Charles Babbage",
-    "mode": "FLIP"
+    "q": "Name the Avogadro's number",
+    "a": "6.022 × 10²³",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 243,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Which sport is called Gentleman's Game?",
-    "options": ["Football", "Cricket", "Tennis", "Golf"],
-    "a": "Cricket",
-    "mode": "FLIP"
+    "q": "Find n if nPr = 60 and nCr = 10",
+    "a": "n = 5",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 244,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "How many players in a volleyball team?",
-    "options": ["5", "6", "7", "11"],
-    "a": "6",
-    "mode": "FLIP"
+    "q": "Name the principle: Energy can neither be created nor destroyed",
+    "a": "Law of Conservation of Energy",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 245,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Which is the largest animal on earth?",
-    "options": ["African Elephant", "Blue Whale", "Giraffe", "White Shark"],
-    "a": "Blue Whale",
-    "mode": "FLIP"
+    "q": "Integrate: ∫2x dx",
+    "a": "x² + C",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 246,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "First woman Prime Minister of India?",
-    "options": ["Sonia Gandhi", "Indira Gandhi", "Pratibha Patil", "Sarojini Naidu"],
-    "a": "Indira Gandhi",
-    "mode": "FLIP"
+    "q": "Name the SI unit of pressure",
+    "a": "Pascal",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 247,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Which is the fastest land animal?",
-    "options": ["Lion", "Tiger", "Cheetah", "Horse"],
-    "a": "Cheetah",
-    "mode": "FLIP"
+    "q": "Find distance between (3,4) and (0,0)",
+    "a": "5 units",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 248,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Nobel Prize was started in which year?",
-    "options": ["1895", "1901", "1914", "1945"],
-    "a": "1901",
-    "mode": "FLIP"
+    "q": "Name the bond formed by sharing of electrons",
+    "a": "Covalent bond",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 249,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Which is the highest civilian award in India?",
-    "options": ["Padma Shri", "Padma Bhushan", "Padma Vibhushan", "Bharat Ratna"],
-    "a": "Bharat Ratna",
-    "mode": "FLIP"
+    "q": "If sin A = 4/5, find tan A",
+    "a": "4/3",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 250,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Which planet is known as Red Planet?",
-    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-    "a": "Mars",
-    "mode": "FLIP"
+    "q": "Name the father of modern chemistry",
+    "a": "Antoine Lavoisier",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 251,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "How many strings does a guitar have?",
-    "options": ["4", "5", "6", "7"],
-    "a": "6",
-    "mode": "FLIP"
+    "q": "Find slope of line 3x + 4y = 12",
+    "a": "-3/4",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 252,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Which is the national game of India?",
-    "options": ["Cricket", "Hockey", "Kabaddi", "Football"],
-    "a": "Hockey",
-    "mode": "FLIP"
+    "q": "Name the branch of biology dealing with heredity",
+    "a": "Genetics",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 253,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "First man to walk on Moon?",
-    "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Rakesh Sharma"],
-    "a": "Neil Armstrong",
-    "mode": "FLIP"
+    "q": "Differentiate: y = sin x",
+    "a": "dy/dx = cos x",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 254,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Which organ purifies blood in human body?",
-    "options": ["Heart", "Lungs", "Kidney", "Liver"],
-    "a": "Kidney",
-    "mode": "FLIP"
+    "q": "Name the gas law: PV = constant",
+    "a": "Boyle's Law",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 255,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Olympics are held every how many years?",
-    "options": ["2", "3", "4", "5"],
-    "a": "4",
-    "mode": "FLIP"
+    "q": "Find equation of circle center (0,0) radius 5",
+    "a": "x² + y² = 25",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 256,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Which is the largest democracy in the world?",
-    "options": ["USA", "India", "UK", "Canada"],
-    "a": "India",
-    "mode": "FLIP"
+    "q": "Name the element with atomic number 1",
+    "a": "Hydrogen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 257,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Who painted Mona Lisa?",
-    "options": ["Picasso", "Van Gogh", "Leonardo da Vinci", "Michelangelo"],
-    "a": "Leonardo da Vinci",
-    "mode": "FLIP"
+    "q": "If A = {1,2,3} B = {3,4,5}, find A∩B",
+    "a": "{3}",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 258,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Which is the longest wall in the world?",
-    "options": ["Berlin Wall", "Great Wall of China", "Hadrian's Wall", "Western Wall"],
-    "a": "Great Wall of China",
-    "mode": "FLIP"
+    "q": "Name the vector quantity among speed and velocity",
+    "a": "Velocity",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 259,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "WWW stands for?",
-    "options": ["World Wide Web", "World Wide Weather", "Web World Wide", "World Web Wide"],
-    "a": "World Wide Web",
-    "mode": "FLIP"
+    "q": "Find limit: lim x→2 (x²-4)/(x-2)",
+    "a": "4",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 260,
     "category": "CLASS11",
-    "type": "MCQ",
-    "q": "Which vitamin is produced in skin by sunlight?",
-    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-    "a": "Vitamin D",
-    "mode": "FLIP"
-    },
-      {
+    "q": "Name the process by which plants lose water",
+    "a": "Transpiration",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
     "id": 261,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Which is the largest internal organ in human body?",
-    "options": ["Brain", "Lungs", "Liver", "Heart"],
-    "a": "Liver",
-    "mode": "FLIP"
+    "q": "Integrate: ∫x² dx",
+    "a": "x³/3 + C",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 262,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Who is known as Father of Computer Science?",
-    "options": ["Charles Babbage", "Alan Turing", "John von Neumann", "Tim Berners-Lee"],
-    "a": "Alan Turing",
-    "mode": "FLIP"
+    "q": "Name the SI unit of electric charge",
+    "a": "Coulomb",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 263,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Which country gifted Statue of Liberty to USA?",
-    "options": ["UK", "France", "Spain", "Germany"],
-    "a": "France",
-    "mode": "FLIP"
+    "q": "Find |A| if A = [[2,3],[1,4]]",
+    "a": "5",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 264,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "How many sides does a hexagon have?",
-    "options": ["5", "6", "7", "8"],
-    "a": "6",
-    "mode": "FLIP"
+    "q": "Name the principle behind optical fiber",
+    "a": "Total Internal Reflection",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 265,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Which is the coldest place on Earth?",
-    "options": ["Siberia", "Antarctica", "Alaska", "Greenland"],
-    "a": "Antarctica",
-    "mode": "FLIP"
+    "q": "Differentiate: y = eˣ",
+    "a": "dy/dx = eˣ",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 266,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "First Indian to win Nobel Prize?",
-    "options": ["CV Raman", "Rabindranath Tagore", "Mother Teresa", "Amartya Sen"],
-    "a": "Rabindranath Tagore",
-    "mode": "FLIP"
+    "q": "Name the DNA structure discoverers",
+    "a": "Watson and Crick",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 267,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Which gas is most abundant in Earth's atmosphere?",
-    "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"],
-    "a": "Nitrogen",
-    "mode": "FLIP"
+    "q": "If P(A) = 0.3, P(B) = 0.4, A&B independent, find P(A∩B)",
+    "a": "0.12",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 268,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Which chess piece moves in L shape?",
-    "options": ["Bishop", "Knight", "Rook", "Queen"],
-    "a": "Knight",
-    "mode": "FLIP"
+    "q": "Name the phenomenon of bending of light",
+    "a": "Refraction",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 269,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Which Indian city is called Silicon Valley of India?",
-    "options": ["Hyderabad", "Pune", "Bangalore", "Chennai"],
-    "a": "Bangalore",
-    "mode": "FLIP"
+    "q": "Find inverse of matrix [[1,2],[3,4]]",
+    "a": "[[-2,1],[1.5,-0.5]]",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 270,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "How many teeth does an adult human have?",
-    "options": ["28", "30", "32", "34"],
-    "a": "32",
-    "mode": "FLIP"
+    "q": "Name the IUPAC name of CH₃COOH",
+    "a": "Ethanoic acid",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 271,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Which is the deepest point in oceans?",
-    "options": ["Puerto Rico Trench", "Java Trench", "Mariana Trench", "Peru-Chile Trench"],
-    "a": "Mariana Trench",
-    "mode": "FLIP"
+    "q": "Integrate: ∫cos x dx",
+    "a": "sin x + C",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 272,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Who wrote 'Wings of Fire'?",
-    "options": ["APJ Abdul Kalam", "Jawaharlal Nehru", "Mahatma Gandhi", "Narendra Modi"],
-    "a": "APJ Abdul Kalam",
-    "mode": "FLIP"
+    "q": "Name the law: E = mc²",
+    "a": "Einstein's Mass-Energy Equivalence",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 273,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Which is the national tree of India?",
-    "options": ["Neem", "Banyan", "Peepal", "Mango"],
-    "a": "Banyan",
-    "mode": "FLIP"
+    "q": "Find vector dot product: (2i+3j) • (i-2j)",
+    "a": "-4",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 274,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "ISRO full form?",
-    "options": ["Indian Space Research Organisation", "International Space Research Org", "Indian Scientific Research Org", "Indian Satellite Research Org"],
-    "a": "Indian Space Research Organisation",
-    "mode": "FLIP"
+    "q": "Name the process of conversion of glucose to pyruvate",
+    "a": "Glycolysis",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 275,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Which instrument is used to see stars?",
-    "options": ["Microscope", "Telescope", "Periscope", "Stethoscope"],
-    "a": "Telescope",
-    "mode": "FLIP"
+    "q": "Find derivative of ln x",
+    "a": "1/x",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 276,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Largest state in India by area?",
-    "options": ["Madhya Pradesh", "Uttar Pradesh", "Rajasthan", "Maharashtra"],
-    "a": "Rajasthan",
-    "mode": "FLIP"
+    "q": "Name the device that converts AC to DC",
+    "a": "Rectifier",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 277,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Which blood vessels carry blood away from heart?",
-    "options": ["Veins", "Arteries", "Capillaries", "All"],
-    "a": "Arteries",
-    "mode": "FLIP"
+    "q": "Find area under curve y=x² from 0 to 2",
+    "a": "8/3",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 278,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Who invented the telephone?",
-    "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Marconi"],
-    "a": "Alexander Graham Bell",
-    "mode": "FLIP"
+    "q": "Name the polymer of glucose",
+    "a": "Starch",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 279,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "Which is the driest place on Earth?",
-    "options": ["Sahara Desert", "Atacama Desert", "Thar Desert", "Gobi Desert"],
-    "a": "Atacama Desert",
-    "mode": "FLIP"
+    "q": "If f(x) = x²+1, find f(3)",
+    "a": "10",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 280,
     "category": "CLASS12",
-    "type": "MCQ",
-    "q": "National Youth Day is celebrated on?",
-    "options": ["12 January", "15 January"],
-    "a": "12 January",
-    "mode": "FLIP"
+    "q": "Name the scientist who gave Quantum theory",
+    "a": "Max Planck",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   }
   ]
