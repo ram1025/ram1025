@@ -107,21 +107,22 @@ input[type="file"]{display:none}
     <img id="welcome-seal-img" src="icon-192.png" alt="ABST Security Seal Node">
   </div>
   
-  <div class="touch-prompt" id="touch-btn">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
-  <div style="color:#8892b0;font-size:11px;margin-top:30px;letter-spacing:1px;opacity:0.6">Jarvis AI Security Layer 9 Network Secured</div>
-</div>
+  <div id="welcomeScreen">
+  <div>⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
+  <div>Jarvis AI Security Layer 9</div>
 
-<!-- Install Button Start - Welcome Screen -->
-<div id="welcomeInstallContainer" style="display:none; margin-top:25px; text-align:center;">
-  <button id="installBtnWelcome" style="background:linear-gradient(135deg, #00d4ff 0%, #00ff88 100%); border:none; padding:14px 28px; border-radius:12px; color:#0a0e27; font-size:15px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:10px; box-shadow:0 0 20px rgba(0,212,255,0.4); transition:all 0.3s;">
-    <img src="icon-192.png" alt="ABST" style="width:24px; height:24px; border-radius:6px;">
-    Install ABST App
-  </button>
-  <p style="color:#7dd3fc; font-size:11px; margin-top:8px; opacity:0.8;">
-    Add to Home Screen for best experience
-  </p>
-</div>
-<!-- Install Button End -->
+  <!-- Install Button Start - Welcome Screen -->
+  <div id="welcomeInstallContainer" style="display:none; margin-top:25px; text-align:center;">
+    <button id="installBtnWelcome" style="background:linear-gradient(135deg, #00d4ff 0%, #00ff88 100%); color:#0a192f; padding:12px 24px; border:none; border-radius:12px; font-weight:bold; font-size:16px;">
+      <img src="icon-192.png" alt="ABST" style="width:24px; height:24px; border-radius:6px; vertical-align:middle; margin-right:8px;">
+      Install ABST App
+    </button>
+    <p style="color:#7dd3fc; font-size:11px; margin-top:8px; opacity:0.8;">
+      Add to Home Screen for best experience
+    </p>
+  </div>
+  <!-- Install Button End -->
+</div> <!-- Ikkada welcomeScreen close avvali -->
 
 <div class="container">
 <div class="menu-trigger" onclick="openM('profileModal')">☰</div>
@@ -587,14 +588,13 @@ if('serviceWorker' in navigator){
  .catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
 }
 
-// Force show install button after 1 sec
+// Welcome screen lo 1 sec tharuvatha button chupinchu
 setTimeout(function() {
-  var welcomeInstallBox = document.getElementById('welcomeInstallContainer');
+  var btnBox = document.getElementById('welcomeInstallContainer');
   var isStandalone = window.matchMedia('(display-mode: standalone)').matches;
   
-  if(welcomeInstallBox && !isStandalone) {
-     welcomeInstallBox.style.display = 'block';
-     console.log('ABST Install button visible now');
+  if(btnBox && !isStandalone) {
+     btnBox.style.display = 'block';
   }
 }, 1000);
 
