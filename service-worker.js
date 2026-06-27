@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ram1025-v15-20251004'; // v14 → v15
+const CACHE_NAME = 'ram1025-v21-20251004';
 const BASE_PATH = '/ram1025/';
 
 const urlsToCache = [
@@ -7,28 +7,54 @@ const urlsToCache = [
   BASE_PATH + 'ABST-BRAIN.html',
   BASE_PATH + 'dpr.html',
   BASE_PATH + 'constitution.html',
+  BASE_PATH + 'Jarvis-Ai.html',
+  BASE_PATH + 'dpr-complete.html',
+  BASE_PATH + '36-Pillars-Book.html',
+  BASE_PATH + 'ABST-GAME.html',
   BASE_PATH + 'manifest.json',
+  BASE_PATH + 'style.css',
+  
+  // ICONS & IMAGES
   BASE_PATH + 'icon-192.png',
   BASE_PATH + 'icon-512.png',
   BASE_PATH + 'apple-touch-icon.png',
-  BASE_PATH + 'style.css',
+  BASE_PATH + 'miniature-model.jpg',
+  BASE_PATH + 'day-mode.jpg',
+  BASE_PATH + 'night-mode.jpg',
+  
+  // PDF FILES
   BASE_PATH + 'MyJeevandhara_Investor_Note.pdf',
-  BASE_PATH + 'Project_MJ_Detailed_Blueprint.pdf'
+  BASE_PATH + 'Project_MJ_Detailed_Blueprint.pdf',
+  
+  // ABST BRAIN - 5 MAIN JSON FILES ONLY
+  BASE_PATH + '36-pillars-108.json',
+  BASE_PATH + 'Education-school-280.json',
+  BASE_PATH + 'Education-college-250.json',
+  BASE_PATH + 'Education-competitive-340.json',
+  BASE_PATH + 'Education-others-130.json'
 ];
 
-// Install - pre-cache anni files
+// Install
 self.addEventListener('install', event => {
+  console.log('[SW] Installing v21...');
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
-        console.log('[SW] Pre-caching files');
+        console.log('[SW] Pre-caching 5 main JSON files');
         return cache.addAll(urlsToCache);
       })
-      .then(() => self.skipWaiting())
+      .then(() => {
+        console.log('[SW] All files cached');
+        return self.skipWaiting();
+      })
+      .catch(err => {
+        console.error('[SW] Cache failed:', err);
+        console.error('[SW] Missing:', err.message);
+      })
   );
 });
 
-// Activate - old cache delete
+// Activate
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys => 
@@ -37,34 +63,45 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch - Cache First, then Network
+// Fetch - Cache First
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
   
-  // HTML, PDF, Images ki Cache First
-  if (event.request.url.includes('.html') || 
-      event.request.url.includes('.pdf') || 
-      event.request.url.includes('.png') ||
-      event.request.url.includes('.jpg')) {
+  const url = event.request.url;
+  
+  if (url.includes('.html') || 
+      url.includes('.pdf') || 
+      url.includes('.json') ||
+      url.includes('.png') ||
+      url.includes('.jpg')) {
     
     event.respondWith(
       caches.match(event.request)
         .then(cached => {
           if (cached) {
-            console.log('[SW] Serving from cache:', event.request.url);
+            console.log('[SW] Cache hit:', url);
             return cached;
           }
-          // Cache lo lekapothe network nundi techuko + cache chey
           return fetch(event.request).then(res => {
             return caches.open(CACHE_NAME).then(cache => {
               cache.put(event.request, res.clone());
               return res;
             });
+          }).catch(() => {
+            if (url.includes('.json')) {
+              return new Response('[]', {headers: {'Content-Type': 'application/json'}});
+            }
+            if (url.includes('.pdf')) {
+              return new Response('PDF Not Available Offline', {status: 404});
+            }
+            if (url.includes('.html')) {
+              return caches.match(BASE_PATH + 'index.html');
+            }
+            return new Response('Offline', {status: 404});
           });
         })
     );
   } else {
-    // CSS, JS ki Network First
     event.respondWith(
       fetch(event.request).catch(() => caches.match(event.request))
     );
