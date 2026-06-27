@@ -1,2756 +1,3062 @@
-  [
-  {
-    "id": 495,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "First General Elections held in?",
-    "options": ["1950-51", "1951-52", "1952-53"],
-    "a": "1951-52",
-    "mode": "FLIP"
-  },
-  {
-    "id": 496,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "NOTA introduced in?",
-    "options": ["2009", "2013", "2014", "2019"],
-    "a": "2013",
-    "mode": "FLIP"
-  },
-  {
-    "id": 497,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Anti-Defection Law in which Schedule?",
-    "options": ["8th", "9th", "10th", "11th"],
-    "a": "10th",
-    "mode": "FLIP"
-  },
-  {
-    "id": 498,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "52nd Amendment is related to?",
-    "options": ["GST", "Anti-Defection", "Panchayati Raj", "Fundamental Duties"],
-    "a": "Anti-Defection",
-    "mode": "FLIP"
-  },
-  {
-    "id": 499,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Fundamental Duties added by?",
-    "options": ["42nd Amendment", "44th Amendment", "86th Amendment", "97th Amendment"],
-    "a": "42nd Amendment",
-    "mode": "FLIP"
-  },
-  {
-    "id": 500,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "How many Fundamental Duties?",
-    "options": ["9", "10", "11", "12"],
-    "a": "11",
-    "mode": "FLIP"
-  },
-  {
-    "id": 501,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Finance Commission appointed every?",
-    "options": ["3 years", "5 years", "6 years", "10 years"],
-    "a": "5 years",
-    "mode": "FLIP"
-  },
-  {
-    "id": 502,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "15th Finance Commission Chairman?",
-    "options": ["NK Singh", "YV Reddy", "Vijay Kelkar", "Rangarajan"],
-    "a": "NK Singh",
-    "mode": "FLIP"
-  },
-  {
-    "id": 503,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Article 280 deals with?",
-    "options": ["CAG", "Finance Commission", "Election Commission", "UPSC"],
-    "a": "Finance Commission",
-    "mode": "FLIP"
-  },
-  {
-    "id": 504,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "States Reorganization Act passed in?",
-    "options": ["1950", "1956", "1960", "1966"],
-    "a": "1956",
-    "mode": "FLIP"
-  },
-  {
-    "id": 505,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "First State formed on linguistic basis?",
-    "options": ["Tamil Nadu", "Andhra Pradesh", "Karnataka", "Gujarat"],
-    "a": "Andhra Pradesh",
-    "mode": "FLIP"
-  },
-  {
-    "id": 506,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Telangana formed in?",
-    "options": ["2012", "2013", "2014", "2015"],
-    "a": "2014",
-    "mode": "FLIP"
-  },
-  {
-    "id": 507,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "J&K Reorganization Act passed in?",
-    "options": ["2018", "2019", "2020", "2021"],
-    "a": "2019",
-    "mode": "FLIP"
-  },
-  {
-    "id": 508,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "How many UTs in India currently?",
-    "options": ["7", "8", "9", "10"],
-    "a": "8",
-    "mode": "FLIP"
-  },
-  {
-    "id": 509,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Inter-State Council under Article?",
-    "options": ["261", "262", "263", "264"],
-    "a": "263",
-    "mode": "FLIP"
-  },
-  {
-    "id": 510,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Zonal Councils are?",
-    "options": ["Constitutional", "Statutory", "Executive", "Advisory"],
-    "a": "Statutory",
-    "mode": "FLIP"
-  },
-  {
-    "id": 511,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "How many Zonal Councils?",
-    "options": ["4", "5", "6", "7"],
-    "a": "5",
-    "mode": "FLIP"
-  },
-  {
-    "id": 512,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Official Language of Union?",
-    "options": ["English", "Hindi", "Both Hindi & English", "All 22 Languages"],
-    "a": "Hindi",
-    "mode": "FLIP"
-  },
-  {
-    "id": 513,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Languages in 8th Schedule?",
-    "options": ["18", "20", "22", "24"],
-    "a": "22",
-    "mode": "FLIP"
-  },
-  {
-    "id": 514,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Classical Language status given by?",
-    "options": ["President", "Parliament", "Govt of India", "Supreme Court"],
-    "a": "Govt of India",
-    "mode": "FLIP"
-  },
-  {
-    "id": 515,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "How many Classical Languages currently?",
-    "options": ["4", "5", "6", "11"],
-    "a": "11",
-    "mode": "FLIP"
-  },
-  {
-    "id": 516,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "First Classical Language declared?",
-    "options": ["Sanskrit", "Tamil", "Telugu", "Kannada"],
-    "a": "Tamil",
-    "mode": "FLIP"
-  },
-  {
-    "id": 517,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Sarkaria Commission related to?",
-    "options": ["Centre-State Relations", "Electoral Reforms", "Police Reforms", "Education"],
-    "a": "Centre-State Relations",
-    "mode": "FLIP"
-  },
-  {
-    "id": 518,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Punchhi Commission related to?",
-    "options": ["Centre-State Relations", "Judicial Reforms", "Administrative Reforms", "Tax Reforms"],
-    "a": "Centre-State Relations",
-    "mode": "FLIP"
-  },
-  {
-    "id": 519,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Second ARC Chairman?",
-    "options": ["NK Singh", "Veerappa Moily", "YV Reddy", "Urjit Patel"],
-    "a": "Veerappa Moily",
-    "mode": "FLIP"
-  },
-  {
-    "id": 520,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Civil Services Day?",
-    "options": ["April 21", "May 21", "June 21", "July 21"],
-    "a": "April 21",
-    "mode": "FLIP"
-  },
-  {
-    "id": 521,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "LBSNAA located at?",
-    "options": ["Delhi", "Mussoorie", "Hyderabad", "Shimla"],
-    "a": "Mussoorie",
-    "mode": "FLIP"
-  },
-  {
-    "id": 522,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "SVPNPA trains?",
-    "options": ["IAS", "IPS", "IFS", "IRS"],
-    "a": "IPS",
-    "mode": "FLIP"
-  },
-  {
-    "id": 523,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "All India Services under Article?",
-    "options": ["309", "310", "311", "312"],
-    "a": "312",
-    "mode": "FLIP"
-  },
-  {
-    "id": 524,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Doctrine of Pleasure in Article?",
-    "options": ["309", "310", "311", "312"],
-    "a": "310",
-    "mode": "FLIP"
-  },
-  {
-    "id": 525,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Safeguards for Civil Servants in Article?",
-    "options": ["309", "310", "311", "312"],
-    "a": "311",
-    "mode": "FLIP"
-  },
-  {
-    "id": 526,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Public Service Commissions for Union & States in Article?",
-    "options": ["315", "316", "317", "318"],
-    "a": "315",
-    "mode": "FLIP"
-  },
-  {
-    "id": 527,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "UPSC Chairman term?",
-    "options": ["5 years", "6 years or 65 years age", "6 years or 62 years age", "No fixed term"],
-    "a": "6 years or 65 years age",
-    "mode": "FLIP"
-  },
-  {
-    "id": 528,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Removal of UPSC member by?",
-    "options": ["PM", "President", "Parliament", "Supreme Court"],
-    "a": "President",
-    "mode": "FLIP"
-  },
-  {
-    "id": 529,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "Attorney General of India under Article?",
-    "options": ["72", "76", "80", "84"],
-    "a": "76",
-    "mode": "FLIP"
-  },
-  {
-    "id": 530,
-    "category": "UPSC",
-    "type": "MCQ",
-    "q": "AGI has right to speak in?",
-    "options": ["Lok Sabha only", "Rajya Sabha only", "Both Houses", "Neither House"],
-    "a": "Both Houses",
-    "mode": "FLIP"
-  },
+[
   {
     "id": 531,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Solicitor General is a?",
-    "options": ["Constitutional Post", "Statutory Post", "Executive Post", "Judicial Post"],
-    "a": "Statutory Post",
-    "mode": "FLIP"
+    "q": "Who is known as the Father of Indian Constitution?",
+    "a": "Dr. B.R. Ambedkar",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 532,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Advocate General of State under Article?",
-    "options": ["156", "165", "169", "174"],
-    "a": "165",
-    "mode": "FLIP"
+    "q": "Fundamental Rights are in which part of Constitution?",
+    "a": "Part III",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 533,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Governor appointed by?",
-    "options": ["CM", "PM", "President", "State Legislature"],
-    "a": "President",
-    "mode": "FLIP"
+    "q": "Who appoints the Chief Justice of India?",
+    "a": "President of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 534,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Governor holds office during pleasure of?",
-    "options": ["PM", "President", "CM", "CJI"],
-    "a": "President",
-    "mode": "FLIP"
+    "q": "Total number of Fundamental Duties?",
+    "a": "11",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 535,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Minimum age for Governor?",
-    "options": ["25 years", "30 years", "35 years", "40 years"],
-    "a": "35 years",
-    "mode": "FLIP"
+    "q": "Article 370 is related to?",
+    "a": "Special status of Jammu and Kashmir - now abrogated",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 536,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "CM appointed by?",
-    "options": ["Governor", "President", "PM", "Assembly"],
-    "a": "Governor",
-    "mode": "FLIP"
+    "q": "Who was the first President of India?",
+    "a": "Dr. Rajendra Prasad",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 537,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "State Council of Ministers collectively responsible to?",
-    "options": ["Governor", "President", "Legislative Assembly", "Legislative Council"],
-    "a": "Legislative Assembly",
-    "mode": "FLIP"
+    "q": "Directive Principles of State Policy are in which part?",
+    "a": "Part IV",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 538,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Legislative Council is a?",
-    "options": ["Permanent Body", "Temporary Body", "Advisory Body", "Executive Body"],
-    "a": "Permanent Body",
-    "mode": "FLIP"
+    "q": "Which is the longest river in India?",
+    "a": "Ganga",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 539,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "MLC term?",
-    "options": ["4 years", "5 years", "6 years", "No fixed term"],
-    "a": "6 years",
-    "mode": "FLIP"
+    "q": "Who wrote 'Discovery of India'?",
+    "a": "Jawaharlal Nehru",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 540,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "How many States have Legislative Council?",
-    "options": ["4", "5", "6", "7"],
-    "a": "6",
-    "mode": "FLIP"
+    "q": "How many states in India currently?",
+    "a": "28",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 541,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "High Court judges retire at?",
-    "options": ["60", "62", "65", "70"],
-    "a": "62",
-    "mode": "FLIP"
+    "q": "Article 21 guarantees?",
+    "a": "Right to Life and Personal Liberty",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 542,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "HC judges appointed by?",
-    "options": ["Governor", "CM", "President", "CJI"],
-    "a": "President",
-    "mode": "FLIP"
+    "q": "Who founded Indian National Congress?",
+    "a": "A.O. Hume in 1885",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 543,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Writ jurisdiction of HC under Article?",
-    "options": ["32", "226", "227", "235"],
-    "a": "226",
-    "mode": "FLIP"
+    "q": "Which is the highest civilian award in India?",
+    "a": "Bharat Ratna",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 544,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "District Judge appointed by?",
-    "options": ["Governor", "HC", "President", "CM"],
-    "a": "Governor",
-    "mode": "FLIP"
+    "q": "Planning Commission was replaced by?",
+    "a": "NITI Aayog in 2015",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 545,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Gram Nyayalayas Act passed in?",
-    "options": ["2005", "2008", "2010", "2013"],
-    "a": "2008",
-    "mode": "FLIP"
+    "q": "Who is the first citizen of India?",
+    "a": "President of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 546,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Lok Adalats are?",
-    "options": ["Constitutional", "Statutory", "Executive", "Judicial"],
-    "a": "Statutory",
-    "mode": "FLIP"
+    "q": "What is the tenure of Lok Sabha?",
+    "a": "5 years",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 547,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Family Courts Act passed in?",
-    "options": ["1980", "1984", "1987", "1990"],
-    "a": "1984",
-    "mode": "FLIP"
+    "q": "Green Revolution is associated with?",
+    "a": "M.S. Swaminathan - increased food grain production",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 548,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "NCRB full form?",
-    "options": ["National Crime Records Bureau", "National Cyber Research Bureau", "National Credit Rating Bureau", "National Crisis Response Bureau"],
-    "a": "National Crime Records Bureau",
-    "mode": "FLIP"
+    "q": "How many Union Territories in India?",
+    "a": "8",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 549,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "CBI established in?",
-    "options": ["1947", "1963", "1971", "1984"],
-    "a": "1963",
-    "mode": "FLIP"
+    "q": "Who gives oath to President of India?",
+    "a": "Chief Justice of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 550,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "CBI functions under?",
-    "options": ["MHA", "DoPT", "PMO", "Supreme Court"],
-    "a": "DoPT",
-    "mode": "FLIP"
+    "q": "Right to Education Act was passed in?",
+    "a": "2009",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 551,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "ED full form?",
-    "options": ["Economic Department", "Enforcement Directorate", "Education Directorate", "Energy Department"],
-    "a": "Enforcement Directorate",
-    "mode": "FLIP"
+    "q": "Which planet is known as Red Planet?",
+    "a": "Mars",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 552,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "ED functions under which Ministry?",
-    "options": ["Home", "Finance", "Law", "Corporate Affairs"],
-    "a": "Finance",
-    "mode": "FLIP"
+    "q": "What is GST?",
+    "a": "Goods and Services Tax - implemented 2017",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 553,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "NIA established in?",
-    "options": ["2005", "2008", "2010", "2013"],
-    "a": "2008",
-    "mode": "FLIP"
+    "q": "Who was the first Prime Minister of India?",
+    "a": "Jawaharlal Nehru",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 554,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "CVC established on recommendation of?",
-    "options": ["Sarkaria Commission", "Santhanam Committee", "Punchhi Commission", "Second ARC"],
-    "a": "Santhanam Committee",
-    "mode": "FLIP"
+    "q": "Preamble of Constitution begins with?",
+    "a": "We, the People of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 555,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "CVC is a?",
-    "options": ["Constitutional Body", "Statutory Body", "Executive Body", "Advisory Body"],
-    "a": "Statutory Body",
-    "mode": "FLIP"
+    "q": "Which article is called Heart and Soul of Constitution?",
+    "a": "Article 32 - Right to Constitutional Remedies",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 556,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "CIC established under?",
-    "options": ["RTI Act 2005", "Lokpal Act 2013", "Constitution", "Executive Order"],
-    "a": "RTI Act 2005",
-    "mode": "FLIP"
+    "q": "Quit India Movement started in?",
+    "a": "1942",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 557,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "NHRC established in?",
-    "options": ["1991", "1993", "1995", "1997"],
-    "a": "1993",
-    "mode": "FLIP"
+    "q": "Who is the head of Indian Armed Forces?",
+    "a": "President of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 558,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "NHRC Chairman should be?",
-    "options": ["Retired CJI", "Retired SC Judge", "Retired HC Judge", "Any Eminent Person"],
-    "a": "Retired CJI",
-    "mode": "FLIP"
+    "q": "Largest freshwater lake in India?",
+    "a": "Wular Lake - Jammu & Kashmir",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 559,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "NCW established in?",
-    "options": ["1990", "1992", "1994", "1996"],
-    "a": "1992",
-    "mode": "FLIP"
+    "q": "What is Money Bill?",
+    "a": "Bill dealing with taxation, borrowing, expenditure",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 560,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "NCSC under Article?",
-    "options": ["338", "338A", "338B", "339"],
-    "a": "338",
-    "mode": "FLIP"
+    "q": "Who presides over Rajya Sabha?",
+    "a": "Vice President of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 561,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "NCST under Article?",
-    "options": ["338", "338A", "338B", "339"],
-    "a": "338A",
-    "mode": "FLIP"
+    "q": "Dandi March was started by Gandhi in?",
+    "a": "1930",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 562,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "NCBC given Constitutional Status by?",
-    "options": ["100th Amendment", "101st Amendment", "102nd Amendment", "103rd Amendment"],
-    "a": "102nd Amendment",
-    "mode": "FLIP"
+    "q": "Which is the highest peak in India?",
+    "a": "Kanchenjunga",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 563,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "EWS reservation by which Amendment?",
-    "options": ["101st", "102nd", "103rd", "104th"],
-    "a": "103rd",
-    "mode": "FLIP"
+    "q": "What is Zero Hour in Parliament?",
+    "a": "Time after Question Hour for raising matters without notice",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 564,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "EWS reservation percentage?",
-    "options": ["5%", "10%", "15%", "27%"],
-    "a": "10%",
-    "mode": "FLIP"
+    "q": "Who appoints Governor of State?",
+    "a": "President of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 565,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "GST implemented on?",
-    "options": ["1st April 2017", "1st July 2017", "1st Jan 2018", "1st April 2018"],
-    "a": "1st July 2017",
-    "mode": "FLIP"
+    "q": "Jallianwala Bagh massacre happened in?",
+    "a": "1919",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 566,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "GST is based on?",
-    "options": ["Origin", "Destination", "Production", "Consumption"],
-    "a": "Destination",
-    "mode": "FLIP"
+    "q": "What is CAG?",
+    "a": "Comptroller and Auditor General of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 567,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Highest GST slab rate?",
-    "options": ["12%", "18%", "28%", "35%"],
-    "a": "28%",
-    "mode": "FLIP"
+    "q": "Which state has largest forest cover in India?",
+    "a": "Madhya Pradesh",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 568,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Demonetization in India 2016 on?",
-    "options": ["1st Nov", "8th Nov", "15th Nov", "30th Nov"],
-    "a": "8th Nov",
-    "mode": "FLIP"
+    "q": "What is Article 356?",
+    "a": "President's Rule in states",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 569,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Which notes demonetized in 2016?",
-    "options": ["500 & 1000", "100 & 500", "200 & 2000", "All notes"],
-    "a": "500 & 1000",
-    "mode": "FLIP"
+    "q": "Who was the first woman President of India?",
+    "a": "Pratibha Patil",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 570,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "NITI Aayog Vice Chairman appointed by?",
-    "options": ["President", "PM", "Parliament", "Cabinet"],
-    "a": "PM",
-    "mode": "FLIP"
+    "q": "What is MPLADS?",
+    "a": "Member of Parliament Local Area Development Scheme",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 571,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "NITI Aayog CEO rank equivalent to?",
-    "options": ["Cabinet Secretary", "Secretary", "Joint Secretary", "Additional Secretary"],
-    "a": "Secretary",
-    "mode": "FLIP"
+    "q": "Simla Agreement was signed in?",
+    "a": "1972 between India and Pakistan",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 572,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Aspirational Districts Programme launched in?",
-    "options": ["2016", "2017", "2018", "2019"],
-    "a": "2018",
-    "mode": "FLIP"
+    "q": "Which is the oldest mountain range in India?",
+    "a": "Aravalli Range",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 573,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Digital India launched in?",
-    "options": ["2014", "2015", "2016", "2017"],
-    "a": "2015",
-    "mode": "FLIP"
+    "q": "What is National Emergency?",
+    "a": "Article 352 - due to war, external aggression, armed rebellion",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 574,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Make in India launched in?",
-    "options": ["2014", "2015", "2016", "2017"],
-    "a": "2014",
-    "mode": "FLIP"
+    "q": "Who is known as Iron Man of India?",
+    "a": "Sardar Vallabhbhai Patel",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 575,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Startup India launched in?",
-    "options": ["2015", "2016", "2017", "2018"],
-    "a": "2016",
-    "mode": "FLIP"
+    "q": "What is GDP?",
+    "a": "Gross Domestic Product - total value of goods/services produced",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 576,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "PM Gati Shakti launched in?",
-    "options": ["2019", "2020", "2021", "2022"],
-    "a": "2021",
-    "mode": "FLIP"
+    "q": "First General Election in India?",
+    "a": "1951-52",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 577,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "Atmanirbhar Bharat announced during?",
-    "options": ["Demonetization", "GST Launch", "Covid-19", "Ukraine War"],
-    "a": "Covid-19",
-    "mode": "FLIP"
+    "q": "What is Panchayati Raj?",
+    "a": "System of local self-government in rural India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 578,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "National Education Policy 2020 replaced?",
-    "options": ["NPE 1968", "NPE 1986", "Both 1968 & 1986", "NPE 2005"],
-    "a": "NPE 1986",
-    "mode": "FLIP"
+    "q": "Who wrote 'Hind Swaraj'?",
+    "a": "Mahatma Gandhi",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 579,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "New Education Policy 5+3+3+4 structure total years?",
-    "options": ["12", "14", "15", "16"],
-    "a": "15",
-    "mode": "FLIP"
+    "q": "Which schedule has 22 languages?",
+    "a": "8th Schedule",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 580,
     "category": "UPSC",
-    "type": "MCQ",
-    "q": "UGC replaced by proposed?",
-    "options": ["HECI", "NITI Education", "RUSA", "AISHE"],
-    "a": "HECI",
-    "mode": "FLIP"
+    "q": "What is NITI Aayog full form?",
+    "a": "National Institution for Transforming India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 581,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Cell theory proposed by?",
-    "options": ["Schleiden & Schwann", "Robert Hooke", "Leeuwenhoek", "Virchow"],
-    "a": "Schleiden & Schwann",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "Who was the first woman Chief Minister of India?",
+    "a": "Sucheta Kriplani - Uttar Pradesh",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 582,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Powerhouse of cell?",
-    "options": ["Nucleus", "Mitochondria", "Ribosome", "Golgi"],
-    "a": "Mitochondria",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "What is Article 14?",
+    "a": "Right to Equality before law",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 583,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Protein synthesis occurs in?",
-    "options": ["Nucleus", "Mitochondria", "Ribosome", "Lysosome"],
-    "a": "Ribosome",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "Who started Civil Disobedience Movement?",
+    "a": "Mahatma Gandhi in 1930",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 584,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "DNA structure discovered by?",
-    "options": ["Mendel", "Darwin", "Watson & Crick", "Morgan"],
-    "a": "Watson & Crick",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "Which is the largest desert in India?",
+    "a": "Thar Desert",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 585,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "DNA is?",
-    "options": ["Single stranded", "Double stranded", "Triple stranded", "No strands"],
-    "a": "Double stranded",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "What is Finance Commission?",
+    "a": "Constitutional body for distribution of tax revenues",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 586,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "RNA has which base instead of Thymine?",
-    "options": ["Adenine", "Guanine", "Uracil", "Cytosine"],
-    "a": "Uracil",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "Who can declare Financial Emergency?",
+    "a": "President under Article 360",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 587,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Mitosis occurs in?",
-    "options": ["Somatic cells", "Germ cells", "Both", "Neither"],
-    "a": "Somatic cells",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "First Amendment to Constitution was in?",
+    "a": "1951",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 588,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Meiosis occurs in?",
-    "options": ["Somatic cells", "Germ cells", "Both", "Neither"],
-    "a": "Germ cells",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "What is HDI?",
+    "a": "Human Development Index",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 589,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Chromosomes number in human?",
-    "options": ["42", "44", "46", "48"],
-    "a": "46",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "Who was the first Indian to win Nobel Prize?",
+    "a": "Rabindranath Tagore - 1913 Literature",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 590,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Father of Genetics?",
-    "options": ["Darwin", "Mendel", "Morgan", "Watson"],
-    "a": "Mendel",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "What is MGNREGA?",
+    "a": "Mahatma Gandhi National Rural Employment Guarantee Act 2005",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 591,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Mendel worked on?",
-    "options": ["Pea plant", "Drosophila", "Maize", "Wheat"],
-    "a": "Pea plant",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "Which article deals with Election Commission?",
+    "a": "Article 324",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 592,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Law of Segregation given by?",
-    "options": ["Darwin", "Mendel", "Lamarck", "Weismann"],
-    "a": "Mendel",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "Who founded Brahmo Samaj?",
+    "a": "Raja Ram Mohan Roy in 1828",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 593,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Phenotype ratio in monohybrid cross?",
-    "options": ["1:1", "3:1", "9:3:3:1", "1:2:1"],
-    "a": "3:1",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "What is Lokpal?",
+    "a": "Anti-corruption ombudsman for public officials",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 594,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Genotype ratio in monohybrid cross?",
-    "options": ["1:1", "3:1", "1:2:1", "9:3:3:1"],
-    "a": "1:2:1",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "Which is the highest dam in India?",
+    "a": "Tehri Dam - Uttarakhand",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 595,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Phenotype ratio in dihybrid cross?",
-    "options": ["3:1", "9:3:3:1", "1:2:1", "1:1:1:1"],
-    "a": "9:3:3:1",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "What is Article 51A?",
+    "a": "Fundamental Duties",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 596,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Blood group discovered by?",
-    "options": ["Landsteiner", "Mendel", "Morgan", "Fleming"],
-    "a": "Landsteiner",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "Who was the Viceroy during 1857 Revolt?",
+    "a": "Lord Canning",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 597,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Universal blood donor?",
-    "options": ["A+", "B+", "AB+", "O-"],
-    "a": "O-",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "What is RBI?",
+    "a": "Reserve Bank of India - Central Bank established 1935",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 598,
-    "category": "NEET",
-    "type": "MCQ",
-    "q": "Universal blood recipient?",
-    "options": ["A+", "B+", "AB+", "O-"],
-    "a": "AB+",
-    "mode": "FLIP"
+    "category": "UPSC",
+    "q": "Who is known as Father of Indian Space Program?",
+    "a": "Dr. Vikram Sarabhai",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 599,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Rh factor discovered by?",
-    "options": ["Landsteiner & Wiener", "Mendel", "Morgan", "Darwin"],
-    "a": "Landsteiner & Wiener",
-    "mode": "FLIP"
+    "q": "Powerhouse of the cell?",
+    "a": "Mitochondria",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 600,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Which blood group has no antigen?",
-    "options": ["A", "B", "AB", "O"],
-    "a": "O",
-    "mode": "FLIP"
+    "q": "Basic unit of life?",
+    "a": "Cell",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 601,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Haemoglobin contains?",
-    "options": ["Calcium", "Iron", "Magnesium", "Zinc"],
-    "a": "Iron",
-    "mode": "FLIP"
+    "q": "Who discovered cell?",
+    "a": "Robert Hooke in 1665",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 602,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Normal Hb level in adult male?",
-    "options": ["10-12 g/dL", "12-14 g/dL", "14-18 g/dL", "18-20 g/dL"],
-    "a": "14-18 g/dL",
-    "mode": "FLIP"
+    "q": "DNA full form?",
+    "a": "Deoxyribonucleic Acid",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 603,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Photosynthesis occurs in?",
-    "options": ["Mitochondria", "Chloroplast", "Ribosome", "Nucleus"],
-    "a": "Chloroplast",
-    "mode": "FLIP"
+    "q": "How many chromosomes in human?",
+    "a": "46 or 23 pairs",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 604,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Chlorophyll contains?",
-    "options": ["Iron", "Magnesium", "Calcium", "Zinc"],
-    "a": "Magnesium",
-    "mode": "FLIP"
+    "q": "What is photosynthesis?",
+    "a": "Process plants use sunlight to make food",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 605,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Light reaction occurs in?",
-    "options": ["Stroma", "Grana", "Cytoplasm", "Nucleus"],
-    "a": "Grana",
-    "mode": "FLIP"
+    "q": "Site of photosynthesis?",
+    "a": "Chloroplast",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 606,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Dark reaction occurs in?",
-    "options": ["Grana", "Stroma", "Thylakoid", "Cytoplasm"],
-    "a": "Stroma",
-    "mode": "FLIP"
+    "q": "Largest organ in human body?",
+    "a": "Skin",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 607,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Calvin cycle is?",
-    "options": ["Light reaction", "Dark reaction", "Respiration", "Fermentation"],
-    "a": "Dark reaction",
-    "mode": "FLIP"
+    "q": "Normal human body temperature?",
+    "a": "98.6°F or 37°C",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 608,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Product of photosynthesis?",
-    "options": ["CO2", "O2", "Glucose", "Both O2 & Glucose"],
-    "a": "Both O2 & Glucose",
-    "mode": "FLIP"
+    "q": "Universal blood donor?",
+    "a": "O negative",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 609,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Respiration occurs in?",
-    "options": ["Chloroplast", "Mitochondria", "Ribosome", "Nucleus"],
-    "a": "Mitochondria",
-    "mode": "FLIP"
+    "q": "Universal blood recipient?",
+    "a": "AB positive",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 610,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Glycolysis occurs in?",
-    "options": ["Mitochondria", "Cytoplasm", "Nucleus", "Chloroplast"],
-    "a": "Cytoplasm",
-    "mode": "FLIP"
+    "q": "pH of human blood?",
+    "a": "7.35 to 7.45 - slightly alkaline",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 611,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Krebs cycle occurs in?",
-    "options": ["Cytoplasm", "Mitochondrial Matrix", "Nucleus", "Ribosome"],
-    "a": "Mitochondrial Matrix",
-    "mode": "FLIP"
+    "q": "What is hemoglobin?",
+    "a": "Protein in RBC that carries oxygen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 612,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "ATP produced in glycolysis?",
-    "options": ["2", "4", "32", "38"],
-    "a": "2",
-    "mode": "FLIP"
+    "q": "How many bones in adult human?",
+    "a": "206",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 613,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Total ATP from one glucose in aerobic respiration?",
-    "options": ["2", "32", "36", "38"],
-    "a": "38",
-    "mode": "FLIP"
+    "q": "Smallest bone in human body?",
+    "a": "Stapes in ear",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 614,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Fermentation product in muscles?",
-    "options": ["Ethanol", "Lactic Acid", "Acetic Acid", "CO2"],
-    "a": "Lactic Acid",
-    "mode": "FLIP"
+    "q": "Largest bone in human body?",
+    "a": "Femur - thigh bone",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 615,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Fermentation product in yeast?",
-    "options": ["Lactic Acid", "Ethanol", "Acetic Acid", "Methanol"],
-    "a": "Ethanol",
-    "mode": "FLIP"
+    "q": "Father of Genetics?",
+    "a": "Gregor Mendel",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 616,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Enzyme in saliva?",
-    "options": ["Pepsin", "Amylase", "Lipase", "Trypsin"],
-    "a": "Amylase",
-    "mode": "FLIP"
+    "q": "What is ATP?",
+    "a": "Adenosine Triphosphate - energy currency of cell",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 617,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Pepsin works best at pH?",
-    "options": ["1-2", "6-7", "8-9", "10-11"],
-    "a": "1-2",
-    "mode": "FLIP"
+    "q": "Which organ purifies blood?",
+    "a": "Kidney",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 618,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Trypsin secreted by?",
-    "options": ["Stomach", "Pancreas", "Liver", "Small Intestine"],
-    "a": "Pancreas",
-    "mode": "FLIP"
+    "q": "Insulin is produced by?",
+    "a": "Pancreas - beta cells of Islets of Langerhans",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 619,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Bile helps in digestion of?",
-    "options": ["Protein", "Carbohydrate", "Fat", "Nucleic Acid"],
-    "a": "Fat",
-    "mode": "FLIP"
+    "q": "Vitamin C deficiency causes?",
+    "a": "Scurvy",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 620,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Villi present in?",
-    "options": ["Stomach", "Small Intestine", "Large Intestine", "Esophagus"],
-    "a": "Small Intestine",
-    "mode": "FLIP"
+    "q": "Vitamin D deficiency causes?",
+    "a": "Rickets",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 621,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Largest gland in body?",
-    "options": ["Thyroid", "Pancreas", "Liver", "Pituitary"],
-    "a": "Liver",
-    "mode": "FLIP"
+    "q": "Study of fungi?",
+    "a": "Mycology",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 622,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Insulin secreted by?",
-    "options": ["Alpha cells", "Beta cells", "Delta cells", "PP cells"],
-    "a": "Beta cells",
-    "mode": "FLIP"
+    "q": "Study of viruses?",
+    "a": "Virology",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 623,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Glucagon secreted by?",
-    "options": ["Alpha cells", "Beta cells", "Delta cells", "PP cells"],
-    "a": "Alpha cells",
-    "mode": "FLIP"
+    "q": "Which blood group has no antigens?",
+    "a": "O blood group",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 624,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Diabetes Insipidus due to deficiency of?",
-    "options": ["Insulin", "ADH", "Thyroxine", "Cortisol"],
-    "a": "ADH",
-    "mode": "FLIP"
+    "q": "Heart has how many chambers?",
+    "a": "4 - two atria, two ventricles",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 625,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Thyroxine secreted by?",
-    "options": ["Pituitary", "Thyroid", "Adrenal", "Pancreas"],
-    "a": "Thyroid",
-    "mode": "FLIP"
+    "q": "What is ECG?",
+    "a": "Electrocardiogram - records heart electrical activity",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 626,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Growth hormone secreted by?",
-    "options": ["Thyroid", "Pituitary", "Adrenal", "Pancreas"],
-    "a": "Pituitary",
-    "mode": "FLIP"
+    "q": "Normal RBC count?",
+    "a": "4.5-5.5 million per microliter",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 627,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Adrenaline secreted by?",
-    "options": ["Adrenal Cortex", "Adrenal Medulla", "Thyroid", "Pituitary"],
-    "a": "Adrenal Medulla",
-    "mode": "FLIP"
+    "q": "What is mitosis?",
+    "a": "Cell division producing two identical daughter cells",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 628,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Cortisol secreted by?",
-    "options": ["Adrenal Cortex", "Adrenal Medulla", "Thyroid", "Pituitary"],
-    "a": "Adrenal Cortex",
-    "mode": "FLIP"
+    "q": "What is meiosis?",
+    "a": "Cell division producing four haploid gametes",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 629,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Testosterone secreted by?",
-    "options": ["Ovaries", "Testes", "Adrenal", "Pituitary"],
-    "a": "Testes",
-    "mode": "FLIP"
+    "q": "Largest gland in human body?",
+    "a": "Liver",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 630,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Estrogen secreted by?",
-    "options": ["Testes", "Ovaries", "Adrenal", "Thyroid"],
-    "a": "Ovaries",
-    "mode": "FLIP"
+    "q": "Function of WBC?",
+    "a": "Fight infection and provide immunity",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 631,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Ovulation occurs on which day of menstrual cycle?",
-    "options": ["7th", "14th", "21st", "28th"],
-    "a": "14th",
-    "mode": "FLIP"
+    "q": "What is RNA full form?",
+    "a": "Ribonucleic Acid",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 632,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Fertilization occurs in?",
-    "options": ["Uterus", "Ovary", "Fallopian Tube", "Vagina"],
-    "a": "Fallopian Tube",
-    "mode": "FLIP"
+    "q": "Who discovered penicillin?",
+    "a": "Alexander Fleming in 1928",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 633,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Gestation period in human?",
-    "options": ["7 months", "8 months", "9 months", "10 months"],
-    "a": "9 months",
-    "mode": "FLIP"
+    "q": "What is enzyme?",
+    "a": "Biological catalyst - protein that speeds up reactions",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 634,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Placenta connects?",
-    "options": ["Mother & Fetus", "Mother & Uterus", "Fetus & Uterus", "Ovary & Uterus"],
-    "a": "Mother & Fetus",
-    "mode": "FLIP"
+    "q": "Where is bile produced?",
+    "a": "Liver",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 635,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "First milk secreted after childbirth?",
-    "options": ["Milk", "Colostrum", "Serum", "Plasma"],
-    "a": "Colostrum",
-    "mode": "FLIP"
+    "q": "Where is bile stored?",
+    "a": "Gallbladder",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 636,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Colostrum rich in?",
-    "options": ["Fat", "Protein", "Antibodies", "Carbohydrate"],
-    "a": "Antibodies",
-    "mode": "FLIP"
+    "q": "What is placenta?",
+    "a": "Organ connecting fetus to uterine wall",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 637,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Darwin proposed?",
-    "options": ["Lamarckism", "Natural Selection", "Mutation Theory", "Germplasm Theory"],
-    "a": "Natural Selection",
-    "mode": "FLIP"
+    "q": "Normal blood pressure?",
+    "a": "120/80 mmHg",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 638,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Origin of Species published in?",
-    "options": ["1850", "1859", "1865", "1871"],
-    "a": "1859",
-    "mode": "FLIP"
+    "q": "What is neuron?",
+    "a": "Nerve cell - basic unit of nervous system",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 639,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Survival of Fittest coined by?",
-    "options": ["Darwin", "Wallace", "Spencer", "Lamarck"],
-    "a": "Spencer",
-    "mode": "FLIP"
+    "q": "What is synapse?",
+    "a": "Junction between two neurons",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 640,
     "category": "NEET",
-    "type": "MCQ",
-    "q": "Mutation Theory given by?",
-    "options": ["Darwin", "Mendel", "Hugo de Vries", "Morgan"],
-    "a": "Hugo de Vries",
-    "mode": "FLIP"
+    "q": "Which part of brain controls balance?",
+    "a": "Cerebellum",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 641,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "SI unit of Force?",
-    "options": ["Dyne", "Newton", "Joule", "Watt"],
-    "a": "Newton",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is reflex action?",
+    "a": "Automatic, rapid response to stimulus",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 642,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "SI unit of Work?",
-    "options": ["Watt", "Joule", "Newton", "Pascal"],
-    "a": "Joule",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is hormone?",
+    "a": "Chemical messenger secreted by glands",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 643,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "SI unit of Power?",
-    "options": ["Joule", "Watt", "Newton", "Horse Power"],
-    "a": "Watt",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "Growth hormone secreted by?",
+    "a": "Pituitary gland",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 644,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "1 Newton = ? Dyne",
-    "options": ["10^3", "10^4", "10^5", "10^6"],
-    "a": "10^5",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is diabetes?",
+    "a": "High blood sugar due to insulin deficiency",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 645,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Dimension of Force?",
-    "options": ["[MLT^-2]", "[ML^2T^-2]", "[MLT^-1]", "[ML^2T^-1]"],
-    "a": "[MLT^-2]",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "Which vitamin is produced in skin?",
+    "a": "Vitamin D - from sunlight",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 646,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Dimension of Energy?",
-    "options": ["[MLT^-2]", "[ML^2T^-2]", "[MLT^-1]", "[ML^2T^-3]"],
-    "a": "[ML^2T^-2]",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is endoskeleton?",
+    "a": "Internal skeleton - found in vertebrates",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 647,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "First Law of Motion?",
-    "options": ["F = ma", "Law of Inertia", "Action-Reaction", "Momentum Conservation"],
-    "a": "Law of Inertia",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is exoskeleton?",
+    "a": "External skeleton - found in arthropods",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 648,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Second Law of Motion?",
-    "options": ["F = ma", "Law of Inertia", "Action-Reaction", "Every action has equal reaction"],
-    "a": "F = ma",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "Malaria caused by?",
+    "a": "Plasmodium - protozoa spread by mosquito",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 649,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Third Law of Motion?",
-    "options": ["F = ma", "Law of Inertia", "Action-Reaction", "Momentum"],
-    "a": "Action-Reaction",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "Dengue caused by?",
+    "a": "Dengue virus - Aedes mosquito",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 650,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Acceleration due to gravity g = ?",
-    "options": ["8.9 m/s^2", "9.8 m/s^2", "10.8 m/s^2", "11.8 m/s^2"],
-    "a": "9.8 m/s^2",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is antigen?",
+    "a": "Substance that triggers immune response",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 651,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Escape velocity on Earth?",
-    "options": ["7.9 km/s", "11.2 km/s", "15.2 km/s", "20.2 km/s"],
-    "a": "11.2 km/s",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is antibody?",
+    "a": "Protein produced by immune system to fight antigens",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 652,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Orbital velocity formula?",
-    "options": ["√(gR)", "√(2gR)", "√(GM/R)", "√(2GM/R)"],
-    "a": "√(GM/R)",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "Who proposed theory of evolution?",
+    "a": "Charles Darwin",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 653,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Kepler's First Law?",
-    "options": ["Law of Orbits", "Law of Areas", "Law of Periods", "Law of Gravitation"],
-    "a": "Law of Orbits",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is natural selection?",
+    "a": "Survival of fittest organisms",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 654,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Kepler's Second Law?",
-    "options": ["Law of Orbits", "Law of Areas", "Law of Periods", "Law of Motion"],
-    "a": "Law of Areas",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is genotype?",
+    "a": "Genetic makeup of organism",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 655,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Kepler's Third Law?",
-    "options": ["T^2 ∝ R^2", "T^2 ∝ R^3", "T^3 ∝ R^2", "T ∝ R"],
-    "a": "T^2 ∝ R^3",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is phenotype?",
+    "a": "Physical appearance of organism",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 656,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Value of G?",
-    "options": ["6.67 × 10^-11 Nm^2/kg^2", "6.67 × 10^-10 Nm^2/kg^2", "9.8 Nm^2/kg^2", "3 × 10^8 Nm^2/kg^2"],
-    "a": "6.67 × 10^-11 Nm^2/kg^2",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is ecosystem?",
+    "a": "Community of organisms with environment",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 657,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Hooke's Law?",
-    "options": ["F = kx", "F = ma", "P = F/A", "V = IR"],
-    "a": "F = kx",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is food chain?",
+    "a": "Linear sequence of energy transfer",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 658,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Young's Modulus unit?",
-    "options": ["N/m", "N/m^2", "Nm", "Nm^2"],
-    "a": "N/m^2",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is biodiversity?",
+    "a": "Variety of life on Earth",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 659,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Pascal's Law related to?",
-    "options": ["Solids", "Liquids", "Gases", "Fluids"],
-    "a": "Fluids",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "Ozone layer protects from?",
+    "a": "Ultraviolet UV radiation",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 660,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Archimedes Principle related to?",
-    "options": ["Buoyancy", "Viscosity", "Surface Tension", "Capillarity"],
-    "a": "Buoyancy",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is pollination?",
+    "a": "Transfer of pollen to stigma",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 661,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Bernoulli's Theorem is conservation of?",
-    "options": ["Mass", "Energy", "Momentum", "Charge"],
-    "a": "Energy",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is fertilization?",
+    "a": "Fusion of male and female gametes",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 662,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "SI unit of Viscosity?",
-    "options": ["Poise", "Pascal-second", "Stokes", "Newton-second"],
-    "a": "Pascal-second",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is zygote?",
+    "a": "Fertilized egg",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 663,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Surface Tension unit?",
-    "options": ["N/m", "N/m^2", "J/m", "J/m^2"],
-    "a": "N/m",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is gestation period in humans?",
+    "a": "280 days or 40 weeks",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 664,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Capillarity is due to?",
-    "options": ["Viscosity", "Surface Tension", "Buoyancy", "Pressure"],
-    "a": "Surface Tension",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is puberty?",
+    "a": "Period when reproductive organs mature",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 665,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Boyle's Law?",
-    "options": ["P ∝ T", "V ∝ T", "PV = constant", "P/T = constant"],
-    "a": "PV = constant",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is ovulation?",
+    "a": "Release of egg from ovary",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 666,
-    "category": "JEE",
-    "type": "MCQ",
-    "q": "Charles's Law?",
-    "options": ["P ∝ T", "V ∝ T", "PV = constant", "P/V = constant"],
-    "a": "V ∝ T",
-    "mode": "FLIP"
+    "category": "NEET",
+    "q": "What is DNA replication?",
+    "a": "Process of making copy of DNA",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 667,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Gay-Lussac's Law?",
-    "options": ["P ∝ T", "V ∝ T", "PV = constant", "V/P = constant"],
-    "a": "P ∝ T",
-    "mode": "FLIP"
+    "q": "SI unit of force?",
+    "a": "Newton N",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 668,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Ideal Gas Equation?",
-    "options": ["PV = nRT", "PV = RT", "P = nRT/V", "All of these"],
-    "a": "All of these",
-    "mode": "FLIP"
+    "q": "Formula of Newton's Second Law?",
+    "a": "F = ma",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 669,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Value of R?",
-    "options": ["8.314 J/mol·K", "0.0821 L·atm/mol·K", "1.987 cal/mol·K", "All of these"],
-    "a": "All of these",
-    "mode": "FLIP"
+    "q": "Acceleration due to gravity?",
+    "a": "9.8 m/s²",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 670,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Avogadro Number?",
-    "options": ["6.022 × 10^22", "6.022 × 10^23", "6.022 × 10^24", "6.022 × 10^25"],
-    "a": "6.022 × 10^23",
-    "mode": "FLIP"
+    "q": "What is work formula?",
+    "a": "W = F × d × cosθ",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 671,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "First Law of Thermodynamics?",
-    "options": ["ΔU = Q - W", "ΔU = Q + W", "ΔH = Q - W", "ΔG = Q - W"],
-    "a": "ΔU = Q - W",
-    "mode": "FLIP"
+    "q": "SI unit of power?",
+    "a": "Watt W",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 672,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Second Law of Thermodynamics?",
-    "options": ["Energy Conservation", "Entropy Increases", "Enthalpy Constant", "Gibbs Free Energy"],
-    "a": "Entropy Increases",
-    "mode": "FLIP"
+    "q": "What is kinetic energy formula?",
+    "a": "KE = 1/2 mv²",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 673,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Third Law of Thermodynamics?",
-    "options": ["Entropy = 0 at 0K", "Energy = 0 at 0K", "Enthalpy = 0 at 0K", "Volume = 0 at 0K"],
-    "a": "Entropy = 0 at 0K",
-    "mode": "FLIP"
+    "q": "What is potential energy formula?",
+    "a": "PE = mgh",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 674,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Carnot Engine Efficiency?",
-    "options": ["1 - T2/T1", "1 - T1/T2", "T2/T1", "T1/T2"],
-    "a": "1 - T2/T1",
-    "mode": "FLIP"
+    "q": "Ohm's Law?",
+    "a": "V = IR",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 675,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Adiabatic Process?",
-    "options": ["Q = 0", "W = 0", "ΔU = 0", "P = constant"],
-    "a": "Q = 0",
-    "mode": "FLIP"
+    "q": "SI unit of resistance?",
+    "a": "Ohm Ω",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 676,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Isothermal Process?",
-    "options": ["T = constant", "P = constant", "V = constant", "Q = 0"],
-    "a": "T = constant",
-    "mode": "FLIP"
+    "q": "SI unit of current?",
+    "a": "Ampere A",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 677,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Isobaric Process?",
-    "options": ["T = constant", "P = constant", "V = constant", "Q = 0"],
-    "a": "P = constant",
-    "mode": "FLIP"
+    "q": "What is frequency unit?",
+    "a": "Hertz Hz",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 678,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Isochoric Process?",
-    "options": ["T = constant", "P = constant", "V = constant", "Q = 0"],
-    "a": "V = constant",
-    "mode": "FLIP"
+    "q": "Speed of light in vacuum?",
+    "a": "3 × 10⁸ m/s",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 679,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Coulomb's Law?",
-    "options": ["F = kq1q2/r", "F = kq1q2/r^2", "F = q1q2/r^2", "F = kq/r^2"],
-    "a": "F = kq1q2/r^2",
-    "mode": "FLIP"
+    "q": "Avogadro's number?",
+    "a": "6.022 × 10²³",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 680,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Value of k in Coulomb's Law?",
-    "options": ["9 × 10^9 Nm^2/C^2", "8.85 × 10^-12 Nm^2/C^2", "6.67 × 10^-11 Nm^2/C^2", "3 × 10^8 Nm^2/C^2"],
-    "a": "9 × 10^9 Nm^2/C^2",
-    "mode": "FLIP"
+    "q": "Atomic number of Carbon?",
+    "a": "6",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 681,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Electric Field unit?",
-    "options": ["N/C", "V/m", "J/C", "Both N/C & V/m"],
-    "a": "Both N/C & V/m",
-    "mode": "FLIP"
+    "q": "What is pH of neutral solution?",
+    "a": "7",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 682,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Electric Potential unit?",
-    "options": ["Newton", "Joule", "Volt", "Coulomb"],
-    "a": "Volt",
-    "mode": "FLIP"
+    "q": "Chemical formula of water?",
+    "a": "H₂O",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 683,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Capacitance unit?",
-    "options": ["Ohm", "Farad", "Henry", "Tesla"],
-    "a": "Farad",
-    "mode": "FLIP"
+    "q": "Chemical formula of common salt?",
+    "a": "NaCl",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 684,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Capacitance formula?",
-    "options": ["C = Q/V", "C = V/Q", "C = QV", "C = V/I"],
-    "a": "C = Q/V",
-    "mode": "FLIP"
+    "q": "What is molarity?",
+    "a": "Moles of solute per liter of solution",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 685,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Ohm's Law?",
-    "options": ["V = IR", "I = VR", "R = VI", "P = VI"],
-    "a": "V = IR",
-    "mode": "FLIP"
+    "q": "First law of thermodynamics?",
+    "a": "Energy cannot be created or destroyed",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 686,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Resistance unit?",
-    "options": ["Volt", "Ampere", "Ohm", "Watt"],
-    "a": "Ohm",
-    "mode": "FLIP"
+    "q": "Derivative of sin x?",
+    "a": "cos x",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 687,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Power formula?",
-    "options": ["P = VI", "P = I^2R", "P = V^2/R", "All of these"],
-    "a": "All of these",
-    "mode": "FLIP"
+    "q": "Derivative of cos x?",
+    "a": "-sin x",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 688,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Kirchhoff's Current Law?",
-    "options": ["ΣI = 0", "ΣV = 0", "ΣR = 0", "ΣP = 0"],
-    "a": "ΣI = 0",
-    "mode": "FLIP"
+    "q": "Integration of 1/x?",
+    "a": "ln|x| + C",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 689,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Kirchhoff's Voltage Law?",
-    "options": ["ΣI = 0", "ΣV = 0", "ΣR = 0", "ΣP = 0"],
-    "a": "ΣV = 0",
-    "mode": "FLIP"
+    "q": "Value of π?",
+    "a": "3.14159",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 690,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Magnetic Field unit?",
-    "options": ["Weber", "Tesla", "Gauss", "Both Tesla & Gauss"],
-    "a": "Both Tesla & Gauss",
-    "mode": "FLIP"
+    "q": "Pythagoras theorem?",
+    "a": "a² + b² = c²",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 691,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "1 Tesla = ? Gauss",
-    "options": ["10^2", "10^3", "10^4", "10^5"],
-    "a": "10^4",
-    "mode": "FLIP"
+    "q": "What is scalar quantity?",
+    "a": "Has only magnitude, no direction",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 692,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Biot-Savart Law related to?",
-    "options": ["Electric Field", "Magnetic Field", "Gravitational Field", "Nuclear Field"],
-    "a": "Magnetic Field",
-    "mode": "FLIP"
+    "q": "What is vector quantity?",
+    "a": "Has both magnitude and direction",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 693,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Ampere's Law?",
-    "options": ["∮B·dl = μ₀I", "∮E·dl = Q/ε₀", "F = qvB", "F = ILB"],
-    "a": "∮B·dl = μ₀I",
-    "mode": "FLIP"
+    "q": "What is momentum?",
+    "a": "p = mv",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 694,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Faraday's Law of Induction?",
-    "options": ["ε = -dΦ/dt", "ε = dΦ/dt", "ε = -Φ/t", "ε = Φt"],
-    "a": "ε = -dΦ/dt",
-    "mode": "FLIP"
+    "q": "What is impulse?",
+    "a": "Change in momentum = F × t",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 695,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Lenz's Law gives direction of?",
-    "options": ["Current", "Induced EMF", "Magnetic Field", "Force"],
-    "a": "Induced EMF",
-    "mode": "FLIP"
+    "q": "Boyle's Law?",
+    "a": "P₁V₁ = P₂V₂ at constant temperature",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 696,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Self Inductance unit?",
-    "options": ["Farad", "Henry", "Ohm", "Tesla"],
-    "a": "Henry",
-    "mode": "FLIP"
+    "q": "Charles's Law?",
+    "a": "V₁/T₁ = V₂/T₂ at constant pressure",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 697,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Transformer works on?",
-    "options": ["DC", "AC", "Both AC & DC", "Neither"],
-    "a": "AC",
-    "mode": "FLIP"
+    "q": "Ideal Gas Equation?",
+    "a": "PV = nRT",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 698,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Speed of Light?",
-    "options": ["3 × 10^6 m/s", "3 × 10^7 m/s", "3 × 10^8 m/s", "3 × 10^9 m/s"],
-    "a": "3 × 10^8 m/s",
-    "mode": "FLIP"
+    "q": "What is oxidation?",
+    "a": "Loss of electrons or gain of oxygen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 699,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "Planck's Constant value?",
-    "options": ["6.626 × 10^-34 J·s", "6.626 × 10^-33 J·s", "1.6 × 10^-19 J·s", "9.1 × 10^-31 J·s"],
-    "a": "6.626 × 10^-34 J·s",
-    "mode": "FLIP"
+    "q": "What is reduction?",
+    "a": "Gain of electrons or loss of oxygen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 700,
     "category": "JEE",
-    "type": "MCQ",
-    "q": "De Broglie Wavelength?",
-    "options": ["λ = h/p", "λ = p/h", "λ = hp", "λ = h·p"],
-    "a": "λ = h/p",
-    "mode": "FLIP"
+    "q": "Most electronegative element?",
+    "a": "Fluorine F",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 701,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "First Battle of Panipat?",
-    "options": ["1526", "1556", "1761", "1764"],
-    "a": "1526",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is catalyst?",
+    "a": "Substance that speeds up reaction without being consumed",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 702,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Second Battle of Panipat?",
-    "options": ["1526", "1556", "1761", "1764"],
-    "a": "1556",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is mole?",
+    "a": "6.022 × 10²³ particles",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 703,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Third Battle of Panipat?",
-    "options": ["1526", "1556", "1761", "1764"],
-    "a": "1761",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Limit of sin x / x as x→0?",
+    "a": "1",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 704,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Battle of Plassey?",
-    "options": ["1757", "1764", "1761", "1857"],
-    "a": "1757",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Sum of angles in triangle?",
+    "a": "180°",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 705,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Battle of Buxar?",
-    "options": ["1757", "1764", "1761", "1857"],
-    "a": "1764",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Area of circle?",
+    "a": "πr²",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 706,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Sepoy Mutiny?",
-    "options": ["1757", "1764", "1857", "1942"],
-    "a": "1857",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Circumference of circle?",
+    "a": "2πr",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 707,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Jallianwala Bagh Massacre?",
-    "options": ["1915", "1919", "1921", "1930"],
-    "a": "1919",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Quadratic formula?",
+    "a": "x = [-b ± √(b²-4ac)] / 2a",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 708,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Dandi March?",
-    "options": ["1928", "1930", "1932", "1942"],
-    "a": "1930",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is projectile motion?",
+    "a": "Motion under gravity with initial velocity",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 709,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Quit India Movement?",
-    "options": ["1930", "1940", "1942", "1946"],
-    "a": "1942",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Range of projectile formula?",
+    "a": "R = (u²sin2θ)/g",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 710,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Simon Commission came to India in?",
-    "options": ["1927", "1928", "1929", "1930"],
-    "a": "1928",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is centripetal force?",
+    "a": "F = mv²/r directed towards center",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 711,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Cripps Mission?",
-    "options": ["1940", "1942", "1945", "1946"],
-    "a": "1942",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is escape velocity?",
+    "a": "11.2 km/s from Earth",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 712,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Cabinet Mission?",
-    "options": ["1942", "1945", "1946", "1947"],
-    "a": "1946",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Hooke's Law?",
+    "a": "F = -kx",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 713,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Mountbatten Plan?",
-    "options": ["1945", "1946", "1947", "1950"],
-    "a": "1947",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is Young modulus?",
+    "a": "Stress / Strain",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 714,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Indian Independence Act?",
-    "options": ["1946", "1947", "1948", "1950"],
-    "a": "1947",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Coulomb's Law?",
+    "a": "F = kq₁q₂/r²",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 715,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "First Governor General of Independent India?",
-    "options": ["Mountbatten", "C Rajagopalachari", "Nehru", "Patel"],
-    "a": "Mountbatten",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is capacitance?",
+    "a": "C = Q/V",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 716,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "First Indian Governor General?",
-    "options": ["Mountbatten", "C Rajagopalachari", "Rajendra Prasad", "Nehru"],
-    "a": "C Rajagopalachari",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "SI unit of capacitance?",
+    "a": "Farad F",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 717,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "First President of India?",
-    "options": ["Nehru", "Rajendra Prasad", "Radha Krishnan", "Patel"],
-    "a": "Rajendra Prasad",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is magnetic field unit?",
+    "a": "Tesla T",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 718,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "First PM of India?",
-    "options": ["Patel", "Nehru", "Shastri", "Indira Gandhi"],
-    "a": "Nehru",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Lenz's Law?",
+    "a": "Induced current opposes change causing it",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 719,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "First Woman PM of India?",
-    "options": ["Indira Gandhi", "Sonia Gandhi", "Pratibha Patil", "Sarojini Naidu"],
-    "a": "Indira Gandhi",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is isomer?",
+    "a": "Same molecular formula, different structure",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 720,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "First Woman President of India?",
-    "options": ["Indira Gandhi", "Pratibha Patil", "Droupadi Murmu", "Sarojini Naidu"],
-    "a": "Pratibha Patil",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is alkane general formula?",
+    "a": "CₙH₂ₙ₊₂",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 721,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Green Revolution started in?",
-    "options": ["1950s", "1960s", "1970s", "1980s"],
-    "a": "1960s",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is alkene general formula?",
+    "a": "CₙH₂ₙ",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 722,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Father of Green Revolution in India?",
-    "options": ["Verghese Kurien", "MS Swaminathan", "Norman Borlaug", "C Subramaniam"],
-    "a": "MS Swaminathan",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is alkyne general formula?",
+    "a": "CₙH₂ₙ₋₂",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 723,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "White Revolution related to?",
-    "options": ["Milk", "Cotton", "Rice", "Wheat"],
-    "a": "Milk",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Atomic number of Oxygen?",
+    "a": "8",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 724,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Father of White Revolution?",
-    "options": ["MS Swaminathan", "Verghese Kurien", "C Subramaniam", "Norman Borlaug"],
-    "a": "Verghese Kurien",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Atomic mass of Carbon?",
+    "a": "12 u",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 725,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Blue Revolution related to?",
-    "options": ["Milk", "Fish", "Water", "Sky"],
-    "a": "Fish",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is determinant of 2x2 matrix?",
+    "a": "ad - bc for [[a,b],[c,d]]",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 726,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Yellow Revolution related to?",
-    "options": ["Oilseeds", "Gold", "Sunflower", "Turmeric"],
-    "a": "Oilseeds",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is arithmetic progression?",
+    "a": "Sequence with common difference",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 727,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Golden Revolution related to?",
-    "options": ["Gold Mining", "Horticulture", "Oilseeds", "Fisheries"],
-    "a": "Horticulture",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Sum of AP formula?",
+    "a": "Sₙ = n/2[2a + (n-1)d]",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 728,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Pink Revolution related to?",
-    "options": ["Onion", "Prawn", "Meat & Poultry", "Rose"],
-    "a": "Meat & Poultry",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is geometric progression?",
+    "a": "Sequence with common ratio",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 729,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Grey Revolution related to?",
-    "options": ["Cement", "Fertilizer", "Wool", "Steel"],
-    "a": "Fertilizer",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Sum of infinite GP?",
+    "a": "a/(1-r) when |r|<1",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 730,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Round Revolution related to?",
-    "options": ["Potato", "Tomato", "Onion", "Egg"],
-    "a": "Potato",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is Binomial Theorem?",
+    "a": "(a+b)ⁿ = Σ ⁿCₖ aⁿ⁻ᵏ bᵏ",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 731,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Red Revolution related to?",
-    "options": ["Tomato", "Meat", "Chilli", "Apple"],
-    "a": "Meat",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is probability?",
+    "a": "Favorable outcomes / Total outcomes",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 732,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Silver Revolution related to?",
-    "options": ["Silver Mining", "Egg/Poultry", "Cotton", "Jute"],
-    "a": "Egg/Poultry",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is combination formula?",
+    "a": "ⁿCᵣ = n!/[r!(n-r)!]",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 733,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Longest River in India?",
-    "options": ["Yamuna", "Ganga", "Godavari", "Brahmaputra"],
-    "a": "Ganga",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "What is permutation formula?",
+    "a": "ⁿPᵣ = n!/(n-r)!",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 734,
-    "category": "SSC",
-    "type": "MCQ",
-    "q": "Longest River in South India?",
-    "options": ["Krishna", "Godavari", "Kaveri", "Tungabhadra"],
-    "a": "Godavari",
-    "mode": "FLIP"
+    "category": "JEE",
+    "q": "Value of e?",
+    "a": "2.71828",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 735,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Highest Dam in India?",
-    "options": ["Bhakra", "Tehri", "Hirakud", "Nagarjuna Sagar"],
-    "a": "Tehri",
-    "mode": "FLIP"
+    "q": "Synonym of 'Abundant'?",
+    "a": "Plentiful",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 736,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Longest Dam in India?",
-    "options": ["Bhakra", "Tehri", "Hirakud", "Sardar Sarovar"],
-    "a": "Hirakud",
-    "mode": "FLIP"
+    "q": "Antonym of 'Ancient'?",
+    "a": "Modern",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 737,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Largest State by Area?",
-    "options": ["UP", "MP", "Rajasthan", "Maharashtra"],
-    "a": "Rajasthan",
-    "mode": "FLIP"
+    "q": "One word for 'One who loves books'?",
+    "a": "Bibliophile",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 738,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Smallest State by Area?",
-    "options": ["Sikkim", "Goa", "Tripura", "Nagaland"],
-    "a": "Goa",
-    "mode": "FLIP"
+    "q": "Correct spelling?",
+    "a": "Accommodation",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 739,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Largest State by Population?",
-    "options": ["Bihar", "Maharashtra", "UP", "West Bengal"],
-    "a": "UP",
-    "mode": "FLIP"
+    "q": "Idiom 'Break the ice' means?",
+    "a": "Start conversation",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 740,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Least Populated State?",
-    "options": ["Sikkim", "Mizoram", "Arunachal Pradesh", "Goa"],
-    "a": "Sikkim",
-    "mode": "FLIP"
+    "q": "Active to Passive: 'He writes a letter'",
+    "a": "A letter is written by him",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 741,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Tropic of Cancer passes through how many States?",
-    "options": ["6", "7", "8", "9"],
-    "a": "8",
-    "mode": "FLIP"
+    "q": "Plural of 'Child'?",
+    "a": "Children",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 742,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Standard Meridian of India?",
-    "options": ["82.5°E", "82.5°W", "92.5°E", "72.5°E"],
-    "a": "82.5°E",
-    "mode": "FLIP"
+    "q": "LCM of 12 and 18?",
+    "a": "36",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 743,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "IST passes through?",
-    "options": ["Allahabad", "Bhopal", "Mirzapur", "Nagpur"],
-    "a": "Mirzapur",
-    "mode": "FLIP"
+    "q": "HCF of 24 and 36?",
+    "a": "12",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 744,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "IST is ahead of GMT by?",
-    "options": ["4.5 hrs", "5 hrs", "5.5 hrs", "6 hrs"],
-    "a": "5.5 hrs",
-    "mode": "FLIP"
+    "q": "25% of 200?",
+    "a": "50",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 745,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Largest Delta in India?",
-    "options": ["Godavari", "Krishna", "Ganga-Brahmaputra", "Mahanadi"],
-    "a": "Ganga-Brahmaputra",
-    "mode": "FLIP"
+    "q": "Simple Interest formula?",
+    "a": "SI = PRT/100",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 746,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Sundarbans located in?",
-    "options": ["Odisha", "West Bengal", "Andhra Pradesh", "Tamil Nadu"],
-    "a": "West Bengal",
-    "mode": "FLIP"
+    "q": "Compound Interest formula?",
+    "a": "A = P(1 + R/100)ⁿ",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 747,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Highest Peak in India?",
-    "options": ["K2", "Kanchenjunga", "Nanda Devi", "Mount Everest"],
-    "a": "K2",
-    "mode": "FLIP"
+    "q": "Average of 10, 20, 30?",
+    "a": "20",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 748,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Highest Peak in South India?",
-    "options": ["Nilgiri", "Anamudi", "Doddabetta", "Mahendragiri"],
-    "a": "Anamudi",
-    "mode": "FLIP"
+    "q": "Profit = ?",
+    "a": "SP - CP",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 749,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Largest Lake in India?",
-    "options": ["Dal Lake", "Wular Lake", "Chilika Lake", "Vembanad Lake"],
-    "a": "Wular Lake",
-    "mode": "FLIP"
+    "q": "Loss = ?",
+    "a": "CP - SP",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 750,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Largest Saltwater Lake?",
-    "options": ["Wular", "Dal", "Chilika", "Sambhar"],
-    "a": "Chilika",
-    "mode": "FLIP"
+    "q": "Speed formula?",
+    "a": "Distance / Time",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 751,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Largest Freshwater Lake?",
-    "options": ["Dal", "Wular", "Loktak", "Nainital"],
-    "a": "Wular",
-    "mode": "FLIP"
+    "q": "1 km = ? meters",
+    "a": "1000",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 752,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "First Nuclear Test Pokhran-I?",
-    "options": ["1974", "1988", "1998", "2004"],
-    "a": "1974",
-    "mode": "FLIP"
+    "q": "1 hour = ? seconds",
+    "a": "3600",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 753,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Pokhran-II conducted in?",
-    "options": ["1996", "1998", "2000", "2004"],
-    "a": "1998",
-    "mode": "FLIP"
+    "q": "Square of 15?",
+    "a": "225",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 754,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "First Satellite of India?",
-    "options": ["Bhaskara", "Aryabhata", "Rohini", "INSAT"],
-    "a": "Aryabhata",
-    "mode": "FLIP"
+    "q": "Cube of 5?",
+    "a": "125",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 755,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Aryabhata launched in?",
-    "options": ["1972", "1975", "1980", "1983"],
-    "a": "1975",
-    "mode": "FLIP"
+    "q": "√144 = ?",
+    "a": "12",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 756,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "ISRO established in?",
-    "options": ["1962", "1969", "1972", "1975"],
-    "a": "1969",
-    "mode": "FLIP"
+    "q": "Who is current Chief Election Commissioner?",
+    "a": "Rajiv Kumar",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 757,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "ISRO Headquarters?",
-    "options": ["Delhi", "Mumbai", "Bengaluru", "Hyderabad"],
-    "a": "Bengaluru",
-    "mode": "FLIP"
+    "q": "Capital of Australia?",
+    "a": "Canberra",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 758,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Chandrayaan-1 launched in?",
-    "options": ["2006", "2008", "2010", "2013"],
-    "a": "2008",
-    "mode": "FLIP"
+    "q": "Largest state in India by area?",
+    "a": "Rajasthan",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 759,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Mangalyaan launched in?",
-    "options": ["2011", "2013", "2015", "2017"],
-    "a": "2013",
-    "mode": "FLIP"
+    "q": "Smallest state in India by area?",
+    "a": "Goa",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 760,
     "category": "SSC",
-    "type": "MCQ",
-    "q": "Chandrayaan-3 landed on Moon?",
-    "options": ["21st Aug 2023", "23rd Aug 2023", "25th Aug 2023", "15th Aug 2023"],
-    "a": "23rd Aug 2023",
-    "mode": "FLIP"
+    "q": "Currency of Japan?",
+    "a": "Yen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 761,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "RBI established in?",
-    "options": ["1934", "1935", "1947", "1950"],
-    "a": "1935",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "National Animal of India?",
+    "a": "Tiger",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 762,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "RBI Nationalized in?",
-    "options": ["1947", "1949", "1955", "1969"],
-    "a": "1949",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "National Bird of India?",
+    "a": "Peacock",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 763,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "RBI Headquarters?",
-    "options": ["Delhi", "Mumbai", "Kolkata", "Chennai"],
-    "a": "Mumbai",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "National Flower of India?",
+    "a": "Lotus",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 764,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "First Governor of RBI?",
-    "options": ["CD Deshmukh", "Osborne Smith", "James Taylor", "Bengal Rama Rau"],
-    "a": "Osborne Smith",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who wrote National Anthem?",
+    "a": "Rabindranath Tagore",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 765,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "First Indian Governor of RBI?",
-    "options": ["Osborne Smith", "CD Deshmukh", "HVR Iengar", "Bengal Rama Rau"],
-    "a": "CD Deshmukh",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "How many players in cricket team?",
+    "a": "11",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 766,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "RBI Act?",
-    "options": ["1934", "1935", "1949", "1969"],
-    "a": "1934",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who invented Computer?",
+    "a": "Charles Babbage",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
-    {
+  {
     "id": 767,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "SBI formed by merging Imperial Bank in?",
-    "options": ["1949", "1955", "1959", "1969"],
-    "a": "1955",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Full form of CPU?",
+    "a": "Central Processing Unit",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 768,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "SBI Act?",
-    "options": ["1954", "1955", "1959", "1969"],
-    "a": "1955",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Full form of RAM?",
+    "a": "Random Access Memory",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 769,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "First Bank in India?",
-    "options": ["Bank of Hindustan", "Bank of Bengal", "SBI", "RBI"],
-    "a": "Bank of Hindustan",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Full form of HTTP?",
+    "a": "HyperText Transfer Protocol",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 770,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "Bank of Hindustan established in?",
-    "options": ["1770", "1786", "1806", "1840"],
-    "a": "1770",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Full form of URL?",
+    "a": "Uniform Resource Locator",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 771,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "Bank Nationalization 1st Phase?",
-    "options": ["1949", "1955", "1969", "1980"],
-    "a": "1969",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who founded Microsoft?",
+    "a": "Bill Gates and Paul Allen",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 772,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "How many banks nationalized in 1969?",
-    "options": ["6", "10", "14", "20"],
-    "a": "14",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Headquarters of UNO?",
+    "a": "New York",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 773,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "Bank Nationalization 2nd Phase?",
-    "options": ["1975", "1980", "1985", "1991"],
-    "a": "1980",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Headquarters of WHO?",
+    "a": "Geneva, Switzerland",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 774,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "How many banks nationalized in 1980?",
-    "options": ["4", "6", "8", "10"],
-    "a": "6",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "When was RBI established?",
+    "a": "1st April 1935",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 775,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "NABARD established in?",
-    "options": ["1980", "1982", "1985", "1990"],
-    "a": "1982",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who is known as Missile Man of India?",
+    "a": "Dr. A.P.J. Abdul Kalam",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 776,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "NABARD full form?",
-    "options": ["National Bank for Agriculture and Rural Development", "National Bank for Rural Development", "National Agriculture Bank for Rural Development", "New Bank for Agriculture and Rural Development"],
-    "a": "National Bank for Agriculture and Rural Development",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "First Indian in space?",
+    "a": "Rakesh Sharma",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 777,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "SEBI established in?",
-    "options": ["1988", "1992", "1995", "2000"],
-    "a": "1988",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "First woman in space?",
+    "a": "Valentina Tereshkova",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 778,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "SEBI Act?",
-    "options": ["1988", "1992", "1995", "2000"],
-    "a": "1992",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Which gas is used in balloons?",
+    "a": "Helium",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 779,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "IRDAI established in?",
-    "options": ["1999", "2000", "2002", "2005"],
-    "a": "1999",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Hardest natural substance?",
+    "a": "Diamond",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 780,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "PFRDA established in?",
-    "options": ["2003", "2005", "2008", "2013"],
-    "a": "2003",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Chemical name of Baking Soda?",
+    "a": "Sodium Bicarbonate NaHCO₃",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 781,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "Repo Rate decided by?",
-    "options": ["Finance Ministry", "RBI", "SBI", "SEBI"],
-    "a": "RBI",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Chemical name of Washing Soda?",
+    "a": "Sodium Carbonate Na₂CO₃",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 782,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "Repo Rate means?",
-    "options": ["RBI borrows from banks", "Banks borrow from RBI", "Banks lend to public", "Public deposits in bank"],
-    "a": "Banks borrow from RBI",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Which vitamin helps in blood clotting?",
+    "a": "Vitamin K",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 783,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "Reverse Repo Rate means?",
-    "options": ["RBI borrows from banks", "Banks borrow from RBI", "Banks lend to public", "Public borrows from bank"],
-    "a": "RBI borrows from banks",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Which planet has most moons?",
+    "a": "Saturn",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 784,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "CRR full form?",
-    "options": ["Cash Reserve Ratio", "Credit Reserve Ratio", "Current Reserve Ratio", "Capital Reserve Ratio"],
-    "a": "Cash Reserve Ratio",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Hottest planet in solar system?",
+    "a": "Venus",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 785,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "SLR full form?",
-    "options": ["Statutory Liquidity Ratio", "Standard Liquidity Ratio", "State Liquidity Ratio", "Saving Liquidity Ratio"],
-    "a": "Statutory Liquidity Ratio",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Largest planet?",
+    "a": "Jupiter",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 786,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "MSF full form?",
-    "options": ["Marginal Standing Facility", "Money Standing Facility", "Market Standing Facility", "Monetary Standing Facility"],
-    "a": "Marginal Standing Facility",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Smallest planet?",
+    "a": "Mercury",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 787,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "Bank Rate means?",
-    "options": ["Rate at which RBI lends to banks without collateral", "Rate at which banks lend to public", "Rate at which RBI borrows", "Rate for home loans"],
-    "a": "Rate at which RBI lends to banks without collateral",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who built Taj Mahal?",
+    "a": "Shah Jahan",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 788,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "Base Rate replaced by?",
-    "options": ["Repo Rate", "MCLR", "Bank Rate", "Prime Rate"],
-    "a": "MCLR",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who built Red Fort?",
+    "a": "Shah Jahan",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 789,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "MCLR full form?",
-    "options": ["Marginal Cost of funds based Lending Rate", "Minimum Cost Lending Rate", "Maximum Cost Lending Rate", "Money Cost Lending Rate"],
-    "a": "Marginal Cost of funds based Lending Rate",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who built Qutub Minar?",
+    "a": "Qutub-ud-din Aibak",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 790,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "MCLR introduced in?",
-    "options": ["2014", "2015", "2016", "2017"],
-    "a": "2016",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who was Akbar's revenue minister?",
+    "a": "Todar Mal",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 791,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "NPA full form?",
-    "options": ["Non Performing Asset", "Net Performing Asset", "New Performing Asset", "National Performing Asset"],
-    "a": "Non Performing Asset",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who was called Napoleon of India?",
+    "a": "Samudragupta",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 792,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "Loan becomes NPA after?",
-    "options": ["30 days", "60 days", "90 days", "180 days"],
-    "a": "90 days",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "First battle of Panipat?",
+    "a": "1526",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 793,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "SARFAESI Act?",
-    "options": ["2000", "2002", "2005", "2008"],
-    "a": "2002",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Second battle of Panipat?",
+    "a": "1556",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 794,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "SARFAESI full form?",
-    "options": ["Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest", "Securities and Reconstruction Act", "Secured Assets Recovery Act", "Securities Assets Reconstruction Act"],
-    "a": "Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Third battle of Panipat?",
+    "a": "1761",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 795,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "IBC full form?",
-    "options": ["Indian Bankruptcy Code", "Insolvency and Bankruptcy Code", "International Banking Code", "Investment Banking Code"],
-    "a": "Insolvency and Bankruptcy Code",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who started Saka Era?",
+    "a": "Kanishka in 78 AD",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 796,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "IBC enacted in?",
-    "options": ["2014", "2015", "2016", "2017"],
-    "a": "2016",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who started Gupta Era?",
+    "a": "Chandragupta I in 319 AD",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 797,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "PM Jan Dhan Yojana launched in?",
-    "options": ["2013", "2014", "2015", "2016"],
-    "a": "2014",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who wrote Arthashastra?",
+    "a": "Kautilya or Chanakya",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 798,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "UPI launched by?",
-    "options": ["RBI", "SBI", "NPCI", "SEBI"],
-    "a": "NPCI",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Who wrote Meghaduta?",
+    "a": "Kalidasa",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 799,
-    "category": "BANKING",
-    "type": "MCQ",
-    "q": "UPI launched in?",
-    "options": ["2014", "2015", "2016", "2017"],
-    "a": "2016",
-    "mode": "FLIP"
+    "category": "SSC",
+    "q": "Highest Gallantry Award?",
+    "a": "Param Vir Chakra",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   },
   {
     "id": 800,
+    "category": "SSC",
+    "q": "Father of Indian Navy?",
+    "a": "Chhatrapati Shivaji Maharaj",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 801,
+    "category": "SSC",
+    "q": "Which state is called Spice Garden of India?",
+    "a": "Kerala",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 802,
+    "category": "SSC",
+    "q": "Which city is called Pink City?",
+    "a": "Jaipur",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 803,
     "category": "BANKING",
-    "type": "MCQ",
-    "q": "Digital Rupee CBDC launched by?",
-    "options": ["SBI", "RBI", "NPCI", "Finance Ministry"],
-    "a": "RBI",
-    "mode": "FLIP"
+    "q": "Full form of RBI?",
+    "a": "Reserve Bank of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 804,
+    "category": "BANKING",
+    "q": "When was RBI established?",
+    "a": "1st April 1935",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 805,
+    "category": "BANKING",
+    "q": "RBI was nationalized in?",
+    "a": "1st January 1949",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 806,
+    "category": "BANKING",
+    "q": "Headquarters of RBI?",
+    "a": "Mumbai",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 807,
+    "category": "BANKING",
+    "q": "Who is current RBI Governor?",
+    "a": "Sanjay Malhotra",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 808,
+    "category": "BANKING",
+    "q": "First Governor of RBI?",
+    "a": "Sir Osborne Smith",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 809,
+    "category": "BANKING",
+    "q": "First Indian Governor of RBI?",
+    "a": "C.D. Deshmukh",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 810,
+    "category": "BANKING",
+    "q": "What is Repo Rate?",
+    "a": "Rate at which RBI lends to commercial banks",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 811,
+    "category": "BANKING",
+    "q": "What is Reverse Repo Rate?",
+    "a": "Rate at which RBI borrows from commercial banks",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 812,
+    "category": "BANKING",
+    "q": "What is CRR?",
+    "a": "Cash Reserve Ratio - % of deposits banks keep with RBI",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 813,
+    "category": "BANKING",
+    "q": "What is SLR?",
+    "a": "Statutory Liquidity Ratio - % banks keep in liquid assets",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 814,
+    "category": "BANKING",
+    "q": "What is Bank Rate?",
+    "a": "Rate at which RBI lends to banks without collateral",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 815,
+    "category": "BANKING",
+    "q": "What is MSF?",
+    "a": "Marginal Standing Facility",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 816,
+    "category": "BANKING",
+    "q": "Full form of NABARD?",
+    "a": "National Bank for Agriculture and Rural Development",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 817,
+    "category": "BANKING",
+    "q": "NABARD established in?",
+    "a": "12 July 1982",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 818,
+    "category": "BANKING",
+    "q": "Full form of SEBI?",
+    "a": "Securities and Exchange Board of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 819,
+    "category": "BANKING",
+    "q": "SEBI established in?",
+    "a": "1988, statutory powers in 1992",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 820,
+    "category": "BANKING",
+    "q": "Full form of IRDAI?",
+    "a": "Insurance Regulatory and Development Authority of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 821,
+    "category": "BANKING",
+    "q": "Full form of SIDBI?",
+    "a": "Small Industries Development Bank of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 822,
+    "category": "BANKING",
+    "q": "Full form of EXIM Bank?",
+    "a": "Export Import Bank of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 823,
+    "category": "BANKING",
+    "q": "Full form of SBI?",
+    "a": "State Bank of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 824,
+    "category": "BANKING",
+    "q": "SBI was formed by merging?",
+    "a": "Imperial Bank of India in 1955",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 825,
+    "category": "BANKING",
+    "q": "Largest public sector bank?",
+    "a": "State Bank of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 826,
+    "category": "BANKING",
+    "q": "Largest private sector bank?",
+    "a": "HDFC Bank",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 827,
+    "category": "BANKING",
+    "q": "What is NPA?",
+    "a": "Non-Performing Asset - loan not repaid for 90 days",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 828,
+    "category": "BANKING",
+    "q": "What is RTGS?",
+    "a": "Real Time Gross Settlement",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 829,
+    "category": "BANKING",
+    "q": "Minimum limit for RTGS?",
+    "a": "₹2 lakh",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 830,
+    "category": "BANKING",
+    "q": "What is NEFT?",
+    "a": "National Electronic Funds Transfer",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 831,
+    "category": "BANKING",
+    "q": "What is IMPS?",
+    "a": "Immediate Payment Service - 24x7 instant transfer",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 832,
+    "category": "BANKING",
+    "q": "What is UPI?",
+    "a": "Unified Payments Interface",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 833,
+    "category": "BANKING",
+    "q": "UPI launched by?",
+    "a": "NPCI - National Payments Corporation of India",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 834,
+    "category": "BANKING",
+    "q": "What is KYC?",
+    "a": "Know Your Customer",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 835,
+    "category": "BANKING",
+    "q": "What is ATM?",
+    "a": "Automated Teller Machine",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 836,
+    "category": "BANKING",
+    "q": "What is CBS?",
+    "a": "Core Banking Solution",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 837,
+    "category": "BANKING",
+    "q": "What is IFSC?",
+    "a": "Indian Financial System Code",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 838,
+    "category": "BANKING",
+    "q": "What is MICR?",
+    "a": "Magnetic Ink Character Recognition",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 839,
+    "category": "BANKING",
+    "q": "What is Cheque Truncation?",
+    "a": "CTS - electronic clearing of cheques",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 840,
+    "category": "BANKING",
+    "q": "What is Fixed Deposit?",
+    "a": "Deposit with fixed tenure and interest rate",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 841,
+    "category": "BANKING",
+    "q": "What is Recurring Deposit?",
+    "a": "Regular monthly deposit for fixed period",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 842,
+    "category": "BANKING",
+    "q": "What is Current Account?",
+    "a": "Account for business with no interest, unlimited transactions",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 843,
+    "category": "BANKING",
+    "q": "What is Savings Account?",
+    "a": "Account for individuals with interest, limited transactions",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 844,
+    "category": "BANKING",
+    "q": "What is Demat Account?",
+    "a": "Account to hold shares electronically",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 845,
+    "category": "BANKING",
+    "q": "What is PAN?",
+    "a": "Permanent Account Number",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 846,
+    "category": "BANKING",
+    "q": "What is GST?",
+    "a": "Goods and Services Tax - implemented 1 July 2017",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 847,
+    "category": "BANKING",
+    "q": "Types of GST?",
+    "a": "CGST, SGST, IGST, UTGST",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 848,
+    "category": "BANKING",
+    "q": "What is Credit Card?",
+    "a": "Card allowing borrowing money for purchases",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 849,
+    "category": "BANKING",
+    "q": "What is Debit Card?",
+    "a": "Card linked to bank account for direct payment",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 850,
+    "category": "BANKING",
+    "q": "What is EMI?",
+    "a": "Equated Monthly Installment",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 851,
+    "category": "BANKING",
+    "q": "What is Loan Moratorium?",
+    "a": "Temporary suspension of loan repayment",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 852,
+    "category": "BANKING",
+    "q": "What is Inflation?",
+    "a": "General rise in prices of goods and services",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 853,
+    "category": "BANKING",
+    "q": "What is Deflation?",
+    "a": "General fall in prices of goods and services",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 854,
+    "category": "BANKING",
+    "q": "What is Fiscal Deficit?",
+    "a": "Government expenditure > revenue",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 855,
+    "category": "BANKING",
+    "q": "What is Budget?",
+    "a": "Annual financial statement of government",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 856,
+    "category": "BANKING",
+    "q": "Who presents Union Budget?",
+    "a": "Finance Minister",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 857,
+    "category": "BANKING",
+    "q": "What is FDI?",
+    "a": "Foreign Direct Investment",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 858,
+    "category": "BANKING",
+    "q": "What is FII?",
+    "a": "Foreign Institutional Investor",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 859,
+    "category": "BANKING",
+    "q": "What is Sensex?",
+    "a": "Stock market index of 30 BSE companies",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 860,
+    "category": "BANKING",
+    "q": "What is Nifty?",
+    "a": "Stock market index of 50 NSE companies",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 861,
+    "category": "BANKING",
+    "q": "What is IPO?",
+    "a": "Initial Public Offering",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 862,
+    "category": "BANKING",
+    "q": "What is Mutual Fund?",
+    "a": "Pool of money from investors to invest in securities",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 863,
+    "category": "BANKING",
+    "q": "What is NAV?",
+    "a": "Net Asset Value per unit of mutual fund",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 864,
+    "category": "BANKING",
+    "q": "What is SIP?",
+    "a": "Systematic Investment Plan",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 865,
+    "category": "BANKING",
+    "q": "What is PPF?",
+    "a": "Public Provident Fund - 15 year scheme",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 866,
+    "category": "BANKING",
+    "q": "What is NPS?",
+    "a": "National Pension System",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 867,
+    "category": "BANKING",
+    "q": "What is Jan Dhan Yojana?",
+    "a": "PMJDY - financial inclusion scheme launched 2014",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 868,
+    "category": "BANKING",
+    "q": "What is Mudra Loan?",
+    "a": "Loans up to 10 lakh for small businesses",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 869,
+    "category": "BANKING",
+    "q": "What is Bitcoin?",
+    "a": "Decentralized digital cryptocurrency",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
+  },
+  {
+    "id": 870,
+    "category": "BANKING",
+    "q": "What is Blockchain?",
+    "a": "Distributed ledger technology",
+    "state": "new",
+    "passCount": 0,
+    "ease": 2.5
   }
     ]
