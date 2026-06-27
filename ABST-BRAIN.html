@@ -186,7 +186,7 @@
     else if(currentMode === 'other') fileName = 'Education-other-200.json';
 
     document.querySelector('.card-content').innerHTML = `<div class="loading">Loading ${fileName}...</div>`;
-    const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${fileName}`;
+    const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${fileName}?v=${Date.now()}`;
     const response = await fetch(url);
     if (!response.ok) throw new Error(`${fileName} not found`);
     matrix = await response.json();
