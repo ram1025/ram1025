@@ -61,58 +61,77 @@
   </style>
 </head>
 <body>
-  <div class="age-modal" id="ageModal">
-    <div class="age-box">
-      <h2>Select Your Level</h2>
-      <select id="userClass">
-        <optgroup label="SCHOOL">
-          <option value="LKG">LKG</option>
-          <option value="UKG">UKG</option>
-          <option value="CLASS1">Class 1</option>
-          <option value="CLASS2">Class 2</option>
-          <option value="CLASS3">Class 3</option>
-          <option value="CLASS4">Class 4</option>
-          <option value="CLASS5">Class 5</option>
-          <option value="CLASS6">Class 6</option>
-          <option value="CLASS7">Class 7</option>
-          <option value="CLASS8">Class 8</option>
-          <option value="CLASS9">Class 9</option>
-          <option value="CLASS10">Class 10</option>
-          <option value="CLASS11">Class 11</option>
-          <option value="CLASS12">Class 12</option>
-        </optgroup>
-        <optgroup label="COMPETITIVE">
-          <option value="UPSC">UPSC</option>
-          <option value="NEET">NEET</option>
-          <option value="JEE">JEE</option>
-          <option value="SSC">SSC</option>
-          <option value="BANKING">Banking</option>
-        </optgroup>
-        <optgroup label="OTHER">
-          <option value="GK" selected>General Knowledge</option>
-          <option value="PHD">PhD Level</option>
-        </optgroup>
-      </select>
-      <button class="btn" id="saveAgeBtn">START LEARNING</button>
-    </div>
-  </div>
   <div class="header">
     <button class="back-btn" id="homeBtn">← CLOSE</button>
     <h1>ABST BRAIN</h1>
     <p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
   </div>
+
+  <!-- TRACK BUTTONS -->
   <div class="mode-toggle">
-  <button class="mode-btn" id="pillarsMode">🏛 36 PILLARS - 108</button>
-  <button class="mode-btn" id="schoolMode">📚 SCHOOL - 280</button>
-  <button class="mode-btn" id="collegeMode">🎓 COLLEGE - 180</button>
-  <button class="mode-btn" id="competitiveMode">🏆 COMPETITIVE - 340</button>
-  <button class="mode-btn" id="otherMode">📖 GK/PHD - 200</button>
-</div>
-<div class="answer-mode-toggle">
-  <button class="mode-btn" id="typeMode">✏️ TYPE</button>
-  <button class="mode-btn" id="mcqMode">⚪ MCQ</button>
-  <button class="mode-btn" id="flipMode">🔁 FLIP</button>
-</div>
+    <button class="mode-btn" id="pillarsMode">🏛 36 PILLARS - 108</button>
+    <button class="mode-btn" id="schoolMode" onclick="showSchoolList()">📚 SCHOOL - 280</button>
+    <button class="mode-btn" id="collegeMode">🎓 COLLEGE - 180</button>
+    <button class="mode-btn" id="competitiveMode" onclick="showCompetitiveList()">🏆 COMPETITIVE - 340</button>
+    <button class="mode-btn" id="otherMode" onclick="showOthersList()">📖 GK/PHD - 200</button>
+  </div>
+
+  <!-- SCHOOL SUB-LIST -->
+  <div id="schoolList" class="sub-list" style="display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40;">
+    <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT CLASS:</div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
+      <button class="sub-btn" onclick="selectTrack('LKG')">LKG</button>
+      <button class="sub-btn" onclick="selectTrack('UKG')">UKG</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS1')">Class 1</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS2')">Class 2</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS3')">Class 3</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS4')">Class 4</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS5')">Class 5</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS6')">Class 6</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS7')">Class 7</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS8')">Class 8</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS9')">Class 9</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS10')">Class 10</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS11')">Class 11</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS12')">Class 12</button>
+    </div>
+  </div>
+
+  <!-- COMPETITIVE SUB-LIST -->
+  <div id="competitiveList" class="sub-list" style="display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40;">
+    <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT EXAM:</div>
+    <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:8px;">
+      <button class="sub-btn" onclick="selectTrack('UPSC')">UPSC</button>
+      <button class="sub-btn" onclick="selectTrack('NEET')">NEET</button>
+      <button class="sub-btn" onclick="selectTrack('JEE')">JEE</button>
+      <button class="sub-btn" onclick="selectTrack('SSC')">SSC</button>
+      <button class="sub-btn" onclick="selectTrack('BANKING')">BANKING</button>
+    </div>
+  </div>
+
+  <!-- OTHERS SUB-LIST -->
+  <div id="othersList" class="sub-list" style="display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40;">
+    <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT LEVEL:</div>
+    <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:8px;">
+      <button class="sub-btn" onclick="selectTrack('GK')">General Knowledge</button>
+      <button class="sub-btn" onclick="selectTrack('PHD')">PhD Level</button>
+    </div>
+  </div>
+
+  <style>
+  .sub-btn {
+    padding:12px 8px; background:#1a2332; border:1px solid #00ffaa40; 
+    border-radius:8px; color:#00ffaa; font-size:13px; font-weight:bold; 
+    cursor:pointer; transition:0.2s;
+  }
+  .sub-btn:active {background:#00ffaa; color:#0a192f; transform:scale(0.95);}
+  </style>
+
+  <div class="answer-mode-toggle">
+    <button class="mode-btn" id="typeMode">✏️ TYPE</button>
+    <button class="mode-btn" id="mcqMode">⚪ MCQ</button>
+    <button class="mode-btn" id="flipMode">🔁 FLIP</button>
+  </div>
   <div id="cardCounter" style="text-align:center;margin:15px;color:#00ffaa;font-weight:bold;font-size:18px;">0/0</div>
   <div id="card" class="card">
     <div class="card-content">
@@ -324,37 +343,64 @@
     }
 
     document.getElementById('homeBtn').onclick = () => {
-      if(window.parent!== window && window.parent.closeM) {
-        window.parent.closeM('abstBrainModal');
-      } else {
-        window.location.href = './index.html';
-      }
-    };
+  if(window.parent!== window && window.parent.closeM) {
+    window.parent.closeM('abstBrainModal');
+  } else {
+    window.location.href = './index.html';
+  }
+};
 
-    document.getElementById('pillarsMode').onclick = () => {
-      currentMode = 'pillars';
-      loadMatrixFromGitHub();
-    };
+// SUB-LIST FUNCTIONS
+function hideAllSubLists() {
+  document.getElementById('schoolList').style.display = 'none';
+  document.getElementById('competitiveList').style.display = 'none';
+  document.getElementById('othersList').style.display = 'none';
+}
 
-    document.getElementById('schoolMode').onclick = () => {
-      currentMode = 'school';
-      loadMatrixFromGitHub();
-    };
+function showSchoolList() {
+  hideAllSubLists();
+  document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('schoolMode').classList.add('active');
+  document.getElementById('schoolList').style.display = 'block';
+  document.getElementById('card').style.display = 'none';
+}
 
-    document.getElementById('collegeMode').onclick = () => {
-      currentMode = 'college';
-      loadMatrixFromGitHub();
-    };
+function showCompetitiveList() {
+  hideAllSubLists();
+  document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('competitiveMode').classList.add('active');
+  document.getElementById('competitiveList').style.display = 'block';
+  document.getElementById('card').style.display = 'none';
+}
 
-    document.getElementById('competitiveMode').onclick = () => {
-      currentMode = 'competitive';
-      loadMatrixFromGitHub();
-    };
+function showOthersList() {
+  hideAllSubLists();
+  document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('otherMode').classList.add('active');
+  document.getElementById('othersList').style.display = 'block';
+  document.getElementById('card').style.display = 'none';
+}
 
-    document.getElementById('otherMode').onclick = () => {
-      currentMode = 'other';
-      loadMatrixFromGitHub();
-    };
+function selectTrack(trackName) {
+  hideAllSubLists();
+  document.getElementById('card').style.display = 'block';
+  userClass = trackName;
+  currentMode = trackName.toLowerCase().includes('class') || ['LKG','UKG'].includes(trackName) ? 'school' : 
+                ['UPSC','NEET','JEE','SSC','BANKING'].includes(trackName) ? 'competitive' : 'other';
+  loadMatrixFromGitHub();
+}
+
+document.getElementById('pillarsMode').onclick = () => {
+  hideAllSubLists();
+  currentMode = 'pillars';
+  loadMatrixFromGitHub();
+};
+
+document.getElementById('collegeMode').onclick = () => {
+  hideAllSubLists();
+  currentMode = 'college';
+  loadMatrixFromGitHub();
+};
 
     document.getElementById('typeMode').onclick = () => {
   answerMode = 'type';
