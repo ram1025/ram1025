@@ -195,6 +195,10 @@
   if(currentMode === 'school' && userClass !== 'GK') {
     filteredMatrix = matrix.filter(c => c.category === userClass);
   }
+  // COLLEGE mode ← EE BLOCK ADD CHEY
+  else if(currentMode === 'college' && userClass !== 'GK') {
+    filteredMatrix = matrix.filter(c => c.category === userClass);
+  }
   // COMPETITIVE mode
   else if(currentMode === 'competitive' && userClass !== 'GK') {
     filteredMatrix = matrix.filter(c => c.category === userClass);
@@ -210,12 +214,12 @@
   });
   
   if (dueCards.length === 0) {
-    dueCards = [...filteredMatrix]; // filteredMatrix nundi teesuko
+    dueCards = [...filteredMatrix];
   }
   
   currentIndex = 0;
   dueCards = dueCards.sort(() => 0.5 - Math.random());
-}
+  }
 
     async function loadMatrixFromGitHub() {
   try {
@@ -383,6 +387,7 @@
 // SUB-LIST FUNCTIONS
 function hideAllSubLists() {
   document.getElementById('schoolList').style.display = 'none';
+  document.getElementById('collegeList').style.display = 'none'; // ← Ee line add chey
   document.getElementById('competitiveList').style.display = 'none';
   document.getElementById('othersList').style.display = 'none';
 }
@@ -393,50 +398,54 @@ function showSchoolList() {
   document.getElementById('schoolMode').classList.add('active');
   document.getElementById('schoolList').style.display = 'block';
   document.getElementById('card').style.display = 'none';
-}
-
-function showCompetitiveList() {
-  hideAllSubLists();
-  document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('competitiveMode').classList.add('active');
-  document.getElementById('competitiveList').style.display = 'block';
-  document.getElementById('card').style.display = 'none';
-}
-
-function showOthersList() {
-  hideAllSubLists();
-  document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('otherMode').classList.add('active');
-  document.getElementById('othersList').style.display = 'block';
-  document.getElementById('card').style.display = 'none';
-}
+  }
+  
+  function showCollegeList() {
+    hideAllSubLists();
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('collegeMode').classList.add('active');
+    document.getElementById('collegeList').style.display = 'block';
+    document.getElementById('card').style.display = 'none';
+  }
+  
+  function showCompetitiveList() {
+    hideAllSubLists();
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('competitiveMode').classList.add('active');
+    document.getElementById('competitiveList').style.display = 'block';
+    document.getElementById('card').style.display = 'none';
+  }
+  
+  function showOthersList() {
+    hideAllSubLists();
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('otherMode').classList.add('active');
+    document.getElementById('othersList').style.display = 'block';
+    document.getElementById('card').style.display = 'none';
+     }
 
 function selectTrack(trackName) {
   hideAllSubLists();
   document.getElementById('card').style.display = 'block';
   userClass = trackName;
-  
+
   // Mode set chey - explicit check
   if(['LKG','UKG','CLASS1','CLASS2','CLASS3','CLASS4','CLASS5','CLASS6','CLASS7','CLASS8','CLASS9','CLASS10','CLASS11','CLASS12'].includes(trackName)) {
     currentMode = 'school';
+  } else if(['DEGREE','ENGINEERING','MBBS','MBA-HR','MBA-FIN'].includes(trackName)) {
+    currentMode = 'college';
   } else if(['UPSC','NEET','JEE','SSC','BANKING'].includes(trackName)) {
     currentMode = 'competitive';
   } else {
     currentMode = 'other';
   }
-  
+
   loadMatrixFromGitHub();
-    }
+}
 
 document.getElementById('pillarsMode').onclick = () => {
   hideAllSubLists();
   currentMode = 'pillars';
-  loadMatrixFromGitHub();
-};
-
-document.getElementById('collegeMode').onclick = () => {
-  hideAllSubLists();
-  currentMode = 'college';
   loadMatrixFromGitHub();
 };
 
