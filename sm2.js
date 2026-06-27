@@ -1,16 +1,27 @@
-// SM-2 Multi-Pass Retention Engine (Optimized for ABST Logic)
+// SM-2 Multi-Pass Retention Engine (ABST BRAIN Optimized v2)
 const SM2_ENGINE = {
     DEFAULT_EASE: 2.5,
 
+    // FIX: Initialize card if due is missing
+    initCard: (card) => {
+        return {
+           ...card,
+            reps: card.reps || 0,
+            ease: card.ease || SM2_ENGINE.DEFAULT_EASE,
+            interval: card.interval || 0,
+            passCount: card.passCount || 0,
+            due: card.due || 0, // 0 ante immediate due
+            customState: card.customState || 'pending'
+        };
+    },
+
     // Dynamic Grade calculation
     calculateNewState: (card, score) => {
+        // First initialize
+        card = SM2_ENGINE.initCard(card);
+        
         let { reps, ease, interval, passCount } = card;
         
-        reps = reps || 0;
-        ease = ease || SM2_ENGINE.DEFAULT_EASE;
-        interval = interval || 0;
-        passCount = passCount || 0;
-
         if (score < 3) {
             // Again or Hard: Reset cycle, force immediate short-term loop
             interval = 1;
@@ -30,14 +41,20 @@ const SM2_ENGINE = {
         if (ease < 1.3) ease = 1.3;
 
         return {
-            ...card,
+           ...card,
             reps,
             ease,
             interval,
             passCount,
-            customState: (passCount >= 5) ? 'pass' : 'pending',
+            customState: (passCount >= 5)? 'pass' : 'pending',
             due: Date.now() + (interval * 24 * 60 * 60 * 1000)
         };
+    },
+
+    // FIX: Check if card is due - handles missing due field
+    isDue: (card) => {
+        if (!card.due || card.due === 0) return true; // No due = immediate due
+        return card.due <= Date.now();
     },
 
     // Handle "Again" / "Hard" logic (Immediate Re-queue within +2 blocks)
