@@ -520,9 +520,9 @@ document.getElementById('touch-btn').addEventListener('click', unlockDashboard);
 window.addEventListener('beforeinstallprompt', function(e) {
   e.preventDefault();
   deferredAppInstallPrompt = e;
-  var installCardNode = document.getElementById('pwaInstallCard');
-  if(installCardNode &&!window.matchMedia('(display-mode: standalone)').matches &&!isAppInstalled) {
-     installCardNode.style.display = 'grid';
+  var welcomeInstallBox = document.getElementById('welcomeInstallContainer');
+  if(welcomeInstallBox && !window.matchMedia('(display-mode: standalone)').matches && !isAppInstalled) {
+     welcomeInstallBox.style.display = 'block';
   }
 });
 
@@ -586,6 +586,23 @@ document.addEventListener('keydown',function(e){
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
  .catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
+}
+
+document.getElementById('installBtnWelcome')?.addEventListener('click', triggerPwaInstallation);
+function triggerPwaInstallation() {
+  if(!deferredAppInstallPrompt) {
+    alert('📲 Install cheyali ante:\n\nChrome menu → Install App\n\nLekapothe browser refresh chesi 30sec wait chey');
+    return;
+  }
+  deferredAppInstallPrompt.prompt();
+  deferredAppInstallPrompt.userChoice.then(function(choiceResult) {
+    if (choiceResult.outcome === 'accepted') {
+      document.getElementById('welcomeInstallContainer').style.display = 'none';
+      isAppInstalled = true;
+      localStorage.setItem('abst_installed', 'true');
+    }
+    deferredAppInstallPrompt = null;
+  });
 }
 </script>
 </body>
