@@ -170,8 +170,11 @@
 
     async function loadMatrixFromGitHub() {
       try {
+        // FIX: Reset all buttons first
         document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
         document.getElementById(currentMode+'Mode')?.classList.add('active');
+        document.getElementById(answerMode+'Mode')?.classList.add('active');
 
         document.querySelector('.card-content').innerHTML = `<div class="loading">Loading cards... <br>🔄</div>`;
         let fileName = '';
@@ -240,9 +243,9 @@
         let correctAns = currentCard.a || currentCard.answer;
         let options = [correctAns];
         let wrongOptions = matrix.filter(c => (c.a || c.answer)!== correctAns)
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 3)
-    .map(c => (c.a || c.answer));
+  .sort(() => 0.5 - Math.random())
+  .slice(0, 3)
+  .map(c => (c.a || c.answer));
         options = [...options,...wrongOptions].sort(() => 0.5 - Math.random());
         content += `<div id="mcqOptions" class="mcq-grid">`;
         options.forEach(opt => {
