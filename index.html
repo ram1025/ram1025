@@ -544,8 +544,8 @@ function triggerPwaInstallation() {
 }
 
 window.addEventListener('appinstalled', () => {
-  var installCardNode = document.getElementById('pwaInstallCard');
-  if(installCardNode) installCardNode.style.display = 'none';
+  var welcomeInstallBox = document.getElementById('welcomeInstallContainer');
+  if(welcomeInstallBox) welcomeInstallBox.style.display = 'none';
   isAppInstalled = true;
   localStorage.setItem('abst_installed', 'true');
 });
@@ -569,11 +569,11 @@ window.addEventListener('DOMContentLoaded', function(){
     }
   }
 
-  if(window.matchMedia('(display-mode: standalone)').matches || localStorage.getItem('abst_installed') === 'true') {
-     var installCardNode = document.getElementById('pwaInstallCard');
-     if(installCardNode) installCardNode.style.display = 'none';
-     isAppInstalled = true;
-  }
+ if(window.matchMedia('(display-mode: standalone)').matches){
+  var welcomeInstallBox = document.getElementById('welcomeInstallContainer');
+  if(welcomeInstallBox) welcomeInstallBox.style.display = 'none';
+  isAppInstalled = true;
+}
 });
 
 document.addEventListener('keydown',function(e){
