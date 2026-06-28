@@ -207,38 +207,47 @@
     }
 
     async function loadMatrixFromGitHub() {
-      try {
-        document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-        document.getElementById(currentMode+'Mode')?.classList.add('active');
-        document.getElementById(answerMode+'Mode')?.classList.add('active');
+  try {
+    let fileName = '';
+    if(currentMode === 'pillars') fileName = '36-pillars-108.json';
+    else if(currentMode === 'school') fileName = 'Education-school-280.json';
+    else if(currentMode === 'college') fileName = 'Education-college-250.json';
+    else if(currentMode === 'competitive') fileName = 'Education-competitive-340.json';
+    else if(currentMode === 'other') fileName = 'Education-others-130.json';
 
-        document.querySelector('.card-content').innerHTML = `<div class="loading">Loading cards... <br>🔄</div>`;
-        let fileName = '';
-        if(currentMode === 'pillars') fileName = '36-pillars-108.json';
-        else if(currentMode === 'school') fileName = 'Education-school-280.json';
-        else if(currentMode === 'college') fileName = 'Education-college-250.json';
-        else if(currentMode === 'competitive') fileName = 'Education-competitive-340.json';
-        else if(currentMode === 'other') fileName = 'Education-others-130.json';
+    // FIX: GitHub kaadu, local cache nundi
+    const url = `./${fileName}`;
 
-        document.querySelector('.card-content').innerHTML = `<div class="loading">Loading ${fileName}...</div>`;
-        const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${fileName}?v=${Date.now()}`;
-        const response = await fetch(url);
-        if (!response.ok) throw new Error(`${fileName} not found`);
-        matrix = await response.json();
+    console.log('[BRAIN] Fetching:', url);
+    const response = await fetch(url);
 
-        const saved = localStorage.getItem('abst_brain_cards');
-        if(saved) {
-          const parsed = JSON.parse(saved);
-          parsed.forEach(savedCard => {
-            const idx = matrix.findIndex(c => c.id === savedCard.id);
-            if(idx >= 0) matrix[idx] = savedCard;
-          });
-        }
-        initBrain();
-      } catch(err) {
-        console.error(err);
-        document.querySelector('.card-content').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check JSON file in GitHub repo</div>`;
-      }
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${fileName} not found`);
+    }
+
+    matrix = await response.json();
+    console.log('[BRAIN] Matrix loaded:', matrix.length);
+
+    if (!matrix || matrix.length === 0) {
+      console.warn('[BRAIN] Matrix empty');
+      matrix = [
+        {id: 'TEST-1', q: "Offline Test Question?", a: "Yes Working", pillar: "1"}
+      ];
+    }
+
+    initBrain();
+  } catch(err) {
+    console.error('[BRAIN] Load error:', err);
+    // Fallback to localStorage
+    const saved = localStorage.getItem('abst_brain_cards');
+    if (saved) {
+      matrix = JSON.parse(saved);
+      console.log('[BRAIN] Loaded from localStorage:', matrix.length);
+      initBrain();
+    } else {
+      alert('Offline: Open once online first to cache data');
+    }
+  }
     }
 
     function initBrain() {
