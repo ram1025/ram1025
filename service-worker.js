@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ram1025-v31-20251006';
+const CACHE_NAME = 'ram1025-v32-20251007'; // v31 → v32 chesanu, date marchanu
 const BASE_PATH = '/ram1025/';
 
 // NEE SCREENSHOTS LO UNNA FILES ANNI - LIVE FEED TAPPA
@@ -39,7 +39,7 @@ const urlsToCache = [
 
 // Install - Cache all files
 self.addEventListener('install', event => {
-  console.log('[SW] Installing v31 - Caching', urlsToCache.length, 'files...');
+  console.log('[SW] Installing v32 - Caching', urlsToCache.length, 'files...');
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
@@ -55,24 +55,30 @@ self.addEventListener('install', event => {
       })
       .then(() => {
         console.log('[SW] All done - Activating');
-        return self.skipWaiting();
+        return self.skipWaiting(); // Force activate immediately
       })
   );
 });
 
 // Activate - Delete old caches
 self.addEventListener('activate', event => {
-  console.log('[SW] Activating v31...');
+  console.log('[SW] Activating v32...');
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(
-        keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))
+        keys.filter(k => k !== CACHE_NAME).map(k => {
+          console.log('[SW] Deleting old cache:', k);
+          return caches.delete(k);
+        })
       )
-    ).then(() => self.clients.claim())
+    ).then(() => {
+      console.log('[SW] Claiming clients');
+      return self.clients.claim(); // Take control immediately
+    })
   );
 });
 
-// Fetch - Cache first + Live Feed fallback
+// Fetch - Network first for HTML, Cache first for assets
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
   
@@ -105,7 +111,21 @@ self.addEventListener('fetch', event => {
     return;
   }
   
-  // Normal cache first
+  // HTML files - Network first, then cache - updates kosam
+  if (event.request.destination === 'document') {
+    event.respondWith(
+      fetch(event.request)
+        .then(res => {
+          const resClone = res.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, resClone));
+          return res;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+  
+  // Other assets - Cache first
   event.respondWith(
     caches.match(event.request)
       .then(cached => {
@@ -122,7 +142,4 @@ self.addEventListener('fetch', event => {
         if (event.request.destination === 'document') {
           return caches.match(BASE_PATH + 'index.html');
         }
-        return new Response('Offline', {status: 404});
-      })
-  );
-});
+        return new Response('Offline', {
