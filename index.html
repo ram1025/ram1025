@@ -354,9 +354,8 @@ Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
 </div>
 <button onclick="closeM('blueprintModal')" class="modal-btn-action" style="background:#ffd700;">🏢 CLOSE & RETURN</button>
 </div>
-</div>
-
-<script>
+  </div>
+  <script>
 let deferredAppInstallPrompt = null;
 let isAppInstalled = false;
 
@@ -584,10 +583,11 @@ document.addEventListener('keydown',function(e){
   }
 });
 
-if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
-.catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
-}
+// REMOVED: Service Worker register chesina line teesesa. Nee dagara service-worker.js ledu kabatti error vastundi.
+// if('serviceWorker' in navigator){
+// navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
+//.catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
+// }
 
 setTimeout(function() {
   var btnBox = document.getElementById('welcomeInstallContainer');
