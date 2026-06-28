@@ -303,26 +303,26 @@
     };
 
     // FIX: Answer mode lo okate active undali
-    document.getElementById('typeMode').onclick = () => {
-      answerMode = 'type';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('typeMode').classList.add('active');
-      showCard();
-    };
+document.getElementById('typeMode').onclick = () => {
+  answerMode = 'type';
+  document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('typeMode').classList.add('active');
+  showCard();
+};
 
-    document.getElementById('mcqMode').onclick = () => {
-      answerMode = 'mcq';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('mcqMode').classList.add('active');
-      showCard();
-    };
+document.getElementById('mcqMode').onclick = () => {
+  answerMode = 'mcq';
+  document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('mcqMode').classList.add('active');
+  showCard();
+};
 
-    document.getElementById('flipMode').onclick = () => {
-      answerMode = 'flip';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('flipMode').classList.add('active');
-      showCard();
-    };
+document.getElementById('flipMode').onclick = () => {
+  answerMode = 'flip';
+  document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('flipMode').classList.add('active');
+  showCard();
+};
 
     window.addEventListener('load', () => {
       loadMatrixFromGitHub();
