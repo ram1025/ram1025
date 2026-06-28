@@ -274,18 +274,42 @@ function initBrain() {
 function showCard() {
   answered = false;
   if (dueCards.length === 0) {
-    document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>No cards found!</h3><p>Check JSON data for ${currentTrack}</p><p>Category exact ga match avvali</p></div>`;
+    document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>No cards found!</h3><p>Check JSON data for ${currentTrack}</p></div>`;
     document.getElementById('cardCounter').textContent = `0/0`;
     return;
   }
   if (currentIndex >= dueCards.length) currentIndex = 0;
   currentCard = dueCards[currentIndex];
-  // FIX 3: dueCards.length vadu, matrix.length kadu
   document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
+  
+  // ANSWER MODE CHECK - Anki style only for "type" mode
+  if (answerMode === 'type') {
+    document.querySelector('.card-content').innerHTML = `
+      <div style="padding: 20px; text-align: center;">
+        <div style="color: #64ffda; font-size: 14px; margin-bottom: 10px;">Pillar ${currentCard.pillar}</div>
+        <div style="font-size: 20px; margin-bottom: 20px; color: #fff;">${currentCard.question}</div>
+        <button onclick="showAnswer()" id="showAnsBtn" style="padding: 12px 24px; background: #64ffda; color: #0a192f; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%;">Show Answer</button>
+        <div id="answerDiv" style="display:none; margin-top: 20px;">
+          <div style="font-size: 18px; color: #ffd700; margin-bottom: 20px; padding: 15px; background: #112240; border-radius: 8px;">${currentCard.answer}</div>
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;">
+            <button onclick="rateCard(1)" style="padding: 14px 8px; background: #ff4444; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Again</button>
+            <button onclick="rateCard(2)" style="padding: 14px 8px; background: #ff8800; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Hard</button>
+            <button onclick="rateCard(3)" style="padding: 14px 8px; background: #44ff88; color: #0a192f; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Good</button>
+            <button onclick="rateCard(4)" style="padding: 14px 8px; background: #4488ff; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Easy</button>
+          </div>
+        </div>
+      </div>
+    `;
+  } else {
+    // MCQ mode ki vere logic pettali
+    document.querySelector('.card-content').innerHTML = `<div>MCQ Mode - Coming soon</div>`;
+  }
+}
 
-  let content = `<div class="pillar">${currentCard.category || currentTrack}</div>
-    <div class="question">${currentCard.q}</div>`;
-  //... rest same
+function showAnswer() {
+  answered = true;
+  document.getElementById('answerDiv').style.display = 'block';
+  document.getElementById('showAnsBtn').style.display = 'none';
 }
 
 // FIX 4: Answer mode buttons ki kuda space pettu
