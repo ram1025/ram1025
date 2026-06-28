@@ -175,33 +175,24 @@
     function loadCards() {
   let filteredMatrix = matrix;
 
-  if(currentMode === 'school') {
-    filteredMatrix = matrix.filter(c => c.category?.trim() === userClass);
-  }
-  else if(currentMode === 'college') {
-    filteredMatrix = matrix.filter(c => c.category?.trim() === userClass);
-  }
-  else if(currentMode === 'competitive') {
-    filteredMatrix = matrix.filter(c => c.category?.trim() === userClass);
-  }
-  else if(currentMode === 'other') {
+  if(currentMode === 'pillars') {
+    filteredMatrix = matrix;
+  } else {
     filteredMatrix = matrix.filter(c => c.category?.trim() === userClass);
   }
 
-  // Initialize all cards first
+  console.log('[BRAIN] Filtered:', filteredMatrix.length, 'cards');
+
   filteredMatrix = filteredMatrix.map(c => window.SM2_ENGINE.initCard(c));
 
-  // Use SM2_ENGINE.isDue() instead of manual check
   dueCards = filteredMatrix.filter(c => window.SM2_ENGINE.isDue(c));
+  console.log('[BRAIN] Due cards:', dueCards.length);
 
-  // First time load - anni chupinchu
   if (dueCards.length === 0 && filteredMatrix.length > 0) {
-    console.log('[BRAIN] No due cards, showing all for first session');
+    console.log('[BRAIN] No due cards, showing all');
     dueCards = [...filteredMatrix];
   }
 
-  console.log('[BRAIN] Due cards:', dueCards.length, 'Total:', filteredMatrix.length);
-  
   currentIndex = 0;
   dueCards = dueCards.sort(() => 0.5 - Math.random());
     }
@@ -262,19 +253,21 @@
 }
 
     function initBrain() {
-      matrix = matrix.map((c, i) => ({
-        id: c.id || i,
-        q: c.q || c.question,
-        a: c.a || c.answer,
-        category: c.category || c.class || 'GENERAL',
-        ease: c.ease || 2.5,
-        reps: c.reps || 0,
-        interval: c.interval || 0,
-        due: c.due || Date.now()
-      }));
-      loadCards();
-      updateStats();
-      showCard();
+  matrix = matrix.map((c, i) => ({
+    id: c.id || `CARD-${i}`,
+    q: c.q || c.question || 'No Question',
+    a: c.a || c.answer || 'No Answer', 
+    category: c.category || c.pillar || 'GENERAL',
+    ease: c.ease || 2.5,
+    reps: c.reps || 0,
+    interval: c.interval || 0,
+    due: c.due || 0,
+    passCount: c.passCount || 0
+  }));
+
+  loadCards();
+  updateStats();
+  showCard();
     }
 
     function showCard() {
