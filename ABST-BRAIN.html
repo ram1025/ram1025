@@ -11,38 +11,42 @@
   <style>
     * { margin:0; padding:0; box-sizing:border-box }
     body { background:#0a192f; color:#00ffaa; font-family:system-ui,sans-serif; padding:20px; text-align:center; min-height:100vh }
-   .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
-   .header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
-   .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
-   .back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
-   .mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
-   .mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:700; font-size:11px; flex:1; min-width:100px;}
-   .mode-btn.active { background:#ffaa00; color:#0a192f }
-   .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative }
-   .pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
-   .question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
-   .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
-   .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
-   .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
-   .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
-   .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px }
-   .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
-   .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
-   .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
-   .mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
-   .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer }
-   .btn-check { background:#ffaa00; color:#0a192f }
-   .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
-   .stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
-   .sub-btn { padding:12px 8px; background:#1a2332; border:1px solid #00ffaa40; border-radius:8px; color:#00ffaa; font-size:13px; font-weight:bold; cursor:pointer }
-   .sub-btn:active {background:#00ffaa; color:#0a192f}
-   .sub-list { display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40; }
-   .srs-buttons { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:20px 0 }
-   .srs-btn { padding:12px 8px; border-radius:10px; font-weight:800; font-size:13px; cursor:pointer; border:2px solid }
-   .srs-again { background:#1a2332; color:#ff4444; border-color:#ff4444 }
-   .srs-hard { background:#1a2332; color:#ffaa00; border-color:#ffaa00 }
-   .srs-good { background:#1a2332; color:#44ff88; border-color:#44ff88 }
-   .srs-easy { background:#1a2332; color:#00aaff; border-color:#00aaff }
+ .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
+ .header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
+ .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
+ .back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
+ .mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
+ .mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:700; font-size:11px; flex:1; min-width:100px; position:relative }
+ .mode-btn.active { background:#ffaa00; color:#0a192f }
+ .count { display:block; font-size:10px; color:#64ffda; margin-top:2px; }
+ .mode-btn.active.count { color:#0a192f }
+ .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative }
+ .pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
+ .question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
+ .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
+ .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
+ .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
+ .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
+ .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px }
+ .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
+ .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
+ .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
+ .mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
+ .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer }
+ .btn-check { background:#ffaa00; color:#0a192f }
+ .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
+ .stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
+ .sub-btn { padding:12px 8px; background:#1a2332; border:1px solid #00ffaa40; border-radius:8px; color:#00ffaa; font-size:13px; font-weight:bold; cursor:pointer; position:relative }
+ .sub-btn.active { background:#00ffaa!important; color:#0a192f!important }
+ .sub-btn.active.sub-count { color:#0a192f!important }
+ .sub-count { display:block; font-size:10px; color:#64ffda; margin-top:2px; }
+ .sub-list { display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40; }
+ .srs-buttons { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:20px 0 }
+ .srs-btn { padding:12px 8px; border-radius:10px; font-weight:800; font-size:13px; cursor:pointer; border:2px solid }
+ .srs-again { background:#1a2332; color:#ff4444; border-color:#ff4444 }
+ .srs-hard { background:#1a2332; color:#ffaa00; border-color:#ffaa00 }
+ .srs-good { background:#1a2332; color:#44ff88; border-color:#44ff88 }
+ .srs-easy { background:#1a2332; color:#00aaff; border-color:#00aaff }
   </style>
 </head>
 <body>
@@ -53,67 +57,67 @@
   </div>
 
   <div class="mode-toggle">
-    <button class="mode-btn active" id="pillarsMode">🏛 36 PILLARS - 108</button>
-    <button class="mode-btn" id="schoolMode" onclick="showSchoolList()">📚 SCHOOL - 280</button>
-    <button class="mode-btn" id="collegeMode" onclick="showCollegeList()">🎓 COLLEGE - 250</button>
-    <button class="mode-btn" id="competitiveMode" onclick="showCompetitiveList()">🏆 COMPETITIVE - 340</button>
-    <button class="mode-btn" id="othersMode" onclick="showOthersList()">📖 OTHERS - 130</button>
+    <button class="mode-btn active" id="pillarsMode">🏛 36 PILLARS<span class="count">108 Q</span></button>
+    <button class="mode-btn" id="schoolMode" onclick="showSchoolList()">📚 SCHOOL<span class="count">280 Q</span></button>
+    <button class="mode-btn" id="collegeMode" onclick="showCollegeList()">🎓 COLLEGE<span class="count">250 Q</span></button>
+    <button class="mode-btn" id="competitiveMode" onclick="showCompetitiveList()">🏆 COMPETITIVE<span class="count">340 Q</span></button>
+    <button class="mode-btn" id="othersMode" onclick="showOthersList()">📖 OTHERS<span class="count">130 Q</span></button>
   </div>
 
   <div id="schoolList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT CLASS: 14 × 20 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('LKG')">LKG - 20</button>
-      <button class="sub-btn" onclick="selectTrack('UKG')">UKG - 20</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS1')">CLASS 1 - 20</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS2')">CLASS 2 - 20</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS3')">CLASS 3 - 20</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS4')">CLASS 4 - 20</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS5')">CLASS 5 - 20</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS6')">CLASS 6 - 20</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS7')">CLASS 7 - 20</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS8')">CLASS 8 - 20</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS9')">CLASS 9 - 20</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS10')">CLASS 10 - 20</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS11')">CLASS 11 - 20</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS12')">CLASS 12 - 20</button>
+      <button class="sub-btn" onclick="selectTrack('LKG', this)">LKG<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('UKG', this)">UKG<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('CLASS1', this)">CLASS 1<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('CLASS2', this)">CLASS 2<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('CLASS3', this)">CLASS 3<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('CLASS4', this)">CLASS 4<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('CLASS5', this)">CLASS 5<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('CLASS6', this)">CLASS 6<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('CLASS7', this)">CLASS 7<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('CLASS8', this)">CLASS 8<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('CLASS9', this)">CLASS 9<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('CLASS10', this)">CLASS 10<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('CLASS11', this)">CLASS 11<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('CLASS12', this)">CLASS 12<span class="sub-count">20 Q</span></button>
     </div>
   </div>
 
   <div id="collegeList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT STREAM: 5 × 50 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('DEGREE')">DEGREE - 50</button>
-      <button class="sub-btn" onclick="selectTrack('ENGINEERING')">ENGINEERING - 50</button>
-      <button class="sub-btn" onclick="selectTrack('MBBS')">MBBS - 50</button>
-      <button class="sub-btn" onclick="selectTrack('MBA-HR')">MBA-HR - 50</button>
-      <button class="sub-btn" onclick="selectTrack('MBA-FIN')">MBA-FIN - 50</button>
+      <button class="sub-btn" onclick="selectTrack('DEGREE', this)">DEGREE<span class="sub-count">50 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('ENGINEERING', this)">ENGINEERING<span class="sub-count">50 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('MBBS', this)">MBBS<span class="sub-count">50 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('MBA-HR', this)">MBA-HR<span class="sub-count">50 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('MBA-FIN', this)">MBA-FIN<span class="sub-count">50 Q</span></button>
     </div>
   </div>
 
   <div id="competitiveList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT EXAM: 5 × 68 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('UPSC')">UPSC - 68</button>
-      <button class="sub-btn" onclick="selectTrack('NEET')">NEET - 68</button>
-      <button class="sub-btn" onclick="selectTrack('JEE')">JEE - 68</button>
-      <button class="sub-btn" onclick="selectTrack('SSC')">SSC - 68</button>
-      <button class="sub-btn" onclick="selectTrack('BANKING')">BANKING - 68</button>
+      <button class="sub-btn" onclick="selectTrack('UPSC', this)">UPSC<span class="sub-count">68 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('NEET', this)">NEET<span class="sub-count">68 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('JEE', this)">JEE<span class="sub-count">68 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('SSC', this)">SSC<span class="sub-count">68 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('BANKING', this)">BANKING<span class="sub-count">68 Q</span></button>
     </div>
   </div>
 
   <div id="othersList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT LEVEL: 2 × 65 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('GK')">GK - 65</button>
-      <button class="sub-btn" onclick="selectTrack('PHD')">PHD - 65</button>
+      <button class="sub-btn" onclick="selectTrack('GK', this)">GK<span class="sub-count">65 Q</span></button>
+      <button class="sub-btn" onclick="selectTrack('PHD', this)">PHD<span class="sub-count">65 Q</span></button>
     </div>
   </div>
 
   <div class="answer-mode-toggle">
-    <button class="mode-btn active" id="typeMode">✏️ TYPE</button>
+    <button class="mode-btn" id="typeMode">✏️ TYPE</button>
     <button class="mode-btn" id="mcqMode">⚪ MCQ</button>
-    <button class="mode-btn" id="flipMode">🔁 FLIP</button>
+    <button class="mode-btn active" id="flipMode">🔁 FLIP</button>
   </div>
   <div id="cardCounter" style="text-align:center;margin:15px;color:#00ffaa;font-weight:bold;font-size:18px;">0/0</div>
   <div id="card" class="card">
@@ -130,7 +134,7 @@
   <script>
     let currentMode = 'pillars';
     let currentTrack = 'GENERAL';
-    let answerMode = 'type';
+    let answerMode = 'flip';
     let currentCard = null;
     let dueCards = [];
     let currentIndex = 0;
@@ -145,11 +149,62 @@
       'others': './Education-others-130.json'
     };
 
-    async function loadMatrixFromGitHub() {
-      // FIX 1: Space pettanu selector lo
-      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById(currentMode+'Mode')?.classList.add('active');
+    document.getElementById('pillarsMode').onclick = () => {
+      currentMode = 'pillars';
+      currentTrack = 'GENERAL';
+      clearAllActive();
+      document.getElementById('pillarsMode').classList.add('active');
+      hideAllSubLists();
+      loadMatrixFromGitHub();
+    };
 
+    function showSchoolList() {
+      currentMode = 'school';
+      clearAllActive();
+      document.getElementById('schoolMode').classList.add('active');
+      hideAllSubLists();
+      document.getElementById('schoolList').style.display = 'block';
+    }
+
+    function showCollegeList() {
+      currentMode = 'college';
+      clearAllActive();
+      document.getElementById('collegeMode').classList.add('active');
+      hideAllSubLists();
+      document.getElementById('collegeList').style.display = 'block';
+    }
+
+    function showCompetitiveList() {
+      currentMode = 'competitive';
+      clearAllActive();
+      document.getElementById('competitiveMode').classList.add('active');
+      hideAllSubLists();
+      document.getElementById('competitiveList').style.display = 'block';
+    }
+
+    function showOthersList() {
+      currentMode = 'others';
+      clearAllActive();
+      document.getElementById('othersMode').classList.add('active');
+      hideAllSubLists();
+      document.getElementById('othersList').style.display = 'block';
+    }
+
+    function selectTrack(track, btnElement) {
+      currentTrack = track;
+      // Sub buttons lo anni clear chesi okate active chey
+      document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
+      btnElement.classList.add('active');
+      hideAllSubLists();
+      loadMatrixFromGitHub();
+    }
+
+    function clearAllActive() {
+      document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
+    }
+
+    async function loadMatrixFromGitHub() {
       const jsonFile = DATA_FILES[currentMode];
       try {
         document.querySelector('.card-content').innerHTML = `<div style="padding:40px;text-align:center;">Loading ${jsonFile}...</div>`;
@@ -170,47 +225,80 @@
     }
 
     function initBrain() {
-  const now = Date.now();
-  if(currentMode === 'pillars') {
-    dueCards = matrix.filter(c => c.due <= now);
-  } else {
-    dueCards = matrix.filter(c => c.category.toUpperCase() === currentTrack && c.due <= now);
-    console.log(`Filtering for ${currentTrack}, found: ${dueCards.length} cards`);
-  }
-  if(dueCards.length === 0 && matrix.length > 0) {
-    dueCards = matrix.filter(c => c.category.toUpperCase() === currentTrack);
-  }
-  currentIndex = 0;
-  updateStats();
-  showCard();
-}
+      const now = Date.now();
+      if(currentMode === 'pillars') {
+        dueCards = matrix.filter(c => c.due <= now);
+      } else {
+        dueCards = matrix.filter(c => c.category.toUpperCase() === currentTrack && c.due <= now);
+      }
+      if(dueCards.length === 0 && matrix.length > 0) {
+        dueCards = matrix.filter(c => currentMode === 'pillars'? true : c.category.toUpperCase() === currentTrack);
+      }
+      currentIndex = 0;
+      updateStats();
+      showCard();
+    }
 
-function showCard() {
-  answered = false;
-  if (dueCards.length === 0) {
-    document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>No cards found!</h3><p>Check JSON data for ${currentTrack}</p><p>Category exact ga match avvali</p></div>`;
-    document.getElementById('cardCounter').textContent = `0/0`;
-    return;
-  }
-  if (currentIndex >= dueCards.length) currentIndex = 0;
-  currentCard = dueCards[currentIndex];
-  document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
-  // ... rest of showCard()
-}
+    function showCard() {
+      answered = false;
+      if (dueCards.length === 0) {
+        document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>No cards found!</h3><p>Check JSON data for ${currentTrack}</p></div>`;
+        document.getElementById('cardCounter').textContent = `0/0`;
+        return;
+      }
+      if (currentIndex >= dueCards.length) currentIndex = 0;
+      currentCard = dueCards[currentIndex];
 
-function rateCard(rating) {
-  // ... (existing code)
-  localStorage.setItem(`card_${currentCard.id}`, JSON.stringify({
-    interval: interval,
-    ease: ease,
-    due: currentCard.due
-  }));
-  currentIndex++;
-  updateStats();
-  showCard(); // ✅ Next card
-}
+      const qText = currentCard.q || currentCard.question;
+      const aText = currentCard.a || currentCard.answer;
+      const categoryText = currentCard.category || 'Pillar ' + currentCard.pillar;
 
-    function nextCard() {
+      document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
+
+      if (answerMode === 'type' || answerMode === 'flip') {
+        document.querySelector('.card-content').innerHTML = `
+          <div style="padding: 20px; text-align: center;">
+            <div style="color: #64ffda; font-size: 14px; margin-bottom: 10px;">${categoryText}</div>
+            <div style="font-size: 20px; margin-bottom: 20px; color: #fff;">${qText}</div>
+            <button onclick="showAnswer()" id="showAnsBtn" style="padding: 12px 24px; background: #64ffda; color: #0a192f; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%;">Show Answer</button>
+            <div id="answerDiv" style="display:none; margin-top: 20px;">
+              <div style="font-size: 18px; color: #ffd700; margin-bottom: 20px; padding: 15px; background: #112240; border-radius: 8px;">${aText}</div>
+              <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;">
+                <button onclick="rateCard(1)" style="padding: 14px 8px; background: #ff4444; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Again</button>
+                <button onclick="rateCard(2)" style="padding: 14px 8px; background: #ff8800; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Hard</button>
+                <button onclick="rateCard(3)" style="padding: 14px 8px; background: #44ff88; color: #0a192f; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Good</button>
+                <button onclick="rateCard(4)" style="padding: 14px 8px; background: #4488ff; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Easy</button>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    function showAnswer() {
+      answered = true;
+      document.getElementById('answerDiv').style.display = 'block';
+      document.getElementById('showAnsBtn').style.display = 'none';
+    }
+
+    function rateCard(rating) {
+      let interval = currentCard.interval || 0;
+      let ease = currentCard.ease || 2.5;
+
+      if (rating === 1) { interval = 0; ease = Math.max(1.3, ease - 0.2); }
+      else if (rating === 2) { interval = Math.max(1, interval * 1.2); ease = Math.max(1.3, ease - 0.15); }
+      else if (rating === 3) { interval = interval === 0? 1 : interval * ease; }
+      else if (rating === 4) { interval = interval === 0? 4 : interval * ease * 1.3; ease += 0.15; }
+
+      currentCard.interval = interval;
+      currentCard.ease = ease;
+      currentCard.due = Date.now() + (interval * 24 * 60 * 60 * 1000);
+
+      localStorage.setItem(`card_${currentCard.id}`, JSON.stringify({
+        interval: interval,
+        ease: ease,
+        due: currentCard.due
+      }));
       currentIndex++;
       updateStats();
       showCard();
@@ -230,109 +318,26 @@ function rateCard(rating) {
       document.getElementById('othersList').style.display = 'none';
     }
 
-async function loadMatrixFromGitHub() {
-  // FIX 1: Space pettanu - '.mode-toggle.mode-btn'
-  document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById(currentMode+'Mode')?.classList.add('active');
+    document.getElementById('typeMode').onclick = () => {
+      answerMode = 'type';
+      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('typeMode').classList.add('active');
+      showCard();
+    };
 
-  const jsonFile = DATA_FILES[currentMode];
-  try {
-    document.querySelector('.card-content').innerHTML = `<div style="padding:40px;text-align:center;">Loading ${jsonFile}...</div>`;
-    const response = await fetch(jsonFile);
-    if (!response.ok) throw new Error('File not found');
-    matrix = await response.json();
-    matrix = matrix.map(card => {
-      const saved = localStorage.getItem(`card_${card.id}`);
-      return saved? {...card,...JSON.parse(saved)} : {...card, interval: 0, ease: 2.5, due: 0};
-    });
-    console.log(`✅ Loaded ${matrix.length} items from ${jsonFile}`);
-    initBrain();
-  } catch(err) {
-    console.error('Load error:', err);
-    document.querySelector('.card-content').innerHTML = `<div style="padding:40px;text-align:center;"><h3>Error Loading Data</h3><p>${jsonFile} not found<br>Upload to GitHub first</p></div>`;
-    document.getElementById('cardCounter').textContent = `0/0`;
-  }
-}
+    document.getElementById('mcqMode').onclick = () => {
+      answerMode = 'mcq';
+      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('mcqMode').classList.add('active');
+      showCard();
+    };
 
-function initBrain() {
-  const now = Date.now();
-  if(currentMode === 'pillars') {
-    dueCards = matrix.filter(c => c.due <= now);
-  } else {
-    // FIX 2: Category filter correct ga chesta
-    dueCards = matrix.filter(c => c.category.toUpperCase() === currentTrack && c.due <= now);
-    console.log(`Filtering for ${currentTrack}, found: ${dueCards.length} cards`);
-  }
-  if(dueCards.length === 0 && matrix.length > 0) {
-    dueCards = matrix.filter(c => c.category.toUpperCase() === currentTrack);
-  }
-  currentIndex = 0;
-  updateStats();
-  showCard();
-}
-
-function showCard() {
-  answered = false;
-  if (dueCards.length === 0) {
-    document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>No cards found!</h3><p>Check JSON data for ${currentTrack}</p></div>`;
-    document.getElementById('cardCounter').textContent = `0/0`;
-    return;
-  }
-  if (currentIndex >= dueCards.length) currentIndex = 0;
-  currentCard = dueCards[currentIndex];
-  document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
-  
-  // ANSWER MODE CHECK - Anki style only for "type" mode
-  if (answerMode === 'type') {
-    document.querySelector('.card-content').innerHTML = `
-      <div style="padding: 20px; text-align: center;">
-        <div style="color: #64ffda; font-size: 14px; margin-bottom: 10px;">Pillar ${currentCard.pillar}</div>
-        <div style="font-size: 20px; margin-bottom: 20px; color: #fff;">${currentCard.question}</div>
-        <button onclick="showAnswer()" id="showAnsBtn" style="padding: 12px 24px; background: #64ffda; color: #0a192f; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%;">Show Answer</button>
-        <div id="answerDiv" style="display:none; margin-top: 20px;">
-          <div style="font-size: 18px; color: #ffd700; margin-bottom: 20px; padding: 15px; background: #112240; border-radius: 8px;">${currentCard.answer}</div>
-          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;">
-            <button onclick="rateCard(1)" style="padding: 14px 8px; background: #ff4444; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Again</button>
-            <button onclick="rateCard(2)" style="padding: 14px 8px; background: #ff8800; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Hard</button>
-            <button onclick="rateCard(3)" style="padding: 14px 8px; background: #44ff88; color: #0a192f; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Good</button>
-            <button onclick="rateCard(4)" style="padding: 14px 8px; background: #4488ff; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Easy</button>
-          </div>
-        </div>
-      </div>
-    `;
-  } else {
-    // MCQ mode ki vere logic pettali
-    document.querySelector('.card-content').innerHTML = `<div>MCQ Mode - Coming soon</div>`;
-  }
-}
-
-function showAnswer() {
-  answered = true;
-  document.getElementById('answerDiv').style.display = 'block';
-  document.getElementById('showAnsBtn').style.display = 'none';
-}
-
-// FIX 4: Answer mode buttons ki kuda space pettu
-document.getElementById('typeMode').onclick = () => {
-  answerMode = 'type';
-  document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('typeMode').classList.add('active');
-  showCard();
-};
-
-document.getElementById('mcqMode').onclick = () => {
-  answerMode = 'mcq';
-  document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('mcqMode').classList.add('active');
-  showCard();
-};
-
-document.getElementById('flipMode').onclick = () => {
-  answerMode = 'flip';
-  document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('flipMode').classList.add('active');
-  showCard();
-};
+    document.getElementById('flipMode').onclick = () => {
+      answerMode = 'flip';
+      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('flipMode').classList.add('active');
+      showCard();
+    };
 
     document.getElementById('homeBtn').onclick = () => {
       window.location.href = '/ram1025/';
@@ -341,6 +346,6 @@ document.getElementById('flipMode').onclick = () => {
     window.addEventListener('load', () => {
       loadMatrixFromGitHub();
     });
-</script>
+  </script>
 </body>
-</html>
+    </html>
