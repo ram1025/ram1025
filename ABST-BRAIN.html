@@ -227,87 +227,85 @@ function rateCard(rating) {
       document.getElementById('othersList').style.display = 'none';
     }
 
-    function showSchoolList() {
-      hideAllSubLists();
-      // FIX 1: Space pettanu
-      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('schoolMode').classList.add('active');
-      document.getElementById('schoolList').style.display = 'block';
-      document.getElementById('card').style.display = 'none';
-    }
+async function loadMatrixFromGitHub() {
+  // FIX 1: Space pettanu - '.mode-toggle.mode-btn'
+  document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(currentMode+'Mode')?.classList.add('active');
 
-    function showCollegeList() {
-      hideAllSubLists();
-      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('collegeMode').classList.add('active');
-      document.getElementById('collegeList').style.display = 'block';
-      document.getElementById('card').style.display = 'none';
-    }
+  const jsonFile = DATA_FILES[currentMode];
+  try {
+    document.querySelector('.card-content').innerHTML = `<div style="padding:40px;text-align:center;">Loading ${jsonFile}...</div>`;
+    const response = await fetch(jsonFile);
+    if (!response.ok) throw new Error('File not found');
+    matrix = await response.json();
+    matrix = matrix.map(card => {
+      const saved = localStorage.getItem(`card_${card.id}`);
+      return saved? {...card,...JSON.parse(saved)} : {...card, interval: 0, ease: 2.5, due: 0};
+    });
+    console.log(`✅ Loaded ${matrix.length} items from ${jsonFile}`);
+    initBrain();
+  } catch(err) {
+    console.error('Load error:', err);
+    document.querySelector('.card-content').innerHTML = `<div style="padding:40px;text-align:center;"><h3>Error Loading Data</h3><p>${jsonFile} not found<br>Upload to GitHub first</p></div>`;
+    document.getElementById('cardCounter').textContent = `0/0`;
+  }
+}
 
-    function showCompetitiveList() {
-      hideAllSubLists();
-      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('competitiveMode').classList.add('active');
-      document.getElementById('competitiveList').style.display = 'block';
-      document.getElementById('card').style.display = 'none';
-    }
+function initBrain() {
+  const now = Date.now();
+  if(currentMode === 'pillars') {
+    dueCards = matrix.filter(c => c.due <= now);
+  } else {
+    // FIX 2: Category filter correct ga chesta
+    dueCards = matrix.filter(c => c.category.toUpperCase() === currentTrack && c.due <= now);
+    console.log(`Filtering for ${currentTrack}, found: ${dueCards.length} cards`);
+  }
+  if(dueCards.length === 0 && matrix.length > 0) {
+    dueCards = matrix.filter(c => c.category.toUpperCase() === currentTrack);
+  }
+  currentIndex = 0;
+  updateStats();
+  showCard();
+}
 
-    function showOthersList() {
-      hideAllSubLists();
-      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('othersMode').classList.add('active');
-      document.getElementById('othersList').style.display = 'block';
-      document.getElementById('card').style.display = 'none';
-    }
+function showCard() {
+  answered = false;
+  if (dueCards.length === 0) {
+    document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>No cards found!</h3><p>Check JSON data for ${currentTrack}</p><p>Category exact ga match avvali</p></div>`;
+    document.getElementById('cardCounter').textContent = `0/0`;
+    return;
+  }
+  if (currentIndex >= dueCards.length) currentIndex = 0;
+  currentCard = dueCards[currentIndex];
+  // FIX 3: dueCards.length vadu, matrix.length kadu
+  document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
 
-    function selectTrack(trackName) {
-      hideAllSubLists();
-      document.getElementById('card').style.display = 'block';
-      currentTrack = trackName.toUpperCase();
+  let content = `<div class="pillar">${currentCard.category || currentTrack}</div>
+    <div class="question">${currentCard.q}</div>`;
+  //... rest same
+}
 
-      if(['LKG','UKG','CLASS1','CLASS2','CLASS3','CLASS4','CLASS5','CLASS6','CLASS7','CLASS8','CLASS9','CLASS10','CLASS11','CLASS12'].includes(currentTrack)) {
-        currentMode = 'school';
-      } else if(['DEGREE','ENGINEERING','MBBS','MBA-HR','MBA-FIN'].includes(currentTrack)) {
-        currentMode = 'college';
-      } else if(['UPSC','NEET','JEE','SSC','BANKING'].includes(currentTrack)) {
-        currentMode = 'competitive';
-      } else if(['GK','PHD'].includes(currentTrack)) {
-        currentMode = 'others';
-      } else {
-        currentMode = 'pillars';
-      }
-      loadMatrixFromGitHub();
-    }
+// FIX 4: Answer mode buttons ki kuda space pettu
+document.getElementById('typeMode').onclick = () => {
+  answerMode = 'type';
+  document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('typeMode').classList.add('active');
+  showCard();
+};
 
-    document.getElementById('pillarsMode').onclick = () => {
-      hideAllSubLists();
-      currentMode = 'pillars';
-      currentTrack = 'GENERAL';
-      document.getElementById('card').style.display = 'block';
-      loadMatrixFromGitHub();
-    };
+document.getElementById('mcqMode').onclick = () => {
+  answerMode = 'mcq';
+  document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('mcqMode').classList.add('active');
+  showCard();
+};
 
-    document.getElementById('typeMode').onclick = () => {
-      answerMode = 'type';
-      // FIX 1: Space pettanu
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('typeMode').classList.add('active');
-      showCard();
-    };
-
-    document.getElementById('mcqMode').onclick = () => {
-      answerMode = 'mcq';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('mcqMode').classList.add('active');
-      showCard();
-    };
-
-    document.getElementById('flipMode').onclick = () => {
-      answerMode = 'flip';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('flipMode').classList.add('active');
-      showCard();
-    };
+document.getElementById('flipMode').onclick = () => {
+  answerMode = 'flip';
+  document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('flipMode').classList.add('active');
+  showCard();
+};
 
     document.getElementById('homeBtn').onclick = () => {
       window.location.href = '/ram1025/';
