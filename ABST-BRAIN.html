@@ -42,11 +42,12 @@
  .sub-count { display:block; font-size:10px; color:#64ffda; margin-top:2px; }
  .sub-list { display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40; }
  .srs-buttons { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:20px 0 }
- .srs-btn { padding:12px 8px; border-radius:10px; font-weight:800; font-size:13px; cursor:pointer; border:2px solid }
+ .srs-btn { padding:12px 8px; border-radius:10px; font-weight:800; font-size:13px; cursor:pointer; border:2px solid; display:flex; flex-direction:column; align-items:center; }
  .srs-again { background:#1a2332; color:#ff4444; border-color:#ff4444 }
  .srs-hard { background:#1a2332; color:#ffaa00; border-color:#ffaa00 }
  .srs-good { background:#1a2332; color:#44ff88; border-color:#44ff88 }
  .srs-easy { background:#1a2332; color:#00aaff; border-color:#00aaff }
+ .srs-interval { font-size:10px; opacity:0.7; margin-top:2px; }
   </style>
 </head>
 <body>
@@ -192,7 +193,6 @@
 
     function selectTrack(track, btnElement) {
       currentTrack = track;
-      // Sub buttons lo anni clear chesi okate active chey
       document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
       btnElement.classList.add('active');
       hideAllSubLists();
@@ -205,9 +205,10 @@
     }
 
     async function loadMatrixFromGitHub() {
-      const jsonFile = DATA_FILES[currentMode];
+      const version = Date.now();
+      const jsonFile = DATA_FILES[currentMode] + `?v=${version}`;
       try {
-        document.querySelector('.card-content').innerHTML = `<div style="padding:40px;text-align:center;">Loading ${jsonFile}...</div>`;
+        document.querySelector('.card-content').innerHTML = `<div style="padding:40px;text-align:center;">Loading...</div>`;
         const response = await fetch(jsonFile);
         if (!response.ok) throw new Error('File not found');
         matrix = await response.json();
@@ -215,11 +216,9 @@
           const saved = localStorage.getItem(`card_${card.id}`);
           return saved? {...card,...JSON.parse(saved)} : {...card, interval: 0, ease: 2.5, due: 0};
         });
-        console.log(`✅ Loaded ${matrix.length} items from ${jsonFile}`);
         initBrain();
       } catch(err) {
-        console.error('Load error:', err);
-        document.querySelector('.card-content').innerHTML = `<div style="padding:40px;text-align:center;"><h3>Error Loading Data</h3><p>${jsonFile} not found<br>Upload to GitHub first</p></div>`;
+        document.querySelector('.card-content').innerHTML = `<div style="padding:40px;text-align:center;"><h3>Error Loading Data</h3><p>JSON file not found</p></div>`;
         document.getElementById('cardCounter').textContent = `0/0`;
       }
     }
@@ -242,7 +241,7 @@
     function showCard() {
       answered = false;
       if (dueCards.length === 0) {
-        document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>No cards found!</h3><p>Check JSON data for ${currentTrack}</p></div>`;
+        document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>No cards found!</h3></div>`;
         document.getElementById('cardCounter').textContent = `0/0`;
         return;
       }
@@ -255,7 +254,32 @@
 
       document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
 
-      if (answerMode === 'type' || answerMode === 'flip') {
+      if (answerMode === 'mcq') {
+        // Generate 4 options: 1 correct + 3 random wrong
+        let options = [aText];
+        const otherCards = matrix.filter(c => c.id!== currentCard.id && (c.a || c.answer));
+        for(let i = 0; i < 3 && i < otherCards.length; i++) {
+          const rand = otherCards[Math.floor(Math.random() * otherCards.length)];
+          const wrongAns = rand.a || rand.answer;
+          if(!options.includes(wrongAns)) options.push(wrongAns);
+        }
+        options = options.sort(() => Math.random() - 0.5);
+
+        document.querySelector('.card-content').innerHTML = `
+          <div style="padding: 20px; text-align: center;">
+            <div style="color: #64ffda; font-size: 14px; margin-bottom: 10px;">${categoryText}</div>
+            <div style="font-size: 20px; margin-bottom: 20px; color: #fff;">${qText}</div>
+            <div class="mcq-grid">
+              ${options.map(opt => `<button class="mcq-btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}', '${aText.replace(/'/g, "\\'")}')">${opt}</button>`).join('')}
+            </div>
+            <div id="answerDiv" style="display:none; margin-top: 20px;">
+              <div class="srs-buttons">
+                ${getSRSButtons()}
+              </div>
+            </div>
+          </div>
+        `;
+      } else {
         document.querySelector('.card-content').innerHTML = `
           <div style="padding: 20px; text-align: center;">
             <div style="color: #64ffda; font-size: 14px; margin-bottom: 10px;">${categoryText}</div>
@@ -263,16 +287,39 @@
             <button onclick="showAnswer()" id="showAnsBtn" style="padding: 12px 24px; background: #64ffda; color: #0a192f; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%;">Show Answer</button>
             <div id="answerDiv" style="display:none; margin-top: 20px;">
               <div style="font-size: 18px; color: #ffd700; margin-bottom: 20px; padding: 15px; background: #112240; border-radius: 8px;">${aText}</div>
-              <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;">
-                <button onclick="rateCard(1)" style="padding: 14px 8px; background: #ff4444; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Again</button>
-                <button onclick="rateCard(2)" style="padding: 14px 8px; background: #ff8800; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Hard</button>
-                <button onclick="rateCard(3)" style="padding: 14px 8px; background: #44ff88; color: #0a192f; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Good</button>
-                <button onclick="rateCard(4)" style="padding: 14px 8px; background: #4488ff; color: #fff; border: none; border-radius: 8px; font-weight: bold; font-size: 12px;">Easy</button>
+              <div class="srs-buttons">
+                ${getSRSButtons()}
               </div>
             </div>
           </div>
         `;
       }
+    }
+
+    function checkMCQ(selected, correct) {
+      answered = true;
+      document.querySelectorAll('.mcq-btn').forEach(btn => {
+        btn.disabled = true;
+        if(btn.textContent === correct) btn.classList.add('correct');
+        else if(btn.textContent === selected) btn.classList.add('wrong');
+      });
+      document.getElementById('answerDiv').style.display = 'block';
+    }
+
+    function getSRSButtons() {
+      const interval = currentCard.interval || 0;
+      const ease = currentCard.ease || 2.5;
+      const againInt = '<1d';
+      const hardInt = interval === 0? '1d' : Math.max(1, Math.round(interval * 1.2)) + 'd';
+      const goodInt = interval === 0? '1d' : Math.round(interval * ease) + 'd';
+      const easyInt = interval === 0? '4d' : Math.round(interval * ease * 1.3) + 'd';
+
+      return `
+        <button class="srs-btn srs-again" onclick="rateCard(1)">Again<span class="srs-interval">${againInt}</span></button>
+        <button class="srs-btn srs-hard" onclick="rateCard(2)">Hard<span class="srs-interval">${hardInt}</span></button>
+        <button class="srs-btn srs-good" onclick="rateCard(3)">Good<span class="srs-interval">${goodInt}</span></button>
+        <button class="srs-btn srs-easy" onclick="rateCard(4)">Easy<span class="srs-interval">${easyInt}</span></button>
+      `;
     }
 
     function showAnswer() {
@@ -318,6 +365,7 @@
       document.getElementById('othersList').style.display = 'none';
     }
 
+    // Answer mode buttons - SINGLE SELECTION FIX
     document.getElementById('typeMode').onclick = () => {
       answerMode = 'type';
       document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
@@ -348,4 +396,4 @@
     });
   </script>
 </body>
-    </html>
+</html>
