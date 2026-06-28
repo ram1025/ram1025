@@ -6,48 +6,43 @@
   <title>ABST BRAIN | P24 | INDIAN.001</title>
   <meta name="theme-color" content="#00ffaa">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
   <style>
     * { margin:0; padding:0; box-sizing:border-box }
     body { background:#0a192f; color:#00ffaa; font-family:system-ui,sans-serif; padding:20px; text-align:center; min-height:100vh }
- .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
- .header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
- .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
- .back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
- .mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
- .mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:700; font-size:11px; flex:1; min-width:100px; position:relative }
- .mode-btn.active { background:#ffaa00; color:#0a192f }
- .count { display:block; font-size:10px; color:#64ffda; margin-top:2px; }
- .mode-btn.active.count { color:#0a192f }
- .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative }
- .pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
- .question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
- .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
- .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
- .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
- .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
- .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px }
- .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
- .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
- .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
- .mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
- .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer }
- .btn-check { background:#ffaa00; color:#0a192f }
- .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
- .stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
- .sub-btn { padding:12px 8px; background:#1a2332; border:1px solid #00ffaa40; border-radius:8px; color:#00ffaa; font-size:13px; font-weight:bold; cursor:pointer; position:relative }
- .sub-btn.active { background:#00ffaa!important; color:#0a192f!important }
- .sub-btn.active.sub-count { color:#0a192f!important }
- .sub-count { display:block; font-size:10px; color:#64ffda; margin-top:2px; }
- .sub-list { display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40; }
- .srs-buttons { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:20px 0 }
- .srs-btn { padding:12px 8px; border-radius:10px; font-weight:800; font-size:13px; cursor:pointer; border:2px solid; display:flex; flex-direction:column; align-items:center; }
- .srs-again { background:#1a2332; color:#ff4444; border-color:#ff4444 }
- .srs-hard { background:#1a2332; color:#ffaa00; border-color:#ffaa00 }
- .srs-good { background:#1a2332; color:#44ff88; border-color:#44ff88 }
- .srs-easy { background:#1a2332; color:#00aaff; border-color:#00aaff }
- .srs-interval { font-size:10px; opacity:0.7; margin-top:2px; }
+   .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
+   .header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
+   .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
+   .back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
+   .mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
+   .mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:700; font-size:11px; flex:1; min-width:100px; position:relative }
+   .mode-btn.active { background:#ffaa00; color:#0a192f }
+   .count { display:block; font-size:10px; color:#64ffda; margin-top:2px; }
+   .mode-btn.active.count { color:#0a192f }
+   .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative }
+   .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
+   .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
+   .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
+   .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
+   .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px }
+   .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
+   .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
+   .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
+   .mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
+   .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer }
+   .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
+   .stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
+   .sub-btn { padding:12px 8px; background:#1a2332; border:1px solid #00ffaa40; border-radius:8px; color:#00ffaa; font-size:13px; font-weight:bold; cursor:pointer; position:relative }
+   .sub-btn.active { background:#00ffaa!important; color:#0a192f!important }
+   .sub-btn.active.sub-count { color:#0a192f!important }
+   .sub-count { display:block; font-size:10px; color:#64ffda; margin-top:2px; }
+   .sub-list { display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40; }
+   .srs-buttons { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:20px 0 }
+   .srs-btn { padding:12px 8px; border-radius:10px; font-weight:800; font-size:13px; cursor:pointer; border:2px solid; display:flex; flex-direction:column; align-items:center; }
+   .srs-again { background:#1a2332; color:#ff4444; border-color:#ff4444 }
+   .srs-hard { background:#1a2332; color:#ffaa00; border-color:#ffaa00 }
+   .srs-good { background:#1a2332; color:#44ff88; border-color:#44ff88 }
+   .srs-easy { background:#1a2332; color:#00aaff; border-color:#00aaff }
+   .srs-interval { font-size:10px; opacity:0.7; margin-top:2px; }
   </style>
 </head>
 <body>
@@ -116,9 +111,9 @@
   </div>
 
   <div class="answer-mode-toggle">
-    <button class="mode-btn" id="typeMode">✏️ TYPE</button>
+    <button class="mode-btn active" id="typeMode">✏️ TYPE</button>
     <button class="mode-btn" id="mcqMode">⚪ MCQ</button>
-    <button class="mode-btn active" id="flipMode">🔁 FLIP</button>
+    <button class="mode-btn" id="flipMode">🔁 FLIP</button>
   </div>
   <div id="cardCounter" style="text-align:center;margin:15px;color:#00ffaa;font-weight:bold;font-size:18px;">0/0</div>
   <div id="card" class="card">
@@ -135,7 +130,7 @@
   <script>
     let currentMode = 'pillars';
     let currentTrack = 'GENERAL';
-    let answerMode = 'flip';
+    let answerMode = 'type';
     let currentCard = null;
     let dueCards = [];
     let currentIndex = 0;
@@ -153,7 +148,7 @@
     document.getElementById('pillarsMode').onclick = () => {
       currentMode = 'pillars';
       currentTrack = 'GENERAL';
-      clearAllActive();
+      clearAllModeActive();
       document.getElementById('pillarsMode').classList.add('active');
       hideAllSubLists();
       loadMatrixFromGitHub();
@@ -161,7 +156,7 @@
 
     function showSchoolList() {
       currentMode = 'school';
-      clearAllActive();
+      clearAllModeActive();
       document.getElementById('schoolMode').classList.add('active');
       hideAllSubLists();
       document.getElementById('schoolList').style.display = 'block';
@@ -169,7 +164,7 @@
 
     function showCollegeList() {
       currentMode = 'college';
-      clearAllActive();
+      clearAllModeActive();
       document.getElementById('collegeMode').classList.add('active');
       hideAllSubLists();
       document.getElementById('collegeList').style.display = 'block';
@@ -177,7 +172,7 @@
 
     function showCompetitiveList() {
       currentMode = 'competitive';
-      clearAllActive();
+      clearAllModeActive();
       document.getElementById('competitiveMode').classList.add('active');
       hideAllSubLists();
       document.getElementById('competitiveList').style.display = 'block';
@@ -185,7 +180,7 @@
 
     function showOthersList() {
       currentMode = 'others';
-      clearAllActive();
+      clearAllModeActive();
       document.getElementById('othersMode').classList.add('active');
       hideAllSubLists();
       document.getElementById('othersList').style.display = 'block';
@@ -199,8 +194,8 @@
       loadMatrixFromGitHub();
     }
 
-    function clearAllActive() {
-      document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    function clearAllModeActive() {
+      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
       document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
     }
 
@@ -254,8 +249,21 @@
 
       document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
 
-      if (answerMode === 'mcq') {
-        // Generate 4 options: 1 correct + 3 random wrong
+      if (answerMode === 'type') {
+        document.querySelector('.card-content').innerHTML = `
+          <div style="padding: 20px; text-align: center;">
+            <div style="color: #64ffda; font-size: 14px; margin-bottom: 10px;">${categoryText}</div>
+            <div style="font-size: 20px; margin-bottom: 20px; color: #fff;">${qText}</div>
+            <input type="text" class="answer-input" id="typeInput" placeholder="Type answer here..." />
+            <button class="btn btn-check" onclick="checkTypeAnswer('${aText.replace(/'/g, "\\'")}')">Check</button>
+            <div id="answerDiv" style="display:none; margin-top: 20px;">
+              <div style="font-size: 18px; color: #ffd700; margin-bottom: 20px; padding: 15px; background: #112240; border-radius: 8px;">${aText}</div>
+              <div class="srs-buttons">${getSRSButtons()}</div>
+            </div>
+          </div>
+        `;
+        document.getElementById('typeInput').focus();
+      } else if (answerMode === 'mcq') {
         let options = [aText];
         const otherCards = matrix.filter(c => c.id!== currentCard.id && (c.a || c.answer));
         for(let i = 0; i < 3 && i < otherCards.length; i++) {
@@ -273,9 +281,7 @@
               ${options.map(opt => `<button class="mcq-btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}', '${aText.replace(/'/g, "\\'")}')">${opt}</button>`).join('')}
             </div>
             <div id="answerDiv" style="display:none; margin-top: 20px;">
-              <div class="srs-buttons">
-                ${getSRSButtons()}
-              </div>
+              <div class="srs-buttons">${getSRSButtons()}</div>
             </div>
           </div>
         `;
@@ -287,13 +293,25 @@
             <button onclick="showAnswer()" id="showAnsBtn" style="padding: 12px 24px; background: #64ffda; color: #0a192f; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%;">Show Answer</button>
             <div id="answerDiv" style="display:none; margin-top: 20px;">
               <div style="font-size: 18px; color: #ffd700; margin-bottom: 20px; padding: 15px; background: #112240; border-radius: 8px;">${aText}</div>
-              <div class="srs-buttons">
-                ${getSRSButtons()}
-              </div>
+              <div class="srs-buttons">${getSRSButtons()}</div>
             </div>
           </div>
         `;
       }
+    }
+
+    function checkTypeAnswer(correct) {
+      answered = true;
+      const input = document.getElementById('typeInput');
+      const userAns = input.value.trim().toLowerCase();
+      const correctAns = correct.toLowerCase();
+      if(userAns === correctAns) {
+        input.classList.add('correct');
+      } else {
+        input.classList.add('wrong');
+      }
+      input.disabled = true;
+      document.getElementById('answerDiv').style.display = 'block';
     }
 
     function checkMCQ(selected, correct) {
@@ -365,7 +383,7 @@
       document.getElementById('othersList').style.display = 'none';
     }
 
-    // Answer mode buttons - SINGLE SELECTION FIX
+    // FIXED: Single selection for TYPE/MCQ/FLIP
     document.getElementById('typeMode').onclick = () => {
       answerMode = 'type';
       document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
