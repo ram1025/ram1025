@@ -9,55 +9,45 @@
     * { margin:0; padding:0; box-sizing:border-box }
     html { scroll-behavior: smooth; font-size: 16px; }
     body { background:#0a192f; color:#00ffaa; font-family:system-ui,-apple-system,sans-serif; padding:20px; text-align:center; min-height:100vh }
-.header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
-.header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
-.header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
-.back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
-.mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
-.mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 16px; border-radius:8px; cursor:pointer; font-weight:700; font-size:12px; flex:1; min-width:150px;}
-.mode-btn.active { background:#ffaa00; color:#0a192f }
-.card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative; transition:border-color 0.3s }
-.card.correct { border-color:#44ff88; box-shadow:0 0 40px #44ff8820 }
-.card.wrong { border-color:#ff4444; box-shadow:0 0 40px #ff444420 }
-.pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
-.question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
-.answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0; transition:border-color 0.3s }
-.answer-input.correct { border-color:#44ff88; background:#44ff8810 }
-.answer-input.wrong { border-color:#ff4444; background:#ff444410 }
-.mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
-.mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px; transition:all 0.2s }
-.mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
-.mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
-.mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
-.mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
-.btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer; transition:all 0.2s }
-.btn:hover { transform:scale(1.05); box-shadow:0 0 20px #00ffaa80 }
-.btn-check { background:#ffaa00; color:#0a192f }
-.quality-btns { display:flex; gap:8px; justify-content:center; margin:20px 0; flex-wrap:wrap }
-.btn-again { background:#ff4444; color:#fff; padding:12px 20px }
-.btn-hard { background:#ffaa00; color:#0a192f; padding:12px 20px }
-.btn-good { background:#00ffaa; color:#0a192f; padding:12px 20px }
-.btn-easy { background:#44ff88; color:#0a192f; padding:12px 20px }
-.stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
-.stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
-.footer { margin-top:50px; font-size:12px; opacity:0.6 }
-.loading { color:#ffaa00; font-size:18px; padding:40px; text-align:center }
-.age-modal { position:fixed; top:0; left:0; width:100%; height:100%; background:#0a192fdd; display:flex; align-items:center; justify-content:center; z-index:100 }
-.age-box { background:#1a2332; padding:30px; border-radius:20px; border:2px solid #00ffaa; max-width:400px; width:90% }
-.age-box h2 { color:#ffaa00; margin-bottom:20px }
-.age-box select {
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    background:#0a192f;
-    border:2px solid #00ffaa;
-    border-radius:10px;
-    color:#fff;
-    font-size:16px;
-    cursor:pointer;
-    position:relative;
-    z-index:102;
-  }
+   .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
+   .header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
+   .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
+   .back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
+   .mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
+   .mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 16px; border-radius:8px; cursor:pointer; font-weight:700; font-size:12px; flex:1; min-width:150px;}
+   .mode-btn.active { background:#ffaa00; color:#0a192f }
+   .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative; transition:border-color 0.3s }
+   .card.correct { border-color:#44ff88; box-shadow:0 0 40px #44ff8820 }
+   .card.wrong { border-color:#ff4444; box-shadow:0 0 40px #ff444420 }
+   .pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
+   .question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
+   .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0; transition:border-color 0.3s }
+   .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
+   .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
+   .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
+   .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px; transition:all 0.2s }
+   .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
+   .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
+   .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
+   .mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
+   .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer; transition:all 0.2s }
+   .btn:hover { transform:scale(1.05); box-shadow:0 0 20px #00ffaa80 }
+   .btn-check { background:#ffaa00; color:#0a192f }
+   .quality-btns { display:flex; gap:8px; justify-content:center; margin:20px 0; flex-wrap:wrap }
+   .btn-again { background:#ff4444; color:#fff; padding:12px 20px }
+   .btn-hard { background:#ffaa00; color:#0a192f; padding:12px 20px }
+   .btn-good { background:#00ffaa; color:#0a192f; padding:12px 20px }
+   .btn-easy { background:#44ff88; color:#0a192f; padding:12px 20px }
+   .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
+   .stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
+   .footer { margin-top:50px; font-size:12px; opacity:0.6 }
+   .loading { color:#ffaa00; font-size:18px; padding:40px; text-align:center }
+   .sub-btn {
+      padding:12px 8px; background:#1a2332; border:1px solid #00ffaa40;
+      border-radius:8px; color:#00ffaa; font-size:13px; font-weight:bold;
+      cursor:pointer; transition:0.2s;
+    }
+   .sub-btn:active {background:#00ffaa; color:#0a192f; transform:scale(0.95);}
   </style>
 </head>
 <body>
@@ -67,7 +57,6 @@
     <p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
   </div>
 
-    <!-- TRACK BUTTONS -->
   <div class="mode-toggle">
     <button class="mode-btn" id="pillarsMode">🏛 36 PILLARS - 108</button>
     <button class="mode-btn" id="schoolMode" onclick="showSchoolList()">📚 SCHOOL - 280</button>
@@ -76,7 +65,6 @@
     <button class="mode-btn" id="otherMode" onclick="showOthersList()">📖 GK/PHD - 130</button>
   </div>
 
-  <!-- SCHOOL SUB-LIST -->
   <div id="schoolList" class="sub-list" style="display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40;">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT CLASS:</div>
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
@@ -97,7 +85,6 @@
     </div>
   </div>
 
-    <!-- COLLEGE SUB-LIST -->
   <div id="collegeList" class="sub-list" style="display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40;">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT STREAM:</div>
     <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:8px;">
@@ -108,8 +95,7 @@
       <button class="sub-btn" onclick="selectTrack('MBA-FIN')">MBA-FIN</button>
     </div>
   </div>
-  
-  <!-- COMPETITIVE SUB-LIST -->
+
   <div id="competitiveList" class="sub-list" style="display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40;">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT EXAM:</div>
     <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:8px;">
@@ -121,7 +107,6 @@
     </div>
   </div>
 
-  <!-- OTHERS SUB-LIST -->
   <div id="othersList" class="sub-list" style="display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40;">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT LEVEL:</div>
     <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:8px;">
@@ -130,36 +115,28 @@
     </div>
   </div>
 
-  <style>
-  .sub-btn {
-    padding:12px 8px; background:#1a2332; border:1px solid #00ffaa40; 
-    border-radius:8px; color:#00ffaa; font-size:13px; font-weight:bold; 
-    cursor:pointer; transition:0.2s;
-  }
-  .sub-btn:active {background:#00ffaa; color:#0a192f; transform:scale(0.95);}
-  </style>
-
   <div class="answer-mode-toggle">
-    <button class="mode-btn" id="typeMode">✏️ TYPE</button>
+    <button class="mode-btn active" id="typeMode">✏️ TYPE</button>
     <button class="mode-btn" id="mcqMode">⚪ MCQ</button>
     <button class="mode-btn" id="flipMode">🔁 FLIP</button>
   </div>
   <div id="cardCounter" style="text-align:center;margin:15px;color:#00ffaa;font-weight:bold;font-size:18px;">0/0</div>
   <div id="card" class="card">
     <div class="card-content">
-      <div class="loading">Loading...</div>
+      <div class="loading">Select a mode to start</div>
     </div>
-  </div>
   <div class="stats">
     <div>Due Now<b id="dueCount">0</b></div>
     <div>Streak<b id="streakCount">0<br>days</b></div>
     <div>Total<b id="totalCount">0<br>/0</b></div>
   </div>
   <div class="footer">ABST P24 Civilization OS | SM-2 Algorithm | 108 Mantra + 1000 Sahasra</div>
+
   <script>
     const GITHUB_USER = 'ram1025';
     const REPO_NAME = 'ram1025';
 
+    // FIX 1: ABST_SM2 name correct chesa
     window.ABST_SM2 = {
       calc: function(card, quality) {
         if (quality < 3) {
@@ -175,6 +152,19 @@
         if (card.ease < 1.3) card.ease = 1.3;
         card.due = Date.now() + card.interval * 24 * 60 * 60 * 1000;
         return card;
+      },
+      // FIX 2: initCard function add chesa
+      initCard: function(card) {
+        return {
+         ...card,
+          ease: card.ease || 2.5,
+          reps: card.reps || 0,
+          interval: card.interval || 0,
+          due: card.due || 0
+        };
+      },
+      isDue: function(card) {
+        return card.due <= Date.now();
       }
     };
 
@@ -188,87 +178,82 @@
     let matrix = [];
 
     function loadCards() {
-  // FIX: Selected category ki filter chey
-  let filteredMatrix = matrix;
-  
-  // SCHOOL mode lo CLASS/LKG filter chey
-  if(currentMode === 'school' && userClass !== 'GK') {
-    filteredMatrix = matrix.filter(c => c.category === userClass);
-  }
-  // COLLEGE mode ← EE BLOCK ADD CHEY
-  else if(currentMode === 'college' && userClass !== 'GK') {
-    filteredMatrix = matrix.filter(c => c.category === userClass);
-  }
-  // COMPETITIVE mode
-  else if(currentMode === 'competitive' && userClass !== 'GK') {
-    filteredMatrix = matrix.filter(c => c.category === userClass);
-  }
-  // OTHER mode  
-  else if(currentMode === 'other' && userClass !== 'GK') {
-    filteredMatrix = matrix.filter(c => c.category === userClass);
-  }
+      let filteredMatrix = matrix;
 
-  dueCards = filteredMatrix.filter(c => {
-    if (!c.due) return true;
-    return c.due <= Date.now();
-  });
-  
-  if (dueCards.length === 0) {
-    dueCards = [...filteredMatrix];
-  }
-  
-  currentIndex = 0;
-  dueCards = dueCards.sort(() => 0.5 - Math.random());
-  }
+      if(currentMode === 'school' && userClass!== 'GK') {
+        filteredMatrix = matrix.filter(c => c.category === userClass);
+      }
+      else if(currentMode === 'college' && userClass!== 'GK') {
+        filteredMatrix = matrix.filter(c => c.category === userClass);
+      }
+      else if(currentMode === 'competitive' && userClass!== 'GK') {
+        filteredMatrix = matrix.filter(c => c.category === userClass);
+      }
+      else if(currentMode === 'other' && userClass!== 'GK') {
+        filteredMatrix = matrix.filter(c => c.category === userClass);
+      }
+
+      // FIX 3: ABST_SM2 use cheyali
+      filteredMatrix = filteredMatrix.map(c => window.ABST_SM2.initCard(c));
+
+      dueCards = filteredMatrix.filter(c => {
+        if (!c.due) return true;
+        return window.ABST_SM2.isDue(c);
+      });
+
+      if (dueCards.length === 0 && filteredMatrix.length > 0) {
+        dueCards = [...filteredMatrix];
+      }
+
+      currentIndex = 0;
+      dueCards = dueCards.sort(() => 0.5 - Math.random());
+    }
 
     async function loadMatrixFromGitHub() {
-  try {
-    // FIX: Anni buttons nundi active teesey
-    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+      try {
+        document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+        document.getElementById(currentMode+'Mode')?.classList.add('active');
+        document.getElementById(answerMode+'Mode')?.classList.add('active');
 
-    // Current selected 2 buttons ke matrame active add chey
-    document.getElementById(currentMode+'Mode')?.classList.add('active');
-    document.getElementById(answerMode+'Mode')?.classList.add('active');
+        document.querySelector('.card-content').innerHTML = `<div class="loading">Loading cards... <br>🔄</div>`;
+        let fileName = '';
+        if(currentMode === 'pillars') fileName = '36-pillars-108.json';
+        else if(currentMode === 'school') fileName = 'Education-school-280.json';
+        else if(currentMode === 'college') fileName = 'Education-college-250.json';
+        else if(currentMode === 'competitive') fileName = 'Education-competitive-340.json';
+        else if(currentMode === 'other') fileName = 'Education-others-130.json';
 
-    document.querySelector('.card-content').innerHTML = `<div class="loading">Loading cards... <br>🔄</div>`;
-    let fileName = '';
-    if(currentMode === 'pillars') fileName = '36-pillars-108.json';
-    else if(currentMode === 'school') fileName = 'Education-school-280.json';
-    else if(currentMode === 'college') fileName = 'Education-college-250.json';
-    else if(currentMode === 'competitive') fileName = 'Education-competitive-340.json';
-    else if(currentMode === 'other') fileName = 'Education-others-130.json';
+        document.querySelector('.card-content').innerHTML = `<div class="loading">Loading ${fileName}...</div>`;
+        const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${fileName}?v=${Date.now()}`;
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`${fileName} not found`);
+        matrix = await response.json();
 
-    document.querySelector('.card-content').innerHTML = `<div class="loading">Loading ${fileName}...</div>`;
-    const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/main/${fileName}?v=${Date.now()}`;
-    const response = await fetch(url);
-    if (!response.ok) throw new Error(`${fileName} not found`);
-    matrix = await response.json();
-
-    const saved = localStorage.getItem('abst_brain_cards');
-    if(saved) {
-      const parsed = JSON.parse(saved);
-      parsed.forEach(savedCard => {
-        const idx = matrix.findIndex(c => c.id === savedCard.id);
-        if(idx >= 0) matrix[idx] = savedCard;
-      });
-    }
-    initBrain();
-  } catch(err) {
-    console.error(err);
-    document.querySelector('.card-content').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check JSON file in GitHub repo</div>`;
-  }
+        const saved = localStorage.getItem('abst_brain_cards');
+        if(saved) {
+          const parsed = JSON.parse(saved);
+          parsed.forEach(savedCard => {
+            const idx = matrix.findIndex(c => c.id === savedCard.id);
+            if(idx >= 0) matrix[idx] = savedCard;
+          });
+        }
+        initBrain();
+      } catch(err) {
+        console.error(err);
+        document.querySelector('.card-content').innerHTML = `<div style="color:#ff4444;padding:40px;">Error: ${err.message}<br><br>Check JSON file in GitHub repo</div>`;
+      }
     }
 
     function initBrain() {
       matrix = matrix.map((c, i) => ({
         id: c.id || i,
-        q: c.q || c.question,
-        a: c.a || c.answer,
+        q: c.q || c.question || 'No Question',
+        a: c.a || c.answer || 'No Answer',
         category: c.category || c.class || 'GENERAL',
         ease: c.ease || 2.5,
         reps: c.reps || 0,
         interval: c.interval || 0,
-        due: c.due || Date.now()
+        due: c.due || 0
       }));
       loadCards();
       updateStats();
@@ -279,9 +264,9 @@
       const cardEl = document.getElementById('card');
       cardEl.classList.remove('correct', 'wrong');
 
-      if (currentIndex >= dueCards.length) {
+      if (currentIndex >= dueCards.length || dueCards.length === 0) {
         document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>All done! 🎉</h3><p>Come back tomorrow for more cards</p></div>`;
-        document.getElementById('cardCounter').textContent = `${dueCards.length}/${dueCards.length}`;
+        document.getElementById('cardCounter').textContent = `0/${dueCards.length}`;
         return;
       }
       currentCard = dueCards[currentIndex];
@@ -297,9 +282,9 @@
         let correctAns = currentCard.a || currentCard.answer;
         let options = [correctAns];
         let wrongOptions = matrix.filter(c => (c.a || c.answer)!== correctAns)
-  .sort(() => 0.5 - Math.random())
-  .slice(0, 3)
-  .map(c => (c.a || c.answer));
+         .sort(() => 0.5 - Math.random())
+         .slice(0, 3)
+         .map(c => (c.a || c.answer));
         options = [...options,...wrongOptions].sort(() => 0.5 - Math.random());
         content += `<div id="mcqOptions" class="mcq-grid">`;
         options.forEach(opt => {
@@ -377,113 +362,102 @@
     }
 
     document.getElementById('homeBtn').onclick = () => {
-  if(window.parent!== window && window.parent.closeM) {
-    window.parent.closeM('abstBrainModal');
-  } else {
-    window.location.href = './index.html';
-  }
-};
+      if(window.parent!== window && window.parent.closeM) {
+        window.parent.closeM('abstBrainModal');
+      } else {
+        window.location.href = './index.html';
+      }
+    };
 
-// SUB-LIST FUNCTIONS
-function hideAllSubLists() {
-  document.getElementById('schoolList').style.display = 'none';
-  document.getElementById('collegeList').style.display = 'none'; // ← Ee line add chey
-  document.getElementById('competitiveList').style.display = 'none';
-  document.getElementById('othersList').style.display = 'none';
-}
+    function hideAllSubLists() {
+      document.getElementById('schoolList').style.display = 'none';
+      document.getElementById('collegeList').style.display = 'none';
+      document.getElementById('competitiveList').style.display = 'none';
+      document.getElementById('othersList').style.display = 'none';
+    }
 
-function showSchoolList() {
-  hideAllSubLists();
-  document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('schoolMode').classList.add('active');
-  document.getElementById('schoolList').style.display = 'block';
-  document.getElementById('card').style.display = 'none';
-  }
-  
-  function showCollegeList() {
-    hideAllSubLists();
-    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById('collegeMode').classList.add('active');
-    document.getElementById('collegeList').style.display = 'block';
-    document.getElementById('card').style.display = 'none';
-  }
-  
-  function showCompetitiveList() {
-    hideAllSubLists();
-    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById('competitiveMode').classList.add('active');
-    document.getElementById('competitiveList').style.display = 'block';
-    document.getElementById('card').style.display = 'none';
-  }
-  
-  function showOthersList() {
-    hideAllSubLists();
-    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById('otherMode').classList.add('active');
-    document.getElementById('othersList').style.display = 'block';
-    document.getElementById('card').style.display = 'none';
-     }
+    function showSchoolList() {
+      hideAllSubLists();
+      document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('schoolMode').classList.add('active');
+      document.getElementById('schoolList').style.display = 'block';
+      document.getElementById('card').style.display = 'none';
+    }
 
-function selectTrack(trackName) {
-  hideAllSubLists();
-  document.getElementById('card').style.display = 'block';
-  userClass = trackName;
+    function showCollegeList() {
+      hideAllSubLists();
+      document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('collegeMode').classList.add('active');
+      document.getElementById('collegeList').style.display = 'block';
+      document.getElementById('card').style.display = 'none';
+    }
 
-  // Mode set chey - explicit check
-  if(['LKG','UKG','CLASS1','CLASS2','CLASS3','CLASS4','CLASS5','CLASS6','CLASS7','CLASS8','CLASS9','CLASS10','CLASS11','CLASS12'].includes(trackName)) {
-    currentMode = 'school';
-  } else if(['DEGREE','ENGINEERING','MBBS','MBA-HR','MBA-FIN'].includes(trackName)) {
-    currentMode = 'college';
-  } else if(['UPSC','NEET','JEE','SSC','BANKING'].includes(trackName)) {
-    currentMode = 'competitive';
-  } else {
-    currentMode = 'other';
-  }
+    function showCompetitiveList() {
+      hideAllSubLists();
+      document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('competitiveMode').classList.add('active');
+      document.getElementById('competitiveList').style.display = 'block';
+      document.getElementById('card').style.display = 'none';
+    }
 
-  loadMatrixFromGitHub();
-}
+    function showOthersList() {
+      hideAllSubLists();
+      document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('otherMode').classList.add('active');
+      document.getElementById('othersList').style.display = 'block';
+      document.getElementById('card').style.display = 'none';
+    }
 
-document.getElementById('pillarsMode').onclick = () => {
-  hideAllSubLists();
-  currentMode = 'pillars';
-  loadMatrixFromGitHub();
-};
+    function selectTrack(trackName) {
+      hideAllSubLists();
+      document.getElementById('card').style.display = 'block';
+      userClass = trackName;
 
-    document.getElementById('typeMode').onclick = () => {
-  answerMode = 'type';
-  document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('typeMode').classList.add('active');
-  showCard();
-};
+      if(['LKG','UKG','CLASS1','CLASS2','CLASS3','CLASS4','CLASS5','CLASS6','CLASS7','CLASS8','CLASS9','CLASS10','CLASS11','CLASS12'].includes(trackName)) {
+        currentMode = 'school';
+      } else if(['DEGREE','ENGINEERING','MBBS','MBA-HR','MBA-FIN'].includes(trackName)) {
+        currentMode = 'college';
+      } else if(['UPSC','NEET','JEE','SSC','BANKING'].includes(trackName)) {
+        currentMode = 'competitive';
+      } else {
+        currentMode = 'other';
+      }
 
-document.getElementById('mcqMode').onclick = () => {
-  answerMode = 'mcq';
-  document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('mcqMode').classList.add('active');
-  showCard();
-};
+      loadMatrixFromGitHub();
+    }
 
-document.getElementById('flipMode').onclick = () => {
-  answerMode = 'flip';
-  document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('flipMode').classList.add('active');
-  showCard();
-};
-
-    document.getElementById('saveAgeBtn').onclick = () => {
-      userClass = document.getElementById('userClass').value;
-      localStorage.setItem('abst_user_class', userClass);
-      document.getElementById('ageModal').style.display = 'none';
+    document.getElementById('pillarsMode').onclick = () => {
+      hideAllSubLists();
+      currentMode = 'pillars';
       loadMatrixFromGitHub();
     };
 
-    const savedClass = localStorage.getItem('abst_user_class');
-    if(savedClass) {
-      userClass = savedClass;
-      document.getElementById('userClass').value = savedClass;
-      document.getElementById('ageModal').style.display = 'none';
+    document.getElementById('typeMode').onclick = () => {
+      answerMode = 'type';
+      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('typeMode').classList.add('active');
+      showCard();
+    };
+
+    document.getElementById('mcqMode').onclick = () => {
+      answerMode = 'mcq';
+      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('mcqMode').classList.add('active');
+      showCard();
+    };
+
+    document.getElementById('flipMode').onclick = () => {
+      answerMode = 'flip';
+      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('flipMode').classList.add('active');
+      showCard();
+    };
+
+    // FIX 4: ageModal code teesesanu - ledu kabatti error vachindi
+    // Auto load pillars on start
+    window.addEventListener('load', () => {
       loadMatrixFromGitHub();
-    }
+    });
   </script>
 </body>
 </html>
