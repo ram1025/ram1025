@@ -215,40 +215,51 @@
     else if(currentMode === 'competitive') fileName = 'Education-competitive-340.json';
     else if(currentMode === 'other') fileName = 'Education-others-130.json';
 
-    // FIX: GitHub kaadu, local cache nundi
+    // FIX 1: Local path - SW cache nundi
     const url = `./${fileName}`;
-
     console.log('[BRAIN] Fetching:', url);
+    
     const response = await fetch(url);
-
+    
     if (!response.ok) {
-      throw new Error(`HTTP ${response.status}: ${fileName} not found`);
+      throw new Error(`HTTP ${response.status}`);
     }
 
     matrix = await response.json();
     console.log('[BRAIN] Matrix loaded:', matrix.length);
-
-    if (!matrix || matrix.length === 0) {
-      console.warn('[BRAIN] Matrix empty');
-      matrix = [
-        {id: 'TEST-1', q: "Offline Test Question?", a: "Yes Working", pillar: "1"}
-      ];
+    
+    // FIX 2: Online lo success aite localStorage lo save chey - offline kosam
+    if (matrix && matrix.length > 0) {
+      localStorage.setItem(`abst_brain_${currentMode}`, JSON.stringify(matrix));
+      console.log('[BRAIN] Saved to localStorage:', currentMode);
     }
 
-    initBrain();
   } catch(err) {
-    console.error('[BRAIN] Load error:', err);
-    // Fallback to localStorage
-    const saved = localStorage.getItem('abst_brain_cards');
+    console.error('[BRAIN] Fetch failed:', err.message);
+    
+    // FIX 3: Offline fallback - localStorage nundi teesuko
+    const saved = localStorage.getItem(`abst_brain_${currentMode}`);
     if (saved) {
       matrix = JSON.parse(saved);
-      console.log('[BRAIN] Loaded from localStorage:', matrix.length);
-      initBrain();
+      console.log('[BRAIN] Loaded from localStorage:', matrix.length, 'cards');
     } else {
-      alert('Offline: Open once online first to cache data');
+      // FIX 4: Emergency hardcoded data - minimum 3 questions
+      console.warn('[BRAIN] No cache, using hardcoded fallback');
+      if(currentMode === 'pillars') {
+        matrix = [
+          {id: 'P01-Q1', q: "What is the 1st Pillar of ABST?", a: "P1: Plasma Plant running solar and plasma integration", pillar: "1"},
+          {id: 'P01-Q2', q: "What core cycle does Plasma Plant establish?", a: "High-temperature thermal molecular transformation cycle", pillar: "1"},
+          {id: 'P01-Q3', q: "Where does Plasma Plant feed residues?", a: "Directly into P17: Slag-Brick Factory", pillar: "1"}
+        ];
+      } else {
+        matrix = []; // Other modes ki empty
+      }
     }
   }
-    }
+
+  // FIX 5: Error vachina initBrain() call cheyali
+  initBrain();
+}
 
     function initBrain() {
       matrix = matrix.map((c, i) => ({
