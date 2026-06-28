@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABST BRAIN</title>
-    <script src="https://cdn.jsdelivr.net/gh/ram1025/abst-brain-sm2@main/sm2-engine.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -118,12 +117,6 @@
             font-size: 14px;
         }
         .btn:hover { background: #2a3050; }
-        .btn-primary {
-            background: #00ff88;
-            color: #000;
-            font-weight: bold;
-            border: none;
-        }
         .progress {
             text-align: center;
             color: #00ff88;
@@ -181,7 +174,7 @@
             <button class="btn">✏️ TYPE</button>
             <button class="btn">⚪ MCQ</button>
         </div>
-        <button class="btn" style="width:100%;">🔄 FLIP</button>
+        <button class="btn" id="flipBtn" style="width:100%;">🔄 FLIP</button>
 
         <div class="progress" id="progress">0/0</div>
 
@@ -200,12 +193,47 @@
             </div>
             <div class="stat-box">
                 <div class="stat-value" id="total">0</div>
-                <div class="stat-label">/0</div>
+                <div class="stat-label" id="totalLabel">/0</div>
             </div>
         </div>
     </div>
 
     <script>
+        // SM2 ENGINE - INLINE - NO EXTERNAL DEPENDENCY
+        window.SM2_ENGINE = {
+            initCard: function(card) {
+                return {
+                    ...card,
+                    ease: card.ease || 2.5,
+                    reps: card.reps || 0,
+                    interval: card.interval || 0,
+                    due: card.due || 0
+                };
+            },
+            isDue: function(card) {
+                return card.due <= Date.now();
+            },
+            updateCard: function(card, grade) {
+                if (grade < 3) {
+                    card.reps = 0;
+                    card.interval = 1;
+                } else {
+                    if (card.reps === 0) {
+                        card.interval = 1;
+                    } else if (card.reps === 1) {
+                        card.interval = 6;
+                    } else {
+                        card.interval = Math.round(card.interval * card.ease);
+                    }
+                    card.reps++;
+                }
+                card.ease = card.ease + (0.1 - (5 - grade) * (0.08 + (5 - grade) * 0.02));
+                if (card.ease < 1.3) card.ease = 1.3;
+                card.due = Date.now() + card.interval * 24 * 60 * 60 * 1000;
+                return card;
+            }
+        };
+
         let matrix = [];
         let dueCards = [];
         let currentIndex = 0;
@@ -244,7 +272,7 @@
 
             try {
                 const response = await fetch(url);
-                if (!response.ok) throw new Error('Fetch failed');
+                if (!response.ok) throw new Error('HTTP ' + response.status);
                 matrix = await response.json();
                 console.log('[BRAIN] Matrix loaded:', matrix.length);
                 
@@ -286,9 +314,7 @@
         function loadCards() {
             let filteredMatrix = matrix;
 
-            if (currentMode === 'pillars') {
-                filteredMatrix = matrix;
-            } else if (currentMode === 'gk') {
+            if (currentMode === 'pillars' || currentMode === 'gk') {
                 filteredMatrix = matrix;
             } else {
                 filteredMatrix = matrix.filter(c => String(c.category).trim() === String(userClass).trim());
@@ -333,13 +359,12 @@
         function updateStats() {
             document.getElementById('dueNow').textContent = dueCards.length;
             document.getElementById('total').textContent = matrix.length;
-            document.getElementById('total').nextElementSibling.textContent = `/${matrix.length}`;
+            document.getElementById('totalLabel').textContent = `/${matrix.length}`;
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            console.log('[BRAIN] DOM Ready');
+            console.log('[BRAIN] DOM Ready - SM2 Engine Loaded');
             
-            // 36 PILLARS
             document.getElementById('pillarsMode').onclick = () => {
                 console.log('[BRAIN] 36 PILLARS clicked');
                 hideAllSubLists();
@@ -350,28 +375,24 @@
                 loadMatrixFromGitHub();
             };
 
-            // SCHOOL
             document.getElementById('schoolMode').onclick = () => {
                 document.getElementById('schoolSubList').classList.toggle('hidden');
                 document.getElementById('collegeSubList').classList.add('hidden');
                 document.getElementById('compSubList').classList.add('hidden');
             };
 
-            // COLLEGE
             document.getElementById('collegeMode').onclick = () => {
                 document.getElementById('collegeSubList').classList.toggle('hidden');
                 document.getElementById('schoolSubList').classList.add('hidden');
                 document.getElementById('compSubList').classList.add('hidden');
             };
 
-            // COMPETITIVE
             document.getElementById('compMode').onclick = () => {
                 document.getElementById('compSubList').classList.toggle('hidden');
                 document.getElementById('schoolSubList').classList.add('hidden');
                 document.getElementById('collegeSubList').classList.add('hidden');
             };
 
-            // GK/PHD
             document.getElementById('gkMode').onclick = () => {
                 console.log('[BRAIN] GK clicked');
                 hideAllSubLists();
@@ -382,7 +403,6 @@
                 loadMatrixFromGitHub();
             };
 
-            // School sub buttons
             document.querySelectorAll('#schoolSubList .sub-btn').forEach(btn => {
                 btn.onclick = () => {
                     userClass = btn.dataset.class;
@@ -394,7 +414,6 @@
                 };
             });
 
-            // College sub buttons
             document.querySelectorAll('#collegeSubList .sub-btn').forEach(btn => {
                 btn.onclick = () => {
                     userClass = btn.dataset.class;
@@ -406,7 +425,6 @@
                 };
             });
 
-            // Comp sub buttons
             document.querySelectorAll('#compSubList .sub-btn').forEach(btn => {
                 btn.onclick = () => {
                     userClass = btn.dataset.class;
@@ -418,12 +436,11 @@
                 };
             });
 
-            // FLIP button
-            document.querySelector('.btn:last-of-type').onclick = () => {
+            document.getElementById('flipBtn').onclick = () => {
                 showingAnswer = !showingAnswer;
                 showCard();
             };
         });
     </script>
 </body>
-  </html>
+</html>
