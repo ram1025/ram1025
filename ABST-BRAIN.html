@@ -1,327 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ABST BRAIN | P24 | INDIAN.001</title>
-  <meta name="theme-color" content="#00ffaa">
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box }
-    html { scroll-behavior: smooth; font-size: 16px; }
-    body { background:#0a192f; color:#00ffaa; font-family:system-ui,-apple-system,sans-serif; padding:20px; text-align:center; min-height:100vh }
-   .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
-   .header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
-   .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
-   .back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
-   .mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
-   .mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 16px; border-radius:8px; cursor:pointer; font-weight:700; font-size:12px; flex:1; min-width:150px;}
-   .mode-btn.active { background:#ffaa00; color:#0a192f }
-   .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative; transition:border-color 0.3s }
-   .card.correct { border-color:#44ff88; box-shadow:0 0 40px #44ff8820 }
-   .card.wrong { border-color:#ff4444; box-shadow:0 0 40px #ff444420 }
-   .pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
-   .question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
-   .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0; transition:border-color 0.3s }
-   .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
-   .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
-   .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
-   .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px; transition:all 0.2s }
-   .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
-   .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
-   .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
-   .mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
-   .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer; transition:all 0.2s }
-   .btn:hover { transform:scale(1.05); box-shadow:0 0 20px #00ffaa80 }
-   .btn-check { background:#ffaa00; color:#0a192f }
-   .quality-btns { display:flex; gap:8px; justify-content:center; margin:20px 0; flex-wrap:wrap }
-   .btn-again { background:#ff4444; color:#fff; padding:12px 20px }
-   .btn-hard { background:#ffaa00; color:#0a192f; padding:12px 20px }
-   .btn-good { background:#00ffaa; color:#0a192f; padding:12px 20px }
-   .btn-easy { background:#44ff88; color:#0a192f; padding:12px 20px }
-   .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
-   .stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
-   .footer { margin-top:50px; font-size:12px; opacity:0.6 }
-   .loading { color:#ffaa00; font-size:18px; padding:40px; text-align:center }
-   .sub-btn { padding:12px 8px; background:#1a2332; border:1px solid #00ffaa40; border-radius:8px; color:#00ffaa; font-size:13px; font-weight:bold; cursor:pointer; transition:0.2s; }
-   .sub-btn:active {background:#00ffaa; color:#0a192f; transform:scale(0.95);}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0, minimum-scale=1.0">
+<title>My Jeevandhara - ABST</title>
+<meta name="description" content="Akanda Bharat Sovereign Township - 36 Pillar Ecosystem">
+<meta name="theme-color" content="#0a192f">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>
+*{box-sizing:border-box}
+html{font-size:16px}
+html.modal-open{overflow:hidden!important}
+body{margin:0;padding:0;background:#0a192f;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden;-webkit-text-size-adjust:100%}
+.container{max-width:600px;margin:0 auto;padding:30px 20px;position:relative;display:none}
+
+.menu-trigger{position:absolute;top:25px;left:20px;font-size:28px;color:#64ffda;cursor:pointer;z-index:100;transition:0.2s}
+.menu-trigger:active{transform:scale(0.9)}
+
+h1{color:#64ffda;font-size:28px;margin:0 5px 0;font-weight:bold;text-align:center}
+h3{color:#ffd700;font-size:14px;margin:0 8px 0;text-align:center}
+.tagline{color:#8892b0;font-size:13px;margin:0 0 5px 0;text-align:center}
+.visionary{color:#ffd700;font-size:12px;margin:0 5px 0;text-align:center;font-weight:bold}
+.designation{color:#64ffda;font-size:11px;margin:0 0 20px 0;text-align:center;font-style:italic;opacity:0.9}
+.status{color:#8892b0;font-size:11px;margin-top:25px;line-height:1.6;text-align:center}
+img.main-seal{max-width:100%;height:auto;display:block;margin:0 auto 20px;border-radius:50%;border:3px solid #64ffda;box-shadow:0 0 20px rgba(100,255,218,0.3)}
+
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:9999;overflow:auto;padding:20px}
+.modal-inner{max-width:900px;margin:40px auto;background:#112240;border-radius:12px;padding:25px;position:relative;border:1px solid #233554}
+.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.modal-close{font-size:28px;cursor:pointer;line-height:1;color:#64ffda}
+.modal-body{color:#fff;background:#0a192f;border-radius:8px;padding:25px;font-size:13px;line-height:1.8;text-align:left;max-height:75vh;overflow-y:auto}
+.modal-body h4{color:#64ffda;margin-top:15px}
+.modal-body ul{padding-left:20px}
+.modal-body p{margin-bottom:12px}
+
+.profile-label{color:#8892b0;display:block;margin-bottom:8px;font-weight:bold;font-size:12px;letter-spacing:1px}
+.profile-input,.profile-select{width:100%;padding:14px;background:#0a192f;border:1px solid #233554;border-radius:8px;color:#fff;font-size:15px;margin-bottom:20px;font-weight:bold}
+.profile-input:focus,.profile-select:focus{border-color:#64ffda;outline:none}
+
+.photo-upload-wrapper{text-align:center;margin-bottom:25px}
+.profile-photo-preview{width:100px;height:100px;border-radius:50%;border:3px solid #64ffda;margin:0 auto 15px;display:block;object-fit:cover;box-shadow:0 0 20px rgba(100,255,218,0.3);cursor:pointer;transition:0.3s}
+.profile-photo-preview:active{transform:scale(0.95)}
+.photo-upload-btns{display:flex;gap:10px;justify-content:center}
+.photo-btn{flex:1;padding:10px;background:#112240;border:1px solid #233554;border-radius:8px;color:#64ffda;font-size:13px;font-weight:bold;cursor:pointer;transition:0.2s}
+.photo-btn:active{background:#1a2f4a;transform:scale(0.97)}
+input[type="file"]{display:none}
+
+.modal-btn-action{width:100%;margin-top:20px;background:#5effde;color:#0a192f;border:none;border-radius:8px;padding:14px;font-weight:bold;font-size:15px;cursor:pointer;text-align:center;transition:0.2s}
+.modal-btn-action:active{transform:scale(0.98);background:#4cd4b7}
+
+#abst-welcome-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#0a192f;z-index:99999;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s ease;transform:scale(1)}
+.glow-welcome-text{color:#64ffda;font-size:32px;font-weight:bold;text-align:center;letter-spacing:3px;text-shadow:0 0 12px rgba(100,255,218,0.3);margin-bottom:10px}
+#abst-welcome-sub{color:#FFD700;font-size:16px;letter-spacing:4px;font-weight:bold;text-align:center;margin-bottom:15px}
+.welcome-note-text{color:#8892b0;font-size:13px;text-align:center;max-width:400px;line-height:1.6;margin:0 20px 20px;padding:15px;background:rgba(17,34,64,0.6);border-radius:8px;border:1px solid #233554}
+
+.droplet-gateway{width:140px;height:140px;margin:20px auto 25px;position:relative;cursor:pointer;display:flex;justify-content:center;align-items:center;transition:transform 0.3s ease}
+.droplet-gateway img{width:100%;height:100%;object-fit:contain;border-radius:50%;box-shadow:0 0 25px rgba(100,255,218,0.4);animation:floatDroplet 3s ease-in-out infinite;min-width:140px;min-height:140px}
+.droplet-gateway::after{content:'';position:absolute;top:-8px;left:-8px;right:-8px;bottom:-8px;border-radius:50%;border:2px dashed #64ffda;opacity:0.6;animation:rotateRing 12s linear infinite}
+.droplet-gateway:active{transform:scale(0.92)}
+
+.touch-prompt{color:#64ffda;font-size:12px;letter-spacing:2px;font-weight:bold;animation:textBlink 1.5s ease-in-out infinite;text-align:center;cursor:pointer}
+
+@keyframes floatDroplet{0%,100%{transform:translateY(0);filter:drop-shadow(0 15px rgba(100,255,218,0.5))}50%{transform:translateY(-12px);filter:drop-shadow(0 0 25px rgba(100,255,218,0.8))}}
+@keyframes rotateRing{100%{transform:rotate(360deg)}}
+@keyframes textBlink{0%,100%{opacity:0.4}50%{opacity:1;text-shadow:0 0 8px #64ffda}}
+
+.icon-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 0 20px;max-width:100%;margin:20px auto 0}
+.icon-card{background:#112240;border:2px solid #233554;border-radius:16px;padding:14px 6px;text-align:center;cursor:pointer;opacity:0;transform:scale(0) rotate(0deg);transition:transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, background 0.2s}
+.icon-card.show{opacity:1;transform:scale(1) rotate(0deg)}
+.icon-card:active{background:#1a2f4a;transform:scale(0.85) rotate(360deg);border-color:#64ffda}
+.icon-card.jarvis{border-color:#64ffda;box-shadow:0 0 20px rgba(100,255,218,0.1)}
+.icon-card.install-btn-node{border-color:#ffd700;box-shadow:0 0 15px rgba(255,215,0,0.2);display:none}
+.icon-card .icon{font-size:1.8rem;margin-bottom:5px;transition:transform 0.3s ease}
+.icon-card:active .icon{transform:scale(1.2)}
+.icon-card span{color:#64ffda;font-size:0.6rem;font-weight:700;letter-spacing:0.5px;display:block}
+
+@keyframes swirlIn{0%{opacity:0;transform:scale(0) rotate(-720deg)}70%{opacity:1;transform:scale(1.1) rotate(20deg)}100%{opacity:1;transform:scale(1) rotate(0deg)}}
+.icon-card.swirl{animation:swirlIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards}
+
+@media (max-width:480px){
+  .modal-body{font-size:12px;padding:20px 30px 20px;line-height:1.7}
+  .modal-body h1{font-size:18px}
+  .modal-body h2{font-size:15px}
+  .modal-body h3{font-size:14px}
+  .modal-inner{padding:20px}
+}
+</style>
 </head>
 <body>
-  <div class="header">
-    <button class="back-btn" id="homeBtn">← CLOSE</button>
-    <h1>ABST BRAIN</h1>
-    <p>SOVEREIGN ID: INDIAN.001 | 108 Mantra + 1000 Sahasra</p>
-  </div>
 
-  <div class="mode-toggle">
-    <button class="mode-btn active" id="pillarsMode">🏛 36 PILLARS - 5</button>
-    <button class="mode-btn" id="schoolMode">📚 SCHOOL - 3</button>
+<div id="abst-welcome-overlay">
+  <div class="glow-welcome-text">WELCOME TO ABST</div>
+  <div id="abst-welcome-sub">SOVEREIGN ID: <span id="welcome-id-display">INDIAN.001</span></div>
+  
+  <div class="welcome-note-text">
+    Akanda Bharat Sovereign Township - A 36-Pillar Ecosystem of Total Independence.<br>
+    <b style="color:#64ffda">Master Visionary: <span id="welcome-visionary-name">RAM GANESH MAKINA</span></b><br>
+    <span id="welcome-designation">Chief Architect</span> | <span id="welcome-location">Vizag Mother Hub</span><br>
+    Jarvis AI Core Security Layer <span id="welcome-security">7</span> Activated
   </div>
-
-  <div id="schoolList" class="sub-list" style="display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40;">
-    <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT CLASS:</div>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('CLASS10')">Class 10</button>
+  
+  <div class="droplet-gateway" id="seal-btn">
+    <img id="welcome-seal-img" src="icon-192.png" alt="ABST Security Seal Node">
+  </div>
+  
+  <div id="welcomeScreen">
+    <div id="touch-btn" onclick="unlockDashboard()" style="cursor:pointer;">
+      <div style="color:#64ffda;font-size:16px;letter-spacing:2px;font-weight:bold;animation:textBlink 1.5s ease-in-out infinite;">⚡ TOUCH TO INITIALIZE MATRIX ⚡</div>
+      <div style="font-size:14px;color:#00ffff;margin-top:5px;">Jarvis AI Security Layer 9</div>
+    </div>
+    
+    <div id="welcomeInstallContainer" style="display:block;margin-top:25px;text-align:center;">
+      <button id="installBtnWelcome" style="background:linear-gradient(135deg, #00d4ff 0%, #00ff88 100%);color:#0a192f;padding:12px 24px;border:none;border-radius:12px;font-weight:bold;font-size:16px;cursor:pointer;">
+        <img src="icon-192.png" alt="ABST" style="width:24px;height:24px;border-radius:6px;vertical-align:middle;margin-right:8px;">
+        Install ABST App
+      </button>
+      <p style="color:#7dd3fc;font-size:11px;margin-top:8px;opacity:0.8;">
+        Add to Home Screen for best experience
+      </p>
     </div>
   </div>
+</div>
 
-  <div class="answer-mode-toggle">
-    <button class="mode-btn active" id="typeMode">✏️ TYPE</button>
-    <button class="mode-btn" id="mcqMode">⚪ MCQ</button>
-    <button class="mode-btn" id="flipMode">🔁 FLIP</button>
+<div class="container">
+<div class="menu-trigger" onclick="openM('profileModal')">☰</div>
+
+<img id="main-seal-img" src="icon-192.png" alt="Seal" width="90" height="90" class="main-seal">
+<h1>My Jeevandhara</h1>
+<h3>Akanda Bharat Sovereign Township</h3>
+<p class="tagline" id="dash-bio-display">Building Tomorrow's Sovereign Cities</p>
+<p class="visionary" id="dash-visionary-display">Master Visionary: INDIAN.001 RAM GANESH MAKINA</p>
+<p class="designation" id="dash-designation-display">Chief Architect | Vizag Mother Hub | Security Layer 9</p>
+<div class="icon-dashboard">
+  <div class="icon-card" onclick="openM('dpr36Modal')">
+    <div class="icon">🏛️</div><span>MASTERPLAN</span>
   </div>
-  <div id="cardCounter" style="text-align:center;margin:15px;color:#00ffaa;font-weight:bold;font-size:18px;">0/0</div>
-  <div id="card" class="card">
-    <div class="card-content">
-      <div class="loading">Loading...</div>
-    </div>
+  <div class="icon-card jarvis" onclick="window.location.href='Jarvis-Ai.html'">
+    <div class="icon">🟢</div><span>JARVIS AI</span>
   </div>
-  <div class="stats">
-    <div>Due Now<b id="dueCount">0</b></div>
-    <div>Streak<b id="streakCount">0<br>days</b></div>
-    <div>Total<b id="totalCount">0<br>/0</b></div>
+  <div class="icon-card" onclick="window.open('./MyJeevandhara_Investor_Note.pdf','_blank')">
+    <div class="icon">📊</div><span>INVESTOR NOTE</span>
   </div>
-  <div class="footer">ABST P24 Civilization OS | SM-2 Algorithm</div>
+  <div class="icon-card" onclick="window.location.href='dpr-complete.html'">
+    <div class="icon">📜</div><span>DPR FULL TEXT</span>
+  </div>
+  <div class="icon-card" onclick="window.location.href='https://jarvis-live.com'">
+    <div class="icon">📡</div><span>LIVE FEED</span>
+  </div>
+  <div class="icon-card" onclick="window.open('./Project_MJ_Detailed_Blueprint.pdf','_blank')">
+    <div class="icon">📄</div><span>DPR PDF</span>
+  </div>
+  <div class="icon-card" onclick="window.location.href='36-Pillars-Book.html'">
+    <div class="icon">📚</div><span>36 PILLARS BOOK</span>
+  </div>
+ <div class="icon-card" onclick="openM('pillars36Modal')">
+<div class="icon">📜</div><span>36 PILLARS LIST</span>
+</div>
+<div class="icon-card" onclick="window.location.href='./ABST-BRAIN.html'">
+<div class="icon">🧠</div><span>ABST BRAIN</span>
+</div>
+<div class="icon-card" onclick="window.location.href='./ABST-GAME.html'">
+<div class="icon">🎮</div><span>ABST GAME</span>
+</div>
+<div class="icon-card" onclick="window.location.href='constitution.html'">
+<div class="icon">📖</div><span>CONSTITUTION</span>
+</div>
+<div class="icon-card" onclick="openM('licenseModal')">
+<div class="icon">⚖️</div><span>LICENSE.md</span>
+</div>
+  <div class="icon-card" onclick="openM('readmeModal')">
+    <div class="icon">📖</div><span>README.md</span>
+  </div>
+  <div class="icon-card" onclick="window.open('https://drive.google.com/file/d/1u8xVrk7SHwpQIcROzPuRPsL1qajs_j0h/preview','_blank')">
+    <div class="icon">🎬</div><span>MASTER VISION</span>
+  </div>
+   <div class="icon-card" onclick="openM('blueprintModal')">
+    <div class="icon">📐</div><span>10 STEP BLUEPRINT</span>
+  </div>
+</div>
 
-  <script>
-    // EMBEDDED DATA - NO FETCH NEEDED - 100% OFFLINE
-    const PILLARS_DATA = [
-      {"id":1,"q":"What is Dharma?","a":"Righteous duty","category":"DHARMA"},
-      {"id":2,"q":"Who wrote Arthashastra?","a":"Chanakya","category":"ARTHA"},
-      {"id":3,"q":"What is Karma?","a":"Action and consequence","category":"KARMA"},
-      {"id":4,"q":"What is Moksha?","a":"Liberation","category":"MOKSHA"},
-      {"id":5,"q":"What is Ahimsa?","a":"Non-violence","category":"DHARMA"}
-    ];
+<p class="status" id="dash-status-string">Status: Operational | Jarvis AI Core Layer 7 | 36 Pillars Complete<br>Master: INDIAN.001 RAM GANESH MAKINA | P36 Active</p>
+</div>
+<div id="profileModal" class="modal">
+<div class="modal-inner" style="max-width:550px;">
+<div class="modal-head">
+<h2 style="color:#64ffda;margin:0;font-size:22px;display:flex;align-items:center;gap:10px">👤 PROFILE IDENTITY CONFIG</h2>
+<span onclick="closeM('profileModal')" class="modal-close">&times;</span>
+</div>
+<div class="modal-body" style="background:#112240;padding:20px 15px">
 
-    const SCHOOL_DATA = [
-      {"id":1,"q":"What is 2+2?","a":"4","category":"CLASS10"},
-      {"id":2,"q":"Capital of India?","a":"Delhi","category":"CLASS10"},
-      {"id":3,"q":"H2O is?","a":"Water","category":"CLASS10"}
-    ];
+<div class="photo-upload-wrapper">
+<img id="profile-photo-preview" src="icon-192.png" class="profile-photo-preview" alt="Profile Photo">
+<div class="photo-upload-btns">
+<label for="inputProfileCamera" class="photo-btn">📷 CAMERA</label>
+<label for="inputProfileGallery" class="photo-btn">🖼️ GALLERY</label>
+</div>
+<input type="file" id="inputProfileCamera" accept="image/*" capture="user">
+<input type="file" id="inputProfileGallery" accept="image/*">
+</div>
 
-    window.ABST_SM2 = {
-      calc: function(card, quality) {
-        if (quality < 3) {
-          card.reps = 0;
-          card.interval = 1;
-        } else {
-          if (card.reps === 0) card.interval = 1;
-          else if (card.reps === 1) card.interval = 6;
-          else card.interval = Math.round(card.interval * card.ease);
-          card.reps += 1;
-        }
-        card.ease = card.ease + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
-        if (card.ease < 1.3) card.ease = 1.3;
-        card.due = Date.now() + card.interval * 24 * 60 * 60 * 1000;
-        return card;
-      },
-      initCard: function(card) {
-        return {...card, ease: card.ease || 2.5, reps: card.reps || 0, interval: card.interval || 0, due: card.due || 0};
-      },
-      isDue: function(card) {
-        return card.due <= Date.now();
-      }
-    };
+<label class="profile-label">MASTER VISIONARY NAME</label>
+<input type="text" id="inputMasterName" class="profile-input" placeholder="RAM GANESH MAKINA">
 
-    let currentMode = 'pillars';
-    let answerMode = 'type';
-    let currentCard = null;
-    let dueCards = [];
-    let currentIndex = 0;
-    let userClass = 'GK';
-    let streak = parseInt(localStorage.getItem('abst_streak') || '0');
-    let matrix = [];
+<label class="profile-label">SOVEREIGN ID CONFIG</label>
+<input type="text" id="inputSovereignID" class="profile-input" placeholder="INDIAN.001">
 
-    function loadCards() {
-      let filteredMatrix = matrix;
-      if(currentMode === 'school' && userClass!== 'GK') {
-        filteredMatrix = matrix.filter(c => c.category === userClass);
-      }
+<label class="profile-label">EMAIL ADDRESS</label>
+<input type="email" id="inputEmail" class="profile-input" placeholder="master@abst.com">
 
-      filteredMatrix = filteredMatrix.map(c => window.ABST_SM2.initCard(c));
-      dueCards = filteredMatrix.filter(c => window.ABST_SM2.isDue(c));
+<label class="profile-label">PHONE NUMBER</label>
+<input type="tel" id="inputPhone" class="profile-input" placeholder="+91 98765 43210">
 
-      if (dueCards.length === 0 && filteredMatrix.length > 0) {
-        dueCards = [...filteredMatrix];
-      }
+<label class="profile-label">BLOOD GROUP</label>
+<select id="inputBlood" class="profile-select">
+  <option value="">Select Blood Group</option>
+  <option value="A+">A+</option><option value="A-">A-</option><option value="B+">B+</option><option value="B-">B-</option>
+  <option value="AB+">AB+</option><option value="AB-">AB-</option><option value="O+">O+</option><option value="O-">O-</option>
+</select>
 
-      currentIndex = 0;
-      dueCards = dueCards.sort(() => 0.5 - Math.random());
-    }
+<label class="profile-label">DESIGNATION / ROLE</label>
+<select id="inputDesignation" class="profile-select">
+  <option value="Chief Architect">Chief Architect</option>
+  <option value="Managing Director">Managing Director</option>
+  <option value="Founder">Founder</option>
+  <option value="Energy Core Head">Energy Core Head</option>
+  <option value="Digital Security Head">Digital Security Head</option>
+  <option value="Governance Lead">Governance Lead</option>
+</select>
 
-    function loadMatrixFromGitHub() {
-      document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById(currentMode+'Mode')?.classList.add('active');
-      document.getElementById(answerMode+'Mode')?.classList.add('active');
+<label class="profile-label">MOTHER HUB LOCATION</label>
+<input type="text" id="inputLocation" class="profile-input" placeholder="Vizag Mother Hub">
 
-      // NO FETCH - DIRECT LOAD FROM EMBEDDED DATA
-      if(currentMode === 'pillars') matrix = PILLARS_DATA;
-      else if(currentMode === 'school') matrix = SCHOOL_DATA;
+<label class="profile-label">SECURITY CLEARANCE LEVEL</label>
+<select id="inputSecurity" class="profile-select">
+  <option value="7">Layer 7 - Core Access</option>
+  <option value="8">Layer 8 - Command Access</option>
+  <option value="9">Layer 9 - Sovereign Access</option>
+</select>
 
-      console.log('[BRAIN] Matrix loaded:', matrix.length);
-      initBrain();
-    }
+<label class="profile-label">CUSTOM TAGLINE / BIO</label>
+<input type="text" id="inputBio" class="profile-input" placeholder="Building Tomorrow's Sovereign Cities">
 
-    function initBrain() {
-      matrix = matrix.map((c, i) => ({
-        id: c.id || i,
-        q: c.q || c.question || 'No Question',
-        a: c.a || c.answer || 'No Answer',
-        category: c.category || 'GENERAL',
-        ease: c.ease || 2.5,
-        reps: c.reps || 0,
-        interval: c.interval || 0,
-        due: c.due || 0
-      }));
-      loadCards();
-      updateStats();
-      showCard();
-    }
+<p style="color:#8892b0;font-size:12px;line-height:1.5;margin:10px 0 0">Editing updates all screens instantly: Welcome Note, Main Page, Status. Data saves to device.</p>
+</div>
+<button onclick="saveProfileConfigurationData()" class="modal-btn-action" style="background:#5effde;color:#0a192f;font-size:16px">💾 SAVE & REFRESH RECOGNITION</button>
+</div>
+</div>
 
-    function showCard() {
-      const cardEl = document.getElementById('card');
-      cardEl.classList.remove('correct', 'wrong');
+<div id="pillars36Modal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📋 ABST 36 PILLARS - COMPLETE LIST</h2><span onclick="closeM('pillars36Modal')" class="modal-close">&times;</span></div>
+<div class="modal-body">
+<div style="background:#112240;border:1px solid #1a2a4a;border-radius:12px;padding:20px;margin:15px 0">
+<div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector I: Energy & Industrial Core P1-P9</div>
+P1: Plasma Plant | P2: Solar Power | P3: Moon-Ray Energy | P4: AWT | P5: Rain-Drop Energy | P6: Sovereign Green Fuel Plant | P7: rPET Factory | P8: Glass Recycling Unit | P9: Aluminium Recycling Unit
+</div>
+<div style="background:#112240;border:1px solid #1a2a4a;border-radius:12px;padding:20px;margin:15px 0">
+<div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector II: Water & Earth Sovereignty P10-P18</div>
+P10: Our Amrutavarsha AWG Plant & Central Reservoir | P11: Dual-Ion Shield | P12: General Plastic Processing Center | P13: Waste-to-Trash Command | P14: Human Waste-to-Farming | P15: Vayu-Shuddhi Forest | P16: Chain Mesh & AMG | P17: Slag-Brick Factory | P18: Bio-Gas Compression Station
+</div>
+<div style="background:#112240;border:1px solid #1a2a4a;border-radius:12px;padding:20px;margin:15px 0">
+<div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector III: Infrastructure Skeleton P19-P23</div>
+P19: Walkthrough Utility Tunnel | P20: HDD Pipeline Network | P21: Footstep Energy Walkways | P22: The Bio-Vault | P23: Matru-Shakti Residential
+</div>
+<div style="background:#112240;border:1px solid #1a2a4a;border-radius:12px;padding:20px;margin:15px 0">
+<div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector IV: Social & Intellectual Capital P24-P29</div>
+P24: KG to PhD Building | P25: Project Hospital | P26: Project Bank | P27: Food & Clothing Malls | P28: Sovereign Simulation Game | P29: Global Innovators & Walls of Fame
+</div>
+<div style="background:#112240;border:1px solid #1a2a4a;border-radius:12px;padding:20px;margin:15px 0">
+<div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector V: Digital & Security Nervous System P30-P35</div>
+P30: RVM Network | P31: Indian.00X ID System | P32: Our Amrutavarsha Vendor Network | P33: Transparency Hub | P34: Sentinel-Eye CCTV Network | P35: Jarvis AI Core
+</div>
+<div style="background:#112240;border:2px solid #FFD700;border-radius:12px;padding:20px;margin:15px 0">
+<div style="color:#64ffda;font-weight:bold;font-size:15px;margin-bottom:8px">Sector VI: Governance & Legacy P36</div>
+P36: MD Agni-Pariksha Leadership Mandate
+</div>
+</div>
+<button onclick="closeM('pillars36Modal')" class="modal-btn-action">🏠 BACK TO HOME</button>
+</div>
+</div>
 
-      if (currentIndex >= dueCards.length || dueCards.length === 0) {
-        document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>All done! 🎉</h3><p>Come back tomorrow for more cards</p></div>`;
-        document.getElementById('cardCounter').textContent = `0/${dueCards.length}`;
-        return;
-      }
-      currentCard = dueCards[currentIndex];
-      document.getElementById('cardCounter').textContent = `${currentIndex + 1}/${dueCards.length}`;
+<div id="licenseModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📜 ABST SOVEREIGN LICENSE</h2><span onclick="closeM('licenseModal')" class="modal-close">&times;</span></div>
+<div class="modal-body">
+<b>Master Visionary Lock v1.0 - ABST</b><br><br>
+Copyright (c) 2026 ABST - Akanda Bharat Sovereign Township<br><br>
+1. ALL RIGHTS RESERVED BY MASTER VISIONARY: INDIAN.001 RAM GANESH MAKINA<br>
+2. NO COPY, FORK, MIRROR, REUPLOAD WITHOUT WRITTEN CONSENT<br>
+3. VERIFICATION: Jarvis AI Core Security Layer 7<br>
+4. STATUS: Mother Hub Vizag - Operational<br>
+5. ABST-MVL-v1.0 | 2026-04-10
+</div>
+<button onclick="closeM('licenseModal')" class="modal-btn-action">CLOSE</button>
+</div>
+</div>
 
-      let content = `<div class="pillar">${currentCard.category || ''}</div>
-        <div class="question">${currentCard.q}</div>`;
+<div id="readmeModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">📖 ABST README</h2><span onclick="closeM('readmeModal')" class="modal-close">&times;</span></div>
+<div class="modal-body">
+<b>ABST - Akanda Bharat Sovereign Township</b><br><br>
+<b>Master Visionary:</b> INDIAN.001 RAM GANESH MAKINA<br>
+<b>36-Pillar Ecosystem:</b> Total Independence Model<br>
+<b>Mission:</b> Sector 1 to 5 - Complete Sovereign System<br>
+<b>Status:</b> Operational | Mother Hub: Vizag<br>
+<b>Security:</b> Jarvis AI Core Layer 7
+</div>
+<button onclick="closeM('readmeModal')" class="modal-btn-action">CLOSE</button>
+</div>
+</div>
 
-      if(answerMode === 'type') {
-        content += `<input type="text" id="typeAnswerBox" class="answer-input" placeholder="Type your answer here..." onkeypress="if(event.key==='Enter') checkAnswer()">
-        <button class="btn btn-check" onclick="checkAnswer()">CHECK ANSWER</button>`;
-      } else if(answerMode === 'mcq') {
-        let correctAns = currentCard.a;
-        let options = [correctAns];
-        let wrongOptions = matrix.filter(c => c.a!== correctAns).sort(() => 0.5 - Math.random()).slice(0, 3).map(c => c.a);
-        options = [...options,...wrongOptions].sort(() => 0.5 - Math.random());
-        content += `<div id="mcqOptions" class="mcq-grid">`;
-        options.forEach(opt => {
-          content += `<button class="mcq-btn" onclick="checkMCQ('${opt.replace(/'/g, "\\'")}')">${opt}</button>`;
-        });
-        content += `</div>`;
-      } else if(answerMode === 'flip') {
-        content += `<div class="answer" style="color:#0f0;margin:20px 0;padding:15px;background:#001100;border-radius:8px;">${currentCard.a}</div>
-        <button class="btn" onclick="gradeCard(3)">NEXT</button>`;
-      }
-      document.querySelector('.card-content').innerHTML = content;
-    }
+<div id="dpr36Modal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#64ffda;margin:0">🏛️ ABST-MASTERPLAN - INDIAN.001</h2><span onclick="closeM('dpr36Modal')" class="modal-close">&times;</span></div>
+<div class="modal-body">
+<h1 style="color:#64ffda;text-align:left;font-size:22px">ABST 36-PILLAR SOVEREIGN DPR</h1>
+<h2 style="color:#ffd700;text-align:left;font-size:16px">Master Visionary: INDIAN.001 RAM GANESH MAKINA</h2>
+<div style="margin:20px 0;text-align:center">
+<h3 style="color:#FFD700;margin-bottom:10px">🏗️ PHYSICAL MINIATURE MODEL</h3>
+<img id="modelImg" alt="ABST Miniature Model" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #FFD700;margin-bottom:20px;background:#112240;min-height:200px">
+<h3 style="color:#FFD700;margin-bottom:10px">🌞 MASTER PLAN - DAY VIEW</h3>
+<img id="dayImg" alt="ABST Master Plan Day Mode" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #64ffda;margin-bottom:20px;background:#112240;min-height:200px">
+<h3 style="color:#64ffda;margin-bottom:10px">🌙 MASTER PLAN - NIGHT VIEW</h3>
+<img id="nightImg" alt="ABST Master Plan Night Mode" style="width:100%;max-width:100%;border-radius:8px;border:2px solid #FFD700;background:#112240;min-height:200px">
+</div>
+</div>
+<button onclick="closeM('dpr36Modal')" class="modal-btn-action">🏢 BACK TO HOME</button>
+</div>
+</div>
 
-    function checkAnswer() {
-      const input = document.getElementById('typeAnswerBox');
-      const userAns = input.value.trim().toLowerCase();
-      const correctAns = currentCard.a.trim().toLowerCase();
-      const cardEl = document.getElementById('card');
+<div id="blueprintModal" class="modal">
+<div class="modal-inner">
+<div class="modal-head"><h2 style="color:#FFD700;margin:0">🌐 DPR FRAMEWORK - 10 STEP BLUEPRINT</h2><span onclick="closeM('blueprintModal')" class="modal-close">&times;</span></div>
+<div class="modal-body">
+<h1 style="color:#64ffda;text-align:left;font-size:22px">AKANDA BHARAT SMART ENERGY & EV ECOSYSTEM</h1>
+<h3 style="color:#64ffda">🛣️ SECTION 1: MOBILITY & DIRECT HARVESTING</h3>
+<h4>STEP 1: BHARAT DHARA EV LANE</h4><p>A high-efficiency smart corridor designed for non-stop electric vehicle transit.</p>
+<h4>STEP 2: SMART ENERGY SPEED BUMPS</h4><p>Positioned strategically to convert vehicular momentum directly into high-yield electrical current.</p>
+<h4>STEP 3: INTEGRATED SOLAR WIND BARRIERS</h4><p>Transforms crosswind drafts generated by heavy transit lines into active power nodes.</p>
+<h3 style="color:#64ffda;margin-top:20px">⚡ SECTION 2: INDEPENDENT PRODUCTION & THERMAL CORE</h3>
+<h4>STEP 4: PLASMA ENERGY CO-GENERATION</h4><p>Deployment of plasma arc thermal engines processing raw municipal residue output into slag-bricks.</p>
+<h4>STEP 5: ATMOSPHERIC RAIN HARVESTING MATRIX (TENG)</h4><p>Triboelectric Nanogenerators embedded across smart roofing shields converting precipitation force into storage.</p>
+<h4>STEP 6: MOON-RAY PHOTOVOLTAIC LAYERS</h4><p>Specialized high-sensitivity optical capture arrays tracking secondary luminescence configurations.</p>
+<h3 style="color:#64ffda;margin-top:20px">🛡️ SECTION 3: RECYCLING, GRID MANAGEMENT & STORAGE</h3>
+<h4>STEP 7: rPET & CRITICAL METAL PROCESSING SHIELDS</h4><p>Automated closed-loop separation lines converting polymers, glass elements, and structural aluminium scrap.</p>
+<h4>STEP 8: THE SECURE BIO-VAULT RECOVERY ENGINE</h4><p>Air-gapped mechanical storage facilities housing localized grid controllers.</p>
+<h4>STEP 9: TRIVARNA BHARAT METRICS NODE</h4><p>A distributed database layer logging transactions and rewarding infrastructure credits.</p>
+<h4>STEP 10: MD AGNI-PARIKSHA LEADERSHIP MANDATE</h4><p>Final systemic structural protocol forcing local state operational management heads into raw rural deployment checkouts.</p>
+</div>
+<button onclick="closeM('blueprintModal')" class="modal-btn-action" style="background:#ffd700;">🏢 CLOSE & RETURN</button>
+</div>
+</div>
 
-      if (userAns === correctAns) {
-        cardEl.classList.add('correct');
-        input.classList.add('correct');
-        input.disabled = true;
-        showQualityBtns();
-      } else {
-        cardEl.classList.add('wrong');
-        input.classList.add('wrong');
-        input.value = currentCard.a;
-        input.disabled = true;
-        showQualityBtns();
-      }
-    }
+<script>
+let deferredAppInstallPrompt = null;
+let isAppInstalled = false;
 
-    function checkMCQ(selected) {
-      const correctAns = currentCard.a;
-      const buttons = document.querySelectorAll('#mcqOptions button');
-      buttons.forEach(btn => {
-        btn.disabled = true;
-        if (btn.textContent === correctAns) btn.classList.add('correct');
-        else if (btn.textContent === selected) btn.classList.add('wrong');
+function openM(id){
+  document.querySelectorAll('.modal').forEach(function(modal) { modal.style.display = 'none'; });
+  var m=document.getElementById(id);
+  if(!m) return;
+  m.style.display='block';
+  document.documentElement.classList.add('modal-open');
+
+  if(id==='dpr36Modal'){
+    document.getElementById('modelImg').src='miniature-model.jpg';
+    document.getElementById('dayImg').src='day-mode.jpg';
+    document.getElementById('nightImg').src='night-mode.jpg';
+  }
+}
+
+function closeM(id){
+  var m=document.getElementById(id);
+  if(m){
+    m.style.display='none';
+    document.documentElement.classList.remove('modal-open');
+  }
+}
+
+function unlockDashboard() {
+  var overlay = document.getElementById('abst-welcome-overlay');
+  var container = document.querySelector('.container');
+  var cards = document.querySelectorAll('.icon-card');
+
+  if(overlay) {
+    overlay.style.opacity = '0';
+    overlay.style.transform = 'scale(1.1)';
+    sessionStorage.setItem('dashboard_direct_unlock_token', 'true');
+    setTimeout(function(){
+      overlay.style.display = 'none';
+      container.style.display = 'block';
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add('swirl');
+        }, index * 60);
       });
-      showQualityBtns();
-    }
+    }, 600);
+  }
+}
 
-    function showQualityBtns() {
-      const qualityDiv = document.createElement('div');
-      qualityDiv.className = 'quality-btns';
-      qualityDiv.innerHTML = `
-        <button class="btn btn-again" onclick="gradeCard(0)">AGAIN 1d</button>
-        <button class="btn btn-hard" onclick="gradeCard(1)">HARD 1d</button>
-        <button class="btn btn-good" onclick="gradeCard(2)">GOOD 6d</button>
-        <button class="btn btn-easy" onclick="gradeCard(3)">EASY 15d</button>
-      `;
-      document.querySelector('.card-content').appendChild(qualityDiv);
-      document.querySelector('.btn-check')?.remove();
-    }
+function loadSavedIdentityData() {
+  var storedName = localStorage.getItem('abst_visionary_name') || "RAM GANESH MAKINA";
+  var storedID = localStorage.getItem('abst_sovereign_id') || "INDIAN.001";
+  var storedDesignation = localStorage.getItem('abst_designation') || "Chief Architect";
+  var storedLocation = localStorage.getItem('abst_location') || "Vizag Mother Hub";
+  var storedSecurity = localStorage.getItem('abst_security') || "7";
+  var storedBio = localStorage.getItem('abst_bio') || "Building Tomorrow's Sovereign Cities";
+  var storedPhoto = localStorage.getItem('abst_photo') || "icon-192.png";
+  var storedEmail = localStorage.getItem('abst_email') || "";
+  var storedPhone = localStorage.getItem('abst_phone') || "";
+  var storedBlood = localStorage.getItem('abst_blood') || "";
 
-    function gradeCard(quality) {
-      currentCard = window.ABST_SM2.calc(currentCard, quality);
-      const idx = matrix.findIndex(c => c.id === currentCard.id);
-      if(idx >= 0) matrix[idx] = currentCard;
-      localStorage.setItem('abst_brain_cards', JSON.stringify(matrix));
-      currentIndex++;
-      updateStats();
-      showCard();
-    }
+  var dashVision = document.getElementById('dash-visionary-display');
+  if(dashVision) dashVision.innerText = "Master Visionary: " + storedID + " " + storedName;
 
-    function updateStats() {
-      document.getElementById('dueCount').innerText = dueCards.length;
-      document.getElementById('streakCount').innerHTML = streak + '<br>days';
-      document.getElementById('totalCount').innerHTML = matrix.length + '<br>/' + matrix.length;
-    }
+  var dashDesignation = document.getElementById('dash-designation-display');
+  if(dashDesignation) dashDesignation.innerText = storedDesignation + " | " + storedLocation + " | Security Layer " + storedSecurity;
 
-    document.getElementById('homeBtn').onclick = () => window.close();
+  var dashStatus = document.getElementById('dash-status-string');
+  if(dashStatus) dashStatus.innerHTML = "Status: Operational | Jarvis AI Core Layer " + storedSecurity + " | 36 Pillars Complete<br>Master: " + storedID + " " + storedName + " | P36 Active";
 
-    function showSchoolList() {
-      document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('schoolMode').classList.add('active');
-      document.getElementById('schoolList').style.display = 'block';
-      document.getElementById('card').style.display = 'none';
-    }
+  var mainSeal = document.getElementById('main-seal-img');
+  if(mainSeal) mainSeal.src = "icon-192.png";
 
-    function selectTrack(trackName) {
-      document.getElementById('schoolList').style.display = 'none';
-      document.getElementById('card').style.display = 'block';
-      userClass = trackName;
-      currentMode = 'school';
-      loadMatrixFromGitHub();
-    }
+  var dashBio = document.getElementById('dash-bio-display');
+  if(dashBio) dashBio.innerText = storedBio;
 
-    document.getElementById('pillarsMode').onclick = () => {
-      document.getElementById('schoolList').style.display = 'none';
-      document.getElementById('card').style.display = 'block';
-      currentMode = 'pillars';
-      loadMatrixFromGitHub();
+  var welcomeID = document.getElementById('welcome-id-display');
+  if(welcomeID) welcomeID.innerText = storedID;
+
+  var welcomeName = document.getElementById('welcome-visionary-name');
+  if(welcomeName) welcomeName.innerText = storedName;
+
+  var welcomeDesignation = document.getElementById('welcome-designation');
+  if(welcomeDesignation) welcomeDesignation.innerText = storedDesignation;
+
+  var welcomeLocation = document.getElementById('welcome-location');
+  if(welcomeLocation) welcomeLocation.innerText = storedLocation;
+
+  var welcomeSecurity = document.getElementById('welcome-security');
+  if(welcomeSecurity) welcomeSecurity.innerText = storedSecurity;
+
+  var welcomeSeal = document.getElementById('welcome-seal-img');
+  if(welcomeSeal) welcomeSeal.src = "icon-192.png";
+
+  var inputName = document.getElementById('inputMasterName');
+  var inputID = document.getElementById('inputSovereignID');
+  var inputDesig = document.getElementById('inputDesignation');
+  var inputLoc = document.getElementById('inputLocation');
+  var inputSec = document.getElementById('inputSecurity');
+  var inputBioField = document.getElementById('inputBio');
+  var inputEmail = document.getElementById('inputEmail');
+  var inputPhone = document.getElementById('inputPhone');
+  var inputBlood = document.getElementById('inputBlood');
+  var photoPreview = document.getElementById('profile-photo-preview');
+
+  if(inputName) inputName.value = storedName;
+  if(inputID) inputID.value = storedID;
+  if(inputDesig) inputDesig.value = storedDesignation;
+  if(inputLoc) inputLoc.value = storedLocation;
+  if(inputSec) inputSec.value = storedSecurity;
+  if(inputBioField) inputBioField.value = storedBio;
+  if(inputEmail) inputEmail.value = storedEmail;
+  if(inputPhone) inputPhone.value = storedPhone;
+  if(inputBlood) inputBlood.value = storedBlood;
+  if(photoPreview) photoPreview.src = storedPhoto;
+}
+
+function saveProfileConfigurationData() {
+  var varName = document.getElementById('inputMasterName').value.trim();
+  var varID = document.getElementById('inputSovereignID').value.trim();
+  var varDesignation = document.getElementById('inputDesignation').value;
+  var varLocation = document.getElementById('inputLocation').value.trim();
+  var varSecurity = document.getElementById('inputSecurity').value;
+  var varBio = document.getElementById('inputBio').value.trim();
+  var varEmail = document.getElementById('inputEmail').value.trim();
+  var varPhone = document.getElementById('inputPhone').value.trim();
+  var varBlood = document.getElementById('inputBlood').value;
+
+  if(varName!== "") localStorage.setItem('abst_visionary_name', varName);
+  if(varID!== "") localStorage.setItem('abst_sovereign_id', varID);
+  if(varDesignation!== "") localStorage.setItem('abst_designation', varDesignation);
+  if(varLocation!== "") localStorage.setItem('abst_location', varLocation);
+  if(varSecurity!== "") localStorage.setItem('abst_security', varSecurity);
+  if(varBio!== "") localStorage.setItem('abst_bio', varBio);
+  if(varEmail!== "") localStorage.setItem('abst_email', varEmail);
+  if(varPhone!== "") localStorage.setItem('abst_phone', varPhone);
+  if(varBlood!== "") localStorage.setItem('abst_blood', varBlood);
+
+  loadSavedIdentityData();
+  closeM('profileModal');
+}
+
+function handlePhotoUpload(event) {
+  var file = event.target.files[0];
+  if (file) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      var photoData = e.target.result;
+      localStorage.setItem('abst_photo', photoData);
+      document.getElementById('profile-photo-preview').src = photoData;
     };
+    reader.readAsDataURL(file);
+  }
+}
 
-    document.getElementById('typeMode').onclick = () => {
-      answerMode = 'type';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('typeMode').classList.add('active');
-      showCard();
-    };
+document.getElementById('inputProfileCamera').addEventListener('change', handlePhotoUpload);
+document.getElementById('inputProfileGallery').addEventListener('change', handlePhotoUpload);
 
-    document.getElementById('mcqMode').onclick = () => {
-      answerMode = 'mcq';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('mcqMode').classList.add('active');
-      showCard();
-    };
+document.getElementById('profile-photo-preview').addEventListener('click', function() {
+  document.getElementById('inputProfileGallery').click();
+});
 
-    document.getElementById('flipMode').onclick = () => {
-      answerMode = 'flip';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.getElementById('flipMode').classList.add('active');
-      showCard();
-    };
+document.getElementById('seal-btn').addEventListener('click', unlockDashboard);
 
-    window.addEventListener('load', () => {
-      console.log('[BRAIN] Ready - No external files needed');
-      loadMatrixFromGitHub();
+window.addEventListener('beforeinstallprompt', function(e) {
+  e.preventDefault();
+  deferredAppInstallPrompt = e;
+  var welcomeInstallBox = document.getElementById('welcomeInstallContainer');
+  if(welcomeInstallBox &&!window.matchMedia('(display-mode: standalone)').matches &&!isAppInstalled) {
+     welcomeInstallBox.style.display = 'block';
+  }
+});
+
+function triggerPwaInstallation() {
+  if(!deferredAppInstallPrompt) {
+    alert('📲 Install cheyali ante:\n\n1. Chrome menu ⋮ noku\n2. "Install app" or "Add to Home screen" select chey\n\nLedante site ni konni sarlu visit chesi 30sec wait chey, automatic prompt vastadi');
+    return;
+  }
+  deferredAppInstallPrompt.prompt();
+  deferredAppInstallPrompt.userChoice.then(function(choiceResult) {
+    if (choiceResult.outcome === 'accepted') {
+      document.getElementById('welcomeInstallContainer').style.display = 'none';
+      isAppInstalled = true;
+      localStorage.setItem('abst_installed', 'true');
+    }
+    deferredAppInstallPrompt = null;
+  });
+}
+
+window.addEventListener('appinstalled', () => {
+  var welcomeInstallBox = document.getElementById('welcomeInstallContainer');
+  if(welcomeInstallBox) welcomeInstallBox.style.display = 'none';
+  isAppInstalled = true;
+  localStorage.setItem('abst_installed', 'true');
+});
+
+window.addEventListener('DOMContentLoaded', function(){
+  var overlay = document.getElementById('abst-welcome-overlay');
+  var cards = document.querySelectorAll('.icon-card');
+
+  loadSavedIdentityData();
+
+  if (sessionStorage.getItem('dashboard_direct_unlock_token') === 'true') {
+    if(overlay) {
+      overlay.style.display = 'none';
+    }
+    document.querySelector('.container').style.display = 'block';
+    cards.forEach((card) => {
+      card.classList.add('swirl');
     });
-  </script>
+  } else {
+    if(overlay) {
+      overlay.style.display = 'flex';
+    }
+  }
+
+ if(window.matchMedia('(display-mode: standalone)').matches){
+  var welcomeInstallBox = document.getElementById('welcomeInstallContainer');
+  if(welcomeInstallBox) welcomeInstallBox.style.display = 'none';
+  isAppInstalled = true;
+}
+});
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){
+    document.querySelectorAll('.modal').forEach(function(m){m.style.display='none'});
+    document.documentElement.classList.remove('modal-open');
+  }
+});
+
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/ram1025/service-worker.js',{scope:'/ram1025/'})
+.catch(function(err){ console.log("Offline Layer Sync Error: ", err); });
+}
+
+setTimeout(function() {
+  var btnBox = document.getElementById('welcomeInstallContainer');
+  var isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+
+  if(btnBox &&!isStandalone) {
+     btnBox.style.display = 'block';
+  }
+}, 1000);
+
+document.getElementById('installBtnWelcome')?.addEventListener('click', triggerPwaInstallation);
+</script>
 </body>
-</html>
+  </html>
