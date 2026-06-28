@@ -8,32 +8,32 @@
   <style>
     * { margin:0; padding:0; box-sizing:border-box }
     body { background:#0a192f; color:#00ffaa; font-family:system-ui,sans-serif; padding:20px; text-align:center; min-height:100vh }
- .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
- .header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
- .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
- .back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
- .mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
- .mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 16px; border-radius:8px; cursor:pointer; font-weight:700; font-size:12px; flex:1; min-width:150px;}
- .mode-btn.active { background:#ffaa00; color:#0a192f }
- .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative }
- .pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
- .question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
- .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
- .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
- .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
- .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
- .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px }
- .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
- .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
- .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
- .mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
- .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer }
- .btn-check { background:#ffaa00; color:#0a192f }
- .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
- .stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
- .sub-btn { padding:12px 8px; background:#1a2332; border:1px solid #00ffaa40; border-radius:8px; color:#00ffaa; font-size:13px; font-weight:bold; cursor:pointer }
- .sub-btn:active {background:#00ffaa; color:#0a192f}
- .sub-list { display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40; }
+   .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
+   .header h1 { font-size:34px; text-shadow:0 0 15px #00ffaa; margin-bottom:8px; letter-spacing:2px; margin-left:70px }
+   .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
+   .back-btn { position:absolute; left:0; top:5px; background:#1a2332; color:#00ffaa; border:1px solid #00ffaa; padding:8px 16px; border-radius:8px; font-weight:700; cursor:pointer; font-size:14px; z-index:10 }
+   .mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
+   .mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:700; font-size:11px; flex:1; min-width:100px;}
+   .mode-btn.active { background:#ffaa00; color:#0a192f }
+   .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative }
+   .pillar { color:#ffaa00; font-size:13px; font-weight:800; margin-bottom:18px; text-transform:uppercase }
+   .question { font-size:24px; margin:25px 0; min-height:90px; line-height:1.4; color:#fff }
+   .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
+   .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
+   .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
+   .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
+   .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px }
+   .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
+   .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
+   .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
+   .mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
+   .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer }
+   .btn-check { background:#ffaa00; color:#0a192f }
+   .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
+   .stats b { color:#fff; font-size:20px; display:block; margin-top:5px }
+   .sub-btn { padding:12px 8px; background:#1a2332; border:1px solid #00ffaa40; border-radius:8px; color:#00ffaa; font-size:13px; font-weight:bold; cursor:pointer }
+   .sub-btn:active {background:#00ffaa; color:#0a192f}
+   .sub-list { display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40; }
   </style>
 </head>
 <body>
@@ -54,50 +54,50 @@
   <div id="schoolList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT CLASS: 14 × 20 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('LKG')">LKG</button>
-      <button class="sub-btn" onclick="selectTrack('UKG')">UKG</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS1')">CLASS 1</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS2')">CLASS 2</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS3')">CLASS 3</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS4')">CLASS 4</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS5')">CLASS 5</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS6')">CLASS 6</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS7')">CLASS 7</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS8')">CLASS 8</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS9')">CLASS 9</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS10')">CLASS 10</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS11')">CLASS 11</button>
-      <button class="sub-btn" onclick="selectTrack('CLASS12')">CLASS 12</button>
+      <button class="sub-btn" onclick="selectTrack('LKG')">LKG - 20</button>
+      <button class="sub-btn" onclick="selectTrack('UKG')">UKG - 20</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS1')">CLASS 1 - 20</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS2')">CLASS 2 - 20</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS3')">CLASS 3 - 20</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS4')">CLASS 4 - 20</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS5')">CLASS 5 - 20</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS6')">CLASS 6 - 20</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS7')">CLASS 7 - 20</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS8')">CLASS 8 - 20</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS9')">CLASS 9 - 20</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS10')">CLASS 10 - 20</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS11')">CLASS 11 - 20</button>
+      <button class="sub-btn" onclick="selectTrack('CLASS12')">CLASS 12 - 20</button>
     </div>
   </div>
 
   <div id="collegeList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT STREAM: 5 × 50 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('DEGREE')">DEGREE</button>
-      <button class="sub-btn" onclick="selectTrack('ENGINEERING')">ENGINEERING</button>
-      <button class="sub-btn" onclick="selectTrack('MBBS')">MBBS</button>
-      <button class="sub-btn" onclick="selectTrack('MBA_HR')">MBA HR</button>
-      <button class="sub-btn" onclick="selectTrack('MBA_FIN')">MBA FIN</button>
+      <button class="sub-btn" onclick="selectTrack('DEGREE')">DEGREE - 50</button>
+      <button class="sub-btn" onclick="selectTrack('ENGINEERING')">ENGINEERING - 50</button>
+      <button class="sub-btn" onclick="selectTrack('MBBS')">MBBS - 50</button>
+      <button class="sub-btn" onclick="selectTrack('MBA_HR')">MBA HR - 50</button>
+      <button class="sub-btn" onclick="selectTrack('MBA_FIN')">MBA FIN - 50</button>
     </div>
   </div>
 
   <div id="competitiveList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT EXAM: 5 × 68 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('UPSC')">UPSC</button>
-      <button class="sub-btn" onclick="selectTrack('NEET')">NEET</button>
-      <button class="sub-btn" onclick="selectTrack('JEE')">JEE</button>
-      <button class="sub-btn" onclick="selectTrack('SSC')">SSC</button>
-      <button class="sub-btn" onclick="selectTrack('BANKING')">BANKING</button>
+      <button class="sub-btn" onclick="selectTrack('UPSC')">UPSC - 68</button>
+      <button class="sub-btn" onclick="selectTrack('NEET')">NEET - 68</button>
+      <button class="sub-btn" onclick="selectTrack('JEE')">JEE - 68</button>
+      <button class="sub-btn" onclick="selectTrack('SSC')">SSC - 68</button>
+      <button class="sub-btn" onclick="selectTrack('BANKING')">BANKING - 68</button>
     </div>
   </div>
 
   <div id="othersList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT LEVEL: 2 × 65 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('GK')">GK</button>
-      <button class="sub-btn" onclick="selectTrack('PHD')">PHD</button>
+      <button class="sub-btn" onclick="selectTrack('GK')">GK - 65</button>
+      <button class="sub-btn" onclick="selectTrack('PHD')">PHD - 65</button>
     </div>
   </div>
 
@@ -142,12 +142,14 @@
       
       const jsonFile = DATA_FILES[currentMode];
       try {
+        document.querySelector('.card-content').innerHTML = `<div style="padding:40px;text-align:center;">Loading ${jsonFile}...</div>`;
         const response = await fetch(jsonFile);
         matrix = await response.json();
+        console.log(`✅ Loaded ${matrix.length} items from ${jsonFile}`);
         initBrain();
       } catch(err) {
         console.error('Load error:', err);
-        document.querySelector('.card-content').innerHTML = `<div style="padding:40px;text-align:center;"><h3>Error Loading Data</h3><p>${jsonFile} not found</p></div>`;
+        document.querySelector('.card-content').innerHTML = `<div style="padding:40px;text-align:center;"><h3>Error Loading Data</h3><p>${jsonFile} not found<br>Check GitHub upload</p></div>`;
       }
     }
 
@@ -164,7 +166,7 @@
 
     function showCard() {
       if (dueCards.length === 0) {
-        document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>No cards! 🎉</h3><p>Select a category</p></div>`;
+        document.querySelector('.card-content').innerHTML = `<div style="padding: 40px; text-align: center;"><h3>No cards found!</h3><p>Check JSON data for ${currentTrack}</p></div>`;
         document.getElementById('cardCounter').textContent = `0/0`;
         return;
       }
@@ -199,7 +201,7 @@
     function checkAnswer() {
       const input = document.getElementById('typeAnswerBox');
       const userAns = input.value.trim().toLowerCase();
-      const correctAns = currentCard.a.trim().toLowerCase(); // NEE FORMAT:.a
+      const correctAns = currentCard.a.trim().toLowerCase();
       if (userAns === correctAns) {
         input.classList.add('correct');
         input.disabled = true;
@@ -213,7 +215,7 @@
     }
 
     function checkMCQ(selected) {
-      const correctAns = currentCard.a; // NEE FORMAT:.a
+      const correctAns = currentCard.a;
       const buttons = document.querySelectorAll('#mcqOptions button');
       buttons.forEach(btn => {
         btn.disabled = true;
