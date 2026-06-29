@@ -1,7 +1,7 @@
-const CACHE_NAME = 'ram1025-v34-20251008'; // v32 → v34, date today
+const CACHE_NAME = 'ram1025-v34-20251008'; // v34 - ABST BRAIN fixes
 const BASE_PATH = '/ram1025/';
 
-// NEE SCREENSHOTS LO UNNA FILES ANNI - LIVE FEED TAPPA
+// ALL FILES TO CACHE - LIVE FEED TAPPA
 const urlsToCache = [
   BASE_PATH,
   BASE_PATH + 'index.html',
@@ -39,7 +39,7 @@ const urlsToCache = [
 
 // Install - Cache all files
 self.addEventListener('install', event => {
-  console.log('[SW] Installing v32 - Caching', urlsToCache.length, 'files...');
+  console.log('[SW] Installing v34 - Caching', urlsToCache.length, 'files...');
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
@@ -62,7 +62,7 @@ self.addEventListener('install', event => {
 
 // Activate - Delete old caches
 self.addEventListener('activate', event => {
-  console.log('[SW] Activating v32...');
+  console.log('[SW] Activating v34...');
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(
@@ -142,4 +142,7 @@ self.addEventListener('fetch', event => {
         if (event.request.destination === 'document') {
           return caches.match(BASE_PATH + 'index.html');
         }
-        return new Response('Offline', {
+        return new Response('Offline', { status: 503, statusText: 'Service Unavailable' });
+      })
+  );
+});
