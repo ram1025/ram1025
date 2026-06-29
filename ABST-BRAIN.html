@@ -195,9 +195,9 @@
     }
 
     function clearAllModeActive() {
-      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
-    }
+  document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
+}
 
     async function loadMatrixFromGitHub() {
       const version = Date.now();
