@@ -80,11 +80,11 @@
   <div id="collegeList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT STREAM: 5 × 50 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectSubTrack('DEGREE')">DEGREE<span class="sub-count">50 Q</span></button>
-<button class="sub-btn" onclick="selectSubTrack('ENGINEERING')">ENGINEERING<span class="sub-count">50 Q</span></button>
-<button class="sub-btn" onclick="selectSubTrack('MBBS')">MBBS<span class="sub-count">50 Q</span></button>
-<button class="sub-btn" onclick="selectSubTrack('MBA-HR')">MBA-HR<span class="sub-count">50 Q</span></button>
-<button class="sub-btn" onclick="selectSubTrack('MBA-FIN')">MBA-FIN<span class="sub-count">50 Q</span></button>
+<button class="sub-btn" onclick="selectSubTrack('DEGREE', this)">DEGREE<span class="sub-count">50 Q</span></button>
+<button class="sub-btn" onclick="selectSubTrack('ENGINEERING', this)">ENGINEERING<span class="sub-count">50 Q</span></button>
+<button class="sub-btn" onclick="selectSubTrack('MBBS', this)">MBBS<span class="sub-count">50 Q</span></button>
+<button class="sub-btn" onclick="selectSubTrack('MBA-HR', this)">MBA-HR<span class="sub-count">50 Q</span></button>
+<button class="sub-btn" onclick="selectSubTrack('MBA-FIN', this)">MBA-FIN<span class="sub-count">50 Q</span></button>
   </div>
 
   <div id="competitiveList" class="sub-list">
@@ -190,11 +190,10 @@
       loadMatrixFromGitHub();
     }
 
-    function selectSubTrack(track) {
+    function selectSubTrack(track, btnElement) {
   document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
-  
-  // ID RANGE FILTER
+  btnElement.classList.add('active');
+
   currentDeck = matrix.filter(card => {
     if (track === 'DEGREE') return card.id >= 281 && card.id <= 330;
     if (track === 'ENGINEERING') return card.id >= 331 && card.id <= 380;
@@ -203,7 +202,7 @@
     if (track === 'MBA-FIN') return card.id >= 481 && card.id <= 530;
     return card.category === track;
   });
-  
+
   dueCards = currentDeck;
   currentIndex = 0;
   showCard();
