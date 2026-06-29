@@ -158,13 +158,14 @@
       document.getElementById('schoolList').style.display = 'block';
     }
 
-    function showCollegeList() {
-      currentMode = 'college';
-      clearAllModeActive();
-      document.getElementById('collegeMode').classList.add('active');
-      hideAllSubLists();
-      document.getElementById('collegeList').style.display = 'block';
-    }
+   function showCollegeList() {
+  currentMode = 'college';
+  clearAllModeActive();
+  document.getElementById('collegeMode').classList.add('active');
+  hideAllSubLists();
+  document.getElementById('collegeList').style.display = 'block';
+  loadMatrixFromGitHub(); // Add this
+}
 
     function showCompetitiveList() {
       currentMode = 'competitive';
