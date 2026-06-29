@@ -11,7 +11,7 @@
     body { background:#0a192f; color:#00ffaa; font-family:system-ui,sans-serif; padding:20px; text-align:center; min-height:100vh }
    .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
    .header h1 { font-size: 28px; margin-left: 85px; padding-top: 5px; line-height: 1.1; text-shadow: 0 0 15px #ffaa00; }
-   .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:45px; width:100% }
+   .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:55px; width:100% }
    .back-btn { position: absolute; left: 8px; top: 10px; font-size: 12px; padding: 4px 8px; background: #1a2332; color: #00ffaa; border: 2px solid #00ffaa; border-radius: 8px; }
    .mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
    .mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:700; font-size:11px; flex:1; min-width:100px; position:relative }
@@ -80,12 +80,11 @@
   <div id="collegeList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT STREAM: 5 × 50 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('DEGREE', this)">DEGREE<span class="sub-count">50 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('ENGINEERING', this)">ENGINEERING<span class="sub-count">50 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('MBBS', this)">MBBS<span class="sub-count">50 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('MBA-HR', this)">MBA-HR<span class="sub-count">50 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('MBA-FIN', this)">MBA-FIN<span class="sub-count">50 Q</span></button>
-    </div>
+      <button class="sub-btn" onclick="selectSubTrack('DEGREE')">DEGREE<span class="sub-count">50 Q</span></button>
+<button class="sub-btn" onclick="selectSubTrack('ENGINEERING')">ENGINEERING<span class="sub-count">50 Q</span></button>
+<button class="sub-btn" onclick="selectSubTrack('MBBS')">MBBS<span class="sub-count">50 Q</span></button>
+<button class="sub-btn" onclick="selectSubTrack('MBA-HR')">MBA-HR<span class="sub-count">50 Q</span></button>
+<button class="sub-btn" onclick="selectSubTrack('MBA-FIN')">MBA-FIN<span class="sub-count">50 Q</span></button>
   </div>
 
   <div id="competitiveList" class="sub-list">
@@ -191,9 +190,24 @@
       loadMatrixFromGitHub();
     }
 
-    function clearAllModeActive() {
-  document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+    function selectSubTrack(track) {
   document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  
+  // ID RANGE FILTER
+  currentDeck = matrix.filter(card => {
+    if (track === 'DEGREE') return card.id >= 281 && card.id <= 330;
+    if (track === 'ENGINEERING') return card.id >= 331 && card.id <= 380;
+    if (track === 'MBBS') return card.id >= 381 && card.id <= 430;
+    if (track === 'MBA-HR') return card.id >= 431 && card.id <= 480;
+    if (track === 'MBA-FIN') return card.id >= 481 && card.id <= 530;
+    return card.category === track;
+  });
+  
+  dueCards = currentDeck;
+  currentIndex = 0;
+  showCard();
+  updateStats();
 }
 
     async function loadMatrixFromGitHub() {
