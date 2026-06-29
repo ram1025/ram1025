@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ram1025-v32-20251007'; // v31 → v32 chesanu, date marchanu
+const CACHE_NAME = 'ram1025-v34-20251008'; // v32 → v34, date today
 const BASE_PATH = '/ram1025/';
 
 // NEE SCREENSHOTS LO UNNA FILES ANNI - LIVE FEED TAPPA
