@@ -101,35 +101,42 @@
     .feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
     .btn-group { display:flex; justify-content:center; gap:10px; flex-wrap:wrap }
     @keyframes pulse { 0%,100% { transform:scale(1); } 50% { transform:scale(1.1); } }
-</style>
+    </style>
 </head>
 <body>
     <div class="header">
         <h1>ABST GAME</h1>
         <p>SOVEREIGN ID: INDIAN.001 | LEVEL MASTER</p>
     </div>
+    
     <div class="game-toggle">
-    <button class="mode-btn active" id="speedMode">⚡ SPEED</button>
-    <button class="mode-btn" id="scrambleMode">🔤 SCRAMBLE</button>
-    <button class="mode-btn" id="wisdomMode">🧠 WISDOM</button>
-    <button class="mode-btn" id="kidsMode">👶 KIDS</button> <!-- NEW LINE -->
-</div>
+        <button class="mode-btn active" id="speedMode">⚡ SPEED</button>
+        <button class="mode-btn" id="scrambleMode">🔤 SCRAMBLE</button>
+        <button class="mode-btn" id="wisdomMode">🧠 WISDOM</button>
+        <button class="mode-btn" id="kidsMode">👶 KIDS</button>
+    </div>
+    
     <div class="score-board">
         <div>Score<b id="score">0</b></div>
         <div>Hints<b id="hintCount">10</b></div>
         <div>Level<b id="levelDisplay">1/56</b></div>
     </div>
+    
     <div class="level-info" id="levelInfo">
         <div>Target: <span id="targetScore">20</span> | Time: <span id="targetTime">25s</span></div>
     </div>
-    <div class="game-area" id="gameArea">
-        <button id="closeGameBtn" class="close-btn">✖ CLOSE</button>
-        <div id="speedGame">
+    
+    <!-- GAME SCREEN - Ikkada anni games untayi -->
+    <div class="game-area" id="gameScreen" style="display:none; border:2px solid #f0f; border-radius:15px; padding:20px; margin:20px; min-height:400px;">
+        <button id="closeGameBtn" class="close-btn" style="background:#f00; color:#fff; border:none; padding:10px 20px; border-radius:8px; float:right; cursor:pointer;">✖ CLOSE</button>
+        
+        <div id="speedGame" style="display:none;">
             <div class="timer-display" id="timerDisplay">Ready?</div>
             <div class="target" id="target"></div>
             <button class="btn" id="startBtn">START GAME</button>
         </div>
-        <div id="scrambleGame" style="display:none">
+        
+        <div id="scrambleGame" style="display:none;">
             <div class="scramble-word" id="scrambleWord">READY?</div>
             <div class="scramble-hint" id="scrambleHint">Unscramble the word</div>
             <input class="answer-input" id="scrambleInput" placeholder="Type answer..." style="display:none">
@@ -140,7 +147,8 @@
                 <button class="btn btn-small" id="scrambleNextBtn" style="display:none">Next Word</button>
             </div>
         </div>
-        <div id="wisdomGame" style="display:none">
+        
+        <div id="wisdomGame" style="display:none;">
             <div class="wisdom-text" id="wisdomText">Ready for Wisdom?</div>
             <input class="answer-input" id="wisdomInput" placeholder="Your answer..." style="display:none">
             <div class="feedback-msg" id="wisdomFeedback"></div>
@@ -149,27 +157,30 @@
                 <button class="btn btn-small" id="wisdomHintBtn" style="display:none">Use Hint (-1)</button>
                 <button class="btn btn-small" id="wisdomNextBtn" style="display:none">Next Question</button>
             </div>
-                <div id="kidsGame" style="display:none">
-            <div class="wisdom-text" id="kidsQuestion" style="font-size:24px;">Choose a Category</div>
+        </div>
+        
+        <!-- KIDS GAME - Bayataki teesa -->
+        <div id="kidsGame" style="display:none;">
+            <div class="wisdom-text" id="kidsQuestion" style="font-size:24px; text-align:center; color:#f0f; margin:20px 0;">Choose a Category</div>
 
             <!-- Category Buttons -->
-            <div class="btn-group" id="kidsCategories">
-                <button class="btn btn-small" onclick="startKidsCategory('fruits')">🍎 Fruits</button>
-                <button class="btn btn-small" onclick="startKidsCategory('pets')">🐶 Pets</button>
-                <button class="btn btn-small" onclick="startKidsCategory('wild')">🦁 Wild</button>
-                <button class="btn btn-small" onclick="startKidsCategory('veggies')">🥕 Veggies</button>
-                <button class="btn btn-small" onclick="startKidsCategory('numbers')">1️⃣ Numbers</button>
+            <div class="btn-group" id="kidsCategories" style="display:grid; grid-template-columns:repeat(2,1fr); gap:15px; max-width:400px; margin:20px auto;">
+                <button class="btn" onclick="startKidsCategory('fruits')" style="background:#112; padding:25px; border:2px solid #f0f; border-radius:15px; color:#fff; font-size:1.1rem; cursor:pointer;">🍎 Fruits</button>
+                <button class="btn" onclick="startKidsCategory('pets')" style="background:#112; padding:25px; border:2px solid #f0f; border-radius:15px; color:#fff; font-size:1.1rem; cursor:pointer;">🐶 Pets</button>
+                <button class="btn" onclick="startKidsCategory('wild')" style="background:#112; padding:25px; border:2px solid #f0f; border-radius:15px; color:#fff; font-size:1.1rem; cursor:pointer;">🦁 Wild</button>
+                <button class="btn" onclick="startKidsCategory('veggies')" style="background:#112; padding:25px; border:2px solid #f0f; border-radius:15px; color:#fff; font-size:1.1rem; cursor:pointer;">🥕 Veggies</button>
+                <button class="btn" onclick="startKidsCategory('numbers')" style="background:#112; padding:25px; border:2px solid #f0f; border-radius:15px; color:#fff; font-size:1.1rem; cursor:pointer; grid-column:span 2;">1️⃣ Numbers</button>
             </div>
 
             <!-- Game Grid -->
-            <div id="kidsGrid" style="display:none; grid-template-columns:repeat(5, 1fr); gap:15px; margin:20px 0; max-width:500px; margin-left:auto; margin-right:auto;"></div>
+            <div id="kidsGrid" style="display:none; grid-template-columns:repeat(5, 1fr); gap:15px; margin:20px auto; max-width:500px;"></div>
 
-            <div class="feedback-msg" id="kidsFeedback" style="font-size:20px; color:#ffd700; min-height:30px;"></div>
-            <button class="btn btn-small" id="kidsBackBtn" onclick="backToKidsMenu()" style="display:none; margin-top:20px;">← Back to Menu</button>
+            <div class="feedback-msg" id="kidsFeedback" style="font-size:20px; color:#ffd700; min-height:30px; text-align:center; margin:15px;"></div>
+            <button class="btn btn-small" id="kidsBackBtn" onclick="backToKidsMenu()" style="display:none; margin:20px auto; background:#f0f; color:#000; padding:10px 30px; border:none; border-radius:10px; font-weight:bold; cursor:pointer;">← Back to Menu</button>
         </div>
         
     </div>
-        <script>
+    <script>
              // KIDS GAME FUNCTIONS
     let kidsScore = 0;
     const kidsData = {
