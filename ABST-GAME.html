@@ -178,6 +178,7 @@
     let scrambleScore = 0, scrambleAsked = [], currentScramble = null;
     let kidsCurrentPage = 0;
     let kidsAllItems = [];
+    let kidsScore = 0; ← Ikkada add chey
 
     let kidsBGM = new Audio('https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3');
     kidsBGM.loop = true; kidsBGM.volume = 0.2;
@@ -246,39 +247,37 @@
     }
 
     function switchMode(mode) {
-        clearInterval(gameTimer);
-        kidsBGM.pause();
-        gameActive = false;
-        currentMode = mode;
+    clearInterval(gameTimer);
+    kidsBGM.pause(); // BGM stop
+    kidsBGM.currentTime = 0;
+    gameActive = false;
+    currentMode = mode;
 
-        document.getElementById('speedGame').style.display = 'none';
-        document.getElementById('scrambleGame').style.display = 'none';
-        document.getElementById('wisdomGame').style.display = 'none';
-        document.getElementById('kidsGame').style.display = 'none';
+    document.getElementById('speedGame').style.display = 'none';
+    document.getElementById('scrambleGame').style.display = 'none';
+    document.getElementById('wisdomGame').style.display = 'none';
+    document.getElementById('kidsGame').style.display = 'none';
 
-        document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
 
-        if (mode === 'speed') {
-            document.getElementById('speedMode').classList.add('active');
-            document.getElementById('speedGame').style.display = 'block';
-            startSpeedGame();
-        }
-        else if (mode === 'scramble') {
-            document.getElementById('scrambleMode').classList.add('active');
-            document.getElementById('scrambleGame').style.display = 'block';
-            startScrambleGame();
-        }
-        else if (mode === 'wisdom') {
-            document.getElementById('wisdomMode').classList.add('active');
-            document.getElementById('wisdomGame').style.display = 'block';
-            startWisdomGame();
-        }
-        else if (mode === 'kids') {
-            document.getElementById('kidsMode').classList.add('active');
-            document.getElementById('kidsGame').style.display = 'block';
-            startKidsGame();
-        }
+    if (mode === 'speed') {
+        document.getElementById('speedMode').classList.add('active');
+        document.getElementById('speedGame').style.display = 'block';
+        startSpeedGame();
+    } else if (mode === 'scramble') {
+        document.getElementById('scrambleMode').classList.add('active');
+        document.getElementById('scrambleGame').style.display = 'block';
+        startScrambleGame();
+    } else if (mode === 'wisdom') {
+        document.getElementById('wisdomMode').classList.add('active');
+        document.getElementById('wisdomGame').style.display = 'block';
+        startWisdomGame();
+    } else if (mode === 'kids') {
+        document.getElementById('kidsMode').classList.add('active');
+        document.getElementById('kidsGame').style.display = 'block';
+        startKidsGame();
     }
+}
 
     function startSpeedGame() {
         resetGame();
@@ -500,19 +499,24 @@
     }
 
     function backToKidsMenu() {
-        document.getElementById('kidsCategories').style.display = 'grid';
-        document.getElementById('kidsGrid').style.display = 'none';
-        document.getElementById('kidsBackBtn').style.display = 'none';
-        document.getElementById('kidsQuestion').textContent = 'Choose a Category';
-        document.getElementById('kidsFeedback').textContent = '';
-        kidsScore = 0;
-    }
+    kidsBGM.pause();
+    kidsBGM.currentTime = 0;
+    document.getElementById('kidsCategories').style.display = 'grid';
+    document.getElementById('kidsGrid').style.display = 'none';
+    document.getElementById('kidsBackBtn').style.display = 'none';
+    document.getElementById('kidsQuestion').textContent = 'Choose a Category';
+    document.getElementById('kidsFeedback').textContent = '';
+    kidsScore = 0;
+}
 
    function startKidsCategory(cat) {
     document.getElementById('kidsCategories').style.display = 'none';
     document.getElementById('kidsGrid').style.display = 'grid';
     document.getElementById('kidsBackBtn').style.display = 'block';
     document.getElementById('kidsFeedback').textContent = '';
+
+    // FIXED: No quotes
+    document.getElementById('kidsQuestion').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
 
     kidsScore = 0;
     kidsCurrentPage = 0;
@@ -523,12 +527,10 @@
 
     renderKidsPage();
 }
-
 function renderKidsPage() {
     const grid = document.getElementById('kidsGrid');
     grid.innerHTML = '';
 
-    // Show 10 items per page
     const start = kidsCurrentPage * 10;
     const end = start + 10;
     const pageItems = kidsAllItems.slice(start, end);
@@ -560,6 +562,7 @@ function renderKidsPage() {
         };
         grid.appendChild(div);
     });
+}
 
     // Add Next/Prev buttons if more than 10 items
     if (kidsAllItems.length > 10) {
