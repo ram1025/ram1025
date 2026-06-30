@@ -9,37 +9,37 @@
   <style>
     * { margin:0; padding:0; box-sizing:border-box }
     body { background:#0a192f; color:#00ffaa; font-family:system-ui,sans-serif; padding:20px; text-align:center; min-height:100vh }
-   .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
-   .header h1 { font-size: 28px; margin-left: 85px; padding-top: 5px; line-height: 1.1; text-shadow: 0 0 15px #ffaa00; }
-   .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:55px; width:100% }
-   .back-btn { position: absolute; left: 8px; top: 10px; font-size: 12px; padding: 4px 8px; background: #1a2332; color: #00ffaa; border: 2px solid #00ffaa; border-radius: 8px; }
-   .mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
-   .mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:700; font-size:11px; flex:1; min-width:100px; position:relative }
-   .mode-btn.active { background:#ffaa00; color:#0a192f }
-   .count { display:block; font-size:10px; color:#64ffda; margin-top:2px; }
-   .mode-btn.active .count { color:#0a192f }
-   .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative }
-   .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
-   .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
-   .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
-   .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
-   .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px }
-   .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
-   .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
-   .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
-   .mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
-   .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer }
-   .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
-   .sub-btn.active .sub-count { color:#0a192f!important }
-   .sub-count { display:block; font-size:10px; color:#64ffda; margin-top:2px; }
-   .sub-list { display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40; }
-   .srs-buttons { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:20px 0 }
-   .srs-btn { padding:12px 8px; border-radius:10px; font-weight:800; font-size:13px; cursor:pointer; border:2px solid; display:flex; flex-direction:column; align-items:center; }
-   .srs-again { background:#1a2332; color:#ff4444; border-color:#ff4444 }
-   .srs-hard { background:#1a2332; color:#ffaa00; border-color:#ffaa00 }
-   .srs-good { background:#1a2332; color:#44ff88; border-color:#44ff88 }
-   .srs-easy { background:#1a2332; color:#00aaff; border-color:#00aaff }
-   .srs-interval { font-size:10px; opacity:0.7; margin-top:2px; }
+  .header { margin-bottom:20px; position:relative; display:flex; align-items:center; justify-content:center }
+  .header h1 { font-size: 28px; margin-left: 85px; padding-top: 5px; line-height: 1.1; text-shadow: 0 0 15px #ffaa00; }
+  .header p { color:#ffaa00; font-size:14px; font-weight:700; position:absolute; top:55px; width:100% }
+  .back-btn { position: absolute; left: 8px; top: 10px; font-size: 12px; padding: 4px 8px; background: #1a2332; color: #00ffaa; border: 2px solid #00ffaa; border-radius: 8px; }
+  .mode-toggle,.answer-mode-toggle {background:#112240; border:1px solid #ffaa00; padding:10px; border-radius:10px; margin:15px auto; max-width:550px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap }
+  .mode-btn {background:#1a2332; color:#8892b0; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:700; font-size:11px; flex:1; min-width:100px; position:relative }
+  .mode-btn.active { background:#ffaa00; color:#0a192f }
+  .count { display:block; font-size:10px; color:#64ffda; margin-top:2px; }
+  .mode-btn.active.count { color:#0a192f }
+  .card { background:linear-gradient(145deg,#1a2332,#0f1723); padding:35px; border-radius:24px; border:2px solid #00ffaa; min-height:320px; margin:20px auto; max-width:550px; box-shadow:0 0 40px #00ffaa20; position:relative }
+  .answer-input { width:100%; padding:14px; background:#0a192f; border:2px solid #00ffaa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
+  .answer-input.correct { border-color:#44ff88; background:#44ff8810 }
+  .answer-input.wrong { border-color:#ff4444; background:#ff444410 }
+  .mcq-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:20px 0 }
+  .mcq-btn { background:#1a2332; color:#fff; border:2px solid #00ffaa40; padding:15px; border-radius:10px; cursor:pointer; font-size:15px }
+  .mcq-btn:hover { border-color:#00ffaa; background:#00ffaa20 }
+  .mcq-btn.correct { background:#44ff88; color:#0a192f; border-color:#44ff88 }
+  .mcq-btn.wrong { background:#ff4444; color:#fff; border-color:#ff4444 }
+  .mcq-btn:disabled { opacity:0.6; cursor:not-allowed }
+  .btn { background:#00ffaa; color:#0a192f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer }
+  .stats { display:flex; justify-content:space-around; margin:35px auto; max-width:550px; font-size:15px; background:#1a2332; padding:20px; border-radius:16px; border:1px solid #00ffaa40 }
+  .sub-btn.active.sub-count { color:#0a192f!important }
+  .sub-count { display:block; font-size:10px; color:#64ffda; margin-top:2px; }
+  .sub-list { display:none; margin:15px auto; max-width:550px; background:#112240; padding:15px; border-radius:12px; border:1px solid #00ffaa40; }
+  .srs-buttons { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:20px 0 }
+  .srs-btn { padding:12px 8px; border-radius:10px; font-weight:800; font-size:13px; cursor:pointer; border:2px solid; display:flex; flex-direction:column; align-items:center; }
+  .srs-again { background:#1a2332; color:#ff4444; border-color:#ff4444 }
+  .srs-hard { background:#1a2332; color:#ffaa00; border-color:#ffaa00 }
+  .srs-good { background:#1a2332; color:#44ff88; border-color:#44ff88 }
+  .srs-easy { background:#1a2332; color:#00aaff; border-color:#00aaff }
+  .srs-interval { font-size:10px; opacity:0.7; margin-top:2px; }
   </style>
 </head>
 <body>
@@ -51,58 +51,59 @@
 
   <div class="mode-toggle">
     <button class="mode-btn active" id="pillarsMode">🏛 36 PILLARS<span class="count">108 Q</span></button>
-    <button class="mode-btn" id="schoolMode" onclick="showSchoolList()">📚 SCHOOL<span class="count">280 Q</span></button>
-    <button class="mode-btn" id="collegeMode" onclick="showCollegeList()">🎓 COLLEGE<span class="count">250 Q</span></button>
-    <button class="mode-btn" id="competitiveMode" onclick="showCompetitiveList()">🏆 COMPETITIVE<span class="count">340 Q</span></button>
-    <button class="mode-btn" id="othersMode" onclick="showOthersList()">📖 OTHERS<span class="count">130 Q</span></button>
+    <button class="mode-btn" id="schoolMode">📚 SCHOOL<span class="count">280 Q</span></button>
+    <button class="mode-btn" id="collegeMode">🎓 COLLEGE<span class="count">250 Q</span></button>
+    <button class="mode-btn" id="competitiveMode">🏆 COMPETITIVE<span class="count">340 Q</span></button>
+    <button class="mode-btn" id="othersMode">📖 OTHERS<span class="count">130 Q</span></button>
   </div>
 
   <div id="schoolList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT CLASS: 14 × 20 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('LKG', this)">LKG<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('UKG', this)">UKG<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('CLASS1', this)">CLASS 1<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('CLASS2', this)">CLASS 2<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('CLASS3', this)">CLASS 3<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('CLASS4', this)">CLASS 4<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('CLASS5', this)">CLASS 5<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('CLASS6', this)">CLASS 6<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('CLASS7', this)">CLASS 7<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('CLASS8', this)">CLASS 8<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('CLASS9', this)">CLASS 9<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('CLASS10', this)">CLASS 10<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('CLASS11', this)">CLASS 11<span class="sub-count">20 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('CLASS12', this)">CLASS 12<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="LKG">LKG<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="UKG">UKG<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="CLASS1">CLASS 1<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="CLASS2">CLASS 2<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="CLASS3">CLASS 3<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="CLASS4">CLASS 4<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="CLASS5">CLASS 5<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="CLASS6">CLASS 6<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="CLASS7">CLASS 7<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="CLASS8">CLASS 8<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="CLASS9">CLASS 9<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="CLASS10">CLASS 10<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="CLASS11">CLASS 11<span class="sub-count">20 Q</span></button>
+      <button class="sub-btn" data-track="CLASS12">CLASS 12<span class="sub-count">20 Q</span></button>
     </div>
   </div>
 
   <div id="collegeList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT STREAM: 5 × 50 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
-<button class="sub-btn" onclick="selectSubTrack('DEGREE', this)">DEGREE<span class="sub-count">50 Q</span></button>
-<button class="sub-btn" onclick="selectSubTrack('ENGINEERING', this)">ENGINEERING<span class="sub-count">50 Q</span></button>
-<button class="sub-btn" onclick="selectSubTrack('MBBS', this)">MBBS<span class="sub-count">50 Q</span></button>
-<button class="sub-btn" onclick="selectSubTrack('MBA-HR', this)">MBA-HR<span class="sub-count">50 Q</span></button>
-<button class="sub-btn" onclick="selectSubTrack('MBA-FIN', this)">MBA-FIN<span class="sub-count">50 Q</span></button>
+      <button class="sub-btn" data-track="DEGREE">DEGREE<span class="sub-count">50 Q</span></button>
+      <button class="sub-btn" data-track="ENGINEERING">ENGINEERING<span class="sub-count">50 Q</span></button>
+      <button class="sub-btn" data-track="MBBS">MBBS<span class="sub-count">50 Q</span></button>
+      <button class="sub-btn" data-track="MBA-HR">MBA-HR<span class="sub-count">50 Q</span></button>
+      <button class="sub-btn" data-track="MBA-FIN">MBA-FIN<span class="sub-count">50 Q</span></button>
+    </div>
   </div>
 
   <div id="competitiveList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT EXAM: 5 × 68 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('UPSC', this)">UPSC<span class="sub-count">68 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('NEET', this)">NEET<span class="sub-count">68 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('JEE', this)">JEE<span class="sub-count">68 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('SSC', this)">SSC<span class="sub-count">68 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('BANKING', this)">BANKING<span class="sub-count">68 Q</span></button>
+      <button class="sub-btn" data-track="UPSC">UPSC<span class="sub-count">68 Q</span></button>
+      <button class="sub-btn" data-track="NEET">NEET<span class="sub-count">68 Q</span></button>
+      <button class="sub-btn" data-track="JEE">JEE<span class="sub-count">68 Q</span></button>
+      <button class="sub-btn" data-track="SSC">SSC<span class="sub-count">68 Q</span></button>
+      <button class="sub-btn" data-track="BANKING">BANKING<span class="sub-count">68 Q</span></button>
     </div>
   </div>
 
   <div id="othersList" class="sub-list">
     <div style="color:#ffd700; font-size:13px; font-weight:bold; margin-bottom:12px;">SELECT LEVEL: 2 × 65 Q/A</div>
     <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:8px;">
-      <button class="sub-btn" onclick="selectTrack('GK', this)">GK<span class="sub-count">65 Q</span></button>
-      <button class="sub-btn" onclick="selectTrack('PHD', this)">PHD<span class="sub-count">65 Q</span></button>
+      <button class="sub-btn" data-track="GK">GK<span class="sub-count">65 Q</span></button>
+      <button class="sub-btn" data-track="PHD">PHD<span class="sub-count">65 Q</span></button>
     </div>
   </div>
 
@@ -141,6 +142,10 @@
       'others': './Education-others-130.json'
     };
 
+    function clearAllModeActive() {
+      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+    }
+
     document.getElementById('pillarsMode').onclick = () => {
       currentMode = 'pillars';
       currentTrack = 'GENERAL';
@@ -158,14 +163,14 @@
       document.getElementById('schoolList').style.display = 'block';
     }
 
-   function showCollegeList() {
-  currentMode = 'college';
-  clearAllModeActive();
-  document.getElementById('collegeMode').classList.add('active');
-  hideAllSubLists();
-  document.getElementById('collegeList').style.display = 'block';
-  loadMatrixFromGitHub(); // Add this
-}
+    function showCollegeList() {
+      currentMode = 'college';
+      clearAllModeActive();
+      document.getElementById('collegeMode').classList.add('active');
+      hideAllSubLists();
+      document.getElementById('collegeList').style.display = 'block';
+      loadMatrixFromGitHub();
+    }
 
     function showCompetitiveList() {
       currentMode = 'competitive';
@@ -192,23 +197,24 @@
     }
 
     function selectSubTrack(track, btnElement) {
-  document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
-  btnElement.classList.add('active');
+      document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
+      btnElement.classList.add('active');
+      currentTrack = track;
 
-  currentDeck = matrix.filter(card => {
-    if (track === 'DEGREE') return card.id >= 281 && card.id <= 330;
-    if (track === 'ENGINEERING') return card.id >= 331 && card.id <= 380;
-    if (track === 'MBBS') return card.id >= 381 && card.id <= 430;
-    if (track === 'MBA-HR') return card.id >= 431 && card.id <= 480;
-    if (track === 'MBA-FIN') return card.id >= 481 && card.id <= 530;
-    return card.category === track;
-  });
+      currentDeck = matrix.filter(card => {
+        if (track === 'DEGREE') return card.id >= 281 && card.id <= 330;
+        if (track === 'ENGINEERING') return card.id >= 331 && card.id <= 380;
+        if (track === 'MBBS') return card.id >= 381 && card.id <= 430;
+        if (track === 'MBA-HR') return card.id >= 431 && card.id <= 480;
+        if (track === 'MBA-FIN') return card.id >= 481 && card.id <= 530;
+        return card.category === track;
+      });
 
-  dueCards = currentDeck;
-  currentIndex = 0;
-  showCard();
-  updateStats();
-}
+      dueCards = currentDeck;
+      currentIndex = 0;
+      showCard();
+      updateStats();
+    }
 
     async function loadMatrixFromGitHub() {
       const version = Date.now();
@@ -234,10 +240,10 @@
       if(currentMode === 'pillars') {
         dueCards = matrix.filter(c => c.due <= now);
       } else {
-        dueCards = matrix.filter(c => c.category.toUpperCase() === currentTrack && c.due <= now);
+        dueCards = matrix.filter(c => (c.category || '').toUpperCase() === currentTrack && c.due <= now);
       }
       if(dueCards.length === 0 && matrix.length > 0) {
-        dueCards = matrix.filter(c => currentMode === 'pillars'? true : c.category.toUpperCase() === currentTrack);
+        dueCards = matrix.filter(c => currentMode === 'pillars'? true : (c.category || '').toUpperCase() === currentTrack);
       }
       currentIndex = 0;
       updateStats();
@@ -381,20 +387,27 @@
     }
 
     function updateStats() {
-  const now = Date.now();
-  let filteredMatrix = matrix;
-  
-  // SCHOOL or COLLEGE filter
-  if(currentMode === 'school' && currentTrack) {
-    filteredMatrix = matrix.filter(c => c.category.toUpperCase() === currentTrack.toUpperCase());
-  } else if(currentMode === 'college' && currentTrack) {
-    filteredMatrix = matrix.filter(c => c.category.toUpperCase() === currentTrack.toUpperCase());
-  }
-  
-  const dueCount = filteredMatrix.filter(c => c.due <= now).length;
-  document.getElementById('dueCount').innerText = dueCount;
-  document.getElementById('totalCount').innerHTML = filteredMatrix.length + '<br>/' + filteredMatrix.length;
-}
+      const now = Date.now();
+      let filteredMatrix = matrix;
+
+      if(currentMode === 'school' && currentTrack && currentTrack!== 'GENERAL') {
+        filteredMatrix = matrix.filter(c => (c.category || '').toUpperCase() === currentTrack.toUpperCase());
+      } else if(currentMode === 'college' && currentTrack && currentTrack!== 'GENERAL') {
+        filteredMatrix = matrix.filter(c => {
+          if (currentTrack === 'DEGREE') return c.id >= 281 && c.id <= 330;
+          if (currentTrack === 'ENGINEERING') return c.id >= 331 && c.id <= 380;
+          if (currentTrack === 'MBBS') return c.id >= 381 && c.id <= 430;
+          if (currentTrack === 'MBA-HR') return c.id >= 431 && c.id <= 480;
+          if (currentTrack === 'MBA-FIN') return c.id >= 481 && c.id <= 530;
+          return (c.category || '').toUpperCase() === currentTrack.toUpperCase();
+        });
+      }
+
+      const dueCount = filteredMatrix.filter(c => c.due <= now).length;
+      document.getElementById('dueCount').innerText = dueCount;
+      document.getElementById('totalCount').innerHTML = filteredMatrix.length + '<br>/' + filteredMatrix.length;
+    }
+
     function hideAllSubLists() {
       document.getElementById('schoolList').style.display = 'none';
       document.getElementById('collegeList').style.display = 'none';
@@ -402,24 +415,29 @@
       document.getElementById('othersList').style.display = 'none';
     }
 
-    // FIXED: Single selection for TYPE/MCQ/FLIP
+    // Event Listeners
+    document.getElementById('schoolMode').onclick = showSchoolList;
+    document.getElementById('collegeMode').onclick = showCollegeList;
+    document.getElementById('competitiveMode').onclick = showCompetitiveList;
+    document.getElementById('othersMode').onclick = showOthersList;
+
     document.getElementById('typeMode').onclick = () => {
       answerMode = 'type';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
       document.getElementById('typeMode').classList.add('active');
       showCard();
     };
 
     document.getElementById('mcqMode').onclick = () => {
       answerMode = 'mcq';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
       document.getElementById('mcqMode').classList.add('active');
       showCard();
     };
 
     document.getElementById('flipMode').onclick = () => {
       answerMode = 'flip';
-      document.querySelectorAll('.answer-mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.answer-mode-toggle. mode-btn').forEach(b => b.classList.remove('active'));
       document.getElementById('flipMode').classList.add('active');
       showCard();
     };
@@ -427,6 +445,22 @@
     document.getElementById('homeBtn').onclick = () => {
       window.location.href = '/ram1025/';
     };
+
+    // Sub button delegation - iPhone/Android fix
+    document.addEventListener('click', function(e) {
+      const btn = e.target.closest('.sub-btn');
+      if (!btn) return;
+
+      const track = btn.dataset.track;
+      document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      if(currentMode === 'college') {
+        selectSubTrack(track, btn);
+      } else {
+        selectTrack(track, btn);
+      }
+    });
 
     window.addEventListener('load', () => {
       loadMatrixFromGitHub();
