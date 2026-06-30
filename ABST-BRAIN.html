@@ -175,36 +175,63 @@
   document.getElementById('schoolMode').classList.add('active');
   hideAllSubLists();
   document.getElementById('schoolList').style.display = 'block';
-  loadMatrixFromGitHub(); // ← idhi add chey
-    }
 
-    function showCollegeList() {
+  // Sub-buttons anni malli show chey
+  document.querySelectorAll('#schoolList .sub-btn').forEach(b => {
+    b.style.display = 'block';
+    b.classList.remove('active');
+  });
+
+  loadMatrixFromGitHub();
+}
+
+function showCollegeList() {
   currentMode = 'college';
   clearAllModeActive();
   document.getElementById('collegeMode').classList.add('active');
   hideAllSubLists();
   document.getElementById('collegeList').style.display = 'block';
-  loadMatrixFromGitHub(); // ← idhi add chey
-    }
 
-    function showCompetitiveList() {
+  // Sub-buttons anni malli show chey
+  document.querySelectorAll('#collegeList .sub-btn').forEach(b => {
+    b.style.display = 'block';
+    b.classList.remove('active');
+  });
+
+  loadMatrixFromGitHub();
+}
+
+function showCompetitiveList() {
   currentMode = 'competitive';
   clearAllModeActive();
   document.getElementById('competitiveMode').classList.add('active');
   hideAllSubLists();
   document.getElementById('competitiveList').style.display = 'block';
-  loadMatrixFromGitHub(); // ← idhi add chey
-    }
 
-    function showOthersList() {
+  // Sub-buttons anni malli show chey
+  document.querySelectorAll('#competitiveList .sub-btn').forEach(b => {
+    b.style.display = 'block';
+    b.classList.remove('active');
+  });
+
+  loadMatrixFromGitHub();
+}
+
+function showOthersList() {
   currentMode = 'others';
   clearAllModeActive();
   document.getElementById('othersMode').classList.add('active');
   hideAllSubLists();
   document.getElementById('othersList').style.display = 'block';
-  loadMatrixFromGitHub(); // ← idhi add chey
-}
 
+  // Sub-buttons anni malli show chey
+  document.querySelectorAll('#othersList .sub-btn').forEach(b => {
+    b.style.display = 'block';
+    b.classList.remove('active');
+  });
+
+  loadMatrixFromGitHub();
+}
     function selectTrack(track, btnElement) {
       currentTrack = track;
       document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
@@ -214,24 +241,35 @@
     }
 
     function selectSubTrack(track, btnElement) {
-      document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
-      btnElement.classList.add('active');
-      currentTrack = track;
-
-      currentDeck = matrix.filter(card => {
-        if (track === 'DEGREE') return card.id >= 281 && card.id <= 330;
-        if (track === 'ENGINEERING') return card.id >= 331 && card.id <= 380;
-        if (track === 'MBBS') return card.id >= 381 && card.id <= 430;
-        if (track === 'MBA-HR') return card.id >= 431 && card.id <= 480;
-        if (track === 'MBA-FIN') return card.id >= 481 && card.id <= 530;
-        return card.category === track;
-      });
-
-      dueCards = currentDeck;
-      currentIndex = 0;
-      showCard();
-      updateStats();
+  // 1. Anni sub-buttons ni hide chey
+  document.querySelectorAll('.sub-btn').forEach(b => {
+    if(b !== btnElement) {
+      b.style.display = 'none';
     }
+  });
+  
+  // 2. Click chesina danini active chey
+  document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
+  btnElement.classList.add('active');
+  btnElement.style.display = 'block'; // Idi kanipinchali
+  
+  currentTrack = track;
+  
+  // 3. Matrix filter chey
+  currentDeck = matrix.filter(card => {
+    if (track === 'DEGREE') return card.id >= 281 && card.id <= 330;
+    if (track === 'ENGINEERING') return card.id >= 331 && card.id <= 380;
+    if (track === 'MBBS') return card.id >= 381 && card.id <= 430;
+    if (track === 'MBA-HR') return card.id >= 431 && card.id <= 480;
+    if (track === 'MBA-FIN') return card.id >= 481 && card.id <= 530;
+    return (card.category || '').toUpperCase() === track;
+  });
+  
+  dueCards = currentDeck;
+  currentIndex = 0;
+  showCard();
+  updateStats();
+}
 
     async function loadMatrixFromGitHub() {
       const version = Date.now();
