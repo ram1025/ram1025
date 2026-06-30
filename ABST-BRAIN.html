@@ -39,8 +39,22 @@
   .srs-hard { background:#1a2332; color:#ffaa00; border-color:#ffaa00 }
   .srs-good { background:#1a2332; color:#44ff88; border-color:#44ff88 }
   .srs-easy { background:#1a2332; color:#00aaff; border-color:#00aaff }
-  .srs-interval { font-size:10px; opacity:0.7; margin-top:2px; }
-  </style>
+  .sub-btn {
+  background:#1a2332; 
+  color:#8892b0; 
+  border:1px solid #00ffaa40; 
+  padding:10px; 
+  border-radius:8px; 
+  cursor:pointer; 
+  font-weight:700; 
+  font-size:11px;
+}
+.sub-btn.active { 
+  background:#ffaa00; 
+  color:#0a192f; 
+  border-color:#ffaa00;
+}
+</style>
 </head>
 <body>
   <div class="header">
@@ -142,8 +156,8 @@
       'others': './Education-others-130.json'
     };
 
-    function clearAllModeActive() {
-      document.querySelectorAll('.mode-toggle.mode-btn').forEach(b => b.classList.remove('active'));
+      function clearAllModeActive() {
+  document.querySelectorAll('.mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
     }
 
     document.getElementById('pillarsMode').onclick = () => {
@@ -169,7 +183,6 @@
       document.getElementById('collegeMode').classList.add('active');
       hideAllSubLists();
       document.getElementById('collegeList').style.display = 'block';
-      loadMatrixFromGitHub();
     }
 
     function showCompetitiveList() {
@@ -447,20 +460,20 @@
     };
 
     // Sub button delegation - iPhone/Android fix
-    document.addEventListener('click', function(e) {
-      const btn = e.target.closest('.sub-btn');
-      if (!btn) return;
+document.addEventListener('click', function(e) {
+  const btn = e.target.closest('.sub-btn');
+  if (!btn) return;
 
-      const track = btn.dataset.track;
-      document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+  const track = btn.dataset.track;
+  document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
 
-      if(currentMode === 'college') {
-        selectSubTrack(track, btn);
-      } else {
-        selectTrack(track, btn);
-      }
-    });
+  if(currentMode === 'college') {
+    selectSubTrack(track, btn);
+  } else {
+    selectTrack(track, btn);
+  }
+});
 
     window.addEventListener('load', () => {
       loadMatrixFromGitHub();
