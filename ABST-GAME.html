@@ -108,11 +108,11 @@
     </div>
 
     <div class="game-toggle">
-        <button class="mode-btn active" id="speedMode">⚡ SPEED</button>
-        <button class="mode-btn" id="scrambleMode">🔤 SCRAMBLE</button>
-        <button class="mode-btn" id="wisdomMode">🧠 WISDOM</button>
-        <button class="mode-btn" id="kidsMode">👶 KIDS</button>
-    </div>
+    <button class="mode-btn active" id="speedMode" onclick="switchMode('speed')">⚡ SPEED</button>
+    <button class="mode-btn" id="scrambleMode" onclick="switchMode('scramble')">🔤 SCRAMBLE</button>
+    <button class="mode-btn" id="wisdomMode" onclick="switchMode('wisdom')">🧠 WISDOM</button>
+    <button class="mode-btn" id="kidsMode" onclick="switchMode('kids')">👶 KIDS</button>
+</div>
 
     <div class="score-board">
         <div>Score<b id="score">0</b></div>
@@ -248,35 +248,48 @@
 
     function switchMode(mode) {
     clearInterval(gameTimer);
-    kidsBGM.pause(); // BGM stop
+    kidsBGM.pause();
     kidsBGM.currentTime = 0;
     gameActive = false;
     currentMode = mode;
-
+    
+    // Hide all games
     document.getElementById('speedGame').style.display = 'none';
     document.getElementById('scrambleGame').style.display = 'none';
     document.getElementById('wisdomGame').style.display = 'none';
     document.getElementById('kidsGame').style.display = 'none';
-
+    
+    // Remove active class
     document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+    
+    // Add active class to clicked button
+    document.getElementById(mode + 'Mode').classList.add('active');
+    
+    // Show Ready screen - game start cheyaku
+    document.getElementById('gameArea').innerHTML = `
+        <div class="ready-text">Ready?</div>
+        <button id="startGameBtn" onclick="startCurrentGame()">START GAME</button>
+    `;
+}
 
-    if (mode === 'speed') {
-        document.getElementById('speedMode').classList.add('active');
+function startCurrentGame() {
+    if(currentMode === 'speed') {
         document.getElementById('speedGame').style.display = 'block';
         startSpeedGame();
-    } else if (mode === 'scramble') {
-        document.getElementById('scrambleMode').classList.add('active');
+    } else if(currentMode === 'scramble') {
         document.getElementById('scrambleGame').style.display = 'block';
         startScrambleGame();
-    } else if (mode === 'wisdom') {
-        document.getElementById('wisdomMode').classList.add('active');
+    } else if(currentMode === 'wisdom') {
         document.getElementById('wisdomGame').style.display = 'block';
         startWisdomGame();
-    } else if (mode === 'kids') {
-        document.getElementById('kidsMode').classList.add('active');
+    } else if(currentMode === 'kids') {
         document.getElementById('kidsGame').style.display = 'block';
         startKidsGame();
     }
+
+    // Ready screen hide chey
+    document.querySelector('.ready-text').style.display = 'none';
+    document.getElementById('startGameBtn').style.display = 'none';
 }
 
     function startSpeedGame() {
