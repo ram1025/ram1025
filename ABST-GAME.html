@@ -203,49 +203,67 @@
         kidsScore = 0;
     }
 
-    function startKidsCategory(cat) {
-        document.getElementById('kidsCategories').style.display = 'none';
-        document.getElementById('kidsGrid').style.display = 'grid';
-        document.getElementById('kidsBackBtn').style.display = 'inline-block';
-        document.getElementById('kidsQuestion').textContent = 'Tap the pictures!';
-        document.getElementById('kidsFeedback').textContent = 'Score: 0/10';
-
-        const grid = document.getElementById('kidsGrid');
-        grid.innerHTML = '';
-        kidsScore = 0;
-
-        kidsData[cat].forEach((item) => {
-            const [emoji, name] = item.split(' ');
-            const div = document.createElement('div');
-            div.innerHTML = `<div style="font-size:60px; cursor:pointer;">${emoji}</div>`;
-            div.style.cssText = 'background:#112240; padding:15px; border-radius:16px; border:2px solid #ff00aa; transition:all 0.3s;';
-
-            div.onclick = function() {
-                if(this.style.opacity!== '0.2') {
-                    this.style.opacity = '0.2';
-                    this.style.transform = 'scale(0.8)';
-                    kidsScore++;
-                    document.getElementById('kidsFeedback').textContent = `⭐ ${name}! Score: ${kidsScore}/10`;
-                    speakText(name);
-                    if(kidsScore === 10) {
-                        setTimeout(() => {
-                            document.getElementById('kidsFeedback').textContent = '🎉 All Done! Great Job! 🎉';
-                        }, 500);
+            function startKidsCategory(cat) {
+            document.getElementById('kidsCategories').style.display = 'none';
+            document.getElementById('kidsGrid').style.display = 'grid';
+            document.getElementById('kidsBackBtn').style.display = 'block';
+            document.getElementById('kidsQuestion').style.display = 'block';
+            document.getElementById('kidsFeedback').textContent = '';
+            
+            const grid = document.getElementById('kidsGrid');
+            grid.innerHTML = '';
+            kidsScore = 0;
+            kidsCurrentItems = kidsData[cat];
+            
+            // Category start ayinappudu music play chey
+            kidsBGM.currentTime = 0;
+            kidsBGM.play();
+            
+            kidsData[cat].forEach((item) => {
+                const [emoji, name] = item.split('|');
+                const div = document.createElement('div');
+                div.innerHTML = `<div style="font-size:3rem">${emoji}</div>`;
+                div.style.cssText = 'background:#112; padding:20px; border-radius:15px; cursor:pointer; transition:all 0.3s;';
+                
+                div.onclick = function() {
+                    if(this.style.opacity!== '0.2') {
+                        // MUSIC STOP - Emoji tap cheste music aagali
+                        kidsBGM.pause();
+                        
+                        this.style.opacity = '0.2';
+                        this.style.transform = 'scale(0.9)';
+                        kidsScore++;
+                        document.getElementById('kidsFeedback').textContent = `Score: ${kidsScore}/10`;
+                        
+                        // VOICE MATROME - Name cheppu
+                        speakText(name);
+                        
+                        if(kidsScore === 10) {
+                            setTimeout(() => {
+                                speakText('Great job! All done!');
+                                setTimeout(() => {
+                                    document.getElementById('kidsCategories').style.display = 'grid';
+                                    document.getElementById('kidsGrid').style.display = 'none';
+                                    document.getElementById('kidsBackBtn').style.display = 'none';
+                                }, 2000);
+                            }, 500);
+                        }
                     }
-                }
-            };
-            grid.appendChild(div);
-        });
-    }
-
-    function speakText(text) {
-        if ('speechSynthesis' in window) {
-            speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.rate = 0.8; utterance.pitch = 1.2;
-            speechSynthesis.speak(utterance);
+                };
+                grid.appendChild(div);
+            });
         }
-    }   
+
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                speechSynthesis.cancel(); // Old voice stop
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.rate = 0.8; 
+                utterance.pitch = 1.1;
+                utterance.volume = 1;
+                speechSynthesis.speak(utterance);
+            }
+        }
 
             
     let score = 0, level = 1, hints = 10, gameActive = false, currentMode = 'speed';
@@ -704,16 +722,45 @@
     }
 
     // MODE SWITCH FUNCTIONS
-    function switchMode(mode) {
-        clearInterval(gameTimer);
-        document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
-        document.getElementById(mode + 'Mode').classList.add('active');
-
-        if (mode === 'speed') startSpeedGame();
-        else if (mode === 'scramble') startScrambleGame();
-        else if (mode === 'wisdom') startWisdomGame();
-        else if (mode === 'kids') startKidsGame(); // IDI ADD CHEY
+function switchMode(mode) {
+    currentMode = mode;
+    
+    // STEP 1: Music + Timer stop + Reset
+    kidsBGM.pause();
+    clearInterval(gameTimer);
+    gameActive = false;
+    
+    // STEP 2: Anni game areas hide chey - IDHI IMPORTANT
+    document.getElementById('speedGame').style.display = 'none';
+    document.getElementById('scrambleGame').style.display = 'none';
+    document.getElementById('wisdomGame').style.display = 'none';
+    document.getElementById('kidsGame').style.display = 'none';
+    
+    // STEP 3: Anni buttons de-active chey
+    document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+    
+    // STEP 4: Correct mode active chey
+    if (mode === 'speed') {
+        document.getElementById('speedMode').classList.add('active');
+        document.getElementById('speedGame').style.display = 'block';
+        startSpeedGame();
+    } 
+    else if (mode === 'scramble') {
+        document.getElementById('scrambleMode').classList.add('active');
+        document.getElementById('scrambleGame').style.display = 'block';
+        startScrambleGame();
     }
+    else if (mode === 'wisdom') {
+        document.getElementById('wisdomMode').classList.add('active');
+        document.getElementById('wisdomGame').style.display = 'block';
+        startWisdomGame();
+    }
+    else if (mode === 'kids') {
+        document.getElementById('kidsMode').classList.add('active');
+        document.getElementById('kidsGame').style.display = 'block';
+        startKidsGame();
+    }
+}
 
     // EVENT LISTENERS
     document.getElementById('startBtn').onclick = startLevel;
