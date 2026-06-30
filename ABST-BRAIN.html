@@ -170,36 +170,40 @@
     };
 
     function showSchoolList() {
-      currentMode = 'school';
-      clearAllModeActive();
-      document.getElementById('schoolMode').classList.add('active');
-      hideAllSubLists();
-      document.getElementById('schoolList').style.display = 'block';
+  currentMode = 'school';
+  clearAllModeActive();
+  document.getElementById('schoolMode').classList.add('active');
+  hideAllSubLists();
+  document.getElementById('schoolList').style.display = 'block';
+  loadMatrixFromGitHub(); // ← idhi add chey
     }
 
     function showCollegeList() {
-      currentMode = 'college';
-      clearAllModeActive();
-      document.getElementById('collegeMode').classList.add('active');
-      hideAllSubLists();
-      document.getElementById('collegeList').style.display = 'block';
+  currentMode = 'college';
+  clearAllModeActive();
+  document.getElementById('collegeMode').classList.add('active');
+  hideAllSubLists();
+  document.getElementById('collegeList').style.display = 'block';
+  loadMatrixFromGitHub(); // ← idhi add chey
     }
 
     function showCompetitiveList() {
-      currentMode = 'competitive';
-      clearAllModeActive();
-      document.getElementById('competitiveMode').classList.add('active');
-      hideAllSubLists();
-      document.getElementById('competitiveList').style.display = 'block';
+  currentMode = 'competitive';
+  clearAllModeActive();
+  document.getElementById('competitiveMode').classList.add('active');
+  hideAllSubLists();
+  document.getElementById('competitiveList').style.display = 'block';
+  loadMatrixFromGitHub(); // ← idhi add chey
     }
 
     function showOthersList() {
-      currentMode = 'others';
-      clearAllModeActive();
-      document.getElementById('othersMode').classList.add('active');
-      hideAllSubLists();
-      document.getElementById('othersList').style.display = 'block';
-    }
+  currentMode = 'others';
+  clearAllModeActive();
+  document.getElementById('othersMode').classList.add('active');
+  hideAllSubLists();
+  document.getElementById('othersList').style.display = 'block';
+  loadMatrixFromGitHub(); // ← idhi add chey
+}
 
     function selectTrack(track, btnElement) {
       currentTrack = track;
