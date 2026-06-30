@@ -448,12 +448,20 @@
       showCard();
     };
 
-    document.getElementById('flipMode').onclick = () => {
+        document.getElementById('flipMode').onclick = () => {
       answerMode = 'flip';
-      document.querySelectorAll('.answer-mode-toggle. mode-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.answer-mode-toggle .mode-btn').forEach(b => b.classList.remove('active'));
       document.getElementById('flipMode').classList.add('active');
+      document.getElementById('card').classList.remove('flipped');
       showCard();
     };
+
+    // Card flip event - FLIP mode lo matrame pani chesthadi
+    document.getElementById('card').addEventListener('click', function(e) {
+      if (answerMode !== 'flip') return;
+      if (e.target.closest('.sub-btn')) return;
+      this.classList.toggle('flipped');
+    });
 
     document.getElementById('homeBtn').onclick = () => {
       window.location.href = '/ram1025/';
@@ -464,11 +472,11 @@ document.addEventListener('click', function(e) {
   const btn = e.target.closest('.sub-btn');
   if (!btn) return;
 
-  const track = btn.dataset.track;
-  document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+      const track = btn.dataset.track;
+      document.querySelectorAll('.sub-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
 
-  if(currentMode === 'college') {
+      if(currentMode === 'college') {
     selectSubTrack(track, btn);
   } else {
     selectTrack(track, btn);
