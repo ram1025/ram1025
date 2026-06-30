@@ -176,7 +176,8 @@
     let currentTarget = null, gameTimer = null, timeLeft = 10;
     let wisdomCorrectCount = 0, wisdomAsked = [], currentWisdom = null;
     let scrambleScore = 0, scrambleAsked = [], currentScramble = null;
-    let kidsScore = 0;
+    let kidsCurrentPage = 0;
+    let kidsAllItems = [];
 
     let kidsBGM = new Audio('https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3');
     kidsBGM.loop = true; kidsBGM.volume = 0.2;
@@ -507,49 +508,83 @@
         kidsScore = 0;
     }
 
-    function startKidsCategory(cat) {
-        document.getElementById('kidsCategories').style.display = 'none';
-        document.getElementById('kidsGrid').style.display = 'grid';
-        document.getElementById('kidsBackBtn').style.display = 'block';
-        document.getElementById('kidsFeedback').textContent = '';
+   function startKidsCategory(cat) {
+    document.getElementById('kidsCategories').style.display = 'none';
+    document.getElementById('kidsGrid').style.display = 'grid';
+    document.getElementById('kidsBackBtn').style.display = 'block';
+    document.getElementById('kidsFeedback').textContent = '';
 
-        const grid = document.getElementById('kidsGrid');
-        grid.innerHTML = '';
-        kidsScore = 0;
+    kidsScore = 0;
+    kidsCurrentPage = 0;
+    kidsAllItems = kidsData[cat]; // All 10 items
 
-        kidsBGM.currentTime = 0;
-        kidsBGM.play();
+    kidsBGM.currentTime = 0;
+    kidsBGM.play().catch(e=>{});
 
-        kidsData[cat].forEach((item) => {
-            const [emoji, name] = item.split('|');
-            const div = document.createElement('div');
-            div.innerHTML = `<div style="font-size:3rem">${emoji}</div>`;
-            div.style.cssText = 'background:#112; padding:20px; border-radius:15px; cursor:pointer; transition:all 0.3s;';
+    renderKidsPage();
+}
 
-            div.onclick = function() {
-                if(this.style.opacity!== '0.2') {
-                    kidsBGM.pause();
-                    this.style.opacity = '0.2';
-                    this.style.transform = 'scale(0.9)';
-                    kidsScore++;
-                    document.getElementById('kidsFeedback').textContent = `Score: ${kidsScore}/10`;
-                    speakText(name);
+function renderKidsPage() {
+    const grid = document.getElementById('kidsGrid');
+    grid.innerHTML = '';
 
-                    if(kidsScore === 10) {
+    // Show 10 items per page
+    const start = kidsCurrentPage * 10;
+    const end = start + 10;
+    const pageItems = kidsAllItems.slice(start, end);
+
+    pageItems.forEach((item) => {
+        const [emoji, name] = item.split('|');
+        const div = document.createElement('div');
+        div.innerHTML = `<div style="font-size:3rem">${emoji}</div>`;
+        div.style.cssText = 'background:#112; padding:20px; border-radius:15px; cursor:pointer; transition:all 0.3s;';
+
+        div.onclick = function() {
+            if(this.style.opacity!== '0.2') {
+                kidsBGM.pause();
+                this.style.opacity = '0.2';
+                this.style.transform = 'scale(0.9)';
+                kidsScore++;
+                document.getElementById('kidsFeedback').textContent = `Score: ${kidsScore}/${kidsAllItems.length}`;
+                speakText(name);
+
+                if(kidsScore === kidsAllItems.length) {
+                    setTimeout(() => {
+                        speakText('Great job! All done!');
                         setTimeout(() => {
-                            speakText('Great job! All done!');
-                            setTimeout(() => {
-                                document.getElementById('kidsCategories').style.display = 'grid';
-                                document.getElementById('kidsGrid').style.display = 'none';
-                                document.getElementById('kidsBackBtn').style.display = 'none';
-                            }, 2000);
-                        }, 500);
-                    }
+                            backToKidsMenu();
+                        }, 2000);
+                    }, 500);
                 }
-            };
-            grid.appendChild(div);
-        });
+            }
+        };
+        grid.appendChild(div);
+    });
+
+    // Add Next/Prev buttons if more than 10 items
+    if (kidsAllItems.length > 10) {
+        const navDiv = document.createElement('div');
+        navDiv.style.cssText = 'grid-column: span 5; display:flex; justify-content:center; gap:10px; margin-top:10px;';
+
+        if (kidsCurrentPage > 0) {
+            const prevBtn = document.createElement('button');
+            prevBtn.className = 'btn btn-small';
+            prevBtn.textContent = '← Prev Page';
+            prevBtn.onclick = () => { kidsCurrentPage--; renderKidsPage(); };
+            navDiv.appendChild(prevBtn);
+        }
+
+        if (end < kidsAllItems.length) {
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'btn btn-small';
+            nextBtn.textContent = 'Next Page →';
+            nextBtn.onclick = () => { kidsCurrentPage++; renderKidsPage(); };
+            navDiv.appendChild(nextBtn);
+        }
+
+        grid.appendChild(navDiv);
     }
+}
 
     function speakText(text) {
         if ('speechSynthesis' in window) {
