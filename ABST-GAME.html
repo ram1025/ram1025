@@ -280,12 +280,13 @@
 }
 
     function startSpeedGame() {
-        resetGame();
-        level = 1;
-        score = 0;
-        updateUI();
-        startLevel();
-    }
+    resetGame();
+    level = 1;
+    score = 0;
+    updateUI();
+    startLevel();
+}
+
 
     function startLevel() {
         if (level > speedLevels.length) {
@@ -354,17 +355,17 @@
     }
 
     function startScrambleGame() {
-        resetGame();
-        level = 1;
-        scrambleScore = 0;
-        scrambleAsked = [];
-        updateUI();
-        document.getElementById('scrambleWord').textContent = 'READY?';
-        document.getElementById('scrambleStartBtn').style.display = 'inline-block';
-        document.getElementById('scrambleInput').style.display = 'none';
-        document.getElementById('hintBtn').style.display = 'none';
-        document.getElementById('scrambleNextBtn').style.display = 'none';
-    }
+    resetGame();
+    level = 1;
+    scrambleScore = 0;
+    scrambleAsked = [];
+    updateUI();
+    document.getElementById('scrambleWord').textContent = 'READY?';
+    document.getElementById('scrambleStartBtn').style.display = 'inline-block';
+    document.getElementById('scrambleInput').style.display = 'none';
+    document.getElementById('hintBtn').style.display = 'none';
+    document.getElementById('scrambleNextBtn').style.display = 'none';
+}
 
     function startScrambleLevel() {
         document.getElementById('scrambleStartBtn').style.display = 'none';
@@ -426,16 +427,16 @@
     }
 
     function startWisdomGame() {
-        resetGame();
-        wisdomCorrectCount = 0;
-        wisdomAsked = [];
-        updateUI();
-        document.getElementById('wisdomText').textContent = 'Ready for Wisdom?';
-        document.getElementById('wisdomStartBtn').style.display = 'inline-block';
-        document.getElementById('wisdomInput').style.display = 'none';
-        document.getElementById('wisdomHintBtn').style.display = 'none';
-        document.getElementById('wisdomNextBtn').style.display = 'none';
-    }
+    resetGame();
+    wisdomCorrectCount = 0;
+    wisdomAsked = [];
+    updateUI();
+    document.getElementById('wisdomText').textContent = 'Ready for Wisdom?';
+    document.getElementById('wisdomStartBtn').style.display = 'inline-block';
+    document.getElementById('wisdomInput').style.display = 'none';
+    document.getElementById('wisdomHintBtn').style.display = 'none';
+    document.getElementById('wisdomNextBtn').style.display = 'none';
+}
 
     function nextWisdomQuestion() {
         if (wisdomAsked.length >= wisdomQuestions.length) {
