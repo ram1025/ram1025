@@ -109,10 +109,11 @@
         <p>SOVEREIGN ID: INDIAN.001 | LEVEL MASTER</p>
     </div>
     <div class="game-toggle">
-        <button class="mode-btn active" id="speedMode">⚡ SPEED</button>
-        <button class="mode-btn" id="scrambleMode">🔤 SCRAMBLE</button>
-        <button class="mode-btn" id="wisdomMode">🧠 WISDOM</button>
-    </div>
+    <button class="mode-btn active" id="speedMode">⚡ SPEED</button>
+    <button class="mode-btn" id="scrambleMode">🔤 SCRAMBLE</button>
+    <button class="mode-btn" id="wisdomMode">🧠 WISDOM</button>
+    <button class="mode-btn" id="kidsMode">👶 KIDS</button> <!-- NEW LINE -->
+</div>
     <div class="score-board">
         <div>Score<b id="score">0</b></div>
         <div>Hints<b id="hintCount">10</b></div>
@@ -148,9 +149,105 @@
                 <button class="btn btn-small" id="wisdomHintBtn" style="display:none">Use Hint (-1)</button>
                 <button class="btn btn-small" id="wisdomNextBtn" style="display:none">Next Question</button>
             </div>
+                <div id="kidsGame" style="display:none">
+            <div class="wisdom-text" id="kidsQuestion" style="font-size:24px;">Choose a Category</div>
+
+            <!-- Category Buttons -->
+            <div class="btn-group" id="kidsCategories">
+                <button class="btn btn-small" onclick="startKidsCategory('fruits')">🍎 Fruits</button>
+                <button class="btn btn-small" onclick="startKidsCategory('pets')">🐶 Pets</button>
+                <button class="btn btn-small" onclick="startKidsCategory('wild')">🦁 Wild</button>
+                <button class="btn btn-small" onclick="startKidsCategory('veggies')">🥕 Veggies</button>
+                <button class="btn btn-small" onclick="startKidsCategory('numbers')">1️⃣ Numbers</button>
+            </div>
+
+            <!-- Game Grid -->
+            <div id="kidsGrid" style="display:none; grid-template-columns:repeat(5, 1fr); gap:15px; margin:20px 0; max-width:500px; margin-left:auto; margin-right:auto;"></div>
+
+            <div class="feedback-msg" id="kidsFeedback" style="font-size:20px; color:#ffd700; min-height:30px;"></div>
+            <button class="btn btn-small" id="kidsBackBtn" onclick="backToKidsMenu()" style="display:none; margin-top:20px;">← Back to Menu</button>
         </div>
+        
     </div>
         <script>
+             // KIDS GAME FUNCTIONS
+    let kidsScore = 0;
+    const kidsData = {
+        fruits: ['🍎 Apple','🍌 Banana','🍇 Grapes','🍊 Orange','🥭 Mango','🍉 Watermelon','🍓 Strawberry','🍍 Pineapple','🥝 Kiwi','🍑 Peach'],
+        pets: ['🐶 Dog','🐱 Cat','🐰 Rabbit','🐹 Hamster','🐦 Bird','🐠 Fish','🐢 Turtle','🐴 Horse','🐭 Mouse','🦜 Parrot'],
+        wild: ['🦁 Lion','🐯 Tiger','🐘 Elephant','🦒 Giraffe','🐵 Monkey','🦓 Zebra','🐻 Bear','🦊 Fox','🐼 Panda','🦏 Rhino'],
+        veggies: ['🥕 Carrot','🥦 Broccoli','🍅 Tomato','🥒 Cucumber','🌽 Corn','🍆 Eggplant','🧅 Onion','🥔 Potato','🫑 Pepper','🥬 Lettuce'],
+        numbers: ['1️⃣ One','2️⃣ Two','3️⃣ Three','4️⃣ Four','5️⃣ Five','6️⃣ Six','7️⃣ Seven','8️⃣ Eight','9️⃣ Nine','🔟 Ten']
+    };
+
+    let kidsBGM = new Audio('https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3');
+    kidsBGM.loop = true; kidsBGM.volume = 0.2;
+
+    function startKidsGame() {
+        document.getElementById('speedGame').style.display = 'none';
+        document.getElementById('scrambleGame').style.display = 'none';
+        document.getElementById('wisdomGame').style.display = 'none';
+        document.getElementById('kidsGame').style.display = 'block';
+        currentMode = 'kids';
+        resetGame();
+        backToKidsMenu();
+        kidsBGM.play().catch(e=>{});
+    }
+
+    function backToKidsMenu() {
+        document.getElementById('kidsCategories').style.display = 'flex';
+        document.getElementById('kidsGrid').style.display = 'none';
+        document.getElementById('kidsBackBtn').style.display = 'none';
+        document.getElementById('kidsQuestion').textContent = 'Choose a Category';
+        document.getElementById('kidsFeedback').textContent = '';
+        kidsScore = 0;
+    }
+
+    function startKidsCategory(cat) {
+        document.getElementById('kidsCategories').style.display = 'none';
+        document.getElementById('kidsGrid').style.display = 'grid';
+        document.getElementById('kidsBackBtn').style.display = 'inline-block';
+        document.getElementById('kidsQuestion').textContent = 'Tap the pictures!';
+        document.getElementById('kidsFeedback').textContent = 'Score: 0/10';
+
+        const grid = document.getElementById('kidsGrid');
+        grid.innerHTML = '';
+        kidsScore = 0;
+
+        kidsData[cat].forEach((item) => {
+            const [emoji, name] = item.split(' ');
+            const div = document.createElement('div');
+            div.innerHTML = `<div style="font-size:60px; cursor:pointer;">${emoji}</div>`;
+            div.style.cssText = 'background:#112240; padding:15px; border-radius:16px; border:2px solid #ff00aa; transition:all 0.3s;';
+
+            div.onclick = function() {
+                if(this.style.opacity!== '0.2') {
+                    this.style.opacity = '0.2';
+                    this.style.transform = 'scale(0.8)';
+                    kidsScore++;
+                    document.getElementById('kidsFeedback').textContent = `⭐ ${name}! Score: ${kidsScore}/10`;
+                    speakText(name);
+                    if(kidsScore === 10) {
+                        setTimeout(() => {
+                            document.getElementById('kidsFeedback').textContent = '🎉 All Done! Great Job! 🎉';
+                        }, 500);
+                    }
+                }
+            };
+            grid.appendChild(div);
+        });
+    }
+
+    function speakText(text) {
+        if ('speechSynthesis' in window) {
+            speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.rate = 0.8; utterance.pitch = 1.2;
+            speechSynthesis.speak(utterance);
+        }
+    }   
+
+            
     let score = 0, level = 1, hints = 10, gameActive = false, currentMode = 'speed';
     let currentTarget = null, gameTimer = null, timeLeft = 10; // 25 → 10
     let wisdomCorrectCount = 0, wisdomAsked = [], currentWisdom = null;
@@ -301,6 +398,7 @@
                 // COMMON FUNCTIONS
     function resetGame() {
         clearInterval(gameTimer);
+        kidsBGM.pause();
         score = 0;
         level = 1;
         timeLeft = 25;
@@ -614,6 +712,7 @@
         if (mode === 'speed') startSpeedGame();
         else if (mode === 'scramble') startScrambleGame();
         else if (mode === 'wisdom') startWisdomGame();
+        else if (mode === 'kids') startKidsGame(); // IDI ADD CHEY
     }
 
     // EVENT LISTENERS
@@ -621,6 +720,7 @@
     document.getElementById('speedMode').onclick = () => switchMode('speed');
     document.getElementById('scrambleMode').onclick = () => switchMode('scramble');
     document.getElementById('wisdomMode').onclick = () => switchMode('wisdom');
+    document.getElementById('kidsMode').onclick = () => switchMode('kids'); // IDI ADD CHEY
     document.getElementById('scrambleStartBtn').onclick = startScrambleLevel;
     document.getElementById('hintBtn').onclick = useScrambleHint;
     document.getElementById('scrambleNextBtn').onclick = nextScrambleWord;
