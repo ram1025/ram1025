@@ -5,176 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABST GAME | P24 | INDIAN.001</title>
     <style>
-        /* KIDS Big Emoji Animation - Add chesindi */
-#kidsBigEmoji:active {
-    transform: scale(0.9)!important;
-}
-#kidsBigEmoji.bounce {
-    animation: bounce 0.4s ease;
-}
-@keyframes bounce {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-}
-
-        /* Game Area Center - Add chesindi */
-#gameArea { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    min-height: 300px; 
-    width: 100%;
-}
-.ready-text { 
-       position: absolute; 
-       top: 50%; 
-       left: 50%; 
-       transform: translate(-50%, -50%); 
-       font-size: 48px; 
-       font-weight: 900; 
-       color: #ffaa00; 
-       text-shadow: 0 0 20px #ffaa00; 
-       text-align: center; 
-   }
-        
-* { margin:0; padding:0; box-sizing:border-box }
-body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif;
-    * { margin:0; padding:0; box-sizing:border-box }
-    body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif; padding:20px; text-align:center; min-height:100vh; }
- .header { margin-bottom:20px }
- .header h1 { font-size:34px; text-shadow:0 0 15px #ff00aa; letter-spacing:2px }
-
-   /* FIX: 2+2 Grid - No Overlap */
- .game-toggle {
-        background:#112240;
-        border:1px solid #ff00aa;
-        padding:15px;
-        border-radius:10px;
-        margin:15px auto;
-        max-width:380px;
-        display:grid;
-        grid-template-columns:repeat(2, 1fr);
-        gap:12px;
-    }
-
- .mode-btn {
-        background:#1a1a32;
-        color:#8892b0;
-        border:none;
-        padding:14px 10px;
-        border-radius:8px;
-        cursor:pointer;
-        font-weight:700;
-        font-size:13px;
-        white-space:nowrap;
-        width:100%;
-        transition:all 0.3s;
-    }
- .mode-btn.active {
-        background:#ff00aa!important;
-        color:#0a0a2f!important;
-        box-shadow:0 0 15px #ff00aa80;
-    }
-
- .game-area { background:linear-gradient(145deg,#1a1a32,#0f0f23); padding:35px; border-radius:24px; border:2px solid #ff00aa; min-height:450px; margin:20px auto; max-width:600px; position:relative; overflow:hidden; }
- .score-board { display:flex; justify-content:space-around; margin:20px auto; max-width:600px; background:#1a1a32; padding:15px; border-radius:16px }
- .score-board b { color:#fff; font-size:24px; display:block; margin-top:5px }
- .level-info { background:#00000040; padding:12px; border-radius:12px; margin:15px auto; max-width:600px }
- .level-info span { color:#ffaa00; font-weight:900 }
-
- .btn {
-        background:#ff00aa;
-        color:#0a0a2f;
-        padding:16px 32px;
-        border:none;
-        border-radius:14px;
-        margin:8px;
-        font-weight:900;
-        font-size:16px;
-        cursor:pointer
-    }
- .btn-small {
-        background:#ff00aa!important;
-        color:#0a0a2f!important;
-        padding:12px 24px;
-        font-size:14px;
-        font-weight:900;
-        border:none;
-        border-radius:10px;
-        margin:5px;
-    }
-
- .target {
-        position:absolute; cursor:pointer;
-        display:none; align-items:center; justify-content:center;
-        font-weight:900; color:#fff; z-index:5;
-        -webkit-tap-highlight-color:transparent;
-    }
-
- .timer-display { font-size:48px; font-weight:900; color:#ffaa00; text-shadow:0 0 20px #ffaa00; margin:20px 0 }
- .scramble-word { font-size:42px; font-weight:900; letter-spacing:8px; color:#fff; margin:25px 0 }
- .scramble-hint { color:#ffaa00; font-size:16px; margin:10px 0; min-height:40px }
- .wisdom-text { font-size:20px; line-height:1.6; color:#fff; margin:20px 0; padding:20px; background:#00000040; border-radius:12px }
- .answer-input { width:100%; padding:14px; background:#0a0a2f; border:2px solid #ff00aa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
- .feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
- .btn-group { display:flex; justify-content:center; gap:10px; flex-wrap:wrap }
-
- .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: #ff4444;
-        color: #fff;
-        border: none;
-        padding: 8px 16px;
-        border-radius: 8px;
-        font-weight: bold;
-        cursor: pointer;
-        z-index: 100;
-        font-size: 14px;
-    }
-            /* KIDS GRID FIX - 10 Items 2x5 */
-    #kidsGrid {
-        display: none;
-        grid-template-columns: repeat(5, 1fr) !important;
-        grid-template-rows: repeat(2, 1fr) !important;
-        gap: 10px !important;
-        margin: 20px auto;
-        max-width: 500px;
-        min-height: 200px;
-    }
-
-    #kidsGrid > div {
-        min-height: 75px;
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        background: #112;
-        padding: 15px;
-        border-radius: 15px;
-        cursor: pointer;
-        transition: all 0.3s;
-    }
-
-    #kidsGrid > div div {
-        font-size: 2.5rem !important;
-    }
-
-    @media (max-width: 480px) {
-        #kidsGrid {
-            gap: 8px !important;
-            max-width: 100%;
-            min-height: 180px;
+        #kidsBigEmoji:active { transform: scale(0.9)!important; }
+        #kidsBigEmoji.bounce { animation: bounce 0.4s ease; }
+        @keyframes bounce { 
+            0%, 100% { transform: scale(1); } 
+            50% { transform: scale(1.2); } 
         }
-        #kidsGrid > div {
-            min-height: 65px;
-            padding: 8px !important;
-        }
-        #kidsGrid > div div {
-            font-size: 2rem !important;
-        }
-    }
+        * { margin:0; padding:0; box-sizing:border-box }
+        body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif; padding:20px; text-align:center; min-height:100vh; }
+        .header { margin-bottom:20px; text-align:center; }
+        .header h1 { font-size:34px; text-shadow:0 0 15px #ff00aa; letter-spacing:2px }
+        .game-toggle { background:#112240; border:1px solid #ff00aa; padding:15px; border-radius:10px; margin:15px auto; max-width:380px; display:grid; grid-template-columns:repeat(2, 1fr); gap:12px; }
+        .mode-btn { background:#1a1a32; color:#8892b0; border:none; padding:14px 10px; border-radius:8px; cursor:pointer; font-weight:700; font-size:13px; white-space:nowrap; width:100%; transition:all 0.3s; }
+        .mode-btn.active { background:#ff00aa!important; color:#0a0a2f!important; box-shadow:0 0 15px #ff00aa80; }
+        .game-area { background:linear-gradient(145deg,#1a1a32,#0f0f23); padding:35px; border-radius:24px; border:2px solid #ff00aa; min-height:350px; margin:20px auto; max-width:600px; position:relative; overflow:hidden; }
+        #gameArea { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 250px; width: 100%; position: relative; }
+        .ready-text { position: relative; font-size: 48px; font-weight: 900; color: #ffaa00; text-shadow: 0 0 20px #ffaa00; text-align: center; margin-bottom: 20px; }
+        .score-board { display:flex; justify-content:space-around; margin:20px auto; max-width:600px; background:#1a1a32; padding:15px; border-radius:16px }
+        .score-board b { color:#fff; font-size:24px; display:block; margin-top:5px }
+        .level-info { background:#00000040; padding:12px; border-radius:12px; margin:15px auto; max-width:600px }
+        .level-info span { color:#ffaa00; font-weight:900 }
+        .btn { background:#ff00aa; color:#0a0a2f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer }
+        .btn-small { background:#ff00aa!important; color:#0a0a2f!important; padding:12px 24px; font-size:14px; font-weight:900; border:none; border-radius:10px; margin:5px; }
+        .target { position:absolute; cursor:pointer; display:none; align-items:center; justify-content:center; font-weight:900; color:#fff; z-index:5; -webkit-tap-highlight-color:transparent; }
+        .timer-display { font-size:48px; font-weight:900; color:#ffaa00; text-shadow:0 0 20px #ffaa00; margin:20px 0; display:none; }
+        .scramble-word { font-size:42px; font-weight:900; letter-spacing:8px; color:#fff; margin:25px 0 }
+        .scramble-hint { color:#ffaa00; font-size:16px; margin:10px 0; min-height:40px }
+        .wisdom-text { font-size:20px; line-height:1.6; color:#fff; margin:20px 0; padding:20px; background:#00000040; border-radius:12px }
+        .answer-input { width:100%; padding:14px; background:#0a0a2f; border:2px solid #ff00aa; border-radius:10px; color:#fff; font-size:18px; text-align:center; margin:20px 0 }
+        .feedback-msg { font-size:18px; font-weight:700; margin:15px 0; min-height:25px }
+        .btn-group { display:flex; justify-content:center; gap:10px; flex-wrap:wrap }
+        .close-btn { position: absolute; top: 10px; right: 10px; background: #ff4444; color: #fff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: bold; cursor: pointer; z-index: 100; font-size: 14px; }
     </style>
 </head>
 <body>
@@ -182,37 +43,30 @@ body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif;
         <h1>ABST GAME</h1>
         <p>SOVEREIGN ID: INDIAN.001 | LEVEL MASTER</p>
     </div>
-
     <div class="game-toggle">
-    <button class="mode-btn active" id="speedMode" onclick="switchMode('speed')">⚡ SPEED</button>
-    <button class="mode-btn" id="scrambleMode" onclick="switchMode('scramble')">🔤 SCRAMBLE</button>
-    <button class="mode-btn" id="wisdomMode" onclick="switchMode('wisdom')">🧠 WISDOM</button>
-    <button class="mode-btn" id="kidsMode" onclick="switchMode('kids')">👶 KIDS</button>
-</div>
-
+        <button class="mode-btn active" id="speedMode">⚡ SPEED</button>
+        <button class="mode-btn" id="scrambleMode">🔤 SCRAMBLE</button>
+        <button class="mode-btn" id="wisdomMode">🧠 WISDOM</button>
+        <button class="mode-btn" id="kidsMode">👶 KIDS</button>
+    </div>
     <div class="score-board">
         <div>Score<b id="score">0</b></div>
         <div>Hints<b id="hintCount">10</b></div>
         <div>Level<b id="levelDisplay">1/10</b></div>
     </div>
-
     <div class="level-info" id="levelInfo" style="display:none;">
         <div>Target: <span id="targetScore">5</span> | Time: <span id="targetTime">10s</span></div>
     </div>
-
     <div class="game-area" id="gameScreen">
-    <button id="closeGameBtn" class="close-btn">✖ CLOSE</button>
-
-    <div id="gameArea"> 
-    <div class="ready-text">Ready?</div> 
-    <button id="startGameBtn" onclick="startCurrentGame()" class="btn">START GAME</button> 
-</div>
-
-    <div id="speedGame" style="display:none;">
-    <div class="timer-display" id="timerDisplay">10</div>
-    <div class="target" id="target"></div>
-    </div>
-
+        <button id="closeGameBtn" class="close-btn">✖ CLOSE</button>
+        <div id="gameArea">
+            <div class="ready-text">Ready?</div>
+            <button id="startGameBtn" onclick="startCurrentGame()" class="btn">START GAME</button>
+        </div>
+        <div id="speedGame" style="display:none;">
+            <div class="timer-display" id="timerDisplay">10</div>
+            <div class="target" id="target"></div>
+        </div>
         <div id="scrambleGame" style="display:none;">
             <div class="scramble-word" id="scrambleWord">READY?</div>
             <div class="scramble-hint" id="scrambleHint">Unscramble the word</div>
@@ -224,7 +78,6 @@ body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif;
                 <button class="btn btn-small" id="scrambleNextBtn" style="display:none">Next Word</button>
             </div>
         </div>
-
         <div id="wisdomGame" style="display:none;">
             <div class="wisdom-text" id="wisdomText">Ready for Wisdom?</div>
             <input class="answer-input" id="wisdomInput" placeholder="Your answer..." style="display:none">
@@ -235,490 +88,411 @@ body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif;
                 <button class="btn btn-small" id="wisdomNextBtn" style="display:none">Next Question</button>
             </div>
         </div>
-
-        <div id="kidsGame" style="display:none;">
+<div id="kidsGame" style="display:none;">
     <div class="wisdom-text" id="kidsQuestion" style="font-size:24px; text-align:center; color:#f0f; margin:20px 0;">Choose a Category</div>
-    <div class="btn-group" id="kidsCategories" style="display:grid; grid-template-columns:repeat(2,1fr); gap:15px; max-width:400px; margin:20px auto;">
-        <button class="btn" onclick="startKidsCategory('fruits')" style="background:#112; padding:25px; border:2px solid #f0f; border-radius:15px; color:#fff; font-size:1.1rem;">🍎 Fruits</button>
+    <div class="btn-group" id="kidsCategories" style="display:grid; grid-template-columns:repeat(2,1fr); gap:15px; max-width:400px; margin:20px auto;"> 
+    <button class="btn" onclick="startKidsCategory('fruits')" style="background:#112; padding:25px; border:2px solid #f0f; border-radius:15px; color:#fff; font-size:1.1rem;">🍎 Fruits</button>
         <button class="btn" onclick="startKidsCategory('pets')" style="background:#112; padding:25px; border:2px solid #f0f; border-radius:15px; color:#fff; font-size:1.1rem;">🐶 Pets</button>
         <button class="btn" onclick="startKidsCategory('wild')" style="background:#112; padding:25px; border:2px solid #f0f; border-radius:15px; color:#fff; font-size:1.1rem;">🦁 Wild</button>
         <button class="btn" onclick="startKidsCategory('veggies')" style="background:#112; padding:25px; border:2px solid #f0f; border-radius:15px; color:#fff; font-size:1.1rem;">🥕 Veggies</button>
         <button class="btn" onclick="startKidsCategory('numbers')" style="background:#112; padding:25px; border:2px solid #f0f; border-radius:15px; color:#fff; font-size:1.1rem; grid-column:span 2;">1️⃣ Numbers</button>
     </div>
-    
-    <!-- Big Emoji Game Area - Add chesindi idi -->
-    <div id="kidsBigGame" style="display:none;">
-        <div id="kidsBigEmoji" style="font-size:120px; text-align:center; margin:60px 0; cursor:pointer; user-select:none; transition:transform 0.2s;"></div>
-        <div id="kidsProgress" style="text-align:center; font-size:20px; margin-top:20px; opacity:0.7; color:#fff;"></div>
-    </div>
-</div>
-           
+            <div id="kidsBigGame" style="display:none;">
+                <div id="kidsBigEmoji" style="font-size:120px; text-align:center; margin:60px 0; cursor:pointer; user-select:none; transition:transform 0.2s;"></div>
+                <div id="kidsProgress" style="text-align:center; font-size:20px; margin-top:20px; opacity:0.7; color:#fff;"></div>
+            </div>
             <div class="feedback-msg" id="kidsFeedback" style="font-size:20px; color:#ffd700; min-height:30px; text-align:center; margin:15px;"></div>
             <button class="btn btn-small" id="kidsBackBtn" onclick="backToKidsMenu()" style="display:none; margin:20px auto;">← Back to Menu</button>
         </div>
     </div>
-
     <script>
-    let score = 0, level = 1, hints = 10, gameActive = false, currentMode = 'speed';
-    let currentTarget = null, gameTimer = null, timeLeft = 10;
-    let wisdomCorrectCount = 0, wisdomAsked = [], currentWisdom = null;
-    let scrambleScore = 0, scrambleAsked = [], currentScramble = null;
-    let kidsCurrentPage = 0;
-    let kidsAllItems = [];
-    let kidsScore = 0;
+        let score = 0, level = 1, hints = 10, gameActive = false, currentMode = 'speed';
+        let currentTarget = null, gameTimer = null, timeLeft = 10;
+        let wisdomCorrectCount = 0, wisdomAsked = [], currentWisdom = null;
+        let scrambleScore = 0, scrambleAsked = [], currentScramble = null;
+        let kidsAllItems = [], kidsScore = 0, kidsCurrentIndex = 0;
+        let kidsBGM = new Audio('https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3');
+        kidsBGM.loop = true; kidsBGM.volume = 0.2;
 
-    let kidsBGM = new Audio('https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3');
-    kidsBGM.loop = true; kidsBGM.volume = 0.2;
+        const speedLevels = [
+            {shape:'●', name:'CIRCLE', color:'#ff0000', size:120, time:15, target:5},
+            {shape:'■', name:'SQUARE', color:'#0000ff', size:120, time:15, target:5},
+            {shape:'▲', name:'TRIANGLE', color:'#ffff00', size:120, time:15, target:5},
+            {shape:'★', name:'STAR', color:'#ff69b4', size:120, time:15, target:5},
+            {shape:'◆', name:'DIAMOND', color:'#00ff00', size:120, time:15, target:5},
+            {shape:'A', name:'ALPHABET A', color:'#ff4757', size:100, time:15, target:5},
+            {shape:'B', name:'ALPHABET B', color:'#5352ed', size:100, time:15, target:5},
+            {shape:'1', name:'NUMBER 1', color:'#ff4757', size:100, time:15, target:5},
+            {shape:'2', name:'NUMBER 2', color:'#5352ed', size:100, time:15, target:5},
+            {shape:'3', name:'NUMBER 3', color:'#2ed573', size:100, time:15, target:5}
+        ];
 
-    const speedLevels = [
-        {shape:'●', name:'CIRCLE', color:'#ff0000', size:120, time:10, target:5},
-        {shape:'■', name:'SQUARE', color:'#0000ff', size:120, time:10, target:5},
-        {shape:'▲', name:'TRIANGLE', color:'#ffff00', size:120, time:10, target:5},
-        {shape:'★', name:'STAR', color:'#ff69b4', size:120, time:10, target:5},
-        {shape:'◆', name:'DIAMOND', color:'#00ff00', size:120, time:10, target:5},
-        {shape:'A', name:'ALPHABET A', color:'#ff4757', size:100, time:10, target:5},
-        {shape:'B', name:'ALPHABET B', color:'#5352ed', size:100, time:10, target:5},
-        {shape:'1', name:'NUMBER 1', color:'#ff4757', size:100, time:10, target:5},
-        {shape:'2', name:'NUMBER 2', color:'#5352ed', size:100, time:10, target:5},
-        {shape:'3', name:'NUMBER 3', color:'#2ed573', size:100, time:10, target:5}
-    ];
+        const scrambleWords = [
+            {word:'CAT', hint:'A pet that says meow'}, {word:'DOG', hint:'A loyal pet'}, {word:'SUN', hint:'Bright in the sky'},
+            {word:'CAR', hint:'You drive it'}, {word:'BALL', hint:'Round toy'}, {word:'BOOK', hint:'You read it'},
+            {word:'TREE', hint:'Has leaves'}, {word:'FISH', hint:'Lives in water'}, {word:'STAR', hint:'Twinkles at night'},
+            {word:'CAKE', hint:'Birthday dessert'}
+        ];
 
-    const scrambleWords = [
-        {word:'CAT', hint:'A pet that says meow'}, {word:'DOG', hint:'A loyal pet'},
-        {word:'SUN', hint:'Bright in the sky'}, {word:'CAR', hint:'You drive it'},
-        {word:'BALL', hint:'Round toy'}, {word:'BOOK', hint:'You read it'},
-        {word:'TREE', hint:'Has leaves'}, {word:'FISH', hint:'Lives in water'},
-        {word:'STAR', hint:'Twinkles at night'}, {word:'CAKE', hint:'Birthday dessert'}
-    ];
+        const wisdomQuestions = [
+            {q:"What has keys but can't open locks?", a:"piano", hint:"You can play music"},
+            {q:"What gets wetter the more it dries?", a:"towel", hint:"Use after bath"},
+            {q:"What has hands but can't clap?", a:"clock", hint:"Tells time"},
+            {q:"What runs but never walks?", a:"river", hint:"Water flows"},
+            {q:"What has a face and hands but no body?", a:"clock", hint:"Tells time"}
+        ];
 
-    const wisdomQuestions = [
-        {q:"What has keys but can't open locks?", a:"piano", hint:"You can play music"},
-        {q:"What gets wetter the more it dries?", a:"towel", hint:"Use after bath"},
-        {q:"What has hands but can't clap?", a:"clock", hint:"Tells time"},
-        {q:"What runs but never walks?", a:"river", hint:"Water flows"},
-        {q:"What has a face and hands but no body?", a:"clock", hint:"Tells time"}
-    ];
-
-    const kidsData = {
-        fruits: ['🍎|Apple','🍌|Banana','🍇|Grapes','🍊|Orange','🥭|Mango','🍉|Watermelon','🍓|Strawberry','🍍|Pineapple','🥝|Kiwi','🍑|Peach'],
-        pets: ['🐶|Dog','🐱|Cat','🐰|Rabbit','🐹|Hamster','🐦|Bird','🐠|Fish','🐢|Turtle','🐴|Horse','🐭|Mouse','🦜|Parrot'],
-        wild: ['🦁|Lion','🐯|Tiger','🐘|Elephant','🦒|Giraffe','🐵|Monkey','🦓|Zebra','🐻|Bear','🦊|Fox','🐼|Panda','🦏|Rhino'],
-        veggies: ['🥕|Carrot','🥦|Broccoli','🍅|Tomato','🥒|Cucumber','🌽|Corn','🍆|Eggplant','🧅|Onion','🥔|Potato','🫑|Pepper','🥬|Lettuce'],
-        numbers: ['1️⃣|One','2️⃣|Two','3️⃣|Three','4️⃣|Four','5️⃣|Five','6️⃣|Six','7️⃣|Seven','8️⃣|Eight','9️⃣|Nine','🔟|Ten']
-    };
-
-    function resetGame() {
-        clearInterval(gameTimer);
-        kidsBGM.pause();
-        score = 0;
-        level = 1;
-        timeLeft = 10;
-        gameActive = false;
-        document.getElementById('target').style.display = 'none';
-        document.getElementById('levelInfo').style.display = 'block';
-        document.getElementById('targetScore').textContent = cfg.target;
-        document.getElementById('targetTime').textContent = cfg.time + 's';
-        document.getElementById('scrambleInput').style.display = 'none';
-        document.getElementById('wisdomInput').style.display = 'none';
-        document.getElementById('startBtn').style.display = 'inline-block';
-        document.getElementById('hintBtn').style.display = 'none';
-        document.getElementById('wisdomHintBtn').style.display = 'none';
-        document.getElementById('scrambleNextBtn').style.display = 'none';
-        document.getElementById('wisdomNextBtn').style.display = 'none';
-        document.getElementById('timerDisplay').textContent = 'Ready?';
-        updateUI();
-    }
-
-    function updateUI() {
-        document.getElementById('score').textContent = score;
-        document.getElementById('hintCount').textContent = hints;
-        document.getElementById('levelDisplay').textContent = level + '/' + speedLevels.length;
-    }
-
-function switchMode(mode) {
-    clearInterval(gameTimer);
-    kidsBGM.pause();
-    kidsBGM.currentTime = 0;
-    gameActive = false;
-    currentMode = mode;
-
-    document.getElementById('speedGame').style.display = 'none';
-    document.getElementById('scrambleGame').style.display = 'none';
-    document.getElementById('wisdomGame').style.display = 'none';
-    document.getElementById('kidsGame').style.display = 'none';
-
-    document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
-    document.getElementById(mode + 'Mode').classList.add('active');
-
-    document.getElementById('gameArea').innerHTML = `
-        <div class="ready-text" style="font-size:48px; font-weight:900; color:#ffaa00; text-shadow:0 0 20px #ffaa00; margin:20px 0;">Ready?</div>
-        <button id="startGameBtn" onclick="startCurrentGame()" style="background:#ff00aa; color:#0a0a2f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer;">START GAME</button>
-    `;
-}
-
-function startCurrentGame() {
-      // Kids kaakapothe matrame BGM pause chey
-    if (currentMode !== 'kids') {
-        kidsBGM.pause();
-        kidsBGM.currentTime = 0;
-    }
-    document.getElementById('gameArea').innerHTML = '';
-    if(currentMode === 'speed') {
-        document.getElementById('speedGame').style.display = 'block';
-        startSpeedGame();
-    } else if(currentMode === 'scramble') {
-        document.getElementById('scrambleGame').style.display = 'block';
-        startScrambleGame();
-    } else if(currentMode === 'wisdom') {
-        document.getElementById('wisdomGame').style.display = 'block';
-        startWisdomGame();
-    } else if(currentMode === 'kids') {
-        document.getElementById('kidsGame').style.display = 'block';
-        startKidsGame();
-    }
-}
-
-function startSpeedGame() {
-    resetGame();
-    level = 1;
-    score = 0;
-    updateUI();
-    startLevel();
-}
-
-    function startKidsCategory(cat) {
-    document.getElementById('kidsCategories').style.display = 'none';
-    document.getElementById('kidsQuestion').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    document.getElementById('kidsBigGame').style.display = 'block';
-    kidsScore = 0;
-    kidsCurrentIndex = 0;
-    kidsAllItems = kidsData[cat].map(item => {
-        const [emoji, name] = item.split('|');
-        return {emoji, name};
-    });
-    // "Ready?" big size lo show chey
-    document.getElementById('kidsBigEmoji').textContent = 'Ready?';
-    document.getElementById('kidsBigEmoji').style.fontSize = '120px';
-    document.getElementById('kidsProgress').textContent = '';
-    // 1sec taruvata first emoji
-    setTimeout(() => {
-        showNextKidsEmoji();
-    }, 1000);
-}
-    function createTarget(cfg) {
-   const target = document.getElementById('target');
-   target.textContent = cfg.shape;
-   target.style.color = cfg.color;
-   target.style.fontSize = cfg.size + 'px';
-   target.style.textShadow = '0 0 30px ' + cfg.color;
-   target.onclick = () => {
-       if (gameActive) {
-           score++;
-           updateUI();
-           moveTarget();
-           if (score >= cfg.target) {
-               clearInterval(gameTimer);
-               nextLevel();
-           }
-       }
-   };
-   moveTarget();
-}
-
-function startLevel() {
-    const cfg = speedLevels[level-1];
-    document.getElementById('levelInfo').style.display = 'block';
-    document.getElementById('targetScore').textContent = cfg.target;
-    document.getElementById('targetTime').textContent = cfg.time + 's';
-    timeLeft = cfg.time;
-    score = 0;
-    gameActive = true;
-    createTarget(cfg);
-    gameTimer = setInterval(() => {
-        timeLeft--;
-        document.getElementById('timerDisplay').textContent = timeLeft;
-        if (timeLeft <= 0) {
-            clearInterval(gameTimer);
-            alert('Time Up! Game Over');
-            resetGame();
-        }
-    }, 1000);
-}
-
-    function moveTarget() {
-        const target = document.getElementById('target');
-        const cfg = speedLevels[level-1];
-        const area = document.getElementById('gameScreen');
-        const maxX = area.clientWidth - cfg.size;
-        const maxY = area.clientHeight - cfg.size - 50;
-        target.style.left = Math.random() * maxX + 'px';
-        target.style.top = Math.random() * maxY + 'px';
-    }
-
-    function nextLevel() {
-        level++;
-        updateUI();
-        startLevel();
-    }
-
-    function startScrambleGame() {
-    resetGame();
-    level = 1;
-    scrambleScore = 0;
-    scrambleAsked = [];
-    updateUI();
-    document.getElementById('scrambleWord').textContent = 'READY?';
-    document.getElementById('scrambleStartBtn').style.display = 'inline-block';
-    document.getElementById('scrambleInput').style.display = 'none';
-    document.getElementById('hintBtn').style.display = 'none';
-    document.getElementById('scrambleNextBtn').style.display = 'none';
-}
-
-    function startScrambleLevel() {
-        document.getElementById('scrambleStartBtn').style.display = 'none';
-        document.getElementById('scrambleInput').style.display = 'block';
-        document.getElementById('hintBtn').style.display = 'inline-block';
-        document.getElementById('scrambleNextBtn').style.display = 'inline-block';
-        nextScrambleWord();
-    }
-
-    function nextScrambleWord() {
-        if (scrambleAsked.length >= scrambleWords.length) {
-            alert("🎉 SCRAMBLE COMPLETE! 🎉");
-            return;
-        }
-        let wordObj = scrambleWords[Math.floor(Math.random() * scrambleWords.length)];
-        while (scrambleAsked.includes(wordObj.word)) {
-            wordObj = scrambleWords[Math.floor(Math.random() * scrambleWords.length)];
-        }
-        scrambleAsked.push(wordObj.word);
-        currentScramble = wordObj;
-        const scrambled = scramble(wordObj.word);
-        document.getElementById('scrambleWord').textContent = scrambled;
-        document.getElementById('scrambleHint').textContent = wordObj.hint;
-        document.getElementById('scrambleInput').value = '';
-        document.getElementById('scrambleFeedback').textContent = '';
-        document.getElementById('scrambleInput').focus();
-    }
-
-    function scramble(word) {
-        let array = word.split('');
-        for (let i = array.length - 1; i > 0; i--) {
-            let j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-        if (array.join('') === word) return scramble(word);
-        return array.join('');
-    }
-
-    function checkScramble() {
-        const answer = document.getElementById('scrambleInput').value.toLowerCase();
-        if (answer === currentScramble.word.toLowerCase()) {
-            scrambleScore++;
-            document.getElementById('score').textContent = scrambleScore;
-            document.getElementById('scrambleFeedback').textContent = '✅ Correct!';
-            setTimeout(nextScrambleWord, 800);
-        } else {
-            document.getElementById('scrambleFeedback').textContent = '❌ Try again!';
-        }
-    }
-
-    function useScrambleHint() {
-        if (hints > 0) {
-            hints--;
-            alert('Hint: ' + currentScramble.hint);
-            updateUI();
-        } else {
-            alert('No hints left!');
-        }
-    }
-
-    function startWisdomGame() {
-    resetGame();
-    wisdomCorrectCount = 0;
-    wisdomAsked = [];
-    updateUI();
-    document.getElementById('wisdomText').textContent = 'Ready for Wisdom?';
-    document.getElementById('wisdomStartBtn').style.display = 'inline-block';
-    document.getElementById('wisdomInput').style.display = 'none';
-    document.getElementById('wisdomHintBtn').style.display = 'none';
-    document.getElementById('wisdomNextBtn').style.display = 'none';
-}
-
-    function nextWisdomQuestion() {
-        if (wisdomAsked.length >= wisdomQuestions.length) {
-            alert("🎉 WISDOM MASTER! 🎉 Score: " + score);
-            return;
-        }
-        document.getElementById('wisdomStartBtn').style.display = 'none';
-        document.getElementById('wisdomInput').style.display = 'block';
-        document.getElementById('wisdomHintBtn').style.display = 'inline-block';
-        document.getElementById('wisdomNextBtn').style.display = 'inline-block';
-
-        let qObj = wisdomQuestions[Math.floor(Math.random() * wisdomQuestions.length)];
-        while (wisdomAsked.includes(qObj.q)) {
-            qObj = wisdomQuestions[Math.floor(Math.random() * wisdomQuestions.length)];
-        }
-        wisdomAsked.push(qObj.q);
-        currentWisdom = qObj;
-        document.getElementById('wisdomText').textContent = qObj.q;
-        document.getElementById('wisdomInput').value = '';
-        document.getElementById('wisdomFeedback').textContent = '';
-        document.getElementById('wisdomInput').focus();
-        level = wisdomAsked.length;
-        updateUI();
-    }
-
-    function checkWisdom() {
-        const answer = document.getElementById('wisdomInput').value.toLowerCase().trim();
-        if (answer === currentWisdom.a) {
-            score += 10;
-            wisdomCorrectCount++;
-            document.getElementById('wisdomFeedback').textContent = '✅ Correct!';
-            updateUI();
-            if (wisdomCorrectCount % 5 === 0) {
-                hints += 2;
-                alert('🎉 +2 Hints! 🎉');
-                updateUI();
-            }
-            setTimeout(nextWisdomQuestion, 800);
-        } else {
-            document.getElementById('wisdomFeedback').textContent = '❌ Try again!';
-        }
-    }
-
-    function useWisdomHint() {
-        if (hints > 0) {
-            hints--;
-            alert('Hint: ' + currentWisdom.hint);
-            updateUI();
-        } else {
-            alert('No hints left!');
-        }
-    }
-
- function startKidsGame() {
-    kidsBGM.currentTime = 0; // Reset to start
-    kidsBGM.play().catch(e=>{}); // Single play call
-    document.getElementById('speedGame').style.display = 'none';
-    document.getElementById('scrambleGame').style.display = 'none';
-    document.getElementById('wisdomGame').style.display = 'none';
-    document.getElementById('kidsGame').style.display = 'block';
-    backToKidsMenu(); // Ikkada pause avthundi but menu screen kabatti ok
-    kidsBGM.play().catch(e=>{}); // Menu ki vachaka malli play chey
-}
-   function backToKidsMenu() {
-    // kidsBGM.pause(); ← Remove this line
-    kidsBGM.currentTime = 0;
-    document.getElementById('kidsCategories').style.display = 'grid';
-    document.getElementById('kidsBigGame').style.display = 'none';
-    document.getElementById('kidsBackBtn').style.display = 'none';
-    document.getElementById('kidsQuestion').textContent = 'Choose a Category';
-    document.getElementById('kidsFeedback').textContent = '';
-    kidsScore = 0;
-}
-   function startKidsCategory(cat) {
-    document.getElementById('kidsCategories').style.display = 'none';
-    document.getElementById('kidsQuestion').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-    document.getElementById('kidsBigGame').style.display = 'block';
-
-    kidsScore = 0;
-    kidsCurrentIndex = 0;
-    kidsAllItems = kidsData[cat].map(item => {
-        const [emoji, name] = item.split('|');
-        return {emoji, name};
-    });
-
-    showNextKidsEmoji();
-}
-
-let kidsCurrentIndex = 0; // Global ga pettuko
-        // Add chey
-function updateKidsProgress() {
-    document.getElementById('kidsProgress').textContent = 
-        `${kidsCurrentIndex + 1} / ${kidsAllItems.length}`;
-}
-
-    function showNextKidsEmoji() {
-    const emojiDiv = document.getElementById('kidsBigEmoji');
-    const progressDiv = document.getElementById('kidsProgress');
-
-    if(kidsCurrentIndex >= kidsAllItems.length) {
-    // Game complete
-    kidsBGM.pause(); // Add this - BGM stop at end
-    kidsBGM.currentTime = 0;
-    emojiDiv.style.display = 'none';
-    progressDiv.textContent = 'All Done! 🎉';
-    document.getElementById('kidsFeedback').textContent = 'Great job!';
-    setTimeout(() => {
-       const msg = new SpeechSynthesisUtterance('Thank you Juju! Great job!');
-        msg.rate = 0.8;
-        msg.pitch = 1.1;
-        msg.onend = function() {
-            setTimeout(() => backToKidsMenu(), 500);
+        const kidsData = {
+            fruits: ['🍎|Apple','🍌|Banana','🍇|Grapes','🍊|Orange','🥭|Mango','🍉|Watermelon','🍓|Strawberry','🍍|Pineapple','🥝|Kiwi','🍑|Peach'],
+            pets: ['🐶|Dog','🐱|Cat','🐰|Rabbit','🐹|Hamster','🐦|Bird','🐠|Fish','🐢|Turtle','🐴|Horse','🐭|Mouse','🦜|Parrot'],
+            wild: ['🦁|Lion','🐯|Tiger','🐘|Elephant','🦒|Giraffe','🐵|Monkey','🦓|Zebra','🐻|Bear','🦊|Fox','🐼|Panda','🦏|Rhino'],
+            veggies: ['🥕|Carrot','🥦|Broccoli','🍅|Tomato','🥒|Cucumber','🌽|Corn','🍆|Eggplant','🧅|Onion','🥔|Potato','🫑|Pepper','🥬|Lettuce'],
+            numbers: ['1️⃣|One','2️⃣|Two','3️⃣|Three','4️⃣|Four','5️⃣|Five','6️⃣|Six','7️⃣|Seven','8️⃣|Eight','9️⃣|Nine','🔟|Ten']
         };
-        speechSynthesis.cancel();
-        speechSynthesis.speak(msg);
-    }, 300);
-    return;
-}
 
-    const item = kidsAllItems[kidsCurrentIndex];
-    emojiDiv.textContent = item.emoji;
-    emojiDiv.style.display = 'block';
-    progressDiv.textContent = `${kidsCurrentIndex + 1} / ${kidsAllItems.length}`;
-    document.getElementById('kidsFeedback').textContent = '';
+        function resetGame() {
+            clearInterval(gameTimer);
+            kidsBGM.pause();
+            score = 0; level = 1; timeLeft = 10; gameActive = false;
+            document.getElementById('target').style.display = 'none';
+            document.getElementById('levelInfo').style.display = 'none';
+            document.getElementById('scrambleInput').style.display = 'none';
+            document.getElementById('wisdomInput').style.display = 'none';
+            document.getElementById('timerDisplay').style.display = 'none';
+            document.getElementById('hintBtn').style.display = 'none';
+            document.getElementById('wisdomHintBtn').style.display = 'none';
+            document.getElementById('scrambleNextBtn').style.display = 'none';
+            document.getElementById('wisdomNextBtn').style.display = 'none';
+            updateUI();
+        }
 
-    emojiDiv.onclick = function() {
-        emojiDiv.classList.add('bounce');
-        setTimeout(() => emojiDiv.classList.remove('bounce'), 400);
-        speakText(item.name);
-        kidsScore++;
-        updateKidsProgress();
+        function updateUI() {
+            document.getElementById('score').textContent = score;
+            document.getElementById('hintCount').textContent = hints;
+            document.getElementById('levelDisplay').textContent = level + '/' + speedLevels.length;
+        }
 
-        setTimeout(() => {
-            kidsCurrentIndex++;
-            showNextKidsEmoji();
-        }, 1000);
-    };
-}
+        function switchMode(mode) {
+            clearInterval(gameTimer);
+            kidsBGM.pause(); kidsBGM.currentTime = 0;
+            gameActive = false; currentMode = mode;
+            document.getElementById('speedGame').style.display = 'none';
+            document.getElementById('scrambleGame').style.display = 'none';
+            document.getElementById('wisdomGame').style.display = 'none';
+            document.getElementById('kidsGame').style.display = 'none';
+            document.getElementById('timerDisplay').style.display = 'none';
+            document.getElementById('target').style.display = 'none';
+            document.getElementById('levelInfo').style.display = 'none';
+            document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(mode + 'Mode').classList.add('active');
+            document.getElementById('gameArea').innerHTML = `
+                <div class="ready-text">Ready?</div>
+                <button id="startGameBtn" onclick="startCurrentGame()" class="btn">START GAME</button>
+            `;
+        }
 
-   function speakText(text) {
-    if ('speechSynthesis' in window) {
-        speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.rate = 0.7; // 0.8 kanna slow
-        utterance.pitch = 1.1;
-        utterance.volume = 1;
-        speechSynthesis.speak(utterance);
-    }
-}
+        function startCurrentGame() {
+            if (currentMode!== 'kids') {
+                kidsBGM.pause(); kidsBGM.currentTime = 0;
+            }
+            document.getElementById('gameArea').innerHTML = '';
+            if(currentMode === 'speed') {
+                document.getElementById('speedGame').style.display = 'block';
+                startSpeedGame();
+            } else if(currentMode === 'scramble') {
+                document.getElementById('scrambleGame').style.display = 'block';
+                startScrambleGame();
+            } else if(currentMode === 'wisdom') {
+                document.getElementById('wisdomGame').style.display = 'block';
+                startWisdomGame();
+            } else if(currentMode === 'kids') {
+                document.getElementById('kidsGame').style.display = 'block';
+                startKidsGame();
+            }
+        }
 
-    
-    document.getElementById('speedMode').onclick = () => switchMode('speed');
-    document.getElementById('scrambleMode').onclick = () => switchMode('scramble');
-    document.getElementById('wisdomMode').onclick = () => switchMode('wisdom');
-    document.getElementById('kidsMode').onclick = () => switchMode('kids');
-    document.getElementById('scrambleStartBtn').onclick = startScrambleLevel;
-    document.getElementById('hintBtn').onclick = useScrambleHint;
-    document.getElementById('scrambleNextBtn').onclick = nextScrambleWord;
-    document.getElementById('wisdomStartBtn').onclick = nextWisdomQuestion;
-    document.getElementById('wisdomHintBtn').onclick = useWisdomHint;
-    document.getElementById('wisdomNextBtn').onclick = nextWisdomQuestion;
-    document.getElementById('closeGameBtn').onclick = () => window.location.href = 'index.html';
+        function startSpeedGame() {
+            resetGame();
+            level = 1; score = 0;
+            updateUI();
+            startLevel();
+        }
 
-    document.getElementById('scrambleInput').onkeypress = (e) => {
-        if (e.key === 'Enter') checkScramble();
-    };
-    document.getElementById('wisdomInput').onkeypress = (e) => {
-        if (e.key === 'Enter') checkWisdom();
-    };
+        function startLevel() {
+            const cfg = speedLevels[level-1];
+            document.getElementById('levelInfo').style.display = 'block';
+            document.getElementById('targetScore').textContent = cfg.target;
+            document.getElementById('targetTime').textContent = cfg.time + 's';
+            timeLeft = cfg.time;
+            score = 0;
+            gameActive = true;
+            document.getElementById('timerDisplay').style.display = 'block';
+            document.getElementById('target').style.display = 'flex';
+            createTarget(cfg);
+            gameTimer = setInterval(() => {
+                timeLeft--;
+                document.getElementById('timerDisplay').textContent = timeLeft;
+                if (timeLeft <= 0) {
+                    clearInterval(gameTimer);
+                    alert('Time Up! Game Over');
+                    resetGame();
+                }
+            }, 1000);
+        }
 
-    window.onload = function() {
-        updateUI();
-        document.getElementById('speedMode').classList.add('active');
-        document.getElementById('speedGame').style.display = 'block';
-    };
+        function createTarget(cfg) {
+            const target = document.getElementById('target');
+            target.textContent = cfg.shape;
+            target.style.color = cfg.color;
+            target.style.fontSize = cfg.size + 'px';
+            target.style.textShadow = '0 0 30px ' + cfg.color;
+            moveTarget();
+            target.onclick = () => {
+                if (gameActive) {
+                    score++; updateUI(); moveTarget();
+                    if (score >= cfg.target) {
+                        clearInterval(gameTimer);
+                        if(level < speedLevels.length) {
+                            level++; startLevel();
+                        } else {
+                            alert('🎉 YOU WON! 🎉');
+                            resetGame();
+                        }
+                    }
+                }
+            };
+        }
+
+        function moveTarget() {
+            const target = document.getElementById('target');
+            const cfg = speedLevels[level-1];
+            const area = document.getElementById('gameScreen');
+            const maxX = area.clientWidth - cfg.size;
+            const maxY = area.clientHeight - cfg.size - 50;
+            target.style.left = Math.random() * maxX + 'px';
+            target.style.top = Math.random() * maxY + 'px';
+        }
+
+        function startScrambleGame() {
+            resetGame();
+            level = 1; scrambleScore = 0; scrambleAsked = [];
+            updateUI();
+            document.getElementById('scrambleWord').textContent = 'READY?';
+            document.getElementById('scrambleStartBtn').style.display = 'inline-block';
+            document.getElementById('scrambleInput').style.display = 'none';
+            document.getElementById('hintBtn').style.display = 'none';
+            document.getElementById('scrambleNextBtn').style.display = 'none';
+        }
+
+        function startScrambleLevel() {
+            document.getElementById('scrambleStartBtn').style.display = 'none';
+            document.getElementById('scrambleInput').style.display = 'block';
+            document.getElementById('hintBtn').style.display = 'inline-block';
+            document.getElementById('scrambleNextBtn').style.display = 'inline-block';
+            nextScrambleWord();
+        }
+
+        function nextScrambleWord() {
+            if (scrambleAsked.length >= scrambleWords.length) {
+                alert("🎉 SCRAMBLE COMPLETE! 🎉");
+                return;
+            }
+            let wordObj = scrambleWords[Math.floor(Math.random() * scrambleWords.length)];
+            while (scrambleAsked.includes(wordObj.word)) {
+                wordObj = scrambleWords[Math.floor(Math.random() * scrambleWords.length)];
+            }
+            scrambleAsked.push(wordObj.word);
+            currentScramble = wordObj;
+            const scrambled = scramble(wordObj.word);
+            document.getElementById('scrambleWord').textContent = scrambled;
+            document.getElementById('scrambleHint').textContent = wordObj.hint;
+            document.getElementById('scrambleInput').value = '';
+            document.getElementById('scrambleFeedback').textContent = '';
+            document.getElementById('scrambleInput').focus();
+        }
+
+        function scramble(word) {
+            let array = word.split('');
+            for (let i = array.length - 1; i > 0; i--) {
+                let j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            if (array.join('') === word) return scramble(word);
+            return array.join('');
+        }
+
+        function checkScramble() {
+            const answer = document.getElementById('scrambleInput').value.toLowerCase();
+            if (answer === currentScramble.word.toLowerCase()) {
+                scrambleScore++;
+                document.getElementById('score').textContent = scrambleScore;
+                document.getElementById('scrambleFeedback').textContent = '✅ Correct!';
+                setTimeout(nextScrambleWord, 800);
+            } else {
+                document.getElementById('scrambleFeedback').textContent = '❌ Try again!';
+            }
+        }
+
+        function useScrambleHint() {
+            if (hints > 0) {
+                hints--;
+                alert('Hint: ' + currentScramble.hint);
+                updateUI();
+            } else {
+                alert('No hints left!');
+            }
+        }
+
+        function startWisdomGame() {
+            resetGame();
+            wisdomCorrectCount = 0; wisdomAsked = [];
+            updateUI();
+            document.getElementById('wisdomText').textContent = 'Ready for Wisdom?';
+            document.getElementById('wisdomStartBtn').style.display = 'inline-block';
+            document.getElementById('wisdomInput').style.display = 'none';
+            document.getElementById('wisdomHintBtn').style.display = 'none';
+            document.getElementById('wisdomNextBtn').style.display = 'none';
+        }
+
+        function nextWisdomQuestion() {
+            if (wisdomAsked.length >= wisdomQuestions.length) {
+                alert("🎉 WISDOM MASTER! 🎉 Score: " + score);
+                return;
+            }
+            document.getElementById('wisdomStartBtn').style.display = 'none';
+            document.getElementById('wisdomInput').style.display = 'block';
+            document.getElementById('wisdomHintBtn').style.display = 'inline-block';
+            document.getElementById('wisdomNextBtn').style.display = 'inline-block';
+            let qObj = wisdomQuestions[Math.floor(Math.random() * wisdomQuestions.length)];
+            while (wisdomAsked.includes(qObj.q)) {
+                qObj = wisdomQuestions[Math.floor(Math.random() * wisdomQuestions.length)];
+            }
+            wisdomAsked.push(qObj.q);
+            currentWisdom = qObj;
+            document.getElementById('wisdomText').textContent = qObj.q;
+            document.getElementById('wisdomInput').value = '';
+            document.getElementById('wisdomFeedback').textContent = '';
+            document.getElementById('wisdomInput').focus();
+            level = wisdomAsked.length;
+            updateUI();
+        }
+
+        function checkWisdom() {
+            const answer = document.getElementById('wisdomInput').value.toLowerCase().trim();
+            if (answer === currentWisdom.a) {
+                score += 10; wisdomCorrectCount++;
+                document.getElementById('wisdomFeedback').textContent = '✅ Correct!';
+                updateUI();
+                if (wisdomCorrectCount % 5 === 0) {
+                    hints += 2; alert('🎉 +2 Hints! 🎉'); updateUI();
+                }
+                setTimeout(nextWisdomQuestion, 800);
+            } else {
+                document.getElementById('wisdomFeedback').textContent = '❌ Try again!';
+            }
+        }
+
+        function useWisdomHint() {
+            if (hints > 0) {
+                hints--;
+                alert('Hint: ' + currentWisdom.hint);
+                updateUI();
+            } else {
+                alert('No hints left!');
+            }
+        }
+
+        function startKidsGame() {
+            kidsBGM.currentTime = 0;
+            kidsBGM.play().catch(e=>{});
+            backToKidsMenu();
+        }
+
+        function backToKidsMenu() {
+            document.getElementById('kidsCategories').style.display = 'grid';
+            document.getElementById('kidsBigGame').style.display = 'none';
+            document.getElementById('kidsBackBtn').style.display = 'none';
+            document.getElementById('kidsQuestion').textContent = 'Choose a Category';
+            document.getElementById('kidsFeedback').textContent = '';
+            kidsScore = 0;
+        }
+
+        function startKidsCategory(cat) {
+            document.getElementById('kidsCategories').style.display = 'none';
+            document.getElementById('kidsQuestion').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+            document.getElementById('kidsBigGame').style.display = 'block';
+            document.getElementById('kidsBackBtn').style.display = 'inline-block';
+            kidsScore = 0; kidsCurrentIndex = 0;
+            kidsAllItems = kidsData[cat].map(item => {
+                const [emoji, name] = item.split('|');
+                return {emoji, name};
+            });
+            document.getElementById('kidsBigEmoji').textContent = 'Ready?';
+            document.getElementById('kidsBigEmoji').style.fontSize = '120px';
+            document.getElementById('kidsProgress').textContent = '';
+            setTimeout(() => { showNextKidsEmoji(); }, 1000);
+        }
+
+        function showNextKidsEmoji() {
+            const emojiDiv = document.getElementById('kidsBigEmoji');
+            const progressDiv = document.getElementById('kidsProgress');
+            if(kidsCurrentIndex >= kidsAllItems.length) {
+                kidsBGM.pause(); kidsBGM.currentTime = 0;
+                emojiDiv.style.display = 'none';
+                progressDiv.textContent = 'All Done! 🎉';
+                document.getElementById('kidsFeedback').textContent = 'Great job!';
+                setTimeout(() => {
+                    const msg = new SpeechSynthesisUtterance('Thank you! Great job!');
+                    msg.rate = 0.8; msg.pitch = 1.1;
+                    msg.onend = function() { setTimeout(() => backToKidsMenu(), 500); };
+                    speechSynthesis.cancel(); speechSynthesis.speak(msg);
+                }, 300);
+                return;
+            }
+            const item = kidsAllItems[kidsCurrentIndex];
+            emojiDiv.textContent = item.emoji;
+            emojiDiv.style.display = 'block';
+            progressDiv.textContent = `${kidsCurrentIndex + 1} / ${kidsAllItems.length}`;
+            document.getElementById('kidsFeedback').textContent = '';
+            emojiDiv.onclick = function() {
+                emojiDiv.classList.add('bounce');
+                setTimeout(() => emojiDiv.classList.remove('bounce'), 400);
+                speakText(item.name);
+                kidsScore++;
+                setTimeout(() => {
+                    kidsCurrentIndex++;
+                    showNextKidsEmoji();
+                }, 1000);
+            };
+        }
+
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.rate = 0.7; utterance.pitch = 1.1; utterance.volume = 1;
+                speechSynthesis.speak(utterance);
+            }
+        }
+
+        document.getElementById('speedMode').onclick = () => switchMode('speed');
+        document.getElementById('scrambleMode').onclick = () => switchMode('scramble');
+        document.getElementById('wisdomMode').onclick = () => switchMode('wisdom');
+        document.getElementById('kidsMode').onclick = () => switchMode('kids');
+        document.getElementById('scrambleStartBtn').onclick = startScrambleLevel;
+        document.getElementById('hintBtn').onclick = useScrambleHint;
+        document.getElementById('scrambleNextBtn').onclick = nextScrambleWord;
+        document.getElementById('wisdomStartBtn').onclick = nextWisdomQuestion;
+        document.getElementById('wisdomHintBtn').onclick = useWisdomHint;
+        document.getElementById('wisdomNextBtn').onclick = nextWisdomQuestion;
+        document.getElementById('closeGameBtn').onclick = () => window.location.href = 'index.html';
+        document.getElementById('scrambleInput').onkeypress = (e) => { if (e.key === 'Enter') checkScramble(); };
+        document.getElementById('wisdomInput').onkeypress = (e) => { if (e.key === 'Enter') checkWisdom(); };
+
+        window.onload = function() {
+            updateUI();
+            document.getElementById('speedMode').classList.add('active');
+        };
     </script>
 </body>
 </html>
