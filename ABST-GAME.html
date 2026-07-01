@@ -246,10 +246,13 @@
         document.getElementById('levelDisplay').textContent = level + '/' + speedLevels.length;
     }
 
-    function switchMode(mode) {
-    clearInterval(gameTimer);
-    kidsBGM.pause();
-    kidsBGM.currentTime = 0;
+function switchMode(mode) {
+    // Error check tho safe ga chey
+    if(typeof gameTimer !== 'undefined') clearInterval(gameTimer);
+    if(typeof kidsBGM !== 'undefined' && kidsBGM) {
+        kidsBGM.pause();
+        kidsBGM.currentTime = 0;
+    }
     gameActive = false;
     currentMode = mode;
     
@@ -262,17 +265,21 @@
     // Remove active class
     document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
     
-    // Add active class to clicked button
+    // Add active class
     document.getElementById(mode + 'Mode').classList.add('active');
     
-    // Show Ready screen - game start cheyaku
+    // Show Ready screen
     document.getElementById('gameArea').innerHTML = `
         <div class="ready-text">Ready?</div>
         <button id="startGameBtn" onclick="startCurrentGame()">START GAME</button>
     `;
+    
+    console.log('Mode switched to:', mode); // Debug kosam
 }
 
 function startCurrentGame() {
+    console.log('Starting game:', currentMode); // Debug kosam
+    
     if(currentMode === 'speed') {
         document.getElementById('speedGame').style.display = 'block';
         startSpeedGame();
@@ -286,8 +293,8 @@ function startCurrentGame() {
         document.getElementById('kidsGame').style.display = 'block';
         startKidsGame();
     }
-
-    // Ready screen hide chey
+    
+    // Hide Ready screen
     document.querySelector('.ready-text').style.display = 'none';
     document.getElementById('startGameBtn').style.display = 'none';
 }
