@@ -274,6 +274,7 @@ function switchMode(mode) {
 }
 
 function startCurrentGame() {
+    document.getElementById('gameArea').innerHTML = '';
     if(currentMode === 'speed') {
         document.getElementById('speedGame').style.display = 'block';
         startSpeedGame();
@@ -288,12 +289,6 @@ function startCurrentGame() {
         startKidsGame();
     }
 }
-    
-    // Hide Ready screen
-    document.querySelector('.ready-text').style.display = 'none';
-    document.getElementById('startGameBtn').style.display = 'none';
-}
-
     function startSpeedGame() {
     resetGame();
     level = 1;
