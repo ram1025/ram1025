@@ -174,9 +174,8 @@
     </div>
 
     <div id="speedGame" style="display:none;">
-        <div class="timer-display" id="timerDisplay">Ready?</div>
-        <div class="target" id="target"></div>
-        <button class="btn" id="startBtn">START GAME</button>
+    <div class="timer-display" id="timerDisplay">10</div>
+    <div class="target" id="target"></div>
     </div>
 
         <div id="scrambleGame" style="display:none;">
@@ -347,7 +346,7 @@ function startSpeedGame() {
         const cfg = speedLevels[level-1];
         timeLeft = cfg.time;
         score = 0;
-        document.getElementById('startBtn').style.display = 'none';
+    
         document.getElementById('target').style.display = 'flex';
         document.getElementById('timerDisplay').textContent = timeLeft;
         document.getElementById('targetScore').textContent = cfg.target;
