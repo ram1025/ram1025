@@ -252,7 +252,6 @@ body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif;
         <div id="kidsProgress" style="text-align:center; font-size:20px; margin-top:20px; opacity:0.7; color:#fff;"></div>
     </div>
 </div>
-<div class="feedback-msg" id="kidsFeedback" style="font-size:20px; color:#ffd700; min-height:30px; text-align:center; margin:10px 0;"></div>
            
             <div class="feedback-msg" id="kidsFeedback" style="font-size:20px; color:#ffd700; min-height:30px; text-align:center; margin:15px;"></div>
             <button class="btn btn-small" id="kidsBackBtn" onclick="backToKidsMenu()" style="display:none; margin:20px auto;">← Back to Menu</button>
@@ -427,29 +426,23 @@ function startSpeedGame() {
 }
 
 function startLevel() {
-   const cfg = speedLevels[level-1];
-   gameActive = true;
-   score = 0;
-   timeLeft = cfg.time;
-   document.getElementById('levelInfo').style.display = 'block';
-   document.getElementById('targetScore').textContent = cfg.target;
-   document.getElementById('targetTime').textContent = cfg.time + 's';
-   document.getElementById('timerDisplay').textContent = timeLeft;
-   document.getElementById('target').style.display = 'block';
-   createTarget(cfg);
-   gameTimer = setInterval(() => {
-       timeLeft--;
-       document.getElementById('timerDisplay').textContent = timeLeft;
-       if (timeLeft <= 0) {
-           clearInterval(gameTimer);
-           if (score >= cfg.target) {
-               nextLevel();
-           } else {
-               alert('Time Up! Score: ' + score);
-               resetGame();
-           }
-       }
-   }, 1000);
+    const cfg = speedLevels[level-1];
+    document.getElementById('levelInfo').style.display = 'block';
+    document.getElementById('targetScore').textContent = cfg.target;
+    document.getElementById('targetTime').textContent = cfg.time + 's';
+    timeLeft = cfg.time;
+    score = 0;
+    gameActive = true;
+    createTarget(cfg);
+    gameTimer = setInterval(() => {
+        timeLeft--;
+        document.getElementById('timerDisplay').textContent = timeLeft;
+        if (timeLeft <= 0) {
+            clearInterval(gameTimer);
+            alert('Time Up! Game Over');
+            resetGame();
+        }
+    }, 1000);
 }
 
     function moveTarget() {
