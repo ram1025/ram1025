@@ -17,6 +17,27 @@
     50% { transform: scale(1.2); }
 }
 
+        /* Game Area Center - Add chesindi */
+#gameArea { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 300px; 
+    width: 100%;
+}
+.ready-text { 
+       position: absolute; 
+       top: 50%; 
+       left: 50%; 
+       transform: translate(-50%, -50%); 
+       font-size: 48px; 
+       font-weight: 900; 
+       color: #ffaa00; 
+       text-shadow: 0 0 20px #ffaa00; 
+       text-align: center; 
+   }
+        
 * { margin:0; padding:0; box-sizing:border-box }
 body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif;
     * { margin:0; padding:0; box-sizing:border-box }
@@ -182,10 +203,10 @@ body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif;
     <div class="game-area" id="gameScreen">
     <button id="closeGameBtn" class="close-btn">✖ CLOSE</button>
 
-    <div id="gameArea">
-        <div class="ready-text" style="font-size:48px; font-weight:900; color:#ffaa00; text-shadow:0 0 20px #ffaa00; margin:20px 0;">Ready?</div>
-        <button id="startGameBtn" onclick="startCurrentGame()" style="background:#ff00aa; color:#0a0a2f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer;">START GAME</button>
-    </div>
+    <div id="gameArea"> 
+    <div class="ready-text">Ready?</div> 
+    <button id="startGameBtn" onclick="startCurrentGame()" class="btn">START GAME</button> 
+</div>
 
     <div id="speedGame" style="display:none;">
     <div class="timer-display" id="timerDisplay">10</div>
@@ -295,7 +316,9 @@ body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif;
         timeLeft = 10;
         gameActive = false;
         document.getElementById('target').style.display = 'none';
-        document.getElementById('levelInfo').style.display = 'none';
+        document.getElementById('levelInfo').style.display = 'block';
+        document.getElementById('targetScore').textContent = cfg.target;
+        document.getElementById('targetTime').textContent = cfg.time + 's';
         document.getElementById('scrambleInput').style.display = 'none';
         document.getElementById('wisdomInput').style.display = 'none';
         document.getElementById('startBtn').style.display = 'inline-block';
@@ -335,6 +358,11 @@ function switchMode(mode) {
 }
 
 function startCurrentGame() {
+      // Kids kaakapothe matrame BGM pause chey
+    if (currentMode !== 'kids') {
+        kidsBGM.pause();
+        kidsBGM.currentTime = 0;
+    }
     document.getElementById('gameArea').innerHTML = '';
     if(currentMode === 'speed') {
         document.getElementById('speedGame').style.display = 'block';
@@ -363,44 +391,66 @@ function startSpeedGame() {
     document.getElementById('kidsCategories').style.display = 'none';
     document.getElementById('kidsQuestion').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
     document.getElementById('kidsBigGame').style.display = 'block';
-
     kidsScore = 0;
     kidsCurrentIndex = 0;
     kidsAllItems = kidsData[cat].map(item => {
         const [emoji, name] = item.split('|');
         return {emoji, name};
     });
-
     // "Ready?" big size lo show chey
     document.getElementById('kidsBigEmoji').textContent = 'Ready?';
     document.getElementById('kidsBigEmoji').style.fontSize = '120px';
     document.getElementById('kidsProgress').textContent = '';
-
     // 1sec taruvata first emoji
     setTimeout(() => {
         showNextKidsEmoji();
     }, 1000);
 }
-
     function createTarget(cfg) {
-        const target = document.getElementById('target');
-        target.textContent = cfg.shape;
-        target.style.color = cfg.color;
-        target.style.fontSize = cfg.size + 'px';
-        target.style.textShadow = '0 0 30px ' + cfg.color;
-        moveTarget();
-        target.onclick = () => {
-            if (gameActive) {
-                score++;
-                updateUI();
-                moveTarget();
-                if (score >= cfg.target) {
-                    clearInterval(gameTimer);
-                    nextLevel();
-                }
-            }
-        };
-    }
+   const target = document.getElementById('target');
+   target.textContent = cfg.shape;
+   target.style.color = cfg.color;
+   target.style.fontSize = cfg.size + 'px';
+   target.style.textShadow = '0 0 30px ' + cfg.color;
+   target.onclick = () => {
+       if (gameActive) {
+           score++;
+           updateUI();
+           moveTarget();
+           if (score >= cfg.target) {
+               clearInterval(gameTimer);
+               nextLevel();
+           }
+       }
+   };
+   moveTarget();
+}
+
+function startLevel() {
+   const cfg = speedLevels[level-1];
+   gameActive = true;
+   score = 0;
+   timeLeft = cfg.time;
+   document.getElementById('levelInfo').style.display = 'block';
+   document.getElementById('targetScore').textContent = cfg.target;
+   document.getElementById('targetTime').textContent = cfg.time + 's';
+   document.getElementById('timerDisplay').textContent = timeLeft;
+   document.getElementById('target').style.display = 'block';
+   createTarget(cfg);
+   gameTimer = setInterval(() => {
+       timeLeft--;
+       document.getElementById('timerDisplay').textContent = timeLeft;
+       if (timeLeft <= 0) {
+           clearInterval(gameTimer);
+           if (score >= cfg.target) {
+               nextLevel();
+           } else {
+               alert('Time Up! Score: ' + score);
+               resetGame();
+           }
+       }
+   }, 1000);
+}
 
     function moveTarget() {
         const target = document.getElementById('target');
@@ -554,20 +604,21 @@ function startSpeedGame() {
         }
     }
 
-    function startKidsGame() {
-        document.getElementById('speedGame').style.display = 'none';
-        document.getElementById('scrambleGame').style.display = 'none';
-        document.getElementById('wisdomGame').style.display = 'none';
-        document.getElementById('kidsGame').style.display = 'block';
-        backToKidsMenu();
-        kidsBGM.play().catch(e=>{});
-    }
-
+ function startKidsGame() {
+    kidsBGM.currentTime = 0; // Reset to start
+    kidsBGM.play().catch(e=>{}); // Single play call
+    document.getElementById('speedGame').style.display = 'none';
+    document.getElementById('scrambleGame').style.display = 'none';
+    document.getElementById('wisdomGame').style.display = 'none';
+    document.getElementById('kidsGame').style.display = 'block';
+    backToKidsMenu(); // Ikkada pause avthundi but menu screen kabatti ok
+    kidsBGM.play().catch(e=>{}); // Menu ki vachaka malli play chey
+}
    function backToKidsMenu() {
-    kidsBGM.pause();
+    // kidsBGM.pause(); ← Remove this line
     kidsBGM.currentTime = 0;
     document.getElementById('kidsCategories').style.display = 'grid';
-    document.getElementById('kidsBigGame').style.display = 'none'; // idi 'kidsBigGame' undali, 'kidsGrid' kaadu
+    document.getElementById('kidsBigGame').style.display = 'none';
     document.getElementById('kidsBackBtn').style.display = 'none';
     document.getElementById('kidsQuestion').textContent = 'Choose a Category';
     document.getElementById('kidsFeedback').textContent = '';
@@ -600,23 +651,24 @@ function updateKidsProgress() {
     const progressDiv = document.getElementById('kidsProgress');
 
     if(kidsCurrentIndex >= kidsAllItems.length) {
-        // Game complete
-        emojiDiv.style.display = 'none';
-        progressDiv.textContent = 'All Done! 🎉';
-        document.getElementById('kidsFeedback').textContent = 'Great job!';
-
-        setTimeout(() => {
-            const msg = new SpeechSynthesisUtterance('Great job! All done!');
-            msg.rate = 0.8;
-            msg.pitch = 1.1;
-            msg.onend = function() {
-    setTimeout(() => backToKidsMenu(), 500); // 0.5sec wait
-};
-            speechSynthesis.cancel();
-            speechSynthesis.speak(msg);
-        }, 300);
-        return;
-    }
+    // Game complete
+    kidsBGM.pause(); // Add this - BGM stop at end
+    kidsBGM.currentTime = 0;
+    emojiDiv.style.display = 'none';
+    progressDiv.textContent = 'All Done! 🎉';
+    document.getElementById('kidsFeedback').textContent = 'Great job!';
+    setTimeout(() => {
+       const msg = new SpeechSynthesisUtterance('Thank you Juju! Great job!');
+        msg.rate = 0.8;
+        msg.pitch = 1.1;
+        msg.onend = function() {
+            setTimeout(() => backToKidsMenu(), 500);
+        };
+        speechSynthesis.cancel();
+        speechSynthesis.speak(msg);
+    }, 300);
+    return;
+}
 
     const item = kidsAllItems[kidsCurrentIndex];
     emojiDiv.textContent = item.emoji;
@@ -638,16 +690,16 @@ function updateKidsProgress() {
     };
 }
 
-    function speakText(text) {
-        if ('speechSynthesis' in window) {
-            speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.rate = 0.8;
-            utterance.pitch = 1.1;
-            utterance.volume = 1;
-            speechSynthesis.speak(utterance);
-        }
+   function speakText(text) {
+    if ('speechSynthesis' in window) {
+        speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 0.7; // 0.8 kanna slow
+        utterance.pitch = 1.1;
+        utterance.volume = 1;
+        speechSynthesis.speak(utterance);
     }
+}
 
     
     document.getElementById('speedMode').onclick = () => switchMode('speed');
