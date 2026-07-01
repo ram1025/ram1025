@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABST GAME | P24 | INDIAN.001</title>
     <style>
+        /* KIDS Big Emoji Animation - Add chesindi */
+#kidsBigEmoji:active {
+    transform: scale(0.9)!important;
+}
+#kidsBigEmoji.bounce {
+    animation: bounce 0.4s ease;
+}
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+* { margin:0; padding:0; box-sizing:border-box }
+body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif;
     * { margin:0; padding:0; box-sizing:border-box }
     body { background:#0a0a2f; color:#ff00aa; font-family:system-ui,sans-serif; padding:20px; text-align:center; min-height:100vh; }
  .header { margin-bottom:20px }
@@ -345,35 +359,28 @@ function startSpeedGame() {
     startLevel();
 }
 
-    function startLevel() {
-        if (level > speedLevels.length) {
-            alert("🎉 CONGRATULATIONS! 🎉");
-            resetGame();
-            return;
-        }
-        const cfg = speedLevels[level-1];
-        timeLeft = cfg.time;
-        score = 0;
-    
-        document.getElementById('target').style.display = 'flex';
-        document.getElementById('timerDisplay').textContent = timeLeft;
-        document.getElementById('targetScore').textContent = cfg.target;
-        document.getElementById('targetTime').textContent = cfg.time + 's';
-        document.getElementById('levelInfo').style.display = 'block';
-        updateUI();
-        createTarget(cfg);
-        gameActive = true;
-        gameTimer = setInterval(() => {
-            timeLeft--;
-            document.getElementById('timerDisplay').textContent = timeLeft;
-            if (timeLeft <= 0) {
-                gameActive = false;
-                clearInterval(gameTimer);
-                if (score >= cfg.target) nextLevel();
-                else alert("💔 Time's up! Target: " + cfg.target);
-            }
-        }, 1000);
-    }
+    function startKidsCategory(cat) {
+    document.getElementById('kidsCategories').style.display = 'none';
+    document.getElementById('kidsQuestion').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+    document.getElementById('kidsBigGame').style.display = 'block';
+
+    kidsScore = 0;
+    kidsCurrentIndex = 0;
+    kidsAllItems = kidsData[cat].map(item => {
+        const [emoji, name] = item.split('|');
+        return {emoji, name};
+    });
+
+    // "Ready?" big size lo show chey
+    document.getElementById('kidsBigEmoji').textContent = 'Ready?';
+    document.getElementById('kidsBigEmoji').style.fontSize = '120px';
+    document.getElementById('kidsProgress').textContent = '';
+
+    // 1sec taruvata first emoji
+    setTimeout(() => {
+        showNextKidsEmoji();
+    }, 1000);
+}
 
     function createTarget(cfg) {
         const target = document.getElementById('target');
@@ -556,89 +563,79 @@ function startSpeedGame() {
         kidsBGM.play().catch(e=>{});
     }
 
-    function backToKidsMenu() {
+   function backToKidsMenu() {
     kidsBGM.pause();
     kidsBGM.currentTime = 0;
     document.getElementById('kidsCategories').style.display = 'grid';
-    document.getElementById('kidsGrid').style.display = 'none';
+    document.getElementById('kidsBigGame').style.display = 'none'; // idi 'kidsBigGame' undali, 'kidsGrid' kaadu
     document.getElementById('kidsBackBtn').style.display = 'none';
     document.getElementById('kidsQuestion').textContent = 'Choose a Category';
     document.getElementById('kidsFeedback').textContent = '';
     kidsScore = 0;
 }
-
    function startKidsCategory(cat) {
     document.getElementById('kidsCategories').style.display = 'none';
-    document.getElementById('kidsGrid').style.display = 'grid';
-    document.getElementById('kidsBackBtn').style.display = 'block';
-    document.getElementById('kidsFeedback').textContent = '';
     document.getElementById('kidsQuestion').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+    document.getElementById('kidsBigGame').style.display = 'block';
+
     kidsScore = 0;
-    kidsCurrentPage = 0;
-    kidsAllItems = kidsData[cat];
-    kidsBGM.currentTime = 0;
-    kidsBGM.play().catch(e=>{});
-    renderKidsPage();
-}
-
-function renderKidsPage() {
-    const grid = document.getElementById('kidsGrid');
-    grid.innerHTML = '';
-
-    const start = kidsCurrentPage * 10;
-    const end = start + 10;
-    const pageItems = kidsAllItems.slice(start, end);
-
-    pageItems.forEach((item) => {
+    kidsCurrentIndex = 0;
+    kidsAllItems = kidsData[cat].map(item => {
         const [emoji, name] = item.split('|');
-        const div = document.createElement('div');
-        div.innerHTML = `<div style="font-size:3rem">${emoji}</div>`;
-        div.style.cssText = 'background:#112; padding:20px; border-radius:15px; cursor:pointer; transition:all 0.3s;';
-
-        div.onclick = function() {
-            if(this.style.opacity!== '0.2') {
-                kidsBGM.pause();
-                this.style.opacity = '0.2';
-                this.style.transform = 'scale(0.9)';
-                kidsScore++;
-                document.getElementById('kidsFeedback').textContent = `Score: ${kidsScore}/${kidsAllItems.length}`;
-                speakText(name);
-
-                if(kidsScore === kidsAllItems.length) {
-                    setTimeout(() => {
-                        speakText('Great job! All done!');
-                        setTimeout(() => {
-                            backToKidsMenu();
-                        }, 2000);
-                    }, 500);
-                }
-            }
-        };
-        grid.appendChild(div);
+        return {emoji, name};
     });
 
-    if (kidsAllItems.length > 10) {
-        const navDiv = document.createElement('div');
-        navDiv.style.cssText = 'grid-column: span 5; display:flex; justify-content:center; gap:10px; margin-top:10px;';
+    showNextKidsEmoji();
+}
 
-        if (kidsCurrentPage > 0) {
-            const prevBtn = document.createElement('button');
-            prevBtn.className = 'btn btn-small';
-            prevBtn.textContent = '← Prev Page';
-            prevBtn.onclick = () => { kidsCurrentPage--; renderKidsPage(); };
-            navDiv.appendChild(prevBtn);
-        }
+let kidsCurrentIndex = 0; // Global ga pettuko
+        // Add chey
+function updateKidsProgress() {
+    document.getElementById('kidsProgress').textContent = 
+        `${kidsCurrentIndex + 1} / ${kidsAllItems.length}`;
+}
 
-        if (end < kidsAllItems.length) {
-            const nextBtn = document.createElement('button');
-            nextBtn.className = 'btn btn-small';
-            nextBtn.textContent = 'Next Page →';
-            nextBtn.onclick = () => { kidsCurrentPage++; renderKidsPage(); };
-            navDiv.appendChild(nextBtn);
-        }
+    function showNextKidsEmoji() {
+    const emojiDiv = document.getElementById('kidsBigEmoji');
+    const progressDiv = document.getElementById('kidsProgress');
 
-        grid.appendChild(navDiv);
+    if(kidsCurrentIndex >= kidsAllItems.length) {
+        // Game complete
+        emojiDiv.style.display = 'none';
+        progressDiv.textContent = 'All Done! 🎉';
+        document.getElementById('kidsFeedback').textContent = 'Great job!';
+
+        setTimeout(() => {
+            const msg = new SpeechSynthesisUtterance('Great job! All done!');
+            msg.rate = 0.8;
+            msg.pitch = 1.1;
+            msg.onend = function() {
+    setTimeout(() => backToKidsMenu(), 500); // 0.5sec wait
+};
+            speechSynthesis.cancel();
+            speechSynthesis.speak(msg);
+        }, 300);
+        return;
     }
+
+    const item = kidsAllItems[kidsCurrentIndex];
+    emojiDiv.textContent = item.emoji;
+    emojiDiv.style.display = 'block';
+    progressDiv.textContent = `${kidsCurrentIndex + 1} / ${kidsAllItems.length}`;
+    document.getElementById('kidsFeedback').textContent = '';
+
+    emojiDiv.onclick = function() {
+        emojiDiv.classList.add('bounce');
+        setTimeout(() => emojiDiv.classList.remove('bounce'), 400);
+        speakText(item.name);
+        kidsScore++;
+        updateKidsProgress();
+
+        setTimeout(() => {
+            kidsCurrentIndex++;
+            showNextKidsEmoji();
+        }, 1000);
+    };
 }
 
     function speakText(text) {
