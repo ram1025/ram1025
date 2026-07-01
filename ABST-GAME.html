@@ -125,13 +125,18 @@
     </div>
 
     <div class="game-area" id="gameScreen">
-        <button id="closeGameBtn" class="close-btn">✖ CLOSE</button>
+    <button id="closeGameBtn" class="close-btn">✖ CLOSE</button>
+    
+    <div id="gameArea">
+        <div class="ready-text" style="font-size:48px; font-weight:900; color:#ffaa00; text-shadow:0 0 20px #ffaa00; margin:20px 0;">Ready?</div>
+        <button id="startGameBtn" onclick="startCurrentGame()" style="background:#ff00aa; color:#0a0a2f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer;">START GAME</button>
+    </div>
 
-        <div id="speedGame" style="display:block;">
-            <div class="timer-display" id="timerDisplay">Ready?</div>
-            <div class="target" id="target"></div>
-            <button class="btn" id="startBtn">START GAME</button>
-        </div>
+    <div id="speedGame" style="display:none;">
+        <div class="timer-display" id="timerDisplay">Ready?</div>
+        <div class="target" id="target"></div>
+        <button class="btn" id="startBtn">START GAME</button>
+    </div>
 
         <div id="scrambleGame" style="display:none;">
             <div class="scramble-word" id="scrambleWord">READY?</div>
@@ -178,7 +183,7 @@
     let scrambleScore = 0, scrambleAsked = [], currentScramble = null;
     let kidsCurrentPage = 0;
     let kidsAllItems = [];
-    let kidsScore = 0; ← Ikkada add chey
+    let kidsScore = 0;
 
     let kidsBGM = new Audio('https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3');
     kidsBGM.loop = true; kidsBGM.volume = 0.2;
@@ -247,39 +252,28 @@
     }
 
 function switchMode(mode) {
-    // Error check tho safe ga chey
-    if(typeof gameTimer !== 'undefined') clearInterval(gameTimer);
-    if(typeof kidsBGM !== 'undefined' && kidsBGM) {
-        kidsBGM.pause();
-        kidsBGM.currentTime = 0;
-    }
-    gameActive = false;
-    currentMode = mode;
+    clearInterval(gameTimer);
+    kidsBGM.pause(); 
+    kidsBGM.currentTime = 0; 
+    gameActive = false; 
+    currentMode = mode; 
     
-    // Hide all games
-    document.getElementById('speedGame').style.display = 'none';
-    document.getElementById('scrambleGame').style.display = 'none';
-    document.getElementById('wisdomGame').style.display = 'none';
-    document.getElementById('kidsGame').style.display = 'none';
+    document.getElementById('speedGame').style.display = 'none'; 
+    document.getElementById('scrambleGame').style.display = 'none'; 
+    document.getElementById('wisdomGame').style.display = 'none'; 
+    document.getElementById('kidsGame').style.display = 'none'; 
     
-    // Remove active class
-    document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
-    
-    // Add active class
+    document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active')); 
     document.getElementById(mode + 'Mode').classList.add('active');
     
-    // Show Ready screen
+    // Ready screen show chey - game start cheyaku
     document.getElementById('gameArea').innerHTML = `
-        <div class="ready-text">Ready?</div>
-        <button id="startGameBtn" onclick="startCurrentGame()">START GAME</button>
+        <div class="ready-text" style="font-size:48px; font-weight:900; color:#ffaa00; text-shadow:0 0 20px #ffaa00; margin:20px 0;">Ready?</div>
+        <button id="startGameBtn" onclick="startCurrentGame()" style="background:#ff00aa; color:#0a0a2f; padding:16px 32px; border:none; border-radius:14px; margin:8px; font-weight:900; font-size:16px; cursor:pointer;">START GAME</button>
     `;
-    
-    console.log('Mode switched to:', mode); // Debug kosam
 }
 
 function startCurrentGame() {
-    console.log('Starting game:', currentMode); // Debug kosam
-    
     if(currentMode === 'speed') {
         document.getElementById('speedGame').style.display = 'block';
         startSpeedGame();
@@ -293,6 +287,7 @@ function startCurrentGame() {
         document.getElementById('kidsGame').style.display = 'block';
         startKidsGame();
     }
+}
     
     // Hide Ready screen
     document.querySelector('.ready-text').style.display = 'none';
