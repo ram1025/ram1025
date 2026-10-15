@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ram1025-v34-20251008'; // v34 - ABST BRAIN fixes
+const CACHE_NAME = 'ram1025-v35-20251008'; // v34 - ABST BRAIN fixes
 const BASE_PATH = '/ram1025/';
 
 // ALL FILES TO CACHE - LIVE FEED TAPPA
