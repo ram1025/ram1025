@@ -32,7 +32,7 @@ const urlsToCache = [
   BASE_PATH + 'Education-others-130.json',
   BASE_PATH + 'LICENSE.md',
   BASE_PATH + 'README.md',
-  BASE_PATH + 'MyJeevandhara_Investor_Note.pdf',
+  BASE_PATH + 'MyJeevandhara_Investor_Note_Final.pdf',
   BASE_PATH + 'Datacentre-dpr.pdf',
   BASE_PATH + 'Project_MJ_Detailed_Blueprint.pdf'
 ];
